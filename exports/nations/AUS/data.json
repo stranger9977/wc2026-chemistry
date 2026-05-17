@@ -8,9 +8,599 @@
     "team_color": "#ffcd00",
     "players": []
   },
-  "pairs": [],
+  "players_by_id": {
+    "33477": {
+      "name": "Riley McGree",
+      "position": null,
+      "x": 46.93598372781065,
+      "y": 23.642825443786982,
+      "minutes": 266.6166666666667,
+      "matches": 4
+    },
+    "33488": {
+      "name": "Keanu Baccus",
+      "position": null,
+      "x": 58.39641853932584,
+      "y": 38.48637640449438,
+      "minutes": 204.35,
+      "matches": 4
+    },
+    "3281": {
+      "name": "Aaron Mooy",
+      "position": null,
+      "x": 55.76426354401806,
+      "y": 30.30921557562077,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    "28370": {
+      "name": "Fran Karačić",
+      "position": null,
+      "x": 53.32095588235294,
+      "y": 57.520833333333336,
+      "minutes": 123.0,
+      "matches": 4
+    },
+    "33492": {
+      "name": "Mitchell Thomas Duke",
+      "position": null,
+      "x": 51.340916666666665,
+      "y": 41.967333333333336,
+      "minutes": 272.26666666666665,
+      "matches": 4
+    },
+    "22293": {
+      "name": "Harry Souttar",
+      "position": null,
+      "x": 69.92911392405063,
+      "y": 42.385949367088614,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    "15957": {
+      "name": "Miloš Degenek",
+      "position": null,
+      "x": 59.42789804469274,
+      "y": 41.50493016759776,
+      "minutes": 272.8833333333333,
+      "matches": 4
+    },
+    "9430": {
+      "name": "Jason Cummings",
+      "position": null,
+      "x": 44.40625,
+      "y": 31.2545,
+      "minutes": 64.41666666666666,
+      "matches": 4
+    },
+    "33495": {
+      "name": "Kye Rowles",
+      "position": null,
+      "x": 70.84420391061452,
+      "y": 25.979846368715084,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    "8346": {
+      "name": "Craig Goodwin",
+      "position": null,
+      "x": 46.712219101123594,
+      "y": 20.53991573033708,
+      "minutes": 264.3333333333333,
+      "matches": 4
+    },
+    "24475": {
+      "name": "Awer Mabil",
+      "position": null,
+      "x": 55.57237903225806,
+      "y": 34.13298387096775,
+      "minutes": 83.05,
+      "matches": 4
+    },
+    "8859": {
+      "name": "Ajdin Hrustic",
+      "position": null,
+      "x": 46.9123046875,
+      "y": 46.46578125,
+      "minutes": 150.91666666666666,
+      "matches": 4
+    },
+    "33564": {
+      "name": "Andrew Redmayne",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "33502": {
+      "name": "Cameron Peter Devlin",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "22371": {
+      "name": "Bailey Wright",
+      "position": null,
+      "x": 31.90625,
+      "y": 20.017500000000002,
+      "minutes": 46.75,
+      "matches": 4
+    },
+    "33572": {
+      "name": "Nathaniel Atkinson",
+      "position": null,
+      "x": 60.15279605263158,
+      "y": 59.78296052631579,
+      "minutes": 84.11666666666666,
+      "matches": 3
+    },
+    "16549": {
+      "name": "Danny Vuković",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "33446": {
+      "name": "Thomas Deng",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "5479": {
+      "name": "Aziz Eraltay Behich",
+      "position": null,
+      "x": 59.72400841346154,
+      "y": 21.76265625,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    "3240": {
+      "name": "Mathew Ryan",
+      "position": null,
+      "x": 75.25837093862815,
+      "y": 35.52186823104694,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    "5481": {
+      "name": "Mathew Leckie",
+      "position": null,
+      "x": 47.439694656488555,
+      "y": 42.59343511450381,
+      "minutes": 364.4,
+      "matches": 4
+    },
+    "227697": {
+      "name": "Garang Kuol",
+      "position": null,
+      "x": 38.60208333333333,
+      "y": 50.25726190476191,
+      "minutes": 95.53333333333333,
+      "matches": 4
+    },
+    "5490": {
+      "name": "Jackson Irvine",
+      "position": null,
+      "x": 52.6640625,
+      "y": 41.8996875,
+      "minutes": 444.05,
+      "matches": 4
+    },
+    "33465": {
+      "name": "Joel King",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "9980": {
+      "name": "Jamie MacLaren",
+      "position": null,
+      "x": 39.34421296296296,
+      "y": 32.04972222222222,
+      "minutes": 143.31666666666666,
+      "matches": 4
+    },
+    "36158": {
+      "name": "Marco Tilio",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    }
+  },
+  "pairs": [
+    {
+      "player_a_id": 5479,
+      "player_b_id": 33495,
+      "player_a_name": "Aziz Eraltay Behich",
+      "player_b_name": "Kye Rowles",
+      "joi90": 1.1595468750000002,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 22293,
+      "player_b_id": 33495,
+      "player_a_name": "Harry Souttar",
+      "player_b_name": "Kye Rowles",
+      "joi90": 1.06228125,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3240,
+      "player_b_id": 33495,
+      "player_a_name": "Mathew Ryan",
+      "player_b_name": "Kye Rowles",
+      "joi90": 0.7785234375000002,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 15957,
+      "player_b_id": 22293,
+      "player_a_name": "Miloš Degenek",
+      "player_b_name": "Harry Souttar",
+      "joi90": 0.7190217391304349,
+      "minutes": 227.7,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3240,
+      "player_b_id": 22293,
+      "player_a_name": "Mathew Ryan",
+      "player_b_name": "Harry Souttar",
+      "joi90": 0.7109296875000002,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5481,
+      "player_b_id": 33477,
+      "player_a_name": "Mathew Leckie",
+      "player_b_name": "Riley McGree",
+      "joi90": 0.5840688879164843,
+      "minutes": 266.6166666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3281,
+      "player_b_id": 33495,
+      "player_a_name": "Aaron Mooy",
+      "player_b_name": "Kye Rowles",
+      "joi90": 0.4943203125,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5490,
+      "player_b_id": 33495,
+      "player_a_name": "Jackson Irvine",
+      "player_b_name": "Kye Rowles",
+      "joi90": 0.48895232217250423,
+      "minutes": 324.05,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5479,
+      "player_b_id": 8346,
+      "player_a_name": "Aziz Eraltay Behich",
+      "player_b_name": "Craig Goodwin",
+      "joi90": 0.48122477931904156,
+      "minutes": 264.3333333333333,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3281,
+      "player_b_id": 22293,
+      "player_a_name": "Aaron Mooy",
+      "player_b_name": "Harry Souttar",
+      "joi90": 0.19071093750000012,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3240,
+      "player_b_id": 5479,
+      "player_a_name": "Mathew Ryan",
+      "player_b_name": "Aziz Eraltay Behich",
+      "joi90": 0.17403125000000003,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5479,
+      "player_b_id": 5490,
+      "player_a_name": "Aziz Eraltay Behich",
+      "player_b_name": "Jackson Irvine",
+      "joi90": 0.1696937281837631,
+      "minutes": 444.05,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3240,
+      "player_b_id": 3281,
+      "player_a_name": "Mathew Ryan",
+      "player_b_name": "Aaron Mooy",
+      "joi90": 0.14812499999999992,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5479,
+      "player_b_id": 22293,
+      "player_a_name": "Aziz Eraltay Behich",
+      "player_b_name": "Harry Souttar",
+      "joi90": 0.13446093750000004,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5490,
+      "player_b_id": 33492,
+      "player_a_name": "Jackson Irvine",
+      "player_b_name": "Mitchell Thomas Duke",
+      "joi90": 0.124086608722406,
+      "minutes": 216.68333333333334,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3240,
+      "player_b_id": 5490,
+      "player_a_name": "Mathew Ryan",
+      "player_b_name": "Jackson Irvine",
+      "joi90": 0.11263934241639456,
+      "minutes": 444.05,
+      "matches": 4
+    },
+    {
+      "player_a_id": 33477,
+      "player_b_id": 33492,
+      "player_a_name": "Riley McGree",
+      "player_b_name": "Mitchell Thomas Duke",
+      "joi90": 0.10974437696055517,
+      "minutes": 249.71666666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3281,
+      "player_b_id": 5479,
+      "player_a_name": "Aaron Mooy",
+      "player_b_name": "Aziz Eraltay Behich",
+      "joi90": 0.10300781249999998,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5479,
+      "player_b_id": 33477,
+      "player_a_name": "Aziz Eraltay Behich",
+      "player_b_name": "Riley McGree",
+      "joi90": 0.1008892292304806,
+      "minutes": 266.6166666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5490,
+      "player_b_id": 33477,
+      "player_a_name": "Jackson Irvine",
+      "player_b_name": "Riley McGree",
+      "joi90": 0.05375695442895554,
+      "minutes": 266.6166666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3281,
+      "player_b_id": 15957,
+      "player_a_name": "Aaron Mooy",
+      "player_b_name": "Miloš Degenek",
+      "joi90": 0.04184782608695652,
+      "minutes": 227.7,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5479,
+      "player_b_id": 5481,
+      "player_a_name": "Aziz Eraltay Behich",
+      "player_b_name": "Mathew Leckie",
+      "joi90": 0.030220437457279526,
+      "minutes": 292.6,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5481,
+      "player_b_id": 33492,
+      "player_a_name": "Mathew Leckie",
+      "player_b_name": "Mitchell Thomas Duke",
+      "joi90": 0.023469637610185983,
+      "minutes": 272.26666666666665,
+      "matches": 4
+    },
+    {
+      "player_a_id": 15957,
+      "player_b_id": 33495,
+      "player_a_name": "Miloš Degenek",
+      "player_b_name": "Kye Rowles",
+      "joi90": 0.019861660079051355,
+      "minutes": 227.7,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5481,
+      "player_b_id": 5490,
+      "player_a_name": "Mathew Leckie",
+      "player_b_name": "Jackson Irvine",
+      "joi90": 0.018495965900441468,
+      "minutes": 328.45,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3281,
+      "player_b_id": 8346,
+      "player_a_name": "Aaron Mooy",
+      "player_b_name": "Craig Goodwin",
+      "joi90": 0.014598045397225668,
+      "minutes": 264.3333333333333,
+      "matches": 4
+    },
+    {
+      "player_a_id": 15957,
+      "player_b_id": 33488,
+      "player_a_name": "Miloš Degenek",
+      "player_b_name": "Keanu Baccus",
+      "joi90": -0.0017071877294607973,
+      "minutes": 204.28333333333333,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3281,
+      "player_b_id": 33492,
+      "player_a_name": "Aaron Mooy",
+      "player_b_name": "Mitchell Thomas Duke",
+      "joi90": -0.006239287463271304,
+      "minutes": 272.26666666666665,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3281,
+      "player_b_id": 5490,
+      "player_a_name": "Aaron Mooy",
+      "player_b_name": "Jackson Irvine",
+      "joi90": -0.015986375408174682,
+      "minutes": 444.05,
+      "matches": 4
+    },
+    {
+      "player_a_id": 8346,
+      "player_b_id": 33495,
+      "player_a_name": "Craig Goodwin",
+      "player_b_name": "Kye Rowles",
+      "joi90": -0.028770491803278623,
+      "minutes": 264.3333333333333,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3240,
+      "player_b_id": 15957,
+      "player_a_name": "Mathew Ryan",
+      "player_b_name": "Miloš Degenek",
+      "joi90": -0.08496835443037984,
+      "minutes": 237.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3240,
+      "player_b_id": 33492,
+      "player_a_name": "Mathew Ryan",
+      "player_b_name": "Mitchell Thomas Duke",
+      "joi90": -0.09713760504201686,
+      "minutes": 190.4,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5481,
+      "player_b_id": 8346,
+      "player_a_name": "Mathew Leckie",
+      "player_b_name": "Craig Goodwin",
+      "joi90": -0.11798441838938604,
+      "minutes": 216.06666666666666,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5490,
+      "player_b_id": 22293,
+      "player_a_name": "Jackson Irvine",
+      "player_b_name": "Harry Souttar",
+      "joi90": -0.1261682242990655,
+      "minutes": 444.05,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3240,
+      "player_b_id": 5481,
+      "player_a_name": "Mathew Ryan",
+      "player_b_name": "Mathew Leckie",
+      "joi90": -0.139774351035961,
+      "minutes": 279.93333333333334,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3281,
+      "player_b_id": 5481,
+      "player_a_name": "Aaron Mooy",
+      "player_b_name": "Mathew Leckie",
+      "joi90": -0.1745540614709111,
+      "minutes": 364.4,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5490,
+      "player_b_id": 8346,
+      "player_a_name": "Jackson Irvine",
+      "player_b_name": "Craig Goodwin",
+      "joi90": -0.1965416141235814,
+      "minutes": 264.3333333333333,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5481,
+      "player_b_id": 22293,
+      "player_a_name": "Mathew Leckie",
+      "player_b_name": "Harry Souttar",
+      "joi90": -0.21243482436882544,
+      "minutes": 364.4,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3281,
+      "player_b_id": 33477,
+      "player_a_name": "Aaron Mooy",
+      "player_b_name": "Riley McGree",
+      "joi90": -0.21722197912108532,
+      "minutes": 266.6166666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 33477,
+      "player_b_id": 33495,
+      "player_a_name": "Riley McGree",
+      "player_b_name": "Kye Rowles",
+      "joi90": -0.24392196200458574,
+      "minutes": 203.53333333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 8346,
+      "player_b_id": 33477,
+      "player_a_name": "Craig Goodwin",
+      "player_b_name": "Riley McGree",
+      "joi90": -0.4413365650969528,
+      "minutes": 180.5,
+      "matches": 3
+    },
+    {
+      "player_a_id": 22293,
+      "player_b_id": 33492,
+      "player_a_name": "Harry Souttar",
+      "player_b_name": "Mitchell Thomas Duke",
+      "joi90": -0.4907137610186091,
+      "minutes": 272.26666666666665,
+      "matches": 4
+    }
+  ],
   "coverage": {
     "matches": 4,
-    "unmatched_roster_names": []
+    "auto_derived_roster": true,
+    "roster_size": 26
   }
 }

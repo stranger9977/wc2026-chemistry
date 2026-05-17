@@ -8,9 +8,554 @@
     "team_color": "#ffce00",
     "players": []
   },
-  "pairs": [],
+  "players_by_id": {
+    "51969": {
+      "name": "Jackson Gabriel Porozo Vernaza",
+      "position": null,
+      "x": 65.69992816091954,
+      "y": 51.59548850574713,
+      "minutes": 155.23333333333335,
+      "matches": 3
+    },
+    "12803": {
+      "name": "Romario Andrés Ibarra Mina",
+      "position": null,
+      "x": 43.12,
+      "y": 17.68,
+      "minutes": 97.94999999999999,
+      "matches": 3
+    },
+    "25352": {
+      "name": "Robert Abel Arboleda Escobar",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "28559": {
+      "name": "Enner Remberto Valencia Lastra",
+      "position": null,
+      "x": 43.93720930232558,
+      "y": 30.56936046511628,
+      "minutes": 284.98333333333335,
+      "matches": 3
+    },
+    "37522": {
+      "name": "Hernán Ismael Galíndez",
+      "position": null,
+      "x": 52.119711538461544,
+      "y": 34.070106837606836,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "40211": {
+      "name": "Jeremy Leonel Sarmiento Morante",
+      "position": null,
+      "x": 53.626308139534885,
+      "y": 43.497267441860465,
+      "minutes": 174.51666666666665,
+      "matches": 3
+    },
+    "34194": {
+      "name": "Eduar Ayrton Preciado García",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "24085": {
+      "name": "Pervis Josué Estupiñán Tenorio",
+      "position": null,
+      "x": 52.466516666666664,
+      "y": 23.719193333333333,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "23830": {
+      "name": "Jhegson Sebastián Méndez Carabalí",
+      "position": null,
+      "x": 65.42282196969697,
+      "y": 38.10511363636363,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    "91090": {
+      "name": "Djorkaeff Neicer Reasco González",
+      "position": null,
+      "x": 55.125,
+      "y": 31.6455,
+      "minutes": 56.733333333333334,
+      "matches": 3
+    },
+    "348757": {
+      "name": "Kevin José Rodríguez Cortez",
+      "position": null,
+      "x": 26.46875,
+      "y": 32.32125,
+      "minutes": 61.8,
+      "matches": 3
+    },
+    "34396": {
+      "name": "Michael Steveen Estrada Martínez",
+      "position": null,
+      "x": 50.639843750000004,
+      "y": 30.71308035714286,
+      "minutes": 225.81666666666666,
+      "matches": 3
+    },
+    "37726": {
+      "name": "Moisés Isaac Caicedo Corozo",
+      "position": null,
+      "x": 53.19280427631579,
+      "y": 33.662236842105266,
+      "minutes": 329.9,
+      "matches": 3
+    },
+    "30111": {
+      "name": "Felix Eduardo Torres Caicedo",
+      "position": null,
+      "x": 60.680538617886185,
+      "y": 34.422120596205964,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "28511": {
+      "name": "Ángel Israel Mena Delgado",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "32677": {
+      "name": "Alexander Domínguez Carabalí",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "12583": {
+      "name": "Carlos Armando Gruezo Arboleda",
+      "position": null,
+      "x": 40.449609375,
+      "y": 29.834999999999997,
+      "minutes": 45.0,
+      "matches": 3
+    },
+    "37737": {
+      "name": "Angelo Smit Preciado Quiñónez",
+      "position": null,
+      "x": 49.728769455252916,
+      "y": 42.415165369649806,
+      "minutes": 324.76666666666665,
+      "matches": 3
+    },
+    "37742": {
+      "name": "Wellington Moisés Ramírez Preciado",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "31152": {
+      "name": "Gonzalo Jordy Plata Jiménez",
+      "position": null,
+      "x": 51.15776515151515,
+      "y": 36.92330086580086,
+      "minutes": 329.15,
+      "matches": 3
+    },
+    "41593": {
+      "name": "William Joel Pacho Tenorio",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "36148": {
+      "name": "José Adoni Cifuentes Charcopa",
+      "position": null,
+      "x": 52.23275602409639,
+      "y": 24.316656626506024,
+      "minutes": 119.05,
+      "matches": 3
+    },
+    "38004": {
+      "name": "Piero Martín Hincapié Reyna",
+      "position": null,
+      "x": 54.198214285714286,
+      "y": 30.879936224489796,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "37945": {
+      "name": "Alan Steven Franco Palma",
+      "position": null,
+      "x": 60.347159090909095,
+      "y": 31.836363636363636,
+      "minutes": 75.1,
+      "matches": 3
+    },
+    "25083": {
+      "name": "Xavier Ricardo Arreaga Bermello",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "15486": {
+      "name": "Diego José Palacios Espinoza",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    }
+  },
+  "pairs": [
+    {
+      "player_a_id": 23830,
+      "player_b_id": 38004,
+      "player_a_name": "Jhegson Sebastián Méndez Carabalí",
+      "player_b_name": "Piero Martín Hincapié Reyna",
+      "joi90": 1.8826406249999998,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 24085,
+      "player_b_id": 38004,
+      "player_a_name": "Pervis Josué Estupiñán Tenorio",
+      "player_b_name": "Piero Martín Hincapié Reyna",
+      "joi90": 1.0163125,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 23830,
+      "player_b_id": 30111,
+      "player_a_name": "Jhegson Sebastián Méndez Carabalí",
+      "player_b_name": "Felix Eduardo Torres Caicedo",
+      "joi90": 0.782859375,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 30111,
+      "player_b_id": 38004,
+      "player_a_name": "Felix Eduardo Torres Caicedo",
+      "player_b_name": "Piero Martín Hincapié Reyna",
+      "joi90": 0.6975312499999999,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 30111,
+      "player_b_id": 37737,
+      "player_a_name": "Felix Eduardo Torres Caicedo",
+      "player_b_name": "Angelo Smit Preciado Quiñónez",
+      "joi90": 0.5275017961613467,
+      "minutes": 324.76666666666665,
+      "matches": 3
+    },
+    {
+      "player_a_id": 23830,
+      "player_b_id": 31152,
+      "player_a_name": "Jhegson Sebastián Méndez Carabalí",
+      "player_b_name": "Gonzalo Jordy Plata Jiménez",
+      "joi90": 0.4842636863495099,
+      "minutes": 209.15,
+      "matches": 2
+    },
+    {
+      "player_a_id": 23830,
+      "player_b_id": 37726,
+      "player_a_name": "Jhegson Sebastián Méndez Carabalí",
+      "player_b_name": "Moisés Isaac Caicedo Corozo",
+      "joi90": 0.39983325393044317,
+      "minutes": 209.9,
+      "matches": 2
+    },
+    {
+      "player_a_id": 37522,
+      "player_b_id": 38004,
+      "player_a_name": "Hernán Ismael Galíndez",
+      "player_b_name": "Piero Martín Hincapié Reyna",
+      "joi90": 0.3931875,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 24085,
+      "player_b_id": 37522,
+      "player_a_name": "Pervis Josué Estupiñán Tenorio",
+      "player_b_name": "Hernán Ismael Galíndez",
+      "joi90": 0.3774843749999999,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 24085,
+      "player_b_id": 30111,
+      "player_a_name": "Pervis Josué Estupiñán Tenorio",
+      "player_b_name": "Felix Eduardo Torres Caicedo",
+      "joi90": 0.34943750000000007,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 37726,
+      "player_b_id": 38004,
+      "player_a_name": "Moisés Isaac Caicedo Corozo",
+      "player_b_name": "Piero Martín Hincapié Reyna",
+      "joi90": 0.2415391027584116,
+      "minutes": 329.9,
+      "matches": 3
+    },
+    {
+      "player_a_id": 28559,
+      "player_b_id": 30111,
+      "player_a_name": "Enner Remberto Valencia Lastra",
+      "player_b_name": "Felix Eduardo Torres Caicedo",
+      "joi90": 0.2312108895257032,
+      "minutes": 284.98333333333335,
+      "matches": 3
+    },
+    {
+      "player_a_id": 28559,
+      "player_b_id": 31152,
+      "player_a_name": "Enner Remberto Valencia Lastra",
+      "player_b_name": "Gonzalo Jordy Plata Jiménez",
+      "joi90": 0.22213141119363727,
+      "minutes": 284.98333333333335,
+      "matches": 3
+    },
+    {
+      "player_a_id": 30111,
+      "player_b_id": 31152,
+      "player_a_name": "Felix Eduardo Torres Caicedo",
+      "player_b_name": "Gonzalo Jordy Plata Jiménez",
+      "joi90": 0.21508810572687223,
+      "minutes": 329.15,
+      "matches": 3
+    },
+    {
+      "player_a_id": 30111,
+      "player_b_id": 37726,
+      "player_a_name": "Felix Eduardo Torres Caicedo",
+      "player_b_name": "Moisés Isaac Caicedo Corozo",
+      "joi90": 0.16846013943619279,
+      "minutes": 329.9,
+      "matches": 3
+    },
+    {
+      "player_a_id": 28559,
+      "player_b_id": 37726,
+      "player_a_name": "Enner Remberto Valencia Lastra",
+      "player_b_name": "Moisés Isaac Caicedo Corozo",
+      "joi90": 0.13678431487221468,
+      "minutes": 284.98333333333335,
+      "matches": 3
+    },
+    {
+      "player_a_id": 28559,
+      "player_b_id": 38004,
+      "player_a_name": "Enner Remberto Valencia Lastra",
+      "player_b_name": "Piero Martín Hincapié Reyna",
+      "joi90": 0.11633575062869181,
+      "minutes": 284.98333333333335,
+      "matches": 3
+    },
+    {
+      "player_a_id": 24085,
+      "player_b_id": 28559,
+      "player_a_name": "Pervis Josué Estupiñán Tenorio",
+      "player_b_name": "Enner Remberto Valencia Lastra",
+      "joi90": 0.10867740803555785,
+      "minutes": 284.98333333333335,
+      "matches": 3
+    },
+    {
+      "player_a_id": 37737,
+      "player_b_id": 38004,
+      "player_a_name": "Angelo Smit Preciado Quiñónez",
+      "player_b_name": "Piero Martín Hincapié Reyna",
+      "joi90": 0.07230180693472248,
+      "minutes": 204.76666666666665,
+      "matches": 2
+    },
+    {
+      "player_a_id": 37522,
+      "player_b_id": 37726,
+      "player_a_name": "Hernán Ismael Galíndez",
+      "player_b_name": "Moisés Isaac Caicedo Corozo",
+      "joi90": 0.05718794664125776,
+      "minutes": 209.9,
+      "matches": 2
+    },
+    {
+      "player_a_id": 31152,
+      "player_b_id": 34396,
+      "player_a_name": "Gonzalo Jordy Plata Jiménez",
+      "player_b_name": "Michael Steveen Estrada Martínez",
+      "joi90": 0.05216067606465424,
+      "minutes": 225.81666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 23830,
+      "player_b_id": 37737,
+      "player_a_name": "Jhegson Sebastián Méndez Carabalí",
+      "player_b_name": "Angelo Smit Preciado Quiñónez",
+      "joi90": 0.01204687499999988,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 34396,
+      "player_b_id": 37726,
+      "player_a_name": "Michael Steveen Estrada Martínez",
+      "player_b_name": "Moisés Isaac Caicedo Corozo",
+      "joi90": 0.007423057052181063,
+      "minutes": 225.81666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 28559,
+      "player_b_id": 37737,
+      "player_a_name": "Enner Remberto Valencia Lastra",
+      "player_b_name": "Angelo Smit Preciado Quiñónez",
+      "joi90": 0.00639639639639632,
+      "minutes": 249.75,
+      "matches": 3
+    },
+    {
+      "player_a_id": 24085,
+      "player_b_id": 34396,
+      "player_a_name": "Pervis Josué Estupiñán Tenorio",
+      "player_b_name": "Michael Steveen Estrada Martínez",
+      "joi90": 0.0019429478190272807,
+      "minutes": 225.81666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 37726,
+      "player_b_id": 37737,
+      "player_a_name": "Moisés Isaac Caicedo Corozo",
+      "player_b_name": "Angelo Smit Preciado Quiñónez",
+      "joi90": -0.0022143665158372073,
+      "minutes": 294.6666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 24085,
+      "player_b_id": 37737,
+      "player_a_name": "Pervis Josué Estupiñán Tenorio",
+      "player_b_name": "Angelo Smit Preciado Quiñónez",
+      "joi90": -0.07143749999999999,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 24085,
+      "player_b_id": 37726,
+      "player_a_name": "Pervis Josué Estupiñán Tenorio",
+      "player_b_name": "Moisés Isaac Caicedo Corozo",
+      "joi90": -0.13060775992725068,
+      "minutes": 329.9,
+      "matches": 3
+    },
+    {
+      "player_a_id": 34396,
+      "player_b_id": 37737,
+      "player_a_name": "Michael Steveen Estrada Martínez",
+      "player_b_name": "Angelo Smit Preciado Quiñónez",
+      "joi90": -0.14641855487489858,
+      "minutes": 225.81666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 31152,
+      "player_b_id": 37737,
+      "player_a_name": "Gonzalo Jordy Plata Jiménez",
+      "player_b_name": "Angelo Smit Preciado Quiñónez",
+      "joi90": -0.14828182591437494,
+      "minutes": 293.9166666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 31152,
+      "player_b_id": 38004,
+      "player_a_name": "Gonzalo Jordy Plata Jiménez",
+      "player_b_name": "Piero Martín Hincapié Reyna",
+      "joi90": -0.16737429743278143,
+      "minutes": 329.15,
+      "matches": 3
+    },
+    {
+      "player_a_id": 30111,
+      "player_b_id": 37522,
+      "player_a_name": "Felix Eduardo Torres Caicedo",
+      "player_b_name": "Hernán Ismael Galíndez",
+      "joi90": -0.17828125,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 24085,
+      "player_b_id": 31152,
+      "player_a_name": "Pervis Josué Estupiñán Tenorio",
+      "player_b_name": "Gonzalo Jordy Plata Jiménez",
+      "joi90": -0.23101549445541542,
+      "minutes": 329.15,
+      "matches": 3
+    },
+    {
+      "player_a_id": 31152,
+      "player_b_id": 37726,
+      "player_a_name": "Gonzalo Jordy Plata Jiménez",
+      "player_b_name": "Moisés Isaac Caicedo Corozo",
+      "joi90": -0.3335311820765759,
+      "minutes": 299.05,
+      "matches": 3
+    },
+    {
+      "player_a_id": 28559,
+      "player_b_id": 34396,
+      "player_a_name": "Enner Remberto Valencia Lastra",
+      "player_b_name": "Michael Steveen Estrada Martínez",
+      "joi90": -0.34554327375352767,
+      "minutes": 212.60000000000002,
+      "matches": 3
+    },
+    {
+      "player_a_id": 23830,
+      "player_b_id": 24085,
+      "player_a_name": "Jhegson Sebastián Méndez Carabalí",
+      "player_b_name": "Pervis Josué Estupiñán Tenorio",
+      "joi90": -0.40865624999999983,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 30111,
+      "player_b_id": 34396,
+      "player_a_name": "Felix Eduardo Torres Caicedo",
+      "player_b_name": "Michael Steveen Estrada Martínez",
+      "joi90": -0.5484592958889956,
+      "minutes": 225.81666666666666,
+      "matches": 3
+    }
+  ],
   "coverage": {
     "matches": 3,
-    "unmatched_roster_names": []
+    "auto_derived_roster": true,
+    "roster_size": 26
   }
 }

@@ -8,9 +8,590 @@
     "team_color": "#00853f",
     "players": []
   },
-  "pairs": [],
+  "players_by_id": {
+    "50497": {
+      "name": "Nicolas Jackson",
+      "position": null,
+      "x": 52.492045454545455,
+      "y": 14.50022727272727,
+      "minutes": 46.8,
+      "matches": 4
+    },
+    "13314": {
+      "name": "Famara Diedhiou",
+      "position": null,
+      "x": 39.7840625,
+      "y": 30.60425,
+      "minutes": 122.66666666666667,
+      "matches": 4
+    },
+    "20611": {
+      "name": "Boulaye Dia",
+      "position": null,
+      "x": 40.54348958333333,
+      "y": 30.2653125,
+      "minutes": 354.01666666666665,
+      "matches": 4
+    },
+    "50498": {
+      "name": "Pape Matar Sarr",
+      "position": null,
+      "x": 52.3114224137931,
+      "y": 37.38583333333334,
+      "minutes": 118.03333333333333,
+      "matches": 4
+    },
+    "31751": {
+      "name": "Pathé Ismaël Ciss",
+      "position": null,
+      "x": 56.94901315789474,
+      "y": 36.5925,
+      "minutes": 175.13333333333333,
+      "matches": 4
+    },
+    "3404": {
+      "name": "Youssouf Sabaly",
+      "position": null,
+      "x": 54.631728603603605,
+      "y": 43.818265765765766,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    "34893": {
+      "name": "Moustapha Name",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "32915": {
+      "name": "Ismail Jakobs",
+      "position": null,
+      "x": 52.28541666666666,
+      "y": 13.276968864468865,
+      "minutes": 339.43333333333334,
+      "matches": 4
+    },
+    "7379": {
+      "name": "Edouard Mendy",
+      "position": null,
+      "x": 70.82142857142857,
+      "y": 33.33301020408163,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    "20758": {
+      "name": "Krépin Diatta",
+      "position": null,
+      "x": 54.83075,
+      "y": 22.117242857142855,
+      "minutes": 181.91666666666669,
+      "matches": 4
+    },
+    "4506": {
+      "name": "Nampalys Mendy",
+      "position": null,
+      "x": 53.02840909090909,
+      "y": 34.102110389610395,
+      "minutes": 363.1166666666667,
+      "matches": 4
+    },
+    "3675": {
+      "name": "Fodé Ballo Touré",
+      "position": null,
+      "x": 53.248124999999995,
+      "y": 9.0185,
+      "minutes": 36.099999999999994,
+      "matches": 4
+    },
+    "312414": {
+      "name": "Moussa N''Diaye",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "21026": {
+      "name": "Pape Gueye",
+      "position": null,
+      "x": 51.33964552238806,
+      "y": 28.893022388059702,
+      "minutes": 241.81666666666666,
+      "matches": 4
+    },
+    "15970": {
+      "name": "Pape Abou Cissé",
+      "position": null,
+      "x": 39.89125,
+      "y": 40.005250000000004,
+      "minutes": 188.33333333333331,
+      "matches": 4
+    },
+    "80484": {
+      "name": "Iliman Ndiaye",
+      "position": null,
+      "x": 32.25132211538461,
+      "y": 55.20341346153846,
+      "minutes": 165.11666666666667,
+      "matches": 4
+    },
+    "3684": {
+      "name": "Cheikhou Kouyaté",
+      "position": null,
+      "x": 54.189740566037734,
+      "y": 28.70674528301887,
+      "minutes": 73.18333333333334,
+      "matches": 3
+    },
+    "8870": {
+      "name": "Alfred Benjamin Gomis",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "8553": {
+      "name": "Abdou Diallo",
+      "position": null,
+      "x": 65.65320558739255,
+      "y": 25.517170487106018,
+      "minutes": 421.41666666666663,
+      "matches": 4
+    },
+    "5675": {
+      "name": "Kalidou Koulibaly",
+      "position": null,
+      "x": 61.78675847457627,
+      "y": 40.73815375302664,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    "39595": {
+      "name": "Formose Mendy",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "10603": {
+      "name": "Mamadou Loum N''Diaye",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "3436": {
+      "name": "Idrissa Gana Gueye",
+      "position": null,
+      "x": 51.66324074074074,
+      "y": 33.932314814814816,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "17456": {
+      "name": "Timothy Dieng",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "88123": {
+      "name": "Cheikh Ahmadou Bamba Mbacke Dieng",
+      "position": null,
+      "x": 48.015625,
+      "y": 34.769553571428574,
+      "minutes": 218.96666666666667,
+      "matches": 4
+    },
+    "2941": {
+      "name": "Ismaïla Sarr",
+      "position": null,
+      "x": 44.08767857142857,
+      "y": 33.25078571428571,
+      "minutes": 433.95,
+      "matches": 4
+    }
+  },
+  "pairs": [
+    {
+      "player_a_id": 4506,
+      "player_b_id": 20758,
+      "player_a_name": "Nampalys Mendy",
+      "player_b_name": "Krépin Diatta",
+      "joi90": 0.8322010994044893,
+      "minutes": 181.91666666666669,
+      "matches": 3
+    },
+    {
+      "player_a_id": 4506,
+      "player_b_id": 8553,
+      "player_a_name": "Nampalys Mendy",
+      "player_b_name": "Abdou Diallo",
+      "joi90": 0.5068486744501063,
+      "minutes": 258.3833333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 7379,
+      "player_b_id": 8553,
+      "player_a_name": "Edouard Mendy",
+      "player_b_name": "Abdou Diallo",
+      "joi90": 0.5021455408344869,
+      "minutes": 421.41666666666663,
+      "matches": 4
+    },
+    {
+      "player_a_id": 8553,
+      "player_b_id": 32915,
+      "player_a_name": "Abdou Diallo",
+      "player_b_name": "Ismail Jakobs",
+      "joi90": 0.3673224141000535,
+      "minutes": 280.85,
+      "matches": 3
+    },
+    {
+      "player_a_id": 2941,
+      "player_b_id": 3436,
+      "player_a_name": "Ismaïla Sarr",
+      "player_b_name": "Idrissa Gana Gueye",
+      "joi90": 0.3341137123745819,
+      "minutes": 313.95,
+      "matches": 3
+    },
+    {
+      "player_a_id": 4506,
+      "player_b_id": 7379,
+      "player_a_name": "Nampalys Mendy",
+      "player_b_name": "Edouard Mendy",
+      "joi90": 0.3110570523706797,
+      "minutes": 363.1166666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5675,
+      "player_b_id": 7379,
+      "player_a_name": "Kalidou Koulibaly",
+      "player_b_name": "Edouard Mendy",
+      "joi90": 0.30107812500000003,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3436,
+      "player_b_id": 32915,
+      "player_a_name": "Idrissa Gana Gueye",
+      "player_b_name": "Ismail Jakobs",
+      "joi90": 0.2717258022436733,
+      "minutes": 255.53333333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5675,
+      "player_b_id": 21026,
+      "player_a_name": "Kalidou Koulibaly",
+      "player_b_name": "Pape Gueye",
+      "joi90": 0.26973947205183,
+      "minutes": 241.81666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 7379,
+      "player_b_id": 21026,
+      "player_a_name": "Edouard Mendy",
+      "player_b_name": "Pape Gueye",
+      "joi90": 0.2676924667447791,
+      "minutes": 241.81666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 4506,
+      "player_b_id": 32915,
+      "player_a_name": "Nampalys Mendy",
+      "player_b_name": "Ismail Jakobs",
+      "joi90": 0.26741606526513967,
+      "minutes": 265.58333333333337,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3404,
+      "player_b_id": 7379,
+      "player_a_name": "Youssouf Sabaly",
+      "player_b_name": "Edouard Mendy",
+      "joi90": 0.23669531250000006,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3436,
+      "player_b_id": 5675,
+      "player_a_name": "Idrissa Gana Gueye",
+      "player_b_name": "Kalidou Koulibaly",
+      "joi90": 0.23665624999999993,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3436,
+      "player_b_id": 4506,
+      "player_a_name": "Idrissa Gana Gueye",
+      "player_b_name": "Nampalys Mendy",
+      "joi90": 0.21836738191540417,
+      "minutes": 243.11666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 4506,
+      "player_b_id": 5675,
+      "player_a_name": "Nampalys Mendy",
+      "player_b_name": "Kalidou Koulibaly",
+      "joi90": 0.21718226465323362,
+      "minutes": 363.1166666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3404,
+      "player_b_id": 3436,
+      "player_a_name": "Youssouf Sabaly",
+      "player_b_name": "Idrissa Gana Gueye",
+      "joi90": 0.12325000000000011,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 2941,
+      "player_b_id": 4506,
+      "player_a_name": "Ismaïla Sarr",
+      "player_b_name": "Nampalys Mendy",
+      "joi90": 0.09928492085531786,
+      "minutes": 360.1,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3404,
+      "player_b_id": 5675,
+      "player_a_name": "Youssouf Sabaly",
+      "player_b_name": "Kalidou Koulibaly",
+      "joi90": 0.028499999999999984,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5675,
+      "player_b_id": 8553,
+      "player_a_name": "Kalidou Koulibaly",
+      "player_b_name": "Abdou Diallo",
+      "joi90": 0.022050622898951888,
+      "minutes": 421.41666666666663,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3404,
+      "player_b_id": 4506,
+      "player_a_name": "Youssouf Sabaly",
+      "player_b_name": "Nampalys Mendy",
+      "joi90": 0.013198237481066697,
+      "minutes": 363.1166666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5675,
+      "player_b_id": 20611,
+      "player_a_name": "Kalidou Koulibaly",
+      "player_b_name": "Boulaye Dia",
+      "joi90": -0.024630236471525964,
+      "minutes": 188.18333333333334,
+      "matches": 2
+    },
+    {
+      "player_a_id": 3404,
+      "player_b_id": 21026,
+      "player_a_name": "Youssouf Sabaly",
+      "player_b_name": "Pape Gueye",
+      "joi90": -0.04475497966779231,
+      "minutes": 241.81666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 2941,
+      "player_b_id": 5675,
+      "player_a_name": "Ismaïla Sarr",
+      "player_b_name": "Kalidou Koulibaly",
+      "joi90": -0.0476235741444867,
+      "minutes": 433.95,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3404,
+      "player_b_id": 8553,
+      "player_a_name": "Youssouf Sabaly",
+      "player_b_name": "Abdou Diallo",
+      "joi90": -0.06721969547162354,
+      "minutes": 421.41666666666663,
+      "matches": 4
+    },
+    {
+      "player_a_id": 7379,
+      "player_b_id": 32915,
+      "player_a_name": "Edouard Mendy",
+      "player_b_name": "Ismail Jakobs",
+      "joi90": -0.07062043795620448,
+      "minutes": 280.85,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3436,
+      "player_b_id": 8553,
+      "player_a_name": "Idrissa Gana Gueye",
+      "player_b_name": "Abdou Diallo",
+      "joi90": -0.07643903787669337,
+      "minutes": 301.41666666666663,
+      "matches": 3
+    },
+    {
+      "player_a_id": 2941,
+      "player_b_id": 20611,
+      "player_a_name": "Ismaïla Sarr",
+      "player_b_name": "Boulaye Dia",
+      "joi90": -0.07799139517263778,
+      "minutes": 307.9666666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3436,
+      "player_b_id": 20611,
+      "player_a_name": "Idrissa Gana Gueye",
+      "player_b_name": "Boulaye Dia",
+      "joi90": -0.09404825026511128,
+      "minutes": 282.9,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3404,
+      "player_b_id": 32915,
+      "player_a_name": "Youssouf Sabaly",
+      "player_b_name": "Ismail Jakobs",
+      "joi90": -0.11150038080731164,
+      "minutes": 196.95,
+      "matches": 2
+    },
+    {
+      "player_a_id": 8553,
+      "player_b_id": 20611,
+      "player_a_name": "Abdou Diallo",
+      "player_b_name": "Boulaye Dia",
+      "joi90": -0.16273218142548607,
+      "minutes": 347.25,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5675,
+      "player_b_id": 32915,
+      "player_a_name": "Kalidou Koulibaly",
+      "player_b_name": "Ismail Jakobs",
+      "joi90": -0.16492192870470387,
+      "minutes": 339.43333333333334,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3404,
+      "player_b_id": 20611,
+      "player_a_name": "Youssouf Sabaly",
+      "player_b_name": "Boulaye Dia",
+      "joi90": -0.19207317073170727,
+      "minutes": 282.9,
+      "matches": 3
+    },
+    {
+      "player_a_id": 8553,
+      "player_b_id": 21026,
+      "player_a_name": "Abdou Diallo",
+      "player_b_name": "Pape Gueye",
+      "joi90": -0.1968461538461538,
+      "minutes": 195.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 2941,
+      "player_b_id": 7379,
+      "player_a_name": "Ismaïla Sarr",
+      "player_b_name": "Edouard Mendy",
+      "joi90": -0.22041133771171798,
+      "minutes": 433.95,
+      "matches": 4
+    },
+    {
+      "player_a_id": 2941,
+      "player_b_id": 3404,
+      "player_a_name": "Ismaïla Sarr",
+      "player_b_name": "Youssouf Sabaly",
+      "joi90": -0.22886277220877985,
+      "minutes": 433.95,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3404,
+      "player_b_id": 88123,
+      "player_a_name": "Youssouf Sabaly",
+      "player_b_name": "Cheikh Ahmadou Bamba Mbacke Dieng",
+      "joi90": -0.25303508905465066,
+      "minutes": 218.96666666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 2941,
+      "player_b_id": 8553,
+      "player_a_name": "Ismaïla Sarr",
+      "player_b_name": "Abdou Diallo",
+      "joi90": -0.4063063312137132,
+      "minutes": 301.41666666666663,
+      "matches": 3
+    },
+    {
+      "player_a_id": 4506,
+      "player_b_id": 20611,
+      "player_a_name": "Nampalys Mendy",
+      "player_b_name": "Boulaye Dia",
+      "joi90": -0.4422037531627776,
+      "minutes": 237.13333333333333,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5675,
+      "player_b_id": 20758,
+      "player_a_name": "Kalidou Koulibaly",
+      "player_b_name": "Krépin Diatta",
+      "joi90": -0.5544090700870362,
+      "minutes": 181.91666666666669,
+      "matches": 3
+    },
+    {
+      "player_a_id": 2941,
+      "player_b_id": 21026,
+      "player_a_name": "Ismaïla Sarr",
+      "player_b_name": "Pape Gueye",
+      "joi90": -0.5907115384615386,
+      "minutes": 195.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 2941,
+      "player_b_id": 32915,
+      "player_a_name": "Ismaïla Sarr",
+      "player_b_name": "Ismail Jakobs",
+      "joi90": -0.663727855736872,
+      "minutes": 262.48333333333335,
+      "matches": 3
+    }
+  ],
   "coverage": {
     "matches": 4,
-    "unmatched_roster_names": []
+    "auto_derived_roster": true,
+    "roster_size": 26
   }
 }

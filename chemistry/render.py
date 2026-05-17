@@ -6,6 +6,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional
 
+import matplotlib.patheffects as plt_path_effects
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
 from mplsoccer import Pitch
@@ -64,11 +65,25 @@ def render_pitch_chemistry(
 
     squad = nation_entry["squad"]
     pairs = nation_entry["pairs"]
+    players_by_id = nation_entry.get("players_by_id", {})
 
-    name_to_pos: dict[str, tuple[float, float]] = {}
-    for p in squad["players"]:
-        pos = DEFAULT_POSITIONS.get(p["position"], (50, 34))
-        name_to_pos[p["name"]] = pos
+    # Build {id: (x, y, name)} from empirical positions in players_by_id.
+    # Fall back to DEFAULT_POSITIONS keyed by position string for hand-curated
+    # players that have no empirical data.
+    id_to_xy: dict[int, tuple[float, float, str]] = {}
+    for pid_str, p in players_by_id.items():
+        id_to_xy[int(pid_str)] = (p["x"], p["y"], p["name"])
+
+    # If players_by_id is empty, fall back to the old name-based approach so
+    # legacy nation entries still render something.
+    if not id_to_xy:
+        name_to_pos: dict[str, tuple[float, float]] = {}
+        for p in squad["players"]:
+            pos = DEFAULT_POSITIONS.get(p["position"], (50, 34))
+            name_to_pos[p["name"]] = pos
+        for name, (x, y) in name_to_pos.items():
+            # Use a fake id based on name hash to reuse same draw path
+            id_to_xy[hash(name) & 0xFFFFFFFF] = (x, y, name)
 
     if pairs:
         vmin = min(p["joi90"] for p in pairs)
@@ -76,24 +91,37 @@ def render_pitch_chemistry(
     else:
         vmin = vmax = 0.0
 
+    # Edges
     for p in pairs:
-        a, b = p["player_a_name"], p["player_b_name"]
-        pa = name_to_pos.get(a)
-        pb = name_to_pos.get(b)
-        if not pa or not pb:
+        a_id = p["player_a_id"]
+        b_id = p["player_b_id"]
+        if a_id not in id_to_xy or b_id not in id_to_xy:
             continue
+        xa, ya, _ = id_to_xy[a_id]
+        xb, yb, _ = id_to_xy[b_id]
         col = _color_for_joi(p["joi90"], vmin, vmax, opts)
         m = min(p["minutes"], 600) / 600.0
         lw = opts.edge_min_width + (opts.edge_max_width - opts.edge_min_width) * m
-        ax.plot([pa[0], pb[0]], [pa[1], pb[1]], color=col,
+        ax.plot([xa, xb], [ya, yb], color=col,
                 linewidth=lw, solid_capstyle="round", alpha=0.85, zorder=1)
 
-    for name, (x, y) in name_to_pos.items():
-        ax.add_patch(Circle((x, y), 1.6, color="#ffffff", zorder=3))
-        ax.add_patch(Circle((x, y), 1.3, color=squad["team_color"], zorder=4))
+    # Markers + labels with smart placement to avoid overlap
+    placed_points: list[tuple[float, float]] = []
+    for pid, (x, y, name) in id_to_xy.items():
+        ax.add_patch(Circle((x, y), 1.8, color="#ffffff", zorder=3))
+        ax.add_patch(Circle((x, y), 1.5, color=squad["team_color"], zorder=4))
+        # Smart label: if too close to another marker, push label below
+        offset = -3.0
+        for (xp, yp) in placed_points:
+            if abs(xp - x) < 8 and abs(yp - y) < 4:
+                offset = 3.8
+                break
         if opts.show_labels:
-            ax.text(x, y + 3.0, name, color="#ffffff", ha="center", va="bottom",
-                    fontsize=10, weight="bold", zorder=5)
+            va = "top" if offset > 0 else "bottom"
+            ax.text(x, y + offset, name, color="#ffffff", ha="center", va=va,
+                    fontsize=9, weight="bold", zorder=5,
+                    path_effects=[plt_path_effects.withStroke(linewidth=2.5, foreground="black")])
+        placed_points.append((x, y))
 
     ax.set_xlim(0, 105); ax.set_ylim(0, 68); ax.set_axis_off()
     return fig

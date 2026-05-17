@@ -8,9 +8,608 @@
     "team_color": "#cd2e3a",
     "players": []
   },
-  "pairs": [],
+  "players_by_id": {
+    "40578": {
+      "name": "Tae-Hwan Kim",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "37641": {
+      "name": "Seung-Gyu Kim",
+      "position": null,
+      "x": 51.56163116591928,
+      "y": 33.870594170403585,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    "3083": {
+      "name": "Heung-Min Son",
+      "position": null,
+      "x": 54.70088058419244,
+      "y": 37.10863402061855,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    "29966": {
+      "name": "Ui-Jo Hwang",
+      "position": null,
+      "x": 35.183749999999996,
+      "y": 26.1375,
+      "minutes": 194.68333333333334,
+      "matches": 4
+    },
+    "23763": {
+      "name": "In-Beom Hwang",
+      "position": null,
+      "x": 53.56808562992126,
+      "y": 32.90771653543307,
+      "minutes": 424.43333333333334,
+      "matches": 4
+    },
+    "22740": {
+      "name": "Kang-In Lee",
+      "position": null,
+      "x": 60.839190251572326,
+      "y": 41.62246855345912,
+      "minutes": 237.38333333333333,
+      "matches": 4
+    },
+    "99479": {
+      "name": "Yu-Min Cho",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 27.233333333333334,
+      "matches": 4
+    },
+    "41495": {
+      "name": "Jong-Gyu Yoon",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "40664": {
+      "name": "Min-Kyu Song",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "40538": {
+      "name": "Jin-Su Kim",
+      "position": null,
+      "x": 59.65625,
+      "y": 40.05321428571428,
+      "minutes": 405.0,
+      "matches": 4
+    },
+    "40542": {
+      "name": "Gue-Sung Cho",
+      "position": null,
+      "x": 59.143125000000005,
+      "y": 32.4445,
+      "minutes": 338.7166666666667,
+      "matches": 4
+    },
+    "40672": {
+      "name": "Moon-Hwan Kim",
+      "position": null,
+      "x": 48.012699044585986,
+      "y": 32.603455414012736,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    "23264": {
+      "name": "Seung-Ho Paik",
+      "position": null,
+      "x": 45.67309782608696,
+      "y": 45.255108695652176,
+      "minutes": 55.56666666666666,
+      "matches": 4
+    },
+    "5986": {
+      "name": "Chul Hong",
+      "position": null,
+      "x": 44.598749999999995,
+      "y": 6.5535,
+      "minutes": 75.0,
+      "matches": 4
+    },
+    "5604": {
+      "name": "Young-Gwon Kim",
+      "position": null,
+      "x": 53.53048406862745,
+      "y": 34.032291666666666,
+      "minutes": 440.51666666666665,
+      "matches": 4
+    },
+    "40550": {
+      "name": "Bum-Keun Song",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "43565": {
+      "name": "Min Jae Kim",
+      "position": null,
+      "x": 57.25384078212291,
+      "y": 38.56625698324022,
+      "minutes": 331.7,
+      "matches": 4
+    },
+    "40558": {
+      "name": "Jun-Ho Son",
+      "position": null,
+      "x": 58.076442307692304,
+      "y": 34.62151709401709,
+      "minutes": 160.85,
+      "matches": 4
+    },
+    "41711": {
+      "name": "Sang-Ho Na",
+      "position": null,
+      "x": 44.939453125,
+      "y": 40.94255208333333,
+      "minutes": 149.05,
+      "matches": 4
+    },
+    "5618": {
+      "name": "Woo-Young Jung",
+      "position": null,
+      "x": 51.318749999999994,
+      "y": 38.20289408866995,
+      "minutes": 363.15,
+      "matches": 4
+    },
+    "22067": {
+      "name": "Woo-Yeong Jeong",
+      "position": null,
+      "x": 74.33125,
+      "y": 29.626973684210526,
+      "minutes": 45.0,
+      "matches": 4
+    },
+    "5619": {
+      "name": "Hyeon-Woo Jo",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "5620": {
+      "name": "Hee-Chan Hwang",
+      "position": null,
+      "x": 37.78837025316456,
+      "y": 37.04332278481013,
+      "minutes": 174.61666666666667,
+      "matches": 4
+    },
+    "40564": {
+      "name": "Kyung-Won Kwon",
+      "position": null,
+      "x": 34.1625,
+      "y": 22.430892857142855,
+      "minutes": 148.3,
+      "matches": 4
+    },
+    "5623": {
+      "name": "Jae-Sung Lee",
+      "position": null,
+      "x": 50.509704773869345,
+      "y": 32.19599246231156,
+      "minutes": 212.48333333333335,
+      "matches": 4
+    },
+    "3135": {
+      "name": "Chang-Hoon Kwon",
+      "position": null,
+      "x": 75.31708333333334,
+      "y": 27.892277777777775,
+      "minutes": 56.31666666666667,
+      "matches": 4
+    }
+  },
+  "pairs": [
+    {
+      "player_a_id": 5604,
+      "player_b_id": 40538,
+      "player_a_name": "Young-Gwon Kim",
+      "player_b_name": "Jin-Su Kim",
+      "joi90": 0.9962336418767955,
+      "minutes": 365.51666666666665,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5604,
+      "player_b_id": 43565,
+      "player_a_name": "Young-Gwon Kim",
+      "player_b_name": "Min Jae Kim",
+      "joi90": 0.6613996080795899,
+      "minutes": 331.7,
+      "matches": 3
+    },
+    {
+      "player_a_id": 40538,
+      "player_b_id": 40542,
+      "player_a_name": "Jin-Su Kim",
+      "player_b_name": "Gue-Sung Cho",
+      "joi90": 0.660335574809259,
+      "minutes": 257.76666666666665,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5618,
+      "player_b_id": 40538,
+      "player_a_name": "Woo-Young Jung",
+      "player_b_name": "Jin-Su Kim",
+      "joi90": 0.58636926889715,
+      "minutes": 363.15,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3083,
+      "player_b_id": 5618,
+      "player_a_name": "Heung-Min Son",
+      "player_b_name": "Woo-Young Jung",
+      "joi90": 0.5741016109045851,
+      "minutes": 363.15,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5604,
+      "player_b_id": 37641,
+      "player_a_name": "Young-Gwon Kim",
+      "player_b_name": "Seung-Gyu Kim",
+      "joi90": 0.5677906624796641,
+      "minutes": 440.51666666666665,
+      "matches": 4
+    },
+    {
+      "player_a_id": 22740,
+      "player_b_id": 23763,
+      "player_a_name": "Kang-In Lee",
+      "player_b_name": "In-Beom Hwang",
+      "joi90": 0.5221509038511922,
+      "minutes": 190.85,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5604,
+      "player_b_id": 40672,
+      "player_a_name": "Young-Gwon Kim",
+      "player_b_name": "Moon-Hwan Kim",
+      "joi90": 0.5071336547252929,
+      "minutes": 200.51666666666665,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5604,
+      "player_b_id": 40542,
+      "player_a_name": "Young-Gwon Kim",
+      "player_b_name": "Gue-Sung Cho",
+      "joi90": 0.48256755148196645,
+      "minutes": 280.0333333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3083,
+      "player_b_id": 40542,
+      "player_a_name": "Heung-Min Son",
+      "player_b_name": "Gue-Sung Cho",
+      "joi90": 0.45907838409683616,
+      "minutes": 338.7166666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3083,
+      "player_b_id": 22740,
+      "player_a_name": "Heung-Min Son",
+      "player_b_name": "Kang-In Lee",
+      "joi90": 0.43974759530997676,
+      "minutes": 237.38333333333333,
+      "matches": 4
+    },
+    {
+      "player_a_id": 23763,
+      "player_b_id": 40538,
+      "player_a_name": "In-Beom Hwang",
+      "player_b_name": "Jin-Su Kim",
+      "joi90": 0.3696944444444444,
+      "minutes": 405.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5604,
+      "player_b_id": 22740,
+      "player_a_name": "Young-Gwon Kim",
+      "player_b_name": "Kang-In Lee",
+      "joi90": 0.3439881160433417,
+      "minutes": 190.73333333333332,
+      "matches": 3
+    },
+    {
+      "player_a_id": 40542,
+      "player_b_id": 40672,
+      "player_a_name": "Gue-Sung Cho",
+      "player_b_name": "Moon-Hwan Kim",
+      "joi90": 0.3428972100575703,
+      "minutes": 338.7166666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 22740,
+      "player_b_id": 40542,
+      "player_a_name": "Kang-In Lee",
+      "player_b_name": "Gue-Sung Cho",
+      "joi90": 0.3395336651820802,
+      "minutes": 190.85,
+      "matches": 3
+    },
+    {
+      "player_a_id": 22740,
+      "player_b_id": 40672,
+      "player_a_name": "Kang-In Lee",
+      "player_b_name": "Moon-Hwan Kim",
+      "joi90": 0.3358649863090642,
+      "minutes": 237.38333333333333,
+      "matches": 4
+    },
+    {
+      "player_a_id": 23763,
+      "player_b_id": 40542,
+      "player_a_name": "In-Beom Hwang",
+      "player_b_name": "Gue-Sung Cho",
+      "joi90": 0.3294353177464209,
+      "minutes": 323.6333333333333,
+      "matches": 4
+    },
+    {
+      "player_a_id": 23763,
+      "player_b_id": 40672,
+      "player_a_name": "In-Beom Hwang",
+      "player_b_name": "Moon-Hwan Kim",
+      "joi90": 0.31727597581088496,
+      "minutes": 424.43333333333334,
+      "matches": 4
+    },
+    {
+      "player_a_id": 23763,
+      "player_b_id": 43565,
+      "player_a_name": "In-Beom Hwang",
+      "player_b_name": "Min Jae Kim",
+      "joi90": 0.3139923346209565,
+      "minutes": 276.1333333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3083,
+      "player_b_id": 23763,
+      "player_a_name": "Heung-Min Son",
+      "player_b_name": "In-Beom Hwang",
+      "joi90": 0.29572665514804053,
+      "minutes": 424.43333333333334,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5604,
+      "player_b_id": 5618,
+      "player_a_name": "Young-Gwon Kim",
+      "player_b_name": "Woo-Young Jung",
+      "joi90": 0.2911676107106075,
+      "minutes": 323.6666666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5604,
+      "player_b_id": 23763,
+      "player_a_name": "Young-Gwon Kim",
+      "player_b_name": "In-Beom Hwang",
+      "joi90": 0.22257436030653338,
+      "minutes": 384.95,
+      "matches": 4
+    },
+    {
+      "player_a_id": 37641,
+      "player_b_id": 43565,
+      "player_a_name": "Seung-Gyu Kim",
+      "player_b_name": "Min Jae Kim",
+      "joi90": 0.19583207717817291,
+      "minutes": 331.7,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3083,
+      "player_b_id": 5604,
+      "player_a_name": "Heung-Min Son",
+      "player_b_name": "Young-Gwon Kim",
+      "joi90": 0.17274034277931224,
+      "minutes": 440.51666666666665,
+      "matches": 4
+    },
+    {
+      "player_a_id": 23763,
+      "player_b_id": 37641,
+      "player_a_name": "In-Beom Hwang",
+      "player_b_name": "Seung-Gyu Kim",
+      "joi90": 0.1478125,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3083,
+      "player_b_id": 43565,
+      "player_a_name": "Heung-Min Son",
+      "player_b_name": "Min Jae Kim",
+      "joi90": 0.14422531884742543,
+      "minutes": 211.7,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5623,
+      "player_b_id": 40672,
+      "player_a_name": "Jae-Sung Lee",
+      "player_b_name": "Moon-Hwan Kim",
+      "joi90": 0.13914032473135135,
+      "minutes": 212.48333333333335,
+      "matches": 3
+    },
+    {
+      "player_a_id": 37641,
+      "player_b_id": 40672,
+      "player_a_name": "Seung-Gyu Kim",
+      "player_b_name": "Moon-Hwan Kim",
+      "joi90": 0.09686718750000006,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5623,
+      "player_b_id": 40538,
+      "player_a_name": "Jae-Sung Lee",
+      "player_b_name": "Jin-Su Kim",
+      "joi90": 0.08589575219635924,
+      "minutes": 184.01666666666668,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5618,
+      "player_b_id": 23763,
+      "player_a_name": "Woo-Young Jung",
+      "player_b_name": "In-Beom Hwang",
+      "joi90": 0.0681536555142503,
+      "minutes": 363.15,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3083,
+      "player_b_id": 40538,
+      "player_a_name": "Heung-Min Son",
+      "player_b_name": "Jin-Su Kim",
+      "joi90": 0.0672222222222222,
+      "minutes": 405.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5618,
+      "player_b_id": 37641,
+      "player_a_name": "Woo-Young Jung",
+      "player_b_name": "Seung-Gyu Kim",
+      "joi90": 0.051276315789473684,
+      "minutes": 285.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 40672,
+      "player_b_id": 43565,
+      "player_a_name": "Moon-Hwan Kim",
+      "player_b_name": "Min Jae Kim",
+      "joi90": 0.04921239071450095,
+      "minutes": 331.7,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5618,
+      "player_b_id": 43565,
+      "player_a_name": "Woo-Young Jung",
+      "player_b_name": "Min Jae Kim",
+      "joi90": -0.00971622455274517,
+      "minutes": 243.15,
+      "matches": 3
+    },
+    {
+      "player_a_id": 40538,
+      "player_b_id": 43565,
+      "player_a_name": "Jin-Su Kim",
+      "player_b_name": "Min Jae Kim",
+      "joi90": -0.05548305414881169,
+      "minutes": 256.7,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5623,
+      "player_b_id": 23763,
+      "player_a_name": "Jae-Sung Lee",
+      "player_b_name": "In-Beom Hwang",
+      "joi90": -0.06331408208405027,
+      "minutes": 203.45000000000002,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3083,
+      "player_b_id": 5623,
+      "player_a_name": "Heung-Min Son",
+      "player_b_name": "Jae-Sung Lee",
+      "joi90": -0.07036434230135712,
+      "minutes": 212.48333333333335,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3083,
+      "player_b_id": 40672,
+      "player_a_name": "Heung-Min Son",
+      "player_b_name": "Moon-Hwan Kim",
+      "joi90": -0.07673437500000008,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5618,
+      "player_b_id": 5623,
+      "player_a_name": "Woo-Young Jung",
+      "player_b_name": "Jae-Sung Lee",
+      "joi90": -0.0849175799293543,
+      "minutes": 184.01666666666668,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5618,
+      "player_b_id": 40672,
+      "player_a_name": "Woo-Young Jung",
+      "player_b_name": "Moon-Hwan Kim",
+      "joi90": -0.08698884758364307,
+      "minutes": 363.15,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5618,
+      "player_b_id": 40542,
+      "player_a_name": "Woo-Young Jung",
+      "player_b_name": "Gue-Sung Cho",
+      "joi90": -0.09352566576611357,
+      "minutes": 215.91666666666669,
+      "matches": 3
+    },
+    {
+      "player_a_id": 40542,
+      "player_b_id": 43565,
+      "player_a_name": "Gue-Sung Cho",
+      "player_b_name": "Min Jae Kim",
+      "joi90": -0.14038594073053068,
+      "minutes": 217.65,
+      "matches": 3
+    },
+    {
+      "player_a_id": 37641,
+      "player_b_id": 40538,
+      "player_a_name": "Seung-Gyu Kim",
+      "player_b_name": "Jin-Su Kim",
+      "joi90": -0.2546842105263158,
+      "minutes": 285.0,
+      "matches": 3
+    }
+  ],
   "coverage": {
     "matches": 4,
-    "unmatched_roster_names": []
+    "auto_derived_roster": true,
+    "roster_size": 26
   }
 }

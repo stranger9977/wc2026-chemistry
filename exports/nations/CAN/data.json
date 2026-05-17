@@ -8,9 +8,590 @@
     "team_color": "#d52b1e",
     "players": []
   },
-  "pairs": [],
+  "players_by_id": {
+    "9922": {
+      "name": "David Junior Hoilett",
+      "position": null,
+      "x": 49.78633333333333,
+      "y": 24.557066666666667,
+      "minutes": 191.38333333333335,
+      "matches": 3
+    },
+    "23363": {
+      "name": "Liam Millar",
+      "position": null,
+      "x": 30.619531249999998,
+      "y": 6.141250000000001,
+      "minutes": 39.83333333333333,
+      "matches": 3
+    },
+    "31684": {
+      "name": "Atiba Hutchinson",
+      "position": null,
+      "x": 54.9984375,
+      "y": 38.246964285714284,
+      "minutes": 190.3,
+      "matches": 3
+    },
+    "11846": {
+      "name": "Steven de Sousa Vitoria",
+      "position": null,
+      "x": 57.52381373937677,
+      "y": 34.5053045325779,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "4106": {
+      "name": "Ike Ugbo",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "16459": {
+      "name": "Cyle Larin",
+      "position": null,
+      "x": 45.97900641025641,
+      "y": 29.31628205128205,
+      "minutes": 167.38333333333333,
+      "matches": 3
+    },
+    "9036": {
+      "name": "David Wotherspoon",
+      "position": null,
+      "x": 70.18509615384616,
+      "y": 60.88288461538461,
+      "minutes": 44.599999999999994,
+      "matches": 3
+    },
+    "12365": {
+      "name": "Alphonso Davies",
+      "position": null,
+      "x": 44.15867474916388,
+      "y": 32.33766722408026,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "23760": {
+      "name": "Derek Cornelius",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "23828": {
+      "name": "Kamal Miller",
+      "position": null,
+      "x": 58.11215277777777,
+      "y": 30.756477272727274,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "15958": {
+      "name": "Milan Borjan",
+      "position": null,
+      "x": 77.40308988764045,
+      "y": 34.14134831460674,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "24024": {
+      "name": "Tajon Buchanan",
+      "position": null,
+      "x": 48.843070652173914,
+      "y": 51.55373188405797,
+      "minutes": 320.1666666666667,
+      "matches": 3
+    },
+    "23640": {
+      "name": "Jonathan David",
+      "position": null,
+      "x": 46.42174657534247,
+      "y": 36.02544520547945,
+      "minutes": 252.66666666666669,
+      "matches": 3
+    },
+    "44703": {
+      "name": "Alistair Johnston",
+      "position": null,
+      "x": 50.709311224489795,
+      "y": 41.875634110787175,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "12770": {
+      "name": "Jonathan Osorio",
+      "position": null,
+      "x": 50.20702519379845,
+      "y": 24.38017441860465,
+      "minutes": 179.71666666666667,
+      "matches": 3
+    },
+    "12779": {
+      "name": "Samuel Piette",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "26348": {
+      "name": "Lucas Daniel Cavallini",
+      "position": null,
+      "x": 33.78125000000001,
+      "y": 39.70107142857143,
+      "minutes": 47.55,
+      "matches": 3
+    },
+    "133229": {
+      "name": "Ismael Koné",
+      "position": null,
+      "x": 54.90801767676768,
+      "y": 27.925075757575758,
+      "minutes": 197.11666666666667,
+      "matches": 3
+    },
+    "49259": {
+      "name": "James Pantemis",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "11187": {
+      "name": "Stephen Antunes Eustáquio",
+      "position": null,
+      "x": 51.665957446808505,
+      "y": 32.83938829787234,
+      "minutes": 125.35,
+      "matches": 3
+    },
+    "16120": {
+      "name": "Richie Laryea",
+      "position": null,
+      "x": 48.24015,
+      "y": 28.32846,
+      "minutes": 189.55,
+      "matches": 3
+    },
+    "36794": {
+      "name": "Dayne St Clair",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "35707": {
+      "name": "Joel Waterman",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "16252": {
+      "name": "Mark Anthony Kaye",
+      "position": null,
+      "x": 50.111092342342346,
+      "y": 39.597364864864865,
+      "minutes": 59.85,
+      "matches": 3
+    },
+    "13885": {
+      "name": "Liam Fraser",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "29758": {
+      "name": "Sam Adekugbe",
+      "position": null,
+      "x": 51.78388157894737,
+      "y": 34.26298872180451,
+      "minutes": 154.53333333333333,
+      "matches": 3
+    }
+  },
+  "pairs": [
+    {
+      "player_a_id": 23828,
+      "player_b_id": 31684,
+      "player_a_name": "Kamal Miller",
+      "player_b_name": "Atiba Hutchinson",
+      "joi90": 0.8936153441933788,
+      "minutes": 190.3,
+      "matches": 3
+    },
+    {
+      "player_a_id": 15958,
+      "player_b_id": 16120,
+      "player_a_name": "Milan Borjan",
+      "player_b_name": "Richie Laryea",
+      "joi90": 0.6634858876285941,
+      "minutes": 189.55,
+      "matches": 3
+    },
+    {
+      "player_a_id": 15958,
+      "player_b_id": 133229,
+      "player_a_name": "Milan Borjan",
+      "player_b_name": "Ismael Koné",
+      "joi90": 0.6429821594656293,
+      "minutes": 197.11666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 11846,
+      "player_b_id": 133229,
+      "player_a_name": "Steven de Sousa Vitoria",
+      "player_b_name": "Ismael Koné",
+      "joi90": 0.6118774837236833,
+      "minutes": 197.11666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 11846,
+      "player_b_id": 15958,
+      "player_a_name": "Steven de Sousa Vitoria",
+      "player_b_name": "Milan Borjan",
+      "joi90": 0.57478125,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 23828,
+      "player_b_id": 24024,
+      "player_a_name": "Kamal Miller",
+      "player_b_name": "Tajon Buchanan",
+      "joi90": 0.5626288391462781,
+      "minutes": 320.1666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 11846,
+      "player_b_id": 23828,
+      "player_a_name": "Steven de Sousa Vitoria",
+      "player_b_name": "Kamal Miller",
+      "joi90": 0.51471875,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 31684,
+      "player_b_id": 44703,
+      "player_a_name": "Atiba Hutchinson",
+      "player_b_name": "Alistair Johnston",
+      "joi90": 0.437880977404099,
+      "minutes": 190.3,
+      "matches": 3
+    },
+    {
+      "player_a_id": 44703,
+      "player_b_id": 133229,
+      "player_a_name": "Alistair Johnston",
+      "player_b_name": "Ismael Koné",
+      "joi90": 0.4188572757250358,
+      "minutes": 197.11666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 23640,
+      "player_b_id": 24024,
+      "player_a_name": "Jonathan David",
+      "player_b_name": "Tajon Buchanan",
+      "joi90": 0.3710121378230225,
+      "minutes": 212.83333333333334,
+      "matches": 3
+    },
+    {
+      "player_a_id": 15958,
+      "player_b_id": 23828,
+      "player_a_name": "Milan Borjan",
+      "player_b_name": "Kamal Miller",
+      "joi90": 0.2905312499999999,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 23640,
+      "player_b_id": 44703,
+      "player_a_name": "Jonathan David",
+      "player_b_name": "Alistair Johnston",
+      "joi90": 0.2569096306068603,
+      "minutes": 252.66666666666669,
+      "matches": 3
+    },
+    {
+      "player_a_id": 12365,
+      "player_b_id": 16120,
+      "player_a_name": "Alphonso Davies",
+      "player_b_name": "Richie Laryea",
+      "joi90": 0.20541413874967024,
+      "minutes": 189.55,
+      "matches": 3
+    },
+    {
+      "player_a_id": 12365,
+      "player_b_id": 24024,
+      "player_a_name": "Alphonso Davies",
+      "player_b_name": "Tajon Buchanan",
+      "joi90": 0.19758068714211363,
+      "minutes": 320.1666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 15958,
+      "player_b_id": 31684,
+      "player_a_name": "Milan Borjan",
+      "player_b_name": "Atiba Hutchinson",
+      "joi90": 0.1563649500788228,
+      "minutes": 190.3,
+      "matches": 3
+    },
+    {
+      "player_a_id": 11846,
+      "player_b_id": 31684,
+      "player_a_name": "Steven de Sousa Vitoria",
+      "player_b_name": "Atiba Hutchinson",
+      "joi90": 0.09854834471886485,
+      "minutes": 190.3,
+      "matches": 3
+    },
+    {
+      "player_a_id": 11846,
+      "player_b_id": 12365,
+      "player_a_name": "Steven de Sousa Vitoria",
+      "player_b_name": "Alphonso Davies",
+      "joi90": 0.09271875000000004,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 23828,
+      "player_b_id": 44703,
+      "player_a_name": "Kamal Miller",
+      "player_b_name": "Alistair Johnston",
+      "joi90": 0.06515625000000001,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 9922,
+      "player_b_id": 12365,
+      "player_a_name": "David Junior Hoilett",
+      "player_b_name": "Alphonso Davies",
+      "joi90": 0.045615257336932835,
+      "minutes": 191.38333333333335,
+      "matches": 3
+    },
+    {
+      "player_a_id": 12365,
+      "player_b_id": 23828,
+      "player_a_name": "Alphonso Davies",
+      "player_b_name": "Kamal Miller",
+      "joi90": 0.03309375000000002,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 9922,
+      "player_b_id": 44703,
+      "player_a_name": "David Junior Hoilett",
+      "player_b_name": "Alistair Johnston",
+      "joi90": 0.029743969345989687,
+      "minutes": 191.38333333333335,
+      "matches": 3
+    },
+    {
+      "player_a_id": 9922,
+      "player_b_id": 24024,
+      "player_a_name": "David Junior Hoilett",
+      "player_b_name": "Tajon Buchanan",
+      "joi90": 0.02615823391099878,
+      "minutes": 191.38333333333335,
+      "matches": 3
+    },
+    {
+      "player_a_id": 12365,
+      "player_b_id": 133229,
+      "player_a_name": "Alphonso Davies",
+      "player_b_name": "Ismael Koné",
+      "joi90": 0.020774499027648587,
+      "minutes": 197.11666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 16120,
+      "player_b_id": 24024,
+      "player_a_name": "Richie Laryea",
+      "player_b_name": "Tajon Buchanan",
+      "joi90": -0.013175943022948989,
+      "minutes": 189.55,
+      "matches": 3
+    },
+    {
+      "player_a_id": 12365,
+      "player_b_id": 15958,
+      "player_a_name": "Alphonso Davies",
+      "player_b_name": "Milan Borjan",
+      "joi90": -0.015421875000000017,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 11846,
+      "player_b_id": 44703,
+      "player_a_name": "Steven de Sousa Vitoria",
+      "player_b_name": "Alistair Johnston",
+      "joi90": -0.04362500000000001,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 24024,
+      "player_b_id": 31684,
+      "player_a_name": "Tajon Buchanan",
+      "player_b_name": "Atiba Hutchinson",
+      "joi90": -0.04753021544929051,
+      "minutes": 190.3,
+      "matches": 3
+    },
+    {
+      "player_a_id": 12365,
+      "player_b_id": 44703,
+      "player_a_name": "Alphonso Davies",
+      "player_b_name": "Alistair Johnston",
+      "joi90": -0.08387499999999991,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 11846,
+      "player_b_id": 23640,
+      "player_a_name": "Steven de Sousa Vitoria",
+      "player_b_name": "Jonathan David",
+      "joi90": -0.15859828496042225,
+      "minutes": 252.66666666666669,
+      "matches": 3
+    },
+    {
+      "player_a_id": 12365,
+      "player_b_id": 23640,
+      "player_a_name": "Alphonso Davies",
+      "player_b_name": "Jonathan David",
+      "joi90": -0.18549142480211095,
+      "minutes": 252.66666666666669,
+      "matches": 3
+    },
+    {
+      "player_a_id": 23640,
+      "player_b_id": 31684,
+      "player_a_name": "Jonathan David",
+      "player_b_name": "Atiba Hutchinson",
+      "joi90": -0.18570333712884307,
+      "minutes": 190.28333333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 23828,
+      "player_b_id": 133229,
+      "player_a_name": "Kamal Miller",
+      "player_b_name": "Ismael Koné",
+      "joi90": -0.21773273019362482,
+      "minutes": 197.11666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 15958,
+      "player_b_id": 44703,
+      "player_a_name": "Milan Borjan",
+      "player_b_name": "Alistair Johnston",
+      "joi90": -0.22737500000000002,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 12365,
+      "player_b_id": 31684,
+      "player_a_name": "Alphonso Davies",
+      "player_b_name": "Atiba Hutchinson",
+      "joi90": -0.2277193904361535,
+      "minutes": 190.3,
+      "matches": 3
+    },
+    {
+      "player_a_id": 11846,
+      "player_b_id": 24024,
+      "player_a_name": "Steven de Sousa Vitoria",
+      "player_b_name": "Tajon Buchanan",
+      "joi90": -0.2289588755856325,
+      "minutes": 320.1666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 24024,
+      "player_b_id": 44703,
+      "player_a_name": "Tajon Buchanan",
+      "player_b_name": "Alistair Johnston",
+      "joi90": -0.27804659031754264,
+      "minutes": 320.1666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 11846,
+      "player_b_id": 16120,
+      "player_a_name": "Steven de Sousa Vitoria",
+      "player_b_name": "Richie Laryea",
+      "joi90": -0.27948430493273535,
+      "minutes": 189.55,
+      "matches": 3
+    },
+    {
+      "player_a_id": 16120,
+      "player_b_id": 23640,
+      "player_a_name": "Richie Laryea",
+      "player_b_name": "Jonathan David",
+      "joi90": -0.2863690319176998,
+      "minutes": 189.55,
+      "matches": 3
+    },
+    {
+      "player_a_id": 16120,
+      "player_b_id": 44703,
+      "player_a_name": "Richie Laryea",
+      "player_b_name": "Alistair Johnston",
+      "joi90": -0.3283896069638618,
+      "minutes": 189.55,
+      "matches": 3
+    },
+    {
+      "player_a_id": 23640,
+      "player_b_id": 23828,
+      "player_a_name": "Jonathan David",
+      "player_b_name": "Kamal Miller",
+      "joi90": -0.3381678759894459,
+      "minutes": 252.66666666666669,
+      "matches": 3
+    },
+    {
+      "player_a_id": 9922,
+      "player_b_id": 23828,
+      "player_a_name": "David Junior Hoilett",
+      "player_b_name": "Kamal Miller",
+      "joi90": -0.6735304362971349,
+      "minutes": 191.38333333333335,
+      "matches": 3
+    }
+  ],
   "coverage": {
     "matches": 3,
-    "unmatched_roster_names": []
+    "auto_derived_roster": true,
+    "roster_size": 26
   }
 }

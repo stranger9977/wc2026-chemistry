@@ -8,9 +8,518 @@
     "team_color": "#bd0029",
     "players": []
   },
-  "pairs": [],
+  "players_by_id": {
+    "37122": {
+      "name": "Yuki Soma",
+      "position": null,
+      "x": 81.36696428571429,
+      "y": 43.652704081632656,
+      "minutes": 81.81666666666666,
+      "matches": 4
+    },
+    "9411": {
+      "name": "Daichi Kamada",
+      "position": null,
+      "x": 57.6536779835391,
+      "y": 37.504063786008224,
+      "minutes": 382.7166666666667,
+      "matches": 4
+    },
+    "8776": {
+      "name": "Takumi Minamino",
+      "position": null,
+      "x": 59.9469362745098,
+      "y": 29.615833333333335,
+      "minutes": 118.14999999999999,
+      "matches": 4
+    },
+    "3530": {
+      "name": "Hiroki Sakai",
+      "position": null,
+      "x": 52.79151315789474,
+      "y": 40.03992105263158,
+      "minutes": 119.98333333333333,
+      "matches": 4
+    },
+    "38285": {
+      "name": "Ayase Ueda",
+      "position": null,
+      "x": 68.50125000000001,
+      "y": 31.07478571428571,
+      "minutes": 45.0,
+      "matches": 4
+    },
+    "100436": {
+      "name": "Shuto Machino",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "37208": {
+      "name": "Ao Tanaka",
+      "position": null,
+      "x": 54.58495,
+      "y": 30.734299999999998,
+      "minutes": 172.13333333333333,
+      "matches": 4
+    },
+    "37209": {
+      "name": "Miki Yamane",
+      "position": null,
+      "x": 62.18541666666667,
+      "y": 7.654722222222221,
+      "minutes": 61.56666666666667,
+      "matches": 4
+    },
+    "29595": {
+      "name": "Ko Itakura",
+      "position": null,
+      "x": 51.291041666666665,
+      "y": 26.942166666666665,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "37211": {
+      "name": "Kaoru Mitoma",
+      "position": null,
+      "x": 59.85617647058824,
+      "y": 49.516999999999996,
+      "minutes": 253.6,
+      "matches": 4
+    },
+    "37215": {
+      "name": "Shogo Taniguchi",
+      "position": null,
+      "x": 40.57563622754491,
+      "y": 50.97836826347306,
+      "minutes": 240.0,
+      "matches": 4
+    },
+    "30628": {
+      "name": "Daizen Maeda",
+      "position": null,
+      "x": 63.36233974358974,
+      "y": 34.4675,
+      "minutes": 181.16666666666666,
+      "matches": 4
+    },
+    "3300": {
+      "name": "Maya Yoshida",
+      "position": null,
+      "x": 46.28538925438597,
+      "y": 35.72926535087719,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    "37221": {
+      "name": "Hidemasa Morita",
+      "position": null,
+      "x": 53.473821884984034,
+      "y": 39.72908146964856,
+      "minutes": 360.0,
+      "matches": 4
+    },
+    "23527": {
+      "name": "Junya Ito",
+      "position": null,
+      "x": 56.338772123893804,
+      "y": 21.262411504424776,
+      "minutes": 413.81666666666666,
+      "matches": 4
+    },
+    "95272": {
+      "name": "Hiroki Ito",
+      "position": null,
+      "x": 55.723684210526315,
+      "y": 55.970263157894735,
+      "minutes": 75.0,
+      "matches": 4
+    },
+    "23721": {
+      "name": "Wataru Endo",
+      "position": null,
+      "x": 55.207836294416246,
+      "y": 30.70010152284264,
+      "minutes": 393.5,
+      "matches": 4
+    },
+    "8361": {
+      "name": "Ritsu Doan",
+      "position": null,
+      "x": 64.76935606060606,
+      "y": 21.689166666666665,
+      "minutes": 276.7,
+      "matches": 4
+    },
+    "3175": {
+      "name": "Eiji Kawashima",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "23730": {
+      "name": "Takehiro Tomiyasu",
+      "position": null,
+      "x": 51.97952586206897,
+      "y": 13.533074712643677,
+      "minutes": 246.18333333333334,
+      "matches": 4
+    },
+    "31090": {
+      "name": "Takefusa Kubo",
+      "position": null,
+      "x": 53.3625,
+      "y": 31.71714285714286,
+      "minutes": 90.0,
+      "matches": 3
+    },
+    "8949": {
+      "name": "Takuma Asano",
+      "position": null,
+      "x": 57.712426470588234,
+      "y": 32.018499999999996,
+      "minutes": 253.83333333333331,
+      "matches": 4
+    },
+    "29366": {
+      "name": "Daniel Schmidt",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "25719": {
+      "name": "Shūichi Gonda",
+      "position": null,
+      "x": 38.83802631578948,
+      "y": 33.223368421052626,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    "5690": {
+      "name": "Yuto Nagatomo",
+      "position": null,
+      "x": 57.580778301886795,
+      "y": 54.44650943396226,
+      "minutes": 209.83333333333331,
+      "matches": 4
+    },
+    "5693": {
+      "name": "Gaku Shibasaki",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    }
+  },
+  "pairs": [
+    {
+      "player_a_id": 5690,
+      "player_b_id": 9411,
+      "player_a_name": "Yuto Nagatomo",
+      "player_b_name": "Daichi Kamada",
+      "joi90": 1.0260107227958697,
+      "minutes": 209.83333333333331,
+      "matches": 4
+    },
+    {
+      "player_a_id": 9411,
+      "player_b_id": 37221,
+      "player_a_name": "Daichi Kamada",
+      "player_b_name": "Hidemasa Morita",
+      "joi90": 0.9942793250015857,
+      "minutes": 262.7166666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 8361,
+      "player_b_id": 23721,
+      "player_a_name": "Ritsu Doan",
+      "player_b_name": "Wataru Endo",
+      "joi90": 0.8429412493802678,
+      "minutes": 201.7,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3300,
+      "player_b_id": 23721,
+      "player_a_name": "Maya Yoshida",
+      "player_b_name": "Wataru Endo",
+      "joi90": 0.6156250000000001,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3300,
+      "player_b_id": 5690,
+      "player_a_name": "Maya Yoshida",
+      "player_b_name": "Yuto Nagatomo",
+      "joi90": 0.527615170770453,
+      "minutes": 209.83333333333331,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3300,
+      "player_b_id": 29595,
+      "player_a_name": "Maya Yoshida",
+      "player_b_name": "Ko Itakura",
+      "joi90": 0.5274687500000004,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3300,
+      "player_b_id": 25719,
+      "player_a_name": "Maya Yoshida",
+      "player_b_name": "Shūichi Gonda",
+      "joi90": 0.510984375,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 23721,
+      "player_b_id": 37221,
+      "player_a_name": "Wataru Endo",
+      "player_b_name": "Hidemasa Morita",
+      "joi90": 0.4976718749999999,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 9411,
+      "player_b_id": 23721,
+      "player_a_name": "Daichi Kamada",
+      "player_b_name": "Wataru Endo",
+      "joi90": 0.4954085696081555,
+      "minutes": 313.9,
+      "matches": 3
+    },
+    {
+      "player_a_id": 23527,
+      "player_b_id": 37221,
+      "player_a_name": "Junya Ito",
+      "player_b_name": "Hidemasa Morita",
+      "joi90": 0.49408361222984853,
+      "minutes": 293.81666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 8361,
+      "player_b_id": 37221,
+      "player_a_name": "Ritsu Doan",
+      "player_b_name": "Hidemasa Morita",
+      "joi90": 0.4430058651026394,
+      "minutes": 227.33333333333334,
+      "matches": 3
+    },
+    {
+      "player_a_id": 8949,
+      "player_b_id": 37221,
+      "player_a_name": "Takuma Asano",
+      "player_b_name": "Hidemasa Morita",
+      "joi90": 0.405507918453058,
+      "minutes": 190.48333333333335,
+      "matches": 3
+    },
+    {
+      "player_a_id": 23527,
+      "player_b_id": 29595,
+      "player_a_name": "Junya Ito",
+      "player_b_name": "Ko Itakura",
+      "joi90": 0.360186340688638,
+      "minutes": 293.81666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 25719,
+      "player_b_id": 29595,
+      "player_a_name": "Shūichi Gonda",
+      "player_b_name": "Ko Itakura",
+      "joi90": 0.35518750000000004,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 8949,
+      "player_b_id": 23721,
+      "player_a_name": "Takuma Asano",
+      "player_b_name": "Wataru Endo",
+      "joi90": 0.33397836127266495,
+      "minutes": 194.86666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3300,
+      "player_b_id": 23730,
+      "player_a_name": "Maya Yoshida",
+      "player_b_name": "Takehiro Tomiyasu",
+      "joi90": 0.2988461538461539,
+      "minutes": 195.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 29595,
+      "player_b_id": 37221,
+      "player_a_name": "Ko Itakura",
+      "player_b_name": "Hidemasa Morita",
+      "joi90": 0.24674999999999997,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 23730,
+      "player_b_id": 25719,
+      "player_a_name": "Takehiro Tomiyasu",
+      "player_b_name": "Shūichi Gonda",
+      "joi90": 0.2326730769230769,
+      "minutes": 195.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 37211,
+      "player_b_id": 37221,
+      "player_a_name": "Kaoru Mitoma",
+      "player_b_name": "Hidemasa Morita",
+      "joi90": 0.22429003418353927,
+      "minutes": 190.15,
+      "matches": 3
+    },
+    {
+      "player_a_id": 37215,
+      "player_b_id": 37221,
+      "player_a_name": "Shogo Taniguchi",
+      "player_b_name": "Hidemasa Morita",
+      "joi90": 0.21065624999999996,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 3300,
+      "player_b_id": 23527,
+      "player_a_name": "Maya Yoshida",
+      "player_b_name": "Junya Ito",
+      "joi90": 0.20770312500000013,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 25719,
+      "player_b_id": 37221,
+      "player_a_name": "Shūichi Gonda",
+      "player_b_name": "Hidemasa Morita",
+      "joi90": 0.19600000000000004,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 23721,
+      "player_b_id": 29595,
+      "player_a_name": "Wataru Endo",
+      "player_b_name": "Ko Itakura",
+      "joi90": 0.19237500000000013,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 9411,
+      "player_b_id": 23527,
+      "player_a_name": "Daichi Kamada",
+      "player_b_name": "Junya Ito",
+      "joi90": 0.1774576137320977,
+      "minutes": 316.5333333333333,
+      "matches": 4
+    },
+    {
+      "player_a_id": 23721,
+      "player_b_id": 23730,
+      "player_a_name": "Wataru Endo",
+      "player_b_name": "Takehiro Tomiyasu",
+      "joi90": 0.1389230769230769,
+      "minutes": 195.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 23527,
+      "player_b_id": 23721,
+      "player_a_name": "Junya Ito",
+      "player_b_name": "Wataru Endo",
+      "joi90": 0.1373432979749276,
+      "minutes": 293.81666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3300,
+      "player_b_id": 37215,
+      "player_a_name": "Maya Yoshida",
+      "player_b_name": "Shogo Taniguchi",
+      "joi90": 0.11751562499999992,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 23721,
+      "player_b_id": 25719,
+      "player_a_name": "Wataru Endo",
+      "player_b_name": "Shūichi Gonda",
+      "joi90": 0.07181249999999999,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3300,
+      "player_b_id": 9411,
+      "player_a_name": "Maya Yoshida",
+      "player_b_name": "Daichi Kamada",
+      "joi90": 0.022193310978530716,
+      "minutes": 382.7166666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 9411,
+      "player_b_id": 29595,
+      "player_a_name": "Daichi Kamada",
+      "player_b_name": "Ko Itakura",
+      "joi90": 0.0029507798585999825,
+      "minutes": 308.81666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3300,
+      "player_b_id": 37221,
+      "player_a_name": "Maya Yoshida",
+      "player_b_name": "Hidemasa Morita",
+      "joi90": -0.0024062500000001166,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 8949,
+      "player_b_id": 37211,
+      "player_a_name": "Takuma Asano",
+      "player_b_name": "Kaoru Mitoma",
+      "joi90": -0.025414442259061518,
+      "minutes": 237.26666666666665,
+      "matches": 4
+    },
+    {
+      "player_a_id": 25719,
+      "player_b_id": 37215,
+      "player_a_name": "Shūichi Gonda",
+      "player_b_name": "Shogo Taniguchi",
+      "joi90": -0.23821875000000003,
+      "minutes": 240.0,
+      "matches": 2
+    }
+  ],
   "coverage": {
     "matches": 4,
-    "unmatched_roster_names": []
+    "auto_derived_roster": true,
+    "roster_size": 26
   }
 }

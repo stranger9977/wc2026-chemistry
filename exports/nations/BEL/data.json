@@ -8,9 +8,455 @@
     "team_color": "#ed2939",
     "players": []
   },
-  "pairs": [],
+  "players_by_id": {
+    "5632": {
+      "name": "Thorgan Hazard",
+      "position": null,
+      "x": 58.944184782608694,
+      "y": 55.54823913043478,
+      "minutes": 135.96666666666667,
+      "matches": 3
+    },
+    "3457": {
+      "name": "Michy Batshuayi Tunga",
+      "position": null,
+      "x": 65.97269736842105,
+      "y": 30.711842105263155,
+      "minutes": 151.9,
+      "matches": 3
+    },
+    "5633": {
+      "name": "Yannick Ferreira Carrasco",
+      "position": null,
+      "x": 35.88359375,
+      "y": 26.0471875,
+      "minutes": 116.5,
+      "matches": 3
+    },
+    "3077": {
+      "name": "Jan Vertonghen",
+      "position": null,
+      "x": 44.63244863013699,
+      "y": 40.0986252446184,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "43913": {
+      "name": "Arthur Theate",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "5642": {
+      "name": "Axel Witsel",
+      "position": null,
+      "x": 49.72857658959538,
+      "y": 36.310722543352604,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "2954": {
+      "name": "Youri Tielemans",
+      "position": null,
+      "x": 46.96433823529412,
+      "y": 30.69178571428571,
+      "minutes": 153.71666666666667,
+      "matches": 3
+    },
+    "6989": {
+      "name": "Timothy Castagne",
+      "position": null,
+      "x": 49.838541666666664,
+      "y": 34.30391927083333,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "114832": {
+      "name": "Zeno Debast",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "3089": {
+      "name": "Kevin De Bruyne",
+      "position": null,
+      "x": 53.71504310344828,
+      "y": 34.715172413793105,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "16275": {
+      "name": "Ikoma Loïs Openda",
+      "position": null,
+      "x": 70.62708333333335,
+      "y": 24.80111111111111,
+      "minutes": 42.11666666666666,
+      "matches": 3
+    },
+    "3539": {
+      "name": "Simon Mignolet",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "8854": {
+      "name": "Wout Faes",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "16281": {
+      "name": "Hans Vanaken",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "3289": {
+      "name": "Romelu Lukaku Menama",
+      "position": null,
+      "x": 42.512499999999996,
+      "y": 34.68910714285715,
+      "minutes": 114.3,
+      "matches": 3
+    },
+    "48347": {
+      "name": "Amadou Onana",
+      "position": null,
+      "x": 52.208035714285714,
+      "y": 30.57426870748299,
+      "minutes": 134.66666666666666,
+      "matches": 2
+    },
+    "23650": {
+      "name": "Jeremy Doku",
+      "position": null,
+      "x": 31.27708333333333,
+      "y": 16.479880952380952,
+      "minutes": 48.5,
+      "matches": 3
+    },
+    "20005": {
+      "name": "Toby Alderweireld",
+      "position": null,
+      "x": 46.50822740112994,
+      "y": 34.14654896421846,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "3621": {
+      "name": "Eden Hazard",
+      "position": null,
+      "x": 59.21332236842106,
+      "y": 41.80490131578947,
+      "minutes": 154.85000000000002,
+      "matches": 3
+    },
+    "3176": {
+      "name": "Thomas Meunier",
+      "position": null,
+      "x": 52.02863869863013,
+      "y": 32.965445205479455,
+      "minutes": 242.31666666666666,
+      "matches": 3
+    },
+    "16559": {
+      "name": "Leandro Trossard",
+      "position": null,
+      "x": 56.51516472868217,
+      "y": 39.72234496124031,
+      "minutes": 162.21666666666667,
+      "matches": 3
+    },
+    "32688": {
+      "name": "Charles De Ketelaere",
+      "position": null,
+      "x": 42.455,
+      "y": 19.090999999999998,
+      "minutes": 45.983333333333334,
+      "matches": 3
+    },
+    "8240": {
+      "name": "Koen Casteels",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "3509": {
+      "name": "Thibaut Courtois",
+      "position": null,
+      "x": 34.88143115942029,
+      "y": 33.24547101449275,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "6331": {
+      "name": "Leander Dendoncker",
+      "position": null,
+      "x": 40.59828056768559,
+      "y": 27.695338427947597,
+      "minutes": 191.61666666666667,
+      "matches": 3
+    },
+    "5630": {
+      "name": "Dries Mertens",
+      "position": null,
+      "x": 55.6875,
+      "y": 29.933357142857144,
+      "minutes": 105.35,
+      "matches": 3
+    }
+  },
+  "pairs": [
+    {
+      "player_a_id": 3176,
+      "player_b_id": 20005,
+      "player_a_name": "Thomas Meunier",
+      "player_b_name": "Toby Alderweireld",
+      "joi90": 0.872871242864021,
+      "minutes": 242.31666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3089,
+      "player_b_id": 3176,
+      "player_a_name": "Kevin De Bruyne",
+      "player_b_name": "Thomas Meunier",
+      "joi90": 0.5580507600247608,
+      "minutes": 242.31666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3077,
+      "player_b_id": 20005,
+      "player_a_name": "Jan Vertonghen",
+      "player_b_name": "Toby Alderweireld",
+      "joi90": 0.5098125,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 6989,
+      "player_b_id": 20005,
+      "player_a_name": "Timothy Castagne",
+      "player_b_name": "Toby Alderweireld",
+      "joi90": 0.4521874999999999,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3089,
+      "player_b_id": 5642,
+      "player_a_name": "Kevin De Bruyne",
+      "player_b_name": "Axel Witsel",
+      "joi90": 0.445875,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3176,
+      "player_b_id": 5642,
+      "player_a_name": "Thomas Meunier",
+      "player_b_name": "Axel Witsel",
+      "joi90": 0.42118440057775647,
+      "minutes": 242.31666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3077,
+      "player_b_id": 6331,
+      "player_a_name": "Jan Vertonghen",
+      "player_b_name": "Leander Dendoncker",
+      "joi90": 0.3424023658345657,
+      "minutes": 191.61666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 3077,
+      "player_b_id": 3509,
+      "player_a_name": "Jan Vertonghen",
+      "player_b_name": "Thibaut Courtois",
+      "joi90": 0.29200000000000004,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3509,
+      "player_b_id": 20005,
+      "player_a_name": "Thibaut Courtois",
+      "player_b_name": "Toby Alderweireld",
+      "joi90": 0.28021874999999985,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3077,
+      "player_b_id": 3089,
+      "player_a_name": "Jan Vertonghen",
+      "player_b_name": "Kevin De Bruyne",
+      "joi90": 0.25209375,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3077,
+      "player_b_id": 6989,
+      "player_a_name": "Jan Vertonghen",
+      "player_b_name": "Timothy Castagne",
+      "joi90": 0.2136875000000001,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3077,
+      "player_b_id": 3176,
+      "player_a_name": "Jan Vertonghen",
+      "player_b_name": "Thomas Meunier",
+      "joi90": 0.20808515028543917,
+      "minutes": 242.31666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3089,
+      "player_b_id": 20005,
+      "player_a_name": "Kevin De Bruyne",
+      "player_b_name": "Toby Alderweireld",
+      "joi90": 0.20690624999999999,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3089,
+      "player_b_id": 6989,
+      "player_a_name": "Kevin De Bruyne",
+      "player_b_name": "Timothy Castagne",
+      "joi90": 0.1958124999999999,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3509,
+      "player_b_id": 6989,
+      "player_a_name": "Thibaut Courtois",
+      "player_b_name": "Timothy Castagne",
+      "joi90": 0.18578125000000004,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5642,
+      "player_b_id": 6331,
+      "player_a_name": "Axel Witsel",
+      "player_b_name": "Leander Dendoncker",
+      "joi90": 0.054366356440810636,
+      "minutes": 191.61666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 3089,
+      "player_b_id": 6331,
+      "player_a_name": "Kevin De Bruyne",
+      "player_b_name": "Leander Dendoncker",
+      "joi90": 0.0523114725580587,
+      "minutes": 191.61666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 3089,
+      "player_b_id": 3509,
+      "player_a_name": "Kevin De Bruyne",
+      "player_b_name": "Thibaut Courtois",
+      "joi90": 0.04921874999999999,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 6331,
+      "player_b_id": 6989,
+      "player_a_name": "Leander Dendoncker",
+      "player_b_name": "Timothy Castagne",
+      "joi90": 0.04009959119770367,
+      "minutes": 191.61666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 6331,
+      "player_b_id": 20005,
+      "player_a_name": "Leander Dendoncker",
+      "player_b_name": "Toby Alderweireld",
+      "joi90": 0.03094068017743765,
+      "minutes": 191.61666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 3176,
+      "player_b_id": 3509,
+      "player_a_name": "Thomas Meunier",
+      "player_b_name": "Thibaut Courtois",
+      "joi90": 0.00831040649288133,
+      "minutes": 242.31666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5642,
+      "player_b_id": 20005,
+      "player_a_name": "Axel Witsel",
+      "player_b_name": "Toby Alderweireld",
+      "joi90": -0.007781250000000038,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3077,
+      "player_b_id": 5642,
+      "player_a_name": "Jan Vertonghen",
+      "player_b_name": "Axel Witsel",
+      "joi90": -0.03115624999999989,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5642,
+      "player_b_id": 6989,
+      "player_a_name": "Axel Witsel",
+      "player_b_name": "Timothy Castagne",
+      "joi90": -0.08143750000000013,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3509,
+      "player_b_id": 5642,
+      "player_a_name": "Thibaut Courtois",
+      "player_b_name": "Axel Witsel",
+      "joi90": -0.10992187499999999,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 3509,
+      "player_b_id": 6331,
+      "player_a_name": "Thibaut Courtois",
+      "player_b_name": "Leander Dendoncker",
+      "joi90": -0.4132665043054711,
+      "minutes": 191.61666666666667,
+      "matches": 2
+    }
+  ],
   "coverage": {
     "matches": 3,
-    "unmatched_roster_names": []
+    "auto_derived_roster": true,
+    "roster_size": 26
   }
 }

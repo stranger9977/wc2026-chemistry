@@ -8,9 +8,519 @@
     "team_color": "#5db8de",
     "players": []
   },
-  "pairs": [],
+  "players_by_id": {
+    "5248": {
+      "name": "José Martín Cáceres Silva",
+      "position": null,
+      "x": 45.38553082191781,
+      "y": 14.22876712328767,
+      "minutes": 120.0,
+      "matches": 3
+    },
+    "5249": {
+      "name": "Diego Roberto Godín Leal",
+      "position": null,
+      "x": 49.352734375000004,
+      "y": 28.53122395833333,
+      "minutes": 181.71666666666667,
+      "matches": 3
+    },
+    "7104": {
+      "name": "Mathías Olivera Miramontes",
+      "position": null,
+      "x": 53.68254151291513,
+      "y": 27.295821033210334,
+      "minutes": 283.4666666666667,
+      "matches": 3
+    },
+    "36288": {
+      "name": "Facundo Pellistri Rebollo",
+      "position": null,
+      "x": 54.549949999999995,
+      "y": 33.16665999999999,
+      "minutes": 211.1,
+      "matches": 3
+    },
+    "5255": {
+      "name": "Matías Vecino Falero",
+      "position": null,
+      "x": 55.099583333333335,
+      "y": 37.45464285714286,
+      "minutes": 225.63333333333333,
+      "matches": 3
+    },
+    "5258": {
+      "name": "Giorgian Daniel De Arrascaeta Benedetti",
+      "position": null,
+      "x": 40.215504807692305,
+      "y": 27.149326923076924,
+      "minutes": 137.96666666666667,
+      "matches": 3
+    },
+    "5259": {
+      "name": "José María Giménez de Vargas",
+      "position": null,
+      "x": 57.43369565217392,
+      "y": 48.776009316770185,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "5260": {
+      "name": "Rodrigo Bentancur Colmán",
+      "position": null,
+      "x": 50.36566926345609,
+      "y": 31.898718130311615,
+      "minutes": 273.75,
+      "matches": 3
+    },
+    "33099": {
+      "name": "José Luis Rodríguez Bebanz",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "5264": {
+      "name": "Guillermo Varela Olivera",
+      "position": null,
+      "x": 54.97325,
+      "y": 58.96741428571429,
+      "minutes": 272.6333333333333,
+      "matches": 3
+    },
+    "5266": {
+      "name": "Lucas Torreira Di Pascua",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "5267": {
+      "name": "Néstor Fernando Muslera Micol",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "26323": {
+      "name": "Carlos Sebastián Sosa Silva",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "6297": {
+      "name": "Maximiliano Gómez González",
+      "position": null,
+      "x": 27.431249999999995,
+      "y": 35.4535,
+      "minutes": 88.56666666666666,
+      "matches": 3
+    },
+    "6300": {
+      "name": "Sebastián Coates Nión",
+      "position": null,
+      "x": 68.64682017543859,
+      "y": 23.127207602339183,
+      "minutes": 240.0,
+      "matches": 3
+    },
+    "32478": {
+      "name": "Darwin Gabriel Núñez Ribeiro",
+      "position": null,
+      "x": 45.21220238095238,
+      "y": 35.529132653061225,
+      "minutes": 271.43333333333334,
+      "matches": 3
+    },
+    "4319": {
+      "name": "Edinson Roberto Cavani Gómez",
+      "position": null,
+      "x": 50.77010135135135,
+      "y": 32.16560810810811,
+      "minutes": 184.16666666666666,
+      "matches": 3
+    },
+    "36710": {
+      "name": "Sergio Rochet Álvarez",
+      "position": null,
+      "x": 69.4462890625,
+      "y": 34.34796875,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "44649": {
+      "name": "Facundo Daniel Torres Pérez",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "34476": {
+      "name": "Matías Nicolás Viña Susperreguy",
+      "position": null,
+      "x": 57.793749999999996,
+      "y": 30.368841463414633,
+      "minutes": 76.53333333333333,
+      "matches": 3
+    },
+    "36659": {
+      "name": "Manuel Ugarte Ribeiro",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "6773": {
+      "name": "Federico Santiago Valverde Dipetta",
+      "position": null,
+      "x": 53.58694444444444,
+      "y": 38.471944444444446,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "28729": {
+      "name": "Diego Nicolás De La Cruz Arcosa",
+      "position": null,
+      "x": 53.580288461538466,
+      "y": 45.378557692307695,
+      "minutes": 96.71666666666667,
+      "matches": 3
+    },
+    "36666": {
+      "name": "Agustín Canobbio Graviz",
+      "position": null,
+      "x": 56.02734375,
+      "y": 51.478125,
+      "minutes": 40.483333333333334,
+      "matches": 3
+    },
+    "5246": {
+      "name": "Luis Alberto Suárez Díaz",
+      "position": null,
+      "x": 40.46580056179775,
+      "y": 29.918567415730337,
+      "minutes": 175.83333333333334,
+      "matches": 3
+    }
+  },
+  "pairs": [
+    {
+      "player_a_id": 5249,
+      "player_b_id": 36710,
+      "player_a_name": "Diego Roberto Godín Leal",
+      "player_b_name": "Sergio Rochet Álvarez",
+      "joi90": 1.1999312115931395,
+      "minutes": 181.71666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 6300,
+      "player_b_id": 7104,
+      "player_a_name": "Sebastián Coates Nión",
+      "player_b_name": "Mathías Olivera Miramontes",
+      "joi90": 0.6851981967346276,
+      "minutes": 205.18333333333334,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5249,
+      "player_b_id": 5259,
+      "player_a_name": "Diego Roberto Godín Leal",
+      "player_b_name": "José María Giménez de Vargas",
+      "joi90": 0.6312299367146655,
+      "minutes": 181.71666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 6300,
+      "player_b_id": 6773,
+      "player_a_name": "Sebastián Coates Nión",
+      "player_b_name": "Federico Santiago Valverde Dipetta",
+      "joi90": 0.5635781249999998,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5249,
+      "player_b_id": 32478,
+      "player_a_name": "Diego Roberto Godín Leal",
+      "player_b_name": "Darwin Gabriel Núñez Ribeiro",
+      "joi90": 0.49335733284417144,
+      "minutes": 181.71666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5260,
+      "player_b_id": 7104,
+      "player_a_name": "Rodrigo Bentancur Colmán",
+      "player_b_name": "Mathías Olivera Miramontes",
+      "joi90": 0.4465963829967041,
+      "minutes": 197.21666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 6773,
+      "player_b_id": 7104,
+      "player_a_name": "Federico Santiago Valverde Dipetta",
+      "player_b_name": "Mathías Olivera Miramontes",
+      "joi90": 0.42381967309501395,
+      "minutes": 283.4666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5259,
+      "player_b_id": 36710,
+      "player_a_name": "José María Giménez de Vargas",
+      "player_b_name": "Sergio Rochet Álvarez",
+      "joi90": 0.4233437500000002,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5255,
+      "player_b_id": 6773,
+      "player_a_name": "Matías Vecino Falero",
+      "player_b_name": "Federico Santiago Valverde Dipetta",
+      "joi90": 0.3863624612202689,
+      "minutes": 225.63333333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5259,
+      "player_b_id": 5260,
+      "player_a_name": "José María Giménez de Vargas",
+      "player_b_name": "Rodrigo Bentancur Colmán",
+      "joi90": 0.3758219178082192,
+      "minutes": 273.75,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5264,
+      "player_b_id": 36710,
+      "player_a_name": "Guillermo Varela Olivera",
+      "player_b_name": "Sergio Rochet Álvarez",
+      "joi90": 0.287953125,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5255,
+      "player_b_id": 7104,
+      "player_a_name": "Matías Vecino Falero",
+      "player_b_name": "Mathías Olivera Miramontes",
+      "joi90": 0.27557430935145516,
+      "minutes": 225.63333333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 7104,
+      "player_b_id": 32478,
+      "player_a_name": "Mathías Olivera Miramontes",
+      "player_b_name": "Darwin Gabriel Núñez Ribeiro",
+      "joi90": 0.26626822897772623,
+      "minutes": 229.71666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5259,
+      "player_b_id": 7104,
+      "player_a_name": "José María Giménez de Vargas",
+      "player_b_name": "Mathías Olivera Miramontes",
+      "joi90": 0.23093985183443094,
+      "minutes": 283.4666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5259,
+      "player_b_id": 36288,
+      "player_a_name": "José María Giménez de Vargas",
+      "player_b_name": "Facundo Pellistri Rebollo",
+      "joi90": 0.22734486025580297,
+      "minutes": 211.1,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5260,
+      "player_b_id": 6773,
+      "player_a_name": "Rodrigo Bentancur Colmán",
+      "player_b_name": "Federico Santiago Valverde Dipetta",
+      "joi90": 0.19245205479452046,
+      "minutes": 273.75,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5260,
+      "player_b_id": 36710,
+      "player_a_name": "Rodrigo Bentancur Colmán",
+      "player_b_name": "Sergio Rochet Álvarez",
+      "joi90": 0.15253124999999998,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5259,
+      "player_b_id": 5264,
+      "player_a_name": "José María Giménez de Vargas",
+      "player_b_name": "Guillermo Varela Olivera",
+      "joi90": 0.15057311407262516,
+      "minutes": 272.6333333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 6300,
+      "player_b_id": 36710,
+      "player_a_name": "Sebastián Coates Nión",
+      "player_b_name": "Sergio Rochet Álvarez",
+      "joi90": 0.14329687499999993,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5259,
+      "player_b_id": 6773,
+      "player_a_name": "José María Giménez de Vargas",
+      "player_b_name": "Federico Santiago Valverde Dipetta",
+      "joi90": 0.06509374999999998,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5255,
+      "player_b_id": 5259,
+      "player_a_name": "Matías Vecino Falero",
+      "player_b_name": "José María Giménez de Vargas",
+      "joi90": 0.03151130152164283,
+      "minutes": 225.63333333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 6773,
+      "player_b_id": 36710,
+      "player_a_name": "Federico Santiago Valverde Dipetta",
+      "player_b_name": "Sergio Rochet Álvarez",
+      "joi90": 0.02920312499999999,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5255,
+      "player_b_id": 36710,
+      "player_a_name": "Matías Vecino Falero",
+      "player_b_name": "Sergio Rochet Álvarez",
+      "joi90": 0.022835721672329726,
+      "minutes": 225.63333333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5255,
+      "player_b_id": 32478,
+      "player_a_name": "Matías Vecino Falero",
+      "player_b_name": "Darwin Gabriel Núñez Ribeiro",
+      "joi90": 0.012262793416674094,
+      "minutes": 185.31666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5260,
+      "player_b_id": 5264,
+      "player_a_name": "Rodrigo Bentancur Colmán",
+      "player_b_name": "Guillermo Varela Olivera",
+      "joi90": 0.01195117589197915,
+      "minutes": 186.38333333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5259,
+      "player_b_id": 6300,
+      "player_a_name": "José María Giménez de Vargas",
+      "player_b_name": "Sebastián Coates Nión",
+      "joi90": 0.005109374999999979,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5260,
+      "player_b_id": 32478,
+      "player_a_name": "Rodrigo Bentancur Colmán",
+      "player_b_name": "Darwin Gabriel Núñez Ribeiro",
+      "joi90": -0.08635809312638577,
+      "minutes": 225.5,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5249,
+      "player_b_id": 6773,
+      "player_a_name": "Diego Roberto Godín Leal",
+      "player_b_name": "Federico Santiago Valverde Dipetta",
+      "joi90": -0.09218334403375222,
+      "minutes": 181.71666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5249,
+      "player_b_id": 5260,
+      "player_a_name": "Diego Roberto Godín Leal",
+      "player_b_name": "Rodrigo Bentancur Colmán",
+      "joi90": -0.09534073190864911,
+      "minutes": 181.71666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 7104,
+      "player_b_id": 36710,
+      "player_a_name": "Mathías Olivera Miramontes",
+      "player_b_name": "Sergio Rochet Álvarez",
+      "joi90": -0.16870887823897324,
+      "minutes": 205.18333333333334,
+      "matches": 2
+    },
+    {
+      "player_a_id": 4319,
+      "player_b_id": 6773,
+      "player_a_name": "Edinson Roberto Cavani Gómez",
+      "player_b_name": "Federico Santiago Valverde Dipetta",
+      "joi90": -0.17348416289592766,
+      "minutes": 184.16666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 6773,
+      "player_b_id": 36288,
+      "player_a_name": "Federico Santiago Valverde Dipetta",
+      "player_b_name": "Facundo Pellistri Rebollo",
+      "joi90": -0.21199668403600186,
+      "minutes": 211.1,
+      "matches": 3
+    },
+    {
+      "player_a_id": 6773,
+      "player_b_id": 32478,
+      "player_a_name": "Federico Santiago Valverde Dipetta",
+      "player_b_name": "Darwin Gabriel Núñez Ribeiro",
+      "joi90": -0.5349103524499571,
+      "minutes": 271.43333333333334,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5264,
+      "player_b_id": 6773,
+      "player_a_name": "Guillermo Varela Olivera",
+      "player_b_name": "Federico Santiago Valverde Dipetta",
+      "joi90": -0.8498777356645068,
+      "minutes": 272.6333333333333,
+      "matches": 3
+    }
+  ],
   "coverage": {
     "matches": 3,
-    "unmatched_roster_names": []
+    "auto_derived_roster": true,
+    "roster_size": 25
   }
 }

@@ -8,9 +8,644 @@
     "team_color": "#aa151b",
     "players": []
   },
-  "pairs": [],
+  "players_by_id": {
+    "6720": {
+      "name": "Pablo Sarabia García",
+      "position": null,
+      "x": 12.702083333333327,
+      "y": 55.396388888888886,
+      "minutes": 2.0999999999999943,
+      "matches": 4
+    },
+    "4353": {
+      "name": "Aymeric Laporte",
+      "position": null,
+      "x": 44.22762637028014,
+      "y": 38.61334652862363,
+      "minutes": 360.0,
+      "matches": 4
+    },
+    "5199": {
+      "name": "Jorge Resurrección Merodio",
+      "position": null,
+      "x": 53.84375,
+      "y": 34.4775,
+      "minutes": 111.36666666666667,
+      "matches": 4
+    },
+    "31953": {
+      "name": "Eric García Martret",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "5203": {
+      "name": "Sergio Busquets i Burgos",
+      "position": null,
+      "x": 48.85998280943026,
+      "y": 35.350898821218074,
+      "minutes": 423.4,
+      "matches": 4
+    },
+    "16532": {
+      "name": "Daniel Olmo Carvajal",
+      "position": null,
+      "x": 53.70477150537634,
+      "y": 38.73888709677419,
+      "minutes": 457.35,
+      "matches": 4
+    },
+    "3477": {
+      "name": "Álvaro Borja Morata Martín",
+      "position": null,
+      "x": 52.41673387096775,
+      "y": 31.934865591397852,
+      "minutes": 243.9,
+      "matches": 4
+    },
+    "30486": {
+      "name": "Pedro González López",
+      "position": null,
+      "x": 47.26758083140877,
+      "y": 29.795444572748266,
+      "minutes": 416.51666666666665,
+      "matches": 4
+    },
+    "5719": {
+      "name": "Marco Asensio Willemsen",
+      "position": null,
+      "x": 52.06166825095057,
+      "y": 38.21493346007605,
+      "minutes": 259.95,
+      "matches": 4
+    },
+    "5721": {
+      "name": "Daniel Carvajal Ramos",
+      "position": null,
+      "x": 40.88188291139241,
+      "y": 30.490073839662447,
+      "minutes": 195.0,
+      "matches": 4
+    },
+    "5211": {
+      "name": "Jordi Alba Ramos",
+      "position": null,
+      "x": 47.361467391304345,
+      "y": 36.0741231884058,
+      "minutes": 293.75,
+      "matches": 4
+    },
+    "6748": {
+      "name": "Ferrán Torres García",
+      "position": null,
+      "x": 49.33091960352423,
+      "y": 38.04798458149779,
+      "minutes": 248.78333333333333,
+      "matches": 4
+    },
+    "68574": {
+      "name": "Nicholas Williams Arthuer",
+      "position": null,
+      "x": 42.29549581005587,
+      "y": 44.118561452513966,
+      "minutes": 206.98333333333335,
+      "matches": 4
+    },
+    "4127": {
+      "name": "David Raya Martin",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "30756": {
+      "name": "Anssumane Fati",
+      "position": null,
+      "x": 28.603448275862064,
+      "y": 12.688448275862068,
+      "minutes": 75.43333333333334,
+      "matches": 4
+    },
+    "11748": {
+      "name": "Unai Simón Mendibil",
+      "position": null,
+      "x": 43.71767611683849,
+      "y": 34.142104810996564,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    "39161": {
+      "name": "Alejandro Balde Martínez",
+      "position": null,
+      "x": 49.38250502008032,
+      "y": 26.58468875502008,
+      "minutes": 186.25,
+      "matches": 4
+    },
+    "133353": {
+      "name": "Pablo Martín Páez Gavira",
+      "position": null,
+      "x": 53.67206632653061,
+      "y": 31.764103498542273,
+      "minutes": 315.3833333333333,
+      "matches": 4
+    },
+    "6892": {
+      "name": "Pau Francisco Torres",
+      "position": null,
+      "x": 58.92247628726287,
+      "y": 23.606849593495934,
+      "minutes": 120.0,
+      "matches": 4
+    },
+    "6765": {
+      "name": "Rodrigo Hernández Cascante",
+      "position": null,
+      "x": 49.49938611755607,
+      "y": 36.54773201856148,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    "9843": {
+      "name": "Robert Lynch Sanchez",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "3957": {
+      "name": "César Azpilicueta Tanco",
+      "position": null,
+      "x": 53.02221820809248,
+      "y": 30.530968208092485,
+      "minutes": 165.0,
+      "matches": 4
+    },
+    "6583": {
+      "name": "Carlos Soler Barragán",
+      "position": null,
+      "x": 46.97853260869565,
+      "y": 49.89473602484472,
+      "minutes": 120.93333333333334,
+      "matches": 4
+    },
+    "6840": {
+      "name": "Marcos Llorente Moreno",
+      "position": null,
+      "x": 47.00325,
+      "y": 56.8072,
+      "minutes": 120.0,
+      "matches": 4
+    },
+    "35641": {
+      "name": "Hugo Guillamón Sanmartín",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    },
+    "50494": {
+      "name": "Yeremi Jesús Pino Santos",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4
+    }
+  },
+  "pairs": [
+    {
+      "player_a_id": 16532,
+      "player_b_id": 30486,
+      "player_a_name": "Daniel Olmo Carvajal",
+      "player_b_name": "Pedro González López",
+      "joi90": 0.8423789776574138,
+      "minutes": 393.8666666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5719,
+      "player_b_id": 16532,
+      "player_a_name": "Marco Asensio Willemsen",
+      "player_b_name": "Daniel Olmo Carvajal",
+      "joi90": 0.832530294287363,
+      "minutes": 259.95,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5203,
+      "player_b_id": 133353,
+      "player_a_name": "Sergio Busquets i Burgos",
+      "player_b_name": "Pablo Martín Páez Gavira",
+      "joi90": 0.6761737618342243,
+      "minutes": 258.7833333333333,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5719,
+      "player_b_id": 30486,
+      "player_a_name": "Marco Asensio Willemsen",
+      "player_b_name": "Pedro González López",
+      "joi90": 0.6467427093132644,
+      "minutes": 248.03333333333333,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5203,
+      "player_b_id": 5211,
+      "player_a_name": "Sergio Busquets i Burgos",
+      "player_b_name": "Jordi Alba Ramos",
+      "joi90": 0.6208468085106382,
+      "minutes": 293.75,
+      "matches": 4
+    },
+    {
+      "player_a_id": 4353,
+      "player_b_id": 16532,
+      "player_a_name": "Aymeric Laporte",
+      "player_b_name": "Daniel Olmo Carvajal",
+      "joi90": 0.5998999555357937,
+      "minutes": 337.35,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5211,
+      "player_b_id": 16532,
+      "player_a_name": "Jordi Alba Ramos",
+      "player_b_name": "Daniel Olmo Carvajal",
+      "joi90": 0.5182433583106268,
+      "minutes": 293.59999999999997,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5211,
+      "player_b_id": 6748,
+      "player_a_name": "Jordi Alba Ramos",
+      "player_b_name": "Ferrán Torres García",
+      "joi90": 0.4886467970901898,
+      "minutes": 235.98333333333332,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5211,
+      "player_b_id": 5719,
+      "player_a_name": "Jordi Alba Ramos",
+      "player_b_name": "Marco Asensio Willemsen",
+      "joi90": 0.4870664739884393,
+      "minutes": 242.2,
+      "matches": 4
+    },
+    {
+      "player_a_id": 30486,
+      "player_b_id": 133353,
+      "player_a_name": "Pedro González López",
+      "player_b_name": "Pablo Martín Páez Gavira",
+      "joi90": 0.4367358078602619,
+      "minutes": 251.89999999999998,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5203,
+      "player_b_id": 5719,
+      "player_a_name": "Sergio Busquets i Burgos",
+      "player_b_name": "Marco Asensio Willemsen",
+      "joi90": 0.4124141876430208,
+      "minutes": 254.91666666666669,
+      "matches": 4
+    },
+    {
+      "player_a_id": 4353,
+      "player_b_id": 6748,
+      "player_a_name": "Aymeric Laporte",
+      "player_b_name": "Ferrán Torres García",
+      "joi90": 0.41085369151717305,
+      "minutes": 184.88333333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5719,
+      "player_b_id": 133353,
+      "player_a_name": "Marco Asensio Willemsen",
+      "player_b_name": "Pablo Martín Páez Gavira",
+      "joi90": 0.38712307822984804,
+      "minutes": 196.21666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5203,
+      "player_b_id": 30486,
+      "player_a_name": "Sergio Busquets i Burgos",
+      "player_b_name": "Pedro González López",
+      "joi90": 0.3359469408987235,
+      "minutes": 416.51666666666665,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5211,
+      "player_b_id": 30486,
+      "player_a_name": "Jordi Alba Ramos",
+      "player_b_name": "Pedro González López",
+      "joi90": 0.334755778836102,
+      "minutes": 286.96666666666664,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5721,
+      "player_b_id": 16532,
+      "player_a_name": "Daniel Carvajal Ramos",
+      "player_b_name": "Daniel Olmo Carvajal",
+      "joi90": 0.3143076923076919,
+      "minutes": 195.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5203,
+      "player_b_id": 6748,
+      "player_a_name": "Sergio Busquets i Burgos",
+      "player_b_name": "Ferrán Torres García",
+      "joi90": 0.29140674299107544,
+      "minutes": 184.88333333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 4353,
+      "player_b_id": 5719,
+      "player_a_name": "Aymeric Laporte",
+      "player_b_name": "Marco Asensio Willemsen",
+      "joi90": 0.27971165279429244,
+      "minutes": 196.23333333333335,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3477,
+      "player_b_id": 68574,
+      "player_a_name": "Álvaro Borja Morata Martín",
+      "player_b_name": "Nicholas Williams Arthuer",
+      "joi90": 0.25186810532248977,
+      "minutes": 206.98333333333335,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5721,
+      "player_b_id": 6765,
+      "player_a_name": "Daniel Carvajal Ramos",
+      "player_b_name": "Rodrigo Hernández Cascante",
+      "joi90": 0.2415576923076927,
+      "minutes": 195.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 4353,
+      "player_b_id": 133353,
+      "player_a_name": "Aymeric Laporte",
+      "player_b_name": "Pablo Martín Páez Gavira",
+      "joi90": 0.16229012760241765,
+      "minutes": 248.16666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 6748,
+      "player_b_id": 6765,
+      "player_a_name": "Ferrán Torres García",
+      "player_b_name": "Rodrigo Hernández Cascante",
+      "joi90": 0.155059623501038,
+      "minutes": 248.78333333333333,
+      "matches": 4
+    },
+    {
+      "player_a_id": 4353,
+      "player_b_id": 5203,
+      "player_a_name": "Aymeric Laporte",
+      "player_b_name": "Sergio Busquets i Burgos",
+      "joi90": 0.13967946605141743,
+      "minutes": 303.4,
+      "matches": 3
+    },
+    {
+      "player_a_id": 4353,
+      "player_b_id": 11748,
+      "player_a_name": "Aymeric Laporte",
+      "player_b_name": "Unai Simón Mendibil",
+      "joi90": 0.13209375000000012,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 6765,
+      "player_b_id": 133353,
+      "player_a_name": "Rodrigo Hernández Cascante",
+      "player_b_name": "Pablo Martín Páez Gavira",
+      "joi90": 0.11225624900914219,
+      "minutes": 315.3833333333333,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5203,
+      "player_b_id": 16532,
+      "player_a_name": "Sergio Busquets i Burgos",
+      "player_b_name": "Daniel Olmo Carvajal",
+      "joi90": 0.11032439176543987,
+      "minutes": 400.75,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5719,
+      "player_b_id": 6748,
+      "player_a_name": "Marco Asensio Willemsen",
+      "player_b_name": "Ferrán Torres García",
+      "joi90": 0.10921219822109267,
+      "minutes": 236.1,
+      "matches": 4
+    },
+    {
+      "player_a_id": 6765,
+      "player_b_id": 39161,
+      "player_a_name": "Rodrigo Hernández Cascante",
+      "player_b_name": "Alejandro Balde Martínez",
+      "joi90": 0.10117449664429524,
+      "minutes": 186.25,
+      "matches": 4
+    },
+    {
+      "player_a_id": 16532,
+      "player_b_id": 133353,
+      "player_a_name": "Daniel Olmo Carvajal",
+      "player_b_name": "Pablo Martín Páez Gavira",
+      "joi90": 0.09994979654388829,
+      "minutes": 315.3833333333333,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5211,
+      "player_b_id": 6765,
+      "player_a_name": "Jordi Alba Ramos",
+      "player_b_name": "Rodrigo Hernández Cascante",
+      "joi90": 0.07805106382978727,
+      "minutes": 293.75,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5203,
+      "player_b_id": 11748,
+      "player_a_name": "Sergio Busquets i Burgos",
+      "player_b_name": "Unai Simón Mendibil",
+      "joi90": 0.06044815777042987,
+      "minutes": 423.4,
+      "matches": 4
+    },
+    {
+      "player_a_id": 6765,
+      "player_b_id": 11748,
+      "player_a_name": "Rodrigo Hernández Cascante",
+      "player_b_name": "Unai Simón Mendibil",
+      "joi90": 0.04666406249999994,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5203,
+      "player_b_id": 5721,
+      "player_a_name": "Sergio Busquets i Burgos",
+      "player_b_name": "Daniel Carvajal Ramos",
+      "joi90": 0.035134615384615396,
+      "minutes": 195.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5203,
+      "player_b_id": 6765,
+      "player_a_name": "Sergio Busquets i Burgos",
+      "player_b_name": "Rodrigo Hernández Cascante",
+      "joi90": 0.021601913084553535,
+      "minutes": 423.4,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5721,
+      "player_b_id": 30486,
+      "player_a_name": "Daniel Carvajal Ramos",
+      "player_b_name": "Pedro González López",
+      "joi90": 0.010211538461538529,
+      "minutes": 195.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5719,
+      "player_b_id": 6765,
+      "player_a_name": "Marco Asensio Willemsen",
+      "player_b_name": "Rodrigo Hernández Cascante",
+      "joi90": -0.050072129255625986,
+      "minutes": 259.95,
+      "matches": 4
+    },
+    {
+      "player_a_id": 4353,
+      "player_b_id": 5211,
+      "player_a_name": "Aymeric Laporte",
+      "player_b_name": "Jordi Alba Ramos",
+      "joi90": -0.08136719554914457,
+      "minutes": 242.64999999999998,
+      "matches": 3
+    },
+    {
+      "player_a_id": 11748,
+      "player_b_id": 30486,
+      "player_a_name": "Unai Simón Mendibil",
+      "player_b_name": "Pedro González López",
+      "joi90": -0.13222275307739878,
+      "minutes": 296.51666666666665,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3477,
+      "player_b_id": 6765,
+      "player_a_name": "Álvaro Borja Morata Martín",
+      "player_b_name": "Rodrigo Hernández Cascante",
+      "joi90": -0.14369800332778707,
+      "minutes": 180.3,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3477,
+      "player_b_id": 30486,
+      "player_a_name": "Álvaro Borja Morata Martín",
+      "player_b_name": "Pedro González López",
+      "joi90": -0.1498128119800335,
+      "minutes": 180.3,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5211,
+      "player_b_id": 11748,
+      "player_a_name": "Jordi Alba Ramos",
+      "player_b_name": "Unai Simón Mendibil",
+      "joi90": -0.15859148936170228,
+      "minutes": 293.75,
+      "matches": 4
+    },
+    {
+      "player_a_id": 6765,
+      "player_b_id": 30486,
+      "player_a_name": "Rodrigo Hernández Cascante",
+      "player_b_name": "Pedro González López",
+      "joi90": -0.1645432355648033,
+      "minutes": 416.51666666666665,
+      "matches": 4
+    },
+    {
+      "player_a_id": 6765,
+      "player_b_id": 16532,
+      "player_a_name": "Rodrigo Hernández Cascante",
+      "player_b_name": "Daniel Olmo Carvajal",
+      "joi90": -0.2232289275172187,
+      "minutes": 457.35,
+      "matches": 4
+    },
+    {
+      "player_a_id": 6748,
+      "player_b_id": 30486,
+      "player_a_name": "Ferrán Torres García",
+      "player_b_name": "Pedro González López",
+      "joi90": -0.2788768084553411,
+      "minutes": 192.38333333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3477,
+      "player_b_id": 5203,
+      "player_a_name": "Álvaro Borja Morata Martín",
+      "player_b_name": "Sergio Busquets i Burgos",
+      "joi90": -0.28521214642262904,
+      "minutes": 180.3,
+      "matches": 3
+    },
+    {
+      "player_a_id": 4353,
+      "player_b_id": 6765,
+      "player_a_name": "Aymeric Laporte",
+      "player_b_name": "Rodrigo Hernández Cascante",
+      "joi90": -0.37243749999999964,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 4353,
+      "player_b_id": 30486,
+      "player_a_name": "Aymeric Laporte",
+      "player_b_name": "Pedro González López",
+      "joi90": -0.84315243662526,
+      "minutes": 296.51666666666665,
+      "matches": 3
+    }
+  ],
   "coverage": {
     "matches": 4,
-    "unmatched_roster_names": []
+    "auto_derived_roster": true,
+    "roster_size": 26
   }
 }

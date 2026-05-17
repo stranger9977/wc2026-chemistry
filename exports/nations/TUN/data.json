@@ -8,9 +8,446 @@
     "team_color": "#e70013",
     "players": []
   },
-  "pairs": [],
+  "players_by_id": {
+    "32450": {
+      "name": "Montassar Omar Talbi",
+      "position": null,
+      "x": 49.61888686131387,
+      "y": 41.24268248175183,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "6342": {
+      "name": "Aymen Mathlouthi",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "35592": {
+      "name": "Anis Ben Slimane",
+      "position": null,
+      "x": 56.56634174311927,
+      "y": 26.443967889908258,
+      "minutes": 149.65,
+      "matches": 3
+    },
+    "6347": {
+      "name": "Ghilane Chalali",
+      "position": null,
+      "x": 26.44301470588235,
+      "y": 33.92249999999999,
+      "minutes": 46.13333333333334,
+      "matches": 3
+    },
+    "68749": {
+      "name": "Seifeddine Jaziri",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "5647": {
+      "name": "Ali Maâloul",
+      "position": null,
+      "x": 59.644642857142856,
+      "y": 53.68530612244898,
+      "minutes": 120.0,
+      "matches": 3
+    },
+    "5650": {
+      "name": "Ferjani Sassi",
+      "position": null,
+      "x": 54.23381849315069,
+      "y": 34.16359589041096,
+      "minutes": 107.23333333333333,
+      "matches": 3
+    },
+    "5651": {
+      "name": "Yassine Meriah",
+      "position": null,
+      "x": 51.4378612716763,
+      "y": 28.836618497109825,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "9236": {
+      "name": "Mohamed Dräger",
+      "position": null,
+      "x": 50.65983695652174,
+      "y": 37.407021739130435,
+      "minutes": 132.28333333333333,
+      "matches": 3
+    },
+    "5653": {
+      "name": "Mouez Hassen",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "5655": {
+      "name": "Dylan Daniel Mahmoud Bronn",
+      "position": null,
+      "x": 50.497520949720666,
+      "y": 32.56188547486034,
+      "minutes": 192.71666666666667,
+      "matches": 3
+    },
+    "105943": {
+      "name": "Aymen Dahmen",
+      "position": null,
+      "x": 55.3275462962963,
+      "y": 33.713203703703705,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "128793": {
+      "name": "Taha Yassine Khenissi",
+      "position": null,
+      "x": 59.018750000000004,
+      "y": 32.39208333333333,
+      "minutes": 87.26666666666667,
+      "matches": 3
+    },
+    "105944": {
+      "name": "Wajdi Kechrida",
+      "position": null,
+      "x": 60.9724609375,
+      "y": 9.6933203125,
+      "minutes": 200.0,
+      "matches": 3
+    },
+    "44955": {
+      "name": "Aïssa Bilal Laïdouni",
+      "position": null,
+      "x": 56.51573905109489,
+      "y": 34.2125,
+      "minutes": 274.55,
+      "matches": 3
+    },
+    "30681": {
+      "name": "Ali Abdi",
+      "position": null,
+      "x": 56.284093347639484,
+      "y": 38.84919527896995,
+      "minutes": 277.06666666666666,
+      "matches": 3
+    },
+    "102816": {
+      "name": "Mohamed Ali Ben Romdhane",
+      "position": null,
+      "x": 64.3906762295082,
+      "y": 51.68069672131148,
+      "minutes": 73.86666666666666,
+      "matches": 3
+    },
+    "16352": {
+      "name": "Issam Jebali",
+      "position": null,
+      "x": 55.45016891891892,
+      "y": 37.01903153153153,
+      "minutes": 213.66666666666666,
+      "matches": 3
+    },
+    "3557": {
+      "name": "Naïm Sliti",
+      "position": null,
+      "x": 63.831250000000004,
+      "y": 22.589276859504132,
+      "minutes": 173.28333333333333,
+      "matches": 3
+    },
+    "23910": {
+      "name": "Youssef Msakni",
+      "position": null,
+      "x": 60.143671874999995,
+      "y": 36.615875,
+      "minutes": 199.78333333333333,
+      "matches": 3
+    },
+    "136296": {
+      "name": "Bechir Ben Said",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "163049": {
+      "name": "Bilel Ifa",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "50988": {
+      "name": "Hannibal Mejbri",
+      "position": null,
+      "x": 64.70625,
+      "y": 42.542500000000004,
+      "minutes": 40.21666666666667,
+      "matches": 3
+    },
+    "25582": {
+      "name": "Nader Ghandri",
+      "position": null,
+      "x": 32.28484848484849,
+      "y": 33.91886363636364,
+      "minutes": 120.0,
+      "matches": 3
+    },
+    "3767": {
+      "name": "Ellyes Joris Skhiri",
+      "position": null,
+      "x": 52.31644372693727,
+      "y": 34.619935424354246,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "3196": {
+      "name": "Wahbi Khazri",
+      "position": null,
+      "x": 66.40069444444445,
+      "y": 36.90011904761905,
+      "minutes": 112.28333333333333,
+      "matches": 3
+    }
+  },
+  "pairs": [
+    {
+      "player_a_id": 5651,
+      "player_b_id": 32450,
+      "player_a_name": "Yassine Meriah",
+      "player_b_name": "Montassar Omar Talbi",
+      "joi90": 1.0070156250000004,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 23910,
+      "player_b_id": 105943,
+      "player_a_name": "Youssef Msakni",
+      "player_b_name": "Aymen Dahmen",
+      "joi90": 0.7616626345207309,
+      "minutes": 199.78333333333333,
+      "matches": 2
+    },
+    {
+      "player_a_id": 30681,
+      "player_b_id": 32450,
+      "player_a_name": "Ali Abdi",
+      "player_b_name": "Montassar Omar Talbi",
+      "joi90": 0.6906093749999996,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 32450,
+      "player_b_id": 44955,
+      "player_a_name": "Montassar Omar Talbi",
+      "player_b_name": "Aïssa Bilal Laïdouni",
+      "joi90": 0.508063194317975,
+      "minutes": 274.55,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3767,
+      "player_b_id": 30681,
+      "player_a_name": "Ellyes Joris Skhiri",
+      "player_b_name": "Ali Abdi",
+      "joi90": 0.46954687499999986,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5651,
+      "player_b_id": 5655,
+      "player_a_name": "Yassine Meriah",
+      "player_b_name": "Dylan Daniel Mahmoud Bronn",
+      "joi90": 0.4441234973622764,
+      "minutes": 192.71666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 3767,
+      "player_b_id": 32450,
+      "player_a_name": "Ellyes Joris Skhiri",
+      "player_b_name": "Montassar Omar Talbi",
+      "joi90": 0.3679999999999999,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5651,
+      "player_b_id": 44955,
+      "player_a_name": "Yassine Meriah",
+      "player_b_name": "Aïssa Bilal Laïdouni",
+      "joi90": 0.36382717173556717,
+      "minutes": 274.55,
+      "matches": 3
+    },
+    {
+      "player_a_id": 32450,
+      "player_b_id": 105943,
+      "player_a_name": "Montassar Omar Talbi",
+      "player_b_name": "Aymen Dahmen",
+      "joi90": 0.3110625,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5651,
+      "player_b_id": 23910,
+      "player_a_name": "Yassine Meriah",
+      "player_b_name": "Youssef Msakni",
+      "joi90": 0.3026716442813049,
+      "minutes": 199.78333333333333,
+      "matches": 2
+    },
+    {
+      "player_a_id": 3767,
+      "player_b_id": 23910,
+      "player_a_name": "Ellyes Joris Skhiri",
+      "player_b_name": "Youssef Msakni",
+      "joi90": 0.2795278218069577,
+      "minutes": 199.78333333333333,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5655,
+      "player_b_id": 105943,
+      "player_a_name": "Dylan Daniel Mahmoud Bronn",
+      "player_b_name": "Aymen Dahmen",
+      "joi90": 0.252300441062008,
+      "minutes": 192.71666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5651,
+      "player_b_id": 105943,
+      "player_a_name": "Yassine Meriah",
+      "player_b_name": "Aymen Dahmen",
+      "joi90": 0.24403124999999995,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5655,
+      "player_b_id": 30681,
+      "player_a_name": "Dylan Daniel Mahmoud Bronn",
+      "player_b_name": "Ali Abdi",
+      "joi90": 0.24202629075499432,
+      "minutes": 192.71666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 23910,
+      "player_b_id": 30681,
+      "player_a_name": "Youssef Msakni",
+      "player_b_name": "Ali Abdi",
+      "joi90": 0.2282284975390007,
+      "minutes": 199.78333333333333,
+      "matches": 2
+    },
+    {
+      "player_a_id": 23910,
+      "player_b_id": 32450,
+      "player_a_name": "Youssef Msakni",
+      "player_b_name": "Montassar Omar Talbi",
+      "joi90": 0.18019521147910236,
+      "minutes": 199.78333333333333,
+      "matches": 2
+    },
+    {
+      "player_a_id": 3767,
+      "player_b_id": 44955,
+      "player_a_name": "Ellyes Joris Skhiri",
+      "player_b_name": "Aïssa Bilal Laïdouni",
+      "joi90": 0.1500956109998178,
+      "minutes": 274.55,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3767,
+      "player_b_id": 5651,
+      "player_a_name": "Ellyes Joris Skhiri",
+      "player_b_name": "Yassine Meriah",
+      "joi90": 0.10612499999999997,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 16352,
+      "player_b_id": 30681,
+      "player_a_name": "Issam Jebali",
+      "player_b_name": "Ali Abdi",
+      "joi90": 0.08724973656480518,
+      "minutes": 189.8,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3767,
+      "player_b_id": 5655,
+      "player_a_name": "Ellyes Joris Skhiri",
+      "player_b_name": "Dylan Daniel Mahmoud Bronn",
+      "joi90": 0.027378275534030858,
+      "minutes": 192.71666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 44955,
+      "player_b_id": 105943,
+      "player_a_name": "Aïssa Bilal Laïdouni",
+      "player_b_name": "Aymen Dahmen",
+      "joi90": 0.017865598251684538,
+      "minutes": 274.55,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5651,
+      "player_b_id": 30681,
+      "player_a_name": "Yassine Meriah",
+      "player_b_name": "Ali Abdi",
+      "joi90": -0.016593749999999956,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5655,
+      "player_b_id": 32450,
+      "player_a_name": "Dylan Daniel Mahmoud Bronn",
+      "player_b_name": "Montassar Omar Talbi",
+      "joi90": -0.09439375594568883,
+      "minutes": 192.71666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 30681,
+      "player_b_id": 105943,
+      "player_a_name": "Ali Abdi",
+      "player_b_name": "Aymen Dahmen",
+      "joi90": -0.15271874999999996,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 16352,
+      "player_b_id": 44955,
+      "player_a_name": "Issam Jebali",
+      "player_b_name": "Aïssa Bilal Laïdouni",
+      "joi90": -0.18255977214377397,
+      "minutes": 207.73333333333332,
+      "matches": 3
+    }
+  ],
   "coverage": {
     "matches": 3,
-    "unmatched_roster_names": []
+    "auto_derived_roster": true,
+    "roster_size": 26
   }
 }

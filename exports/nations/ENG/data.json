@@ -8,9 +8,779 @@
     "team_color": "#fff",
     "players": []
   },
-  "pairs": [],
+  "players_by_id": {
+    "4354": {
+      "name": "Philip Foden",
+      "position": null,
+      "x": 56.609926470588235,
+      "y": 48.207166666666666,
+      "minutes": 318.45,
+      "matches": 5
+    },
+    "22084": {
+      "name": "Bukayo Saka",
+      "position": null,
+      "x": 69.48675373134328,
+      "y": 15.114141791044773,
+      "minutes": 291.31666666666666,
+      "matches": 5
+    },
+    "3205": {
+      "name": "Kyle Walker",
+      "position": null,
+      "x": 44.85439540059347,
+      "y": 24.245556379821956,
+      "minutes": 296.83333333333337,
+      "matches": 5
+    },
+    "3336": {
+      "name": "Harry Maguire",
+      "position": null,
+      "x": 43.92538138231632,
+      "y": 42.984648194271486,
+      "minutes": 550.4666666666667,
+      "matches": 5
+    },
+    "9928": {
+      "name": "Conor Coady",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 5
+    },
+    "10955": {
+      "name": "Harry Kane",
+      "position": null,
+      "x": 63.365277777777784,
+      "y": 33.887003968253964,
+      "minutes": 492.26666666666665,
+      "matches": 5
+    },
+    "3468": {
+      "name": "Jordan Pickford",
+      "position": null,
+      "x": 27.460733695652173,
+      "y": 34.497373188405795,
+      "minutes": 600.0,
+      "matches": 5
+    },
+    "3532": {
+      "name": "Jordan Brian Henderson",
+      "position": null,
+      "x": 54.58909615384615,
+      "y": 28.347761538461537,
+      "minutes": 331.6666666666667,
+      "matches": 5
+    },
+    "10956": {
+      "name": "Eric Dier",
+      "position": null,
+      "x": 31.27578125,
+      "y": 36.777375,
+      "minutes": 93.36666666666666,
+      "matches": 5
+    },
+    "3664": {
+      "name": "Trent Alexander-Arnold",
+      "position": null,
+      "x": 65.81847222222221,
+      "y": 52.56494444444445,
+      "minutes": 63.166666666666664,
+      "matches": 5
+    },
+    "3474": {
+      "name": "Nick Pope",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 5
+    },
+    "29399": {
+      "name": "Conor Gallagher",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 5
+    },
+    "22809": {
+      "name": "Ben White",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 2
+    },
+    "3616": {
+      "name": "Callum Wilson",
+      "position": null,
+      "x": 40.92318548387097,
+      "y": 32.69072580645162,
+      "minutes": 107.73333333333332,
+      "matches": 5
+    },
+    "3233": {
+      "name": "Raheem Sterling",
+      "position": null,
+      "x": 65.65111434108528,
+      "y": 40.572344961240304,
+      "minutes": 179.45,
+      "matches": 4
+    },
+    "4706": {
+      "name": "Kalvin Phillips",
+      "position": null,
+      "x": 58.28014705882352,
+      "y": 27.8425,
+      "minutes": 101.63333333333333,
+      "matches": 5
+    },
+    "7843": {
+      "name": "Mason Mount",
+      "position": null,
+      "x": 64.46398437500001,
+      "y": 45.71671875,
+      "minutes": 275.75,
+      "matches": 5
+    },
+    "9638": {
+      "name": "Jack Grealish",
+      "position": null,
+      "x": 56.073365384615386,
+      "y": 41.40742307692308,
+      "minutes": 225.16666666666669,
+      "matches": 5
+    },
+    "3943": {
+      "name": "Declan Rice",
+      "position": null,
+      "x": 47.34261,
+      "y": 35.111596,
+      "minutes": 537.2166666666667,
+      "matches": 5
+    },
+    "3244": {
+      "name": "John Stones",
+      "position": null,
+      "x": 42.020623569794054,
+      "y": 28.827837528604118,
+      "minutes": 533.2333333333333,
+      "matches": 5
+    },
+    "3308": {
+      "name": "Kieran Trippier",
+      "position": null,
+      "x": 56.480988805970156,
+      "y": 9.901738805970147,
+      "minutes": 295.1666666666667,
+      "matches": 5
+    },
+    "9905": {
+      "name": "James Maddison",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 5
+    },
+    "3382": {
+      "name": "Luke Shaw",
+      "position": null,
+      "x": 53.42471590909091,
+      "y": 51.46079545454546,
+      "minutes": 544.8333333333334,
+      "matches": 5
+    },
+    "3318": {
+      "name": "Marcus Rashford",
+      "position": null,
+      "x": 53.64683988764045,
+      "y": 22.209353932584268,
+      "minutes": 258.0833333333333,
+      "matches": 5
+    },
+    "30714": {
+      "name": "Jude Bellingham",
+      "position": null,
+      "x": 55.86814024390244,
+      "y": 35.400130662020906,
+      "minutes": 504.2,
+      "matches": 5
+    },
+    "22783": {
+      "name": "Aaron Ramsdale",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 5
+    }
+  },
+  "pairs": [
+    {
+      "player_a_id": 3382,
+      "player_b_id": 7843,
+      "player_a_name": "Luke Shaw",
+      "player_b_name": "Mason Mount",
+      "joi90": 1.4159170458522932,
+      "minutes": 190.46666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 10955,
+      "player_b_id": 22084,
+      "player_a_name": "Harry Kane",
+      "player_b_name": "Bukayo Saka",
+      "joi90": 1.2343397791635677,
+      "minutes": 291.31666666666666,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3244,
+      "player_b_id": 3336,
+      "player_a_name": "John Stones",
+      "player_b_name": "Harry Maguire",
+      "joi90": 0.9685419681620839,
+      "minutes": 483.7,
+      "matches": 5
+    },
+    {
+      "player_a_id": 3468,
+      "player_b_id": 10955,
+      "player_a_name": "Jordan Pickford",
+      "player_b_name": "Harry Kane",
+      "joi90": 0.9575661827497866,
+      "minutes": 195.16666666666669,
+      "matches": 2
+    },
+    {
+      "player_a_id": 3382,
+      "player_b_id": 30714,
+      "player_a_name": "Luke Shaw",
+      "player_b_name": "Jude Bellingham",
+      "joi90": 0.947034370128424,
+      "minutes": 449.0333333333333,
+      "matches": 5
+    },
+    {
+      "player_a_id": 3308,
+      "player_b_id": 30714,
+      "player_a_name": "Kieran Trippier",
+      "player_b_name": "Jude Bellingham",
+      "joi90": 0.8841497227356748,
+      "minutes": 243.45,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3244,
+      "player_b_id": 22084,
+      "player_a_name": "John Stones",
+      "player_b_name": "Bukayo Saka",
+      "joi90": 0.8588592024715374,
+      "minutes": 291.31666666666666,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3244,
+      "player_b_id": 3532,
+      "player_a_name": "John Stones",
+      "player_b_name": "Jordan Brian Henderson",
+      "joi90": 0.7744196724656905,
+      "minutes": 326.68333333333334,
+      "matches": 4
+    },
+    {
+      "player_a_id": 4354,
+      "player_b_id": 10955,
+      "player_a_name": "Philip Foden",
+      "player_b_name": "Harry Kane",
+      "joi90": 0.7391634980988595,
+      "minutes": 206.01666666666665,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3468,
+      "player_b_id": 3532,
+      "player_a_name": "Jordan Pickford",
+      "player_b_name": "Jordan Brian Henderson",
+      "joi90": 0.7161633109619688,
+      "minutes": 201.15,
+      "matches": 2
+    },
+    {
+      "player_a_id": 22084,
+      "player_b_id": 30714,
+      "player_a_name": "Bukayo Saka",
+      "player_b_name": "Jude Bellingham",
+      "joi90": 0.7095202199361476,
+      "minutes": 281.9,
+      "matches": 4
+    },
+    {
+      "player_a_id": 7843,
+      "player_b_id": 10955,
+      "player_a_name": "Mason Mount",
+      "player_b_name": "Harry Kane",
+      "joi90": 0.7050052502625132,
+      "minutes": 190.46666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 3336,
+      "player_b_id": 22084,
+      "player_a_name": "Harry Maguire",
+      "player_b_name": "Bukayo Saka",
+      "joi90": 0.6529106356198868,
+      "minutes": 291.31666666666666,
+      "matches": 4
+    },
+    {
+      "player_a_id": 4354,
+      "player_b_id": 30714,
+      "player_a_name": "Philip Foden",
+      "player_b_name": "Jude Bellingham",
+      "joi90": 0.6437352802637777,
+      "minutes": 318.45,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3382,
+      "player_b_id": 4354,
+      "player_a_name": "Luke Shaw",
+      "player_b_name": "Philip Foden",
+      "joi90": 0.6356460087358364,
+      "minutes": 263.2833333333333,
+      "matches": 4
+    },
+    {
+      "player_a_id": 10955,
+      "player_b_id": 30714,
+      "player_a_name": "Harry Kane",
+      "player_b_name": "Jude Bellingham",
+      "joi90": 0.5849073062048092,
+      "minutes": 396.4666666666667,
+      "matches": 5
+    },
+    {
+      "player_a_id": 3308,
+      "player_b_id": 3336,
+      "player_a_name": "Kieran Trippier",
+      "player_b_name": "Harry Maguire",
+      "joi90": 0.4945939069073146,
+      "minutes": 245.63333333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3244,
+      "player_b_id": 3382,
+      "player_a_name": "John Stones",
+      "player_b_name": "Luke Shaw",
+      "joi90": 0.483988460465765,
+      "minutes": 478.06666666666666,
+      "matches": 5
+    },
+    {
+      "player_a_id": 3532,
+      "player_b_id": 30714,
+      "player_a_name": "Jordan Brian Henderson",
+      "player_b_name": "Jude Bellingham",
+      "joi90": 0.48285657950615785,
+      "minutes": 274.7166666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3943,
+      "player_b_id": 22084,
+      "player_a_name": "Declan Rice",
+      "player_b_name": "Bukayo Saka",
+      "joi90": 0.4632201498941588,
+      "minutes": 291.31666666666666,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3205,
+      "player_b_id": 3244,
+      "player_a_name": "Kyle Walker",
+      "player_b_name": "John Stones",
+      "joi90": 0.4417034917415242,
+      "minutes": 230.06666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3205,
+      "player_b_id": 3943,
+      "player_a_name": "Kyle Walker",
+      "player_b_name": "Declan Rice",
+      "joi90": 0.4309236384053902,
+      "minutes": 296.83333333333337,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3382,
+      "player_b_id": 10955,
+      "player_a_name": "Luke Shaw",
+      "player_b_name": "Harry Kane",
+      "joi90": 0.42998798076923056,
+      "minutes": 492.26666666666665,
+      "matches": 5
+    },
+    {
+      "player_a_id": 3336,
+      "player_b_id": 3532,
+      "player_a_name": "Harry Maguire",
+      "player_b_name": "Jordan Brian Henderson",
+      "joi90": 0.4284595169982038,
+      "minutes": 250.51666666666665,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3308,
+      "player_b_id": 7843,
+      "player_a_name": "Kieran Trippier",
+      "player_b_name": "Mason Mount",
+      "joi90": 0.42444434721736096,
+      "minutes": 190.46666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 3336,
+      "player_b_id": 7843,
+      "player_a_name": "Harry Maguire",
+      "player_b_name": "Mason Mount",
+      "joi90": 0.4079136690647483,
+      "minutes": 231.66666666666669,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3308,
+      "player_b_id": 3943,
+      "player_a_name": "Kieran Trippier",
+      "player_b_name": "Declan Rice",
+      "joi90": 0.39689062500000005,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 3336,
+      "player_b_id": 10955,
+      "player_a_name": "Harry Maguire",
+      "player_b_name": "Harry Kane",
+      "joi90": 0.38000188008477476,
+      "minutes": 487.56666666666666,
+      "matches": 5
+    },
+    {
+      "player_a_id": 3244,
+      "player_b_id": 4354,
+      "player_a_name": "John Stones",
+      "player_b_name": "Philip Foden",
+      "joi90": 0.3565895669291337,
+      "minutes": 254.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3943,
+      "player_b_id": 30714,
+      "player_a_name": "Declan Rice",
+      "player_b_name": "Jude Bellingham",
+      "joi90": 0.34510760808004526,
+      "minutes": 441.4166666666667,
+      "matches": 5
+    },
+    {
+      "player_a_id": 3244,
+      "player_b_id": 3468,
+      "player_a_name": "John Stones",
+      "player_b_name": "Jordan Pickford",
+      "joi90": 0.33553791335875477,
+      "minutes": 533.2333333333333,
+      "matches": 5
+    },
+    {
+      "player_a_id": 3532,
+      "player_b_id": 10955,
+      "player_a_name": "Jordan Brian Henderson",
+      "player_b_name": "Harry Kane",
+      "joi90": 0.33436420179682097,
+      "minutes": 217.05,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3244,
+      "player_b_id": 30714,
+      "player_a_name": "John Stones",
+      "player_b_name": "Jude Bellingham",
+      "joi90": 0.32104342706746086,
+      "minutes": 481.26666666666665,
+      "matches": 5
+    },
+    {
+      "player_a_id": 3943,
+      "player_b_id": 10955,
+      "player_a_name": "Declan Rice",
+      "player_b_name": "Harry Kane",
+      "joi90": 0.2711335319609969,
+      "minutes": 492.26666666666665,
+      "matches": 5
+    },
+    {
+      "player_a_id": 3943,
+      "player_b_id": 7843,
+      "player_a_name": "Declan Rice",
+      "player_b_name": "Mason Mount",
+      "joi90": 0.2694148369217652,
+      "minutes": 234.55,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3244,
+      "player_b_id": 10955,
+      "player_a_name": "John Stones",
+      "player_b_name": "Harry Kane",
+      "joi90": 0.2666950646298474,
+      "minutes": 425.5,
+      "matches": 5
+    },
+    {
+      "player_a_id": 3244,
+      "player_b_id": 7843,
+      "player_a_name": "John Stones",
+      "player_b_name": "Mason Mount",
+      "joi90": 0.26307752887644364,
+      "minutes": 190.46666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 3205,
+      "player_b_id": 10955,
+      "player_a_name": "Kyle Walker",
+      "player_b_name": "Harry Kane",
+      "joi90": 0.2435078607523863,
+      "minutes": 296.83333333333337,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3382,
+      "player_b_id": 22084,
+      "player_a_name": "Luke Shaw",
+      "player_b_name": "Bukayo Saka",
+      "joi90": 0.24209479947365417,
+      "minutes": 291.31666666666666,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3308,
+      "player_b_id": 10955,
+      "player_a_name": "Kieran Trippier",
+      "player_b_name": "Harry Kane",
+      "joi90": 0.2347224594363793,
+      "minutes": 195.16666666666669,
+      "matches": 2
+    },
+    {
+      "player_a_id": 3308,
+      "player_b_id": 3382,
+      "player_a_name": "Kieran Trippier",
+      "player_b_name": "Luke Shaw",
+      "joi90": 0.22856249999999997,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 3943,
+      "player_b_id": 4354,
+      "player_a_name": "Declan Rice",
+      "player_b_name": "Philip Foden",
+      "joi90": 0.20395208604954357,
+      "minutes": 255.66666666666669,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3205,
+      "player_b_id": 3532,
+      "player_a_name": "Kyle Walker",
+      "player_b_name": "Jordan Brian Henderson",
+      "joi90": 0.20067848081802073,
+      "minutes": 216.78333333333336,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3205,
+      "player_b_id": 3336,
+      "player_a_name": "Kyle Walker",
+      "player_b_name": "Harry Maguire",
+      "joi90": 0.1978761931499158,
+      "minutes": 296.83333333333337,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3382,
+      "player_b_id": 3468,
+      "player_a_name": "Luke Shaw",
+      "player_b_name": "Jordan Pickford",
+      "joi90": 0.1556953125000001,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3336,
+      "player_b_id": 3468,
+      "player_a_name": "Harry Maguire",
+      "player_b_name": "Jordan Pickford",
+      "joi90": 0.15074482257478505,
+      "minutes": 550.4666666666667,
+      "matches": 5
+    },
+    {
+      "player_a_id": 3244,
+      "player_b_id": 3943,
+      "player_a_name": "John Stones",
+      "player_b_name": "Declan Rice",
+      "joi90": 0.1299208204910195,
+      "minutes": 470.45,
+      "matches": 5
+    },
+    {
+      "player_a_id": 3532,
+      "player_b_id": 4354,
+      "player_a_name": "Jordan Brian Henderson",
+      "player_b_name": "Philip Foden",
+      "joi90": 0.11991322937625733,
+      "minutes": 198.8,
+      "matches": 2
+    },
+    {
+      "player_a_id": 3318,
+      "player_b_id": 3943,
+      "player_a_name": "Marcus Rashford",
+      "player_b_name": "Declan Rice",
+      "joi90": 0.11449827426551049,
+      "minutes": 197.98333333333335,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3205,
+      "player_b_id": 3468,
+      "player_a_name": "Kyle Walker",
+      "player_b_name": "Jordan Pickford",
+      "joi90": 0.10828046041549683,
+      "minutes": 296.83333333333337,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3382,
+      "player_b_id": 3943,
+      "player_a_name": "Luke Shaw",
+      "player_b_name": "Declan Rice",
+      "joi90": 0.08227825520429376,
+      "minutes": 537.2166666666667,
+      "matches": 5
+    },
+    {
+      "player_a_id": 3308,
+      "player_b_id": 3468,
+      "player_a_name": "Kieran Trippier",
+      "player_b_name": "Jordan Pickford",
+      "joi90": 0.07763833992094851,
+      "minutes": 295.1666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3336,
+      "player_b_id": 3943,
+      "player_a_name": "Harry Maguire",
+      "player_b_name": "Declan Rice",
+      "joi90": 0.06401438775161476,
+      "minutes": 487.68333333333334,
+      "matches": 5
+    },
+    {
+      "player_a_id": 3336,
+      "player_b_id": 30714,
+      "player_a_name": "Harry Maguire",
+      "player_b_name": "Jude Bellingham",
+      "joi90": 0.05168896627566009,
+      "minutes": 454.6666666666667,
+      "matches": 5
+    },
+    {
+      "player_a_id": 3336,
+      "player_b_id": 4354,
+      "player_a_name": "Harry Maguire",
+      "player_b_name": "Philip Foden",
+      "joi90": 0.045306786488999,
+      "minutes": 268.9166666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3532,
+      "player_b_id": 3943,
+      "player_a_name": "Jordan Brian Henderson",
+      "player_b_name": "Declan Rice",
+      "joi90": 0.03368096448273722,
+      "minutes": 268.8833333333333,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3468,
+      "player_b_id": 30714,
+      "player_a_name": "Jordan Pickford",
+      "player_b_name": "Jude Bellingham",
+      "joi90": -0.01579769114307345,
+      "minutes": 264.2,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3244,
+      "player_b_id": 3308,
+      "player_a_name": "John Stones",
+      "player_b_name": "Kieran Trippier",
+      "joi90": -0.020203125000000044,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 3336,
+      "player_b_id": 3382,
+      "player_a_name": "Harry Maguire",
+      "player_b_name": "Luke Shaw",
+      "joi90": -0.04885675348273787,
+      "minutes": 495.3,
+      "matches": 5
+    },
+    {
+      "player_a_id": 3382,
+      "player_b_id": 3532,
+      "player_a_name": "Luke Shaw",
+      "player_b_name": "Jordan Brian Henderson",
+      "joi90": -0.0537304837471206,
+      "minutes": 195.35,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3205,
+      "player_b_id": 30714,
+      "player_a_name": "Kyle Walker",
+      "player_b_name": "Jude Bellingham",
+      "joi90": -0.16651335311572715,
+      "minutes": 252.75,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3468,
+      "player_b_id": 3943,
+      "player_a_name": "Jordan Pickford",
+      "player_b_name": "Declan Rice",
+      "joi90": -0.25003125,
+      "minutes": 240.0,
+      "matches": 2
+    }
+  ],
   "coverage": {
     "matches": 5,
-    "unmatched_roster_names": []
+    "auto_derived_roster": true,
+    "roster_size": 26
   }
 }

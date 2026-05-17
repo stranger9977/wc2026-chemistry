@@ -8,9 +8,447 @@
     "team_color": "#239f40",
     "players": []
   },
-  "pairs": [],
+  "players_by_id": {
+    "124161": {
+      "name": "Mehdi Torabi",
+      "position": null,
+      "x": 47.70532407407407,
+      "y": 17.951265432098765,
+      "minutes": 150.76666666666668,
+      "matches": 3
+    },
+    "23874": {
+      "name": "Ali Gholizadeh",
+      "position": null,
+      "x": 40.364629888268155,
+      "y": 29.591159217877095,
+      "minutes": 227.65,
+      "matches": 3
+    },
+    "124167": {
+      "name": "Ahmad Nourollahi",
+      "position": null,
+      "x": 51.51778169014084,
+      "y": 39.753063380281695,
+      "minutes": 224.7,
+      "matches": 3
+    },
+    "124175": {
+      "name": "Mohammad Hossein Kanani Zadegan",
+      "position": null,
+      "x": 75.43541666666667,
+      "y": 51.5727380952381,
+      "minutes": 75.0,
+      "matches": 3
+    },
+    "124177": {
+      "name": "Shoja Khalilzadeh",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "124183": {
+      "name": "Payam Niazmand",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "5720": {
+      "name": "Milad Mohammadi",
+      "position": null,
+      "x": 57.37063356164383,
+      "y": 21.649965753424656,
+      "minutes": 229.85000000000002,
+      "matches": 3
+    },
+    "11224": {
+      "name": "Amir Abedzadeh",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "5722": {
+      "name": "Saeid Ezatolahi Afagh",
+      "position": null,
+      "x": 53.26421783625731,
+      "y": 35.61922514619883,
+      "minutes": 277.18333333333334,
+      "matches": 3
+    },
+    "5220": {
+      "name": "Morteza Pouraliganji",
+      "position": null,
+      "x": 51.07305,
+      "y": 40.415459999999996,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "5222": {
+      "name": "Roozbeh Cheshmi",
+      "position": null,
+      "x": 71.63171296296296,
+      "y": 33.0162037037037,
+      "minutes": 87.6,
+      "matches": 3
+    },
+    "326758": {
+      "name": "Abolfazl Jalali",
+      "position": null,
+      "x": 57.646975806451614,
+      "y": 58.285322580645165,
+      "minutes": 48.95,
+      "matches": 3
+    },
+    "5224": {
+      "name": "Sardar Azmoun",
+      "position": null,
+      "x": 47.54719827586207,
+      "y": 30.657155172413795,
+      "minutes": 230.6,
+      "matches": 3
+    },
+    "5226": {
+      "name": "Mehdi Taremi",
+      "position": null,
+      "x": 50.493816844919785,
+      "y": 36.36022727272727,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "5227": {
+      "name": "Alireza Safar Beiranvand",
+      "position": null,
+      "x": 17.20347222222222,
+      "y": 30.77,
+      "minutes": 139.2,
+      "matches": 3
+    },
+    "5228": {
+      "name": "Seyed Majid Hosseini",
+      "position": null,
+      "x": 56.33051136363636,
+      "y": 30.75493181818182,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "5230": {
+      "name": "Ehsan Hajsafi",
+      "position": null,
+      "x": 52.99791666666667,
+      "y": 29.834325396825395,
+      "minutes": 266.85,
+      "matches": 3
+    },
+    "5231": {
+      "name": "Karim Ansarifard",
+      "position": null,
+      "x": 44.34305555555555,
+      "y": 25.863611111111112,
+      "minutes": 95.76666666666667,
+      "matches": 3
+    },
+    "23538": {
+      "name": "Sadegh Moharrami",
+      "position": null,
+      "x": 55.728472222222216,
+      "y": 57.138214285714284,
+      "minutes": 120.0,
+      "matches": 3
+    },
+    "5235": {
+      "name": "Ramin Rezaeian",
+      "position": null,
+      "x": 56.12891666666667,
+      "y": 32.90992222222222,
+      "minutes": 240.0,
+      "matches": 3
+    },
+    "5239": {
+      "name": "Alireza Jahanbakhsh",
+      "position": null,
+      "x": 49.9758152173913,
+      "y": 40.326956521739135,
+      "minutes": 89.28333333333333,
+      "matches": 2
+    },
+    "5240": {
+      "name": "Saman Ghoddos",
+      "position": null,
+      "x": 70.36847222222222,
+      "y": 52.25516666666667,
+      "minutes": 75.0,
+      "matches": 3
+    },
+    "5241": {
+      "name": "Vahid Amiri",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "125818": {
+      "name": "Ali Karimi",
+      "position": null,
+      "x": 58.53059210526316,
+      "y": 36.85555263157895,
+      "minutes": 157.81666666666666,
+      "matches": 3
+    },
+    "125823": {
+      "name": "Seyed Hossein Hosseini",
+      "position": null,
+      "x": 95.80833333333332,
+      "y": 33.31595238095238,
+      "minutes": 220.8,
+      "matches": 3
+    }
+  },
+  "pairs": [
+    {
+      "player_a_id": 5228,
+      "player_b_id": 5235,
+      "player_a_name": "Seyed Majid Hosseini",
+      "player_b_name": "Ramin Rezaeian",
+      "joi90": 0.637875,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5220,
+      "player_b_id": 5228,
+      "player_a_name": "Morteza Pouraliganji",
+      "player_b_name": "Seyed Majid Hosseini",
+      "joi90": 0.45799999999999996,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5235,
+      "player_b_id": 5722,
+      "player_a_name": "Ramin Rezaeian",
+      "player_b_name": "Saeid Ezatolahi Afagh",
+      "joi90": 0.35744786085236174,
+      "minutes": 202.18333333333334,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5220,
+      "player_b_id": 125823,
+      "player_a_name": "Morteza Pouraliganji",
+      "player_b_name": "Seyed Hossein Hosseini",
+      "joi90": 0.3086616847826086,
+      "minutes": 220.8,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5226,
+      "player_b_id": 5722,
+      "player_a_name": "Mehdi Taremi",
+      "player_b_name": "Saeid Ezatolahi Afagh",
+      "joi90": 0.292428296554627,
+      "minutes": 277.18333333333334,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5228,
+      "player_b_id": 125823,
+      "player_a_name": "Seyed Majid Hosseini",
+      "player_b_name": "Seyed Hossein Hosseini",
+      "joi90": 0.2844089673913041,
+      "minutes": 220.8,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5226,
+      "player_b_id": 5230,
+      "player_a_name": "Mehdi Taremi",
+      "player_b_name": "Ehsan Hajsafi",
+      "joi90": 0.25337268128161883,
+      "minutes": 266.85,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5226,
+      "player_b_id": 124167,
+      "player_a_name": "Mehdi Taremi",
+      "player_b_name": "Ahmad Nourollahi",
+      "joi90": 0.20772696929239,
+      "minutes": 224.7,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5228,
+      "player_b_id": 5720,
+      "player_a_name": "Seyed Majid Hosseini",
+      "player_b_name": "Milad Mohammadi",
+      "joi90": 0.1908705560619872,
+      "minutes": 182.83333333333334,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5226,
+      "player_b_id": 5228,
+      "player_a_name": "Mehdi Taremi",
+      "player_b_name": "Seyed Majid Hosseini",
+      "joi90": 0.16225,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5224,
+      "player_b_id": 5226,
+      "player_a_name": "Sardar Azmoun",
+      "player_b_name": "Mehdi Taremi",
+      "joi90": 0.154163052905464,
+      "minutes": 230.6,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5228,
+      "player_b_id": 5230,
+      "player_a_name": "Seyed Majid Hosseini",
+      "player_b_name": "Ehsan Hajsafi",
+      "joi90": 0.1290472175379426,
+      "minutes": 266.85,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5224,
+      "player_b_id": 5235,
+      "player_a_name": "Sardar Azmoun",
+      "player_b_name": "Ramin Rezaeian",
+      "joi90": 0.12391217298451684,
+      "minutes": 187.3,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5722,
+      "player_b_id": 23874,
+      "player_a_name": "Saeid Ezatolahi Afagh",
+      "player_b_name": "Ali Gholizadeh",
+      "joi90": 0.11736766966835054,
+      "minutes": 227.65,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5230,
+      "player_b_id": 124167,
+      "player_a_name": "Ehsan Hajsafi",
+      "player_b_name": "Ahmad Nourollahi",
+      "joi90": 0.10841550874047508,
+      "minutes": 223.1,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5228,
+      "player_b_id": 5722,
+      "player_a_name": "Seyed Majid Hosseini",
+      "player_b_name": "Saeid Ezatolahi Afagh",
+      "joi90": 0.10495760928386741,
+      "minutes": 277.18333333333334,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5220,
+      "player_b_id": 5235,
+      "player_a_name": "Morteza Pouraliganji",
+      "player_b_name": "Ramin Rezaeian",
+      "joi90": 0.10045312500000003,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5226,
+      "player_b_id": 5235,
+      "player_a_name": "Mehdi Taremi",
+      "player_b_name": "Ramin Rezaeian",
+      "joi90": 0.10012500000000005,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5224,
+      "player_b_id": 5722,
+      "player_a_name": "Sardar Azmoun",
+      "player_b_name": "Saeid Ezatolahi Afagh",
+      "joi90": 0.05297650827549388,
+      "minutes": 187.3,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5226,
+      "player_b_id": 5720,
+      "player_a_name": "Mehdi Taremi",
+      "player_b_name": "Milad Mohammadi",
+      "joi90": -0.0981835979986948,
+      "minutes": 229.85000000000002,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5220,
+      "player_b_id": 5230,
+      "player_a_name": "Morteza Pouraliganji",
+      "player_b_name": "Ehsan Hajsafi",
+      "joi90": -0.12474704890387854,
+      "minutes": 266.85,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5220,
+      "player_b_id": 5722,
+      "player_a_name": "Morteza Pouraliganji",
+      "player_b_name": "Saeid Ezatolahi Afagh",
+      "joi90": -0.15199777523901145,
+      "minutes": 277.18333333333334,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5220,
+      "player_b_id": 5226,
+      "player_a_name": "Morteza Pouraliganji",
+      "player_b_name": "Mehdi Taremi",
+      "joi90": -0.1921875,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5226,
+      "player_b_id": 23874,
+      "player_a_name": "Mehdi Taremi",
+      "player_b_name": "Ali Gholizadeh",
+      "joi90": -0.39756753788710747,
+      "minutes": 227.65,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5224,
+      "player_b_id": 23874,
+      "player_a_name": "Sardar Azmoun",
+      "player_b_name": "Ali Gholizadeh",
+      "joi90": -0.45669880910060434,
+      "minutes": 187.53333333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5230,
+      "player_b_id": 5720,
+      "player_a_name": "Ehsan Hajsafi",
+      "player_b_name": "Milad Mohammadi",
+      "joi90": -0.6077969297064373,
+      "minutes": 185.65,
+      "matches": 3
+    }
+  ],
   "coverage": {
     "matches": 3,
-    "unmatched_roster_names": []
+    "auto_derived_roster": true,
+    "roster_size": 25
   }
 }

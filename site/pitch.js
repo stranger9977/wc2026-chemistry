@@ -1,13 +1,3 @@
-const POS = {
-  GK:  [80, 340], RB: [250, 580], RWB: [400, 600], RCB: [220, 440],
-  CB:  [220, 340], LCB: [220, 240], LB: [250, 100], LWB: [400, 80],
-  RDM: [350, 420], DM: [350, 340], LDM: [350, 260],
-  RCM: [550, 420], CM: [550, 340], LCM: [550, 260],
-  RM:  [600, 560], LM:  [600, 120],
-  RAM: [700, 420], AM:  [700, 340], LAM: [700, 260],
-  RW:  [850, 560], LW:  [850, 120], ST:  [900, 340], CF: [900, 340], SS: [820, 340],
-};
-
 function lerpColor(c, h, t) {
   const a = c.match(/.{2}/g).map(s => parseInt(s, 16));
   const b = h.match(/.{2}/g).map(s => parseInt(s, 16));
@@ -30,38 +20,48 @@ async function main() {
     return;
   }
   const squad = entry.squad;
+  const players = entry.players_by_id || {};
 
   document.getElementById("title").textContent = squad.nation;
   document.getElementById("subtitle").textContent =
-    `${squad.manager} · ${squad.formation} · ${entry.coverage.matches} matches in window`;
+    `${squad.manager} · ${squad.formation} · ${entry.coverage.matches} matches in window · ${Object.keys(players).length} players`;
 
   const svg = d3.select("#pitch");
+
+  // Pitch background
   svg.append("rect")
     .attr("x", 0).attr("y", 0).attr("width", 1050).attr("height", 680)
-    .attr("fill", "#1a4d2e").attr("opacity", 0.4);
-
-  svg.append("rect").attr("x", 10).attr("y", 10).attr("width", 1030).attr("height", 660)
-    .attr("fill", "none").attr("stroke", "#fff").attr("stroke-width", 2);
-  svg.append("line").attr("x1", 525).attr("x2", 525).attr("y1", 10).attr("y2", 670)
-    .attr("stroke", "#fff").attr("stroke-width", 2);
+    .attr("fill", "#0e3b1f");
+  // Outer boundary
+  svg.append("rect").attr("x", 25).attr("y", 25).attr("width", 1000).attr("height", 630)
+    .attr("fill", "none").attr("stroke", "#fff").attr("stroke-width", 2).attr("opacity", 0.7);
+  // Halfway line
+  svg.append("line").attr("x1", 525).attr("x2", 525).attr("y1", 25).attr("y2", 655)
+    .attr("stroke", "#fff").attr("stroke-width", 2).attr("opacity", 0.7);
+  // Centre circle
   svg.append("circle").attr("cx", 525).attr("cy", 340).attr("r", 80)
-    .attr("fill", "none").attr("stroke", "#fff").attr("stroke-width", 2);
+    .attr("fill", "none").attr("stroke", "#fff").attr("stroke-width", 2).attr("opacity", 0.7);
+  // Penalty boxes
+  svg.append("rect").attr("x", 25).attr("y", 200).attr("width", 165).attr("height", 280)
+    .attr("fill", "none").attr("stroke", "#fff").attr("stroke-width", 2).attr("opacity", 0.5);
+  svg.append("rect").attr("x", 860).attr("y", 200).attr("width", 165).attr("height", 280)
+    .attr("fill", "none").attr("stroke", "#fff").attr("stroke-width", 2).attr("opacity", 0.5);
 
-  const namePos = {};
-  for (const p of squad.players) {
-    namePos[p.name] = POS[p.position] || [525, 340];
-  }
+  // SPADL coords are 105 wide × 68 tall; viewBox is 1050 × 680 — scale by 10
+  function px(p) { return [p.x * 10, p.y * 10]; }
 
   const pairs = entry.pairs;
   const vmin = d3.min(pairs, d => d.joi90) ?? 0;
   const vmax = d3.max(pairs, d => d.joi90) ?? 0;
 
+  // Edges — look up by player_id (numeric key stored as string in JSON)
   svg.append("g").selectAll("line")
-    .data(pairs).enter().append("line")
-      .attr("x1", d => (namePos[d.player_a_name] || [0, 0])[0])
-      .attr("y1", d => (namePos[d.player_a_name] || [0, 0])[1])
-      .attr("x2", d => (namePos[d.player_b_name] || [0, 0])[0])
-      .attr("y2", d => (namePos[d.player_b_name] || [0, 0])[1])
+    .data(pairs.filter(p => players[p.player_a_id] && players[p.player_b_id]))
+    .enter().append("line")
+      .attr("x1", d => px(players[d.player_a_id])[0])
+      .attr("y1", d => px(players[d.player_a_id])[1])
+      .attr("x2", d => px(players[d.player_b_id])[0])
+      .attr("y2", d => px(players[d.player_b_id])[1])
       .attr("stroke", d => colorFor(d.joi90, vmin, vmax))
       .attr("stroke-width", d => 2 + 6 * Math.min(d.minutes, 600) / 600)
       .attr("stroke-linecap", "round")
@@ -69,17 +69,34 @@ async function main() {
       .append("title")
         .text(d => `${d.player_a_name} + ${d.player_b_name}\nJOI90 ${d.joi90.toFixed(3)} · ${Math.round(d.minutes)} mins · ${d.matches} matches`);
 
-  const g = svg.append("g");
-  for (const [name, [x, y]] of Object.entries(namePos)) {
-    g.append("circle").attr("cx", x).attr("cy", y).attr("r", 14)
-      .attr("fill", "#fff");
-    g.append("circle").attr("cx", x).attr("cy", y).attr("r", 11)
-      .attr("fill", squad.team_color);
-    g.append("text").attr("x", x).attr("y", y - 18)
-      .attr("text-anchor", "middle").attr("fill", "#fff")
-      .attr("font-size", 14).attr("font-weight", 700).text(name);
+  // Player markers + smart label placement
+  const placedPoints = [];
+  function labelOffset(x, y) {
+    for (const [px_, py_] of placedPoints) {
+      if (Math.abs(px_ - x) < 60 && Math.abs(py_ - y) < 35) {
+        return 30;  // push below the marker
+      }
+    }
+    return -20;  // default: above the marker
   }
 
+  const g = svg.append("g");
+  for (const [idStr, p] of Object.entries(players)) {
+    const [x, y] = px(p);
+    g.append("circle").attr("cx", x).attr("cy", y).attr("r", 14)
+      .attr("fill", "#fff").attr("stroke", "#000").attr("stroke-width", 1);
+    g.append("circle").attr("cx", x).attr("cy", y).attr("r", 11)
+      .attr("fill", squad.team_color);
+    const dy = labelOffset(x, y);
+    const txt = g.append("text").attr("x", x).attr("y", y + dy)
+      .attr("text-anchor", "middle")
+      .attr("fill", "#fff")
+      .attr("stroke", "#000").attr("stroke-width", 3).attr("paint-order", "stroke")
+      .attr("font-size", 13).attr("font-weight", 700).text(p.name);
+    placedPoints.push([x, y]);
+  }
+
+  // Download buttons
   const dl = document.getElementById("downloads");
   for (const [label, file] of [
     ["Pitch SVG", "pitch.svg"], ["Pitch PNG 4K", "pitch.png"],
@@ -91,6 +108,7 @@ async function main() {
     dl.appendChild(a);
   }
 
+  // Pairs table
   const tbody = document.querySelector("#pairs tbody");
   pairs.forEach((p, i) => {
     const tr = document.createElement("tr");

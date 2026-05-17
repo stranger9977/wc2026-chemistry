@@ -9,6 +9,7 @@
     "players": []
   },
   "pairs": [],
+  "players_by_id": {},
   "coverage": {
     "matches": 0,
     "warning": "no matches in open data"

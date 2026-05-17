@@ -8,9 +8,518 @@
     "team_color": "#006847",
     "players": []
   },
-  "pairs": [],
+  "players_by_id": {
+    "26368": {
+      "name": "César Jasib Montes Castro",
+      "position": null,
+      "x": 56.98137919896641,
+      "y": 35.105768733850134,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "15872": {
+      "name": "Érick Gabriel Gutiérrez Galaviz",
+      "position": null,
+      "x": 51.54625,
+      "y": 25.373807692307693,
+      "minutes": 79.13333333333333,
+      "matches": 3
+    },
+    "5568": {
+      "name": "Raúl Alonso Jiménez Rodríguez",
+      "position": null,
+      "x": 39.953125,
+      "y": 35.138392857142854,
+      "minutes": 147.88333333333333,
+      "matches": 3
+    },
+    "5571": {
+      "name": "Hirving Rodrigo Lozano Bahena",
+      "position": null,
+      "x": 49.71200221238938,
+      "y": 32.75847345132743,
+      "minutes": 312.3,
+      "matches": 3
+    },
+    "5573": {
+      "name": "Héctor Alfredo Moreno Herrera",
+      "position": null,
+      "x": 54.8284171388102,
+      "y": 32.725361189801696,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "26375": {
+      "name": "Roberto Carlos Alvarado Hernández",
+      "position": null,
+      "x": 36.519836956521736,
+      "y": 5.9851086956521735,
+      "minutes": 47.7,
+      "matches": 3
+    },
+    "5575": {
+      "name": "Héctor Miguel Herrera López",
+      "position": null,
+      "x": 56.670157284768216,
+      "y": 33.61524834437086,
+      "minutes": 190.25,
+      "matches": 3
+    },
+    "5576": {
+      "name": "Jesús Daniel Gallardo Vasconcelos",
+      "position": null,
+      "x": 52.25888157894737,
+      "y": 27.938477443609024,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "5577": {
+      "name": "Francisco Guillermo Ochoa Magaña",
+      "position": null,
+      "x": 67.98625,
+      "y": 34.57727142857143,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "26318": {
+      "name": "Rogelio Gabriel Funes Mori",
+      "position": null,
+      "x": 29.421875,
+      "y": 35.36,
+      "minutes": 34.150000000000006,
+      "matches": 3
+    },
+    "26386": {
+      "name": "Luis Francisco Romo Barrón",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "26389": {
+      "name": "Alfredo Talavera Díaz",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "28825": {
+      "name": "Luis Gerardo Chávez Magallón",
+      "position": null,
+      "x": 52.35232508532423,
+      "y": 33.64563993174062,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "15452": {
+      "name": "Carlos Uriel Antuna Romero",
+      "position": null,
+      "x": 43.736607142857146,
+      "y": 43.012602040816326,
+      "minutes": 165.83333333333334,
+      "matches": 3
+    },
+    "26400": {
+      "name": "Henry Josué Martín Mex",
+      "position": null,
+      "x": 45.24375,
+      "y": 32.71353174603174,
+      "minutes": 146.76666666666665,
+      "matches": 3
+    },
+    "26336": {
+      "name": "Johan Felipe Vásquez Ibarra",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "30500": {
+      "name": "Kevin Nahin Álvarez Campos",
+      "position": null,
+      "x": 42.38365384615384,
+      "y": 60.64096153846154,
+      "minutes": 99.63333333333333,
+      "matches": 3
+    },
+    "26406": {
+      "name": "Jorge Eduardo Sánchez Ramos",
+      "position": null,
+      "x": 51.027577683615824,
+      "y": 29.482754237288137,
+      "minutes": 205.71666666666667,
+      "matches": 3
+    },
+    "26280": {
+      "name": "Orbelín Pineda Alvarado",
+      "position": null,
+      "x": 39.70738636363637,
+      "y": 33.36912337662338,
+      "minutes": 76.38333333333334,
+      "matches": 3
+    },
+    "28522": {
+      "name": "Rodolfo Cota Robles",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "27896": {
+      "name": "Gerardo Daniel Arteaga Zamora",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "26297": {
+      "name": "Carlos Alberto Rodríguez Gómez",
+      "position": null,
+      "x": 53.08697916666667,
+      "y": 32.22680555555556,
+      "minutes": 93.36666666666666,
+      "matches": 3
+    },
+    "5563": {
+      "name": "José Andrés Guardado Hernández",
+      "position": null,
+      "x": 58.76155303030303,
+      "y": 20.045833333333334,
+      "minutes": 40.86666666666667,
+      "matches": 3
+    },
+    "11388": {
+      "name": "Néstor Alejandro Araújo Razo",
+      "position": null,
+      "x": 59.16267523364486,
+      "y": 58.41128504672898,
+      "minutes": 120.0,
+      "matches": 3
+    },
+    "26301": {
+      "name": "Ernesto Alexis Vega Rojas",
+      "position": null,
+      "x": 54.26815476190476,
+      "y": 38.77474489795918,
+      "minutes": 194.16666666666666,
+      "matches": 3
+    },
+    "5567": {
+      "name": "Edson Omar Álvarez Velázquez",
+      "position": null,
+      "x": 51.500084841628954,
+      "y": 40.10942307692308,
+      "minutes": 205.85,
+      "matches": 3
+    }
+  },
+  "pairs": [
+    {
+      "player_a_id": 5577,
+      "player_b_id": 26368,
+      "player_a_name": "Francisco Guillermo Ochoa Magaña",
+      "player_b_name": "César Jasib Montes Castro",
+      "joi90": 1.0506875,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5573,
+      "player_b_id": 5577,
+      "player_a_name": "Héctor Alfredo Moreno Herrera",
+      "player_b_name": "Francisco Guillermo Ochoa Magaña",
+      "joi90": 0.9763125,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 26301,
+      "player_b_id": 28825,
+      "player_a_name": "Ernesto Alexis Vega Rojas",
+      "player_b_name": "Luis Gerardo Chávez Magallón",
+      "joi90": 0.7652703862660943,
+      "minutes": 194.16666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5573,
+      "player_b_id": 26368,
+      "player_a_name": "Héctor Alfredo Moreno Herrera",
+      "player_b_name": "César Jasib Montes Castro",
+      "joi90": 0.6735312500000001,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5575,
+      "player_b_id": 5577,
+      "player_a_name": "Héctor Miguel Herrera López",
+      "player_b_name": "Francisco Guillermo Ochoa Magaña",
+      "joi90": 0.4676215505913273,
+      "minutes": 190.25,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5575,
+      "player_b_id": 26368,
+      "player_a_name": "Héctor Miguel Herrera López",
+      "player_b_name": "César Jasib Montes Castro",
+      "joi90": 0.3237516425755586,
+      "minutes": 190.25,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5573,
+      "player_b_id": 28825,
+      "player_a_name": "Héctor Alfredo Moreno Herrera",
+      "player_b_name": "Luis Gerardo Chávez Magallón",
+      "joi90": 0.32099999999999995,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5567,
+      "player_b_id": 5573,
+      "player_a_name": "Edson Omar Álvarez Velázquez",
+      "player_b_name": "Héctor Alfredo Moreno Herrera",
+      "joi90": 0.2670816128248725,
+      "minutes": 205.85,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5567,
+      "player_b_id": 5576,
+      "player_a_name": "Edson Omar Álvarez Velázquez",
+      "player_b_name": "Jesús Daniel Gallardo Vasconcelos",
+      "joi90": 0.19898591207189698,
+      "minutes": 205.85,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5571,
+      "player_b_id": 28825,
+      "player_a_name": "Hirving Rodrigo Lozano Bahena",
+      "player_b_name": "Luis Gerardo Chávez Magallón",
+      "joi90": 0.11905619596541776,
+      "minutes": 312.3,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5575,
+      "player_b_id": 5576,
+      "player_a_name": "Héctor Miguel Herrera López",
+      "player_b_name": "Jesús Daniel Gallardo Vasconcelos",
+      "joi90": 0.10200394218134021,
+      "minutes": 190.25,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5576,
+      "player_b_id": 26406,
+      "player_a_name": "Jesús Daniel Gallardo Vasconcelos",
+      "player_b_name": "Jorge Eduardo Sánchez Ramos",
+      "joi90": 0.08771773474844041,
+      "minutes": 205.71666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5571,
+      "player_b_id": 5576,
+      "player_a_name": "Hirving Rodrigo Lozano Bahena",
+      "player_b_name": "Jesús Daniel Gallardo Vasconcelos",
+      "joi90": 0.08034374999999998,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 26368,
+      "player_b_id": 28825,
+      "player_a_name": "César Jasib Montes Castro",
+      "player_b_name": "Luis Gerardo Chávez Magallón",
+      "joi90": 0.06421875000000003,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5567,
+      "player_b_id": 28825,
+      "player_a_name": "Edson Omar Álvarez Velázquez",
+      "player_b_name": "Luis Gerardo Chávez Magallón",
+      "joi90": 0.059515423852319525,
+      "minutes": 205.85,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5576,
+      "player_b_id": 26368,
+      "player_a_name": "Jesús Daniel Gallardo Vasconcelos",
+      "player_b_name": "César Jasib Montes Castro",
+      "joi90": 0.05049999999999995,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5571,
+      "player_b_id": 26406,
+      "player_a_name": "Hirving Rodrigo Lozano Bahena",
+      "player_b_name": "Jorge Eduardo Sánchez Ramos",
+      "joi90": 0.04987442274973684,
+      "minutes": 205.71666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5576,
+      "player_b_id": 5577,
+      "player_a_name": "Jesús Daniel Gallardo Vasconcelos",
+      "player_b_name": "Francisco Guillermo Ochoa Magaña",
+      "joi90": 0.024312499999999945,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5573,
+      "player_b_id": 5575,
+      "player_a_name": "Héctor Alfredo Moreno Herrera",
+      "player_b_name": "Héctor Miguel Herrera López",
+      "joi90": 0.011767411300919742,
+      "minutes": 190.25,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5575,
+      "player_b_id": 28825,
+      "player_a_name": "Héctor Miguel Herrera López",
+      "player_b_name": "Luis Gerardo Chávez Magallón",
+      "joi90": 0.0097568988173456,
+      "minutes": 190.25,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5571,
+      "player_b_id": 26368,
+      "player_a_name": "Hirving Rodrigo Lozano Bahena",
+      "player_b_name": "César Jasib Montes Castro",
+      "joi90": 0.007744956772334368,
+      "minutes": 312.3,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5567,
+      "player_b_id": 26368,
+      "player_a_name": "Edson Omar Álvarez Velázquez",
+      "player_b_name": "César Jasib Montes Castro",
+      "joi90": -0.0012569832402236165,
+      "minutes": 205.85,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5576,
+      "player_b_id": 26301,
+      "player_a_name": "Jesús Daniel Gallardo Vasconcelos",
+      "player_b_name": "Ernesto Alexis Vega Rojas",
+      "joi90": -0.022596566523605314,
+      "minutes": 194.16666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 26368,
+      "player_b_id": 26406,
+      "player_a_name": "César Jasib Montes Castro",
+      "player_b_name": "Jorge Eduardo Sánchez Ramos",
+      "joi90": -0.09564733047071218,
+      "minutes": 205.71666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5576,
+      "player_b_id": 28825,
+      "player_a_name": "Jesús Daniel Gallardo Vasconcelos",
+      "player_b_name": "Luis Gerardo Chávez Magallón",
+      "joi90": -0.11962500000000001,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5571,
+      "player_b_id": 5573,
+      "player_a_name": "Hirving Rodrigo Lozano Bahena",
+      "player_b_name": "Héctor Alfredo Moreno Herrera",
+      "joi90": -0.13512247838616717,
+      "minutes": 312.3,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5577,
+      "player_b_id": 26406,
+      "player_a_name": "Francisco Guillermo Ochoa Magaña",
+      "player_b_name": "Jorge Eduardo Sánchez Ramos",
+      "joi90": -0.14043587458478496,
+      "minutes": 205.71666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5577,
+      "player_b_id": 28825,
+      "player_a_name": "Francisco Guillermo Ochoa Magaña",
+      "player_b_name": "Luis Gerardo Chávez Magallón",
+      "joi90": -0.1441406250000001,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5567,
+      "player_b_id": 5571,
+      "player_a_name": "Edson Omar Álvarez Velázquez",
+      "player_b_name": "Hirving Rodrigo Lozano Bahena",
+      "joi90": -0.14941705125091068,
+      "minutes": 205.85,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5573,
+      "player_b_id": 5576,
+      "player_a_name": "Héctor Alfredo Moreno Herrera",
+      "player_b_name": "Jesús Daniel Gallardo Vasconcelos",
+      "joi90": -0.15696874999999993,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5571,
+      "player_b_id": 26301,
+      "player_a_name": "Hirving Rodrigo Lozano Bahena",
+      "player_b_name": "Ernesto Alexis Vega Rojas",
+      "joi90": -0.2908583690987125,
+      "minutes": 194.16666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 26406,
+      "player_b_id": 28825,
+      "player_a_name": "Jorge Eduardo Sánchez Ramos",
+      "player_b_name": "Luis Gerardo Chávez Magallón",
+      "joi90": -0.2939965972616056,
+      "minutes": 205.71666666666667,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5567,
+      "player_b_id": 26406,
+      "player_a_name": "Edson Omar Álvarez Velázquez",
+      "player_b_name": "Jorge Eduardo Sánchez Ramos",
+      "joi90": -0.3210665964514301,
+      "minutes": 205.71666666666667,
+      "matches": 2
+    }
+  ],
   "coverage": {
     "matches": 3,
-    "unmatched_roster_names": []
+    "auto_derived_roster": true,
+    "roster_size": 26
   }
 }

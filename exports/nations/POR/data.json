@@ -8,9 +8,716 @@
     "team_color": "#006600",
     "players": []
   },
-  "pairs": [],
+  "players_by_id": {
+    "41092": {
+      "name": "Nuno Mendes",
+      "position": null,
+      "x": 58.616757246376814,
+      "y": 58.258876811594206,
+      "minutes": 41.483333333333334,
+      "matches": 1
+    },
+    "9927": {
+      "name": "Rúben Diogo Da Silva Neves",
+      "position": null,
+      "x": 53.258836206896554,
+      "y": 35.98818965517242,
+      "minutes": 300.5,
+      "matches": 5
+    },
+    "12041": {
+      "name": "João Félix Sequeira",
+      "position": null,
+      "x": 56.14959192439863,
+      "y": 43.14480240549828,
+      "minutes": 362.2,
+      "matches": 5
+    },
+    "12169": {
+      "name": "João Maria Lobo Alves Palhinha Gonçalves",
+      "position": null,
+      "x": 57.17625,
+      "y": 37.980428571428575,
+      "minutes": 126.01666666666667,
+      "matches": 5
+    },
+    "32975": {
+      "name": "Diogo Meireles Costa",
+      "position": null,
+      "x": 39.960625,
+      "y": 34.12719642857143,
+      "minutes": 600.0,
+      "matches": 5
+    },
+    "34639": {
+      "name": "Vitor Machado Ferreira",
+      "position": null,
+      "x": 45.63517376681614,
+      "y": 30.27696188340807,
+      "minutes": 179.66666666666669,
+      "matches": 5
+    },
+    "38803": {
+      "name": "Gonçalo Matias Ramos",
+      "position": null,
+      "x": 60.746875,
+      "y": 35.299285714285716,
+      "minutes": 211.63333333333333,
+      "matches": 5
+    },
+    "5204": {
+      "name": "Bruno Miguel Borges Fernandes",
+      "position": null,
+      "x": 53.749454148471614,
+      "y": 32.473897379912664,
+      "minutes": 446.6666666666667,
+      "matches": 5
+    },
+    "5205": {
+      "name": "Rui Pedro dos Santos Patrício",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 5
+    },
+    "5206": {
+      "name": "Rúben Santos Gato Alves Dias",
+      "position": null,
+      "x": 41.91981939163498,
+      "y": 31.69174904942966,
+      "minutes": 480.0,
+      "matches": 5
+    },
+    "5207": {
+      "name": "Cristiano Ronaldo dos Santos Aveiro",
+      "position": null,
+      "x": 56.52426675977654,
+      "y": 35.231075418994415,
+      "minutes": 350.6333333333333,
+      "matches": 5
+    },
+    "5209": {
+      "name": "Raphaël Adelino José Guerreiro",
+      "position": null,
+      "x": 55.56845414201184,
+      "y": 49.62843195266272,
+      "minutes": 369.23333333333335,
+      "matches": 5
+    },
+    "16028": {
+      "name": "José Diogo Dalot Teixeira",
+      "position": null,
+      "x": 44.470228494623655,
+      "y": 45.904417562724014,
+      "minutes": 318.6666666666667,
+      "matches": 5
+    },
+    "7005": {
+      "name": "João Pedro Cavaco Cancelo",
+      "position": null,
+      "x": 50.543727718360074,
+      "y": 11.466287878787877,
+      "minutes": 429.2833333333333,
+      "matches": 5
+    },
+    "5214": {
+      "name": "William Silva de Carvalho",
+      "position": null,
+      "x": 46.7335913897281,
+      "y": 33.540974320241695,
+      "minutes": 305.0,
+      "matches": 5
+    },
+    "5218": {
+      "name": "André Miguel Valente Silva",
+      "position": null,
+      "x": 32.15624999999999,
+      "y": 37.42771739130435,
+      "minutes": 55.06666666666666,
+      "matches": 5
+    },
+    "40874": {
+      "name": "Matheus Luiz Nunes",
+      "position": null,
+      "x": 47.36513157894737,
+      "y": 37.445855263157895,
+      "minutes": 102.43333333333334,
+      "matches": 5
+    },
+    "143854": {
+      "name": "António João Pereira Albuquerque Tavares Silva",
+      "position": null,
+      "x": 67.3765350877193,
+      "y": 22.355745614035087,
+      "minutes": 120.0,
+      "matches": 5
+    },
+    "20016": {
+      "name": "Kléper Laveran Lima Ferreira",
+      "position": null,
+      "x": 51.15950900514579,
+      "y": 34.561102058319044,
+      "minutes": 480.0,
+      "matches": 5
+    },
+    "11184": {
+      "name": "Otávio Edmilson da Silva Monteiro",
+      "position": null,
+      "x": 52.68849907063198,
+      "y": 35.74660780669145,
+      "minutes": 197.36666666666667,
+      "matches": 3
+    },
+    "4272": {
+      "name": "João Mário Naval da Costa Eduardo",
+      "position": null,
+      "x": 37.289939024390236,
+      "y": 21.170182926829266,
+      "minutes": 113.83333333333333,
+      "matches": 5
+    },
+    "18866": {
+      "name": "José Pedro Malheiro de Sá",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 5
+    },
+    "10868": {
+      "name": "Ricardo Jorge Luz Horta",
+      "position": null,
+      "x": 40.787760416666664,
+      "y": 47.08026041666667,
+      "minutes": 208.75,
+      "matches": 5
+    },
+    "13621": {
+      "name": "Danilo Luís Hélio Pereira",
+      "position": null,
+      "x": 35.488359375,
+      "y": 47.6988125,
+      "minutes": 120.0,
+      "matches": 1
+    },
+    "18360": {
+      "name": "Rafael Alexandre Conceição Leão",
+      "position": null,
+      "x": 44.572308394160586,
+      "y": 32.13279197080292,
+      "minutes": 234.61666666666667,
+      "matches": 5
+    },
+    "3193": {
+      "name": "Bernardo Mota Veiga de Carvalho e Silva",
+      "position": null,
+      "x": 53.60684419014085,
+      "y": 30.079375,
+      "minutes": 446.95,
+      "matches": 5
+    }
+  },
+  "pairs": [
+    {
+      "player_a_id": 5214,
+      "player_b_id": 12041,
+      "player_a_name": "William Silva de Carvalho",
+      "player_b_name": "João Félix Sequeira",
+      "joi90": 0.9972592327640172,
+      "minutes": 186.38333333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5209,
+      "player_b_id": 12041,
+      "player_a_name": "Raphaël Adelino José Guerreiro",
+      "player_b_name": "João Félix Sequeira",
+      "joi90": 0.959344756728092,
+      "minutes": 251.43333333333334,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3193,
+      "player_b_id": 5207,
+      "player_a_name": "Bernardo Mota Veiga de Carvalho e Silva",
+      "player_b_name": "Cristiano Ronaldo dos Santos Aveiro",
+      "joi90": 0.9385883905013194,
+      "minutes": 246.35000000000002,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3193,
+      "player_b_id": 5204,
+      "player_a_name": "Bernardo Mota Veiga de Carvalho e Silva",
+      "player_b_name": "Bruno Miguel Borges Fernandes",
+      "joi90": 0.8738066557778684,
+      "minutes": 408.1666666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5204,
+      "player_b_id": 7005,
+      "player_a_name": "Bruno Miguel Borges Fernandes",
+      "player_b_name": "João Pedro Cavaco Cancelo",
+      "joi90": 0.7808495446462252,
+      "minutes": 309.2833333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5204,
+      "player_b_id": 5214,
+      "player_a_name": "Bruno Miguel Borges Fernandes",
+      "player_b_name": "William Silva de Carvalho",
+      "joi90": 0.7615186430974021,
+      "minutes": 232.88333333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3193,
+      "player_b_id": 5209,
+      "player_a_name": "Bernardo Mota Veiga de Carvalho e Silva",
+      "player_b_name": "Raphaël Adelino José Guerreiro",
+      "joi90": 0.7349571284465365,
+      "minutes": 297.4,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3193,
+      "player_b_id": 11184,
+      "player_a_name": "Bernardo Mota Veiga de Carvalho e Silva",
+      "player_b_name": "Otávio Edmilson da Silva Monteiro",
+      "joi90": 0.697629201148455,
+      "minutes": 197.36666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5204,
+      "player_b_id": 5209,
+      "player_a_name": "Bruno Miguel Borges Fernandes",
+      "player_b_name": "Raphaël Adelino José Guerreiro",
+      "joi90": 0.6565458469782675,
+      "minutes": 335.9,
+      "matches": 4
+    },
+    {
+      "player_a_id": 11184,
+      "player_b_id": 12041,
+      "player_a_name": "Otávio Edmilson da Silva Monteiro",
+      "player_b_name": "João Félix Sequeira",
+      "joi90": 0.5824279191680053,
+      "minutes": 197.11666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 9927,
+      "player_b_id": 20016,
+      "player_a_name": "Rúben Diogo Da Silva Neves",
+      "player_b_name": "Kléper Laveran Lima Ferreira",
+      "joi90": 0.4894051698450534,
+      "minutes": 223.73333333333335,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5204,
+      "player_b_id": 5207,
+      "player_a_name": "Bruno Miguel Borges Fernandes",
+      "player_b_name": "Cristiano Ronaldo dos Santos Aveiro",
+      "joi90": 0.4850977413815875,
+      "minutes": 252.36666666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5209,
+      "player_b_id": 5214,
+      "player_a_name": "Raphaël Adelino José Guerreiro",
+      "player_b_name": "William Silva de Carvalho",
+      "joi90": 0.4836960456067325,
+      "minutes": 184.18333333333334,
+      "matches": 2
+    },
+    {
+      "player_a_id": 7005,
+      "player_b_id": 9927,
+      "player_a_name": "João Pedro Cavaco Cancelo",
+      "player_b_name": "Rúben Diogo Da Silva Neves",
+      "joi90": 0.47932379971478395,
+      "minutes": 210.36666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3193,
+      "player_b_id": 12041,
+      "player_a_name": "Bernardo Mota Veiga de Carvalho e Silva",
+      "player_b_name": "João Félix Sequeira",
+      "joi90": 0.4774261457758145,
+      "minutes": 362.2,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3193,
+      "player_b_id": 9927,
+      "player_a_name": "Bernardo Mota Veiga de Carvalho e Silva",
+      "player_b_name": "Rúben Diogo Da Silva Neves",
+      "joi90": 0.41266225502672416,
+      "minutes": 196.45,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5204,
+      "player_b_id": 11184,
+      "player_a_name": "Bruno Miguel Borges Fernandes",
+      "player_b_name": "Otávio Edmilson da Silva Monteiro",
+      "joi90": 0.39261948995102175,
+      "minutes": 197.36666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 12041,
+      "player_b_id": 20016,
+      "player_a_name": "João Félix Sequeira",
+      "player_b_name": "Kléper Laveran Lima Ferreira",
+      "joi90": 0.3862347625689855,
+      "minutes": 274.81666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5206,
+      "player_b_id": 5209,
+      "player_a_name": "Rúben Santos Gato Alves Dias",
+      "player_b_name": "Raphaël Adelino José Guerreiro",
+      "joi90": 0.34654915590863955,
+      "minutes": 369.23333333333335,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5204,
+      "player_b_id": 12041,
+      "player_a_name": "Bruno Miguel Borges Fernandes",
+      "player_b_name": "João Félix Sequeira",
+      "joi90": 0.29985505245720623,
+      "minutes": 362.2,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5204,
+      "player_b_id": 32975,
+      "player_a_name": "Bruno Miguel Borges Fernandes",
+      "player_b_name": "Diogo Meireles Costa",
+      "joi90": 0.28911352040816335,
+      "minutes": 326.6666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5209,
+      "player_b_id": 7005,
+      "player_a_name": "Raphaël Adelino José Guerreiro",
+      "player_b_name": "João Pedro Cavaco Cancelo",
+      "joi90": 0.26079674250692647,
+      "minutes": 198.51666666666665,
+      "matches": 2
+    },
+    {
+      "player_a_id": 3193,
+      "player_b_id": 5214,
+      "player_a_name": "Bernardo Mota Veiga de Carvalho e Silva",
+      "player_b_name": "William Silva de Carvalho",
+      "joi90": 0.25316118656182995,
+      "minutes": 233.16666666666666,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5214,
+      "player_b_id": 7005,
+      "player_a_name": "William Silva de Carvalho",
+      "player_b_name": "João Pedro Cavaco Cancelo",
+      "joi90": 0.20085810810810797,
+      "minutes": 185.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3193,
+      "player_b_id": 5206,
+      "player_a_name": "Bernardo Mota Veiga de Carvalho e Silva",
+      "player_b_name": "Rúben Santos Gato Alves Dias",
+      "joi90": 0.18144242547978756,
+      "minutes": 408.1666666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5206,
+      "player_b_id": 32975,
+      "player_a_name": "Rúben Santos Gato Alves Dias",
+      "player_b_name": "Diogo Meireles Costa",
+      "joi90": 0.17470312500000007,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5207,
+      "player_b_id": 9927,
+      "player_a_name": "Cristiano Ronaldo dos Santos Aveiro",
+      "player_b_name": "Rúben Diogo Da Silva Neves",
+      "joi90": 0.15893677705593384,
+      "minutes": 210.36666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 9927,
+      "player_b_id": 32975,
+      "player_a_name": "Rúben Diogo Da Silva Neves",
+      "player_b_name": "Diogo Meireles Costa",
+      "joi90": 0.15809900166389348,
+      "minutes": 300.5,
+      "matches": 5
+    },
+    {
+      "player_a_id": 5206,
+      "player_b_id": 12041,
+      "player_a_name": "Rúben Santos Gato Alves Dias",
+      "player_b_name": "João Félix Sequeira",
+      "joi90": 0.09895775814467146,
+      "minutes": 362.2,
+      "matches": 4
+    },
+    {
+      "player_a_id": 3193,
+      "player_b_id": 7005,
+      "player_a_name": "Bernardo Mota Veiga de Carvalho e Silva",
+      "player_b_name": "João Pedro Cavaco Cancelo",
+      "joi90": 0.0841655664114074,
+      "minutes": 315.5833333333333,
+      "matches": 4
+    },
+    {
+      "player_a_id": 7005,
+      "player_b_id": 12041,
+      "player_a_name": "João Pedro Cavaco Cancelo",
+      "player_b_name": "João Félix Sequeira",
+      "joi90": 0.0724493715083799,
+      "minutes": 238.66666666666669,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5207,
+      "player_b_id": 7005,
+      "player_a_name": "Cristiano Ronaldo dos Santos Aveiro",
+      "player_b_name": "João Pedro Cavaco Cancelo",
+      "joi90": 0.06298813643104306,
+      "minutes": 303.45,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5214,
+      "player_b_id": 32975,
+      "player_a_name": "William Silva de Carvalho",
+      "player_b_name": "Diogo Meireles Costa",
+      "joi90": 0.05354191448068611,
+      "minutes": 266.2166666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3193,
+      "player_b_id": 20016,
+      "player_a_name": "Bernardo Mota Veiga de Carvalho e Silva",
+      "player_b_name": "Kléper Laveran Lima Ferreira",
+      "joi90": 0.048952054159324916,
+      "minutes": 359.43333333333334,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5204,
+      "player_b_id": 9927,
+      "player_a_name": "Bruno Miguel Borges Fernandes",
+      "player_b_name": "Rúben Diogo Da Silva Neves",
+      "joi90": 0.045674185051037014,
+      "minutes": 202.46666666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5209,
+      "player_b_id": 20016,
+      "player_a_name": "Raphaël Adelino José Guerreiro",
+      "player_b_name": "Kléper Laveran Lima Ferreira",
+      "joi90": 0.03800655343052022,
+      "minutes": 249.23333333333335,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5204,
+      "player_b_id": 5206,
+      "player_a_name": "Bruno Miguel Borges Fernandes",
+      "player_b_name": "Rúben Santos Gato Alves Dias",
+      "joi90": 0.0024430970149253613,
+      "minutes": 446.6666666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 5214,
+      "player_b_id": 20016,
+      "player_a_name": "William Silva de Carvalho",
+      "player_b_name": "Kléper Laveran Lima Ferreira",
+      "joi90": -0.015976884213440408,
+      "minutes": 240.81666666666666,
+      "matches": 3
+    },
+    {
+      "player_a_id": 10868,
+      "player_b_id": 20016,
+      "player_a_name": "Ricardo Jorge Luz Horta",
+      "player_b_name": "Kléper Laveran Lima Ferreira",
+      "joi90": -0.01697604790419165,
+      "minutes": 208.75,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5206,
+      "player_b_id": 20016,
+      "player_a_name": "Rúben Santos Gato Alves Dias",
+      "player_b_name": "Kléper Laveran Lima Ferreira",
+      "joi90": -0.0648749999999999,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5209,
+      "player_b_id": 32975,
+      "player_a_name": "Raphaël Adelino José Guerreiro",
+      "player_b_name": "Diogo Meireles Costa",
+      "joi90": -0.07258258659890329,
+      "minutes": 249.23333333333335,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5207,
+      "player_b_id": 12041,
+      "player_a_name": "Cristiano Ronaldo dos Santos Aveiro",
+      "player_b_name": "João Félix Sequeira",
+      "joi90": -0.0828715673258333,
+      "minutes": 238.51666666666665,
+      "matches": 3
+    },
+    {
+      "player_a_id": 7005,
+      "player_b_id": 32975,
+      "player_a_name": "João Pedro Cavaco Cancelo",
+      "player_b_name": "Diogo Meireles Costa",
+      "joi90": -0.11876246160478535,
+      "minutes": 309.2833333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 16028,
+      "player_b_id": 32975,
+      "player_a_name": "José Diogo Dalot Teixeira",
+      "player_b_name": "Diogo Meireles Costa",
+      "joi90": -0.11962499999999994,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5206,
+      "player_b_id": 5214,
+      "player_a_name": "Rúben Santos Gato Alves Dias",
+      "player_b_name": "William Silva de Carvalho",
+      "joi90": -0.1434686658736617,
+      "minutes": 266.2166666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 11184,
+      "player_b_id": 32975,
+      "player_a_name": "Otávio Edmilson da Silva Monteiro",
+      "player_b_name": "Diogo Meireles Costa",
+      "joi90": -0.15954441817260603,
+      "minutes": 197.36666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5206,
+      "player_b_id": 11184,
+      "player_a_name": "Rúben Santos Gato Alves Dias",
+      "player_b_name": "Otávio Edmilson da Silva Monteiro",
+      "joi90": -0.16672648201317344,
+      "minutes": 197.36666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 3193,
+      "player_b_id": 32975,
+      "player_a_name": "Bernardo Mota Veiga de Carvalho e Silva",
+      "player_b_name": "Diogo Meireles Costa",
+      "joi90": -0.20550607287449404,
+      "minutes": 288.1666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5206,
+      "player_b_id": 9927,
+      "player_a_name": "Rúben Santos Gato Alves Dias",
+      "player_b_name": "Rúben Diogo Da Silva Neves",
+      "joi90": -0.22380725190839723,
+      "minutes": 235.8,
+      "matches": 4
+    },
+    {
+      "player_a_id": 20016,
+      "player_b_id": 32975,
+      "player_a_name": "Kléper Laveran Lima Ferreira",
+      "player_b_name": "Diogo Meireles Costa",
+      "joi90": -0.2529609375,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 7005,
+      "player_b_id": 20016,
+      "player_a_name": "João Pedro Cavaco Cancelo",
+      "player_b_name": "Kléper Laveran Lima Ferreira",
+      "joi90": -0.26087729697688217,
+      "minutes": 309.2833333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 9927,
+      "player_b_id": 12041,
+      "player_a_name": "Rúben Diogo Da Silva Neves",
+      "player_b_name": "João Félix Sequeira",
+      "joi90": -0.27092771697632995,
+      "minutes": 196.45,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5206,
+      "player_b_id": 7005,
+      "player_a_name": "Rúben Santos Gato Alves Dias",
+      "player_b_name": "João Pedro Cavaco Cancelo",
+      "joi90": -0.3149296761329957,
+      "minutes": 309.2833333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 16028,
+      "player_b_id": 20016,
+      "player_a_name": "José Diogo Dalot Teixeira",
+      "player_b_name": "Kléper Laveran Lima Ferreira",
+      "joi90": -0.3448783995815903,
+      "minutes": 318.6666666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5204,
+      "player_b_id": 20016,
+      "player_a_name": "Bruno Miguel Borges Fernandes",
+      "player_b_name": "Kléper Laveran Lima Ferreira",
+      "joi90": -0.3534451530612244,
+      "minutes": 326.6666666666667,
+      "matches": 3
+    }
+  ],
   "coverage": {
     "matches": 5,
-    "unmatched_roster_names": []
+    "auto_derived_roster": true,
+    "roster_size": 26
   }
 }

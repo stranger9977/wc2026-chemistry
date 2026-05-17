@@ -8,9 +8,500 @@
     "team_color": "#006c35",
     "players": []
   },
-  "pairs": [],
+  "players_by_id": {
+    "54144": {
+      "name": "Nawaf Shaker Al Abid",
+      "position": null,
+      "x": 34.574677835051546,
+      "y": 28.21342783505155,
+      "minutes": 89.76666666666668,
+      "matches": 3
+    },
+    "5187": {
+      "name": "Salem Mohammed Al Dawsari",
+      "position": null,
+      "x": 43.7340625,
+      "y": 22.76451785714286,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "5188": {
+      "name": "Hattan Babhir",
+      "position": null,
+      "x": 47.486250000000005,
+      "y": 31.9685,
+      "minutes": 57.93333333333332,
+      "matches": 3
+    },
+    "54149": {
+      "name": "Nawaf Alaqidi",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "121539": {
+      "name": "Haitham Mohammed Asiri",
+      "position": null,
+      "x": 53.21875,
+      "y": 30.80035714285714,
+      "minutes": 31.58333333333333,
+      "matches": 3
+    },
+    "5191": {
+      "name": "Mohammed Al Burayk",
+      "position": null,
+      "x": 51.925125,
+      "y": 26.152800000000003,
+      "minutes": 86.15,
+      "matches": 2
+    },
+    "51469": {
+      "name": "Saleh Khalid Al Shehri",
+      "position": null,
+      "x": 48.99111328125,
+      "y": 30.2633203125,
+      "minutes": 223.39999999999998,
+      "matches": 3
+    },
+    "51470": {
+      "name": "Riyadh Sharahili",
+      "position": null,
+      "x": 44.56025,
+      "y": 30.6408,
+      "minutes": 83.96666666666667,
+      "matches": 2
+    },
+    "51663": {
+      "name": "Mohammed Al Rubaie Al Yami",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "5713": {
+      "name": "Mohammed Kanoo",
+      "position": null,
+      "x": 49.17097222222222,
+      "y": 38.61738888888889,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "5714": {
+      "name": "Mohammed Khalil Al Owais",
+      "position": null,
+      "x": 60.05908742331289,
+      "y": 34.19998466257669,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "5715": {
+      "name": "Ali Albulayhi",
+      "position": null,
+      "x": 66.32791666666667,
+      "y": 24.397833333333335,
+      "minutes": 276.0333333333333,
+      "matches": 3
+    },
+    "57620": {
+      "name": "Sultan Abdullah Salim Al Ghannam",
+      "position": null,
+      "x": 52.16796875,
+      "y": 27.807142857142857,
+      "minutes": 185.28333333333336,
+      "matches": 3
+    },
+    "51094": {
+      "name": "Abdulelah Al Amri",
+      "position": null,
+      "x": 52.959787735849055,
+      "y": 36.301415094339625,
+      "minutes": 272.26666666666665,
+      "matches": 3
+    },
+    "74623": {
+      "name": "Nasser Al Dawsari",
+      "position": null,
+      "x": 44.05244565217391,
+      "y": 31.958152173913046,
+      "minutes": 35.0,
+      "matches": 3
+    },
+    "51096": {
+      "name": "Ali Al Hassan",
+      "position": null,
+      "x": 55.19500000000001,
+      "y": 34.76925,
+      "minutes": 45.0,
+      "matches": 3
+    },
+    "51546": {
+      "name": "Hassan Mohammed Al-Tambakti",
+      "position": null,
+      "x": 53.43191371681416,
+      "y": 46.73232300884956,
+      "minutes": 240.0,
+      "matches": 3
+    },
+    "51099": {
+      "name": "Firas Tariq Nasser Al Albirakan",
+      "position": null,
+      "x": 47.506648089171975,
+      "y": 39.39316878980892,
+      "minutes": 328.4166666666667,
+      "matches": 3
+    },
+    "51103": {
+      "name": "Abdullah Mohammed Madu",
+      "position": null,
+      "x": 34.13229166666667,
+      "y": 54.49916666666667,
+      "minutes": 75.0,
+      "matches": 3
+    },
+    "51632": {
+      "name": "Sami Khalil Al Naji",
+      "position": null,
+      "x": 33.13669871794872,
+      "y": 39.51955128205128,
+      "minutes": 45.0,
+      "matches": 3
+    },
+    "56755": {
+      "name": "Abdulelah Saad Hameed Al-Malki",
+      "position": null,
+      "x": 56.127156432748535,
+      "y": 32.37630116959064,
+      "minutes": 204.93333333333334,
+      "matches": 2
+    },
+    "5173": {
+      "name": "Abdullah Ibrahim Otayf",
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 3
+    },
+    "51705": {
+      "name": "Abdulrahman Al-Obood",
+      "position": null,
+      "x": 46.58453947368421,
+      "y": 34.44065789473684,
+      "minutes": 94.01666666666667,
+      "matches": 3
+    },
+    "5178": {
+      "name": "Salman Mohammed Al Faraj",
+      "position": null,
+      "x": 44.60441176470588,
+      "y": 53.89,
+      "minutes": 47.65,
+      "matches": 1
+    },
+    "51710": {
+      "name": "Saud Abdullah Abdul Hamid",
+      "position": null,
+      "x": 44.039714566929135,
+      "y": 45.97629921259843,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    "5183": {
+      "name": "Yasir Gharsan Al Shahrani",
+      "position": null,
+      "x": 56.92421875,
+      "y": 9.553203125,
+      "minutes": 98.6,
+      "matches": 1
+    }
+  },
+  "pairs": [
+    {
+      "player_a_id": 5714,
+      "player_b_id": 5715,
+      "player_a_name": "Mohammed Khalil Al Owais",
+      "player_b_name": "Ali Albulayhi",
+      "joi90": 0.5827285352010628,
+      "minutes": 276.0333333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5715,
+      "player_b_id": 56755,
+      "player_a_name": "Ali Albulayhi",
+      "player_b_name": "Abdulelah Saad Hameed Al-Malki",
+      "joi90": 0.444766590761223,
+      "minutes": 204.93333333333334,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5713,
+      "player_b_id": 51099,
+      "player_a_name": "Mohammed Kanoo",
+      "player_b_name": "Firas Tariq Nasser Al Albirakan",
+      "joi90": 0.310866531337224,
+      "minutes": 328.4166666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5714,
+      "player_b_id": 51546,
+      "player_a_name": "Mohammed Khalil Al Owais",
+      "player_b_name": "Hassan Mohammed Al-Tambakti",
+      "joi90": 0.28790625000000003,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5713,
+      "player_b_id": 51546,
+      "player_a_name": "Mohammed Kanoo",
+      "player_b_name": "Hassan Mohammed Al-Tambakti",
+      "joi90": 0.22734374999999998,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 51094,
+      "player_b_id": 51099,
+      "player_a_name": "Abdulelah Al Amri",
+      "player_b_name": "Firas Tariq Nasser Al Albirakan",
+      "joi90": 0.21379687499999983,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5714,
+      "player_b_id": 56755,
+      "player_a_name": "Mohammed Khalil Al Owais",
+      "player_b_name": "Abdulelah Saad Hameed Al-Malki",
+      "joi90": 0.1781371990891346,
+      "minutes": 204.93333333333334,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5187,
+      "player_b_id": 51546,
+      "player_a_name": "Salem Mohammed Al Dawsari",
+      "player_b_name": "Hassan Mohammed Al-Tambakti",
+      "joi90": 0.1573125,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 51546,
+      "player_b_id": 51710,
+      "player_a_name": "Hassan Mohammed Al-Tambakti",
+      "player_b_name": "Saud Abdullah Abdul Hamid",
+      "joi90": 0.14109375000000005,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5713,
+      "player_b_id": 57620,
+      "player_a_name": "Mohammed Kanoo",
+      "player_b_name": "Sultan Abdullah Salim Al Ghannam",
+      "joi90": 0.13655437618062444,
+      "minutes": 185.28333333333336,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5187,
+      "player_b_id": 51469,
+      "player_a_name": "Salem Mohammed Al Dawsari",
+      "player_b_name": "Saleh Khalid Al Shehri",
+      "joi90": 0.12443487018800371,
+      "minutes": 223.39999999999998,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5714,
+      "player_b_id": 51094,
+      "player_a_name": "Mohammed Khalil Al Owais",
+      "player_b_name": "Abdulelah Al Amri",
+      "joi90": 0.10331249999999999,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5713,
+      "player_b_id": 51094,
+      "player_a_name": "Mohammed Kanoo",
+      "player_b_name": "Abdulelah Al Amri",
+      "joi90": 0.05324999999999994,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5187,
+      "player_b_id": 56755,
+      "player_a_name": "Salem Mohammed Al Dawsari",
+      "player_b_name": "Abdulelah Saad Hameed Al-Malki",
+      "joi90": 0.024593363695510677,
+      "minutes": 204.93333333333334,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5187,
+      "player_b_id": 51094,
+      "player_a_name": "Salem Mohammed Al Dawsari",
+      "player_b_name": "Abdulelah Al Amri",
+      "joi90": 0.020390625000000027,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5187,
+      "player_b_id": 5713,
+      "player_a_name": "Salem Mohammed Al Dawsari",
+      "player_b_name": "Mohammed Kanoo",
+      "joi90": 0.015562500000000146,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5187,
+      "player_b_id": 5714,
+      "player_a_name": "Salem Mohammed Al Dawsari",
+      "player_b_name": "Mohammed Khalil Al Owais",
+      "joi90": -0.011484374999999944,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5187,
+      "player_b_id": 5715,
+      "player_a_name": "Salem Mohammed Al Dawsari",
+      "player_b_name": "Ali Albulayhi",
+      "joi90": -0.018870003622750754,
+      "minutes": 276.0333333333333,
+      "matches": 3
+    },
+    {
+      "player_a_id": 51099,
+      "player_b_id": 51710,
+      "player_a_name": "Firas Tariq Nasser Al Albirakan",
+      "player_b_name": "Saud Abdullah Abdul Hamid",
+      "joi90": -0.029870591220502313,
+      "minutes": 328.4166666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 51099,
+      "player_b_id": 51469,
+      "player_a_name": "Firas Tariq Nasser Al Albirakan",
+      "player_b_name": "Saleh Khalid Al Shehri",
+      "joi90": -0.03907788719785154,
+      "minutes": 223.39999999999998,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5713,
+      "player_b_id": 5715,
+      "player_a_name": "Mohammed Kanoo",
+      "player_b_name": "Ali Albulayhi",
+      "joi90": -0.07874999999999978,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5713,
+      "player_b_id": 5714,
+      "player_a_name": "Mohammed Kanoo",
+      "player_b_name": "Mohammed Khalil Al Owais",
+      "joi90": -0.11456250000000003,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5713,
+      "player_b_id": 56755,
+      "player_a_name": "Mohammed Kanoo",
+      "player_b_name": "Abdulelah Saad Hameed Al-Malki",
+      "joi90": -0.13674568965517225,
+      "minutes": 204.93333333333334,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5713,
+      "player_b_id": 51469,
+      "player_a_name": "Mohammed Kanoo",
+      "player_b_name": "Saleh Khalid Al Shehri",
+      "joi90": -0.16144807520143242,
+      "minutes": 223.39999999999998,
+      "matches": 3
+    },
+    {
+      "player_a_id": 51099,
+      "player_b_id": 51546,
+      "player_a_name": "Firas Tariq Nasser Al Albirakan",
+      "player_b_name": "Hassan Mohammed Al-Tambakti",
+      "joi90": -0.23799080367852857,
+      "minutes": 208.41666666666669,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5714,
+      "player_b_id": 51710,
+      "player_a_name": "Mohammed Khalil Al Owais",
+      "player_b_name": "Saud Abdullah Abdul Hamid",
+      "joi90": -0.24581249999999996,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 5187,
+      "player_b_id": 51099,
+      "player_a_name": "Salem Mohammed Al Dawsari",
+      "player_b_name": "Firas Tariq Nasser Al Albirakan",
+      "joi90": -0.2597919309819844,
+      "minutes": 328.4166666666667,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5187,
+      "player_b_id": 51710,
+      "player_a_name": "Salem Mohammed Al Dawsari",
+      "player_b_name": "Saud Abdullah Abdul Hamid",
+      "joi90": -0.3032499999999999,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 5713,
+      "player_b_id": 51710,
+      "player_a_name": "Mohammed Kanoo",
+      "player_b_name": "Saud Abdullah Abdul Hamid",
+      "joi90": -0.3700000000000002,
+      "minutes": 360.0,
+      "matches": 3
+    },
+    {
+      "player_a_id": 51094,
+      "player_b_id": 51710,
+      "player_a_name": "Abdulelah Al Amri",
+      "player_b_name": "Saud Abdullah Abdul Hamid",
+      "joi90": -0.521953125,
+      "minutes": 240.0,
+      "matches": 2
+    },
+    {
+      "player_a_id": 51710,
+      "player_b_id": 56755,
+      "player_a_name": "Saud Abdullah Abdul Hamid",
+      "player_b_name": "Abdulelah Saad Hameed Al-Malki",
+      "joi90": -0.6159320104098893,
+      "minutes": 204.93333333333334,
+      "matches": 2
+    }
+  ],
   "coverage": {
     "matches": 3,
-    "unmatched_roster_names": []
+    "auto_derived_roster": true,
+    "roster_size": 26
   }
 }
