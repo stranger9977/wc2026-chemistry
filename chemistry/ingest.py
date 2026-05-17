@@ -20,7 +20,6 @@ INTERNATIONAL_COMPETITIONS: list[dict] = [
     {"competition_id": 55,   "season_id": 282, "label": "UEFA Euro 2024"},
     {"competition_id": 55,   "season_id": 43,  "label": "UEFA Euro 2020"},
     {"competition_id": 223,  "season_id": 282, "label": "Copa America 2024"},
-    {"competition_id": 72,   "season_id": 107, "label": "FIFA Women's World Cup 2023"},
 ]
 
 

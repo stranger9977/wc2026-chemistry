@@ -108,6 +108,11 @@ def build_chemistry_json(
         # Effective roster: union of YAML and auto-derived
         effective_ids = yaml_roster_ids | auto_roster_ids
 
+        # Pitch shows just the top 11 by minutes
+        pitch_ids = [int(pid) for pid in
+                     minutes_by_player.head(11).index
+                     if int(pid) in effective_ids]
+
         # Compute formation-based positions
         raw_positions: dict[int, tuple[float, float]] = {}
         for pid in effective_ids:
@@ -179,6 +184,7 @@ def build_chemistry_json(
         per_nation[code] = {
             "squad": squad.model_dump(),
             "players_by_id": players_by_id,
+            "pitch_player_ids": pitch_ids,
             "pairs": [_pair_record(r, id_to_name, id_to_display) for _, r in squad_pairs.iterrows()],
             "coverage": coverage,
         }

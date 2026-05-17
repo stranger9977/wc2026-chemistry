@@ -48,51 +48,70 @@ async function main() {
     .attr("fill", "none").attr("stroke", "#fff").attr("stroke-width", 2).attr("opacity", 0.5);
 
   // SPADL coords are 105 wide × 68 tall; viewBox is 1050 × 680 — scale by 10
-  function px(p) { return [p.x * 10, p.y * 10]; }
 
-  const pairs = entry.pairs;
-  const vmin = d3.min(pairs, d => d.joi90) ?? 0;
-  const vmax = d3.max(pairs, d => d.joi90) ?? 0;
+  // Filter to pitch-relevant pairs only
+  const pitchSet = new Set(entry.pitch_player_ids || Object.keys(entry.players_by_id).map(Number));
+  const allEligible = entry.pairs.filter(p =>
+    pitchSet.has(p.player_a_id) && pitchSet.has(p.player_b_id)
+  );
+  const TOP_N = 15;
+  const sortedDesc = [...allEligible].sort((a, b) => b.joi90 - a.joi90);
+  const topEdges = sortedDesc.slice(0, TOP_N);
+  const dimEdges = sortedDesc.slice(TOP_N);
 
-  // Edges — look up by player_id (numeric key stored as string in JSON)
-  svg.append("g").selectAll("line")
-    .data(pairs.filter(p => players[p.player_a_id] && players[p.player_b_id]))
-    .enter().append("line")
-      .attr("x1", d => px(players[d.player_a_id])[0])
-      .attr("y1", d => px(players[d.player_a_id])[1])
-      .attr("x2", d => px(players[d.player_b_id])[0])
-      .attr("y2", d => px(players[d.player_b_id])[1])
+  const vmin = d3.min(topEdges, d => d.joi90) ?? 0;
+  const vmax = d3.max(topEdges, d => d.joi90) ?? 0;
+
+  // Dim edges first (low opacity, no tooltip clutter)
+  svg.append("g").selectAll("line.dim")
+    .data(dimEdges).enter().append("line")
+      .attr("x1", d => (entry.players_by_id[d.player_a_id] ? entry.players_by_id[d.player_a_id].x * 10 : 0))
+      .attr("y1", d => (entry.players_by_id[d.player_a_id] ? entry.players_by_id[d.player_a_id].y * 10 : 0))
+      .attr("x2", d => (entry.players_by_id[d.player_b_id] ? entry.players_by_id[d.player_b_id].x * 10 : 0))
+      .attr("y2", d => (entry.players_by_id[d.player_b_id] ? entry.players_by_id[d.player_b_id].y * 10 : 0))
+      .attr("stroke", "#6b7280")
+      .attr("stroke-width", 1)
+      .attr("opacity", 0.12)
+      .attr("stroke-linecap", "round");
+
+  // Top edges
+  svg.append("g").selectAll("line.top")
+    .data(topEdges).enter().append("line")
+      .attr("x1", d => entry.players_by_id[d.player_a_id].x * 10)
+      .attr("y1", d => entry.players_by_id[d.player_a_id].y * 10)
+      .attr("x2", d => entry.players_by_id[d.player_b_id].x * 10)
+      .attr("y2", d => entry.players_by_id[d.player_b_id].y * 10)
       .attr("stroke", d => colorFor(d.joi90, vmin, vmax))
-      .attr("stroke-width", d => 2 + 6 * Math.min(d.minutes, 600) / 600)
+      .attr("stroke-width", d => 2.5 + 6 * Math.min(d.minutes, 600) / 600)
       .attr("stroke-linecap", "round")
-      .attr("opacity", 0.85)
+      .attr("opacity", 0.95)
       .append("title")
-        .text(d => `${d.player_a_display || d.player_a_name} + ${d.player_b_display || d.player_b_name}\nJOI90 ${d.joi90.toFixed(3)} · ${Math.round(d.minutes)} mins · ${d.matches} matches`);
+        .text(d => `${d.player_a_display ?? d.player_a_name} + ${d.player_b_display ?? d.player_b_name}\nJOI90 ${d.joi90.toFixed(3)} · ${Math.round(d.minutes)} mins · ${d.matches} matches`);
 
-  // Player markers + smart label placement
+  // Player markers — only for pitch_player_ids (top 11 by minutes)
+  const pitchPlayers = (entry.pitch_player_ids || Object.keys(entry.players_by_id).map(Number));
   const placedPoints = [];
   function labelOffset(x, y) {
     for (const [px_, py_] of placedPoints) {
-      if (Math.abs(px_ - x) < 60 && Math.abs(py_ - y) < 35) {
-        return 30;  // push below the marker
-      }
+      if (Math.abs(px_ - x) < 60 && Math.abs(py_ - y) < 35) return 30;
     }
-    return -20;  // default: above the marker
+    return -20;
   }
-
   const g = svg.append("g");
-  for (const [idStr, p] of Object.entries(players)) {
-    const [x, y] = px(p);
+  for (const pid of pitchPlayers) {
+    const p = entry.players_by_id[pid];
+    if (!p) continue;
+    const x = p.x * 10, y = p.y * 10;
     g.append("circle").attr("cx", x).attr("cy", y).attr("r", 14)
       .attr("fill", "#fff").attr("stroke", "#000").attr("stroke-width", 1);
     g.append("circle").attr("cx", x).attr("cy", y).attr("r", 11)
       .attr("fill", squad.team_color);
     const dy = labelOffset(x, y);
-    const txt = g.append("text").attr("x", x).attr("y", y + dy)
+    g.append("text").attr("x", x).attr("y", y + dy)
       .attr("text-anchor", "middle")
-      .attr("fill", "#fff")
-      .attr("stroke", "#000").attr("stroke-width", 3).attr("paint-order", "stroke")
-      .attr("font-size", 13).attr("font-weight", 700).text(p.display_name || p.name);
+      .attr("fill", "#fff").attr("stroke", "#000").attr("stroke-width", 3).attr("paint-order", "stroke")
+      .attr("font-size", 13).attr("font-weight", 700)
+      .text(p.display_name);
     placedPoints.push([x, y]);
   }
 
@@ -108,9 +127,9 @@ async function main() {
     dl.appendChild(a);
   }
 
-  // Pairs table
+  // Pairs table — still shows all pairs for full squad context
   const tbody = document.querySelector("#pairs tbody");
-  pairs.forEach((p, i) => {
+  entry.pairs.forEach((p, i) => {
     const tr = document.createElement("tr");
     tr.innerHTML = `<td>${i+1}</td><td>${p.player_a_display || p.player_a_name} + ${p.player_b_display || p.player_b_name}</td>
       <td class="joi">${p.joi90.toFixed(3)}</td><td>${Math.round(p.minutes)}</td><td>${p.matches}</td>`;

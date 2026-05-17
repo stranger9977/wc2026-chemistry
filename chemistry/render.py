@@ -64,16 +64,15 @@ def render_pitch_chemistry(
         fig.patch.set_alpha(0)
 
     squad = nation_entry["squad"]
-    pairs = nation_entry["pairs"]
     players_by_id = nation_entry.get("players_by_id", {})
+    pitch_ids = set(nation_entry.get("pitch_player_ids") or [int(k) for k in players_by_id.keys()])
 
-    # Build {id: (x, y, name)} from empirical positions in players_by_id.
-    # Fall back to DEFAULT_POSITIONS keyed by position string for hand-curated
-    # players that have no empirical data.
     id_to_xy: dict[int, tuple[float, float, str]] = {}
     for pid_str, p in players_by_id.items():
-        label = p.get("display_name") or p["name"]
-        id_to_xy[int(pid_str)] = (p["x"], p["y"], label)
+        pid = int(pid_str)
+        if pid in pitch_ids:
+            label = p.get("display_name") or p["name"]
+            id_to_xy[pid] = (p["x"], p["y"], label)
 
     # If players_by_id is empty, fall back to the old name-based approach so
     # legacy nation entries still render something.
@@ -86,32 +85,45 @@ def render_pitch_chemistry(
             # Use a fake id based on name hash to reuse same draw path
             id_to_xy[hash(name) & 0xFFFFFFFF] = (x, y, name)
 
-    if pairs:
-        vmin = min(p["joi90"] for p in pairs)
-        vmax = max(p["joi90"] for p in pairs)
+    eligible_pairs = [p for p in nation_entry["pairs"]
+                      if p["player_a_id"] in pitch_ids and p["player_b_id"] in pitch_ids]
+    eligible_pairs.sort(key=lambda p: -p["joi90"])
+    TOP_N = 15
+    top_pairs = eligible_pairs[:TOP_N]
+    dim_pairs = eligible_pairs[TOP_N:]
+
+    if top_pairs:
+        vmin = min(p["joi90"] for p in top_pairs)
+        vmax = max(p["joi90"] for p in top_pairs)
     else:
         vmin = vmax = 0.0
 
-    # Edges
-    for p in pairs:
-        a_id = p["player_a_id"]
-        b_id = p["player_b_id"]
-        if a_id not in id_to_xy or b_id not in id_to_xy:
+    # Dim edges
+    for p in dim_pairs:
+        if p["player_a_id"] not in id_to_xy or p["player_b_id"] not in id_to_xy:
             continue
-        xa, ya, _ = id_to_xy[a_id]
-        xb, yb, _ = id_to_xy[b_id]
+        xa, ya, _ = id_to_xy[p["player_a_id"]]
+        xb, yb, _ = id_to_xy[p["player_b_id"]]
+        ax.plot([xa, xb], [ya, yb], color="#6b7280", linewidth=0.8, alpha=0.18,
+                solid_capstyle="round", zorder=0)
+
+    # Top edges
+    for p in top_pairs:
+        if p["player_a_id"] not in id_to_xy or p["player_b_id"] not in id_to_xy:
+            continue
+        xa, ya, _ = id_to_xy[p["player_a_id"]]
+        xb, yb, _ = id_to_xy[p["player_b_id"]]
         col = _color_for_joi(p["joi90"], vmin, vmax, opts)
         m = min(p["minutes"], 600) / 600.0
         lw = opts.edge_min_width + (opts.edge_max_width - opts.edge_min_width) * m
-        ax.plot([xa, xb], [ya, yb], color=col,
-                linewidth=lw, solid_capstyle="round", alpha=0.85, zorder=1)
+        ax.plot([xa, xb], [ya, yb], color=col, linewidth=lw,
+                solid_capstyle="round", alpha=0.95, zorder=1)
 
     # Markers + labels with smart placement to avoid overlap
     placed_points: list[tuple[float, float]] = []
     for pid, (x, y, name) in id_to_xy.items():
         ax.add_patch(Circle((x, y), 1.8, color="#ffffff", zorder=3))
         ax.add_patch(Circle((x, y), 1.5, color=squad["team_color"], zorder=4))
-        # Smart label: if too close to another marker, push label below
         offset = -3.0
         for (xp, yp) in placed_points:
             if abs(xp - x) < 8 and abs(yp - y) < 4:
