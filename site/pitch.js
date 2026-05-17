@@ -67,7 +67,7 @@ async function main() {
       .attr("stroke-linecap", "round")
       .attr("opacity", 0.85)
       .append("title")
-        .text(d => `${d.player_a_name} + ${d.player_b_name}\nJOI90 ${d.joi90.toFixed(3)} · ${Math.round(d.minutes)} mins · ${d.matches} matches`);
+        .text(d => `${d.player_a_display || d.player_a_name} + ${d.player_b_display || d.player_b_name}\nJOI90 ${d.joi90.toFixed(3)} · ${Math.round(d.minutes)} mins · ${d.matches} matches`);
 
   // Player markers + smart label placement
   const placedPoints = [];
@@ -92,7 +92,7 @@ async function main() {
       .attr("text-anchor", "middle")
       .attr("fill", "#fff")
       .attr("stroke", "#000").attr("stroke-width", 3).attr("paint-order", "stroke")
-      .attr("font-size", 13).attr("font-weight", 700).text(p.name);
+      .attr("font-size", 13).attr("font-weight", 700).text(p.display_name || p.name);
     placedPoints.push([x, y]);
   }
 
@@ -112,7 +112,7 @@ async function main() {
   const tbody = document.querySelector("#pairs tbody");
   pairs.forEach((p, i) => {
     const tr = document.createElement("tr");
-    tr.innerHTML = `<td>${i+1}</td><td>${p.player_a_name} + ${p.player_b_name}</td>
+    tr.innerHTML = `<td>${i+1}</td><td>${p.player_a_display || p.player_a_name} + ${p.player_b_display || p.player_b_name}</td>
       <td class="joi">${p.joi90.toFixed(3)}</td><td>${Math.round(p.minutes)}</td><td>${p.matches}</td>`;
     tbody.appendChild(tr);
   });

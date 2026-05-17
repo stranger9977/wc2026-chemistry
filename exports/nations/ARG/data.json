@@ -11,102 +11,141 @@
   "players_by_id": {
     "11456": {
       "name": "Lautaro Javier Martínez",
+      "display_name": "Lautaro Martínez",
+      "nickname": "Lautaro Martínez",
+      "sb_position": "Left Center Forward",
       "position": null,
-      "x": 58.38875,
-      "y": 35.643414285714286,
+      "x": 92.0,
+      "y": 32.0,
       "minutes": 330.6166666666667,
       "matches": 7
     },
     "5507": {
       "name": "Nicolás Alejandro Tagliafico",
+      "display_name": "Nicolás Tagliafico",
+      "nickname": "Nicolás Tagliafico",
+      "sb_position": "Left Back",
       "position": null,
-      "x": 48.06719182825484,
-      "y": 45.07060249307479,
+      "x": 22.0,
+      "y": 10.0,
       "minutes": 463.8666666666667,
       "matches": 7
     },
     "19597": {
       "name": "Marcos Javier Acuña",
+      "display_name": "Marcos Acuña",
+      "nickname": "Marcos Acuña",
+      "sb_position": "Left Back",
       "position": null,
-      "x": 53.622982954545456,
-      "y": 43.52347727272728,
+      "x": 22.0,
+      "y": 16.0,
       "minutes": 433.85,
       "matches": 6
     },
     "29201": {
       "name": "Nahuel Molina Lucero",
+      "display_name": "Nahuel Molina",
+      "nickname": "Nahuel Molina",
+      "sb_position": "Right Back",
       "position": null,
-      "x": 47.19471590909091,
-      "y": 26.640159090909094,
+      "x": 22.0,
+      "y": 64.0,
       "minutes": 672.6666666666666,
       "matches": 7
     },
     "3090": {
       "name": "Nicolás Hernán Otamendi",
+      "display_name": "Nicolás Otamendi",
+      "nickname": "Nicolás Otamendi",
+      "sb_position": "Left Center Back",
       "position": null,
-      "x": 44.44813576609247,
-      "y": 36.353451949229374,
+      "x": 18.0,
+      "y": 24.0,
       "minutes": 840.0,
       "matches": 7
     },
     "21081": {
       "name": "Juan Marcos Foyth",
+      "display_name": "Juan Foyth",
+      "nickname": "Juan Foyth",
+      "sb_position": "Right Wing Back",
       "position": null,
-      "x": 67.03229166666667,
-      "y": 5.468333333333329,
+      "x": 35.0,
+      "y": 60.0,
       "minutes": 34.05,
       "matches": 7
     },
     "20572": {
       "name": "Cristian Gabriel Romero",
+      "display_name": "Cristian Romero",
+      "nickname": "Cristian Romero",
+      "sb_position": "Right Center Back",
       "position": null,
-      "x": 42.64631756756757,
-      "y": 32.075783783783784,
+      "x": 18.0,
+      "y": 44.0,
       "minutes": 666.9,
       "matches": 7
     },
     "28637": {
       "name": "Thiago Ezequiel Almada",
+      "display_name": "Thiago Almada",
+      "nickname": "Thiago Almada",
+      "sb_position": "Left Wing",
       "position": null,
-      "x": 32.95833333333333,
-      "y": 20.856875000000002,
+      "x": 85.0,
+      "y": 10.0,
       "minutes": 37.21666666666667,
       "matches": 7
     },
     "7006": {
       "name": "Alejandro Darío Gómez",
+      "display_name": "Papu Gómez",
+      "nickname": "Papu Gómez",
+      "sb_position": "Left Midfield",
       "position": null,
-      "x": 60.109086879432624,
-      "y": 41.87093971631206,
+      "x": 55.0,
+      "y": 18.0,
       "minutes": 107.36666666666667,
       "matches": 6
     },
     "26404": {
       "name": "Guido Rodríguez",
+      "display_name": "Guido Rodríguez",
+      "nickname": null,
+      "sb_position": "Left Defensive Midfield",
       "position": null,
-      "x": 41.51120689655173,
-      "y": 37.92392241379311,
+      "x": 40.0,
+      "y": 24.0,
       "minutes": 56.766666666666666,
       "matches": 7
     },
     "6694": {
       "name": "Gerónimo Rulli",
+      "display_name": "Gero Rulli",
+      "nickname": "Gero Rulli",
+      "sb_position": null,
       "position": null,
       "x": 50.0,
-      "y": 34.0,
+      "y": 40.0,
       "minutes": 0.0,
       "matches": 7
     },
     "28263": {
       "name": "Gonzalo Ariel Montiel",
+      "display_name": "Gonzalo Montiel",
+      "nickname": "Gonzalo Montiel",
+      "sb_position": "Right Back",
       "position": null,
-      "x": 49.54390432098766,
-      "y": 15.022962962962962,
+      "x": 22.0,
+      "y": 58.0,
       "minutes": 148.25,
       "matches": 6
     },
     "6312": {
       "name": "Franco Armani",
+      "display_name": "Franco Armani",
+      "nickname": null,
+      "sb_position": null,
       "position": null,
       "x": 50.0,
       "y": 34.0,
@@ -115,105 +154,144 @@
     },
     "6377": {
       "name": "Ángel Martín Correa",
+      "display_name": "Ángel Correa",
+      "nickname": "Ángel Correa",
+      "sb_position": "Left Center Midfield",
       "position": null,
-      "x": 49.49,
-      "y": 38.827999999999996,
+      "x": 55.0,
+      "y": 26.0,
       "minutes": 34.400000000000006,
       "matches": 7
     },
     "28268": {
       "name": "Exequiel Alejandro Palacios",
+      "display_name": "Exequiel Palacios",
+      "nickname": "Exequiel Palacios",
+      "sb_position": "Left Midfield",
       "position": null,
-      "x": 55.475,
-      "y": 27.37822580645161,
+      "x": 55.0,
+      "y": 24.0,
       "minutes": 138.85,
       "matches": 7
     },
     "27886": {
       "name": "Alexis Mac Allister",
+      "display_name": "Alexis MacAllister",
+      "nickname": "Alexis MacAllister",
+      "sb_position": "Left Center Midfield",
       "position": null,
-      "x": 53.123,
-      "y": 39.23628333333333,
+      "x": 55.0,
+      "y": 20.0,
       "minutes": 551.3,
       "matches": 7
     },
     "5743": {
       "name": "Paulo Bruno Exequiel Dybala",
+      "display_name": "Paulo Dybala",
+      "nickname": "Paulo Dybala",
+      "sb_position": "Left Center Forward",
       "position": null,
-      "x": 63.325390625000004,
-      "y": 26.108281249999997,
+      "x": 92.0,
+      "y": 26.0,
       "minutes": 46.25,
       "matches": 7
     },
     "2995": {
       "name": "Ángel Fabián Di María Hernández",
+      "display_name": "Ángel Di María",
+      "nickname": "Ángel Di María",
+      "sb_position": "Right Midfield",
       "position": null,
-      "x": 52.686296948356805,
-      "y": 33.9249765258216,
+      "x": 55.0,
+      "y": 50.0,
       "minutes": 319.93333333333334,
       "matches": 7
     },
     "16308": {
       "name": "Leandro Daniel Paredes",
+      "display_name": "Leandro Paredes",
+      "nickname": "Leandro Paredes",
+      "sb_position": "Center Defensive Midfield",
       "position": null,
-      "x": 49.804595588235294,
-      "y": 33.400178571428576,
+      "x": 40.0,
+      "y": 34.0,
       "minutes": 254.16666666666669,
       "matches": 7
     },
     "7797": {
       "name": "Rodrigo Javier De Paul",
+      "display_name": "Rodrigo De Paul",
+      "nickname": "Rodrigo De Paul",
+      "sb_position": "Right Center Midfield",
       "position": null,
-      "x": 50.88070603907638,
-      "y": 30.594715808170516,
+      "x": 55.0,
+      "y": 42.0,
       "minutes": 721.0333333333333,
       "matches": 7
     },
     "29560": {
       "name": "Julián Álvarez",
+      "display_name": "Julián Álvarez",
+      "nickname": null,
+      "sb_position": "Left Center Forward",
       "position": null,
-      "x": 56.27077702702703,
-      "y": 32.876621621621624,
+      "x": 92.0,
+      "y": 20.0,
       "minutes": 524.9166666666666,
       "matches": 7
     },
     "7161": {
       "name": "Germán Alejandro Pezzella",
+      "display_name": "Germán Pezzella",
+      "nickname": "Germán Pezzella",
+      "sb_position": "Left Center Midfield",
       "position": null,
-      "x": 61.495000000000005,
-      "y": 44.51544444444445,
+      "x": 55.0,
+      "y": 32.0,
       "minutes": 53.400000000000006,
       "matches": 7
     },
     "27768": {
       "name": "Lisandro Martínez",
+      "display_name": "Lisandro Martínez",
+      "nickname": null,
+      "sb_position": "Left Center Back",
       "position": null,
-      "x": 47.78661885245902,
-      "y": 41.24910655737705,
+      "x": 18.0,
+      "y": 30.0,
       "minutes": 431.18333333333334,
       "matches": 7
     },
     "6909": {
       "name": "Damián Emiliano Martínez",
+      "display_name": "Emiliano Martínez",
+      "nickname": "Emiliano Martínez",
+      "sb_position": "Goalkeeper",
       "position": null,
-      "x": 32.064980769230765,
-      "y": 33.13653076923077,
+      "x": 6.0,
+      "y": 34.0,
       "minutes": 840.0,
       "matches": 7
     },
     "38718": {
       "name": "Enzo Fernandez",
+      "display_name": "Enzo Fernandez",
+      "nickname": null,
+      "sb_position": "Center Defensive Midfield",
       "position": null,
-      "x": 50.24562101910828,
-      "y": 34.91668259023354,
+      "x": 40.0,
+      "y": 40.0,
       "minutes": 683.2333333333333,
       "matches": 7
     },
     "5503": {
       "name": "Lionel Andrés Messi Cuccittini",
+      "display_name": "Lionel Messi",
+      "nickname": "Lionel Messi",
+      "sb_position": "Right Center Forward",
       "position": null,
-      "x": 55.802859702315324,
-      "y": 32.31719680264609,
+      "x": 92.0,
+      "y": 42.0,
       "minutes": 840.0,
       "matches": 7
     }
@@ -224,6 +302,8 @@
       "player_b_id": 7797,
       "player_a_name": "Lionel Andrés Messi Cuccittini",
       "player_b_name": "Rodrigo Javier De Paul",
+      "player_a_display": "Lionel Messi",
+      "player_b_display": "Rodrigo De Paul",
       "joi90": 1.2680863113124683,
       "minutes": 721.0333333333333,
       "matches": 7
@@ -233,6 +313,8 @@
       "player_b_id": 5503,
       "player_a_name": "Ángel Fabián Di María Hernández",
       "player_b_name": "Lionel Andrés Messi Cuccittini",
+      "player_a_display": "Ángel Di María",
+      "player_b_display": "Lionel Messi",
       "joi90": 1.1045934048760158,
       "minutes": 319.93333333333334,
       "matches": 5
@@ -242,6 +324,8 @@
       "player_b_id": 27886,
       "player_a_name": "Ángel Fabián Di María Hernández",
       "player_b_name": "Alexis Mac Allister",
+      "player_a_display": "Ángel Di María",
+      "player_b_display": "Alexis MacAllister",
       "joi90": 1.0238402708124374,
       "minutes": 199.4,
       "matches": 4
@@ -251,6 +335,8 @@
       "player_b_id": 38718,
       "player_a_name": "Ángel Fabián Di María Hernández",
       "player_b_name": "Enzo Fernandez",
+      "player_a_display": "Ángel Di María",
+      "player_b_display": "Enzo Fernandez",
       "joi90": 0.9503622008790495,
       "minutes": 204.76666666666665,
       "matches": 5
@@ -260,6 +346,8 @@
       "player_b_id": 20572,
       "player_a_name": "Ángel Fabián Di María Hernández",
       "player_b_name": "Cristian Gabriel Romero",
+      "player_a_display": "Ángel Di María",
+      "player_b_display": "Cristian Romero",
       "joi90": 0.9273376143398319,
       "minutes": 180.38333333333333,
       "matches": 3
@@ -269,6 +357,8 @@
       "player_b_id": 27886,
       "player_a_name": "Marcos Javier Acuña",
       "player_b_name": "Alexis Mac Allister",
+      "player_a_display": "Marcos Acuña",
+      "player_b_display": "Alexis MacAllister",
       "joi90": 0.854407713498623,
       "minutes": 326.7,
       "matches": 5
@@ -278,6 +368,8 @@
       "player_b_id": 38718,
       "player_a_name": "Rodrigo Javier De Paul",
       "player_b_name": "Enzo Fernandez",
+      "player_a_display": "Rodrigo De Paul",
+      "player_b_display": "Enzo Fernandez",
       "joi90": 0.7685661330340268,
       "minutes": 564.2666666666667,
       "matches": 7
@@ -287,6 +379,8 @@
       "player_b_id": 29560,
       "player_a_name": "Lionel Andrés Messi Cuccittini",
       "player_b_name": "Julián Álvarez",
+      "player_a_display": "Lionel Messi",
+      "player_b_display": "Julián Álvarez",
       "joi90": 0.6348793459279253,
       "minutes": 524.9166666666666,
       "matches": 7
@@ -296,6 +390,8 @@
       "player_b_id": 20572,
       "player_a_name": "Leandro Daniel Paredes",
       "player_b_name": "Cristian Gabriel Romero",
+      "player_a_display": "Leandro Paredes",
+      "player_b_display": "Cristian Romero",
       "joi90": 0.6007820972720447,
       "minutes": 199.78333333333336,
       "matches": 4
@@ -305,6 +401,8 @@
       "player_b_id": 27886,
       "player_a_name": "Nicolás Alejandro Tagliafico",
       "player_b_name": "Alexis Mac Allister",
+      "player_a_display": "Nicolás Tagliafico",
+      "player_b_display": "Alexis MacAllister",
       "joi90": 0.5896828031629143,
       "minutes": 276.1166666666667,
       "matches": 5
@@ -314,6 +412,8 @@
       "player_b_id": 38718,
       "player_a_name": "Lionel Andrés Messi Cuccittini",
       "player_b_name": "Enzo Fernandez",
+      "player_a_display": "Lionel Messi",
+      "player_b_display": "Enzo Fernandez",
       "joi90": 0.569750451285554,
       "minutes": 683.2333333333333,
       "matches": 7
@@ -323,6 +423,8 @@
       "player_b_id": 27768,
       "player_a_name": "Marcos Javier Acuña",
       "player_b_name": "Lisandro Martínez",
+      "player_a_display": "Marcos Acuña",
+      "player_b_display": "Lisandro Martínez",
       "joi90": 0.5655213490099008,
       "minutes": 269.33333333333337,
       "matches": 4
@@ -332,6 +434,8 @@
       "player_b_id": 11456,
       "player_a_name": "Lionel Andrés Messi Cuccittini",
       "player_b_name": "Lautaro Javier Martínez",
+      "player_a_display": "Lionel Messi",
+      "player_b_display": "Lautaro Martínez",
       "joi90": 0.5361685234662498,
       "minutes": 330.6166666666667,
       "matches": 6
@@ -341,6 +445,8 @@
       "player_b_id": 16308,
       "player_a_name": "Nicolás Hernán Otamendi",
       "player_b_name": "Leandro Daniel Paredes",
+      "player_a_display": "Nicolás Otamendi",
+      "player_b_display": "Leandro Paredes",
       "joi90": 0.5342459016393442,
       "minutes": 254.16666666666669,
       "matches": 5
@@ -350,6 +456,8 @@
       "player_b_id": 29560,
       "player_a_name": "Rodrigo Javier De Paul",
       "player_b_name": "Julián Álvarez",
+      "player_a_display": "Rodrigo De Paul",
+      "player_b_display": "Julián Álvarez",
       "joi90": 0.5335560753778708,
       "minutes": 509.43333333333334,
       "matches": 7
@@ -359,6 +467,8 @@
       "player_b_id": 38718,
       "player_a_name": "Marcos Javier Acuña",
       "player_b_name": "Enzo Fernandez",
+      "player_a_display": "Marcos Acuña",
+      "player_b_display": "Enzo Fernandez",
       "joi90": 0.5160340169198742,
       "minutes": 376.28333333333336,
       "matches": 6
@@ -368,6 +478,8 @@
       "player_b_id": 27886,
       "player_a_name": "Lisandro Martínez",
       "player_b_name": "Alexis Mac Allister",
+      "player_a_display": "Lisandro Martínez",
+      "player_b_display": "Alexis MacAllister",
       "joi90": 0.5095197196646971,
       "minutes": 242.56666666666666,
       "matches": 4
@@ -377,6 +489,8 @@
       "player_b_id": 38718,
       "player_a_name": "Nicolás Alejandro Tagliafico",
       "player_b_name": "Enzo Fernandez",
+      "player_a_display": "Nicolás Tagliafico",
+      "player_b_display": "Enzo Fernandez",
       "joi90": 0.5085892316166345,
       "minutes": 363.1,
       "matches": 6
@@ -386,6 +500,8 @@
       "player_b_id": 29201,
       "player_a_name": "Rodrigo Javier De Paul",
       "player_b_name": "Nahuel Molina Lucero",
+      "player_a_display": "Rodrigo De Paul",
+      "player_b_display": "Nahuel Molina",
       "joi90": 0.5084401121865378,
       "minutes": 606.1333333333333,
       "matches": 7
@@ -395,6 +511,8 @@
       "player_b_id": 38718,
       "player_a_name": "Julián Álvarez",
       "player_b_name": "Enzo Fernandez",
+      "player_a_display": "Julián Álvarez",
+      "player_b_display": "Enzo Fernandez",
       "joi90": 0.5003866797941942,
       "minutes": 524.7666666666667,
       "matches": 7
@@ -404,6 +522,8 @@
       "player_b_id": 27886,
       "player_a_name": "Lionel Andrés Messi Cuccittini",
       "player_b_name": "Alexis Mac Allister",
+      "player_a_display": "Lionel Messi",
+      "player_b_display": "Alexis MacAllister",
       "joi90": 0.4972814257210231,
       "minutes": 551.3,
       "matches": 6
@@ -413,6 +533,8 @@
       "player_b_id": 11456,
       "player_a_name": "Nicolás Alejandro Tagliafico",
       "player_b_name": "Lautaro Javier Martínez",
+      "player_a_display": "Nicolás Tagliafico",
+      "player_b_display": "Lautaro Martínez",
       "joi90": 0.46921006509764634,
       "minutes": 199.7,
       "matches": 4
@@ -422,6 +544,8 @@
       "player_b_id": 38718,
       "player_a_name": "Alexis Mac Allister",
       "player_b_name": "Enzo Fernandez",
+      "player_a_display": "Alexis MacAllister",
+      "player_b_display": "Enzo Fernandez",
       "joi90": 0.4671682138120983,
       "minutes": 490.15,
       "matches": 6
@@ -431,6 +555,8 @@
       "player_b_id": 29560,
       "player_a_name": "Ángel Fabián Di María Hernández",
       "player_b_name": "Julián Álvarez",
+      "player_a_display": "Ángel Di María",
+      "player_b_display": "Julián Álvarez",
       "joi90": 0.45263050570962476,
       "minutes": 183.9,
       "matches": 3
@@ -440,6 +566,8 @@
       "player_b_id": 7797,
       "player_a_name": "Ángel Fabián Di María Hernández",
       "player_b_name": "Rodrigo Javier De Paul",
+      "player_a_display": "Ángel Di María",
+      "player_b_display": "Rodrigo De Paul",
       "joi90": 0.41953690303907376,
       "minutes": 310.95,
       "matches": 4
@@ -449,6 +577,8 @@
       "player_b_id": 20572,
       "player_a_name": "Rodrigo Javier De Paul",
       "player_b_name": "Cristian Gabriel Romero",
+      "player_a_display": "Rodrigo De Paul",
+      "player_b_display": "Cristian Romero",
       "joi90": 0.38454305229323754,
       "minutes": 539.2666666666667,
       "matches": 6
@@ -458,6 +588,8 @@
       "player_b_id": 27768,
       "player_a_name": "Rodrigo Javier De Paul",
       "player_b_name": "Lisandro Martínez",
+      "player_a_display": "Rodrigo De Paul",
+      "player_b_display": "Lisandro Martínez",
       "joi90": 0.35399762517316435,
       "minutes": 252.64999999999998,
       "matches": 3
@@ -467,6 +599,8 @@
       "player_b_id": 29560,
       "player_a_name": "Alexis Mac Allister",
       "player_b_name": "Julián Álvarez",
+      "player_a_display": "Alexis MacAllister",
+      "player_b_display": "Julián Álvarez",
       "joi90": 0.35086908284023655,
       "minutes": 405.6,
       "matches": 5
@@ -476,6 +610,8 @@
       "player_b_id": 38718,
       "player_a_name": "Nicolás Hernán Otamendi",
       "player_b_name": "Enzo Fernandez",
+      "player_a_display": "Nicolás Otamendi",
+      "player_b_display": "Enzo Fernandez",
       "joi90": 0.3419787042006148,
       "minutes": 683.2333333333333,
       "matches": 7
@@ -485,6 +621,8 @@
       "player_b_id": 29560,
       "player_a_name": "Marcos Javier Acuña",
       "player_b_name": "Julián Álvarez",
+      "player_a_display": "Marcos Acuña",
+      "player_b_display": "Julián Álvarez",
       "joi90": 0.3310261415718895,
       "minutes": 294.55,
       "matches": 5
@@ -494,6 +632,8 @@
       "player_b_id": 11456,
       "player_a_name": "Rodrigo Javier De Paul",
       "player_b_name": "Lautaro Javier Martínez",
+      "player_a_display": "Rodrigo De Paul",
+      "player_b_display": "Lautaro Martínez",
       "joi90": 0.3180580798103518,
       "minutes": 210.91666666666669,
       "matches": 3
@@ -503,6 +643,8 @@
       "player_b_id": 38718,
       "player_a_name": "Damián Emiliano Martínez",
       "player_b_name": "Enzo Fernandez",
+      "player_a_display": "Emiliano Martínez",
+      "player_b_display": "Enzo Fernandez",
       "joi90": 0.27690522842116116,
       "minutes": 323.23333333333335,
       "matches": 4
@@ -512,6 +654,8 @@
       "player_b_id": 29201,
       "player_a_name": "Alexis Mac Allister",
       "player_b_name": "Nahuel Molina Lucero",
+      "player_a_display": "Alexis MacAllister",
+      "player_b_display": "Nahuel Molina",
       "joi90": 0.25912939762546444,
       "minutes": 457.6333333333333,
       "matches": 5
@@ -521,6 +665,8 @@
       "player_b_id": 29201,
       "player_a_name": "Ángel Fabián Di María Hernández",
       "player_b_name": "Nahuel Molina Lucero",
+      "player_a_display": "Ángel Di María",
+      "player_b_display": "Nahuel Molina",
       "joi90": 0.2584971486078499,
       "minutes": 248.41666666666666,
       "matches": 4
@@ -530,6 +676,8 @@
       "player_b_id": 38718,
       "player_a_name": "Cristian Gabriel Romero",
       "player_b_name": "Enzo Fernandez",
+      "player_a_display": "Cristian Romero",
+      "player_b_display": "Enzo Fernandez",
       "joi90": 0.2547319539148837,
       "minutes": 567.0666666666667,
       "matches": 6
@@ -539,6 +687,8 @@
       "player_b_id": 29201,
       "player_a_name": "Leandro Daniel Paredes",
       "player_b_name": "Nahuel Molina Lucero",
+      "player_a_display": "Leandro Paredes",
+      "player_b_display": "Nahuel Molina",
       "joi90": 0.2259701703541386,
       "minutes": 235.78333333333333,
       "matches": 4
@@ -548,6 +698,8 @@
       "player_b_id": 27768,
       "player_a_name": "Nicolás Hernán Otamendi",
       "player_b_name": "Lisandro Martínez",
+      "player_a_display": "Nicolás Otamendi",
+      "player_b_display": "Lisandro Martínez",
       "joi90": 0.20298790151134485,
       "minutes": 431.18333333333334,
       "matches": 5
@@ -557,6 +709,8 @@
       "player_b_id": 19597,
       "player_a_name": "Rodrigo Javier De Paul",
       "player_b_name": "Marcos Javier Acuña",
+      "player_a_display": "Rodrigo De Paul",
+      "player_b_display": "Marcos Acuña",
       "joi90": 0.18942397906276243,
       "minutes": 337.51666666666665,
       "matches": 5
@@ -566,6 +720,8 @@
       "player_b_id": 38718,
       "player_a_name": "Lisandro Martínez",
       "player_b_name": "Enzo Fernandez",
+      "player_a_display": "Lisandro Martínez",
+      "player_b_display": "Enzo Fernandez",
       "joi90": 0.18592184368737472,
       "minutes": 374.25,
       "matches": 5
@@ -575,6 +731,8 @@
       "player_b_id": 6909,
       "player_a_name": "Nicolás Hernán Otamendi",
       "player_b_name": "Damián Emiliano Martínez",
+      "player_a_display": "Nicolás Otamendi",
+      "player_b_display": "Emiliano Martínez",
       "joi90": 0.17541964285714287,
       "minutes": 840.0,
       "matches": 7
@@ -584,6 +742,8 @@
       "player_b_id": 20572,
       "player_a_name": "Lionel Andrés Messi Cuccittini",
       "player_b_name": "Cristian Gabriel Romero",
+      "player_a_display": "Lionel Messi",
+      "player_b_display": "Cristian Romero",
       "joi90": 0.14665015429592337,
       "minutes": 615.7,
       "matches": 6
@@ -593,6 +753,8 @@
       "player_b_id": 11456,
       "player_a_name": "Ángel Fabián Di María Hernández",
       "player_b_name": "Lautaro Javier Martínez",
+      "player_a_display": "Ángel Di María",
+      "player_b_display": "Lautaro Martínez",
       "joi90": 0.13412433765759177,
       "minutes": 182.43333333333334,
       "matches": 2
@@ -602,6 +764,8 @@
       "player_b_id": 27768,
       "player_a_name": "Lionel Andrés Messi Cuccittini",
       "player_b_name": "Lisandro Martínez",
+      "player_a_display": "Lionel Messi",
+      "player_b_display": "Lisandro Martínez",
       "joi90": 0.12610022809606877,
       "minutes": 372.65,
       "matches": 4
@@ -611,6 +775,8 @@
       "player_b_id": 29560,
       "player_a_name": "Nahuel Molina Lucero",
       "player_b_name": "Julián Álvarez",
+      "player_a_display": "Nahuel Molina",
+      "player_b_display": "Julián Álvarez",
       "joi90": 0.11070175438596497,
       "minutes": 513.0,
       "matches": 7
@@ -620,6 +786,8 @@
       "player_b_id": 3090,
       "player_a_name": "Ángel Fabián Di María Hernández",
       "player_b_name": "Nicolás Hernán Otamendi",
+      "player_a_display": "Ángel Di María",
+      "player_b_display": "Nicolás Otamendi",
       "joi90": 0.09844428364688854,
       "minutes": 310.95,
       "matches": 4
@@ -629,6 +797,8 @@
       "player_b_id": 29201,
       "player_a_name": "Lionel Andrés Messi Cuccittini",
       "player_b_name": "Nahuel Molina Lucero",
+      "player_a_display": "Lionel Messi",
+      "player_b_display": "Nahuel Molina",
       "joi90": 0.09637109882964903,
       "minutes": 615.2,
       "matches": 6
@@ -638,6 +808,8 @@
       "player_b_id": 19597,
       "player_a_name": "Damián Emiliano Martínez",
       "player_b_name": "Marcos Javier Acuña",
+      "player_a_display": "Emiliano Martínez",
+      "player_b_display": "Marcos Acuña",
       "joi90": 0.09421336581970063,
       "minutes": 383.06666666666666,
       "matches": 5
@@ -647,6 +819,8 @@
       "player_b_id": 16308,
       "player_a_name": "Lionel Andrés Messi Cuccittini",
       "player_b_name": "Leandro Daniel Paredes",
+      "player_a_display": "Lionel Messi",
+      "player_b_display": "Leandro Paredes",
       "joi90": 0.085470491803279,
       "minutes": 254.16666666666669,
       "matches": 5
@@ -656,6 +830,8 @@
       "player_b_id": 27886,
       "player_a_name": "Rodrigo Javier De Paul",
       "player_b_name": "Alexis Mac Allister",
+      "player_a_display": "Rodrigo De Paul",
+      "player_b_display": "Alexis MacAllister",
       "joi90": 0.08167208825401323,
       "minutes": 471.3666666666667,
       "matches": 6
@@ -665,6 +841,8 @@
       "player_b_id": 7797,
       "player_a_name": "Damián Emiliano Martínez",
       "player_b_name": "Rodrigo Javier De Paul",
+      "player_a_display": "Emiliano Martínez",
+      "player_b_display": "Rodrigo De Paul",
       "joi90": 0.07942277042477998,
       "minutes": 481.0333333333333,
       "matches": 5
@@ -674,6 +852,8 @@
       "player_b_id": 29560,
       "player_a_name": "Cristian Gabriel Romero",
       "player_b_name": "Julián Álvarez",
+      "player_a_display": "Cristian Romero",
+      "player_b_display": "Julián Álvarez",
       "joi90": 0.07821667850979595,
       "minutes": 328.3666666666667,
       "matches": 4
@@ -683,6 +863,8 @@
       "player_b_id": 38718,
       "player_a_name": "Nahuel Molina Lucero",
       "player_b_name": "Enzo Fernandez",
+      "player_a_display": "Nahuel Molina",
+      "player_b_display": "Enzo Fernandez",
       "joi90": 0.07427750291036074,
       "minutes": 572.6666666666666,
       "matches": 7
@@ -692,6 +874,8 @@
       "player_b_id": 5503,
       "player_a_name": "Nicolás Hernán Otamendi",
       "player_b_name": "Lionel Andrés Messi Cuccittini",
+      "player_a_display": "Nicolás Otamendi",
+      "player_b_display": "Lionel Messi",
       "joi90": 0.07260267857142852,
       "minutes": 840.0,
       "matches": 7
@@ -701,6 +885,8 @@
       "player_b_id": 29201,
       "player_a_name": "Nicolás Hernán Otamendi",
       "player_b_name": "Nahuel Molina Lucero",
+      "player_a_display": "Nicolás Otamendi",
+      "player_b_display": "Nahuel Molina",
       "joi90": 0.06913899900891979,
       "minutes": 672.6666666666666,
       "matches": 7
@@ -710,6 +896,8 @@
       "player_b_id": 27768,
       "player_a_name": "Damián Emiliano Martínez",
       "player_b_name": "Lisandro Martínez",
+      "player_a_display": "Emiliano Martínez",
+      "player_b_display": "Lisandro Martínez",
       "joi90": 0.06203468463492771,
       "minutes": 301.76666666666665,
       "matches": 3
@@ -719,6 +907,8 @@
       "player_b_id": 19597,
       "player_a_name": "Lionel Andrés Messi Cuccittini",
       "player_b_name": "Marcos Javier Acuña",
+      "player_a_display": "Lionel Messi",
+      "player_b_display": "Marcos Acuña",
       "joi90": 0.04444925528229999,
       "minutes": 433.05,
       "matches": 6
@@ -728,6 +918,8 @@
       "player_b_id": 27886,
       "player_a_name": "Nicolás Hernán Otamendi",
       "player_b_name": "Alexis Mac Allister",
+      "player_a_display": "Nicolás Otamendi",
+      "player_b_display": "Alexis MacAllister",
       "joi90": 0.03491520043533464,
       "minutes": 551.3,
       "matches": 6
@@ -737,6 +929,8 @@
       "player_b_id": 20572,
       "player_a_name": "Marcos Javier Acuña",
       "player_b_name": "Cristian Gabriel Romero",
+      "player_a_display": "Marcos Acuña",
+      "player_b_display": "Cristian Romero",
       "joi90": 0.0008471537427163572,
       "minutes": 185.91666666666666,
       "matches": 3
@@ -746,6 +940,8 @@
       "player_b_id": 29201,
       "player_a_name": "Damián Emiliano Martínez",
       "player_b_name": "Nahuel Molina Lucero",
+      "player_a_display": "Emiliano Martínez",
+      "player_b_display": "Nahuel Molina",
       "joi90": -0.0024308360258481873,
       "minutes": 495.2,
       "matches": 5
@@ -755,6 +951,8 @@
       "player_b_id": 29201,
       "player_a_name": "Cristian Gabriel Romero",
       "player_b_name": "Nahuel Molina Lucero",
+      "player_a_display": "Cristian Romero",
+      "player_b_display": "Nahuel Molina",
       "joi90": -0.0244862008220786,
       "minutes": 510.9,
       "matches": 6
@@ -764,6 +962,8 @@
       "player_b_id": 27768,
       "player_a_name": "Cristian Gabriel Romero",
       "player_b_name": "Lisandro Martínez",
+      "player_a_display": "Cristian Romero",
+      "player_b_display": "Lisandro Martínez",
       "joi90": -0.028059292677032156,
       "minutes": 206.88333333333333,
       "matches": 3
@@ -773,6 +973,8 @@
       "player_b_id": 5507,
       "player_a_name": "Nicolás Hernán Otamendi",
       "player_b_name": "Nicolás Alejandro Tagliafico",
+      "player_a_display": "Nicolás Otamendi",
+      "player_b_display": "Nicolás Tagliafico",
       "joi90": -0.02852112676056344,
       "minutes": 371.56666666666666,
       "matches": 4
@@ -782,6 +984,8 @@
       "player_b_id": 5507,
       "player_a_name": "Lionel Andrés Messi Cuccittini",
       "player_b_name": "Nicolás Alejandro Tagliafico",
+      "player_a_display": "Lionel Messi",
+      "player_b_display": "Nicolás Tagliafico",
       "joi90": -0.0712751025696394,
       "minutes": 463.1,
       "matches": 6
@@ -791,6 +995,8 @@
       "player_b_id": 27886,
       "player_a_name": "Cristian Gabriel Romero",
       "player_b_name": "Alexis Mac Allister",
+      "player_a_display": "Cristian Romero",
+      "player_b_display": "Alexis MacAllister",
       "joi90": -0.07615777525539169,
       "minutes": 440.5,
       "matches": 5
@@ -800,6 +1006,8 @@
       "player_b_id": 16308,
       "player_a_name": "Nicolás Alejandro Tagliafico",
       "player_b_name": "Leandro Daniel Paredes",
+      "player_a_display": "Nicolás Tagliafico",
+      "player_b_display": "Leandro Paredes",
       "joi90": -0.07997630331753579,
       "minutes": 242.65,
       "matches": 5
@@ -809,6 +1017,8 @@
       "player_b_id": 7797,
       "player_a_name": "Nicolás Hernán Otamendi",
       "player_b_name": "Rodrigo Javier De Paul",
+      "player_a_display": "Nicolás Otamendi",
+      "player_b_display": "Rodrigo De Paul",
       "joi90": -0.08412925893393744,
       "minutes": 721.0333333333333,
       "matches": 7
@@ -818,6 +1028,8 @@
       "player_b_id": 7797,
       "player_a_name": "Nicolás Alejandro Tagliafico",
       "player_b_name": "Rodrigo Javier De Paul",
+      "player_a_display": "Nicolás Tagliafico",
+      "player_b_display": "Rodrigo De Paul",
       "joi90": -0.09258379053723714,
       "minutes": 306.81666666666666,
       "matches": 4
@@ -827,6 +1039,8 @@
       "player_b_id": 29560,
       "player_a_name": "Nicolás Hernán Otamendi",
       "player_b_name": "Julián Álvarez",
+      "player_a_display": "Nicolás Otamendi",
+      "player_b_display": "Julián Álvarez",
       "joi90": -0.11458804889090075,
       "minutes": 294.5333333333333,
       "matches": 4
@@ -836,6 +1050,8 @@
       "player_b_id": 19597,
       "player_a_name": "Nicolás Hernán Otamendi",
       "player_b_name": "Marcos Javier Acuña",
+      "player_a_display": "Nicolás Otamendi",
+      "player_b_display": "Marcos Acuña",
       "joi90": -0.1328619909502264,
       "minutes": 383.06666666666666,
       "matches": 5
@@ -845,6 +1061,8 @@
       "player_b_id": 20572,
       "player_a_name": "Damián Emiliano Martínez",
       "player_b_name": "Cristian Gabriel Romero",
+      "player_a_display": "Emiliano Martínez",
+      "player_b_display": "Cristian Romero",
       "joi90": -0.15318825910931175,
       "minutes": 666.9,
       "matches": 7
@@ -854,6 +1072,8 @@
       "player_b_id": 20572,
       "player_a_name": "Nicolás Hernán Otamendi",
       "player_b_name": "Cristian Gabriel Romero",
+      "player_a_display": "Nicolás Otamendi",
+      "player_b_display": "Cristian Romero",
       "joi90": -0.31091430499325234,
       "minutes": 666.9,
       "matches": 7
@@ -863,6 +1083,8 @@
       "player_b_id": 16308,
       "player_a_name": "Rodrigo Javier De Paul",
       "player_b_name": "Leandro Daniel Paredes",
+      "player_a_display": "Rodrigo De Paul",
+      "player_b_display": "Leandro Paredes",
       "joi90": -0.3179823756196071,
       "minutes": 181.56666666666666,
       "matches": 3

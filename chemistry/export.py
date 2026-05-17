@@ -7,61 +7,33 @@ from pathlib import Path
 import pandas as pd
 
 from chemistry import rank, squads, players
+from chemistry.names import shorten_name
+from chemistry.formation import position_xy, disambiguate_overlaps
+from chemistry.pipeline import all_player_nicknames
 
 
 VAEP_DIR = Path("data/vaep")
 
 
-def _pair_record(row: pd.Series, id_to_name: dict[int, str]) -> dict:
+def _pair_record(
+    row: pd.Series,
+    id_to_name: dict[int, str],
+    id_to_display: dict[int, str] | None = None,
+) -> dict:
+    a = int(row["player_a"])
+    b = int(row["player_b"])
+    disp = id_to_display or {}
     return {
-        "player_a_id": int(row["player_a"]),
-        "player_b_id": int(row["player_b"]),
-        "player_a_name": id_to_name.get(int(row["player_a"]), str(int(row["player_a"]))),
-        "player_b_name": id_to_name.get(int(row["player_b"]), str(int(row["player_b"]))),
+        "player_a_id": a,
+        "player_b_id": b,
+        "player_a_name": id_to_name.get(a, str(a)),
+        "player_b_name": id_to_name.get(b, str(b)),
+        "player_a_display": disp.get(a, id_to_name.get(a, str(a))),
+        "player_b_display": disp.get(b, id_to_name.get(b, str(b))),
         "joi90": float(row["joi90"]),
         "minutes": float(row["minutes"]),
         "matches": int(row["matches"]),
     }
-
-
-def _compute_avg_positions(team_lineups: pd.DataFrame) -> dict[int, tuple[float, float]]:
-    """Average start_x/start_y from VAEP-scored actions per player.
-
-    Returns {player_id: (x, y)} in 105x68 SPADL coordinates.
-    Players with no action data are omitted (caller falls back to default).
-    """
-    if not VAEP_DIR.exists():
-        return {}
-
-    game_ids = set(team_lineups["game_id"].unique())
-    team_ids = set(team_lineups["team_id"].unique())
-
-    actions_list = []
-    for comp_dir in VAEP_DIR.iterdir():
-        if not comp_dir.is_dir():
-            continue
-        for p in comp_dir.glob("*.parquet"):
-            try:
-                gid = int(p.stem)
-            except ValueError:
-                continue
-            if gid in game_ids:
-                actions_list.append(pd.read_parquet(p))
-
-    if not actions_list:
-        return {}
-
-    actions = pd.concat(actions_list, ignore_index=True)
-    actions = actions[actions["team_id"].isin(team_ids)]
-    if actions.empty:
-        return {}
-
-    # Normalise player_id to int (may be float due to NaN rows elsewhere)
-    actions = actions.dropna(subset=["player_id"])
-    actions["player_id"] = actions["player_id"].astype(int)
-
-    avg = actions.groupby("player_id")[["start_x", "start_y"]].mean()
-    return {int(pid): (float(row.start_x), float(row.start_y)) for pid, row in avg.iterrows()}
 
 
 def build_chemistry_json(
@@ -80,7 +52,14 @@ def build_chemistry_json(
     )
     id_to_name = {int(k): v for k, v in id_to_name.items()}
 
+    # Resolve nicknames from raw StatsBomb open data for all match_ids in scope
+    all_match_ids = sorted(int(x) for x in lineups["game_id"].dropna().unique())
+    nicknames_map = all_player_nicknames(all_match_ids)
+
     per_nation: dict[str, dict] = {}
+    # Global display-name map: pid -> display_name (built up as we process nations)
+    id_to_display: dict[int, str] = {}
+
     for code, squad in squads_map.items():
         team_lineups = lineups[lineups["team_name"] == squad.nation]
         if team_lineups.empty:
@@ -101,10 +80,19 @@ def build_chemistry_json(
             )
             yaml_roster_ids = set(matched.values())
 
-        # Auto-derived: top 26 by minutes played for this nation
+        # Compute per-player minutes + dominant position
+        team_lineups = team_lineups.copy()
+        team_lineups["mins"] = team_lineups["to_minute"] - team_lineups["from_minute"]
+
+        # Most-played StatsBomb position per player (mode)
+        pos_mode = (
+            team_lineups.dropna(subset=["position"])
+                        .groupby("player_id")["position"]
+                        .agg(lambda s: s.mode().iloc[0] if not s.mode().empty else None)
+        )
+
         minutes_by_player = (
-            team_lineups.assign(mins=team_lineups["to_minute"] - team_lineups["from_minute"])
-                        .groupby("player_id")
+            team_lineups.groupby("player_id")
                         .agg(
                             total_mins=("mins", "sum"),
                             player_name=("player_name", "first"),
@@ -119,8 +107,18 @@ def build_chemistry_json(
         # Effective roster: union of YAML and auto-derived
         effective_ids = yaml_roster_ids | auto_roster_ids
 
-        # Compute empirical average positions from VAEP actions
-        avg_pos = _compute_avg_positions(team_lineups)
+        # Compute formation-based positions
+        raw_positions: dict[int, tuple[float, float]] = {}
+        for pid in effective_ids:
+            if pid not in minutes_by_player.index:
+                continue
+            sb_pos = pos_mode.get(pid)
+            xy = position_xy(sb_pos)
+            if xy is None:
+                xy = (50.0, 34.0)
+            raw_positions[int(pid)] = xy
+
+        resolved_positions = disambiguate_overlaps(raw_positions)
 
         # Build reverse map: player_id -> yaml player entry
         yaml_by_id: dict[int, squads.Player] = {}
@@ -136,16 +134,29 @@ def build_chemistry_json(
                 continue
             row = minutes_by_player.loc[pid]
             yp = yaml_by_id.get(pid)
-            default_xy = (50.0, 34.0)
-            x, y = avg_pos.get(pid, default_xy)
+            sb_position = pos_mode.get(pid)
+            full_name = id_to_name.get(int(pid), str(int(pid)))
+            nickname = nicknames_map.get(int(pid))
+
+            # Prefer YAML name as the base for display (often cleaner), but let
+            # player_nickname override if available
+            yaml_name = yp.name if yp else None
+            display_name = shorten_name(yaml_name or full_name, nickname)
+
+            x, y = resolved_positions.get(int(pid), (50.0, 34.0))
             players_by_id[str(pid)] = {
-                "name": yp.name if yp else row["player_name"],
+                "name": full_name,
+                "display_name": display_name,
+                "nickname": nickname,
+                "sb_position": sb_position,
                 "position": yp.position if yp else None,
-                "x": x,
-                "y": y,
+                "x": float(x),
+                "y": float(y),
                 "minutes": float(row["total_mins"]),
                 "matches": int(row["matches"]),
             }
+            # Register in global display map
+            id_to_display[int(pid)] = display_name
 
         # Filter chemistry pairs to effective roster
         effective_ids_int = {int(i) for i in effective_ids}
@@ -167,7 +178,7 @@ def build_chemistry_json(
         per_nation[code] = {
             "squad": squad.model_dump(),
             "players_by_id": players_by_id,
-            "pairs": [_pair_record(r, id_to_name) for _, r in squad_pairs.iterrows()],
+            "pairs": [_pair_record(r, id_to_name, id_to_display) for _, r in squad_pairs.iterrows()],
             "coverage": coverage,
         }
 
@@ -192,8 +203,13 @@ def build_chemistry_json(
         leaderboard_src.assign(nation_code="GLOBAL"), n=50,
     )
 
-    def _enrich_leaderboard_row(row: pd.Series, id_to_name: dict[int, str], id_to_nation: dict[int, tuple[str, str]]) -> dict:
-        rec = _pair_record(row, id_to_name)
+    def _enrich_leaderboard_row(
+        row: pd.Series,
+        id_to_name: dict[int, str],
+        id_to_nation: dict[int, tuple[str, str]],
+        id_to_display: dict[int, str],
+    ) -> dict:
+        rec = _pair_record(row, id_to_name, id_to_display)
         a, b = rec["player_a_id"], rec["player_b_id"]
         nation = id_to_nation.get(a) or id_to_nation.get(b)
         if nation:
@@ -202,7 +218,10 @@ def build_chemistry_json(
 
     doc = {
         "nations": per_nation,
-        "leaderboard": [_enrich_leaderboard_row(r, id_to_name, id_to_nation) for _, r in leaderboard.iterrows()],
+        "leaderboard": [
+            _enrich_leaderboard_row(r, id_to_name, id_to_nation, id_to_display)
+            for _, r in leaderboard.iterrows()
+        ],
         "meta": {
             "min_minutes_global": min_minutes_global,
             "min_minutes_team": min_minutes_team,

@@ -10,9 +10,11 @@ def test_build_chemistry_json_includes_every_nation(tmp_path):
     ])
     lineups = pd.DataFrame([
         {"game_id": 1, "team_id": 1, "team_name": "Testland",
-         "player_id": 100, "player_name": "Alpha", "from_minute": 0, "to_minute": 90},
+         "player_id": 100, "player_name": "Alpha", "position": "Goalkeeper",
+         "from_minute": 0, "to_minute": 90},
         {"game_id": 1, "team_id": 1, "team_name": "Testland",
-         "player_id": 101, "player_name": "Beta",  "from_minute": 0, "to_minute": 90},
+         "player_id": 101, "player_name": "Beta", "position": "Center Back",
+         "from_minute": 0, "to_minute": 90},
     ])
     squad = Squad(
         nation="Testland", nation_code="TST", flag_iso="tt",

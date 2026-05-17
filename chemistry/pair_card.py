@@ -41,7 +41,9 @@ def render_pair_card(
             color=opts.muted, fontsize=18, weight="bold", family="monospace",
             ha="left", va="top")
 
-    label = f"{pair['player_a_name']}  +  {pair['player_b_name']}"
+    a_label = pair.get("player_a_display") or pair["player_a_name"]
+    b_label = pair.get("player_b_display") or pair["player_b_name"]
+    label = f"{a_label}  +  {b_label}"
     ax.text(60, opts.height_px - 90, label,
             color=opts.text, fontsize=48, weight="bold",
             ha="left", va="top")

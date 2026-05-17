@@ -72,7 +72,8 @@ def render_pitch_chemistry(
     # players that have no empirical data.
     id_to_xy: dict[int, tuple[float, float, str]] = {}
     for pid_str, p in players_by_id.items():
-        id_to_xy[int(pid_str)] = (p["x"], p["y"], p["name"])
+        label = p.get("display_name") or p["name"]
+        id_to_xy[int(pid_str)] = (p["x"], p["y"], label)
 
     # If players_by_id is empty, fall back to the old name-based approach so
     # legacy nation entries still render something.
@@ -162,7 +163,9 @@ def render_leaderboard(doc: dict, out_path: Path,
         y = 0.92 - i * row_height
         ax.text(0.00, y, f"{i+1:>2}.", color="#8b949e", fontsize=16,
                 transform=ax.transAxes, family="monospace")
-        ax.text(0.05, y, f"{p['player_a_name']}  +  {p['player_b_name']}",
+        a_label = p.get('player_a_display') or p['player_a_name']
+        b_label = p.get('player_b_display') or p['player_b_name']
+        ax.text(0.05, y, f"{a_label}  +  {b_label}",
                 color="#e6edf3", fontsize=18, transform=ax.transAxes)
         ax.text(0.78, y, f"JOI90  {p['joi90']:.3f}",
                 color="#4ade80", fontsize=18, weight="bold",
@@ -198,7 +201,9 @@ def render_landing_grid(doc: dict, out_path: Path) -> Path:
         top = entry["pairs"][:1]
         if top:
             p = top[0]
-            ax.text(x, y + 0.42, f"{p['player_a_name']} + {p['player_b_name']}",
+            a_label = p.get('player_a_display') or p['player_a_name']
+            b_label = p.get('player_b_display') or p['player_b_name']
+            ax.text(x, y + 0.42, f"{a_label} + {b_label}",
                     color="#e6edf3", fontsize=18)
             ax.text(x, y + 0.55, f"JOI90 {p['joi90']:.3f}",
                     color="#4ade80", fontsize=18, weight="bold", family="monospace")

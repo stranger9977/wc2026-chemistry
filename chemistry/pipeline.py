@@ -22,16 +22,58 @@ as expected by the converter.
 """
 from __future__ import annotations
 
+import json
 import logging
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
 import numpy as np
 import pandas as pd
+import requests
 
 logger = logging.getLogger(__name__)
 
 SPADL_DIR = Path(__file__).parent.parent / "data" / "spadl"
+
+# ---------------------------------------------------------------------------
+# Player nickname helpers (from StatsBomb open-data lineup JSON)
+# ---------------------------------------------------------------------------
+
+_STATSBOMB_LINEUPS_URL = (
+    "https://raw.githubusercontent.com/statsbomb/open-data/master/data/lineups/{match_id}.json"
+)
+
+
+@lru_cache(maxsize=4096)
+def fetch_player_nicknames_for_match(match_id: int) -> dict[int, str | None]:
+    """Return {player_id: player_nickname_or_None} for one match from the open data."""
+    url = _STATSBOMB_LINEUPS_URL.format(match_id=match_id)
+    try:
+        r = requests.get(url, timeout=10)
+        if not r.ok:
+            return {}
+        data = r.json()
+    except Exception:
+        return {}
+    out: dict[int, str | None] = {}
+    for team in data:
+        for p in team.get("lineup", []):
+            pid = p.get("player_id")
+            nick = p.get("player_nickname")
+            if pid is not None:
+                out[int(pid)] = nick or None
+    return out
+
+
+def all_player_nicknames(match_ids: list[int]) -> dict[int, str]:
+    """Aggregate nicknames across many matches. Latest non-null wins."""
+    out: dict[int, str] = {}
+    for mid in match_ids:
+        for pid, nick in fetch_player_nicknames_for_match(int(mid)).items():
+            if nick:
+                out[pid] = nick
+    return out
 
 
 # ---------------------------------------------------------------------------
