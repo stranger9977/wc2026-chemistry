@@ -1,0 +1,16 @@
+{
+  "squad": {
+    "nation": "Colombia",
+    "nation_code": "COL",
+    "flag_iso": "co",
+    "manager": "TBD",
+    "formation": "4-3-3",
+    "team_color": "#fcd116",
+    "players": []
+  },
+  "pairs": [],
+  "coverage": {
+    "matches": 0,
+    "warning": "no matches in open data"
+  }
+}

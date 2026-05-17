@@ -1,7 +1,7 @@
-const FLAG_BASE = "../assets/flags";
+const FLAG_BASE = "assets/flags";
 
 async function loadDoc() {
-  const res = await fetch("../outputs/chemistry.json");
+  const res = await fetch("outputs/chemistry.json");
   return res.json();
 }
 

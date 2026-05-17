@@ -1,0 +1,43 @@
+{
+  "generated_from": "outputs/chemistry.json",
+  "nations": [
+    "ARG",
+    "AUS",
+    "AUT",
+    "BEL",
+    "BRA",
+    "CAN",
+    "CIV",
+    "COL",
+    "CRO",
+    "DEN",
+    "ECU",
+    "EGY",
+    "ENG",
+    "ESP",
+    "FRA",
+    "GER",
+    "IRN",
+    "ITA",
+    "JPN",
+    "KOR",
+    "KSA",
+    "MAR",
+    "MEX",
+    "NED",
+    "NGA",
+    "PAR",
+    "POR",
+    "SEN",
+    "SUI",
+    "TUN",
+    "URU",
+    "USA"
+  ],
+  "assets_per_nation": [
+    "pitch.svg",
+    "pitch.png",
+    "pitch_branded.png",
+    "data.json"
+  ]
+}

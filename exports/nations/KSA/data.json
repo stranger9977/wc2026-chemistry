@@ -1,0 +1,16 @@
+{
+  "squad": {
+    "nation": "Saudi Arabia",
+    "nation_code": "KSA",
+    "flag_iso": "sa",
+    "manager": "TBD",
+    "formation": "4-3-3",
+    "team_color": "#006c35",
+    "players": []
+  },
+  "pairs": [],
+  "coverage": {
+    "matches": 3,
+    "unmatched_roster_names": []
+  }
+}

@@ -23,7 +23,7 @@ function colorFor(joi, min, max) {
 async function main() {
   const params = new URLSearchParams(location.search);
   const code = params.get("code");
-  const doc = await (await fetch("../outputs/chemistry.json")).json();
+  const doc = await (await fetch("outputs/chemistry.json")).json();
   const entry = doc.nations[code];
   if (!entry) {
     document.getElementById("title").textContent = `Unknown nation: ${code}`;
@@ -86,7 +86,7 @@ async function main() {
     ["Branded PNG", "pitch_branded.png"], ["Data JSON", "data.json"],
   ]) {
     const a = document.createElement("a");
-    a.className = "btn"; a.href = `../exports/nations/${code}/${file}`;
+    a.className = "btn"; a.href = `exports/nations/${code}/${file}`;
     a.textContent = `Download ${label}`; a.download = `${code}_${file}`;
     dl.appendChild(a);
   }

@@ -1,0 +1,16 @@
+{
+  "squad": {
+    "nation": "Iran",
+    "nation_code": "IRN",
+    "flag_iso": "ir",
+    "manager": "TBD",
+    "formation": "4-3-3",
+    "team_color": "#239f40",
+    "players": []
+  },
+  "pairs": [],
+  "coverage": {
+    "matches": 3,
+    "unmatched_roster_names": []
+  }
+}

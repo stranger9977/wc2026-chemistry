@@ -1,0 +1,16 @@
+{
+  "squad": {
+    "nation": "Senegal",
+    "nation_code": "SEN",
+    "flag_iso": "sn",
+    "manager": "TBD",
+    "formation": "4-3-3",
+    "team_color": "#00853f",
+    "players": []
+  },
+  "pairs": [],
+  "coverage": {
+    "matches": 4,
+    "unmatched_roster_names": []
+  }
+}

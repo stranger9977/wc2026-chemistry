@@ -1,0 +1,225 @@
+{
+  "squad": {
+    "nation": "United States",
+    "nation_code": "USA",
+    "flag_iso": "us",
+    "manager": "Mauricio Pochettino",
+    "formation": "4-3-3",
+    "team_color": "#bf0d3e",
+    "players": [
+      {
+        "name": "Matt Turner",
+        "club": "Crystal Palace",
+        "position": "GK",
+        "headshot": null
+      },
+      {
+        "name": "Sergiño Dest",
+        "club": "PSV Eindhoven",
+        "position": "RB",
+        "headshot": null
+      },
+      {
+        "name": "Chris Richards",
+        "club": "Crystal Palace",
+        "position": "CB",
+        "headshot": null
+      },
+      {
+        "name": "Tim Ream",
+        "club": "Charlotte FC",
+        "position": "CB",
+        "headshot": null
+      },
+      {
+        "name": "Antonee Robinson",
+        "club": "Fulham",
+        "position": "LB",
+        "headshot": null
+      },
+      {
+        "name": "Tyler Adams",
+        "club": "Bournemouth",
+        "position": "DM",
+        "headshot": null
+      },
+      {
+        "name": "Weston McKennie",
+        "club": "Juventus",
+        "position": "CM",
+        "headshot": null
+      },
+      {
+        "name": "Yunus Musah",
+        "club": "AC Milan",
+        "position": "CM",
+        "headshot": null
+      },
+      {
+        "name": "Christian Pulisic",
+        "club": "AC Milan",
+        "position": "RW",
+        "headshot": null
+      },
+      {
+        "name": "Folarin Balogun",
+        "club": "AS Monaco",
+        "position": "ST",
+        "headshot": null
+      },
+      {
+        "name": "Tim Weah",
+        "club": "Juventus",
+        "position": "LW",
+        "headshot": null
+      }
+    ]
+  },
+  "pairs": [
+    {
+      "player_a_id": 4614,
+      "player_b_id": 8246,
+      "player_a_name": "Antonee Robinson",
+      "player_b_name": "Christian Pulisic",
+      "joi90": 0.49451359971648806,
+      "minutes": 376.23333333333335,
+      "matches": 4
+    },
+    {
+      "player_a_id": 4614,
+      "player_b_id": 18242,
+      "player_a_name": "Antonee Robinson",
+      "player_b_name": "Tim Ream",
+      "joi90": 0.24871832754672366,
+      "minutes": 451.23333333333335,
+      "matches": 4
+    },
+    {
+      "player_a_id": 12751,
+      "player_b_id": 18242,
+      "player_a_name": "Tyler Adams",
+      "player_b_name": "Tim Ream",
+      "joi90": 0.14568749999999986,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 18242,
+      "player_b_id": 21881,
+      "player_a_name": "Tim Ream",
+      "player_b_name": "Sergino Dest",
+      "joi90": 0.0008778584588706901,
+      "minutes": 307.56666666666666,
+      "matches": 4
+    },
+    {
+      "player_a_id": 4614,
+      "player_b_id": 12751,
+      "player_a_name": "Antonee Robinson",
+      "player_b_name": "Tyler Adams",
+      "joi90": -0.0023934402009306737,
+      "minutes": 451.23333333333335,
+      "matches": 4
+    },
+    {
+      "player_a_id": 8246,
+      "player_b_id": 18242,
+      "player_a_name": "Christian Pulisic",
+      "player_b_name": "Tim Ream",
+      "joi90": -0.07169444444444444,
+      "minutes": 405.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 4614,
+      "player_b_id": 21881,
+      "player_a_name": "Antonee Robinson",
+      "player_b_name": "Sergino Dest",
+      "joi90": -0.0893220981900943,
+      "minutes": 307.56666666666666,
+      "matches": 4
+    },
+    {
+      "player_a_id": 8246,
+      "player_b_id": 21881,
+      "player_a_name": "Christian Pulisic",
+      "player_b_name": "Sergino Dest",
+      "joi90": -0.1133220755296285,
+      "minutes": 271.4166666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 8526,
+      "player_b_id": 21881,
+      "player_a_name": "Weston McKennie",
+      "player_b_name": "Sergino Dest",
+      "joi90": -0.2066167062694206,
+      "minutes": 273.55,
+      "matches": 4
+    },
+    {
+      "player_a_id": 8246,
+      "player_b_id": 12751,
+      "player_a_name": "Christian Pulisic",
+      "player_b_name": "Tyler Adams",
+      "joi90": -0.20822222222222248,
+      "minutes": 405.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 8526,
+      "player_b_id": 12751,
+      "player_a_name": "Weston McKennie",
+      "player_b_name": "Tyler Adams",
+      "joi90": -0.24128587095594964,
+      "minutes": 273.55,
+      "matches": 4
+    },
+    {
+      "player_a_id": 12751,
+      "player_b_id": 21881,
+      "player_a_name": "Tyler Adams",
+      "player_b_name": "Sergino Dest",
+      "joi90": -0.32071095697409785,
+      "minutes": 307.56666666666666,
+      "matches": 4
+    },
+    {
+      "player_a_id": 8246,
+      "player_b_id": 8526,
+      "player_a_name": "Christian Pulisic",
+      "player_b_name": "Weston McKennie",
+      "joi90": -0.3588916256157638,
+      "minutes": 253.75,
+      "matches": 4
+    },
+    {
+      "player_a_id": 8526,
+      "player_b_id": 18242,
+      "player_a_name": "Weston McKennie",
+      "player_b_name": "Tim Ream",
+      "joi90": -0.4381968561506123,
+      "minutes": 273.55,
+      "matches": 4
+    },
+    {
+      "player_a_id": 4614,
+      "player_b_id": 8526,
+      "player_a_name": "Antonee Robinson",
+      "player_b_name": "Weston McKennie",
+      "joi90": -0.46727289343812817,
+      "minutes": 273.55,
+      "matches": 4
+    }
+  ],
+  "coverage": {
+    "matches": 4,
+    "unmatched_roster_names": [
+      "Matt Turner",
+      "Chris Richards",
+      "Yunus Musah",
+      "Folarin Balogun",
+      "Tim Weah"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "squad": {
+    "nation": "Austria",
+    "nation_code": "AUT",
+    "flag_iso": "at",
+    "manager": "TBD",
+    "formation": "4-3-3",
+    "team_color": "#ed2939",
+    "players": []
+  },
+  "pairs": [],
+  "coverage": {
+    "matches": 0,
+    "warning": "no matches in open data"
+  }
+}

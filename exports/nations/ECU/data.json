@@ -1,0 +1,16 @@
+{
+  "squad": {
+    "nation": "Ecuador",
+    "nation_code": "ECU",
+    "flag_iso": "ec",
+    "manager": "TBD",
+    "formation": "4-3-3",
+    "team_color": "#ffce00",
+    "players": []
+  },
+  "pairs": [],
+  "coverage": {
+    "matches": 3,
+    "unmatched_roster_names": []
+  }
+}

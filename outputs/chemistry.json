@@ -1,0 +1,867 @@
+{
+  "nations": {
+    "ARG": {
+      "squad": {
+        "nation": "Argentina",
+        "nation_code": "ARG",
+        "flag_iso": "ar",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#75aadb",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 7,
+        "unmatched_roster_names": []
+      }
+    },
+    "AUS": {
+      "squad": {
+        "nation": "Australia",
+        "nation_code": "AUS",
+        "flag_iso": "au",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#ffcd00",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 4,
+        "unmatched_roster_names": []
+      }
+    },
+    "AUT": {
+      "squad": {
+        "nation": "Austria",
+        "nation_code": "AUT",
+        "flag_iso": "at",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#ed2939",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 0,
+        "warning": "no matches in open data"
+      }
+    },
+    "BEL": {
+      "squad": {
+        "nation": "Belgium",
+        "nation_code": "BEL",
+        "flag_iso": "be",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#ed2939",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 3,
+        "unmatched_roster_names": []
+      }
+    },
+    "BRA": {
+      "squad": {
+        "nation": "Brazil",
+        "nation_code": "BRA",
+        "flag_iso": "br",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#fedf00",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 5,
+        "unmatched_roster_names": []
+      }
+    },
+    "CAN": {
+      "squad": {
+        "nation": "Canada",
+        "nation_code": "CAN",
+        "flag_iso": "ca",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#d52b1e",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 3,
+        "unmatched_roster_names": []
+      }
+    },
+    "CIV": {
+      "squad": {
+        "nation": "Côte d'Ivoire",
+        "nation_code": "CIV",
+        "flag_iso": "ci",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#ff8200",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 0,
+        "warning": "no matches in open data"
+      }
+    },
+    "COL": {
+      "squad": {
+        "nation": "Colombia",
+        "nation_code": "COL",
+        "flag_iso": "co",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#fcd116",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 0,
+        "warning": "no matches in open data"
+      }
+    },
+    "CRO": {
+      "squad": {
+        "nation": "Croatia",
+        "nation_code": "CRO",
+        "flag_iso": "hr",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#171796",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 7,
+        "unmatched_roster_names": []
+      }
+    },
+    "DEN": {
+      "squad": {
+        "nation": "Denmark",
+        "nation_code": "DEN",
+        "flag_iso": "dk",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#c8102e",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 3,
+        "unmatched_roster_names": []
+      }
+    },
+    "ECU": {
+      "squad": {
+        "nation": "Ecuador",
+        "nation_code": "ECU",
+        "flag_iso": "ec",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#ffce00",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 3,
+        "unmatched_roster_names": []
+      }
+    },
+    "EGY": {
+      "squad": {
+        "nation": "Egypt",
+        "nation_code": "EGY",
+        "flag_iso": "eg",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#ce1126",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 0,
+        "warning": "no matches in open data"
+      }
+    },
+    "ENG": {
+      "squad": {
+        "nation": "England",
+        "nation_code": "ENG",
+        "flag_iso": "gb-eng",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#fff",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 5,
+        "unmatched_roster_names": []
+      }
+    },
+    "ESP": {
+      "squad": {
+        "nation": "Spain",
+        "nation_code": "ESP",
+        "flag_iso": "es",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#aa151b",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 4,
+        "unmatched_roster_names": []
+      }
+    },
+    "FRA": {
+      "squad": {
+        "nation": "France",
+        "nation_code": "FRA",
+        "flag_iso": "fr",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#0055a4",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 7,
+        "unmatched_roster_names": []
+      }
+    },
+    "GER": {
+      "squad": {
+        "nation": "Germany",
+        "nation_code": "GER",
+        "flag_iso": "de",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#000000",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 3,
+        "unmatched_roster_names": []
+      }
+    },
+    "IRN": {
+      "squad": {
+        "nation": "Iran",
+        "nation_code": "IRN",
+        "flag_iso": "ir",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#239f40",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 3,
+        "unmatched_roster_names": []
+      }
+    },
+    "ITA": {
+      "squad": {
+        "nation": "Italy",
+        "nation_code": "ITA",
+        "flag_iso": "it",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#1c5ed6",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 0,
+        "warning": "no matches in open data"
+      }
+    },
+    "JPN": {
+      "squad": {
+        "nation": "Japan",
+        "nation_code": "JPN",
+        "flag_iso": "jp",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#bd0029",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 4,
+        "unmatched_roster_names": []
+      }
+    },
+    "KOR": {
+      "squad": {
+        "nation": "South Korea",
+        "nation_code": "KOR",
+        "flag_iso": "kr",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#cd2e3a",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 4,
+        "unmatched_roster_names": []
+      }
+    },
+    "KSA": {
+      "squad": {
+        "nation": "Saudi Arabia",
+        "nation_code": "KSA",
+        "flag_iso": "sa",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#006c35",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 3,
+        "unmatched_roster_names": []
+      }
+    },
+    "MAR": {
+      "squad": {
+        "nation": "Morocco",
+        "nation_code": "MAR",
+        "flag_iso": "ma",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#c1272d",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 7,
+        "unmatched_roster_names": []
+      }
+    },
+    "MEX": {
+      "squad": {
+        "nation": "Mexico",
+        "nation_code": "MEX",
+        "flag_iso": "mx",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#006847",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 3,
+        "unmatched_roster_names": []
+      }
+    },
+    "NED": {
+      "squad": {
+        "nation": "Netherlands",
+        "nation_code": "NED",
+        "flag_iso": "nl",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#ff6600",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 5,
+        "unmatched_roster_names": []
+      }
+    },
+    "NGA": {
+      "squad": {
+        "nation": "Nigeria",
+        "nation_code": "NGA",
+        "flag_iso": "ng",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#008751",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 0,
+        "warning": "no matches in open data"
+      }
+    },
+    "PAR": {
+      "squad": {
+        "nation": "Paraguay",
+        "nation_code": "PAR",
+        "flag_iso": "py",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#d52b1e",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 0,
+        "warning": "no matches in open data"
+      }
+    },
+    "POR": {
+      "squad": {
+        "nation": "Portugal",
+        "nation_code": "POR",
+        "flag_iso": "pt",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#006600",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 5,
+        "unmatched_roster_names": []
+      }
+    },
+    "SEN": {
+      "squad": {
+        "nation": "Senegal",
+        "nation_code": "SEN",
+        "flag_iso": "sn",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#00853f",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 4,
+        "unmatched_roster_names": []
+      }
+    },
+    "SUI": {
+      "squad": {
+        "nation": "Switzerland",
+        "nation_code": "SUI",
+        "flag_iso": "ch",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#d52b1e",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 4,
+        "unmatched_roster_names": []
+      }
+    },
+    "TUN": {
+      "squad": {
+        "nation": "Tunisia",
+        "nation_code": "TUN",
+        "flag_iso": "tn",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#e70013",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 3,
+        "unmatched_roster_names": []
+      }
+    },
+    "URU": {
+      "squad": {
+        "nation": "Uruguay",
+        "nation_code": "URU",
+        "flag_iso": "uy",
+        "manager": "TBD",
+        "formation": "4-3-3",
+        "team_color": "#5db8de",
+        "players": []
+      },
+      "pairs": [],
+      "coverage": {
+        "matches": 3,
+        "unmatched_roster_names": []
+      }
+    },
+    "USA": {
+      "squad": {
+        "nation": "United States",
+        "nation_code": "USA",
+        "flag_iso": "us",
+        "manager": "Mauricio Pochettino",
+        "formation": "4-3-3",
+        "team_color": "#bf0d3e",
+        "players": [
+          {
+            "name": "Matt Turner",
+            "club": "Crystal Palace",
+            "position": "GK",
+            "headshot": null
+          },
+          {
+            "name": "Sergiño Dest",
+            "club": "PSV Eindhoven",
+            "position": "RB",
+            "headshot": null
+          },
+          {
+            "name": "Chris Richards",
+            "club": "Crystal Palace",
+            "position": "CB",
+            "headshot": null
+          },
+          {
+            "name": "Tim Ream",
+            "club": "Charlotte FC",
+            "position": "CB",
+            "headshot": null
+          },
+          {
+            "name": "Antonee Robinson",
+            "club": "Fulham",
+            "position": "LB",
+            "headshot": null
+          },
+          {
+            "name": "Tyler Adams",
+            "club": "Bournemouth",
+            "position": "DM",
+            "headshot": null
+          },
+          {
+            "name": "Weston McKennie",
+            "club": "Juventus",
+            "position": "CM",
+            "headshot": null
+          },
+          {
+            "name": "Yunus Musah",
+            "club": "AC Milan",
+            "position": "CM",
+            "headshot": null
+          },
+          {
+            "name": "Christian Pulisic",
+            "club": "AC Milan",
+            "position": "RW",
+            "headshot": null
+          },
+          {
+            "name": "Folarin Balogun",
+            "club": "AS Monaco",
+            "position": "ST",
+            "headshot": null
+          },
+          {
+            "name": "Tim Weah",
+            "club": "Juventus",
+            "position": "LW",
+            "headshot": null
+          }
+        ]
+      },
+      "pairs": [
+        {
+          "player_a_id": 4614,
+          "player_b_id": 8246,
+          "player_a_name": "Antonee Robinson",
+          "player_b_name": "Christian Pulisic",
+          "joi90": 0.49451359971648806,
+          "minutes": 376.23333333333335,
+          "matches": 4
+        },
+        {
+          "player_a_id": 4614,
+          "player_b_id": 18242,
+          "player_a_name": "Antonee Robinson",
+          "player_b_name": "Tim Ream",
+          "joi90": 0.24871832754672366,
+          "minutes": 451.23333333333335,
+          "matches": 4
+        },
+        {
+          "player_a_id": 12751,
+          "player_b_id": 18242,
+          "player_a_name": "Tyler Adams",
+          "player_b_name": "Tim Ream",
+          "joi90": 0.14568749999999986,
+          "minutes": 480.0,
+          "matches": 4
+        },
+        {
+          "player_a_id": 18242,
+          "player_b_id": 21881,
+          "player_a_name": "Tim Ream",
+          "player_b_name": "Sergino Dest",
+          "joi90": 0.0008778584588706901,
+          "minutes": 307.56666666666666,
+          "matches": 4
+        },
+        {
+          "player_a_id": 4614,
+          "player_b_id": 12751,
+          "player_a_name": "Antonee Robinson",
+          "player_b_name": "Tyler Adams",
+          "joi90": -0.0023934402009306737,
+          "minutes": 451.23333333333335,
+          "matches": 4
+        },
+        {
+          "player_a_id": 8246,
+          "player_b_id": 18242,
+          "player_a_name": "Christian Pulisic",
+          "player_b_name": "Tim Ream",
+          "joi90": -0.07169444444444444,
+          "minutes": 405.0,
+          "matches": 4
+        },
+        {
+          "player_a_id": 4614,
+          "player_b_id": 21881,
+          "player_a_name": "Antonee Robinson",
+          "player_b_name": "Sergino Dest",
+          "joi90": -0.0893220981900943,
+          "minutes": 307.56666666666666,
+          "matches": 4
+        },
+        {
+          "player_a_id": 8246,
+          "player_b_id": 21881,
+          "player_a_name": "Christian Pulisic",
+          "player_b_name": "Sergino Dest",
+          "joi90": -0.1133220755296285,
+          "minutes": 271.4166666666667,
+          "matches": 4
+        },
+        {
+          "player_a_id": 8526,
+          "player_b_id": 21881,
+          "player_a_name": "Weston McKennie",
+          "player_b_name": "Sergino Dest",
+          "joi90": -0.2066167062694206,
+          "minutes": 273.55,
+          "matches": 4
+        },
+        {
+          "player_a_id": 8246,
+          "player_b_id": 12751,
+          "player_a_name": "Christian Pulisic",
+          "player_b_name": "Tyler Adams",
+          "joi90": -0.20822222222222248,
+          "minutes": 405.0,
+          "matches": 4
+        },
+        {
+          "player_a_id": 8526,
+          "player_b_id": 12751,
+          "player_a_name": "Weston McKennie",
+          "player_b_name": "Tyler Adams",
+          "joi90": -0.24128587095594964,
+          "minutes": 273.55,
+          "matches": 4
+        },
+        {
+          "player_a_id": 12751,
+          "player_b_id": 21881,
+          "player_a_name": "Tyler Adams",
+          "player_b_name": "Sergino Dest",
+          "joi90": -0.32071095697409785,
+          "minutes": 307.56666666666666,
+          "matches": 4
+        },
+        {
+          "player_a_id": 8246,
+          "player_b_id": 8526,
+          "player_a_name": "Christian Pulisic",
+          "player_b_name": "Weston McKennie",
+          "joi90": -0.3588916256157638,
+          "minutes": 253.75,
+          "matches": 4
+        },
+        {
+          "player_a_id": 8526,
+          "player_b_id": 18242,
+          "player_a_name": "Weston McKennie",
+          "player_b_name": "Tim Ream",
+          "joi90": -0.4381968561506123,
+          "minutes": 273.55,
+          "matches": 4
+        },
+        {
+          "player_a_id": 4614,
+          "player_b_id": 8526,
+          "player_a_name": "Antonee Robinson",
+          "player_b_name": "Weston McKennie",
+          "joi90": -0.46727289343812817,
+          "minutes": 273.55,
+          "matches": 4
+        }
+      ],
+      "coverage": {
+        "matches": 4,
+        "unmatched_roster_names": [
+          "Matt Turner",
+          "Chris Richards",
+          "Yunus Musah",
+          "Folarin Balogun",
+          "Tim Weah"
+        ]
+      }
+    }
+  },
+  "leaderboard": [
+    {
+      "player_a_id": 4614,
+      "player_b_id": 8246,
+      "player_a_name": "Antonee Robinson",
+      "player_b_name": "Christian Pulisic",
+      "joi90": 0.49451359971648806,
+      "minutes": 376.23333333333335,
+      "matches": 4
+    },
+    {
+      "player_a_id": 4614,
+      "player_b_id": 18242,
+      "player_a_name": "Antonee Robinson",
+      "player_b_name": "Tim Ream",
+      "joi90": 0.24871832754672366,
+      "minutes": 451.23333333333335,
+      "matches": 4
+    },
+    {
+      "player_a_id": 12751,
+      "player_b_id": 18242,
+      "player_a_name": "Tyler Adams",
+      "player_b_name": "Tim Ream",
+      "joi90": 0.14568749999999986,
+      "minutes": 480.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 18242,
+      "player_b_id": 21881,
+      "player_a_name": "Tim Ream",
+      "player_b_name": "Sergino Dest",
+      "joi90": 0.0008778584588706901,
+      "minutes": 307.56666666666666,
+      "matches": 4
+    },
+    {
+      "player_a_id": 4614,
+      "player_b_id": 12751,
+      "player_a_name": "Antonee Robinson",
+      "player_b_name": "Tyler Adams",
+      "joi90": -0.0023934402009306737,
+      "minutes": 451.23333333333335,
+      "matches": 4
+    },
+    {
+      "player_a_id": 8246,
+      "player_b_id": 18242,
+      "player_a_name": "Christian Pulisic",
+      "player_b_name": "Tim Ream",
+      "joi90": -0.07169444444444444,
+      "minutes": 405.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 4614,
+      "player_b_id": 21881,
+      "player_a_name": "Antonee Robinson",
+      "player_b_name": "Sergino Dest",
+      "joi90": -0.0893220981900943,
+      "minutes": 307.56666666666666,
+      "matches": 4
+    },
+    {
+      "player_a_id": 8246,
+      "player_b_id": 21881,
+      "player_a_name": "Christian Pulisic",
+      "player_b_name": "Sergino Dest",
+      "joi90": -0.1133220755296285,
+      "minutes": 271.4166666666667,
+      "matches": 4
+    },
+    {
+      "player_a_id": 8526,
+      "player_b_id": 21881,
+      "player_a_name": "Weston McKennie",
+      "player_b_name": "Sergino Dest",
+      "joi90": -0.2066167062694206,
+      "minutes": 273.55,
+      "matches": 4
+    },
+    {
+      "player_a_id": 8246,
+      "player_b_id": 12751,
+      "player_a_name": "Christian Pulisic",
+      "player_b_name": "Tyler Adams",
+      "joi90": -0.20822222222222248,
+      "minutes": 405.0,
+      "matches": 4
+    },
+    {
+      "player_a_id": 8526,
+      "player_b_id": 12751,
+      "player_a_name": "Weston McKennie",
+      "player_b_name": "Tyler Adams",
+      "joi90": -0.24128587095594964,
+      "minutes": 273.55,
+      "matches": 4
+    },
+    {
+      "player_a_id": 12751,
+      "player_b_id": 21881,
+      "player_a_name": "Tyler Adams",
+      "player_b_name": "Sergino Dest",
+      "joi90": -0.32071095697409785,
+      "minutes": 307.56666666666666,
+      "matches": 4
+    },
+    {
+      "player_a_id": 8246,
+      "player_b_id": 8526,
+      "player_a_name": "Christian Pulisic",
+      "player_b_name": "Weston McKennie",
+      "joi90": -0.3588916256157638,
+      "minutes": 253.75,
+      "matches": 4
+    },
+    {
+      "player_a_id": 8526,
+      "player_b_id": 18242,
+      "player_a_name": "Weston McKennie",
+      "player_b_name": "Tim Ream",
+      "joi90": -0.4381968561506123,
+      "minutes": 273.55,
+      "matches": 4
+    },
+    {
+      "player_a_id": 4614,
+      "player_b_id": 8526,
+      "player_a_name": "Antonee Robinson",
+      "player_b_name": "Weston McKennie",
+      "joi90": -0.46727289343812817,
+      "minutes": 273.55,
+      "matches": 4
+    }
+  ],
+  "meta": {
+    "min_minutes_global": 90.0,
+    "min_minutes_team": 90.0,
+    "total_pairs": 4664
+  }
+}

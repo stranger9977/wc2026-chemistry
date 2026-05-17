@@ -1,0 +1,16 @@
+{
+  "squad": {
+    "nation": "Argentina",
+    "nation_code": "ARG",
+    "flag_iso": "ar",
+    "manager": "TBD",
+    "formation": "4-3-3",
+    "team_color": "#75aadb",
+    "players": []
+  },
+  "pairs": [],
+  "coverage": {
+    "matches": 7,
+    "unmatched_roster_names": []
+  }
+}

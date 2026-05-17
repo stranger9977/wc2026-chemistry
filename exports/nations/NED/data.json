@@ -1,0 +1,16 @@
+{
+  "squad": {
+    "nation": "Netherlands",
+    "nation_code": "NED",
+    "flag_iso": "nl",
+    "manager": "TBD",
+    "formation": "4-3-3",
+    "team_color": "#ff6600",
+    "players": []
+  },
+  "pairs": [],
+  "coverage": {
+    "matches": 5,
+    "unmatched_roster_names": []
+  }
+}

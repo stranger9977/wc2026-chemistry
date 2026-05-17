@@ -1,0 +1,16 @@
+{
+  "squad": {
+    "nation": "Denmark",
+    "nation_code": "DEN",
+    "flag_iso": "dk",
+    "manager": "TBD",
+    "formation": "4-3-3",
+    "team_color": "#c8102e",
+    "players": []
+  },
+  "pairs": [],
+  "coverage": {
+    "matches": 3,
+    "unmatched_roster_names": []
+  }
+}

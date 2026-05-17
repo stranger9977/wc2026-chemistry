@@ -1,0 +1,16 @@
+{
+  "squad": {
+    "nation": "Egypt",
+    "nation_code": "EGY",
+    "flag_iso": "eg",
+    "manager": "TBD",
+    "formation": "4-3-3",
+    "team_color": "#ce1126",
+    "players": []
+  },
+  "pairs": [],
+  "coverage": {
+    "matches": 0,
+    "warning": "no matches in open data"
+  }
+}
