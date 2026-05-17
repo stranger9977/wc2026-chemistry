@@ -32,3 +32,19 @@ def test_invalid_yaml_raises(tmp_path):
     bad.write_text("nation: oops\n")  # missing required fields
     with pytest.raises(Exception):
         load_squad(bad)
+
+
+import pandas as pd
+from chemistry.squads import filter_pairs_by_squad
+
+
+def test_filter_pairs_keeps_only_pairs_where_both_players_are_in_squad():
+    pairs = pd.DataFrame([
+        {"player_a": 100, "player_b": 101, "joi90": 0.5, "minutes": 90, "matches": 1},
+        {"player_a": 101, "player_b": 999, "joi90": 0.3, "minutes": 90, "matches": 1},
+        {"player_a": 800, "player_b": 999, "joi90": 0.4, "minutes": 90, "matches": 1},
+    ])
+    roster = {100: "Alpha", 101: "Beta", 102: "Gamma"}
+    out = filter_pairs_by_squad(pairs, set(roster.keys()))
+    assert len(out) == 1
+    assert int(out.iloc[0]["player_a"]) == 100

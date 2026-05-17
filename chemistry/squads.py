@@ -37,3 +37,11 @@ def load_all_squads(dir: Path) -> dict[str, Squad]:
         squad = load_squad(p)
         out[squad.nation_code] = squad
     return out
+
+
+import pandas as pd  # noqa: E402
+
+
+def filter_pairs_by_squad(pairs: pd.DataFrame, player_ids: set[int]) -> pd.DataFrame:
+    in_squad = pairs["player_a"].isin(player_ids) & pairs["player_b"].isin(player_ids)
+    return pairs[in_squad].reset_index(drop=True)
