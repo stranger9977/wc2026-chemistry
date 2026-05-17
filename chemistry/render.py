@@ -115,3 +115,68 @@ def svg_to_4k_png(svg_path: Path, png_path: Path, width: int = 3840) -> Path:
     png_path.parent.mkdir(parents=True, exist_ok=True)
     cairosvg.svg2png(url=str(svg_path), write_to=str(png_path), output_width=width)
     return png_path
+
+
+def render_leaderboard(doc: dict, out_path: Path,
+                       title: str = "World Cup 2026 — Top Chemistry Pairs") -> Path:
+    items = doc["leaderboard"][:20]
+    fig = plt.figure(figsize=(19.2, 10.8), dpi=100)
+    ax = fig.add_axes([0.04, 0.04, 0.92, 0.92])
+    fig.patch.set_facecolor("#0e1117")
+    ax.set_facecolor("#0e1117")
+    ax.set_axis_off()
+
+    ax.text(0.0, 1.0, title, color="#e6edf3", fontsize=36, weight="bold",
+            transform=ax.transAxes, va="top")
+
+    row_height = 0.04
+    for i, p in enumerate(items):
+        y = 0.92 - i * row_height
+        ax.text(0.00, y, f"{i+1:>2}.", color="#8b949e", fontsize=16,
+                transform=ax.transAxes, family="monospace")
+        ax.text(0.05, y, f"{p['player_a_name']}  +  {p['player_b_name']}",
+                color="#e6edf3", fontsize=18, transform=ax.transAxes)
+        ax.text(0.78, y, f"JOI90  {p['joi90']:.3f}",
+                color="#4ade80", fontsize=18, weight="bold",
+                transform=ax.transAxes, family="monospace")
+        ax.text(0.92, y, f"{int(p['minutes'])} mins",
+                color="#8b949e", fontsize=14, transform=ax.transAxes, family="monospace")
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(out_path, dpi=200, facecolor=fig.get_facecolor(),
+                bbox_inches=None, pad_inches=0)
+    plt.close(fig)
+    return out_path
+
+
+def render_landing_grid(doc: dict, out_path: Path) -> Path:
+    nations = list(doc["nations"].items())
+    fig = plt.figure(figsize=(38.4, 21.6), dpi=100)
+    fig.patch.set_facecolor("#0e1117")
+    ax = fig.add_axes([0.02, 0.02, 0.96, 0.94])
+    ax.set_facecolor("#0e1117"); ax.set_axis_off()
+    ax.set_xlim(0, 4); ax.set_ylim(0, 8)
+    ax.invert_yaxis()
+    ax.text(0, -0.4, "World Cup 2026 — Chemistry",
+            color="#e6edf3", fontsize=64, weight="bold", va="top")
+
+    for idx, (code, entry) in enumerate(nations):
+        col = idx % 4
+        row = idx // 4
+        x, y = col + 0.05, row + 0.1
+        squad = entry["squad"]
+        ax.text(x, y + 0.08, squad["nation"], color="#e6edf3", fontsize=28, weight="bold")
+        ax.text(x, y + 0.22, squad["manager"], color="#8b949e", fontsize=16)
+        top = entry["pairs"][:1]
+        if top:
+            p = top[0]
+            ax.text(x, y + 0.42, f"{p['player_a_name']} + {p['player_b_name']}",
+                    color="#e6edf3", fontsize=18)
+            ax.text(x, y + 0.55, f"JOI90 {p['joi90']:.3f}",
+                    color="#4ade80", fontsize=18, weight="bold", family="monospace")
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(out_path, dpi=200, facecolor=fig.get_facecolor(),
+                bbox_inches=None, pad_inches=0)
+    plt.close(fig)
+    return out_path
