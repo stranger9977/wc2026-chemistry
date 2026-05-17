@@ -11,5 +11,3 @@ cairosvg>=2.7
 xgboost>=2.0
 scikit-learn>=1.4
 tqdm>=4.66
-pytest>=8.0
-pytest-cov>=4.1

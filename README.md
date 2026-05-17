@@ -9,6 +9,7 @@ See [docs/superpowers/specs/2026-05-17-wc2026-chemistry-design.md](docs/superpow
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
+pip install -e ".[dev]"           # add this line
 python -m scripts.build      # full pipeline
 python -m scripts.export     # render exports/
 ```
