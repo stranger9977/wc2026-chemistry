@@ -204,6 +204,7 @@ def to_spadl(events: pd.DataFrame) -> pd.DataFrame:
     return actions.sort_values(["period_id", "time_seconds"]).reset_index(drop=True)
 
 
+from statsbombpy import sb as _sb  # noqa: E402
 from chemistry.vaep_model import VaepModel, load_vaep_model  # noqa: E402
 
 VAEP_DIR = Path(__file__).parent.parent / "data" / "vaep"
@@ -229,6 +230,40 @@ def score_competition(spadl_competition_dir: Path,
         scored = score_vaep(spadl, model)
         scored.to_parquet(target, index=False)
     return comp_out
+
+
+def load_lineups_for_match(match_id: int) -> pd.DataFrame:
+    """Return rows of (game_id, team_id, team_name, player_id, player_name, position, from_minute, to_minute).
+
+    statsbombpy lineups returns a dict {team_name: DataFrame}. We flatten and pull
+    minutes from the position-spells inside each player's `positions` list.
+    """
+    lineups = _sb.lineups(match_id=match_id)
+    rows = []
+    for team_name, df in lineups.items():
+        for _, row in df.iterrows():
+            # Pull team_id if present (statsbombpy versions vary). Fallback to 0.
+            team_id = row.get("team_id", 0)
+            positions = row.get("positions") if "positions" in row else []
+            positions = positions if isinstance(positions, list) else []
+            if positions:
+                # The total spell is min(from) to max(to) across all positions
+                from_min = min(p.get("from_minute", p.get("from", 0)) for p in positions)
+                to_min   = max(p.get("to_minute",   p.get("to", 90)) for p in positions)
+                position = positions[0].get("position", positions[0].get("name", None))
+            else:
+                from_min, to_min, position = 0, 0, None
+            rows.append({
+                "game_id": match_id,
+                "team_id": team_id,
+                "team_name": team_name,
+                "player_id": row["player_id"],
+                "player_name": row["player_name"],
+                "position": position,
+                "from_minute": from_min,
+                "to_minute": to_min,
+            })
+    return pd.DataFrame(rows)
 
 
 def convert_competition(competition_dir: Path, out_dir: Path = SPADL_DIR) -> Path:
