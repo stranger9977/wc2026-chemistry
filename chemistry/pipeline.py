@@ -204,6 +204,33 @@ def to_spadl(events: pd.DataFrame) -> pd.DataFrame:
     return actions.sort_values(["period_id", "time_seconds"]).reset_index(drop=True)
 
 
+from chemistry.vaep_model import VaepModel, load_vaep_model  # noqa: E402
+
+VAEP_DIR = Path(__file__).parent.parent / "data" / "vaep"
+
+
+def score_vaep(spadl: pd.DataFrame, model: VaepModel) -> pd.DataFrame:
+    out = spadl.copy()
+    out["vaep_value"] = model.score(spadl)
+    return out
+
+
+def score_competition(spadl_competition_dir: Path,
+                      model: VaepModel,
+                      out_dir: Path = VAEP_DIR) -> Path:
+    out_dir.mkdir(parents=True, exist_ok=True)
+    comp_out = out_dir / spadl_competition_dir.name
+    comp_out.mkdir(exist_ok=True)
+    for spadl_path in sorted(spadl_competition_dir.glob("*.parquet")):
+        target = comp_out / spadl_path.name
+        if target.exists():
+            continue
+        spadl = pd.read_parquet(spadl_path)
+        scored = score_vaep(spadl, model)
+        scored.to_parquet(target, index=False)
+    return comp_out
+
+
 def convert_competition(competition_dir: Path, out_dir: Path = SPADL_DIR) -> Path:
     """Convert every match in a cached competition dir to SPADL.
 

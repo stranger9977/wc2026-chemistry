@@ -1,5 +1,6 @@
+import numpy as np
 import pandas as pd
-from chemistry.pipeline import to_spadl
+from chemistry.pipeline import to_spadl, score_vaep, load_vaep_model
 
 SPADL_COLUMNS = {
     "game_id", "team_id", "player_id", "period_id", "time_seconds",
@@ -14,3 +15,13 @@ def test_to_spadl_returns_dataframe_with_expected_columns(fixtures_dir):
     assert isinstance(spadl, pd.DataFrame)
     assert SPADL_COLUMNS.issubset(set(spadl.columns))
     assert len(spadl) > 0
+
+
+def test_score_vaep_adds_vaep_value_column(fixtures_dir, tmp_path):
+    events = pd.read_parquet(fixtures_dir / "sample_events.parquet")
+    spadl = to_spadl(events)
+    model = load_vaep_model(kind="heuristic")
+    scored = score_vaep(spadl, model)
+    assert "vaep_value" in scored.columns
+    assert scored["vaep_value"].notna().sum() > 0
+    assert np.isfinite(scored["vaep_value"]).all()
