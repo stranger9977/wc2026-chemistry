@@ -11,3 +11,7 @@ cairosvg>=2.7
 xgboost>=2.0
 scikit-learn>=1.4
 tqdm>=4.66
+# pandera is a transitive dep of socceraction; pin multimethod to 1.x so
+# pandera.typing imports without the missing `multimethod.overload` error.
+pandera>=0.17,<0.20
+multimethod>=1.9,<2.0

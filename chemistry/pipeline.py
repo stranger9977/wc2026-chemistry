@@ -172,47 +172,6 @@ def _flatten_to_socceraction(events: pd.DataFrame) -> pd.DataFrame:
 # Public API
 # ---------------------------------------------------------------------------
 
-def _mock_pandera() -> None:
-    """Inject a lightweight pandera stub into sys.modules.
-
-    The installed pandera version triggers an ImportError at startup because
-    it depends on ``multimethod.overload`` which was removed in a newer release
-    of multimethod.  We only need pandera's DataFrame/SchemaModel as type
-    annotations so a minimal stub is sufficient.
-    """
-    import sys
-    import types
-
-    if "pandera" in sys.modules:
-        return  # already loaded (real or mock)
-
-    pandera_mock = types.ModuleType("pandera")
-    pandera_typing_mock = types.ModuleType("pandera.typing")
-
-    class _SchemaModel:
-        pass
-
-    class _DataFrameMeta(type):
-        def __getitem__(cls, item: Any) -> type:
-            return cls
-
-    class _DataFrame(metaclass=_DataFrameMeta):
-        pass
-
-    class _Series:
-        def __class_getitem__(cls, item: Any) -> type:
-            return cls
-
-    pandera_typing_mock.DataFrame = _DataFrame  # type: ignore[attr-defined]
-    pandera_typing_mock.Series = _Series  # type: ignore[attr-defined]
-    pandera_mock.typing = pandera_typing_mock  # type: ignore[attr-defined]
-    pandera_mock.SchemaModel = _SchemaModel  # type: ignore[attr-defined]
-    pandera_mock.Field = lambda *a, **kw: None  # type: ignore[attr-defined]
-
-    sys.modules["pandera"] = pandera_mock
-    sys.modules["pandera.typing"] = pandera_typing_mock
-
-
 def to_spadl(events: pd.DataFrame) -> pd.DataFrame:
     """Convert one match's StatsBomb events (flat statsbombpy shape) into SPADL actions.
 
@@ -227,8 +186,6 @@ def to_spadl(events: pd.DataFrame) -> pd.DataFrame:
         SPADL actions sorted by period and time.
     """
     import warnings
-
-    _mock_pandera()
 
     from socceraction.spadl import statsbomb as spadl_sb
 
