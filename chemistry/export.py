@@ -8,7 +8,7 @@ import pandas as pd
 
 from chemistry import rank, squads, players
 from chemistry.names import shorten_name
-from chemistry.formation import position_xy, disambiguate_overlaps
+from chemistry.formation import position_xy, disambiguate_overlaps, pick_pitch_xi, short_position
 from chemistry.pipeline import all_player_nicknames
 
 
@@ -16,13 +16,16 @@ VAEP_DIR = Path("data/vaep")
 
 
 def _pair_record(
-    row: pd.Series,
+    row_xt: pd.Series,
     id_to_name: dict[int, str],
     id_to_display: dict[int, str] | None = None,
+    row_vaep: "pd.Series | None" = None,
+    id_to_position: "dict[int, str | None] | None" = None,
 ) -> dict:
-    a = int(row["player_a"])
-    b = int(row["player_b"])
+    a = int(row_xt["player_a"])
+    b = int(row_xt["player_b"])
     disp = id_to_display or {}
+    pos = id_to_position or {}
     return {
         "player_a_id": a,
         "player_b_id": b,
@@ -30,9 +33,14 @@ def _pair_record(
         "player_b_name": id_to_name.get(b, str(b)),
         "player_a_display": disp.get(a, id_to_name.get(a, str(a))),
         "player_b_display": disp.get(b, id_to_name.get(b, str(b))),
-        "joi90": float(row["joi90"]),
-        "minutes": float(row["minutes"]),
-        "matches": int(row["matches"]),
+        "player_a_position": short_position(pos.get(a)),
+        "player_b_position": short_position(pos.get(b)),
+        "joi90_xt": float(row_xt["joi90"]),
+        "joi90_vaep": float(row_vaep["joi90"]) if row_vaep is not None else None,
+        # Keep legacy joi90 field pointing at xT for backward compat
+        "joi90": float(row_xt["joi90"]),
+        "minutes": float(row_xt["minutes"]),
+        "matches": int(row_xt["matches"]),
     }
 
 
@@ -44,6 +52,7 @@ def build_chemistry_json(
     min_minutes_global: float = 180.0,
     min_minutes_team: float = 180.0,
     metric: str = "xt",
+    joi90_vaep: "pd.DataFrame | None" = None,
 ) -> Path:
     id_to_name = (
         lineups.dropna(subset=["player_id"])
@@ -60,6 +69,15 @@ def build_chemistry_json(
     per_nation: dict[str, dict] = {}
     # Global display-name map: pid -> display_name (built up as we process nations)
     id_to_display: dict[int, str] = {}
+    # Global position map: pid -> sb_position (built up as we process nations)
+    id_to_position: dict[int, str | None] = {}
+
+    # Build lookup for VAEP pairs if provided
+    vaep_pair_index: dict[tuple[int, int], pd.Series] = {}
+    if joi90_vaep is not None and not joi90_vaep.empty:
+        for _, row in joi90_vaep.iterrows():
+            key = (int(row["player_a"]), int(row["player_b"]))
+            vaep_pair_index[key] = row
 
     for code, squad in squads_map.items():
         team_lineups = lineups[lineups["team_name"] == squad.nation]
@@ -108,10 +126,8 @@ def build_chemistry_json(
         # Effective roster: union of YAML and auto-derived
         effective_ids = yaml_roster_ids | auto_roster_ids
 
-        # Pitch shows just the top 11 by minutes
-        pitch_ids = [int(pid) for pid in
-                     minutes_by_player.head(11).index
-                     if int(pid) in effective_ids]
+        # Pitch shows a coherent 4-3-3 XI (exactly 1 GK + 10 outfield)
+        pitch_ids = pick_pitch_xi(minutes_by_player, pos_mode, effective_ids)
 
         # Compute formation-based positions
         raw_positions: dict[int, tuple[float, float]] = {}
@@ -163,6 +179,8 @@ def build_chemistry_json(
             }
             # Register in global display map
             id_to_display[int(pid)] = display_name
+            # Register position in global map
+            id_to_position[int(pid)] = sb_position
 
         # Filter chemistry pairs to effective roster
         effective_ids_int = {int(i) for i in effective_ids}
@@ -172,6 +190,14 @@ def build_chemistry_json(
             & (joi90["minutes"] >= min_minutes_team)
         ].copy()
         squad_pairs = squad_pairs.sort_values("joi90", ascending=False)
+
+        def _build_squad_pair(row_xt: pd.Series) -> dict:
+            key = (int(row_xt["player_a"]), int(row_xt["player_b"]))
+            row_vaep = vaep_pair_index.get(key)
+            return _pair_record(
+                row_xt, id_to_name, id_to_display,
+                row_vaep=row_vaep, id_to_position=id_to_position,
+            )
 
         coverage: dict = {
             "matches": int(team_lineups["game_id"].nunique()),
@@ -185,7 +211,7 @@ def build_chemistry_json(
             "squad": squad.model_dump(),
             "players_by_id": players_by_id,
             "pitch_player_ids": pitch_ids,
-            "pairs": [_pair_record(r, id_to_name, id_to_display) for _, r in squad_pairs.iterrows()],
+            "pairs": [_build_squad_pair(r) for _, r in squad_pairs.iterrows()],
             "coverage": coverage,
         }
 
@@ -215,8 +241,14 @@ def build_chemistry_json(
         id_to_name: dict[int, str],
         id_to_nation: dict[int, tuple[str, str]],
         id_to_display: dict[int, str],
+        id_to_position: dict[int, str | None],
     ) -> dict:
-        rec = _pair_record(row, id_to_name, id_to_display)
+        key = (int(row["player_a"]), int(row["player_b"]))
+        row_vaep = vaep_pair_index.get(key)
+        rec = _pair_record(
+            row, id_to_name, id_to_display,
+            row_vaep=row_vaep, id_to_position=id_to_position,
+        )
         a, b = rec["player_a_id"], rec["player_b_id"]
         nation = id_to_nation.get(a) or id_to_nation.get(b)
         if nation:
@@ -226,7 +258,7 @@ def build_chemistry_json(
     doc = {
         "nations": per_nation,
         "leaderboard": [
-            _enrich_leaderboard_row(r, id_to_name, id_to_nation, id_to_display)
+            _enrich_leaderboard_row(r, id_to_name, id_to_nation, id_to_display, id_to_position)
             for _, r in leaderboard.iterrows()
         ],
         "meta": {
@@ -234,6 +266,7 @@ def build_chemistry_json(
             "min_minutes_global": min_minutes_global,
             "min_minutes_team": min_minutes_team,
             "total_pairs": int(len(joi90)),
+            "has_vaep": joi90_vaep is not None and not joi90_vaep.empty,
         },
     }
     out_path.parent.mkdir(parents=True, exist_ok=True)

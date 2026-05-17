@@ -35,27 +35,56 @@ class HeuristicVaep:
 
 
 class TrainedVaep:
-    """Loads a socceraction-trained VAEP model from disk."""
+    """Loads a socceraction-trained VAEP model bundle from disk."""
 
     def __init__(self, path: Path):
         with open(path, "rb") as f:
-            self._model = pickle.load(f)
+            self._bundle = pickle.load(f)
 
-    def score(self, spadl: pd.DataFrame) -> pd.Series:
+    def _build_features(self, spadl: pd.DataFrame) -> pd.DataFrame:
         from socceraction.vaep import features as fs
-        from socceraction.vaep import formula
-
-        gamestates = fs.gamestates(spadl)
+        gs = fs.gamestates(spadl)
         X = pd.concat(
-            [fs.actiontype_onehot(gamestates),
-             fs.result_onehot(gamestates),
-             fs.startlocation(gamestates),
-             fs.endlocation(gamestates)],
+            [fs.actiontype_onehot(gs),
+             fs.result_onehot(gs),
+             fs.startlocation(gs),
+             fs.endlocation(gs)],
             axis=1,
         )
-        p_scores = self._model.predict_proba(X)[:, 1]
-        p_concedes = np.zeros(len(spadl))
-        return formula.offensive_value(spadl, pd.Series(p_scores), pd.Series(p_concedes))
+        # Align to training columns if recorded
+        feature_cols = self._bundle.get("feature_cols")
+        if feature_cols:
+            # Add any missing cols as 0, drop extra cols
+            for c in feature_cols:
+                if c not in X.columns:
+                    X[c] = 0
+            X = X[feature_cols]
+        return X
+
+    @staticmethod
+    def _enrich_spadl(spadl: pd.DataFrame) -> pd.DataFrame:
+        """Add type_name and result_name columns required by socceraction formula."""
+        import socceraction.spadl as spadl_mod
+        at = spadl_mod.actiontypes_df().set_index("type_id")["type_name"]
+        rt = spadl_mod.results_df().set_index("result_id")["result_name"]
+        enriched = spadl.copy()
+        if "type_name" not in enriched.columns:
+            enriched["type_name"] = enriched["type_id"].map(at).fillna("unknown")
+        if "result_name" not in enriched.columns:
+            enriched["result_name"] = enriched["result_id"].map(rt).fillna("unknown")
+        return enriched
+
+    def score(self, spadl: pd.DataFrame) -> pd.Series:
+        from socceraction.vaep import formula
+
+        enriched = self._enrich_spadl(spadl)
+        X = self._build_features(enriched)
+        clf_scores = self._bundle["scores"]
+        clf_concedes = self._bundle["concedes"]
+        p_scores = pd.Series(clf_scores.predict_proba(X)[:, 1], index=enriched.index)
+        p_concedes = pd.Series(clf_concedes.predict_proba(X)[:, 1], index=enriched.index)
+        values_df = formula.value(enriched, p_scores, p_concedes)
+        return values_df["vaep_value"]
 
 
 def load_vaep_model(kind: Literal["heuristic", "trained"] = "trained",

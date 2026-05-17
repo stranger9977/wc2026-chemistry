@@ -10,23 +10,24 @@ function colorFor(joi, min, max) {
   return lerpColor("ef4444", "4ade80", t);
 }
 
-async function main() {
-  const params = new URLSearchParams(location.search);
-  const code = params.get("code");
-  const doc = await (await fetch("outputs/chemistry.json")).json();
-  const entry = doc.nations[code];
-  if (!entry) {
-    document.getElementById("title").textContent = `Unknown nation: ${code}`;
-    return;
-  }
-  const squad = entry.squad;
-  const players = entry.players_by_id || {};
+function getJoi(pair, metric) {
+  if (metric === "vaep" && pair.joi90_vaep != null) return pair.joi90_vaep;
+  return pair.joi90_xt ?? pair.joi90 ?? 0;
+}
 
-  document.getElementById("title").textContent = squad.nation;
-  document.getElementById("subtitle").textContent =
-    `${squad.manager} · ${squad.formation} · ${entry.coverage.matches} matches in window · ${Object.keys(players).length} players`;
+function posChip(pos) {
+  if (!pos) return "";
+  return `<span class="pos">${pos}</span>`;
+}
 
+let _entry = null;
+let _squad = null;
+let _activeMetric = "xt";
+let _hasVaep = false;
+
+function drawPitch(entry, squad, metric) {
   const svg = d3.select("#pitch");
+  svg.selectAll("*").remove();
 
   // Pitch background
   svg.append("rect")
@@ -47,20 +48,18 @@ async function main() {
   svg.append("rect").attr("x", 860).attr("y", 200).attr("width", 165).attr("height", 280)
     .attr("fill", "none").attr("stroke", "#fff").attr("stroke-width", 2).attr("opacity", 0.5);
 
-  // SPADL coords are 105 wide × 68 tall; viewBox is 1050 × 680 — scale by 10
-
   // Filter to pitch-relevant pairs only
   const pitchSet = new Set(entry.pitch_player_ids || Object.keys(entry.players_by_id).map(Number));
   const allEligible = entry.pairs.filter(p =>
     pitchSet.has(p.player_a_id) && pitchSet.has(p.player_b_id)
   );
   const TOP_N = 15;
-  const sortedDesc = [...allEligible].sort((a, b) => b.joi90 - a.joi90);
+  const sortedDesc = [...allEligible].sort((a, b) => getJoi(b, metric) - getJoi(a, metric));
   const topEdges = sortedDesc.slice(0, TOP_N);
   const dimEdges = sortedDesc.slice(TOP_N);
 
-  const vmin = d3.min(topEdges, d => d.joi90) ?? 0;
-  const vmax = d3.max(topEdges, d => d.joi90) ?? 0;
+  const vmin = d3.min(topEdges, d => getJoi(d, metric)) ?? 0;
+  const vmax = d3.max(topEdges, d => getJoi(d, metric)) ?? 0;
 
   // Dim edges first (low opacity, no tooltip clutter)
   svg.append("g").selectAll("line.dim")
@@ -81,14 +80,17 @@ async function main() {
       .attr("y1", d => entry.players_by_id[d.player_a_id].y * 10)
       .attr("x2", d => entry.players_by_id[d.player_b_id].x * 10)
       .attr("y2", d => entry.players_by_id[d.player_b_id].y * 10)
-      .attr("stroke", d => colorFor(d.joi90, vmin, vmax))
+      .attr("stroke", d => colorFor(getJoi(d, metric), vmin, vmax))
       .attr("stroke-width", d => 2.5 + 6 * Math.min(d.minutes, 600) / 600)
       .attr("stroke-linecap", "round")
       .attr("opacity", 0.95)
       .append("title")
-        .text(d => `${d.player_a_display ?? d.player_a_name} + ${d.player_b_display ?? d.player_b_name}\nJOI90 ${d.joi90.toFixed(3)} · ${Math.round(d.minutes)} mins · ${d.matches} matches`);
+        .text(d => {
+          const j = getJoi(d, metric);
+          return `${d.player_a_display ?? d.player_a_name} + ${d.player_b_display ?? d.player_b_name}\nJOI90 ${j.toFixed(3)} · ${Math.round(d.minutes)} mins · ${d.matches} matches`;
+        });
 
-  // Player markers — only for pitch_player_ids (top 11 by minutes)
+  // Player markers — only for pitch_player_ids (coherent 4-3-3 XI)
   const pitchPlayers = (entry.pitch_player_ids || Object.keys(entry.players_by_id).map(Number));
   const placedPoints = [];
   function labelOffset(x, y) {
@@ -114,6 +116,64 @@ async function main() {
       .text(p.display_name);
     placedPoints.push([x, y]);
   }
+}
+
+function renderPairsTable(entry, metric) {
+  const tbody = document.querySelector("#pairs tbody");
+  tbody.innerHTML = "";
+  const sorted = [...entry.pairs].sort((a, b) => getJoi(b, metric) - getJoi(a, metric));
+  sorted.forEach((p, i) => {
+    const tr = document.createElement("tr");
+    const aPos = posChip(p.player_a_position);
+    const bPos = posChip(p.player_b_position);
+    const joi = getJoi(p, metric);
+    tr.innerHTML = `<td>${i+1}</td>
+      <td>${aPos}${p.player_a_display || p.player_a_name} + ${bPos}${p.player_b_display || p.player_b_name}</td>
+      <td class="joi">${joi.toFixed(3)}</td><td>${Math.round(p.minutes)}</td><td>${p.matches}</td>`;
+    tbody.appendChild(tr);
+  });
+}
+
+async function main() {
+  const params = new URLSearchParams(location.search);
+  const code = params.get("code");
+  _activeMetric = params.get("metric") || "xt";
+
+  const doc = await (await fetch("outputs/chemistry.json")).json();
+  _entry = doc.nations[code];
+  _hasVaep = doc.meta && doc.meta.has_vaep;
+
+  if (!_entry) {
+    document.getElementById("title").textContent = `Unknown nation: ${code}`;
+    return;
+  }
+  _squad = _entry.squad;
+
+  document.getElementById("title").textContent = _squad.nation;
+  document.getElementById("subtitle").textContent =
+    `${_squad.manager} · ${_squad.formation} · ${_entry.coverage.matches} matches in window · ${Object.keys(_entry.players_by_id).length} players`;
+
+  // Inject metric toggle into page
+  const toggleHtml = `<div class="metric-toggle" style="margin-bottom:16px">
+    <span>Metric:</span>
+    <button class="metric-btn${_activeMetric === 'xt' ? ' active' : ''}" data-metric="xt">xT</button>
+    <button class="metric-btn${_activeMetric === 'vaep' ? ' active' : ''}${!_hasVaep ? ' disabled' : ''}" data-metric="vaep" title="${!_hasVaep ? 'VAEP model not yet computed' : ''}">VAEP</button>
+  </div>`;
+  const titleEl = document.getElementById("title");
+  titleEl.insertAdjacentHTML("afterend", toggleHtml);
+
+  document.querySelectorAll(".metric-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      if (btn.dataset.metric === "vaep" && !_hasVaep) return;
+      _activeMetric = btn.dataset.metric;
+      document.querySelectorAll(".metric-btn").forEach(b =>
+        b.classList.toggle("active", b.dataset.metric === _activeMetric));
+      drawPitch(_entry, _squad, _activeMetric);
+      renderPairsTable(_entry, _activeMetric);
+    });
+  });
+
+  drawPitch(_entry, _squad, _activeMetric);
 
   // Download buttons
   const dl = document.getElementById("downloads");
@@ -127,13 +187,6 @@ async function main() {
     dl.appendChild(a);
   }
 
-  // Pairs table — still shows all pairs for full squad context
-  const tbody = document.querySelector("#pairs tbody");
-  entry.pairs.forEach((p, i) => {
-    const tr = document.createElement("tr");
-    tr.innerHTML = `<td>${i+1}</td><td>${p.player_a_display || p.player_a_name} + ${p.player_b_display || p.player_b_name}</td>
-      <td class="joi">${p.joi90.toFixed(3)}</td><td>${Math.round(p.minutes)}</td><td>${p.matches}</td>`;
-    tbody.appendChild(tr);
-  });
+  renderPairsTable(_entry, _activeMetric);
 }
 main();

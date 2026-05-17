@@ -2,6 +2,7 @@
 data/raw/
 data/spadl/
 data/vaep/
+data/vaep_scored/
 
 # Python
 __pycache__/

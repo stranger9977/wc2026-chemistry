@@ -76,3 +76,46 @@ h1 { font-size: 44px; margin: 0 0 8px; letter-spacing: -0.02em; }
   border-radius: 8px; color: var(--ink); font-size: 13px; text-decoration: none; margin: 4px 6px 0 0; }
 .btn:hover { border-color: var(--accent2); }
 .pitch-svg { width: 100%; height: auto; max-width: 1280px; margin: 24px 0; }
+
+/* Position chip */
+.pos {
+  display: inline-block;
+  padding: 1px 6px;
+  margin-right: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: "JetBrains Mono", monospace;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+/* Metric toggle */
+.metric-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 24px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.metric-btn {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.metric-btn.active {
+  background: var(--accent);
+  color: #000;
+  border-color: var(--accent);
+}
+.metric-btn.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
