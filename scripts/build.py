@@ -67,6 +67,18 @@ def run(use_heuristic_vaep: bool, fetch: bool = True) -> None:
     joi90.to_parquet(OUT / "joi90.parquet", index=False)
     log.info("Wrote %d pairs to outputs/joi90.parquet", len(joi90))
 
+    log.info("Stitching squads + chemistry pairs")
+    path = export()
+    log.info("Wrote %s", path)
+
+
+def export(out_path: Path = OUT / "chemistry.json") -> Path:
+    from chemistry import squads as squads_mod, export as export_mod
+    joi90 = pd.read_parquet(OUT / "joi90.parquet")
+    lineups = pd.read_parquet(OUT / "lineups.parquet")
+    squad_map = squads_mod.load_all_squads(Path("squads/wc2026"))
+    return export_mod.build_chemistry_json(joi90, lineups, squad_map, out_path)
+
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
