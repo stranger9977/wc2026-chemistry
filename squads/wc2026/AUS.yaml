@@ -1,7 +1,28 @@
+# Source: Australia squad — train-on squad being assembled May 2026 by Tony Popovic; final due June 1
 nation: Australia
 nation_code: AUS
 flag_iso: au
-manager: TBD
-formation: 4-3-3
-team_color: '#ffcd00'
-players: []
+manager: Tony Popovic
+formation: "4-3-3"
+team_color: "#ffcd00"
+players:
+  - { name: Mat Ryan,             club: Levante,              position: GK  }
+  - { name: Danny Vukovic,        club: Central Coast Mariners, position: GK }
+  - { name: Harry Souttar,        club: Leicester City,       position: CB  }
+  - { name: Miloš Degenek,        club: Columbus Crew,        position: CB  }
+  - { name: Bailey Wright,        club: Sunderland,           position: CB  }
+  - { name: Nathaniel Atkinson,   club: Melbourne City,       position: RB  }
+  - { name: Aziz Behich,          club: Dundee United,        position: LB  }
+  - { name: Nestory Irankunda,    club: Bayern Munich,        position: RW  }
+  - { name: Jackson Irvine,       club: St. Pauli,            position: CM  }
+  - { name: Aaron Mooy,           club: Celtic,               position: CM  }
+  - { name: Riley McGree,         club: Middlesbrough,        position: CM  }
+  - { name: Keanu Baccus,         club: St. Pauli,            position: CM  }
+  - { name: Martin Boyle,         club: Al-Faisaly,           position: RW  }
+  - { name: Craig Goodwin,        club: Adelaide United,      position: LW  }
+  - { name: Mathew Leckie,        club: Melbourne City,       position: RW  }
+  - { name: Mitchell Duke,        club: Macarthur FC,         position: ST  }
+  - { name: Jamie Maclaren,       club: Melbourne City,       position: ST  }
+  - { name: Jason Cummings,       club: Central Coast Mariners, position: ST }
+  - { name: Garang Kuol,          club: SC Heerenveen,        position: LW  }
+  - { name: Marco Tilio,          club: Club Brugge,          position: LW  }

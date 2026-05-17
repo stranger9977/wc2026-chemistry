@@ -186,10 +186,15 @@ def render_leaderboard(doc: dict, out_path: Path,
         b_label = p.get('player_b_display') or p['player_b_name']
         ax.text(0.05, y, f"{a_label}  +  {b_label}",
                 color="#e6edf3", fontsize=18, transform=ax.transAxes)
-        ax.text(0.78, y, f"JOI90  {p['joi90']:.3f}",
+        ax.text(0.72, y, f"JOI90  {p['joi90']:.3f}",
                 color="#4ade80", fontsize=18, weight="bold",
                 transform=ax.transAxes, family="monospace")
-        ax.text(0.92, y, f"{int(p['minutes'])} mins",
+        g = p.get('goals_sum', 0)
+        a = p.get('assists_sum', 0)
+        ax.text(0.86, y, f"G{g}  A{a}",
+                color="#facc15", fontsize=14, weight="bold",
+                transform=ax.transAxes, family="monospace")
+        ax.text(0.94, y, f"{int(p['minutes'])}m",
                 color="#8b949e", fontsize=14, transform=ax.transAxes, family="monospace")
 
     out_path.parent.mkdir(parents=True, exist_ok=True)

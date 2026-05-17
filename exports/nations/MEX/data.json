@@ -3,10 +3,155 @@
     "nation": "Mexico",
     "nation_code": "MEX",
     "flag_iso": "mx",
-    "manager": "TBD",
+    "manager": "Javier Aguirre",
     "formation": "4-3-3",
     "team_color": "#006847",
-    "players": []
+    "players": [
+      {
+        "name": "Guillermo Ochoa",
+        "club": "Salernitana",
+        "position": "GK",
+        "headshot": null
+      },
+      {
+        "name": "Luis Malagón",
+        "club": "América",
+        "position": "GK",
+        "headshot": null
+      },
+      {
+        "name": "Carlos Moreno",
+        "club": "Santos Laguna",
+        "position": "GK",
+        "headshot": null
+      },
+      {
+        "name": "Jorge Sánchez",
+        "club": "AC Milan",
+        "position": "RB",
+        "headshot": null
+      },
+      {
+        "name": "Julián Araujo",
+        "club": "Celtic",
+        "position": "RB",
+        "headshot": null
+      },
+      {
+        "name": "Johan Vásquez",
+        "club": "Genoa",
+        "position": "CB",
+        "headshot": null
+      },
+      {
+        "name": "César Montes",
+        "club": "Monterrey",
+        "position": "CB",
+        "headshot": null
+      },
+      {
+        "name": "Gerardo Arteaga",
+        "club": "Genk",
+        "position": "LB",
+        "headshot": null
+      },
+      {
+        "name": "Jesús Gallardo",
+        "club": "Monterrey",
+        "position": "LB",
+        "headshot": null
+      },
+      {
+        "name": "Edson Álvarez",
+        "club": "West Ham United",
+        "position": "CDM",
+        "headshot": null
+      },
+      {
+        "name": "Carlos Rodríguez",
+        "club": "Cruz Azul",
+        "position": "CM",
+        "headshot": null
+      },
+      {
+        "name": "Luis Chávez",
+        "club": "Dynamo Moscow",
+        "position": "CM",
+        "headshot": null
+      },
+      {
+        "name": "Héctor Herrera",
+        "club": "Atlético Madrid",
+        "position": "CM",
+        "headshot": null
+      },
+      {
+        "name": "Orbelín Pineda",
+        "club": "Deportivo La Coruña",
+        "position": "CAM",
+        "headshot": null
+      },
+      {
+        "name": "Álvaro Fidalgo",
+        "club": "Real Betis",
+        "position": "CM",
+        "headshot": null
+      },
+      {
+        "name": "César Huerta",
+        "club": "Anderlecht",
+        "position": "LW",
+        "headshot": null
+      },
+      {
+        "name": "Alexis Vega",
+        "club": "Guadalajara",
+        "position": "RW",
+        "headshot": null
+      },
+      {
+        "name": "Raúl Jiménez",
+        "club": "Fulham",
+        "position": "ST",
+        "headshot": null
+      },
+      {
+        "name": "Santiago Giménez",
+        "club": "Bayer Leverkusen",
+        "position": "ST",
+        "headshot": null
+      },
+      {
+        "name": "Roberto de la Rosa",
+        "club": "Almería",
+        "position": "RW",
+        "headshot": null
+      },
+      {
+        "name": "Germán Berterame",
+        "club": "Inter Miami",
+        "position": "ST",
+        "headshot": null
+      },
+      {
+        "name": "Julián Quiñones",
+        "club": "Al-Qadsiah",
+        "position": "LW",
+        "headshot": null
+      },
+      {
+        "name": "Diego Lainez",
+        "club": "Braga",
+        "position": "RW",
+        "headshot": null
+      },
+      {
+        "name": "Érick Gutiérrez",
+        "club": "PSV Eindhoven",
+        "position": "CM",
+        "headshot": null
+      }
+    ]
   },
   "players_by_id": {
     "26368": {
@@ -18,7 +163,9 @@
       "x": 18.0,
       "y": 50.0,
       "minutes": 645.0,
-      "matches": 6
+      "matches": 6,
+      "goals": 0,
+      "assists": 1
     },
     "5568": {
       "name": "Raúl Alonso Jiménez Rodríguez",
@@ -29,7 +176,9 @@
       "x": 92.0,
       "y": 34.0,
       "minutes": 147.88333333333333,
-      "matches": 3
+      "matches": 3,
+      "goals": 0,
+      "assists": 0
     },
     "5571": {
       "name": "Hirving Rodrigo Lozano Bahena",
@@ -40,7 +189,9 @@
       "x": 85.0,
       "y": 58.0,
       "minutes": 312.3,
-      "matches": 3
+      "matches": 3,
+      "goals": 0,
+      "assists": 0
     },
     "5573": {
       "name": "Héctor Alfredo Moreno Herrera",
@@ -51,7 +202,9 @@
       "x": 18.0,
       "y": 24.0,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals": 0,
+      "assists": 0
     },
     "26375": {
       "name": "Roberto Carlos Alvarado Hernández",
@@ -62,7 +215,9 @@
       "x": 85.0,
       "y": 16.0,
       "minutes": 91.03333333333333,
-      "matches": 6
+      "matches": 6,
+      "goals": 0,
+      "assists": 0
     },
     "5575": {
       "name": "Héctor Miguel Herrera López",
@@ -73,7 +228,9 @@
       "x": 40.0,
       "y": 40.0,
       "minutes": 190.25,
-      "matches": 3
+      "matches": 3,
+      "goals": 0,
+      "assists": 0
     },
     "5576": {
       "name": "Jesús Daniel Gallardo Vasconcelos",
@@ -84,7 +241,9 @@
       "x": 22.0,
       "y": 10.0,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals": 0,
+      "assists": 0
     },
     "5577": {
       "name": "Francisco Guillermo Ochoa Magaña",
@@ -95,7 +254,9 @@
       "x": 6.0,
       "y": 34.0,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals": 0,
+      "assists": 0
     },
     "31053": {
       "name": "Santiago Tomás Giménez",
@@ -106,7 +267,9 @@
       "x": 92.0,
       "y": 28.0,
       "minutes": 247.4,
-      "matches": 3
+      "matches": 3,
+      "goals": 0,
+      "assists": 0
     },
     "26386": {
       "name": "Luis Francisco Romo Barrón",
@@ -117,7 +280,9 @@
       "x": 40.0,
       "y": 28.0,
       "minutes": 295.15,
-      "matches": 6
+      "matches": 6,
+      "goals": 0,
+      "assists": 1
     },
     "36949": {
       "name": "Julio José González Vela-Alvizu",
@@ -128,7 +293,9 @@
       "x": 6.0,
       "y": 40.0,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals": 0,
+      "assists": 0
     },
     "28825": {
       "name": "Luis Gerardo Chávez Magallón",
@@ -139,7 +306,9 @@
       "x": 55.0,
       "y": 26.0,
       "minutes": 676.7833333333333,
-      "matches": 6
+      "matches": 6,
+      "goals": 1,
+      "assists": 0
     },
     "15452": {
       "name": "Carlos Uriel Antuna Romero",
@@ -150,7 +319,9 @@
       "x": 55.0,
       "y": 50.0,
       "minutes": 367.56666666666666,
-      "matches": 6
+      "matches": 6,
+      "goals": 0,
+      "assists": 0
     },
     "26400": {
       "name": "Henry Josué Martín Mex",
@@ -161,7 +332,9 @@
       "x": 92.0,
       "y": 40.0,
       "minutes": 146.76666666666665,
-      "matches": 3
+      "matches": 3,
+      "goals": 1,
+      "assists": 0
     },
     "26336": {
       "name": "Johan Felipe Vásquez Ibarra",
@@ -172,7 +345,9 @@
       "x": 18.0,
       "y": 30.0,
       "minutes": 360.0,
-      "matches": 6
+      "matches": 6,
+      "goals": 0,
+      "assists": 0
     },
     "30500": {
       "name": "Kevin Nahin Álvarez Campos",
@@ -183,7 +358,9 @@
       "x": 22.0,
       "y": 64.0,
       "minutes": 99.63333333333333,
-      "matches": 3
+      "matches": 3,
+      "goals": 0,
+      "assists": 0
     },
     "26406": {
       "name": "Jorge Eduardo Sánchez Ramos",
@@ -194,7 +371,9 @@
       "x": 22.0,
       "y": 58.0,
       "minutes": 565.7166666666667,
-      "matches": 6
+      "matches": 6,
+      "goals": 0,
+      "assists": 0
     },
     "26280": {
       "name": "Orbelín Pineda Alvarado",
@@ -205,7 +384,9 @@
       "x": 55.0,
       "y": 42.0,
       "minutes": 253.58333333333334,
-      "matches": 6
+      "matches": 6,
+      "goals": 0,
+      "assists": 0
     },
     "75305": {
       "name": "Guillermo Martínez Ayala",
@@ -216,7 +397,9 @@
       "x": 92.0,
       "y": 46.0,
       "minutes": 165.38333333333333,
-      "matches": 3
+      "matches": 3,
+      "goals": 0,
+      "assists": 0
     },
     "35375": {
       "name": "Julián Andrés Quiñones Quiñones",
@@ -227,7 +410,9 @@
       "x": 55.0,
       "y": 18.0,
       "minutes": 281.98333333333335,
-      "matches": 3
+      "matches": 3,
+      "goals": 0,
+      "assists": 0
     },
     "27889": {
       "name": "César Saúl Huerta Valera",
@@ -238,7 +423,9 @@
       "x": 55.0,
       "y": 56.0,
       "minutes": 114.93333333333334,
-      "matches": 3
+      "matches": 3,
+      "goals": 0,
+      "assists": 0
     },
     "27896": {
       "name": "Gerardo Daniel Arteaga Zamora",
@@ -249,7 +436,9 @@
       "x": 22.0,
       "y": 16.0,
       "minutes": 330.05,
-      "matches": 6
+      "matches": 6,
+      "goals": 1,
+      "assists": 0
     },
     "26297": {
       "name": "Carlos Alberto Rodríguez Gómez",
@@ -260,7 +449,9 @@
       "x": 55.0,
       "y": 48.0,
       "minutes": 206.58333333333331,
-      "matches": 6
+      "matches": 6,
+      "goals": 0,
+      "assists": 0
     },
     "11388": {
       "name": "Néstor Alejandro Araújo Razo",
@@ -271,7 +462,9 @@
       "x": 18.0,
       "y": 44.0,
       "minutes": 120.0,
-      "matches": 3
+      "matches": 3,
+      "goals": 0,
+      "assists": 0
     },
     "26301": {
       "name": "Ernesto Alexis Vega Rojas",
@@ -282,7 +475,9 @@
       "x": 85.0,
       "y": 10.0,
       "minutes": 283.9,
-      "matches": 6
+      "matches": 6,
+      "goals": 0,
+      "assists": 0
     },
     "5567": {
       "name": "Edson Omar Álvarez Velázquez",
@@ -293,7 +488,9 @@
       "x": 40.0,
       "y": 34.0,
       "minutes": 235.76666666666665,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     }
   },
   "pitch_player_ids": [
@@ -321,9 +518,12 @@
       "player_b_position": "RCB",
       "joi90_xt": 1.0506875,
       "joi90_vaep": 0.027914430156670278,
+      "joi90_xg": 0.06917904691039446,
       "joi90": 1.0506875,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 5573,
@@ -336,9 +536,12 @@
       "player_b_position": "GK",
       "joi90_xt": 0.9763125,
       "joi90_vaep": -0.009641628479585052,
+      "joi90_xg": 0.06917904691039446,
       "joi90": 0.9763125,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5573,
@@ -351,9 +554,12 @@
       "player_b_position": "RCB",
       "joi90_xt": 0.6735312500000001,
       "joi90_vaep": 0.001371823120280169,
+      "joi90_xg": 0.06917904691039446,
       "joi90": 0.6735312500000001,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 26301,
@@ -366,9 +572,12 @@
       "player_b_position": "LCM",
       "joi90_xt": 0.5855025067108875,
       "joi90_vaep": 0.030746187615827262,
+      "joi90_xg": 0.29906242809369404,
       "joi90": 0.5855025067108875,
       "minutes": 253.95,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5575,
@@ -381,9 +590,12 @@
       "player_b_position": "GK",
       "joi90_xt": 0.4676215505913273,
       "joi90_vaep": -0.012705338887537434,
+      "joi90_xg": 0.0,
       "joi90": 0.4676215505913273,
       "minutes": 190.25,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5575,
@@ -396,9 +608,12 @@
       "player_b_position": "RCB",
       "joi90_xt": 0.3237516425755586,
       "joi90_vaep": 0.008625756818314699,
+      "joi90_xg": 0.12398369806927308,
       "joi90": 0.3237516425755586,
       "minutes": 190.25,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 5573,
@@ -411,9 +626,12 @@
       "player_b_position": "LCM",
       "joi90_xt": 0.32099999999999995,
       "joi90_vaep": 0.00043431651465652976,
+      "joi90_xg": 0.10989562727389705,
       "joi90": 0.32099999999999995,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5567,
@@ -426,9 +644,12 @@
       "player_b_position": "LCB",
       "joi90_xt": 0.2670816128248725,
       "joi90_vaep": 0.015563513309201851,
+      "joi90_xg": 0.09524610002502985,
       "joi90": 0.2670816128248725,
       "minutes": 205.85,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 15452,
@@ -441,9 +662,12 @@
       "player_b_position": "RB",
       "joi90_xt": 0.20738633239830373,
       "joi90_vaep": 0.026747892775212646,
+      "joi90_xg": 0.18126209588803666,
       "joi90": 0.20738633239830373,
       "minutes": 278.65,
-      "matches": 5
+      "matches": 5,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5567,
@@ -456,9 +680,12 @@
       "player_b_position": "LB",
       "joi90_xt": 0.19898591207189698,
       "joi90_vaep": -0.006216492817739085,
+      "joi90_xg": 0.20336847658633753,
       "joi90": 0.19898591207189698,
       "minutes": 205.85,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5571,
@@ -471,9 +698,12 @@
       "player_b_position": "LCM",
       "joi90_xt": 0.11905619596541776,
       "joi90_vaep": 0.05371059911387304,
+      "joi90_xg": 0.3704418190037952,
       "joi90": 0.11905619596541776,
       "minutes": 312.3,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 15452,
@@ -486,9 +716,12 @@
       "player_b_position": "LCM",
       "joi90_xt": 0.11811872265276162,
       "joi90_vaep": 0.03650204143123429,
+      "joi90_xg": 0.229607842972218,
       "joi90": 0.11811872265276162,
       "minutes": 367.56666666666666,
-      "matches": 6
+      "matches": 6,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5575,
@@ -501,9 +734,12 @@
       "player_b_position": "LB",
       "joi90_xt": 0.10200394218134021,
       "joi90_vaep": 0.0004432796339691664,
+      "joi90_xg": 0.3864462359205638,
       "joi90": 0.10200394218134021,
       "minutes": 190.25,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5576,
@@ -516,9 +752,12 @@
       "player_b_position": "RB",
       "joi90_xt": 0.08771773474844041,
       "joi90_vaep": -0.007820747160175225,
+      "joi90_xg": 0.14288736310589822,
       "joi90": 0.08771773474844041,
       "minutes": 205.71666666666667,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5571,
@@ -531,9 +770,12 @@
       "player_b_position": "LB",
       "joi90_xt": 0.08034374999999998,
       "joi90_vaep": 0.005733414929636638,
+      "joi90_xg": 0.21096162885026193,
       "joi90": 0.08034374999999998,
       "minutes": 240.0,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5567,
@@ -546,9 +788,12 @@
       "player_b_position": "LCM",
       "joi90_xt": 0.051400419186137615,
       "joi90_vaep": -0.014837605977206209,
+      "joi90_xg": 0.16124346501343997,
       "joi90": 0.051400419186137615,
       "minutes": 235.76666666666665,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5576,
@@ -561,9 +806,12 @@
       "player_b_position": "RCB",
       "joi90_xt": 0.05049999999999995,
       "joi90_vaep": 0.027515135512658162,
+      "joi90_xg": 0.13343658777188133,
       "joi90": 0.05049999999999995,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 5571,
@@ -576,9 +824,12 @@
       "player_b_position": "RB",
       "joi90_xt": 0.04987442274973684,
       "joi90_vaep": -0.005571082977531244,
+      "joi90_xg": 0.1973784859747359,
       "joi90": 0.04987442274973684,
       "minutes": 205.71666666666667,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 26368,
@@ -591,9 +842,12 @@
       "player_b_position": "LCM",
       "joi90_xt": 0.040900152285267714,
       "joi90_vaep": 0.02071038534474452,
+      "joi90_xg": 0.13827212803872724,
       "joi90": 0.040900152285267714,
       "minutes": 601.7833333333333,
-      "matches": 6
+      "matches": 6,
+      "goals_sum": 1,
+      "assists_sum": 1
     },
     {
       "player_a_id": 26386,
@@ -606,9 +860,12 @@
       "player_b_position": "CF",
       "joi90_xt": 0.03143429474121341,
       "joi90_vaep": 0.07103262370405986,
+      "joi90_xg": 0.31576654148481725,
       "joi90": 0.03143429474121341,
       "minutes": 182.55,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 5576,
@@ -621,9 +878,12 @@
       "player_b_position": "GK",
       "joi90_xt": 0.024312499999999945,
       "joi90_vaep": 0.008428404365986353,
+      "joi90_xg": 0.06814064739290676,
       "joi90": 0.024312499999999945,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 15452,
@@ -636,9 +896,12 @@
       "player_b_position": "CF",
       "joi90_xt": 0.013798023806281305,
       "joi90_vaep": 0.0469205611485205,
+      "joi90_xg": 0.18705824857974235,
       "joi90": 0.013798023806281305,
       "minutes": 180.18333333333334,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 26386,
@@ -651,9 +914,12 @@
       "player_b_position": "LM",
       "joi90_xt": 0.012581826603061693,
       "joi90_vaep": 0.03783811220592453,
+      "joi90_xg": 0.5000523851160875,
       "joi90": 0.012581826603061693,
       "minutes": 252.06666666666666,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 26368,
@@ -666,9 +932,12 @@
       "player_b_position": "CF",
       "joi90_xt": 0.012447722914234958,
       "joi90_vaep": 0.017415920922994724,
+      "joi90_xg": 0.2103769435825246,
       "joi90": 0.012447722914234958,
       "minutes": 231.9,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 27896,
@@ -681,9 +950,12 @@
       "player_b_position": "GK",
       "joi90_xt": 0.012437850118863421,
       "joi90_vaep": -0.0016105278552288476,
+      "joi90_xg": 0.12764493199380314,
       "joi90": 0.012437850118863421,
       "minutes": 330.05,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 26368,
@@ -696,9 +968,12 @@
       "player_b_position": "LM",
       "joi90_xt": 0.012249227760972849,
       "joi90_vaep": 0.018380105472713938,
+      "joi90_xg": 0.21681748745354498,
       "joi90": 0.012249227760972849,
       "minutes": 249.96666666666667,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 5573,
@@ -711,9 +986,12 @@
       "player_b_position": "CDM",
       "joi90_xt": 0.011767411300919742,
       "joi90_vaep": -0.0017928300240614332,
+      "joi90_xg": 0.0,
       "joi90": 0.011767411300919742,
       "minutes": 190.25,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 27896,
@@ -726,9 +1004,12 @@
       "player_b_position": "LM",
       "joi90_xt": 0.009891235403933248,
       "joi90_vaep": 0.01938961465715611,
+      "joi90_xg": 0.3561319361521337,
       "joi90": 0.009891235403933248,
       "minutes": 281.98333333333335,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5575,
@@ -741,9 +1022,12 @@
       "player_b_position": "LCM",
       "joi90_xt": 0.0097568988173456,
       "joi90_vaep": 0.007560953133648969,
+      "joi90_xg": 0.139902002394968,
       "joi90": 0.0097568988173456,
       "minutes": 190.25,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 28825,
@@ -756,9 +1040,12 @@
       "player_b_position": "LM",
       "joi90_xt": 0.009652608335788836,
       "joi90_vaep": -0.0014038051423507997,
+      "joi90_xg": 0.25167684694804743,
       "joi90": 0.009652608335788836,
       "minutes": 238.76666666666665,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 31053,
@@ -771,9 +1058,12 @@
       "player_b_position": "LM",
       "joi90_xt": 0.008730595736464375,
       "joi90_vaep": 0.0001789736488477779,
+      "joi90_xg": 0.25490970084103315,
       "joi90": 0.008730595736464375,
       "minutes": 212.36666666666667,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5571,
@@ -786,9 +1076,12 @@
       "player_b_position": "RCB",
       "joi90_xt": 0.007744956772334368,
       "joi90_vaep": 0.010960566842631955,
+      "joi90_xg": 0.1682297143740797,
       "joi90": 0.007744956772334368,
       "minutes": 312.3,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 28825,
@@ -801,9 +1094,12 @@
       "player_b_position": "GK",
       "joi90_xt": 0.007466546464750836,
       "joi90_vaep": 0.014654145837994292,
+      "joi90_xg": 0.1696775670252506,
       "joi90": 0.007466546464750836,
       "minutes": 240.0,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 28825,
@@ -816,9 +1112,12 @@
       "player_b_position": "CF",
       "joi90_xt": 0.0072739156726995095,
       "joi90_vaep": 0.04472050529558523,
+      "joi90_xg": 0.20811294105298458,
       "joi90": 0.0072739156726995095,
       "minutes": 247.4,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 26406,
@@ -831,9 +1130,12 @@
       "player_b_position": "CF",
       "joi90_xt": 0.0050871303396072915,
       "joi90_vaep": 0.0035624973290275573,
+      "joi90_xg": 0.21406728009482398,
       "joi90": 0.0050871303396072915,
       "minutes": 247.4,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 26336,
@@ -846,9 +1148,12 @@
       "player_b_position": "LM",
       "joi90_xt": 0.003298498440428306,
       "joi90_vaep": 0.003541682045475669,
+      "joi90_xg": 0.30702082346466764,
       "joi90": 0.003298498440428306,
       "minutes": 281.98333333333335,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 26406,
@@ -861,9 +1166,12 @@
       "player_b_position": "GK",
       "joi90_xt": 0.002908152327386015,
       "joi90_vaep": -0.002333268930669874,
+      "joi90_xg": 0.20816205700814422,
       "joi90": 0.002908152327386015,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 26386,
@@ -876,9 +1184,12 @@
       "player_b_position": "LCM",
       "joi90_xt": 0.002889771321041089,
       "joi90_vaep": -0.0016513036596327094,
+      "joi90_xg": 0.35021465333181984,
       "joi90": 0.002889771321041089,
       "minutes": 251.93333333333334,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 1
     },
     {
       "player_a_id": 26386,
@@ -891,9 +1202,12 @@
       "player_b_position": "RB",
       "joi90_xt": 0.0026987525453525943,
       "joi90_vaep": -0.015270908303023117,
+      "joi90_xg": 0.32731463030638225,
       "joi90": 0.0026987525453525943,
       "minutes": 295.15,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 26336,
@@ -906,9 +1220,12 @@
       "player_b_position": "LCM",
       "joi90_xt": 0.0018167167414524764,
       "joi90_vaep": 0.027098494126378818,
+      "joi90_xg": 0.1695203496574821,
       "joi90": 0.0018167167414524764,
       "minutes": 316.7833333333333,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 26336,
@@ -921,9 +1238,12 @@
       "player_b_position": "CDM",
       "joi90_xt": 0.001338252897665816,
       "joi90_vaep": 0.02612226051657852,
+      "joi90_xg": 0.3965985849197784,
       "joi90": 0.001338252897665816,
       "minutes": 295.15,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 26406,
@@ -936,9 +1256,12 @@
       "player_b_position": "LB",
       "joi90_xt": 0.000885857987187093,
       "joi90_vaep": -0.011745944963151568,
+      "joi90_xg": 0.21130188009227252,
       "joi90": 0.000885857987187093,
       "minutes": 330.05,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 26368,
@@ -951,9 +1274,12 @@
       "player_b_position": "CDM",
       "joi90_xt": 0.0008365922209920957,
       "joi90_vaep": 0.016277306217413846,
+      "joi90_xg": 0.4224508347168789,
       "joi90": 0.0008365922209920957,
       "minutes": 220.14999999999998,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 2
     },
     {
       "player_a_id": 26336,
@@ -966,9 +1292,12 @@
       "player_b_position": "CF",
       "joi90_xt": 0.0006423641619602982,
       "joi90_vaep": 0.01395773303623687,
+      "joi90_xg": 0.23042623392447645,
       "joi90": 0.0006423641619602982,
       "minutes": 247.4,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 26368,
@@ -981,9 +1310,12 @@
       "player_b_position": "LB",
       "joi90_xt": 0.0004430407932591907,
       "joi90_vaep": 0.0049772385752908125,
+      "joi90_xg": 0.2631283348344178,
       "joi90": 0.0004430407932591907,
       "minutes": 255.05,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 1
     },
     {
       "player_a_id": 27896,
@@ -996,9 +1328,12 @@
       "player_b_position": "LCM",
       "joi90_xt": 3.4014063768533975e-05,
       "joi90_vaep": 0.001643722337394772,
+      "joi90_xg": 0.15017756899549373,
       "joi90": 3.4014063768533975e-05,
       "minutes": 286.8333333333333,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 2,
+      "assists_sum": 0
     },
     {
       "player_a_id": 26336,
@@ -1011,9 +1346,12 @@
       "player_b_position": "LB",
       "joi90_xt": -0.00039993837067074786,
       "joi90_vaep": 0.010772558492531828,
+      "joi90_xg": 0.26934985233858494,
       "joi90": -0.00039993837067074786,
       "minutes": 330.05,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 26386,
@@ -1026,9 +1364,12 @@
       "player_b_position": "LB",
       "joi90_xt": -0.0013544860212785401,
       "joi90_vaep": 0.29205466545764164,
+      "joi90_xg": 0.3956309982170674,
       "joi90": -0.0013544860212785401,
       "minutes": 295.15,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 1
     },
     {
       "player_a_id": 26386,
@@ -1041,9 +1382,12 @@
       "player_b_position": "GK",
       "joi90_xt": -0.0015261240415410774,
       "joi90_vaep": 0.015279116348088847,
+      "joi90_xg": 0.27750637411688706,
       "joi90": -0.0015261240415410774,
       "minutes": 205.06666666666666,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 26406,
@@ -1056,9 +1400,12 @@
       "player_b_position": "LM",
       "joi90_xt": -0.0019405045929428478,
       "joi90_vaep": 0.0053608187104429075,
+      "joi90_xg": 0.18122473865257907,
       "joi90": -0.0019405045929428478,
       "minutes": 281.98333333333335,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5567,
@@ -1071,9 +1418,12 @@
       "player_b_position": "RCB",
       "joi90_xt": -0.003933255170185924,
       "joi90_vaep": 0.02324869956325216,
+      "joi90_xg": 0.0752744502871513,
       "joi90": -0.003933255170185924,
       "minutes": 235.76666666666665,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 26336,
@@ -1086,9 +1436,12 @@
       "player_b_position": "RB",
       "joi90_xt": -0.004137691135632882,
       "joi90_vaep": 0.002187791596952593,
+      "joi90_xg": 0.2210337420323256,
       "joi90": -0.004137691135632882,
       "minutes": 240.0,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 26336,
@@ -1101,9 +1454,12 @@
       "player_b_position": "RCB",
       "joi90_xt": -0.009577867956744809,
       "joi90_vaep": 0.02792491018159413,
+      "joi90_xg": 0.2686224686852648,
       "joi90": -0.009577867956744809,
       "minutes": 285.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 15452,
@@ -1116,9 +1472,12 @@
       "player_b_position": "GK",
       "joi90_xt": -0.01590670206322547,
       "joi90_vaep": 0.017761310630451648,
+      "joi90_xg": 0.1681881570080712,
       "joi90": -0.01590670206322547,
       "minutes": 201.73333333333335,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5576,
@@ -1131,9 +1490,12 @@
       "player_b_position": "LW",
       "joi90_xt": -0.022596566523605314,
       "joi90_vaep": -0.01857015682023884,
+      "joi90_xg": 0.5212220148106723,
       "joi90": -0.022596566523605314,
       "minutes": 194.16666666666666,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 26336,
@@ -1146,9 +1508,12 @@
       "player_b_position": "GK",
       "joi90_xt": -0.02511913234788868,
       "joi90_vaep": 0.013673549457962508,
+      "joi90_xg": 0.17143890488958025,
       "joi90": -0.02511913234788868,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 26368,
@@ -1161,9 +1526,12 @@
       "player_b_position": "RB",
       "joi90_xt": -0.0385986790705636,
       "joi90_vaep": 0.007519110274805739,
+      "joi90_xg": 0.17456277118423913,
       "joi90": -0.0385986790705636,
       "minutes": 490.7166666666667,
-      "matches": 5
+      "matches": 5,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 26368,
@@ -1176,9 +1544,12 @@
       "player_b_position": "GK",
       "joi90_xt": -0.06171247298853541,
       "joi90_vaep": -0.011361804130597432,
+      "joi90_xg": 0.20816205700814422,
       "joi90": -0.06171247298853541,
       "minutes": 285.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 15452,
@@ -1191,9 +1562,12 @@
       "player_b_position": "RCB",
       "joi90_xt": -0.08910369460845531,
       "joi90_vaep": 0.004353204705657993,
+      "joi90_xg": 0.22594041638428364,
       "joi90": -0.08910369460845531,
       "minutes": 184.08333333333334,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 26406,
@@ -1206,9 +1580,12 @@
       "player_b_position": "LCM",
       "joi90_xt": -0.11913016262655761,
       "joi90_vaep": 0.009774172893874614,
+      "joi90_xg": 0.13341638578975717,
       "joi90": -0.11913016262655761,
       "minutes": 522.5,
-      "matches": 5
+      "matches": 5,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5576,
@@ -1221,9 +1598,12 @@
       "player_b_position": "LCM",
       "joi90_xt": -0.11962500000000001,
       "joi90_vaep": -0.01242343298099513,
+      "joi90_xg": 0.17999298096904803,
       "joi90": -0.11962500000000001,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 26280,
@@ -1236,9 +1616,12 @@
       "player_b_position": "RCB",
       "joi90_xt": -0.13064357413877126,
       "joi90_vaep": 0.017196514233787596,
+      "joi90_xg": 0.352427163577777,
       "joi90": -0.13064357413877126,
       "minutes": 210.60000000000002,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 5571,
@@ -1251,9 +1634,12 @@
       "player_b_position": "LCB",
       "joi90_xt": -0.13512247838616717,
       "joi90_vaep": 0.021066791476092705,
+      "joi90_xg": 0.10554841414362993,
       "joi90": -0.13512247838616717,
       "minutes": 312.3,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5577,
@@ -1266,9 +1652,12 @@
       "player_b_position": "RB",
       "joi90_xt": -0.14043587458478496,
       "joi90_vaep": 0.008632731479642797,
+      "joi90_xg": 0.0,
       "joi90": -0.14043587458478496,
       "minutes": 205.71666666666667,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5577,
@@ -1281,9 +1670,12 @@
       "player_b_position": "LCM",
       "joi90_xt": -0.1441406250000001,
       "joi90_vaep": 0.00617613974827691,
+      "joi90_xg": 0.1366804545111896,
       "joi90": -0.1441406250000001,
       "minutes": 240.0,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5567,
@@ -1296,9 +1688,12 @@
       "player_b_position": "RW",
       "joi90_xt": -0.14941705125091068,
       "joi90_vaep": 0.021611918338814484,
+      "joi90_xg": 0.20096597017325935,
       "joi90": -0.14941705125091068,
       "minutes": 205.85,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5573,
@@ -1311,9 +1706,12 @@
       "player_b_position": "LB",
       "joi90_xt": -0.15696874999999993,
       "joi90_vaep": -0.008473275465803454,
+      "joi90_xg": 0.07547869904236756,
       "joi90": -0.15696874999999993,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 26280,
@@ -1326,9 +1724,12 @@
       "player_b_position": "LCM",
       "joi90_xt": -0.23446907749475018,
       "joi90_vaep": 0.004034005414705719,
+      "joi90_xg": 0.3085541682281254,
       "joi90": -0.23446907749475018,
       "minutes": 253.58333333333334,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5567,
@@ -1341,9 +1742,12 @@
       "player_b_position": "RB",
       "joi90_xt": -0.28019257015614807,
       "joi90_vaep": 0.002076560273483969,
+      "joi90_xg": 0.12251933896451492,
       "joi90": -0.28019257015614807,
       "minutes": 235.63333333333333,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5571,
@@ -1356,9 +1760,12 @@
       "player_b_position": "LW",
       "joi90_xt": -0.2908583690987125,
       "joi90_vaep": 0.0315784713987345,
+      "joi90_xg": 0.4336808476904172,
       "joi90": -0.2908583690987125,
       "minutes": 194.16666666666666,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 26280,
@@ -1371,14 +1778,43 @@
       "player_b_position": "RB",
       "joi90_xt": -0.30778990421287283,
       "joi90_vaep": -0.27229704717973774,
+      "joi90_xg": 0.2060594170571841,
       "joi90": -0.30778990421287283,
       "minutes": 253.58333333333334,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     }
   ],
   "coverage": {
     "matches": 6,
     "auto_derived_roster": true,
-    "roster_size": 26
+    "roster_size": 26,
+    "unmatched_roster_names": [
+      "Guillermo Ochoa",
+      "Luis Malagón",
+      "Carlos Moreno",
+      "Jorge Sánchez",
+      "Julián Araujo",
+      "Johan Vásquez",
+      "César Montes",
+      "Gerardo Arteaga",
+      "Jesús Gallardo",
+      "Edson Álvarez",
+      "Carlos Rodríguez",
+      "Luis Chávez",
+      "Héctor Herrera",
+      "Orbelín Pineda",
+      "Álvaro Fidalgo",
+      "César Huerta",
+      "Alexis Vega",
+      "Raúl Jiménez",
+      "Santiago Giménez",
+      "Roberto de la Rosa",
+      "Germán Berterame",
+      "Julián Quiñones",
+      "Diego Lainez",
+      "Érick Gutiérrez"
+    ]
   }
 }

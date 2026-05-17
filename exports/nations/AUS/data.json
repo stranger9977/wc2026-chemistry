@@ -3,121 +3,158 @@
     "nation": "Australia",
     "nation_code": "AUS",
     "flag_iso": "au",
-    "manager": "TBD",
+    "manager": "Tony Popovic",
     "formation": "4-3-3",
     "team_color": "#ffcd00",
-    "players": []
+    "players": [
+      {
+        "name": "Mat Ryan",
+        "club": "Levante",
+        "position": "GK",
+        "headshot": null
+      },
+      {
+        "name": "Danny Vukovic",
+        "club": "Central Coast Mariners",
+        "position": "GK",
+        "headshot": null
+      },
+      {
+        "name": "Harry Souttar",
+        "club": "Leicester City",
+        "position": "CB",
+        "headshot": null
+      },
+      {
+        "name": "Miloš Degenek",
+        "club": "Columbus Crew",
+        "position": "CB",
+        "headshot": null
+      },
+      {
+        "name": "Bailey Wright",
+        "club": "Sunderland",
+        "position": "CB",
+        "headshot": null
+      },
+      {
+        "name": "Nathaniel Atkinson",
+        "club": "Melbourne City",
+        "position": "RB",
+        "headshot": null
+      },
+      {
+        "name": "Aziz Behich",
+        "club": "Dundee United",
+        "position": "LB",
+        "headshot": null
+      },
+      {
+        "name": "Nestory Irankunda",
+        "club": "Bayern Munich",
+        "position": "RW",
+        "headshot": null
+      },
+      {
+        "name": "Jackson Irvine",
+        "club": "St. Pauli",
+        "position": "CM",
+        "headshot": null
+      },
+      {
+        "name": "Aaron Mooy",
+        "club": "Celtic",
+        "position": "CM",
+        "headshot": null
+      },
+      {
+        "name": "Riley McGree",
+        "club": "Middlesbrough",
+        "position": "CM",
+        "headshot": null
+      },
+      {
+        "name": "Keanu Baccus",
+        "club": "St. Pauli",
+        "position": "CM",
+        "headshot": null
+      },
+      {
+        "name": "Martin Boyle",
+        "club": "Al-Faisaly",
+        "position": "RW",
+        "headshot": null
+      },
+      {
+        "name": "Craig Goodwin",
+        "club": "Adelaide United",
+        "position": "LW",
+        "headshot": null
+      },
+      {
+        "name": "Mathew Leckie",
+        "club": "Melbourne City",
+        "position": "RW",
+        "headshot": null
+      },
+      {
+        "name": "Mitchell Duke",
+        "club": "Macarthur FC",
+        "position": "ST",
+        "headshot": null
+      },
+      {
+        "name": "Jamie Maclaren",
+        "club": "Melbourne City",
+        "position": "ST",
+        "headshot": null
+      },
+      {
+        "name": "Jason Cummings",
+        "club": "Central Coast Mariners",
+        "position": "ST",
+        "headshot": null
+      },
+      {
+        "name": "Garang Kuol",
+        "club": "SC Heerenveen",
+        "position": "LW",
+        "headshot": null
+      },
+      {
+        "name": "Marco Tilio",
+        "club": "Club Brugge",
+        "position": "LW",
+        "headshot": null
+      }
+    ]
   },
   "players_by_id": {
-    "33477": {
-      "name": "Riley McGree",
-      "display_name": "Riley McGree",
-      "nickname": null,
-      "sb_position": "Left Center Forward",
-      "position": null,
-      "x": 92.0,
-      "y": 20.0,
-      "minutes": 266.6166666666667,
-      "matches": 4
-    },
-    "33488": {
-      "name": "Keanu Baccus",
-      "display_name": "Keanu Baccus",
-      "nickname": null,
-      "sb_position": "Left Center Midfield",
-      "position": null,
-      "x": 55.0,
-      "y": 32.0,
-      "minutes": 204.35,
-      "matches": 4
-    },
-    "3281": {
-      "name": "Aaron Mooy",
-      "display_name": "Aaron Mooy",
-      "nickname": null,
-      "sb_position": "Left Defensive Midfield",
-      "position": null,
-      "x": 40.0,
-      "y": 24.0,
-      "minutes": 480.0,
-      "matches": 4
-    },
-    "28370": {
-      "name": "Fran Karačić",
-      "display_name": "Fran Karačić",
-      "nickname": null,
-      "sb_position": "Right Back",
-      "position": null,
-      "x": 22.0,
-      "y": 64.0,
-      "minutes": 123.0,
-      "matches": 4
-    },
-    "33492": {
-      "name": "Mitchell Thomas Duke",
-      "display_name": "Mitchell Duke",
-      "nickname": "Mitchell Duke",
-      "sb_position": "Right Center Forward",
-      "position": null,
-      "x": 92.0,
-      "y": 42.0,
-      "minutes": 272.26666666666665,
-      "matches": 4
-    },
     "22293": {
       "name": "Harry Souttar",
       "display_name": "Harry Souttar",
       "nickname": null,
       "sb_position": "Right Center Back",
-      "position": null,
+      "position": "CB",
       "x": 18.0,
       "y": 44.0,
       "minutes": 480.0,
-      "matches": 4
-    },
-    "15957": {
-      "name": "Miloš Degenek",
-      "display_name": "Miloš Degenek",
-      "nickname": null,
-      "sb_position": "Right Back",
-      "position": null,
-      "x": 22.0,
-      "y": 58.0,
-      "minutes": 272.8833333333333,
-      "matches": 4
-    },
-    "9430": {
-      "name": "Jason Cummings",
-      "display_name": "Jason Cummings",
-      "nickname": null,
-      "sb_position": "Center Forward",
-      "position": null,
-      "x": 92.0,
-      "y": 34.0,
-      "minutes": 64.41666666666666,
-      "matches": 4
-    },
-    "33495": {
-      "name": "Kye Rowles",
-      "display_name": "Kye Rowles",
-      "nickname": null,
-      "sb_position": "Left Center Back",
-      "position": null,
-      "x": 18.0,
-      "y": 24.0,
-      "minutes": 480.0,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "8346": {
       "name": "Craig Goodwin",
       "display_name": "Craig Goodwin",
       "nickname": null,
       "sb_position": "Left Midfield",
-      "position": null,
+      "position": "LW",
       "x": 55.0,
       "y": 18.0,
       "minutes": 264.3333333333333,
-      "matches": 4
+      "matches": 4,
+      "goals": 1,
+      "assists": 0
     },
     "24475": {
       "name": "Awer Mabil",
@@ -128,7 +165,9 @@
       "x": 55.0,
       "y": 26.0,
       "minutes": 83.05,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "8859": {
       "name": "Ajdin Hrustic",
@@ -139,7 +178,9 @@
       "x": 92.0,
       "y": 32.0,
       "minutes": 150.91666666666666,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "33564": {
       "name": "Andrew Redmayne",
@@ -150,51 +191,35 @@
       "x": 50.0,
       "y": 22.0,
       "minutes": 0.0,
-      "matches": 4
-    },
-    "33502": {
-      "name": "Cameron Peter Devlin",
-      "display_name": "Cameron Devlin",
-      "nickname": null,
-      "sb_position": null,
-      "position": null,
-      "x": 50.0,
-      "y": 46.0,
-      "minutes": 0.0,
-      "matches": 4
-    },
-    "22371": {
-      "name": "Bailey Wright",
-      "display_name": "Bailey Wright",
-      "nickname": null,
-      "sb_position": "Left Wing",
-      "position": null,
-      "x": 85.0,
-      "y": 10.0,
-      "minutes": 46.75,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "33572": {
       "name": "Nathaniel Atkinson",
       "display_name": "Nathaniel Atkinson",
       "nickname": null,
       "sb_position": "Right Back",
-      "position": null,
+      "position": "RB",
       "x": 22.0,
       "y": 52.0,
       "minutes": 84.11666666666666,
-      "matches": 3
+      "matches": 3,
+      "goals": 0,
+      "assists": 0
     },
     "16549": {
       "name": "Danny Vuković",
-      "display_name": "Danny Vuković",
+      "display_name": "Danny Vukovic",
       "nickname": null,
       "sb_position": null,
-      "position": null,
+      "position": "GK",
       "x": 50.0,
       "y": 34.0,
       "minutes": 0.0,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "33446": {
       "name": "Thomas Deng",
@@ -205,18 +230,9 @@
       "x": 50.0,
       "y": 40.0,
       "minutes": 0.0,
-      "matches": 4
-    },
-    "5479": {
-      "name": "Aziz Eraltay Behich",
-      "display_name": "Aziz Behich",
-      "nickname": "Aziz Behich",
-      "sb_position": "Left Back",
-      "position": null,
-      "x": 22.0,
-      "y": 10.0,
-      "minutes": 480.0,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "3240": {
       "name": "Mathew Ryan",
@@ -227,40 +243,9 @@
       "x": 6.0,
       "y": 34.0,
       "minutes": 480.0,
-      "matches": 4
-    },
-    "5481": {
-      "name": "Mathew Leckie",
-      "display_name": "Mathew Leckie",
-      "nickname": null,
-      "sb_position": "Right Midfield",
-      "position": null,
-      "x": 55.0,
-      "y": 50.0,
-      "minutes": 364.4,
-      "matches": 4
-    },
-    "227697": {
-      "name": "Garang Kuol",
-      "display_name": "Garang Kuol",
-      "nickname": null,
-      "sb_position": "Left Midfield",
-      "position": null,
-      "x": 55.0,
-      "y": 24.0,
-      "minutes": 95.53333333333333,
-      "matches": 4
-    },
-    "5490": {
-      "name": "Jackson Irvine",
-      "display_name": "Jackson Irvine",
-      "nickname": null,
-      "sb_position": "Left Center Forward",
-      "position": null,
-      "x": 92.0,
-      "y": 26.0,
-      "minutes": 444.05,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "33465": {
       "name": "Joel King",
@@ -271,29 +256,217 @@
       "x": 50.0,
       "y": 28.0,
       "minutes": 0.0,
-      "matches": 4
-    },
-    "9980": {
-      "name": "Jamie MacLaren",
-      "display_name": "Jamie Maclaren",
-      "nickname": "Jamie Maclaren",
-      "sb_position": "Center Forward",
-      "position": null,
-      "x": 92.0,
-      "y": 40.0,
-      "minutes": 143.31666666666666,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "36158": {
       "name": "Marco Tilio",
       "display_name": "Marco Tilio",
       "nickname": null,
       "sb_position": null,
-      "position": null,
+      "position": "LW",
       "x": 50.0,
       "y": 52.0,
       "minutes": 0.0,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "33477": {
+      "name": "Riley McGree",
+      "display_name": "Riley McGree",
+      "nickname": null,
+      "sb_position": "Left Center Forward",
+      "position": "CM",
+      "x": 92.0,
+      "y": 20.0,
+      "minutes": 266.6166666666667,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "33488": {
+      "name": "Keanu Baccus",
+      "display_name": "Keanu Baccus",
+      "nickname": null,
+      "sb_position": "Left Center Midfield",
+      "position": "CM",
+      "x": 55.0,
+      "y": 32.0,
+      "minutes": 204.35,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "3281": {
+      "name": "Aaron Mooy",
+      "display_name": "Aaron Mooy",
+      "nickname": null,
+      "sb_position": "Left Defensive Midfield",
+      "position": "CM",
+      "x": 40.0,
+      "y": 24.0,
+      "minutes": 480.0,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "28370": {
+      "name": "Fran Karačić",
+      "display_name": "Fran Karačić",
+      "nickname": null,
+      "sb_position": "Right Back",
+      "position": null,
+      "x": 22.0,
+      "y": 64.0,
+      "minutes": 123.0,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "33492": {
+      "name": "Mitchell Thomas Duke",
+      "display_name": "Mitchell Duke",
+      "nickname": "Mitchell Duke",
+      "sb_position": "Right Center Forward",
+      "position": null,
+      "x": 92.0,
+      "y": 42.0,
+      "minutes": 272.26666666666665,
+      "matches": 4,
+      "goals": 1,
+      "assists": 0
+    },
+    "15957": {
+      "name": "Miloš Degenek",
+      "display_name": "Miloš Degenek",
+      "nickname": null,
+      "sb_position": "Right Back",
+      "position": "CB",
+      "x": 22.0,
+      "y": 58.0,
+      "minutes": 272.8833333333333,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "9430": {
+      "name": "Jason Cummings",
+      "display_name": "Jason Cummings",
+      "nickname": null,
+      "sb_position": "Center Forward",
+      "position": "ST",
+      "x": 92.0,
+      "y": 34.0,
+      "minutes": 64.41666666666666,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "33495": {
+      "name": "Kye Rowles",
+      "display_name": "Kye Rowles",
+      "nickname": null,
+      "sb_position": "Left Center Back",
+      "position": null,
+      "x": 18.0,
+      "y": 24.0,
+      "minutes": 480.0,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "33502": {
+      "name": "Cameron Peter Devlin",
+      "display_name": "Cameron Devlin",
+      "nickname": null,
+      "sb_position": null,
+      "position": null,
+      "x": 50.0,
+      "y": 46.0,
+      "minutes": 0.0,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "22371": {
+      "name": "Bailey Wright",
+      "display_name": "Bailey Wright",
+      "nickname": null,
+      "sb_position": "Left Wing",
+      "position": "CB",
+      "x": 85.0,
+      "y": 10.0,
+      "minutes": 46.75,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "5479": {
+      "name": "Aziz Eraltay Behich",
+      "display_name": "Aziz Behich",
+      "nickname": "Aziz Behich",
+      "sb_position": "Left Back",
+      "position": null,
+      "x": 22.0,
+      "y": 10.0,
+      "minutes": 480.0,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "5481": {
+      "name": "Mathew Leckie",
+      "display_name": "Mathew Leckie",
+      "nickname": null,
+      "sb_position": "Right Midfield",
+      "position": "RW",
+      "x": 55.0,
+      "y": 50.0,
+      "minutes": 364.4,
+      "matches": 4,
+      "goals": 1,
+      "assists": 1
+    },
+    "227697": {
+      "name": "Garang Kuol",
+      "display_name": "Garang Kuol",
+      "nickname": null,
+      "sb_position": "Left Midfield",
+      "position": "LW",
+      "x": 55.0,
+      "y": 24.0,
+      "minutes": 95.53333333333333,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "5490": {
+      "name": "Jackson Irvine",
+      "display_name": "Jackson Irvine",
+      "nickname": null,
+      "sb_position": "Left Center Forward",
+      "position": "CM",
+      "x": 92.0,
+      "y": 26.0,
+      "minutes": 444.05,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "9980": {
+      "name": "Jamie MacLaren",
+      "display_name": "Jamie Maclaren",
+      "nickname": "Jamie Maclaren",
+      "sb_position": "Center Forward",
+      "position": "ST",
+      "x": 92.0,
+      "y": 40.0,
+      "minutes": 143.31666666666666,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     }
   },
   "pitch_player_ids": [
@@ -321,9 +494,12 @@
       "player_b_position": "LCB",
       "joi90_xt": 1.1595468750000002,
       "joi90_vaep": -0.0025695869508126634,
+      "joi90_xg": 0.13250407387419902,
       "joi90": 1.1595468750000002,
       "minutes": 480.0,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 22293,
@@ -336,9 +512,12 @@
       "player_b_position": "LCB",
       "joi90_xt": 1.06228125,
       "joi90_vaep": 0.014894363529492693,
+      "joi90_xg": 0.09904663732761945,
       "joi90": 1.06228125,
       "minutes": 480.0,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3240,
@@ -351,9 +530,12 @@
       "player_b_position": "LCB",
       "joi90_xt": 0.7785234375000002,
       "joi90_vaep": 0.02331356919330574,
+      "joi90_xg": 0.13110076279238514,
       "joi90": 0.7785234375000002,
       "minutes": 480.0,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 15957,
@@ -366,9 +548,12 @@
       "player_b_position": "RCB",
       "joi90_xt": 0.7190217391304349,
       "joi90_vaep": 0.0012089922446012129,
+      "joi90_xg": 0.0802154921762931,
       "joi90": 0.7190217391304349,
       "minutes": 227.7,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3240,
@@ -381,9 +566,12 @@
       "player_b_position": "RCB",
       "joi90_xt": 0.7109296875000002,
       "joi90_vaep": 0.018805517596774735,
+      "joi90_xg": 0.06418588969922605,
       "joi90": 0.7109296875000002,
       "minutes": 480.0,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5481,
@@ -396,9 +584,12 @@
       "player_b_position": "LCF",
       "joi90_xt": 0.5840688879164843,
       "joi90_vaep": 0.030552828193411884,
+      "joi90_xg": 0.35211018663576643,
       "joi90": 0.5840688879164843,
       "minutes": 266.6166666666667,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 1
     },
     {
       "player_a_id": 3281,
@@ -411,9 +602,12 @@
       "player_b_position": "LCB",
       "joi90_xt": 0.4943203125,
       "joi90_vaep": 0.016372021292681893,
+      "joi90_xg": 0.06563790579739494,
       "joi90": 0.4943203125,
       "minutes": 480.0,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5490,
@@ -426,9 +620,12 @@
       "player_b_position": "LCB",
       "joi90_xt": 0.48895232217250423,
       "joi90_vaep": 0.011624006788249064,
+      "joi90_xg": 0.0,
       "joi90": 0.48895232217250423,
       "minutes": 324.05,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5479,
@@ -441,9 +638,12 @@
       "player_b_position": "LM",
       "joi90_xt": 0.48122477931904156,
       "joi90_vaep": 0.02250953326759454,
+      "joi90_xg": 0.18821410343549408,
       "joi90": 0.48122477931904156,
       "minutes": 264.3333333333333,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3281,
@@ -456,9 +656,12 @@
       "player_b_position": "RCB",
       "joi90_xt": 0.19071093750000012,
       "joi90_vaep": 0.0005601404814115085,
+      "joi90_xg": 0.09848050240007357,
       "joi90": 0.19071093750000012,
       "minutes": 480.0,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3240,
@@ -471,9 +674,12 @@
       "player_b_position": "LB",
       "joi90_xt": 0.17403125000000003,
       "joi90_vaep": 0.01094641234521987,
+      "joi90_xg": 0.13110076279238514,
       "joi90": 0.17403125000000003,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5479,
@@ -486,9 +692,12 @@
       "player_b_position": "LCF",
       "joi90_xt": 0.1696937281837631,
       "joi90_vaep": 0.014812297697542698,
+      "joi90_xg": 0.08034995926272841,
       "joi90": 0.1696937281837631,
       "minutes": 444.05,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3240,
@@ -501,9 +710,12 @@
       "player_b_position": "LDM",
       "joi90_xt": 0.14812499999999992,
       "joi90_vaep": 0.005581703942880267,
+      "joi90_xg": 0.06564750862751559,
       "joi90": 0.14812499999999992,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5479,
@@ -516,9 +728,12 @@
       "player_b_position": "RCB",
       "joi90_xt": 0.13446093750000004,
       "joi90_vaep": 0.003174491949948788,
+      "joi90_xg": 0.0876112274879842,
       "joi90": 0.13446093750000004,
       "minutes": 480.0,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5490,
@@ -531,9 +746,12 @@
       "player_b_position": "RCF",
       "joi90_xt": 0.124086608722406,
       "joi90_vaep": 0.01158981528643372,
+      "joi90_xg": 0.33886642916484305,
       "joi90": 0.124086608722406,
       "minutes": 216.68333333333334,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3240,
@@ -546,9 +764,12 @@
       "player_b_position": "LCF",
       "joi90_xt": 0.11263934241639456,
       "joi90_vaep": 0.00346389190209588,
+      "joi90_xg": 0.0,
       "joi90": 0.11263934241639456,
       "minutes": 444.05,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 33477,
@@ -561,9 +782,12 @@
       "player_b_position": "RCF",
       "joi90_xt": 0.10974437696055517,
       "joi90_vaep": 0.005187718832459399,
+      "joi90_xg": 0.25628965642977797,
       "joi90": 0.10974437696055517,
       "minutes": 249.71666666666667,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3281,
@@ -576,9 +800,12 @@
       "player_b_position": "LB",
       "joi90_xt": 0.10300781249999998,
       "joi90_vaep": 0.009114462302932225,
+      "joi90_xg": 0.09381194396713315,
       "joi90": 0.10300781249999998,
       "minutes": 480.0,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5479,
@@ -591,9 +818,12 @@
       "player_b_position": "LCF",
       "joi90_xt": 0.1008892292304806,
       "joi90_vaep": 0.031197195711497237,
+      "joi90_xg": 0.12056148995002773,
       "joi90": 0.1008892292304806,
       "minutes": 266.6166666666667,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5490,
@@ -606,9 +836,12 @@
       "player_b_position": "LCF",
       "joi90_xt": 0.05375695442895554,
       "joi90_vaep": -0.0044208095333976,
+      "joi90_xg": 0.16176708510023494,
       "joi90": 0.05375695442895554,
       "minutes": 266.6166666666667,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3281,
@@ -621,9 +854,12 @@
       "player_b_position": "RB",
       "joi90_xt": 0.04184782608695652,
       "joi90_vaep": 0.00711561287288543,
+      "joi90_xg": 0.06564750862751559,
       "joi90": 0.04184782608695652,
       "minutes": 227.7,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5479,
@@ -636,9 +872,12 @@
       "player_b_position": "RM",
       "joi90_xt": 0.030220437457279526,
       "joi90_vaep": -0.009803443194959172,
+      "joi90_xg": 0.0629175645235987,
       "joi90": 0.030220437457279526,
       "minutes": 292.6,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 1
     },
     {
       "player_a_id": 5481,
@@ -651,9 +890,12 @@
       "player_b_position": "RCF",
       "joi90_xt": 0.023469637610185983,
       "joi90_vaep": -0.0013116358729636302,
+      "joi90_xg": 0.30168689575951824,
       "joi90": 0.023469637610185983,
       "minutes": 272.26666666666665,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 2,
+      "assists_sum": 1
     },
     {
       "player_a_id": 15957,
@@ -666,9 +908,12 @@
       "player_b_position": "LCB",
       "joi90_xt": 0.019861660079051355,
       "joi90_vaep": -0.002339111515431271,
+      "joi90_xg": 0.0,
       "joi90": 0.019861660079051355,
       "minutes": 227.7,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5481,
@@ -681,9 +926,12 @@
       "player_b_position": "LCF",
       "joi90_xt": 0.018495965900441468,
       "joi90_vaep": -0.0275073445037661,
+      "joi90_xg": 0.1441550507489418,
       "joi90": 0.018495965900441468,
       "minutes": 328.45,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 1
     },
     {
       "player_a_id": 3281,
@@ -696,9 +944,12 @@
       "player_b_position": "LM",
       "joi90_xt": 0.014598045397225668,
       "joi90_vaep": 0.01825037061980066,
+      "joi90_xg": 0.17748499082992844,
       "joi90": 0.014598045397225668,
       "minutes": 264.3333333333333,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 15957,
@@ -711,9 +962,12 @@
       "player_b_position": "LCM",
       "joi90_xt": -0.0017071877294607973,
       "joi90_vaep": -0.008317778225101201,
+      "joi90_xg": 0.12834478748206896,
       "joi90": -0.0017071877294607973,
       "minutes": 204.28333333333333,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3281,
@@ -726,9 +980,12 @@
       "player_b_position": "RCF",
       "joi90_xt": -0.006239287463271304,
       "joi90_vaep": 0.00544585160944527,
+      "joi90_xg": 0.16662674931424182,
       "joi90": -0.006239287463271304,
       "minutes": 272.26666666666665,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3281,
@@ -741,9 +998,12 @@
       "player_b_position": "LCF",
       "joi90_xt": -0.015986375408174682,
       "joi90_vaep": -0.026228705628739614,
+      "joi90_xg": 0.07551017946751795,
       "joi90": -0.015986375408174682,
       "minutes": 444.05,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 8346,
@@ -756,9 +1016,12 @@
       "player_b_position": "LCB",
       "joi90_xt": -0.028770491803278623,
       "joi90_vaep": -0.005658973636677311,
+      "joi90_xg": 0.14285084886460167,
       "joi90": -0.028770491803278623,
       "minutes": 264.3333333333333,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3240,
@@ -771,9 +1034,12 @@
       "player_b_position": "RB",
       "joi90_xt": -0.08496835443037984,
       "joi90_vaep": -0.014995749836457493,
+      "joi90_xg": 0.06564750862751559,
       "joi90": -0.08496835443037984,
       "minutes": 237.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3240,
@@ -786,9 +1052,12 @@
       "player_b_position": "RCF",
       "joi90_xt": -0.09713760504201686,
       "joi90_vaep": -0.02143814029547967,
+      "joi90_xg": 0.21611360385725806,
       "joi90": -0.09713760504201686,
       "minutes": 190.4,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5481,
@@ -801,9 +1070,12 @@
       "player_b_position": "LM",
       "joi90_xt": -0.11798441838938604,
       "joi90_vaep": 0.3819418477141499,
+      "joi90_xg": 0.11375779927158557,
       "joi90": -0.11798441838938604,
       "minutes": 216.06666666666666,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 2,
+      "assists_sum": 1
     },
     {
       "player_a_id": 5490,
@@ -816,9 +1088,12 @@
       "player_b_position": "RCB",
       "joi90_xt": -0.1261682242990655,
       "joi90_vaep": 0.012616245251450116,
+      "joi90_xg": 0.06753792038016808,
       "joi90": -0.1261682242990655,
       "minutes": 444.05,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3240,
@@ -831,9 +1106,12 @@
       "player_b_position": "RM",
       "joi90_xt": -0.139774351035961,
       "joi90_vaep": -0.02811665164037305,
+      "joi90_xg": 0.17676816683547109,
       "joi90": -0.139774351035961,
       "minutes": 279.93333333333334,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 1
     },
     {
       "player_a_id": 3281,
@@ -846,9 +1124,12 @@
       "player_b_position": "RM",
       "joi90_xt": -0.1745540614709111,
       "joi90_vaep": 0.0048875720575700405,
+      "joi90_xg": 0.07858593014159203,
       "joi90": -0.1745540614709111,
       "minutes": 364.4,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 1
     },
     {
       "player_a_id": 5490,
@@ -861,9 +1142,12 @@
       "player_b_position": "LM",
       "joi90_xt": -0.1965416141235814,
       "joi90_vaep": -0.00795898305700019,
+      "joi90_xg": 0.12776948438841546,
       "joi90": -0.1965416141235814,
       "minutes": 264.3333333333333,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5481,
@@ -876,9 +1160,12 @@
       "player_b_position": "RCB",
       "joi90_xt": -0.21243482436882544,
       "joi90_vaep": 0.018525101454438066,
+      "joi90_xg": 0.08234760814301678,
       "joi90": -0.21243482436882544,
       "minutes": 364.4,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 1
     },
     {
       "player_a_id": 3281,
@@ -891,9 +1178,12 @@
       "player_b_position": "LCF",
       "joi90_xt": -0.21722197912108532,
       "joi90_vaep": 0.004805455249070822,
+      "joi90_xg": 0.10791157053331438,
       "joi90": -0.21722197912108532,
       "minutes": 266.6166666666667,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 33477,
@@ -906,9 +1196,12 @@
       "player_b_position": "LCB",
       "joi90_xt": -0.24392196200458574,
       "joi90_vaep": -0.005017801759589682,
+      "joi90_xg": 0.12209733311345508,
       "joi90": -0.24392196200458574,
       "minutes": 203.53333333333333,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 8346,
@@ -921,9 +1214,12 @@
       "player_b_position": "LCF",
       "joi90_xt": -0.4413365650969528,
       "joi90_vaep": 0.01664722263543748,
+      "joi90_xg": 0.12975859023966715,
       "joi90": -0.4413365650969528,
       "minutes": 180.5,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 22293,
@@ -936,14 +1232,24 @@
       "player_b_position": "RCF",
       "joi90_xt": -0.4907137610186091,
       "joi90_vaep": -0.002726687978705755,
+      "joi90_xg": 0.17392927574587996,
       "joi90": -0.4907137610186091,
       "minutes": 272.26666666666665,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 0
     }
   ],
   "coverage": {
     "matches": 4,
-    "auto_derived_roster": true,
-    "roster_size": 26
+    "auto_derived_roster": false,
+    "roster_size": 26,
+    "unmatched_roster_names": [
+      "Mat Ryan",
+      "Aziz Behich",
+      "Nestory Irankunda",
+      "Martin Boyle",
+      "Mitchell Duke"
+    ]
   }
 }

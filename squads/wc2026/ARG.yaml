@@ -1,7 +1,35 @@
+# Source: Argentina 55-man preliminary squad announced May 11 2026 by Lionel Scaloni
+# Final 26-man squad due by May 30 — using predicted/likely 26 based on preliminary list
 nation: Argentina
 nation_code: ARG
 flag_iso: ar
-manager: TBD
-formation: 4-3-3
-team_color: '#75aadb'
-players: []
+manager: Lionel Scaloni
+formation: "4-3-3"
+team_color: "#75aadb"
+players:
+  - { name: Emiliano Martínez,   club: Aston Villa,        position: GK  }
+  - { name: Gerónimo Rulli,       club: Marseille,          position: GK  }
+  - { name: Walter Benítez,       club: Crystal Palace,     position: GK  }
+  - { name: Nahuel Molina,        club: Atlético Madrid,    position: RB  }
+  - { name: Gonzalo Montiel,      club: River Plate,        position: RB  }
+  - { name: Cristian Romero,      club: Tottenham Hotspur,  position: CB  }
+  - { name: Lisandro Martínez,    club: Manchester United,  position: CB  }
+  - { name: Nicolás Otamendi,     club: Benfica,            position: CB  }
+  - { name: Nicolás Tagliafico,   club: Lyon,               position: LB  }
+  - { name: Marcos Senesi,        club: Bournemouth,        position: LB  }
+  - { name: Rodrigo De Paul,      club: Inter Miami,        position: CM  }
+  - { name: Alexis Mac Allister,  club: Liverpool,          position: CM  }
+  - { name: Enzo Fernández,       club: Chelsea,            position: CM  }
+  - { name: Exequiel Palacios,    club: Bayer Leverkusen,   position: CM  }
+  - { name: Giovani Lo Celso,     club: Real Betis,         position: CAM }
+  - { name: Leandro Paredes,      club: Boca Juniors,       position: CDM }
+  - { name: Lionel Messi,         club: Inter Miami,        position: RW  }
+  - { name: Julián Álvarez,       club: Atlético Madrid,    position: ST  }
+  - { name: Lautaro Martínez,     club: Inter Milan,        position: ST  }
+  - { name: Alejandro Garnacho,   club: Chelsea,            position: LW  }
+  - { name: Nico González,        club: Atlético Madrid,    position: RW  }
+  - { name: Franco Mastantuono,   club: Real Madrid,        position: CAM }
+  - { name: Claudio Echeverri,    club: Girona,             position: CAM }
+  - { name: Facundo Medina,       club: Marseille,          position: CB  }
+  - { name: Leonardo Balerdi,     club: Marseille,          position: CB  }
+  - { name: Santiago Castro,      club: Bologna,            position: ST  }

@@ -1,0 +1,17 @@
+{
+  "squad": {
+    "nation": "Iraq",
+    "nation_code": "IRQ",
+    "flag_iso": "iq",
+    "manager": "TBD",
+    "formation": "4-3-3",
+    "team_color": "#ce1126",
+    "players": []
+  },
+  "pairs": [],
+  "players_by_id": {},
+  "coverage": {
+    "matches": 0,
+    "warning": "no matches in open data"
+  }
+}

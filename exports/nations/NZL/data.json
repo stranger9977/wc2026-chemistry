@@ -1,0 +1,17 @@
+{
+  "squad": {
+    "nation": "New Zealand",
+    "nation_code": "NZL",
+    "flag_iso": "nz",
+    "manager": "TBD",
+    "formation": "4-3-3",
+    "team_color": "#000000",
+    "players": []
+  },
+  "pairs": [],
+  "players_by_id": {},
+  "coverage": {
+    "matches": 0,
+    "warning": "no matches in open data"
+  }
+}

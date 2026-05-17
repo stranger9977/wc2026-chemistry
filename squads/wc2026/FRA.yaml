@@ -1,7 +1,34 @@
+# Source: France final 26-man WC 2026 squad announced May 14 2026 by Didier Deschamps
 nation: France
 nation_code: FRA
 flag_iso: fr
-manager: TBD
-formation: 4-3-3
-team_color: '#0055a4'
-players: []
+manager: Didier Deschamps
+formation: "4-3-3"
+team_color: "#0055a4"
+players:
+  - { name: Mike Maignan,         club: AC Milan,           position: GK  }
+  - { name: Brice Samba,          club: Rennes,             position: GK  }
+  - { name: Robin Risser,         club: Lens,               position: GK  }
+  - { name: Jules Koundé,         club: Barcelona,          position: RB  }
+  - { name: Malo Gusto,           club: Chelsea,            position: RB  }
+  - { name: William Saliba,       club: Arsenal,            position: CB  }
+  - { name: Dayot Upamecano,      club: Bayern Munich,      position: CB  }
+  - { name: Ibrahima Konaté,      club: Liverpool,          position: CB  }
+  - { name: Maxence Lacroix,      club: Crystal Palace,     position: CB  }
+  - { name: Théo Hernandez,       club: Al-Hilal,           position: LB  }
+  - { name: Lucas Hernandez,      club: Paris Saint-Germain,position: LB  }
+  - { name: Lucas Digne,          club: Aston Villa,        position: LB  }
+  - { name: N'Golo Kanté,         club: Fenerbahçe,         position: CDM }
+  - { name: Aurélien Tchouaméni,  club: Real Madrid,        position: CDM }
+  - { name: Adrien Rabiot,        club: AC Milan,           position: CM  }
+  - { name: Manu Koné,            club: Roma,               position: CM  }
+  - { name: Warren Zaïre-Emery,   club: Paris Saint-Germain,position: CM  }
+  - { name: Kylian Mbappé,        club: Real Madrid,        position: LW  }
+  - { name: Ousmane Dembélé,      club: Paris Saint-Germain,position: RW  }
+  - { name: Marcus Thuram,        club: Inter Milan,        position: ST  }
+  - { name: Bradley Barcola,      club: Paris Saint-Germain,position: LW  }
+  - { name: Michael Olise,        club: Bayern Munich,      position: RW  }
+  - { name: Maghnes Akliouche,    club: Monaco,             position: CAM }
+  - { name: Désiré Doué,          club: Paris Saint-Germain,position: LW  }
+  - { name: Rayan Cherki,         club: Manchester City,    position: CAM }
+  - { name: Jean-Philippe Mateta, club: Crystal Palace,     position: ST  }

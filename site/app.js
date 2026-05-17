@@ -60,9 +60,12 @@ function renderLeaderboard(doc, metric) {
     const aPos = posChip(p.player_a_position);
     const bPos = posChip(p.player_b_position);
     const joi = getJoi(p, metric);
+    const g = p.goals_sum ?? 0;
+    const a = p.assists_sum ?? 0;
     tr.innerHTML = `<td>${i + 1}</td>
       <td>${flag}${aPos}${p.player_a_display || p.player_a_name} + ${bPos}${p.player_b_display || p.player_b_name}</td>
       <td class="joi">${joi.toFixed(3)}</td>
+      <td>${g}</td><td>${a}</td>
       <td>${Math.round(p.minutes)}</td><td>${p.matches}</td>`;
     tbody.appendChild(tr);
   }

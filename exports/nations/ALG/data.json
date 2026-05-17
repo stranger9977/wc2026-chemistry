@@ -1,0 +1,17 @@
+{
+  "squad": {
+    "nation": "Algeria",
+    "nation_code": "ALG",
+    "flag_iso": "dz",
+    "manager": "TBD",
+    "formation": "4-3-3",
+    "team_color": "#006233",
+    "players": []
+  },
+  "pairs": [],
+  "players_by_id": {},
+  "coverage": {
+    "matches": 0,
+    "warning": "no matches in open data"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "squad": {
+    "nation": "Jordan",
+    "nation_code": "JOR",
+    "flag_iso": "jo",
+    "manager": "TBD",
+    "formation": "4-3-3",
+    "team_color": "#007a3d",
+    "players": []
+  },
+  "pairs": [],
+  "players_by_id": {},
+  "coverage": {
+    "matches": 0,
+    "warning": "no matches in open data"
+  }
+}

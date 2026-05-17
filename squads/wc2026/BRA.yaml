@@ -1,7 +1,35 @@
+# Source: Brazil 55-man preliminary squad announced May 12 2026; final 26 announced May 18 by Carlo Ancelotti
+# Key players from confirmed reports; Neymar included per Ancelotti confirmation
 nation: Brazil
 nation_code: BRA
 flag_iso: br
-manager: TBD
-formation: 4-3-3
-team_color: '#fedf00'
-players: []
+manager: Carlo Ancelotti
+formation: "4-2-3-1"
+team_color: "#fedf00"
+players:
+  - { name: Alisson,             club: Liverpool,            position: GK  }
+  - { name: Ederson,             club: Manchester City,      position: GK  }
+  - { name: Bento,               club: Al-Qadsiah,           position: GK  }
+  - { name: Danilo,              club: Juventus,             position: RB  }
+  - { name: Éder Militão,        club: Real Madrid,          position: CB  }
+  - { name: Marquinhos,          club: Paris Saint-Germain,  position: CB  }
+  - { name: Gabriel Magalhães,   club: Arsenal,              position: CB  }
+  - { name: Vitor Reis,          club: Manchester City,      position: CB  }
+  - { name: Guilherme Arana,     club: Atlético Mineiro,     position: LB  }
+  - { name: Alex Sandro,         club: Al-Qadsiah,           position: LB  }
+  - { name: Casemiro,            club: Manchester United,    position: CDM }
+  - { name: Bruno Guimarães,     club: Newcastle United,     position: CDM }
+  - { name: João Gomes,          club: Wolverhampton,        position: CM  }
+  - { name: Lucas Paquetá,       club: West Ham United,      position: CAM }
+  - { name: Vinícius Júnior,     club: Real Madrid,          position: LW  }
+  - { name: Raphinha,            club: Barcelona,            position: RW  }
+  - { name: Rodrygo,             club: Real Madrid,          position: RW  }
+  - { name: Neymar,              club: Al-Hilal,             position: LW  }
+  - { name: Endrick,             club: Real Madrid,          position: ST  }
+  - { name: Gabriel Jesus,       club: Arsenal,              position: ST  }
+  - { name: Matheus Cunha,       club: Manchester United,    position: ST  }
+  - { name: João Pedro,          club: Brighton,             position: ST  }
+  - { name: Igor Thiago,         club: Brentford,            position: ST  }
+  - { name: Wendell,             club: Porto,                position: LB  }
+  - { name: Andreas Pereira,     club: Fulham,               position: CM  }
+  - { name: Gerson,              club: Flamengo,             position: CM  }

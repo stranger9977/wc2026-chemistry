@@ -1,7 +1,28 @@
+# Source: Canada squad — final squad to be announced May 29 2026; using recent call-up history
 nation: Canada
 nation_code: CAN
 flag_iso: ca
-manager: TBD
-formation: 4-3-3
-team_color: '#d52b1e'
-players: []
+manager: Jesse Marsch
+formation: "4-3-3"
+team_color: "#d52b1e"
+players:
+  - { name: Maxime Crépeau,       club: LA Galaxy,            position: GK  }
+  - { name: Milan Borjan,         club: Red Star Belgrade,    position: GK  }
+  - { name: Richie Laryea,        club: Toronto FC,           position: RB  }
+  - { name: Kamal Miller,         club: Montreal Impact,      position: CB  }
+  - { name: Steven Vitória,       club: FC Porto,             position: CB  }
+  - { name: Alistair Johnston,    club: Celtic,               position: RB  }
+  - { name: Sam Adekugbe,         club: Hatayspor,            position: LB  }
+  - { name: Ismaël Koné,          club: Watford,              position: CM  }
+  - { name: Atiba Hutchinson,     club: Club Brugge,          position: CDM }
+  - { name: Stephen Eustáquio,    club: Porto,                position: CM  }
+  - { name: Jonathan Osorio,      club: Toronto FC,           position: CM  }
+  - { name: Alphonso Davies,      club: Bayern Munich,        position: LW  }
+  - { name: Jonathan David,       club: Lille,                position: ST  }
+  - { name: Cyle Larin,           club: Club Brugge,          position: ST  }
+  - { name: Tajon Buchanan,       club: Inter Milan,          position: LW  }
+  - { name: Theo Bair,            club: Middlesbrough,        position: ST  }
+  - { name: Lucas Cavallini,      club: Vancouver Whitecaps,  position: ST  }
+  - { name: Liam Millar,          club: Basel,                position: RW  }
+  - { name: Derek Cornelius,      club: IF Elfsborg,          position: CB  }
+  - { name: David Wotherspoon,    club: St. Johnstone,        position: CM  }

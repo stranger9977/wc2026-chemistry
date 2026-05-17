@@ -1,7 +1,35 @@
+# Source: Netherlands squad to be announced May 25 2026 by Ronald Koeman
+# Using predicted squad based on Euro 2024 runners-up + recent form
 nation: Netherlands
 nation_code: NED
 flag_iso: nl
-manager: TBD
-formation: 4-3-3
-team_color: '#ff6600'
-players: []
+manager: Ronald Koeman
+formation: "4-3-3"
+team_color: "#ff6600"
+players:
+  - { name: Bart Verbruggen,      club: Brighton,             position: GK  }
+  - { name: Mark Flekken,         club: Brentford,            position: GK  }
+  - { name: Remko Pasveer,        club: Ajax,                 position: GK  }
+  - { name: Denzel Dumfries,      club: Inter Milan,          position: RB  }
+  - { name: Nathan Aké,           club: Manchester City,      position: CB  }
+  - { name: Virgil van Dijk,      club: Liverpool,            position: CB  }
+  - { name: Stefan de Vrij,       club: Inter Milan,          position: CB  }
+  - { name: Matthijs de Ligt,     club: Manchester United,    position: CB  }
+  - { name: Daley Blind,          club: Girona,               position: LB  }
+  - { name: Tyrell Malacia,       club: Manchester United,    position: LB  }
+  - { name: Frenkie de Jong,      club: Barcelona,            position: CM  }
+  - { name: Ryan Gravenberch,     club: Liverpool,            position: CM  }
+  - { name: Tijjani Reijnders,    club: AC Milan,             position: CM  }
+  - { name: Jerdy Schouten,       club: Bologna,              position: CDM }
+  - { name: Teun Koopmeiners,     club: Juventus,             position: CAM }
+  - { name: Xavi Simons,          club: RB Leipzig,           position: CAM }
+  - { name: Cody Gakpo,           club: Liverpool,            position: LW  }
+  - { name: Memphis Depay,        club: Corinthians,          position: LW  }
+  - { name: Donyell Malen,        club: Aston Villa,          position: RW  }
+  - { name: Wout Weghorst,        club: Hoffenheim,           position: ST  }
+  - { name: Vincent Janssen,      club: Monterrey,            position: ST  }
+  - { name: Brian Brobbey,        club: Ajax,                 position: ST  }
+  - { name: Noa Lang,             club: PSV Eindhoven,        position: LW  }
+  - { name: Justin Kluivert,      club: Bournemouth,          position: RW  }
+  - { name: Devyne Rensch,        club: Roma,                 position: RB  }
+  - { name: Micky van de Ven,     club: Tottenham Hotspur,    position: CB  }

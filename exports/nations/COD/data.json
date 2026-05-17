@@ -1,0 +1,17 @@
+{
+  "squad": {
+    "nation": "DR Congo",
+    "nation_code": "COD",
+    "flag_iso": "cd",
+    "manager": "TBD",
+    "formation": "4-3-3",
+    "team_color": "#007fff",
+    "players": []
+  },
+  "pairs": [],
+  "players_by_id": {},
+  "coverage": {
+    "matches": 0,
+    "warning": "no matches in open data"
+  }
+}

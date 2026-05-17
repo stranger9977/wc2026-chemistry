@@ -1,18 +1,35 @@
+# Source: USA squad to be announced May 26 2026 by Mauricio Pochettino
+# Using projected squad based on March 2026 camp players and expert predictions
 nation: United States
 nation_code: USA
 flag_iso: us
 manager: Mauricio Pochettino
-formation: "4-3-3"
+formation: "4-2-3-1"
 team_color: "#bf0d3e"
 players:
-  - { name: Matt Turner,             club: Crystal Palace,  position: GK }
-  - { name: Sergiño Dest,            club: PSV Eindhoven,   position: RB }
-  - { name: Chris Richards,          club: Crystal Palace,  position: CB }
-  - { name: Tim Ream,                club: Charlotte FC,    position: CB }
-  - { name: Antonee Robinson,        club: Fulham,          position: LB }
-  - { name: Tyler Adams,             club: Bournemouth,     position: DM }
-  - { name: Weston McKennie,         club: Juventus,        position: CM }
-  - { name: Yunus Musah,             club: AC Milan,        position: CM }
-  - { name: Christian Pulisic,       club: AC Milan,        position: RW }
-  - { name: Folarin Balogun,         club: AS Monaco,       position: ST }
-  - { name: Tim Weah,                club: Juventus,        position: LW }
+  - { name: Matt Turner,          club: Crystal Palace,       position: GK  }
+  - { name: Ethan Horvath,        club: Cardiff City,         position: GK  }
+  - { name: Patrick Schulte,      club: Columbus Crew,        position: GK  }
+  - { name: Sergiño Dest,         club: PSV Eindhoven,        position: RB  }
+  - { name: Joe Scally,           club: Borussia Mönchengladbach, position: RB }
+  - { name: Chris Richards,       club: Crystal Palace,       position: CB  }
+  - { name: Tim Ream,             club: Charlotte FC,         position: CB  }
+  - { name: Auston Trusty,        club: Celtic,               position: CB  }
+  - { name: Mark McKenzie,        club: Genk,                 position: CB  }
+  - { name: Antonee Robinson,     club: Fulham,               position: LB  }
+  - { name: Max Arfsten,          club: Wolfsburg,            position: LB  }
+  - { name: Tyler Adams,          club: Bournemouth,          position: CDM }
+  - { name: Weston McKennie,      club: Juventus,             position: CM  }
+  - { name: Yunus Musah,          club: AC Milan,             position: CM  }
+  - { name: Tanner Tessmann,      club: Venezia,              position: CM  }
+  - { name: Brendan Aaronson,     club: Union Berlin,         position: CAM }
+  - { name: Christian Pulisic,    club: AC Milan,             position: RW  }
+  - { name: Tim Weah,             club: Juventus,             position: RW  }
+  - { name: Gio Reyna,            club: Borussia Dortmund,    position: CAM }
+  - { name: Malik Tillman,        club: PSV Eindhoven,        position: CAM }
+  - { name: Folarin Balogun,      club: Monaco,               position: ST  }
+  - { name: Ricardo Pepi,         club: PSV Eindhoven,        position: ST  }
+  - { name: Cade Cowell,          club: Guimarães,            position: LW  }
+  - { name: Josh Sargent,         club: Norwich City,         position: ST  }
+  - { name: Alex Freeman,         club: Nottingham Forest,    position: LB  }
+  - { name: Sebastian Berhalter,  club: Cremonese,            position: CM  }

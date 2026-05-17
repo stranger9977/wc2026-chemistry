@@ -1,7 +1,35 @@
+# Source: Portugal squad to be announced May 19 2026 by Roberto Martínez
+# Using predicted squad based on recent call-ups + known selection patterns
 nation: Portugal
 nation_code: POR
 flag_iso: pt
-manager: TBD
-formation: 4-3-3
-team_color: '#006600'
-players: []
+manager: Roberto Martínez
+formation: "4-3-3"
+team_color: "#006600"
+players:
+  - { name: Diogo Costa,          club: Porto,                position: GK  }
+  - { name: Rui Patrício,         club: Roma,                 position: GK  }
+  - { name: José Sá,              club: Wolverhampton,        position: GK  }
+  - { name: Diogo Dalot,          club: Manchester United,    position: RB  }
+  - { name: João Cancelo,         club: Barcelona,            position: RB  }
+  - { name: Rúben Dias,           club: Manchester City,      position: CB  }
+  - { name: António Silva,        club: Benfica,              position: CB  }
+  - { name: Gonçalo Inácio,       club: Sporting CP,          position: CB  }
+  - { name: Nuno Mendes,          club: Paris Saint-Germain,  position: LB  }
+  - { name: Raphael Guerreiro,    club: Bayern Munich,        position: LB  }
+  - { name: João Palhinha,        club: Bayern Munich,        position: CDM }
+  - { name: Rúben Neves,          club: Al-Hilal,             position: CDM }
+  - { name: Bruno Fernandes,      club: Manchester United,    position: CAM }
+  - { name: Vitinha,              club: Paris Saint-Germain,  position: CM  }
+  - { name: Bernardo Silva,       club: Manchester City,      position: CM  }
+  - { name: João Neves,           club: Paris Saint-Germain,  position: CM  }
+  - { name: Cristiano Ronaldo,    club: Al-Nassr,             position: ST  }
+  - { name: Rafael Leão,          club: AC Milan,             position: LW  }
+  - { name: Pedro Neto,           club: Chelsea,              position: RW  }
+  - { name: Francisco Conceição,  club: Juventus,             position: RW  }
+  - { name: Gonçalo Ramos,        club: Paris Saint-Germain,  position: ST  }
+  - { name: João Félix,           club: Barcelona,            position: CAM }
+  - { name: Diogo Jota,           club: Liverpool,            position: LW  }
+  - { name: Pepe,                 club: Porto,                position: CB  }
+  - { name: Matheus Nunes,        club: Manchester City,      position: CM  }
+  - { name: Nelson Semedo,        club: Wolverhampton,        position: RB  }

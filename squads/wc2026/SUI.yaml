@@ -1,7 +1,30 @@
+# Source: Switzerland squad — predicted based on recent form (squad not yet announced as of May 17)
 nation: Switzerland
 nation_code: SUI
 flag_iso: ch
-manager: TBD
-formation: 4-3-3
-team_color: '#d52b1e'
-players: []
+manager: Murat Yakin
+formation: "4-2-3-1"
+team_color: "#d52b1e"
+players:
+  - { name: Yann Sommer,          club: Inter Milan,          position: GK  }
+  - { name: Gregor Kobel,         club: Borussia Dortmund,    position: GK  }
+  - { name: Philipp Köhn,         club: Monaco,               position: GK  }
+  - { name: Silvan Widmer,        club: Mainz 05,             position: RB  }
+  - { name: Manuel Akanji,        club: Manchester City,      position: CB  }
+  - { name: Nico Elvedi,          club: Borussia Mönchengladbach, position: CB }
+  - { name: Fabian Schär,         club: Newcastle United,     position: CB  }
+  - { name: Ricardo Rodríguez,    club: Torino,               position: LB  }
+  - { name: Granit Xhaka,         club: Bayer Leverkusen,     position: CDM }
+  - { name: Denis Zakaria,        club: Monaco,               position: CDM }
+  - { name: Remo Freuler,         club: Nottingham Forest,    position: CM  }
+  - { name: Michel Aebischer,     club: Bologna,              position: CM  }
+  - { name: Xherdan Shaqiri,      club: New York City FC,     position: RW  }
+  - { name: Ruben Vargas,         club: Augsburg,             position: LW  }
+  - { name: Fabian Rieder,        club: Rennes,               position: CAM }
+  - { name: Dan Ndoye,            club: Bologna,              position: RW  }
+  - { name: Renato Steffen,       club: Lugano,               position: LW  }
+  - { name: Breel Embolo,         club: Monaco,               position: ST  }
+  - { name: Zeki Amdouni,         club: Burnley,              position: ST  }
+  - { name: Noah Okafor,          club: AC Milan,             position: LW  }
+  - { name: Kwadwo Duah,          club: Nuremberg,            position: ST  }
+  - { name: Andi Zeqiri,          club: Brighton,             position: ST  }

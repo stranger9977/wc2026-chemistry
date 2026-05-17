@@ -1,7 +1,35 @@
+# Source: England squad to be announced May 22 2026 by Thomas Tuchel
+# Using predicted squad based on March 2026 camp + known picks; final due May 30
 nation: England
 nation_code: ENG
 flag_iso: gb-eng
-manager: TBD
-formation: 4-3-3
-team_color: '#fff'
-players: []
+manager: Thomas Tuchel
+formation: "4-2-3-1"
+team_color: "#fff"
+players:
+  - { name: Jordan Pickford,       club: Everton,              position: GK  }
+  - { name: Aaron Ramsdale,        club: Southampton,          position: GK  }
+  - { name: Dean Henderson,        club: Crystal Palace,       position: GK  }
+  - { name: Trent Alexander-Arnold,club: Real Madrid,          position: RB  }
+  - { name: Reece James,           club: Chelsea,              position: RB  }
+  - { name: John Stones,           club: Manchester City,      position: CB  }
+  - { name: Harry Maguire,         club: Manchester United,    position: CB  }
+  - { name: Marc Guéhi,            club: Crystal Palace,       position: CB  }
+  - { name: Ezri Konsa,            club: Aston Villa,          position: CB  }
+  - { name: Luke Shaw,             club: Manchester United,    position: LB  }
+  - { name: Antonee Robinson,      club: Fulham,               position: LB  }
+  - { name: Declan Rice,           club: Arsenal,              position: CDM }
+  - { name: Conor Gallagher,       club: Atlético Madrid,      position: CM  }
+  - { name: Kobbie Mainoo,         club: Manchester United,    position: CM  }
+  - { name: Jude Bellingham,       club: Real Madrid,          position: CAM }
+  - { name: Phil Foden,            club: Manchester City,      position: CAM }
+  - { name: Cole Palmer,           club: Chelsea,              position: CAM }
+  - { name: Bukayo Saka,           club: Arsenal,              position: RW  }
+  - { name: Marcus Rashford,       club: Barcelona,            position: LW  }
+  - { name: Jarrod Bowen,          club: West Ham United,      position: RW  }
+  - { name: Harry Kane,            club: Bayern Munich,        position: ST  }
+  - { name: Ollie Watkins,         club: Aston Villa,          position: ST  }
+  - { name: Ivan Toney,            club: Al-Ahli,              position: ST  }
+  - { name: Morgan Gibbs-White,    club: Nottingham Forest,    position: CAM }
+  - { name: Curtis Jones,          club: Liverpool,            position: CM  }
+  - { name: Levi Colwill,          club: Chelsea,              position: CB  }

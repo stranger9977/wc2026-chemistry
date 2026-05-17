@@ -1,0 +1,17 @@
+{
+  "squad": {
+    "nation": "Uzbekistan",
+    "nation_code": "UZB",
+    "flag_iso": "uz",
+    "manager": "TBD",
+    "formation": "4-3-3",
+    "team_color": "#1eb53a",
+    "players": []
+  },
+  "pairs": [],
+  "players_by_id": {},
+  "coverage": {
+    "matches": 0,
+    "warning": "no matches in open data"
+  }
+}

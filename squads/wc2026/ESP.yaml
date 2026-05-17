@@ -1,7 +1,35 @@
+# Source: Spain squad to be announced May 25 2026 by Luis de la Fuente
+# Using predicted squad based on Euro 2024 winners + recent form
 nation: Spain
 nation_code: ESP
 flag_iso: es
-manager: TBD
-formation: 4-3-3
-team_color: '#aa151b'
-players: []
+manager: Luis de la Fuente
+formation: "4-3-3"
+team_color: "#aa151b"
+players:
+  - { name: Unai Simón,           club: Athletic Club,        position: GK  }
+  - { name: David Raya,           club: Arsenal,              position: GK  }
+  - { name: Alejandro Remiro,     club: Real Sociedad,        position: GK  }
+  - { name: Dani Carvajal,        club: Real Madrid,          position: RB  }
+  - { name: Jesús Navas,          club: Sevilla,              position: RB  }
+  - { name: Aymeric Laporte,      club: Al-Nassr,             position: CB  }
+  - { name: Pau Cubarsí,          club: Barcelona,            position: CB  }
+  - { name: Robin Le Normand,     club: Atlético Madrid,      position: CB  }
+  - { name: Alejandro Grimaldo,   club: Bayer Leverkusen,     position: LB  }
+  - { name: Marc Cucurella,       club: Chelsea,              position: LB  }
+  - { name: Rodrigo,              club: Manchester City,      position: CDM }
+  - { name: Martín Zubimendi,     club: Arsenal,              position: CDM }
+  - { name: Pedri,                club: Barcelona,            position: CM  }
+  - { name: Gavi,                 club: Barcelona,            position: CM  }
+  - { name: Dani Olmo,            club: Barcelona,            position: CAM }
+  - { name: Fabián Ruiz,          club: Paris Saint-Germain,  position: CM  }
+  - { name: Lamine Yamal,         club: Barcelona,            position: RW  }
+  - { name: Nico Williams,        club: Athletic Club,        position: LW  }
+  - { name: Ferran Torres,        club: Barcelona,            position: LW  }
+  - { name: Álvaro Morata,        club: AC Milan,             position: ST  }
+  - { name: Mikel Oyarzabal,      club: Real Sociedad,        position: ST  }
+  - { name: Ayoze Pérez,          club: Villarreal,           position: ST  }
+  - { name: Bryan Zaragoza,       club: Bayern Munich,        position: RW  }
+  - { name: Mikel Merino,         club: Arsenal,              position: CM  }
+  - { name: Eric García,          club: Girona,               position: CB  }
+  - { name: Álex Baena,           club: Villarreal,           position: RW  }

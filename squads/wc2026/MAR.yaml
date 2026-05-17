@@ -1,7 +1,32 @@
+# Source: Morocco final squad to be announced May 26 2026 by Mohamed Ouahbi
+# Walid Regragui left March 2026; Mohamed Ouahbi is new manager
+# Using predicted squad based on recent call-ups
 nation: Morocco
 nation_code: MAR
 flag_iso: ma
-manager: TBD
-formation: 4-3-3
-team_color: '#c1272d'
-players: []
+manager: Mohamed Ouahbi
+formation: "4-3-3"
+team_color: "#c1272d"
+players:
+  - { name: Yassine Bounou,       club: Al-Hilal,             position: GK  }
+  - { name: Munir Mohamedi,       club: Villarreal,           position: GK  }
+  - { name: Achraf Hakimi,        club: Paris Saint-Germain,  position: RB  }
+  - { name: Noussair Mazraoui,    club: Manchester United,    position: RB  }
+  - { name: Romain Saïss,         club: Besiktas,             position: CB  }
+  - { name: Nayef Aguerd,         club: West Ham United,      position: CB  }
+  - { name: Jawad El Yamiq,       club: Real Valladolid,      position: CB  }
+  - { name: Adam Masina,          club: Udinese,              position: LB  }
+  - { name: Yahia Attiyat-Allah,  club: Wydad Casablanca,     position: LB  }
+  - { name: Sofyan Amrabat,       club: Fiorentina,           position: CDM }
+  - { name: Azzedine Ounahi,      club: Marseille,            position: CM  }
+  - { name: Selim Amallah,        club: Standard Liège,       position: CM  }
+  - { name: Bilal El Khannouss,   club: Genk,                 position: CAM }
+  - { name: Hakim Ziyech,         club: Galatasaray,          position: RW  }
+  - { name: Abdessamad Ezzalzouli,club: Betis,                position: RW  }
+  - { name: Youssef En-Nesyri,    club: Fenerbahçe,           position: ST  }
+  - { name: Ayoub El Kaabi,       club: Olimpia,              position: ST  }
+  - { name: Soufiane Rahimi,      club: Al-Ain,               position: LW  }
+  - { name: Zakaria Aboukhlal,    club: Toulouse,             position: LW  }
+  - { name: Ilias Chair,          club: QPR,                  position: CAM }
+  - { name: Brahim Díaz,          club: Real Madrid,          position: CAM }
+  - { name: Anass Zaroury,        club: Burnley,              position: LW  }

@@ -1,7 +1,33 @@
+# Source: Mexico 55-man preliminary squad announced May 12 2026 by Javier Aguirre
+# Chucky Lozano excluded; Ochoa included; final 26 due June 1
 nation: Mexico
 nation_code: MEX
 flag_iso: mx
-manager: TBD
-formation: 4-3-3
-team_color: '#006847'
-players: []
+manager: Javier Aguirre
+formation: "4-3-3"
+team_color: "#006847"
+players:
+  - { name: Guillermo Ochoa,      club: Salernitana,          position: GK  }
+  - { name: Luis Malagón,         club: América,              position: GK  }
+  - { name: Carlos Moreno,        club: Santos Laguna,        position: GK  }
+  - { name: Jorge Sánchez,        club: AC Milan,             position: RB  }
+  - { name: Julián Araujo,        club: Celtic,               position: RB  }
+  - { name: Johan Vásquez,        club: Genoa,                position: CB  }
+  - { name: César Montes,         club: Monterrey,            position: CB  }
+  - { name: Gerardo Arteaga,      club: Genk,                 position: LB  }
+  - { name: Jesús Gallardo,       club: Monterrey,            position: LB  }
+  - { name: Edson Álvarez,        club: West Ham United,      position: CDM }
+  - { name: Carlos Rodríguez,     club: Cruz Azul,            position: CM  }
+  - { name: Luis Chávez,          club: Dynamo Moscow,        position: CM  }
+  - { name: Héctor Herrera,       club: Atlético Madrid,      position: CM  }
+  - { name: Orbelín Pineda,       club: Deportivo La Coruña,  position: CAM }
+  - { name: Álvaro Fidalgo,       club: Real Betis,           position: CM  }
+  - { name: César Huerta,         club: Anderlecht,           position: LW  }
+  - { name: Alexis Vega,          club: Guadalajara,          position: RW  }
+  - { name: Raúl Jiménez,         club: Fulham,               position: ST  }
+  - { name: Santiago Giménez,     club: Bayer Leverkusen,     position: ST  }
+  - { name: Roberto de la Rosa,   club: Almería,              position: RW  }
+  - { name: Germán Berterame,     club: Inter Miami,          position: ST  }
+  - { name: Julián Quiñones,      club: Al-Qadsiah,           position: LW  }
+  - { name: Diego Lainez,         club: Braga,                position: RW  }
+  - { name: Érick Gutiérrez,      club: PSV Eindhoven,        position: CM  }

@@ -3,10 +3,167 @@
     "nation": "Japan",
     "nation_code": "JPN",
     "flag_iso": "jp",
-    "manager": "TBD",
+    "manager": "Hajime Moriyasu",
     "formation": "4-3-3",
     "team_color": "#bd0029",
-    "players": []
+    "players": [
+      {
+        "name": "Zion Suzuki",
+        "club": "Parma",
+        "position": "GK",
+        "headshot": null
+      },
+      {
+        "name": "Keisuke Osako",
+        "club": "Sanfrecce Hiroshima",
+        "position": "GK",
+        "headshot": null
+      },
+      {
+        "name": "Tomoki Hayakawa",
+        "club": "Kashima Antlers",
+        "position": "GK",
+        "headshot": null
+      },
+      {
+        "name": "Yuto Nagatomo",
+        "club": "FC Tokyo",
+        "position": "LB",
+        "headshot": null
+      },
+      {
+        "name": "Shogo Taniguchi",
+        "club": "St. Truiden",
+        "position": "CB",
+        "headshot": null
+      },
+      {
+        "name": "Ko Itakura",
+        "club": "Ajax",
+        "position": "CB",
+        "headshot": null
+      },
+      {
+        "name": "Hiroki Ito",
+        "club": "Bayern Munich",
+        "position": "CB",
+        "headshot": null
+      },
+      {
+        "name": "Takehiro Tomiyasu",
+        "club": "Ajax",
+        "position": "RB",
+        "headshot": null
+      },
+      {
+        "name": "Tsuyoshi Watanabe",
+        "club": "Feyenoord",
+        "position": "CB",
+        "headshot": null
+      },
+      {
+        "name": "Yukinari Sugawara",
+        "club": "Werder Bremen",
+        "position": "RB",
+        "headshot": null
+      },
+      {
+        "name": "Ayumu Seko",
+        "club": "Le Havre",
+        "position": "LB",
+        "headshot": null
+      },
+      {
+        "name": "Junnosuke Suzuki",
+        "club": "Copenhagen",
+        "position": "CB",
+        "headshot": null
+      },
+      {
+        "name": "Wataru Endo",
+        "club": "Liverpool",
+        "position": "CDM",
+        "headshot": null
+      },
+      {
+        "name": "Kaishu Sano",
+        "club": "Mainz 05",
+        "position": "CDM",
+        "headshot": null
+      },
+      {
+        "name": "Daichi Kamada",
+        "club": "Crystal Palace",
+        "position": "CAM",
+        "headshot": null
+      },
+      {
+        "name": "Ao Tanaka",
+        "club": "Leeds United",
+        "position": "CM",
+        "headshot": null
+      },
+      {
+        "name": "Takefusa Kubo",
+        "club": "Real Sociedad",
+        "position": "RW",
+        "headshot": null
+      },
+      {
+        "name": "Junya Ito",
+        "club": "Genk",
+        "position": "RW",
+        "headshot": null
+      },
+      {
+        "name": "Ritsu Doan",
+        "club": "Eintracht Frankfurt",
+        "position": "LW",
+        "headshot": null
+      },
+      {
+        "name": "Keito Nakamura",
+        "club": "Stade de Reims",
+        "position": "CM",
+        "headshot": null
+      },
+      {
+        "name": "Yuito Suzuki",
+        "club": "Freiburg",
+        "position": "LW",
+        "headshot": null
+      },
+      {
+        "name": "Daizen Maeda",
+        "club": "Celtic",
+        "position": "ST",
+        "headshot": null
+      },
+      {
+        "name": "Ayase Ueda",
+        "club": "Feyenoord",
+        "position": "ST",
+        "headshot": null
+      },
+      {
+        "name": "Koki Ogawa",
+        "club": "NEC Nijmegen",
+        "position": "ST",
+        "headshot": null
+      },
+      {
+        "name": "Keisuke Goto",
+        "club": "St. Truiden",
+        "position": "ST",
+        "headshot": null
+      },
+      {
+        "name": "Kento Shiogai",
+        "club": "Wolfsburg",
+        "position": "CM",
+        "headshot": null
+      }
+    ]
   },
   "players_by_id": {
     "37122": {
@@ -18,238 +175,100 @@
       "x": 55.0,
       "y": 18.0,
       "minutes": 81.81666666666666,
-      "matches": 4
-    },
-    "9411": {
-      "name": "Daichi Kamada",
-      "display_name": "Daichi Kamada",
-      "nickname": null,
-      "sb_position": "Left Wing",
-      "position": null,
-      "x": 85.0,
-      "y": 16.0,
-      "minutes": 382.7166666666667,
-      "matches": 4
-    },
-    "8776": {
-      "name": "Takumi Minamino",
-      "display_name": "Takumi Minamino",
-      "nickname": null,
-      "sb_position": "Right Wing Back",
-      "position": null,
-      "x": 35.0,
-      "y": 60.0,
-      "minutes": 118.14999999999999,
-      "matches": 4
-    },
-    "3530": {
-      "name": "Hiroki Sakai",
-      "display_name": "Hiroki Sakai",
-      "nickname": null,
-      "sb_position": "Left Wing",
-      "position": null,
-      "x": 85.0,
-      "y": 10.0,
-      "minutes": 119.98333333333333,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "38285": {
       "name": "Ayase Ueda",
       "display_name": "Ayase Ueda",
       "nickname": null,
       "sb_position": "Right Center Forward",
-      "position": null,
+      "position": "ST",
       "x": 92.0,
       "y": 42.0,
       "minutes": 45.0,
-      "matches": 4
-    },
-    "100436": {
-      "name": "Shuto Machino",
-      "display_name": "Shuto Machino",
-      "nickname": null,
-      "sb_position": null,
-      "position": null,
-      "x": 50.0,
-      "y": 46.0,
-      "minutes": 0.0,
-      "matches": 4
-    },
-    "37208": {
-      "name": "Ao Tanaka",
-      "display_name": "Ao Tanaka",
-      "nickname": null,
-      "sb_position": "Left Defensive Midfield",
-      "position": null,
-      "x": 40.0,
-      "y": 24.0,
-      "minutes": 172.13333333333333,
-      "matches": 4
-    },
-    "37209": {
-      "name": "Miki Yamane",
-      "display_name": "Miki Yamane",
-      "nickname": null,
-      "sb_position": "Right Back",
-      "position": null,
-      "x": 22.0,
-      "y": 58.0,
-      "minutes": 61.56666666666667,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "29595": {
       "name": "Ko Itakura",
       "display_name": "Ko Itakura",
       "nickname": null,
       "sb_position": "Right Center Back",
-      "position": null,
+      "position": "CB",
       "x": 18.0,
       "y": 44.0,
       "minutes": 360.0,
-      "matches": 3
-    },
-    "37211": {
-      "name": "Kaoru Mitoma",
-      "display_name": "Kaoru Mitoma",
-      "nickname": null,
-      "sb_position": "Left Wing Back",
-      "position": null,
-      "x": 35.0,
-      "y": 8.0,
-      "minutes": 253.6,
-      "matches": 4
-    },
-    "37215": {
-      "name": "Shogo Taniguchi",
-      "display_name": "Shogo Taniguchi",
-      "nickname": null,
-      "sb_position": "Left Center Back",
-      "position": null,
-      "x": 18.0,
-      "y": 30.0,
-      "minutes": 240.0,
-      "matches": 4
+      "matches": 3,
+      "goals": 0,
+      "assists": 0
     },
     "30628": {
       "name": "Daizen Maeda",
       "display_name": "Daizen Maeda",
       "nickname": null,
       "sb_position": "Center Forward",
-      "position": null,
+      "position": "ST",
       "x": 92.0,
       "y": 40.0,
       "minutes": 181.16666666666666,
-      "matches": 4
-    },
-    "3300": {
-      "name": "Maya Yoshida",
-      "display_name": "Maya Yoshida",
-      "nickname": null,
-      "sb_position": "Center Back",
-      "position": null,
-      "x": 18.0,
-      "y": 34.0,
-      "minutes": 480.0,
-      "matches": 4
-    },
-    "37221": {
-      "name": "Hidemasa Morita",
-      "display_name": "Hidemasa Morita",
-      "nickname": null,
-      "sb_position": "Left Defensive Midfield",
-      "position": null,
-      "x": 40.0,
-      "y": 30.0,
-      "minutes": 360.0,
-      "matches": 4
-    },
-    "23527": {
-      "name": "Junya Ito",
-      "display_name": "Junya Ito",
-      "nickname": null,
-      "sb_position": "Right Wing",
-      "position": null,
-      "x": 85.0,
-      "y": 64.0,
-      "minutes": 413.81666666666666,
-      "matches": 4
+      "matches": 4,
+      "goals": 1,
+      "assists": 0
     },
     "95272": {
       "name": "Hiroki Ito",
       "display_name": "Hiroki Ito",
       "nickname": null,
       "sb_position": "Left Center Back",
-      "position": null,
+      "position": "CB",
       "x": 18.0,
       "y": 18.0,
       "minutes": 75.0,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "23721": {
       "name": "Wataru Endo",
       "display_name": "Wataru Endo",
       "nickname": null,
       "sb_position": "Right Defensive Midfield",
-      "position": null,
+      "position": "CDM",
       "x": 40.0,
       "y": 44.0,
       "minutes": 393.5,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "8361": {
       "name": "Ritsu Doan",
       "display_name": "Ritsu Doan",
       "nickname": null,
       "sb_position": "Right Wing",
-      "position": null,
+      "position": "LW",
       "x": 85.0,
       "y": 58.0,
       "minutes": 276.7,
-      "matches": 4
-    },
-    "3175": {
-      "name": "Eiji Kawashima",
-      "display_name": "Eiji Kawashima",
-      "nickname": null,
-      "sb_position": null,
-      "position": null,
-      "x": 50.0,
-      "y": 34.0,
-      "minutes": 0.0,
-      "matches": 4
+      "matches": 4,
+      "goals": 2,
+      "assists": 0
     },
     "23730": {
       "name": "Takehiro Tomiyasu",
       "display_name": "Takehiro Tomiyasu",
       "nickname": null,
       "sb_position": "Left Center Back",
-      "position": null,
+      "position": "RB",
       "x": 18.0,
       "y": 24.0,
       "minutes": 246.18333333333334,
-      "matches": 4
-    },
-    "31090": {
-      "name": "Takefusa Kubo",
-      "display_name": "Takefusa Kubo",
-      "nickname": null,
-      "sb_position": "Left Wing",
-      "position": null,
-      "x": 85.0,
-      "y": 4.0,
-      "minutes": 90.0,
-      "matches": 3
-    },
-    "8949": {
-      "name": "Takuma Asano",
-      "display_name": "Takuma Asano",
-      "nickname": null,
-      "sb_position": "Center Forward",
-      "position": null,
-      "x": 92.0,
-      "y": 34.0,
-      "minutes": 253.83333333333331,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "29366": {
       "name": "Daniel Schmidt",
@@ -260,29 +279,22 @@
       "x": 50.0,
       "y": 28.0,
       "minutes": 0.0,
-      "matches": 4
-    },
-    "25719": {
-      "name": "Shūichi Gonda",
-      "display_name": "Shūichi Gonda",
-      "nickname": null,
-      "sb_position": "Goalkeeper",
-      "position": null,
-      "x": 6.0,
-      "y": 34.0,
-      "minutes": 480.0,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "5690": {
       "name": "Yuto Nagatomo",
       "display_name": "Yuto Nagatomo",
       "nickname": null,
       "sb_position": "Left Back",
-      "position": null,
+      "position": "LB",
       "x": 22.0,
       "y": 10.0,
       "minutes": 209.83333333333331,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "5693": {
       "name": "Gaku Shibasaki",
@@ -293,7 +305,204 @@
       "x": 50.0,
       "y": 40.0,
       "minutes": 0.0,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "9411": {
+      "name": "Daichi Kamada",
+      "display_name": "Daichi Kamada",
+      "nickname": null,
+      "sb_position": "Left Wing",
+      "position": "CAM",
+      "x": 85.0,
+      "y": 16.0,
+      "minutes": 382.7166666666667,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "8776": {
+      "name": "Takumi Minamino",
+      "display_name": "Takumi Minamino",
+      "nickname": null,
+      "sb_position": "Right Wing Back",
+      "position": null,
+      "x": 35.0,
+      "y": 60.0,
+      "minutes": 118.14999999999999,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "3530": {
+      "name": "Hiroki Sakai",
+      "display_name": "Hiroki Sakai",
+      "nickname": null,
+      "sb_position": "Left Wing",
+      "position": null,
+      "x": 85.0,
+      "y": 10.0,
+      "minutes": 119.98333333333333,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "100436": {
+      "name": "Shuto Machino",
+      "display_name": "Shuto Machino",
+      "nickname": null,
+      "sb_position": null,
+      "position": null,
+      "x": 50.0,
+      "y": 46.0,
+      "minutes": 0.0,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "37208": {
+      "name": "Ao Tanaka",
+      "display_name": "Ao Tanaka",
+      "nickname": null,
+      "sb_position": "Left Defensive Midfield",
+      "position": "CM",
+      "x": 40.0,
+      "y": 24.0,
+      "minutes": 172.13333333333333,
+      "matches": 4,
+      "goals": 1,
+      "assists": 0
+    },
+    "37209": {
+      "name": "Miki Yamane",
+      "display_name": "Miki Yamane",
+      "nickname": null,
+      "sb_position": "Right Back",
+      "position": null,
+      "x": 22.0,
+      "y": 58.0,
+      "minutes": 61.56666666666667,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "37211": {
+      "name": "Kaoru Mitoma",
+      "display_name": "Kaoru Mitoma",
+      "nickname": null,
+      "sb_position": "Left Wing Back",
+      "position": null,
+      "x": 35.0,
+      "y": 8.0,
+      "minutes": 253.6,
+      "matches": 4,
+      "goals": 0,
+      "assists": 1
+    },
+    "37215": {
+      "name": "Shogo Taniguchi",
+      "display_name": "Shogo Taniguchi",
+      "nickname": null,
+      "sb_position": "Left Center Back",
+      "position": "CB",
+      "x": 18.0,
+      "y": 30.0,
+      "minutes": 240.0,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "3300": {
+      "name": "Maya Yoshida",
+      "display_name": "Maya Yoshida",
+      "nickname": null,
+      "sb_position": "Center Back",
+      "position": null,
+      "x": 18.0,
+      "y": 34.0,
+      "minutes": 480.0,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "37221": {
+      "name": "Hidemasa Morita",
+      "display_name": "Hidemasa Morita",
+      "nickname": null,
+      "sb_position": "Left Defensive Midfield",
+      "position": null,
+      "x": 40.0,
+      "y": 30.0,
+      "minutes": 360.0,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "23527": {
+      "name": "Junya Ito",
+      "display_name": "Junya Ito",
+      "nickname": null,
+      "sb_position": "Right Wing",
+      "position": "RW",
+      "x": 85.0,
+      "y": 64.0,
+      "minutes": 413.81666666666666,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "3175": {
+      "name": "Eiji Kawashima",
+      "display_name": "Eiji Kawashima",
+      "nickname": null,
+      "sb_position": null,
+      "position": null,
+      "x": 50.0,
+      "y": 34.0,
+      "minutes": 0.0,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "31090": {
+      "name": "Takefusa Kubo",
+      "display_name": "Takefusa Kubo",
+      "nickname": null,
+      "sb_position": "Left Wing",
+      "position": "RW",
+      "x": 85.0,
+      "y": 4.0,
+      "minutes": 90.0,
+      "matches": 3,
+      "goals": 0,
+      "assists": 0
+    },
+    "8949": {
+      "name": "Takuma Asano",
+      "display_name": "Takuma Asano",
+      "nickname": null,
+      "sb_position": "Center Forward",
+      "position": null,
+      "x": 92.0,
+      "y": 34.0,
+      "minutes": 253.83333333333331,
+      "matches": 4,
+      "goals": 2,
+      "assists": 0
+    },
+    "25719": {
+      "name": "Shūichi Gonda",
+      "display_name": "Shūichi Gonda",
+      "nickname": null,
+      "sb_position": "Goalkeeper",
+      "position": null,
+      "x": 6.0,
+      "y": 34.0,
+      "minutes": 480.0,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     }
   },
   "pitch_player_ids": [
@@ -321,9 +530,12 @@
       "player_b_position": "LW",
       "joi90_xt": 1.0260107227958697,
       "joi90_vaep": 0.03317422262325253,
+      "joi90_xg": 0.13680587758709148,
       "joi90": 1.0260107227958697,
       "minutes": 209.83333333333331,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 9411,
@@ -336,9 +548,12 @@
       "player_b_position": "LDM",
       "joi90_xt": 0.9942793250015857,
       "joi90_vaep": 0.021540995232607673,
+      "joi90_xg": 0.23319631923379935,
       "joi90": 0.9942793250015857,
       "minutes": 262.7166666666667,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 8361,
@@ -351,9 +566,12 @@
       "player_b_position": "RDM",
       "joi90_xt": 0.8429412493802678,
       "joi90_vaep": 0.02209416114508503,
+      "joi90_xg": 0.2565324343564464,
       "joi90": 0.8429412493802678,
       "minutes": 201.7,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 2,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3300,
@@ -366,9 +584,12 @@
       "player_b_position": "RDM",
       "joi90_xt": 0.6156250000000001,
       "joi90_vaep": -0.023109601404939895,
+      "joi90_xg": 0.2780219853643521,
       "joi90": 0.6156250000000001,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3300,
@@ -381,9 +602,12 @@
       "player_b_position": "LB",
       "joi90_xt": 0.527615170770453,
       "joi90_vaep": -0.021482145134530662,
+      "joi90_xg": 0.1954585942344774,
       "joi90": 0.527615170770453,
       "minutes": 209.83333333333331,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3300,
@@ -396,9 +620,12 @@
       "player_b_position": "RCB",
       "joi90_xt": 0.5274687500000004,
       "joi90_vaep": 0.014838938230241183,
+      "joi90_xg": 0.250385542522198,
       "joi90": 0.5274687500000004,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3300,
@@ -411,9 +638,12 @@
       "player_b_position": "GK",
       "joi90_xt": 0.510984375,
       "joi90_vaep": 0.0198282399890104,
+      "joi90_xg": 0.10659687342703864,
       "joi90": 0.510984375,
       "minutes": 480.0,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 23721,
@@ -426,9 +656,12 @@
       "player_b_position": "LDM",
       "joi90_xt": 0.4976718749999999,
       "joi90_vaep": 0.047260585155527224,
+      "joi90_xg": 0.2719860788518236,
       "joi90": 0.4976718749999999,
       "minutes": 240.0,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 9411,
@@ -441,9 +674,12 @@
       "player_b_position": "RDM",
       "joi90_xt": 0.4954085696081555,
       "joi90_vaep": 0.014800521740540785,
+      "joi90_xg": 0.3252302055020952,
       "joi90": 0.4954085696081555,
       "minutes": 313.9,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 23527,
@@ -456,9 +692,12 @@
       "player_b_position": "LDM",
       "joi90_xt": 0.49408361222984853,
       "joi90_vaep": 0.019203416505181925,
+      "joi90_xg": 0.0,
       "joi90": 0.49408361222984853,
       "minutes": 293.81666666666666,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 8361,
@@ -471,9 +710,12 @@
       "player_b_position": "LDM",
       "joi90_xt": 0.4430058651026394,
       "joi90_vaep": 0.0047313776655843656,
+      "joi90_xg": 0.12680927930960076,
       "joi90": 0.4430058651026394,
       "minutes": 227.33333333333334,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 2,
+      "assists_sum": 0
     },
     {
       "player_a_id": 8949,
@@ -486,9 +728,12 @@
       "player_b_position": "LDM",
       "joi90_xt": 0.405507918453058,
       "joi90_vaep": -0.029954424818788822,
+      "joi90_xg": 0.2665078319107631,
       "joi90": 0.405507918453058,
       "minutes": 190.48333333333335,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 2,
+      "assists_sum": 0
     },
     {
       "player_a_id": 23527,
@@ -501,9 +746,12 @@
       "player_b_position": "RCB",
       "joi90_xt": 0.360186340688638,
       "joi90_vaep": 0.002818194294806492,
+      "joi90_xg": 0.10431141353249157,
       "joi90": 0.360186340688638,
       "minutes": 293.81666666666666,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 25719,
@@ -516,9 +764,12 @@
       "player_b_position": "RCB",
       "joi90_xt": 0.35518750000000004,
       "joi90_vaep": 0.024650741477671545,
+      "joi90_xg": 0.10659687342703864,
       "joi90": 0.35518750000000004,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 8949,
@@ -531,9 +782,12 @@
       "player_b_position": "RDM",
       "joi90_xt": 0.33397836127266495,
       "joi90_vaep": -0.07790542566094415,
+      "joi90_xg": 0.3305732553213824,
       "joi90": 0.33397836127266495,
       "minutes": 194.86666666666667,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 2,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3300,
@@ -546,9 +800,12 @@
       "player_b_position": "LCB",
       "joi90_xt": 0.2988461538461539,
       "joi90_vaep": -0.005635786550835921,
+      "joi90_xg": 0.5096417821638539,
       "joi90": 0.2988461538461539,
       "minutes": 195.0,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 29595,
@@ -561,9 +818,12 @@
       "player_b_position": "LDM",
       "joi90_xt": 0.24674999999999997,
       "joi90_vaep": 0.043365617506424314,
+      "joi90_xg": 0.2306814117677127,
       "joi90": 0.24674999999999997,
       "minutes": 240.0,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 23730,
@@ -576,9 +836,12 @@
       "player_b_position": "GK",
       "joi90_xt": 0.2326730769230769,
       "joi90_vaep": 0.008087986968278598,
+      "joi90_xg": 0.1002882659208825,
       "joi90": 0.2326730769230769,
       "minutes": 195.0,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 37211,
@@ -591,9 +854,12 @@
       "player_b_position": "LDM",
       "joi90_xt": 0.22429003418353927,
       "joi90_vaep": 0.008283536114544802,
+      "joi90_xg": 0.0,
       "joi90": 0.22429003418353927,
       "minutes": 190.15,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 37215,
@@ -606,9 +872,12 @@
       "player_b_position": "LDM",
       "joi90_xt": 0.21065624999999996,
       "joi90_vaep": -0.024710417037567822,
+      "joi90_xg": 0.0,
       "joi90": 0.21065624999999996,
       "minutes": 240.0,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3300,
@@ -621,9 +890,12 @@
       "player_b_position": "RW",
       "joi90_xt": 0.20770312500000013,
       "joi90_vaep": -0.008595396226155572,
+      "joi90_xg": 0.1701657981981118,
       "joi90": 0.20770312500000013,
       "minutes": 240.0,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 25719,
@@ -636,9 +908,12 @@
       "player_b_position": "LDM",
       "joi90_xt": 0.19600000000000004,
       "joi90_vaep": -0.012687661343079526,
+      "joi90_xg": 0.062234351569997425,
       "joi90": 0.19600000000000004,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 23721,
@@ -651,9 +926,12 @@
       "player_b_position": "RCB",
       "joi90_xt": 0.19237500000000013,
       "joi90_vaep": 0.017902397824400396,
+      "joi90_xg": 0.22399374246686507,
       "joi90": 0.19237500000000013,
       "minutes": 240.0,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 9411,
@@ -666,9 +944,12 @@
       "player_b_position": "RW",
       "joi90_xt": 0.1774576137320977,
       "joi90_vaep": -0.037946305983634056,
+      "joi90_xg": 0.19327990202991607,
       "joi90": 0.1774576137320977,
       "minutes": 316.5333333333333,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 23721,
@@ -681,9 +962,12 @@
       "player_b_position": "LCB",
       "joi90_xt": 0.1389230769230769,
       "joi90_vaep": -0.01694363341980184,
+      "joi90_xg": 0.25240263288769293,
       "joi90": 0.1389230769230769,
       "minutes": 195.0,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 23527,
@@ -696,9 +980,12 @@
       "player_b_position": "RDM",
       "joi90_xt": 0.1373432979749276,
       "joi90_vaep": 0.013525617773499558,
+      "joi90_xg": 0.14193874342798962,
       "joi90": 0.1373432979749276,
       "minutes": 293.81666666666666,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3300,
@@ -711,9 +998,12 @@
       "player_b_position": "LCB",
       "joi90_xt": 0.11751562499999992,
       "joi90_vaep": 0.0029145664839234087,
+      "joi90_xg": 0.0,
       "joi90": 0.11751562499999992,
       "minutes": 240.0,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 23721,
@@ -726,9 +1016,12 @@
       "player_b_position": "GK",
       "joi90_xt": 0.07181249999999999,
       "joi90_vaep": -0.005580233373621013,
+      "joi90_xg": 0.1505135806535257,
       "joi90": 0.07181249999999999,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3300,
@@ -741,9 +1034,12 @@
       "player_b_position": "LW",
       "joi90_xt": 0.022193310978530716,
       "joi90_vaep": 0.013125956630860207,
+      "joi90_xg": 0.2701891704916254,
       "joi90": 0.022193310978530716,
       "minutes": 382.7166666666667,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 9411,
@@ -756,9 +1052,12 @@
       "player_b_position": "RCB",
       "joi90_xt": 0.0029507798585999825,
       "joi90_vaep": 0.002280789263614523,
+      "joi90_xg": 0.2137370561032335,
       "joi90": 0.0029507798585999825,
       "minutes": 308.81666666666666,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3300,
@@ -771,9 +1070,12 @@
       "player_b_position": "LDM",
       "joi90_xt": -0.0024062500000001166,
       "joi90_vaep": 0.009550676268190728,
+      "joi90_xg": 0.21191879399331884,
       "joi90": -0.0024062500000001166,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 8949,
@@ -786,9 +1088,12 @@
       "player_b_position": "LWB",
       "joi90_xt": -0.025414442259061518,
       "joi90_vaep": 0.029970627853313364,
+      "joi90_xg": 0.19966611901073203,
       "joi90": -0.025414442259061518,
       "minutes": 237.26666666666665,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 2,
+      "assists_sum": 1
     },
     {
       "player_a_id": 25719,
@@ -801,14 +1106,32 @@
       "player_b_position": "LCB",
       "joi90_xt": -0.23821875000000003,
       "joi90_vaep": 0.00022498588805319741,
+      "joi90_xg": 0.0,
       "joi90": -0.23821875000000003,
       "minutes": 240.0,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     }
   ],
   "coverage": {
     "matches": 4,
-    "auto_derived_roster": true,
-    "roster_size": 26
+    "auto_derived_roster": false,
+    "roster_size": 26,
+    "unmatched_roster_names": [
+      "Zion Suzuki",
+      "Keisuke Osako",
+      "Tomoki Hayakawa",
+      "Tsuyoshi Watanabe",
+      "Yukinari Sugawara",
+      "Ayumu Seko",
+      "Junnosuke Suzuki",
+      "Kaishu Sano",
+      "Keito Nakamura",
+      "Yuito Suzuki",
+      "Koki Ogawa",
+      "Keisuke Goto",
+      "Kento Shiogai"
+    ]
   }
 }

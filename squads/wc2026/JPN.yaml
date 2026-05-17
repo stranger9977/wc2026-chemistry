@@ -1,7 +1,35 @@
+# Source: Japan final 26-man WC 2026 squad announced May 15 2026 by Hajime Moriyasu
+# Mitoma ruled out (hamstring injury); Nagatomo included (fifth WC appearance)
 nation: Japan
 nation_code: JPN
 flag_iso: jp
-manager: TBD
-formation: 4-3-3
-team_color: '#bd0029'
-players: []
+manager: Hajime Moriyasu
+formation: "4-3-3"
+team_color: "#bd0029"
+players:
+  - { name: Zion Suzuki,          club: Parma,                position: GK  }
+  - { name: Keisuke Osako,        club: Sanfrecce Hiroshima,  position: GK  }
+  - { name: Tomoki Hayakawa,      club: Kashima Antlers,      position: GK  }
+  - { name: Yuto Nagatomo,        club: FC Tokyo,             position: LB  }
+  - { name: Shogo Taniguchi,      club: St. Truiden,          position: CB  }
+  - { name: Ko Itakura,           club: Ajax,                 position: CB  }
+  - { name: Hiroki Ito,           club: Bayern Munich,        position: CB  }
+  - { name: Takehiro Tomiyasu,    club: Ajax,                 position: RB  }
+  - { name: Tsuyoshi Watanabe,    club: Feyenoord,            position: CB  }
+  - { name: Yukinari Sugawara,    club: Werder Bremen,        position: RB  }
+  - { name: Ayumu Seko,           club: Le Havre,             position: LB  }
+  - { name: Junnosuke Suzuki,     club: Copenhagen,           position: CB  }
+  - { name: Wataru Endo,          club: Liverpool,            position: CDM }
+  - { name: Kaishu Sano,          club: Mainz 05,             position: CDM }
+  - { name: Daichi Kamada,        club: Crystal Palace,       position: CAM }
+  - { name: Ao Tanaka,            club: Leeds United,         position: CM  }
+  - { name: Takefusa Kubo,        club: Real Sociedad,        position: RW  }
+  - { name: Junya Ito,            club: Genk,                 position: RW  }
+  - { name: Ritsu Doan,           club: Eintracht Frankfurt,  position: LW  }
+  - { name: Keito Nakamura,       club: Stade de Reims,       position: CM  }
+  - { name: Yuito Suzuki,         club: Freiburg,             position: LW  }
+  - { name: Daizen Maeda,         club: Celtic,               position: ST  }
+  - { name: Ayase Ueda,           club: Feyenoord,            position: ST  }
+  - { name: Koki Ogawa,           club: NEC Nijmegen,         position: ST  }
+  - { name: Keisuke Goto,         club: St. Truiden,          position: ST  }
+  - { name: Kento Shiogai,        club: Wolfsburg,            position: CM  }

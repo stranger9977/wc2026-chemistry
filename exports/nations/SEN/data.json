@@ -3,23 +3,145 @@
     "nation": "Senegal",
     "nation_code": "SEN",
     "flag_iso": "sn",
-    "manager": "TBD",
+    "manager": "Pape Thiaw",
     "formation": "4-3-3",
     "team_color": "#00853f",
-    "players": []
+    "players": [
+      {
+        "name": "Édouard Mendy",
+        "club": "Rennes",
+        "position": "GK",
+        "headshot": null
+      },
+      {
+        "name": "Alfred Gomis",
+        "club": "Rennes",
+        "position": "GK",
+        "headshot": null
+      },
+      {
+        "name": "Seny Dieng",
+        "club": "Middlesbrough",
+        "position": "GK",
+        "headshot": null
+      },
+      {
+        "name": "Bouna Sarr",
+        "club": "Bayern Munich",
+        "position": "RB",
+        "headshot": null
+      },
+      {
+        "name": "Kalidou Koulibaly",
+        "club": "Al-Hilal",
+        "position": "CB",
+        "headshot": null
+      },
+      {
+        "name": "Abdou Diallo",
+        "club": "RB Leipzig",
+        "position": "CB",
+        "headshot": null
+      },
+      {
+        "name": "Moussa Niakhaté",
+        "club": "Nottingham Forest",
+        "position": "CB",
+        "headshot": null
+      },
+      {
+        "name": "Formose Mendy",
+        "club": "Reims",
+        "position": "LB",
+        "headshot": null
+      },
+      {
+        "name": "Ismail Jakobs",
+        "club": "Monaco",
+        "position": "LB",
+        "headshot": null
+      },
+      {
+        "name": "Cheikhou Kouyaté",
+        "club": "Nottingham Forest",
+        "position": "CDM",
+        "headshot": null
+      },
+      {
+        "name": "Pape Matar Sarr",
+        "club": "Tottenham Hotspur",
+        "position": "CM",
+        "headshot": null
+      },
+      {
+        "name": "Nampalys Mendy",
+        "club": "Leicester City",
+        "position": "CDM",
+        "headshot": null
+      },
+      {
+        "name": "Lamine Camara",
+        "club": "Monaco",
+        "position": "CM",
+        "headshot": null
+      },
+      {
+        "name": "Sadio Mané",
+        "club": "Al-Nassr",
+        "position": "LW",
+        "headshot": null
+      },
+      {
+        "name": "Ismaïla Sarr",
+        "club": "Crystal Palace",
+        "position": "RW",
+        "headshot": null
+      },
+      {
+        "name": "Iliman Ndiaye",
+        "club": "Everton",
+        "position": "CAM",
+        "headshot": null
+      },
+      {
+        "name": "Nicolas Jackson",
+        "club": "Chelsea",
+        "position": "ST",
+        "headshot": null
+      },
+      {
+        "name": "Boulaye Dia",
+        "club": "Lazio",
+        "position": "ST",
+        "headshot": null
+      },
+      {
+        "name": "Habib Diallo",
+        "club": "Al-Shabab",
+        "position": "ST",
+        "headshot": null
+      },
+      {
+        "name": "Krepin Diatta",
+        "club": "Monaco",
+        "position": "RW",
+        "headshot": null
+      },
+      {
+        "name": "Fode Ballo-Touré",
+        "club": "AC Milan",
+        "position": "LB",
+        "headshot": null
+      },
+      {
+        "name": "Pathé Ciss",
+        "club": "Rayo Vallecano",
+        "position": "CM",
+        "headshot": null
+      }
+    ]
   },
   "players_by_id": {
-    "50497": {
-      "name": "Nicolas Jackson",
-      "display_name": "Nicolas Jackson",
-      "nickname": null,
-      "sb_position": "Right Wing",
-      "position": null,
-      "x": 85.0,
-      "y": 64.0,
-      "minutes": 46.8,
-      "matches": 4
-    },
     "13314": {
       "name": "Famara Diedhiou",
       "display_name": "Famara Diédhiou",
@@ -29,29 +151,22 @@
       "x": 92.0,
       "y": 34.0,
       "minutes": 122.66666666666667,
-      "matches": 4
+      "matches": 4,
+      "goals": 1,
+      "assists": 0
     },
     "20611": {
       "name": "Boulaye Dia",
       "display_name": "Boulaye Dia",
       "nickname": null,
       "sb_position": "Center Forward",
-      "position": null,
+      "position": "ST",
       "x": 92.0,
       "y": 40.0,
       "minutes": 354.01666666666665,
-      "matches": 4
-    },
-    "50498": {
-      "name": "Pape Matar Sarr",
-      "display_name": "Pape Sarr",
-      "nickname": "Pape Sarr",
-      "sb_position": "Right Center Midfield",
-      "position": null,
-      "x": 55.0,
-      "y": 42.0,
-      "minutes": 118.03333333333333,
-      "matches": 4
+      "matches": 4,
+      "goals": 1,
+      "assists": 0
     },
     "31751": {
       "name": "Pathé Ismaël Ciss",
@@ -62,95 +177,48 @@
       "x": 40.0,
       "y": 50.0,
       "minutes": 175.13333333333333,
-      "matches": 4
-    },
-    "3404": {
-      "name": "Youssouf Sabaly",
-      "display_name": "Youssouf Sabaly",
-      "nickname": null,
-      "sb_position": "Right Back",
-      "position": null,
-      "x": 22.0,
-      "y": 58.0,
-      "minutes": 480.0,
-      "matches": 4
-    },
-    "34893": {
-      "name": "Moustapha Name",
-      "display_name": "Moustapha Name",
-      "nickname": null,
-      "sb_position": null,
-      "position": null,
-      "x": 50.0,
-      "y": 46.0,
-      "minutes": 0.0,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "32915": {
       "name": "Ismail Jakobs",
       "display_name": "Ismail Jakobs",
       "nickname": null,
       "sb_position": "Left Back",
-      "position": null,
+      "position": "LB",
       "x": 22.0,
       "y": 4.0,
       "minutes": 339.43333333333334,
-      "matches": 4
-    },
-    "7379": {
-      "name": "Edouard Mendy",
-      "display_name": "Edouard Mendy",
-      "nickname": null,
-      "sb_position": "Goalkeeper",
-      "position": null,
-      "x": 6.0,
-      "y": 34.0,
-      "minutes": 480.0,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 1
     },
     "20758": {
       "name": "Krépin Diatta",
       "display_name": "Krépin Diatta",
       "nickname": "Krépin Diatta",
       "sb_position": "Right Wing",
-      "position": null,
+      "position": "RW",
       "x": 85.0,
       "y": 58.0,
       "minutes": 181.91666666666669,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "4506": {
       "name": "Nampalys Mendy",
       "display_name": "Nampalys Mendy",
       "nickname": null,
       "sb_position": "Left Defensive Midfield",
-      "position": null,
+      "position": "CDM",
       "x": 40.0,
       "y": 24.0,
       "minutes": 363.1166666666667,
-      "matches": 4
-    },
-    "3675": {
-      "name": "Fodé Ballo Touré",
-      "display_name": "Fodé Touré",
-      "nickname": null,
-      "sb_position": "Left Back",
-      "position": null,
-      "x": 22.0,
-      "y": 10.0,
-      "minutes": 36.099999999999994,
-      "matches": 4
-    },
-    "312414": {
-      "name": "Moussa N''Diaye",
-      "display_name": "Moussa N''Diaye",
-      "nickname": null,
-      "sb_position": null,
-      "position": null,
-      "x": 50.0,
-      "y": 52.0,
-      "minutes": 0.0,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "21026": {
       "name": "Pape Gueye",
@@ -161,40 +229,9 @@
       "x": 40.0,
       "y": 30.0,
       "minutes": 241.81666666666666,
-      "matches": 4
-    },
-    "15970": {
-      "name": "Pape Abou Cissé",
-      "display_name": "Pape Cissé",
-      "nickname": null,
-      "sb_position": "Left Back",
-      "position": null,
-      "x": 22.0,
-      "y": 16.0,
-      "minutes": 188.33333333333331,
-      "matches": 4
-    },
-    "80484": {
-      "name": "Iliman Ndiaye",
-      "display_name": "Iliman Ndiaye",
-      "nickname": null,
-      "sb_position": "Center Attacking Midfield",
-      "position": null,
-      "x": 70.0,
-      "y": 40.0,
-      "minutes": 165.11666666666667,
-      "matches": 4
-    },
-    "3684": {
-      "name": "Cheikhou Kouyaté",
-      "display_name": "Cheikhou Kouyaté",
-      "nickname": null,
-      "sb_position": "Right Defensive Midfield",
-      "position": null,
-      "x": 40.0,
-      "y": 44.0,
-      "minutes": 73.18333333333334,
-      "matches": 3
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "8870": {
       "name": "Alfred Benjamin Gomis",
@@ -205,62 +242,35 @@
       "x": 50.0,
       "y": 34.0,
       "minutes": 0.0,
-      "matches": 4
-    },
-    "8553": {
-      "name": "Abdou Diallo",
-      "display_name": "Abdou Diallo",
-      "nickname": null,
-      "sb_position": "Left Center Back",
-      "position": null,
-      "x": 18.0,
-      "y": 24.0,
-      "minutes": 421.41666666666663,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "5675": {
       "name": "Kalidou Koulibaly",
       "display_name": "Kalidou Koulibaly",
       "nickname": null,
       "sb_position": "Right Center Back",
-      "position": null,
+      "position": "CB",
       "x": 18.0,
       "y": 44.0,
       "minutes": 480.0,
-      "matches": 4
+      "matches": 4,
+      "goals": 1,
+      "assists": 0
     },
     "39595": {
       "name": "Formose Mendy",
       "display_name": "Formose Mendy",
       "nickname": null,
       "sb_position": null,
-      "position": null,
+      "position": "LB",
       "x": 50.0,
       "y": 22.0,
       "minutes": 0.0,
-      "matches": 4
-    },
-    "10603": {
-      "name": "Mamadou Loum N''Diaye",
-      "display_name": "Mamadou N'Diaye",
-      "nickname": "Mamadou N'Diaye",
-      "sb_position": null,
-      "position": null,
-      "x": 50.0,
-      "y": 40.0,
-      "minutes": 0.0,
-      "matches": 4
-    },
-    "3436": {
-      "name": "Idrissa Gana Gueye",
-      "display_name": "Idrissa Gueye",
-      "nickname": "Idrissa Gueye",
-      "sb_position": "Center Attacking Midfield",
-      "position": null,
-      "x": 70.0,
-      "y": 34.0,
-      "minutes": 360.0,
-      "matches": 3
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "17456": {
       "name": "Timothy Dieng",
@@ -271,7 +281,9 @@
       "x": 50.0,
       "y": 28.0,
       "minutes": 0.0,
-      "matches": 4
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
     },
     "88123": {
       "name": "Cheikh Ahmadou Bamba Mbacke Dieng",
@@ -282,18 +294,191 @@
       "x": 92.0,
       "y": 28.0,
       "minutes": 218.96666666666667,
-      "matches": 4
+      "matches": 4,
+      "goals": 1,
+      "assists": 0
+    },
+    "50497": {
+      "name": "Nicolas Jackson",
+      "display_name": "Nicolas Jackson",
+      "nickname": null,
+      "sb_position": "Right Wing",
+      "position": "ST",
+      "x": 85.0,
+      "y": 64.0,
+      "minutes": 46.8,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "50498": {
+      "name": "Pape Matar Sarr",
+      "display_name": "Pape Sarr",
+      "nickname": "Pape Sarr",
+      "sb_position": "Right Center Midfield",
+      "position": "CM",
+      "x": 55.0,
+      "y": 42.0,
+      "minutes": 118.03333333333333,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "3404": {
+      "name": "Youssouf Sabaly",
+      "display_name": "Youssouf Sabaly",
+      "nickname": null,
+      "sb_position": "Right Back",
+      "position": null,
+      "x": 22.0,
+      "y": 58.0,
+      "minutes": 480.0,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "34893": {
+      "name": "Moustapha Name",
+      "display_name": "Moustapha Name",
+      "nickname": null,
+      "sb_position": null,
+      "position": null,
+      "x": 50.0,
+      "y": 46.0,
+      "minutes": 0.0,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "7379": {
+      "name": "Edouard Mendy",
+      "display_name": "Édouard Mendy",
+      "nickname": null,
+      "sb_position": "Goalkeeper",
+      "position": "GK",
+      "x": 6.0,
+      "y": 34.0,
+      "minutes": 480.0,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "3675": {
+      "name": "Fodé Ballo Touré",
+      "display_name": "Fodé Touré",
+      "nickname": null,
+      "sb_position": "Left Back",
+      "position": null,
+      "x": 22.0,
+      "y": 10.0,
+      "minutes": 36.099999999999994,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "312414": {
+      "name": "Moussa N''Diaye",
+      "display_name": "Moussa N''Diaye",
+      "nickname": null,
+      "sb_position": null,
+      "position": null,
+      "x": 50.0,
+      "y": 52.0,
+      "minutes": 0.0,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "15970": {
+      "name": "Pape Abou Cissé",
+      "display_name": "Pape Cissé",
+      "nickname": null,
+      "sb_position": "Left Back",
+      "position": null,
+      "x": 22.0,
+      "y": 16.0,
+      "minutes": 188.33333333333331,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "3684": {
+      "name": "Cheikhou Kouyaté",
+      "display_name": "Cheikhou Kouyaté",
+      "nickname": null,
+      "sb_position": "Right Defensive Midfield",
+      "position": "CDM",
+      "x": 40.0,
+      "y": 44.0,
+      "minutes": 73.18333333333334,
+      "matches": 3,
+      "goals": 0,
+      "assists": 0
+    },
+    "80484": {
+      "name": "Iliman Ndiaye",
+      "display_name": "Iliman Ndiaye",
+      "nickname": null,
+      "sb_position": "Center Attacking Midfield",
+      "position": "CAM",
+      "x": 70.0,
+      "y": 40.0,
+      "minutes": 165.11666666666667,
+      "matches": 4,
+      "goals": 0,
+      "assists": 1
+    },
+    "8553": {
+      "name": "Abdou Diallo",
+      "display_name": "Abdou Diallo",
+      "nickname": null,
+      "sb_position": "Left Center Back",
+      "position": "CB",
+      "x": 18.0,
+      "y": 24.0,
+      "minutes": 421.41666666666663,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "10603": {
+      "name": "Mamadou Loum N''Diaye",
+      "display_name": "Mamadou N'Diaye",
+      "nickname": "Mamadou N'Diaye",
+      "sb_position": null,
+      "position": null,
+      "x": 50.0,
+      "y": 40.0,
+      "minutes": 0.0,
+      "matches": 4,
+      "goals": 0,
+      "assists": 0
+    },
+    "3436": {
+      "name": "Idrissa Gana Gueye",
+      "display_name": "Idrissa Gueye",
+      "nickname": "Idrissa Gueye",
+      "sb_position": "Center Attacking Midfield",
+      "position": null,
+      "x": 70.0,
+      "y": 34.0,
+      "minutes": 360.0,
+      "matches": 3,
+      "goals": 0,
+      "assists": 0
     },
     "2941": {
       "name": "Ismaïla Sarr",
       "display_name": "Ismaïla Sarr",
       "nickname": null,
       "sb_position": "Left Wing",
-      "position": null,
+      "position": "RW",
       "x": 85.0,
       "y": 10.0,
       "minutes": 433.95,
-      "matches": 4
+      "matches": 4,
+      "goals": 1,
+      "assists": 0
     }
   },
   "pitch_player_ids": [
@@ -321,9 +506,12 @@
       "player_b_position": "RW",
       "joi90_xt": 0.8322010994044893,
       "joi90_vaep": 0.01824802633011658,
+      "joi90_xg": 0.3416360030210869,
       "joi90": 0.8322010994044893,
       "minutes": 181.91666666666669,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 4506,
@@ -336,24 +524,30 @@
       "player_b_position": "LCB",
       "joi90_xt": 0.5068486744501063,
       "joi90_vaep": -0.01331048721082504,
+      "joi90_xg": 0.12836975630745998,
       "joi90": 0.5068486744501063,
       "minutes": 258.3833333333333,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 7379,
       "player_b_id": 8553,
       "player_a_name": "Edouard Mendy",
       "player_b_name": "Abdou Diallo",
-      "player_a_display": "Edouard Mendy",
+      "player_a_display": "Édouard Mendy",
       "player_b_display": "Abdou Diallo",
       "player_a_position": "GK",
       "player_b_position": "LCB",
       "joi90_xt": 0.5021455408344869,
       "joi90_vaep": 0.0017313244063578458,
+      "joi90_xg": 0.06548068899586564,
       "joi90": 0.5021455408344869,
       "minutes": 421.41666666666663,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 8553,
@@ -366,9 +560,12 @@
       "player_b_position": "LB",
       "joi90_xt": 0.3673224141000535,
       "joi90_vaep": 0.006502239710558653,
+      "joi90_xg": 0.07957023647126585,
       "joi90": 0.3673224141000535,
       "minutes": 280.85,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 2941,
@@ -381,9 +578,12 @@
       "player_b_position": "CAM",
       "joi90_xt": 0.3341137123745819,
       "joi90_vaep": 0.012718685944058209,
+      "joi90_xg": 0.3091527649168246,
       "joi90": 0.3341137123745819,
       "minutes": 313.95,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 4506,
@@ -391,14 +591,17 @@
       "player_a_name": "Nampalys Mendy",
       "player_b_name": "Edouard Mendy",
       "player_a_display": "Nampalys Mendy",
-      "player_b_display": "Edouard Mendy",
+      "player_b_display": "Édouard Mendy",
       "player_a_position": "LDM",
       "player_b_position": "GK",
       "joi90_xt": 0.3110570523706797,
       "joi90_vaep": 0.0006331613780503812,
+      "joi90_xg": 0.0,
       "joi90": 0.3110570523706797,
       "minutes": 363.1166666666667,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5675,
@@ -406,14 +609,17 @@
       "player_a_name": "Kalidou Koulibaly",
       "player_b_name": "Edouard Mendy",
       "player_a_display": "Kalidou Koulibaly",
-      "player_b_display": "Edouard Mendy",
+      "player_b_display": "Édouard Mendy",
       "player_a_position": "RCB",
       "player_b_position": "GK",
       "joi90_xt": 0.30107812500000003,
       "joi90_vaep": 0.021383252071245806,
+      "joi90_xg": 0.06755899246751823,
       "joi90": 0.30107812500000003,
       "minutes": 480.0,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3436,
@@ -426,9 +632,12 @@
       "player_b_position": "LB",
       "joi90_xt": 0.2717258022436733,
       "joi90_vaep": -0.002231028341584412,
+      "joi90_xg": 0.16661619520351675,
       "joi90": 0.2717258022436733,
       "minutes": 255.53333333333333,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 5675,
@@ -441,24 +650,30 @@
       "player_b_position": "LDM",
       "joi90_xt": 0.26973947205183,
       "joi90_vaep": 0.0072666924674276,
+      "joi90_xg": 0.0,
       "joi90": 0.26973947205183,
       "minutes": 241.81666666666666,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 7379,
       "player_b_id": 21026,
       "player_a_name": "Edouard Mendy",
       "player_b_name": "Pape Gueye",
-      "player_a_display": "Edouard Mendy",
+      "player_a_display": "Édouard Mendy",
       "player_b_display": "Pape Gueye",
       "player_a_position": "GK",
       "player_b_position": "LDM",
       "joi90_xt": 0.2676924667447791,
       "joi90_vaep": 0.0022508419238117436,
+      "joi90_xg": 0.06548068899586564,
       "joi90": 0.2676924667447791,
       "minutes": 241.81666666666666,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 4506,
@@ -471,9 +686,12 @@
       "player_b_position": "LB",
       "joi90_xt": 0.26741606526513967,
       "joi90_vaep": 0.01452849454388629,
+      "joi90_xg": 0.14801888742388108,
       "joi90": 0.26741606526513967,
       "minutes": 265.58333333333337,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 3404,
@@ -481,14 +699,17 @@
       "player_a_name": "Youssouf Sabaly",
       "player_b_name": "Edouard Mendy",
       "player_a_display": "Youssouf Sabaly",
-      "player_b_display": "Edouard Mendy",
+      "player_b_display": "Édouard Mendy",
       "player_a_position": "RB",
       "player_b_position": "GK",
       "joi90_xt": 0.23669531250000006,
       "joi90_vaep": -0.0022994083974481327,
+      "joi90_xg": 0.06755899246751823,
       "joi90": 0.23669531250000006,
       "minutes": 480.0,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3436,
@@ -501,9 +722,12 @@
       "player_b_position": "RCB",
       "joi90_xt": 0.23665624999999993,
       "joi90_vaep": 0.18316989372760872,
+      "joi90_xg": 0.1684662085467355,
       "joi90": 0.23665624999999993,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3436,
@@ -516,9 +740,12 @@
       "player_b_position": "LDM",
       "joi90_xt": 0.21836738191540417,
       "joi90_vaep": 0.009832057287200699,
+      "joi90_xg": 0.2063170253521029,
       "joi90": 0.21836738191540417,
       "minutes": 243.11666666666667,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 4506,
@@ -531,9 +758,12 @@
       "player_b_position": "RCB",
       "joi90_xt": 0.21718226465323362,
       "joi90_vaep": 0.014432309810129036,
+      "joi90_xg": 0.24431853720092483,
       "joi90": 0.21718226465323362,
       "minutes": 363.1166666666667,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3404,
@@ -546,9 +776,12 @@
       "player_b_position": "CAM",
       "joi90_xt": 0.12325000000000011,
       "joi90_vaep": 0.013224665128291235,
+      "joi90_xg": 0.1846962627785319,
       "joi90": 0.12325000000000011,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 2941,
@@ -561,9 +794,12 @@
       "player_b_position": "LDM",
       "joi90_xt": 0.09928492085531786,
       "joi90_vaep": 0.005316607445187223,
+      "joi90_xg": 0.13165801644723113,
       "joi90": 0.09928492085531786,
       "minutes": 360.1,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3404,
@@ -576,9 +812,12 @@
       "player_b_position": "RCB",
       "joi90_xt": 0.028499999999999984,
       "joi90_vaep": 0.001787195523434093,
+      "joi90_xg": 0.20218723491024973,
       "joi90": 0.028499999999999984,
       "minutes": 480.0,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5675,
@@ -591,9 +830,12 @@
       "player_b_position": "LCB",
       "joi90_xt": 0.022050622898951888,
       "joi90_vaep": 0.011318472126748915,
+      "joi90_xg": 0.0,
       "joi90": 0.022050622898951888,
       "minutes": 421.41666666666663,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3404,
@@ -606,9 +848,12 @@
       "player_b_position": "LDM",
       "joi90_xt": 0.013198237481066697,
       "joi90_vaep": 0.02833736436465292,
+      "joi90_xg": 0.24531911585364288,
       "joi90": 0.013198237481066697,
       "minutes": 363.1166666666667,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5675,
@@ -621,9 +866,12 @@
       "player_b_position": "CF",
       "joi90_xt": -0.024630236471525964,
       "joi90_vaep": -0.006844902763473281,
+      "joi90_xg": 0.23946936766428525,
       "joi90": -0.024630236471525964,
       "minutes": 188.18333333333334,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 2,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3404,
@@ -636,9 +884,12 @@
       "player_b_position": "LDM",
       "joi90_xt": -0.04475497966779231,
       "joi90_vaep": 0.009892764786715432,
+      "joi90_xg": 0.2221223770467034,
       "joi90": -0.04475497966779231,
       "minutes": 241.81666666666666,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 2941,
@@ -651,9 +902,12 @@
       "player_b_position": "RCB",
       "joi90_xt": -0.0476235741444867,
       "joi90_vaep": 0.007118441664801786,
+      "joi90_xg": 0.16767353537447635,
       "joi90": -0.0476235741444867,
       "minutes": 433.95,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 2,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3404,
@@ -666,24 +920,30 @@
       "player_b_position": "LCB",
       "joi90_xt": -0.06721969547162354,
       "joi90_vaep": 0.013934032753288021,
+      "joi90_xg": 0.13073652018220963,
       "joi90": -0.06721969547162354,
       "minutes": 421.41666666666663,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 7379,
       "player_b_id": 32915,
       "player_a_name": "Edouard Mendy",
       "player_b_name": "Ismail Jakobs",
-      "player_a_display": "Edouard Mendy",
+      "player_a_display": "Édouard Mendy",
       "player_b_display": "Ismail Jakobs",
       "player_a_position": "GK",
       "player_b_position": "LB",
       "joi90_xt": -0.07062043795620448,
       "joi90_vaep": -0.026798596701742103,
+      "joi90_xg": 0.0,
       "joi90": -0.07062043795620448,
       "minutes": 280.85,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 3436,
@@ -696,9 +956,12 @@
       "player_b_position": "LCB",
       "joi90_xt": -0.07643903787669337,
       "joi90_vaep": 0.01719743833414768,
+      "joi90_xg": 0.1350127146140644,
       "joi90": -0.07643903787669337,
       "minutes": 301.41666666666663,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 2941,
@@ -711,9 +974,12 @@
       "player_b_position": "CF",
       "joi90_xt": -0.07799139517263778,
       "joi90_vaep": -0.03983406437061901,
+      "joi90_xg": 0.20827379517528358,
       "joi90": -0.07799139517263778,
       "minutes": 307.9666666666667,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 2,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3436,
@@ -726,9 +992,12 @@
       "player_b_position": "CF",
       "joi90_xt": -0.09404825026511128,
       "joi90_vaep": -0.010193585586244752,
+      "joi90_xg": 0.12582546285863383,
       "joi90": -0.09404825026511128,
       "minutes": 282.9,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3404,
@@ -741,9 +1010,12 @@
       "player_b_position": "LB",
       "joi90_xt": -0.11150038080731164,
       "joi90_vaep": -0.00087534367085221,
+      "joi90_xg": 0.14938316729835596,
       "joi90": -0.11150038080731164,
       "minutes": 196.95,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 1
     },
     {
       "player_a_id": 8553,
@@ -756,9 +1028,12 @@
       "player_b_position": "CF",
       "joi90_xt": -0.16273218142548607,
       "joi90_vaep": 0.03905856270306858,
+      "joi90_xg": 0.18335255589718044,
       "joi90": -0.16273218142548607,
       "minutes": 347.25,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5675,
@@ -771,9 +1046,12 @@
       "player_b_position": "LB",
       "joi90_xt": -0.16492192870470387,
       "joi90_vaep": -0.024484586869809356,
+      "joi90_xg": 0.1996727203811364,
       "joi90": -0.16492192870470387,
       "minutes": 339.43333333333334,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 1
     },
     {
       "player_a_id": 3404,
@@ -786,9 +1064,12 @@
       "player_b_position": "CF",
       "joi90_xt": -0.19207317073170727,
       "joi90_vaep": -0.012776658578377321,
+      "joi90_xg": 0.2911727066012591,
       "joi90": -0.19207317073170727,
       "minutes": 282.9,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 8553,
@@ -801,9 +1082,12 @@
       "player_b_position": "LDM",
       "joi90_xt": -0.1968461538461538,
       "joi90_vaep": 0.0046657484568780865,
+      "joi90_xg": 0.12349771228715377,
       "joi90": -0.1968461538461538,
       "minutes": 195.0,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 0,
+      "assists_sum": 0
     },
     {
       "player_a_id": 2941,
@@ -811,14 +1095,17 @@
       "player_a_name": "Ismaïla Sarr",
       "player_b_name": "Edouard Mendy",
       "player_a_display": "Ismaïla Sarr",
-      "player_b_display": "Edouard Mendy",
+      "player_b_display": "Édouard Mendy",
       "player_a_position": "LW",
       "player_b_position": "GK",
       "joi90_xt": -0.22041133771171798,
       "joi90_vaep": 0.0015630899753706125,
+      "joi90_xg": 0.06548068899586564,
       "joi90": -0.22041133771171798,
       "minutes": 433.95,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 2941,
@@ -831,9 +1118,12 @@
       "player_b_position": "RB",
       "joi90_xt": -0.22886277220877985,
       "joi90_vaep": 0.01542118092219266,
+      "joi90_xg": 0.11874397613147573,
       "joi90": -0.22886277220877985,
       "minutes": 433.95,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 3404,
@@ -846,9 +1136,12 @@
       "player_b_position": "CF",
       "joi90_xt": -0.25303508905465066,
       "joi90_vaep": 0.010631200382341242,
+      "joi90_xg": 0.10998423658126334,
       "joi90": -0.25303508905465066,
       "minutes": 218.96666666666667,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 2941,
@@ -861,9 +1154,12 @@
       "player_b_position": "LCB",
       "joi90_xt": -0.4063063312137132,
       "joi90_vaep": -0.01961283614456472,
+      "joi90_xg": 0.10979393175472732,
       "joi90": -0.4063063312137132,
       "minutes": 301.41666666666663,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 4506,
@@ -876,9 +1172,12 @@
       "player_b_position": "CF",
       "joi90_xt": -0.4422037531627776,
       "joi90_vaep": 0.010880488602443122,
+      "joi90_xg": 0.24181305906320658,
       "joi90": -0.4422037531627776,
       "minutes": 237.13333333333333,
-      "matches": 4
+      "matches": 4,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 5675,
@@ -891,9 +1190,12 @@
       "player_b_position": "RW",
       "joi90_xt": -0.5544090700870362,
       "joi90_vaep": -0.02052544890002757,
+      "joi90_xg": 0.22770526250333564,
       "joi90": -0.5544090700870362,
       "minutes": 181.91666666666669,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 2941,
@@ -906,9 +1208,12 @@
       "player_b_position": "LDM",
       "joi90_xt": -0.5907115384615386,
       "joi90_vaep": 0.034589856829440505,
+      "joi90_xg": 0.17549631226084506,
       "joi90": -0.5907115384615386,
       "minutes": 195.0,
-      "matches": 2
+      "matches": 2,
+      "goals_sum": 1,
+      "assists_sum": 0
     },
     {
       "player_a_id": 2941,
@@ -921,14 +1226,28 @@
       "player_b_position": "LB",
       "joi90_xt": -0.663727855736872,
       "joi90_vaep": 0.001395806140492352,
+      "joi90_xg": 0.16979808543540542,
       "joi90": -0.663727855736872,
       "minutes": 262.48333333333335,
-      "matches": 3
+      "matches": 3,
+      "goals_sum": 1,
+      "assists_sum": 1
     }
   ],
   "coverage": {
     "matches": 4,
-    "auto_derived_roster": true,
-    "roster_size": 26
+    "auto_derived_roster": false,
+    "roster_size": 26,
+    "unmatched_roster_names": [
+      "Alfred Gomis",
+      "Seny Dieng",
+      "Bouna Sarr",
+      "Moussa Niakhaté",
+      "Lamine Camara",
+      "Sadio Mané",
+      "Habib Diallo",
+      "Fode Ballo-Touré",
+      "Pathé Ciss"
+    ]
   }
 }

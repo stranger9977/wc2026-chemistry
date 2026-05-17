@@ -1,7 +1,30 @@
+# Source: Colombia 55-man preliminary squad announced May 14 2026 by Néstor Lorenzo; final squad June 1
 nation: Colombia
 nation_code: COL
 flag_iso: co
-manager: TBD
-formation: 4-3-3
-team_color: '#fcd116'
-players: []
+manager: Néstor Lorenzo
+formation: "4-2-3-1"
+team_color: "#fcd116"
+players:
+  - { name: Camilo Vargas,        club: Atlas,                position: GK  }
+  - { name: David Ospina,         club: Al-Qadsiah,           position: GK  }
+  - { name: Santiago Arias,       club: Atlético Mineiro,     position: RB  }
+  - { name: Daniel Muñoz,         club: Crystal Palace,       position: RB  }
+  - { name: Yerry Mina,           club: Fiorentina,           position: CB  }
+  - { name: Davinson Sánchez,     club: Stade Rennais,        position: CB  }
+  - { name: Carlos Cuesta,        club: Leicester City,       position: CB  }
+  - { name: Johan Mojica,         club: Girona,               position: LB  }
+  - { name: Frank Fabra,          club: Boca Juniors,         position: LB  }
+  - { name: Wilmar Barrios,       club: Zenit Saint Petersburg,position: CDM}
+  - { name: Mateus Uribe,         club: Porto,                position: CDM }
+  - { name: Jefferson Lerma,      club: Crystal Palace,       position: CM  }
+  - { name: Juan Cuadrado,        club: Independiente,        position: RW  }
+  - { name: James Rodríguez,      club: Rayo Vallecano,       position: CAM }
+  - { name: Luis Díaz,            club: Liverpool,            position: LW  }
+  - { name: Jhon Córdoba,         club: Krasnodar,            position: ST  }
+  - { name: Duván Zapata,         club: Torino,               position: ST  }
+  - { name: Rafael Santos Borré,  club: São Paulo,            position: ST  }
+  - { name: Jhon Jáder Durán,     club: Aston Villa,          position: ST  }
+  - { name: Cucho Hernández,      club: Columbus Crew,        position: ST  }
+  - { name: Óscar Cortés,         club: Leeds United,         position: RW  }
+  - { name: Lerma Jr.,            club: Bournemouth,          position: CM  }

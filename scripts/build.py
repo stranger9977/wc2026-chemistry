@@ -121,6 +121,12 @@ def run(use_heuristic_vaep: bool, fetch: bool = True, metric: str = "both") -> N
         log.warning("No SPADL data found — skipping xG-chain computation")
         joi90_xg = None
 
+    # Compute per-player goals/assists from SPADL actions
+    from chemistry import stats as stats_mod
+    ga = stats_mod.goals_assists_for_all_matches(DATA / "spadl")
+    ga.to_parquet(OUT / "goals_assists.parquet", index=False)
+    log.info("Wrote goals/assists for %d players", len(ga))
+
     log.info("Stitching squads + chemistry pairs into chemistry.json")
     path = export(joi90_vaep=joi90_vaep, joi90_xg=joi90_xg)
     log.info("Wrote %s", path)

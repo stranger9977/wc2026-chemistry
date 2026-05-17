@@ -1,7 +1,25 @@
+# Source: Saudi Arabia squad — to be announced; using recent AFC call-up from Hervé Renard / Georgios Donis
 nation: Saudi Arabia
 nation_code: KSA
 flag_iso: sa
-manager: TBD
-formation: 4-3-3
-team_color: '#006c35'
-players: []
+manager: Hervé Renard
+formation: "4-2-3-1"
+team_color: "#006c35"
+players:
+  - { name: Mohammed Al-Owais,    club: Al-Hilal,             position: GK  }
+  - { name: Fawaz Al-Qarni,       club: Al-Ittihad,           position: GK  }
+  - { name: Sultan Al-Ghannam,    club: Al-Nassr,             position: RB  }
+  - { name: Hassan Al-Tambakti,   club: Al-Hilal,             position: CB  }
+  - { name: Abdulelah Al-Amri,    club: Al-Hilal,             position: CB  }
+  - { name: Mohammed Al-Burayk,   club: Al-Ittihad,           position: LB  }
+  - { name: Ali Al-Boleahi,       club: Al-Qadsiah,           position: LB  }
+  - { name: Sami Al-Najei,        club: Al-Ittihad,           position: CDM }
+  - { name: Mohamed Kanno,        club: Al-Shabab,            position: CDM }
+  - { name: Salem Al-Dawsari,     club: Al-Hilal,             position: LW  }
+  - { name: Abdullah Al-Hamdan,   club: Al-Qadsiah,           position: ST  }
+  - { name: Firas Al-Buraikan,    club: Al-Fateh,             position: ST  }
+  - { name: Saleh Al-Shehri,      club: Al-Hilal,             position: ST  }
+  - { name: Nawaf Boushal,        club: Al-Hilal,             position: RW  }
+  - { name: Abdullah Radif,       club: Al-Shabab,            position: CM  }
+  - { name: Ali Al-Hassan,        club: Al-Hilal,             position: CM  }
+  - { name: Ali Lajami,           club: Al-Ettifaq,           position: CB  }

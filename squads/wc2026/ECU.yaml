@@ -1,7 +1,27 @@
+# Source: Ecuador squad — predicted based on recent CONMEBOL qualifying form; squad not yet announced
 nation: Ecuador
 nation_code: ECU
 flag_iso: ec
-manager: TBD
-formation: 4-3-3
-team_color: '#ffce00'
-players: []
+manager: Sebastián Beccacece
+formation: "4-3-3"
+team_color: "#ffce00"
+players:
+  - { name: Hernán Galíndez,      club: Huracán,              position: GK  }
+  - { name: Alexander Domínguez,  club: Vélez Sársfield,      position: GK  }
+  - { name: Angelo Preciado,      club: Genk,                 position: RB  }
+  - { name: Félix Torres,         club: Santos Laguna,        position: CB  }
+  - { name: Piero Hincapié,       club: Bayer Leverkusen,     position: CB  }
+  - { name: Pervis Estupiñán,     club: Brighton,             position: LB  }
+  - { name: Byron Castillo,       club: Basel,                position: RB  }
+  - { name: Moisés Caicedo,       club: Chelsea,              position: CDM }
+  - { name: Carlos Gruezo,        club: Augsburg,             position: CDM }
+  - { name: Jeremy Sarmiento,     club: Brighton,             position: LW  }
+  - { name: Gonzalo Plata,        club: Al-Qadsiah,           position: RW  }
+  - { name: Kevin Rodríguez,      club: Ipswich Town,         position: CM  }
+  - { name: Kendry Páez,          club: Independiente del Valle, position: CAM }
+  - { name: John Yeboah,          club: Hannover 96,          position: RW  }
+  - { name: Enner Valencia,       club: Fenerbahçe,           position: ST  }
+  - { name: Jordy Caicedo,        club: Al-Wahda,             position: ST  }
+  - { name: Leonardo Campana,     club: Inter Miami,          position: ST  }
+  - { name: Djorkaeff Reasco,     club: Nottingham Forest,    position: LW  }
+  - { name: Willian Pacho,        club: Paris Saint-Germain,  position: CB  }

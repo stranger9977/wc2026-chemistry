@@ -1,7 +1,30 @@
+# Source: Uruguay squad — predicted based on Copa América 2024 + recent form; squad not yet announced
 nation: Uruguay
 nation_code: URU
 flag_iso: uy
-manager: TBD
-formation: 4-3-3
-team_color: '#5db8de'
-players: []
+manager: Marcelo Bielsa
+formation: "4-3-3"
+team_color: "#5db8de"
+players:
+  - { name: Sergio Rochet,        club: Nacional,             position: GK  }
+  - { name: Sebastián Sosa,       club: Independiente,        position: GK  }
+  - { name: Nahitan Nández,       club: Cagliari,             position: RB  }
+  - { name: Ronald Araújo,        club: Barcelona,            position: CB  }
+  - { name: José María Giménez,   club: Atlético Madrid,      position: CB  }
+  - { name: Mathías Olivera,      club: Napoli,               position: LB  }
+  - { name: Sebastián Cáceres,    club: América,              position: CB  }
+  - { name: Facundo González,     club: Paris Saint-Germain,  position: CB  }
+  - { name: Federico Valverde,    club: Real Madrid,          position: CM  }
+  - { name: Nicolás De la Cruz,   club: Flamengo,             position: CM  }
+  - { name: Rodrigo Bentancur,    club: Tottenham Hotspur,    position: CM  }
+  - { name: Manuel Ugarte,        club: Manchester United,    position: CDM }
+  - { name: Mauro Arambarri,      club: Getafe,               position: CM  }
+  - { name: Darwin Núñez,         club: Liverpool,            position: ST  }
+  - { name: Luis Suárez,          club: Nacional,             position: ST  }
+  - { name: Maxi Araújo,          club: Toulouse,             position: LW  }
+  - { name: Facundo Pellistri,    club: Panathinaikos,        position: RW  }
+  - { name: Agustín Canobbio,     club: Athletic Club,        position: LW  }
+  - { name: Matías Vecino,        club: Lazio,                position: CM  }
+  - { name: Giorgian De Arrascaeta,club: Flamengo,            position: CAM }
+  - { name: Luciano Rodríguez,    club: Nacional,             position: ST  }
+  - { name: Brian Rodríguez,      club: América,              position: RW  }

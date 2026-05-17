@@ -1,7 +1,30 @@
+# Source: Croatia squad — predicted based on recent UEFA Nations League form (squad not yet announced as of May 17)
 nation: Croatia
 nation_code: CRO
 flag_iso: hr
-manager: TBD
-formation: 4-3-3
-team_color: '#171796'
-players: []
+manager: Zlatko Dalić
+formation: "4-3-3"
+team_color: "#171796"
+players:
+  - { name: Dominik Livaković,    club: Fenerbahçe,           position: GK  }
+  - { name: Ivica Ivušić,         club: Atlético Madrid,      position: GK  }
+  - { name: Josip Šutalo,         club: Ajax,                 position: CB  }
+  - { name: Joško Gvardiol,       club: Manchester City,      position: CB  }
+  - { name: Dario Špikić,         club: Dinamo Zagreb,        position: CB  }
+  - { name: Sime Vrsaljko,        club: Atletico Madrid,      position: RB  }
+  - { name: Borna Sosa,           club: Stuttgart,            position: LB  }
+  - { name: Luka Modrić,          club: Real Madrid,          position: CM  }
+  - { name: Marcelo Brozović,     club: Al-Nassr,             position: CDM }
+  - { name: Mateo Kovačić,        club: Manchester City,      position: CM  }
+  - { name: Lovro Majer,          club: Real Sociedad,        position: CAM }
+  - { name: Nikola Vlašić,        club: Torino,               position: CAM }
+  - { name: Mario Pašalić,        club: Atalanta,             position: CM  }
+  - { name: Ivan Perišić,         club: Hajduk Split,         position: LW  }
+  - { name: Ante Budimir,         club: Osasuna,              position: ST  }
+  - { name: Bruno Petković,       club: Dinamo Zagreb,        position: ST  }
+  - { name: Andrej Kramarić,      club: Hoffenheim,           position: ST  }
+  - { name: Ivan Zucko,           club: Dinamo Zagreb,        position: RW  }
+  - { name: Petar Musa,           club: Benfica,              position: ST  }
+  - { name: Domagoj Vida,         club: Besiktas,             position: CB  }
+  - { name: Borna Barisic,        club: Rangers,              position: LB  }
+  - { name: Bartol Franjic,       club: Hajduk Split,         position: RB  }

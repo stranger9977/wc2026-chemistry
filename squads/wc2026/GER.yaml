@@ -1,7 +1,35 @@
+# Source: Germany squad to be announced May 21 2026 by Julian Nagelsmann
+# Using predicted squad based on Euro 2024 + recent call-ups
 nation: Germany
 nation_code: GER
 flag_iso: de
-manager: TBD
-formation: 4-3-3
-team_color: '#000000'
-players: []
+manager: Julian Nagelsmann
+formation: "4-2-3-1"
+team_color: "#000000"
+players:
+  - { name: Manuel Neuer,         club: Bayern Munich,        position: GK  }
+  - { name: Marc-André ter Stegen,club: Barcelona,            position: GK  }
+  - { name: Oliver Baumann,       club: Hoffenheim,           position: GK  }
+  - { name: Joshua Kimmich,       club: Bayern Munich,        position: RB  }
+  - { name: Benjamin Pavard,      club: Inter Milan,          position: CB  }
+  - { name: Antonio Rüdiger,      club: Real Madrid,          position: CB  }
+  - { name: Jonathan Tah,         club: Bayern Munich,        position: CB  }
+  - { name: Nico Schlotterbeck,   club: Borussia Dortmund,    position: CB  }
+  - { name: Maximilian Mittelstädt,club: Stuttgart,           position: LB  }
+  - { name: David Raum,           club: RB Leipzig,           position: LB  }
+  - { name: Robert Andrich,       club: Bayer Leverkusen,     position: CDM }
+  - { name: Granit Xhaka,         club: Bayer Leverkusen,     position: CDM }
+  - { name: Florian Wirtz,        club: Bayern Munich,        position: CAM }
+  - { name: Jamal Musiala,        club: Bayern Munich,        position: CAM }
+  - { name: Ilkay Gündogan,       club: Barcelona,            position: CM  }
+  - { name: Pascal Groß,          club: Borussia Dortmund,    position: CM  }
+  - { name: Leroy Sané,           club: Bayern Munich,        position: RW  }
+  - { name: Serge Gnabry,         club: Bayern Munich,        position: RW  }
+  - { name: Thomas Müller,        club: Bayern Munich,        position: RW  }
+  - { name: Kai Havertz,          club: Arsenal,              position: ST  }
+  - { name: Niclas Füllkrug,      club: West Ham United,      position: ST  }
+  - { name: Tim Kleindienst,      club: Borussia Mönchengladbach, position: ST }
+  - { name: Chris Führich,        club: Stuttgart,            position: LW  }
+  - { name: Deniz Undav,          club: Stuttgart,            position: ST  }
+  - { name: Robin Koch,           club: Eintracht Frankfurt,  position: CB  }
+  - { name: Aleksandar Pavlović,  club: Bayern Munich,        position: CM  }

@@ -1,7 +1,34 @@
+# Source: South Korea final 26-man WC 2026 squad announced May 16 2026 by Hong Myung-bo
 nation: South Korea
 nation_code: KOR
 flag_iso: kr
-manager: TBD
-formation: 4-3-3
-team_color: '#cd2e3a'
-players: []
+manager: Hong Myung-bo
+formation: "4-3-3"
+team_color: "#cd2e3a"
+players:
+  - { name: Jo Hyeon-woo,         club: Ulsan HD,             position: GK  }
+  - { name: Kim Seung-gyu,        club: Vissel Kobe,          position: GK  }
+  - { name: Song Bum-keun,        club: Jeonbuk Motors,       position: GK  }
+  - { name: Kim Min-jae,          club: Bayern Munich,        position: CB  }
+  - { name: Kim Tae-hyeon,        club: Stuttgart,            position: CB  }
+  - { name: Lee Han-beom,         club: Ulsan HD,             position: CB  }
+  - { name: Park Jin-seob,        club: Freiburg,             position: RB  }
+  - { name: Cho Yu-min,           club: Stuttgart,            position: LB  }
+  - { name: Seol Young-woo,       club: Augsburg,             position: RB  }
+  - { name: Lee Gi-hyuk,          club: Gimcheon Sangmu,      position: CB  }
+  - { name: Kim Moon-hwan,        club: Jeonbuk Motors,       position: RB  }
+  - { name: Lee Tae-seok,         club: Incheon United,       position: CB  }
+  - { name: Jens Castrop,         club: Borussia Dortmund,    position: CM  }
+  - { name: Lee Kang-in,          club: Paris Saint-Germain,  position: CAM }
+  - { name: Hwang In-beom,        club: Feyenoord,            position: CM  }
+  - { name: Bae Jun-ho,           club: Stoke City,           position: CM  }
+  - { name: Yang Hyun-jun,        club: Celtic,               position: LW  }
+  - { name: Hwang Hee-chan,        club: Wolverhampton,        position: LW  }
+  - { name: Eom Ji-sung,          club: Mainz 05,             position: CM  }
+  - { name: Paik Seung-ho,        club: Girona,               position: CDM }
+  - { name: Lee Jae-sung,         club: Mainz 05,             position: CM  }
+  - { name: Lee Dong-gyeong,      club: Ulsan HD,             position: CM  }
+  - { name: Son Heung-min,        club: Los Angeles FC,       position: LW  }
+  - { name: Kim Jin-gyu,          club: Kashiwa Reysol,       position: RW  }
+  - { name: Oh Hyeon-gyu,         club: Celtic,               position: ST  }
+  - { name: Cho Gue-sung,         club: Freiburg,             position: ST  }

@@ -1,0 +1,17 @@
+{
+  "squad": {
+    "nation": "Curaçao",
+    "nation_code": "CUR",
+    "flag_iso": "cw",
+    "manager": "TBD",
+    "formation": "4-3-3",
+    "team_color": "#003da5",
+    "players": []
+  },
+  "pairs": [],
+  "players_by_id": {},
+  "coverage": {
+    "matches": 0,
+    "warning": "no matches in open data"
+  }
+}

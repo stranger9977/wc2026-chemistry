@@ -1,7 +1,32 @@
+# Source: Senegal squad to be announced May 21 2026 by Pape Thiaw
+# Aliou Cissé left; Pape Thiaw is new manager
+# Using predicted squad based on recent form
 nation: Senegal
 nation_code: SEN
 flag_iso: sn
-manager: TBD
-formation: 4-3-3
-team_color: '#00853f'
-players: []
+manager: Pape Thiaw
+formation: "4-3-3"
+team_color: "#00853f"
+players:
+  - { name: Édouard Mendy,        club: Rennes,               position: GK  }
+  - { name: Alfred Gomis,         club: Rennes,               position: GK  }
+  - { name: Seny Dieng,           club: Middlesbrough,        position: GK  }
+  - { name: Bouna Sarr,           club: Bayern Munich,        position: RB  }
+  - { name: Kalidou Koulibaly,    club: Al-Hilal,             position: CB  }
+  - { name: Abdou Diallo,         club: RB Leipzig,           position: CB  }
+  - { name: Moussa Niakhaté,      club: Nottingham Forest,    position: CB  }
+  - { name: Formose Mendy,        club: Reims,                position: LB  }
+  - { name: Ismail Jakobs,        club: Monaco,               position: LB  }
+  - { name: Cheikhou Kouyaté,     club: Nottingham Forest,    position: CDM }
+  - { name: Pape Matar Sarr,      club: Tottenham Hotspur,    position: CM  }
+  - { name: Nampalys Mendy,       club: Leicester City,       position: CDM }
+  - { name: Lamine Camara,        club: Monaco,               position: CM  }
+  - { name: Sadio Mané,           club: Al-Nassr,             position: LW  }
+  - { name: Ismaïla Sarr,         club: Crystal Palace,       position: RW  }
+  - { name: Iliman Ndiaye,        club: Everton,              position: CAM }
+  - { name: Nicolas Jackson,      club: Chelsea,              position: ST  }
+  - { name: Boulaye Dia,          club: Lazio,                position: ST  }
+  - { name: Habib Diallo,         club: Al-Shabab,            position: ST  }
+  - { name: Krepin Diatta,        club: Monaco,               position: RW  }
+  - { name: Fode Ballo-Touré,     club: AC Milan,             position: LB  }
+  - { name: Pathé Ciss,           club: Rayo Vallecano,       position: CM  }

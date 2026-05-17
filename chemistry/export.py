@@ -22,11 +22,15 @@ def _pair_record(
     row_vaep: "pd.Series | None" = None,
     id_to_position: "dict[int, str | None] | None" = None,
     row_xg: "pd.Series | None" = None,
+    id_to_goals: "dict[int, int] | None" = None,
+    id_to_assists: "dict[int, int] | None" = None,
 ) -> dict:
     a = int(row_xt["player_a"])
     b = int(row_xt["player_b"])
     disp = id_to_display or {}
     pos = id_to_position or {}
+    g = id_to_goals or {}
+    ast = id_to_assists or {}
     return {
         "player_a_id": a,
         "player_b_id": b,
@@ -43,6 +47,8 @@ def _pair_record(
         "joi90": float(row_xt["joi90"]),
         "minutes": float(row_xt["minutes"]),
         "matches": int(row_xt["matches"]),
+        "goals_sum": int(g.get(a, 0) + g.get(b, 0)),
+        "assists_sum": int(ast.get(a, 0) + ast.get(b, 0)),
     }
 
 
@@ -57,6 +63,15 @@ def build_chemistry_json(
     joi90_vaep: "pd.DataFrame | None" = None,
     joi90_xg: "pd.DataFrame | None" = None,
 ) -> Path:
+    # Load per-player goals and assists if available
+    ga_path = Path("outputs/goals_assists.parquet")
+    id_to_goals: dict[int, int] = {}
+    id_to_assists: dict[int, int] = {}
+    if ga_path.exists():
+        ga = pd.read_parquet(ga_path)
+        id_to_goals = {int(r["player_id"]): int(r["goals"]) for _, r in ga.iterrows()}
+        id_to_assists = {int(r["player_id"]): int(r["assists"]) for _, r in ga.iterrows()}
+
     id_to_name = (
         lineups.dropna(subset=["player_id"])
                .drop_duplicates("player_id")
@@ -186,6 +201,8 @@ def build_chemistry_json(
                 "y": float(y),
                 "minutes": float(row["total_mins"]),
                 "matches": int(row["matches"]),
+                "goals": id_to_goals.get(int(pid), 0),
+                "assists": id_to_assists.get(int(pid), 0),
             }
             # Register in global display map
             id_to_display[int(pid)] = display_name
@@ -209,6 +226,8 @@ def build_chemistry_json(
                 row_xt, id_to_name, id_to_display,
                 row_vaep=row_vaep, id_to_position=id_to_position,
                 row_xg=row_xg,
+                id_to_goals=id_to_goals,
+                id_to_assists=id_to_assists,
             )
 
         coverage: dict = {
@@ -262,6 +281,8 @@ def build_chemistry_json(
             row, id_to_name, id_to_display,
             row_vaep=row_vaep, id_to_position=id_to_position,
             row_xg=row_xg,
+            id_to_goals=id_to_goals,
+            id_to_assists=id_to_assists,
         )
         a, b = rec["player_a_id"], rec["player_b_id"]
         nation = id_to_nation.get(a) or id_to_nation.get(b)

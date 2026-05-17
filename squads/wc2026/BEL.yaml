@@ -1,7 +1,34 @@
+# Source: Belgium final 26-man WC 2026 squad announced May 15 2026 by Rudi Garcia
 nation: Belgium
 nation_code: BEL
 flag_iso: be
-manager: TBD
-formation: 4-3-3
-team_color: '#ed2939'
-players: []
+manager: Rudi Garcia
+formation: "4-3-3"
+team_color: "#ed2939"
+players:
+  - { name: Thibaut Courtois,     club: Real Madrid,          position: GK  }
+  - { name: Mats Sels,            club: Nottingham Forest,    position: GK  }
+  - { name: Senne Lammens,        club: Royal Antwerp,        position: GK  }
+  - { name: Timothy Castagne,     club: Fulham,               position: RB  }
+  - { name: Zeno Debast,          club: Sporting CP,          position: CB  }
+  - { name: Brandon Mechele,      club: Club Brugge,          position: CB  }
+  - { name: Arthur Theate,        club: Eintracht Frankfurt,  position: CB  }
+  - { name: Koni De Winter,       club: AC Milan,             position: CB  }
+  - { name: Nathan Ngoy,          club: Lille,                position: CB  }
+  - { name: Maxim De Cuyper,      club: Club Brugge,          position: LB  }
+  - { name: Joaquin Seys,         club: Club Brugge,          position: RB  }
+  - { name: Thomas Meunier,       club: Trabzonspor,          position: RB  }
+  - { name: Kevin De Bruyne,      club: Napoli,               position: CM  }
+  - { name: Amadou Onana,         club: Aston Villa,          position: CDM }
+  - { name: Nicolas Raskin,       club: Rangers,              position: CM  }
+  - { name: Youri Tielemans,      club: Aston Villa,          position: CM  }
+  - { name: Hans Vanaken,         club: Club Brugge,          position: CAM }
+  - { name: Axel Witsel,          club: Girona,               position: CDM }
+  - { name: Jérémy Doku,          club: Manchester City,      position: LW  }
+  - { name: Leandro Trossard,     club: Arsenal,              position: LW  }
+  - { name: Charles De Ketelaere, club: Atalanta,             position: RW  }
+  - { name: Alexis Saelemaekers,  club: AC Milan,             position: RW  }
+  - { name: Romelu Lukaku,        club: Napoli,               position: ST  }
+  - { name: Dodi Lukebakio,       club: Sevilla,              position: RW  }
+  - { name: Matías Fernández-Pardo,club: Lille,               position: LW  }
+  - { name: Lucas Stassin,        club: Saint-Étienne,        position: ST  }
