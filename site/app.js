@@ -1,4 +1,4 @@
-const FLAG_BASE = "https://cdn.jsdelivr.net/gh/lipis/flag-icons@7/flags/4x3";
+const FLAG_BASE = "../assets/flags";
 
 async function loadDoc() {
   const res = await fetch("../outputs/chemistry.json");
