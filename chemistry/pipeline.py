@@ -232,24 +232,66 @@ def score_competition(spadl_competition_dir: Path,
     return comp_out
 
 
+def _parse_minute(time_str: str | None, default: float = 0.0) -> float:
+    """Convert a StatsBomb time string like '71:37' to fractional minutes.
+
+    Returns ``default`` when *time_str* is None or unparseable.
+    """
+    if time_str is None:
+        return default
+    try:
+        parts = str(time_str).split(":")
+        minutes = float(parts[0])
+        if len(parts) > 1:
+            minutes += float(parts[1]) / 60.0
+        return minutes
+    except (ValueError, IndexError):
+        return default
+
+
+def _team_name_to_id_map(match_id: int) -> dict[str, int]:
+    """Return {team_name: team_id} by reading the cached matches parquet."""
+    matches_dir = Path(__file__).parent.parent / "data" / "raw"
+    for comp_dir in matches_dir.iterdir():
+        if not comp_dir.is_dir():
+            continue
+        matches_path = comp_dir / "matches.parquet"
+        if not matches_path.exists():
+            continue
+        matches = pd.read_parquet(matches_path)
+        row = matches[matches["match_id"] == match_id]
+        if len(row) == 0:
+            continue
+        r = row.iloc[0]
+        return {
+            str(r["home_team"]): int(r["home_team_id"]),
+            str(r["away_team"]): int(r["away_team_id"]),
+        }
+    return {}
+
+
 def load_lineups_for_match(match_id: int) -> pd.DataFrame:
     """Return rows of (game_id, team_id, team_name, player_id, player_name, position, from_minute, to_minute).
 
     statsbombpy lineups returns a dict {team_name: DataFrame}. We flatten and pull
-    minutes from the position-spells inside each player's `positions` list.
+    minutes from the position-spells inside each player's ``positions`` list.
+
+    The ``positions`` entries use string timestamps (e.g. ``"71:37"``) for ``from``
+    and ``to``, and ``to`` can be ``None`` when the player was on the pitch at
+    the final whistle (treated as minute 120 to cover extra time).
     """
     lineups = _sb.lineups(match_id=match_id)
+    team_id_map = _team_name_to_id_map(match_id)
     rows = []
     for team_name, df in lineups.items():
+        team_id = team_id_map.get(team_name, 0)
         for _, row in df.iterrows():
-            # Pull team_id if present (statsbombpy versions vary). Fallback to 0.
-            team_id = row.get("team_id", 0)
             positions = row.get("positions") if "positions" in row else []
             positions = positions if isinstance(positions, list) else []
             if positions:
-                # The total spell is min(from) to max(to) across all positions
-                from_min = min(p.get("from_minute", p.get("from", 0)) for p in positions)
-                to_min   = max(p.get("to_minute",   p.get("to", 90)) for p in positions)
+                # Each spell has 'from' and 'to' as "MM:SS" strings; to=None means final whistle.
+                from_min = min(_parse_minute(p.get("from"), default=0.0)  for p in positions)
+                to_min   = max(_parse_minute(p.get("to"),   default=120.0) for p in positions)
                 position = positions[0].get("position", positions[0].get("name", None))
             else:
                 from_min, to_min, position = 0, 0, None
