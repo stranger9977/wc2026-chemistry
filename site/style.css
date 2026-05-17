@@ -1,0 +1,32 @@
+:root {
+  --bg:#0e1117; --panel:#161b22; --ink:#e6edf3; --muted:#8b949e;
+  --accent:#4ade80; --accent2:#60a5fa; --warn:#fbbf24; --border:#30363d;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased; }
+main { max-width: 1280px; margin: 0 auto; padding: 48px 32px 96px; }
+h1 { font-size: 44px; margin: 0 0 8px; letter-spacing: -0.02em; }
+.lead { font-size: 18px; color: var(--muted); margin: 0 0 36px; }
+.grid { display: grid; gap: 14px; grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 720px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+.card { display: block; text-decoration: none; color: inherit;
+  background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
+  padding: 16px 18px; transition: border-color .15s ease, transform .15s ease; }
+.card:hover { border-color: var(--accent2); transform: translateY(-1px); }
+.flag { display: inline-block; width: 32px; height: 22px; object-fit: cover;
+  border-radius: 3px; vertical-align: middle; margin-right: 10px; }
+.card h2 { font-size: 18px; margin: 0 0 4px; }
+.card .sub { font-size: 12px; color: var(--muted); margin-bottom: 12px; font-family: "JetBrains Mono", monospace; }
+.card .pair { font-size: 14px; color: var(--ink); }
+.card .joi { font-family: "JetBrains Mono", monospace; color: var(--accent); font-weight: 600; }
+.section-title { margin: 48px 0 16px; font-size: 22px; }
+.leaderboard { width: 100%; border-collapse: collapse; }
+.leaderboard th, .leaderboard td { padding: 10px 12px; border-bottom: 1px solid var(--border); text-align: left; }
+.leaderboard th { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
+.leaderboard td.joi { color: var(--accent); font-family: "JetBrains Mono", monospace; font-weight: 600; }
+.btn { display: inline-block; padding: 8px 14px; background: var(--panel); border: 1px solid var(--border);
+  border-radius: 8px; color: var(--ink); font-size: 13px; text-decoration: none; margin: 4px 6px 0 0; }
+.btn:hover { border-color: var(--accent2); }
+.pitch-svg { width: 100%; height: auto; max-width: 1280px; margin: 24px 0; }
