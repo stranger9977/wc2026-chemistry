@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import logging
 from pathlib import Path
-from typing import Iterable
+from typing import Iterable, Protocol
 
 import pandas as pd
 
@@ -51,3 +51,40 @@ def enumerate_interactions(spadl: pd.DataFrame) -> pd.DataFrame:
     pair["vaep_pair"] = pair["vaep_p"].fillna(0) + pair["vaep_q"].fillna(0)
     pair["player_q"] = pair["player_q"].astype("int64")
     return pair
+
+
+class MinutesProvider(Protocol):
+    def minutes(self, game_id: int, player_p: int, player_q: int) -> float: ...
+
+
+def _canonical_pair(p: pd.Series, q: pd.Series) -> tuple[pd.Series, pd.Series]:
+    a = pd.concat([p, q], axis=1).min(axis=1)
+    b = pd.concat([p, q], axis=1).max(axis=1)
+    return a, b
+
+
+def joi_per_match(interactions: pd.DataFrame) -> pd.DataFrame:
+    """Sum vaep_pair per (game, unordered pair)."""
+    a, b = _canonical_pair(interactions["player_p"], interactions["player_q"])
+    df = interactions.assign(player_a=a.astype("int64"), player_b=b.astype("int64"))
+    grouped = (
+        df.groupby(["game_id", "team_id", "player_a", "player_b"], as_index=False)
+          ["vaep_pair"].sum()
+          .rename(columns={"vaep_pair": "joi"})
+    )
+    return grouped
+
+
+def joi90_window(per_match: pd.DataFrame, minutes_provider: MinutesProvider) -> pd.DataFrame:
+    """Aggregate per-match JOI to per-pair, per 90 minutes of shared play."""
+    per_match = per_match.copy()
+    per_match["minutes"] = per_match.apply(
+        lambda r: minutes_provider.minutes(int(r["game_id"]), int(r["player_a"]), int(r["player_b"])),
+        axis=1,
+    )
+    agg = (
+        per_match.groupby(["team_id", "player_a", "player_b"], as_index=False)
+                 .agg(joi=("joi", "sum"), minutes=("minutes", "sum"), matches=("game_id", "nunique"))
+    )
+    agg["joi90"] = (agg["joi"] * 90.0 / agg["minutes"]).where(agg["minutes"] > 0, 0.0)
+    return agg

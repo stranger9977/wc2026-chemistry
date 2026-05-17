@@ -58,3 +58,41 @@ def test_only_eligible_action_types(monkeypatch):
     monkeypatch.setattr(joi, "ELIGIBLE_TYPES", frozenset({99}))
     out = joi.enumerate_interactions(spadl)
     assert len(out) == 0
+
+
+from chemistry.joi import joi_per_match, joi90_window, MinutesProvider
+
+
+class _StubMinutes:
+    """Minutes provider that always returns the same shared minutes."""
+    def __init__(self, table):
+        self.table = table  # dict {(game_id, p, q): minutes}
+    def minutes(self, game_id, player_p, player_q):
+        a, b = sorted((player_p, player_q))
+        return self.table.get((game_id, a, b), 0.0)
+
+
+def test_joi_per_match_aggregates_both_orderings():
+    interactions = pd.DataFrame([
+        {"game_id": 1, "team_id": 10, "player_p": 100, "player_q": 101, "vaep_pair": 0.10},
+        {"game_id": 1, "team_id": 10, "player_p": 101, "player_q": 100, "vaep_pair": 0.05},
+        {"game_id": 2, "team_id": 10, "player_p": 100, "player_q": 101, "vaep_pair": 0.20},
+    ])
+    out = joi_per_match(interactions)
+    row = out[(out["game_id"] == 1) & (out["player_a"] == 100) & (out["player_b"] == 101)].iloc[0]
+    assert row["joi"] == pytest.approx(0.15)
+    row2 = out[(out["game_id"] == 2) & (out["player_a"] == 100) & (out["player_b"] == 101)].iloc[0]
+    assert row2["joi"] == pytest.approx(0.20)
+
+
+def test_joi90_window_normalises_per_90_shared_minutes():
+    per_match = pd.DataFrame([
+        {"game_id": 1, "team_id": 10, "player_a": 100, "player_b": 101, "joi": 0.30},
+        {"game_id": 2, "team_id": 10, "player_a": 100, "player_b": 101, "joi": 0.15},
+    ])
+    mins = _StubMinutes({(1, 100, 101): 45.0, (2, 100, 101): 90.0})
+    out = joi90_window(per_match, mins)
+    row = out[(out["player_a"] == 100) & (out["player_b"] == 101)].iloc[0]
+    assert row["joi90"] == pytest.approx(0.30)
+    assert row["minutes"] == pytest.approx(135.0)
+    assert row["matches"] == 2
