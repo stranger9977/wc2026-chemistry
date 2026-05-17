@@ -43,6 +43,7 @@ def build_chemistry_json(
     out_path: Path,
     min_minutes_global: float = 180.0,
     min_minutes_team: float = 180.0,
+    metric: str = "xt",
 ) -> Path:
     id_to_name = (
         lineups.dropna(subset=["player_id"])
@@ -223,6 +224,7 @@ def build_chemistry_json(
             for _, r in leaderboard.iterrows()
         ],
         "meta": {
+            "metric": metric,
             "min_minutes_global": min_minutes_global,
             "min_minutes_team": min_minutes_team,
             "total_pairs": int(len(joi90)),

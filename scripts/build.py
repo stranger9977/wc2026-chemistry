@@ -1,5 +1,5 @@
 """End-to-end build:
-   ingest → SPADL → VAEP → interactions → JOI per match → JOI90 per pair.
+   ingest → SPADL → VAEP/xT → interactions → JOI per match → JOI90 per pair.
 Writes intermediate parquets and the final pair table.
 """
 from __future__ import annotations
@@ -20,7 +20,7 @@ DATA = Path("data")
 OUT = Path("outputs"); OUT.mkdir(exist_ok=True)
 
 
-def run(use_heuristic_vaep: bool, fetch: bool = True) -> None:
+def run(use_heuristic_vaep: bool, fetch: bool = True, metric: str = "xt") -> None:
     if fetch:
         log.info("Fetching StatsBomb open data for target competitions")
         ingest.fetch_all_targets()
@@ -30,14 +30,23 @@ def run(use_heuristic_vaep: bool, fetch: bool = True) -> None:
     log.info("Converting events to SPADL")
     for comp_dir in sorted((DATA / "raw").iterdir()):
         if comp_dir.is_dir():
-            pipeline.convert_competition(comp_dir)
+            try:
+                pipeline.convert_competition(comp_dir)
+            except Exception as exc:
+                log.warning("SPADL conversion failed for %s: %s", comp_dir.name, exc)
 
-    log.info("Scoring VAEP")
-    kind = "heuristic" if use_heuristic_vaep else "trained"
-    model = load_vaep_model(kind=kind)
-    for spadl_comp in sorted((DATA / "spadl").iterdir()):
-        if spadl_comp.is_dir():
-            pipeline.score_competition(spadl_comp, model)
+    if metric == "xt":
+        _score_with_xt()
+    else:
+        log.info("Scoring with %s VAEP", "heuristic" if use_heuristic_vaep else "trained")
+        kind = "heuristic" if use_heuristic_vaep else "trained"
+        model = load_vaep_model(kind=kind)
+        for spadl_comp in sorted((DATA / "spadl").iterdir()):
+            if spadl_comp.is_dir():
+                try:
+                    pipeline.score_competition(spadl_comp, model)
+                except Exception as exc:
+                    log.warning("VAEP scoring failed for %s: %s", spadl_comp.name, exc)
 
     all_per_match: list[pd.DataFrame] = []
     all_lineups: list[pd.DataFrame] = []
@@ -68,22 +77,63 @@ def run(use_heuristic_vaep: bool, fetch: bool = True) -> None:
     log.info("Wrote %d pairs to outputs/joi90.parquet", len(joi90))
 
     log.info("Stitching squads + chemistry pairs")
-    path = export()
+    path = export(metric=metric)
     log.info("Wrote %s", path)
 
 
-def export(out_path: Path = OUT / "chemistry.json") -> Path:
+def _score_with_xt() -> None:
+    """Fit xT on all SPADL and score every competition."""
+    from chemistry import xt_model as xt_mod
+
+    log.info("Fitting xT on full SPADL set")
+    all_spadl: list[pd.DataFrame] = []
+    spadl_dir = DATA / "spadl"
+    if spadl_dir.exists():
+        for d in sorted(spadl_dir.iterdir()):
+            if d.is_dir():
+                for p in d.glob("*.parquet"):
+                    try:
+                        all_spadl.append(pd.read_parquet(p))
+                    except Exception as exc:
+                        log.warning("Could not read %s: %s", p, exc)
+
+    if not all_spadl:
+        raise RuntimeError("No SPADL data found to fit xT — run SPADL conversion first")
+
+    combined = pd.concat(all_spadl, ignore_index=True)
+    log.info("Fitting xT on %d total actions", len(combined))
+    xt = xt_mod.fit_xt(combined)
+    xt_mod.save(xt)
+    log.info("Saved xT model to data/xt/xt.pkl")
+
+    log.info("Scoring competitions with xT")
+    for spadl_comp in sorted(spadl_dir.iterdir()):
+        if spadl_comp.is_dir():
+            try:
+                pipeline.score_competition(spadl_comp, xt)
+            except Exception as exc:
+                log.warning("xT scoring failed for %s: %s", spadl_comp.name, exc)
+
+
+def export(out_path: Path = OUT / "chemistry.json", metric: str = "xt") -> Path:
     from chemistry import squads as squads_mod, export as export_mod
     joi90 = pd.read_parquet(OUT / "joi90.parquet")
     lineups = pd.read_parquet(OUT / "lineups.parquet")
     squad_map = squads_mod.load_all_squads(Path("squads/wc2026"))
-    return export_mod.build_chemistry_json(joi90, lineups, squad_map, out_path)
+    return export_mod.build_chemistry_json(joi90, lineups, squad_map, out_path, metric=metric)
 
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
-    p.add_argument("--heuristic-vaep", action="store_true")
+    p.add_argument("--heuristic-vaep", action="store_true",
+                   help="Use heuristic VAEP (ignored when --metric=xt).")
     p.add_argument("--no-fetch", action="store_true",
                    help="Skip the StatsBomb fetch step (use already-cached data).")
+    p.add_argument("--metric", choices=["xt", "vaep"], default="xt",
+                   help="Action-value metric to use (default: xt).")
     args = p.parse_args()
-    run(use_heuristic_vaep=args.heuristic_vaep, fetch=not args.no_fetch)
+    run(
+        use_heuristic_vaep=args.heuristic_vaep,
+        fetch=not args.no_fetch,
+        metric=args.metric,
+    )

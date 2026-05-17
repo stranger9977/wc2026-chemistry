@@ -9,18 +9,18 @@
 <body>
 <main>
   <h1>World Cup 2026 — Chemistry</h1>
-  <p class="lead">Player chemistry between every pair on every WC 2026 squad, computed from their actual international matches.</p>
+  <p class="lead">Player chemistry between every pair on every WC 2026 squad, scored by xT (Expected Threat) across five international tournaments.</p>
 
   <section class="explainer">
     <h2>How this works</h2>
     <div class="explainer-grid">
       <div>
         <h3>The metric</h3>
-        <p><strong>JOI90</strong> — Joint Offensive Impact per 90 minutes. For each consecutive same-team action pair (e.g., a pass from A → control by B), we sum the <a href="https://github.com/ML-KULeuven/socceraction" target="_blank" rel="noopener">VAEP</a> value of both actions. We aggregate per pair across every match where the two played together, then normalize to a per-90-minutes-shared rate.</p>
+        <p><strong>JOI-xT</strong> — Joint Expected Threat per 90 minutes. For each consecutive same-team action pair, we sum the <a href="https://soccermatics.readthedocs.io/en/latest/lesson3/ExpectedThreat.html" target="_blank" rel="noopener">xT (Expected Threat)</a> delta of both actions. xT values each pitch location by the probability a team scores from that location within the next few actions — actions that move the ball into more dangerous zones are worth more. We aggregate per pair across every match where the two played together, then normalize to a per-90-minutes-shared rate.</p>
       </div>
       <div>
         <h3>The data</h3>
-        <p>Event data from <a href="https://github.com/statsbomb/open-data" target="_blank" rel="noopener">StatsBomb Open Data</a>: every on-ball action in WC 2022 (more international tournaments rolling in over time). Each nation's roster is auto-derived from the top-26 most-capped players in that window.</p>
+        <p>Event data from <a href="https://github.com/statsbomb/open-data" target="_blank" rel="noopener">StatsBomb Open Data</a>: every on-ball action in WC 2022, Euro 2024, Copa América 2024, Euro 2020, and the FIFA Women's World Cup 2023. Each nation's roster is auto-derived from the top-26 most-capped players in that window.</p>
       </div>
       <div>
         <h3>The methodology</h3>
@@ -28,7 +28,7 @@
       </div>
       <div>
         <h3>Caveats</h3>
-        <p>Action values come from a heuristic VAEP estimator in v1 — defenders and goalkeepers may rank higher than they should because long progressive passes get over-rewarded. A trained VAEP model is queued for v2. Seven nations (AUT, CIV, COL, EGY, ITA, NGA, PAR) have no chemistry data yet — they did not appear in WC 2022 events.</p>
+        <p>We currently use xT (Karun Singh, 2018) for action values. xT is a positional grid model — it doesn't reward dribbles, take-ons, or pressure actions as much as a fully-trained <a href="https://github.com/ML-KULeuven/socceraction" target="_blank" rel="noopener">VAEP</a> model would. A trained-VAEP view is queued for v2. Some nations (e.g., Italy, Egypt, Nigeria) didn't qualify for any of our covered tournaments so have no chemistry data.</p>
       </div>
     </div>
   </section>
