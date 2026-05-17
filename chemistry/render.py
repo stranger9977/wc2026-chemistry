@@ -67,12 +67,12 @@ def render_pitch_chemistry(
     players_by_id = nation_entry.get("players_by_id", {})
     pitch_ids = set(nation_entry.get("pitch_player_ids") or [int(k) for k in players_by_id.keys()])
 
-    id_to_xy: dict[int, tuple[float, float, str]] = {}
+    id_to_xy: dict[int, tuple[float, float, str, str | None]] = {}
     for pid_str, p in players_by_id.items():
         pid = int(pid_str)
         if pid in pitch_ids:
             label = p.get("display_name") or p["name"]
-            id_to_xy[pid] = (p["x"], p["y"], label)
+            id_to_xy[pid] = (p["x"], p["y"], label, p.get("sb_position"))
 
     # If players_by_id is empty, fall back to the old name-based approach so
     # legacy nation entries still render something.
@@ -83,7 +83,7 @@ def render_pitch_chemistry(
             name_to_pos[p["name"]] = pos
         for name, (x, y) in name_to_pos.items():
             # Use a fake id based on name hash to reuse same draw path
-            id_to_xy[hash(name) & 0xFFFFFFFF] = (x, y, name)
+            id_to_xy[hash(name) & 0xFFFFFFFF] = (x, y, name, None)
 
     eligible_pairs = [p for p in nation_entry["pairs"]
                       if p["player_a_id"] in pitch_ids and p["player_b_id"] in pitch_ids]
@@ -102,8 +102,8 @@ def render_pitch_chemistry(
     for p in dim_pairs:
         if p["player_a_id"] not in id_to_xy or p["player_b_id"] not in id_to_xy:
             continue
-        xa, ya, _ = id_to_xy[p["player_a_id"]]
-        xb, yb, _ = id_to_xy[p["player_b_id"]]
+        xa, ya, _, _pa = id_to_xy[p["player_a_id"]]
+        xb, yb, _, _pb = id_to_xy[p["player_b_id"]]
         ax.plot([xa, xb], [ya, yb], color="#6b7280", linewidth=0.8, alpha=0.18,
                 solid_capstyle="round", zorder=0)
 
@@ -111,8 +111,8 @@ def render_pitch_chemistry(
     for p in top_pairs:
         if p["player_a_id"] not in id_to_xy or p["player_b_id"] not in id_to_xy:
             continue
-        xa, ya, _ = id_to_xy[p["player_a_id"]]
-        xb, yb, _ = id_to_xy[p["player_b_id"]]
+        xa, ya, _, _pa = id_to_xy[p["player_a_id"]]
+        xb, yb, _, _pb = id_to_xy[p["player_b_id"]]
         col = _color_for_joi(p["joi90"], vmin, vmax, opts)
         m = min(p["minutes"], 600) / 600.0
         lw = opts.edge_min_width + (opts.edge_max_width - opts.edge_min_width) * m
@@ -120,8 +120,9 @@ def render_pitch_chemistry(
                 solid_capstyle="round", alpha=0.95, zorder=1)
 
     # Markers + labels with smart placement to avoid overlap
+    from chemistry.formation import short_position
     placed_points: list[tuple[float, float]] = []
-    for pid, (x, y, name) in id_to_xy.items():
+    for pid, (x, y, name, sb_pos) in id_to_xy.items():
         ax.add_patch(Circle((x, y), 1.8, color="#ffffff", zorder=3))
         ax.add_patch(Circle((x, y), 1.5, color=squad["team_color"], zorder=4))
         offset = -3.0
@@ -134,6 +135,12 @@ def render_pitch_chemistry(
             ax.text(x, y + offset, name, color="#ffffff", ha="center", va=va,
                     fontsize=9, weight="bold", zorder=5,
                     path_effects=[plt_path_effects.withStroke(linewidth=2.5, foreground="black")])
+            pos_abbrev = short_position(sb_pos)
+            if pos_abbrev:
+                pos_offset = offset + (1.7 if offset > 0 else -1.7)
+                ax.text(x, y + pos_offset, pos_abbrev, color="#9ca3af", ha="center", va=va,
+                        fontsize=7, weight="bold", zorder=5,
+                        path_effects=[plt_path_effects.withStroke(linewidth=2, foreground="black")])
         placed_points.append((x, y))
 
     ax.set_xlim(0, 105); ax.set_ylim(0, 68); ax.set_axis_off()

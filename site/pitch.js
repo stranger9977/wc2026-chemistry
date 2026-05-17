@@ -1,3 +1,20 @@
+const SB_POSITION_ABBREV = {
+  "Goalkeeper": "GK",
+  "Right Back": "RB", "Right Wing Back": "RWB", "Right Center Back": "RCB",
+  "Center Back": "CB", "Left Center Back": "LCB", "Left Back": "LB", "Left Wing Back": "LWB",
+  "Right Defensive Midfield": "RDM", "Center Defensive Midfield": "CDM",
+  "Left Defensive Midfield": "LDM",
+  "Right Midfield": "RM", "Right Center Midfield": "RCM",
+  "Center Midfield": "CM",
+  "Left Midfield": "LM", "Left Center Midfield": "LCM",
+  "Right Attacking Midfield": "RAM", "Center Attacking Midfield": "CAM",
+  "Left Attacking Midfield": "LAM",
+  "Right Wing": "RW", "Left Wing": "LW",
+  "Right Center Forward": "RCF", "Center Forward": "CF",
+  "Left Center Forward": "LCF", "Striker": "ST", "Secondary Striker": "SS",
+};
+function positionShort(sb) { return sb ? (SB_POSITION_ABBREV[sb] ?? "") : ""; }
+
 function lerpColor(c, h, t) {
   const a = c.match(/.{2}/g).map(s => parseInt(s, 16));
   const b = h.match(/.{2}/g).map(s => parseInt(s, 16));
@@ -109,11 +126,22 @@ function drawPitch(entry, squad, metric) {
     g.append("circle").attr("cx", x).attr("cy", y).attr("r", 11)
       .attr("fill", squad.team_color);
     const dy = labelOffset(x, y);
-    g.append("text").attr("x", x).attr("y", y + dy)
+    const labelText = g.append("text")
+      .attr("x", x).attr("y", y + dy)
       .attr("text-anchor", "middle")
-      .attr("fill", "#fff").attr("stroke", "#000").attr("stroke-width", 3).attr("paint-order", "stroke")
-      .attr("font-size", 13).attr("font-weight", 700)
-      .text(p.display_name);
+      .attr("fill", "#fff")
+      .attr("stroke", "#000").attr("stroke-width", 3).attr("paint-order", "stroke")
+      .attr("font-size", 13).attr("font-weight", 700);
+    labelText.append("tspan").text(p.display_name);
+    const posAbbrev = positionShort(p.sb_position);
+    if (posAbbrev) {
+      labelText.append("tspan")
+        .attr("x", x).attr("dy", "1.15em")
+        .attr("font-size", 10).attr("font-weight", 600)
+        .attr("fill", "#9ca3af")
+        .attr("stroke", "#000").attr("stroke-width", 2).attr("paint-order", "stroke")
+        .text(posAbbrev);
+    }
     placedPoints.push([x, y]);
   }
 }
