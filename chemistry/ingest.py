@@ -4,6 +4,7 @@ from __future__ import annotations
 import logging
 from pathlib import Path
 
+import pandas as pd
 from statsbombpy import sb
 
 logger = logging.getLogger(__name__)
@@ -47,10 +48,21 @@ def fetch_competition(competition_id: int, season_id: int) -> Path:
     base = cache_dir() / f"{competition_id}_{season_id}"
     base.mkdir(parents=True, exist_ok=True)
 
-    matches = sb.matches(competition_id=competition_id, season_id=season_id)
     matches_path = base / "matches.parquet"
-    matches.to_parquet(matches_path, index=False)
-    logger.info("Wrote %s matches to %s", len(matches), matches_path)
+    if matches_path.exists():
+        matches = pd.read_parquet(matches_path)
+    else:
+        matches = sb.matches(competition_id=competition_id, season_id=season_id)
+        matches.to_parquet(matches_path, index=False)
+        logger.info("Wrote %s matches to %s", len(matches), matches_path)
+
+    if matches.empty:
+        logger.warning(
+            "No matches returned for competition %s season %s — skipping",
+            competition_id,
+            season_id,
+        )
+        return base
 
     events_dir = base / "events"
     events_dir.mkdir(exist_ok=True)
