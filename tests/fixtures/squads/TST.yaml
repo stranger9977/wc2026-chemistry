@@ -1,0 +1,17 @@
+nation: Testland
+nation_code: TST
+flag_iso: tt
+manager: Jane Doe
+formation: "4-3-3"
+team_color: "#112233"
+players:
+  - name: Alpha One
+    club: FC Alpha
+    position: GK
+  - name: Beta Two
+    club: FC Beta
+    position: CB
+  - name: Gamma Three
+    club: FC Gamma
+    position: ST
+    headshot: gamma.jpg
