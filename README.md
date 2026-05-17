@@ -21,3 +21,9 @@ python -m scripts.export     # render exports/
 - `outputs/chemistry.json` — pipeline output
 - `exports/` — video-ready PNG/SVG assets
 - `site/` — chart browser served on GitHub Pages
+
+## Squad editing
+
+`squads/wc2026/<CODE>.yaml` files are hand-curated. Edit the `players:` list as call-ups are announced. Re-run `python -m scripts.build` to refresh chemistry. The `manager` field reads `TBD` by default — replace once known.
+
+To add a fresh stub: extend the `QUALIFIERS` list in `scripts/bootstrap_squads.py` and rerun.
