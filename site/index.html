@@ -16,7 +16,7 @@
     <div class="explainer-grid">
       <div>
         <h3>The metric</h3>
-        <p><strong>JOI-xT</strong> — Joint Expected Threat per 90 minutes. For each consecutive same-team action pair, we sum the <a href="https://soccermatics.readthedocs.io/en/latest/lesson3/ExpectedThreat.html" target="_blank" rel="noopener">xT (Expected Threat)</a> delta of both actions. xT values each pitch location by the probability a team scores from that location within the next few actions — actions that move the ball into more dangerous zones are worth more. We aggregate per pair across every match where the two played together, then normalize to a per-90-minutes-shared rate.</p>
+        <p>Three views per pair: <strong>xT</strong> rewards moving the ball to more dangerous zones; <strong>VAEP</strong> uses a trained classifier to value each action's effect on scoring probability; <strong>xG-Chain</strong> credits a pair with the xG of every possession where both touched the ball. Each is normalized per 90 shared minutes — pick whichever view tells the story you care about.</p>
       </div>
       <div>
         <h3>The data</h3>
@@ -37,6 +37,7 @@
     <span>Metric:</span>
     <button class="metric-btn active" data-metric="xt">xT</button>
     <button class="metric-btn" data-metric="vaep">VAEP</button>
+    <button class="metric-btn" data-metric="xg">xG-Chain</button>
   </div>
 
   <h2 class="section-title">Nations</h2>

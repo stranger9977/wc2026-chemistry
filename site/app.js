@@ -9,6 +9,7 @@ async function loadDoc() {
 
 function getJoi(pair, metric) {
   if (metric === "vaep" && pair.joi90_vaep != null) return pair.joi90_vaep;
+  if (metric === "xg") return pair.joi90_xg ?? 0;
   return pair.joi90_xt ?? pair.joi90 ?? 0;
 }
 
@@ -85,8 +86,13 @@ function setMetric(metric, doc) {
   document.querySelectorAll(".metric-btn").forEach(btn => {
     btn.addEventListener("click", () => {
       const hasVaep = _doc.meta && _doc.meta.has_vaep;
+      const hasXg = _doc.meta && _doc.meta.has_xg;
       if (btn.dataset.metric === "vaep" && !hasVaep) {
         btn.title = "VAEP model not yet computed";
+        return;
+      }
+      if (btn.dataset.metric === "xg" && !hasXg) {
+        btn.title = "xG-Chain not yet computed";
         return;
       }
       setMetric(btn.dataset.metric, _doc);
@@ -100,6 +106,16 @@ function setMetric(metric, doc) {
     if (vaepBtn) {
       vaepBtn.classList.add("disabled");
       vaepBtn.title = "VAEP model not yet computed";
+    }
+  }
+
+  // Disable xG-Chain button if no xG data
+  const hasXg = _doc.meta && _doc.meta.has_xg;
+  if (!hasXg) {
+    const xgBtn = document.querySelector('.metric-btn[data-metric="xg"]');
+    if (xgBtn) {
+      xgBtn.classList.add("disabled");
+      xgBtn.title = "xG-Chain not yet computed";
     }
   }
 })();

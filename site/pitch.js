@@ -29,6 +29,7 @@ function colorFor(joi, min, max) {
 
 function getJoi(pair, metric) {
   if (metric === "vaep" && pair.joi90_vaep != null) return pair.joi90_vaep;
+  if (metric === "xg") return pair.joi90_xg ?? 0;
   return pair.joi90_xt ?? pair.joi90 ?? 0;
 }
 
@@ -182,10 +183,12 @@ async function main() {
     `${_squad.manager} · ${_squad.formation} · ${_entry.coverage.matches} matches in window · ${Object.keys(_entry.players_by_id).length} players`;
 
   // Inject metric toggle into page
+  const _hasXg = doc.meta && doc.meta.has_xg;
   const toggleHtml = `<div class="metric-toggle" style="margin-bottom:16px">
     <span>Metric:</span>
     <button class="metric-btn${_activeMetric === 'xt' ? ' active' : ''}" data-metric="xt">xT</button>
     <button class="metric-btn${_activeMetric === 'vaep' ? ' active' : ''}${!_hasVaep ? ' disabled' : ''}" data-metric="vaep" title="${!_hasVaep ? 'VAEP model not yet computed' : ''}">VAEP</button>
+    <button class="metric-btn${_activeMetric === 'xg' ? ' active' : ''}${!_hasXg ? ' disabled' : ''}" data-metric="xg" title="${!_hasXg ? 'xG-Chain not yet computed' : ''}">xG-Chain</button>
   </div>`;
   const titleEl = document.getElementById("title");
   titleEl.insertAdjacentHTML("afterend", toggleHtml);
@@ -193,6 +196,7 @@ async function main() {
   document.querySelectorAll(".metric-btn").forEach(btn => {
     btn.addEventListener("click", () => {
       if (btn.dataset.metric === "vaep" && !_hasVaep) return;
+      if (btn.dataset.metric === "xg" && !_hasXg) return;
       _activeMetric = btn.dataset.metric;
       document.querySelectorAll(".metric-btn").forEach(b =>
         b.classList.toggle("active", b.dataset.metric === _activeMetric));

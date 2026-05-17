@@ -88,3 +88,72 @@ def joi90_window(per_match: pd.DataFrame, minutes_provider: MinutesProvider) -> 
     )
     agg["joi90"] = (agg["joi"] * 90.0 / agg["minutes"]).where(agg["minutes"] > 0, 0.0)
     return agg
+
+
+def enumerate_possessions(spadl: pd.DataFrame, xg_per_shot: pd.Series) -> pd.DataFrame:
+    """Group SPADL actions into possessions, return DataFrame of (game_id, possession_id, team_id,
+    players: set[int], shot_xg: float).
+
+    A possession is a maximal run of consecutive same-team actions. We break possessions on any
+    team change. The xg credit for a possession is the max xg of any shot within it, or 0 if no shot.
+    """
+    df = spadl.sort_values(["game_id", "period_id", "time_seconds"]).reset_index(drop=True)
+
+    # New possession when team_id changes vs previous row (within same game)
+    same_game = df["game_id"] == df["game_id"].shift(1)
+    same_team = df["team_id"] == df["team_id"].shift(1)
+    df["poss_id"] = ((~(same_game & same_team)).cumsum())
+
+    # xG per row (0 for non-shots)
+    df["xg"] = 0.0
+    if len(xg_per_shot) > 0:
+        df.loc[xg_per_shot.index, "xg"] = xg_per_shot.values
+
+    grouped = (
+        df.groupby(["game_id", "team_id", "poss_id"])
+          .agg(players=("player_id", lambda s: tuple(sorted(set(int(x) for x in s.dropna())))),
+               shot_xg=("xg", "max"))
+          .reset_index()
+    )
+    grouped = grouped[grouped["shot_xg"] > 0]   # only keep possessions that ended in a shot
+    return grouped
+
+
+def xg_chain_per_match(possessions: pd.DataFrame) -> pd.DataFrame:
+    """For each possession, emit one row per pair of touch-players with xg credit.
+
+    Output columns: game_id, team_id, player_a, player_b, xg
+    """
+    from itertools import combinations
+    rows = []
+    for _, row in possessions.iterrows():
+        players = row["players"]
+        if len(players) < 2:
+            continue
+        for a, b in combinations(players, 2):
+            rows.append({
+                "game_id": row["game_id"],
+                "team_id": row["team_id"],
+                "player_a": int(a),
+                "player_b": int(b),
+                "xg": float(row["shot_xg"]),
+            })
+    if not rows:
+        return pd.DataFrame(columns=["game_id", "team_id", "player_a", "player_b", "xg"])
+    df = pd.DataFrame(rows)
+    return df.groupby(["game_id", "team_id", "player_a", "player_b"], as_index=False)["xg"].sum()
+
+
+def xg90_window(per_match: pd.DataFrame, minutes_provider: MinutesProvider) -> pd.DataFrame:
+    """Aggregate per-match xG-chain to per-pair, per 90 shared minutes."""
+    per_match = per_match.copy()
+    per_match["minutes"] = per_match.apply(
+        lambda r: minutes_provider.minutes(int(r["game_id"]), int(r["player_a"]), int(r["player_b"])),
+        axis=1,
+    )
+    agg = (
+        per_match.groupby(["team_id", "player_a", "player_b"], as_index=False)
+                 .agg(xg=("xg", "sum"), minutes=("minutes", "sum"), matches=("game_id", "nunique"))
+    )
+    agg["joi90_xg"] = (agg["xg"] * 90.0 / agg["minutes"]).where(agg["minutes"] > 0, 0.0)
+    return agg

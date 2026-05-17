@@ -69,8 +69,60 @@ def run(use_heuristic_vaep: bool, fetch: bool = True, metric: str = "both") -> N
             joi90_vaep.to_parquet(OUT / "joi90_vaep.parquet", index=False)
             log.info("Wrote %d VAEP pairs to outputs/joi90_vaep.parquet", len(joi90_vaep))
 
+    # Build xG-chain pairs
+    log.info("Fitting xG model")
+    from chemistry import xg_model as xg_mod
+    all_spadl_dfs: list[pd.DataFrame] = []
+    for d in sorted((DATA / "spadl").iterdir()):
+        if d.is_dir():
+            for p in d.glob("*.parquet"):
+                try:
+                    all_spadl_dfs.append(pd.read_parquet(p))
+                except Exception as exc:
+                    log.warning("Could not read %s: %s", p, exc)
+    if all_spadl_dfs:
+        combined_spadl = pd.concat(all_spadl_dfs, ignore_index=True)
+        xg = xg_mod.fit_xg(combined_spadl)
+        xg_mod.save(xg)
+        log.info("Saved xG model to data/xg/xg.pkl")
+
+        log.info("Computing xG-chain per match")
+        all_xgchain: list[pd.DataFrame] = []
+        for d in sorted((DATA / "spadl").iterdir()):
+            if not d.is_dir():
+                continue
+            for path in sorted(d.glob("*.parquet")):
+                try:
+                    spadl = pd.read_parquet(path)
+                except Exception as exc:
+                    log.warning("Could not read %s: %s", path, exc)
+                    continue
+                if spadl.empty:
+                    continue
+                shots = spadl[spadl["type_id"].isin(xg_mod.SHOT_TYPE_IDS)]
+                if shots.empty:
+                    continue
+                xg_per_shot = xg.predict_xg(shots)
+                possessions = joi.enumerate_possessions(spadl, xg_per_shot)
+                chain = joi.xg_chain_per_match(possessions)
+                if not chain.empty:
+                    all_xgchain.append(chain)
+
+        xgchain_df = pd.concat(all_xgchain, ignore_index=True) if all_xgchain else pd.DataFrame(
+            columns=["game_id", "team_id", "player_a", "player_b", "xg"]
+        )
+        xgchain_df.to_parquet(OUT / "xg_chain_per_match.parquet", index=False)
+        log.info("Wrote %d xG-chain rows to outputs/xg_chain_per_match.parquet", len(xgchain_df))
+
+        joi90_xg = joi.xg90_window(xgchain_df, mins_provider)
+        joi90_xg.to_parquet(OUT / "joi90_xg.parquet", index=False)
+        log.info("Wrote %d xG pairs to outputs/joi90_xg.parquet", len(joi90_xg))
+    else:
+        log.warning("No SPADL data found — skipping xG-chain computation")
+        joi90_xg = None
+
     log.info("Stitching squads + chemistry pairs into chemistry.json")
-    path = export(joi90_vaep=joi90_vaep)
+    path = export(joi90_vaep=joi90_vaep, joi90_xg=joi90_xg)
     log.info("Wrote %s", path)
 
 
@@ -159,6 +211,7 @@ def export(
     out_path: Path = OUT / "chemistry.json",
     metric: str = "xt",
     joi90_vaep: "pd.DataFrame | None" = None,
+    joi90_xg: "pd.DataFrame | None" = None,
 ) -> Path:
     from chemistry import squads as squads_mod, export as export_mod
 
@@ -178,9 +231,18 @@ def export(
             except Exception as exc:
                 log.warning("Could not load VAEP pairs: %s", exc)
 
+    # Try to load saved xG pairs if not passed in
+    if joi90_xg is None:
+        xg_path = OUT / "joi90_xg.parquet"
+        if xg_path.exists():
+            try:
+                joi90_xg = pd.read_parquet(xg_path)
+            except Exception as exc:
+                log.warning("Could not load xG pairs: %s", exc)
+
     return export_mod.build_chemistry_json(
         joi90, lineups, squad_map, out_path,
-        metric=metric, joi90_vaep=joi90_vaep,
+        metric=metric, joi90_vaep=joi90_vaep, joi90_xg=joi90_xg,
     )
 
 

@@ -21,6 +21,7 @@ def _pair_record(
     id_to_display: dict[int, str] | None = None,
     row_vaep: "pd.Series | None" = None,
     id_to_position: "dict[int, str | None] | None" = None,
+    row_xg: "pd.Series | None" = None,
 ) -> dict:
     a = int(row_xt["player_a"])
     b = int(row_xt["player_b"])
@@ -37,6 +38,7 @@ def _pair_record(
         "player_b_position": short_position(pos.get(b)),
         "joi90_xt": float(row_xt["joi90"]),
         "joi90_vaep": float(row_vaep["joi90"]) if row_vaep is not None else None,
+        "joi90_xg": float(row_xg["joi90_xg"]) if row_xg is not None else 0.0,
         # Keep legacy joi90 field pointing at xT for backward compat
         "joi90": float(row_xt["joi90"]),
         "minutes": float(row_xt["minutes"]),
@@ -53,6 +55,7 @@ def build_chemistry_json(
     min_minutes_team: float = 180.0,
     metric: str = "xt",
     joi90_vaep: "pd.DataFrame | None" = None,
+    joi90_xg: "pd.DataFrame | None" = None,
 ) -> Path:
     id_to_name = (
         lineups.dropna(subset=["player_id"])
@@ -78,6 +81,13 @@ def build_chemistry_json(
         for _, row in joi90_vaep.iterrows():
             key = (int(row["player_a"]), int(row["player_b"]))
             vaep_pair_index[key] = row
+
+    # Build lookup for xG-chain pairs if provided
+    xg_pair_index: dict[tuple[int, int], pd.Series] = {}
+    if joi90_xg is not None and not joi90_xg.empty:
+        for _, row in joi90_xg.iterrows():
+            key = (int(row["player_a"]), int(row["player_b"]))
+            xg_pair_index[key] = row
 
     for code, squad in squads_map.items():
         team_lineups = lineups[lineups["team_name"] == squad.nation]
@@ -194,9 +204,11 @@ def build_chemistry_json(
         def _build_squad_pair(row_xt: pd.Series) -> dict:
             key = (int(row_xt["player_a"]), int(row_xt["player_b"]))
             row_vaep = vaep_pair_index.get(key)
+            row_xg = xg_pair_index.get(key)
             return _pair_record(
                 row_xt, id_to_name, id_to_display,
                 row_vaep=row_vaep, id_to_position=id_to_position,
+                row_xg=row_xg,
             )
 
         coverage: dict = {
@@ -245,9 +257,11 @@ def build_chemistry_json(
     ) -> dict:
         key = (int(row["player_a"]), int(row["player_b"]))
         row_vaep = vaep_pair_index.get(key)
+        row_xg = xg_pair_index.get(key)
         rec = _pair_record(
             row, id_to_name, id_to_display,
             row_vaep=row_vaep, id_to_position=id_to_position,
+            row_xg=row_xg,
         )
         a, b = rec["player_a_id"], rec["player_b_id"]
         nation = id_to_nation.get(a) or id_to_nation.get(b)
@@ -267,6 +281,7 @@ def build_chemistry_json(
             "min_minutes_team": min_minutes_team,
             "total_pairs": int(len(joi90)),
             "has_vaep": joi90_vaep is not None and not joi90_vaep.empty,
+            "has_xg": joi90_xg is not None and not joi90_xg.empty,
         },
     }
     out_path.parent.mkdir(parents=True, exist_ok=True)
