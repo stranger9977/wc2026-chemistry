@@ -15958,7 +15958,9 @@
       "player_b_name": "Vinícius José Paixão de Oliveira Júnior",
       "joi90": 2.2038429588607595,
       "minutes": 210.66666666666669,
-      "matches": 3
+      "matches": 3,
+      "nation_code": "BRA",
+      "flag_iso": "br"
     },
     {
       "player_a_id": 23830,
@@ -15967,7 +15969,9 @@
       "player_b_name": "Piero Martín Hincapié Reyna",
       "joi90": 1.8826406249999998,
       "minutes": 240.0,
-      "matches": 2
+      "matches": 2,
+      "nation_code": "ECU",
+      "flag_iso": "ec"
     },
     {
       "player_a_id": 4445,
@@ -15976,7 +15980,9 @@
       "player_b_name": "Ousmane Dembélé",
       "joi90": 1.6135371650821089,
       "minutes": 347.1,
-      "matches": 5
+      "matches": 5,
+      "nation_code": "FRA",
+      "flag_iso": "fr"
     },
     {
       "player_a_id": 3009,
@@ -15985,7 +15991,9 @@
       "player_b_name": "Theo Bernard François Hernández",
       "joi90": 1.5441361852930013,
       "minutes": 658.4166666666666,
-      "matches": 6
+      "matches": 6,
+      "nation_code": "FRA",
+      "flag_iso": "fr"
     },
     {
       "player_a_id": 2988,
@@ -15994,7 +16002,9 @@
       "player_b_name": "Daley Blind",
       "joi90": 1.5357845975680369,
       "minutes": 345.4,
-      "matches": 5
+      "matches": 5,
+      "nation_code": "NED",
+      "flag_iso": "nl"
     },
     {
       "player_a_id": 7745,
@@ -16003,7 +16013,9 @@
       "player_b_name": "Jurriën David Norman Timber",
       "joi90": 1.485249077490775,
       "minutes": 180.66666666666666,
-      "matches": 3
+      "matches": 3,
+      "nation_code": "NED",
+      "flag_iso": "nl"
     },
     {
       "player_a_id": 3382,
@@ -16012,7 +16024,9 @@
       "player_b_name": "Mason Mount",
       "joi90": 1.4159170458522932,
       "minutes": 190.46666666666667,
-      "matches": 2
+      "matches": 2,
+      "nation_code": "ENG",
+      "flag_iso": "gb-eng"
     },
     {
       "player_a_id": 5503,
@@ -16021,7 +16035,9 @@
       "player_b_name": "Rodrigo Javier De Paul",
       "joi90": 1.2680863113124683,
       "minutes": 721.0333333333333,
-      "matches": 7
+      "matches": 7,
+      "nation_code": "ARG",
+      "flag_iso": "ar"
     },
     {
       "player_a_id": 10955,
@@ -16030,7 +16046,9 @@
       "player_b_name": "Bukayo Saka",
       "joi90": 1.2343397791635677,
       "minutes": 291.31666666666666,
-      "matches": 4
+      "matches": 4,
+      "nation_code": "ENG",
+      "flag_iso": "gb-eng"
     },
     {
       "player_a_id": 5474,
@@ -16039,7 +16057,9 @@
       "player_b_name": "Borna Sosa",
       "joi90": 1.2304136817490072,
       "minutes": 449.01666666666665,
-      "matches": 5
+      "matches": 5,
+      "nation_code": "CRO",
+      "flag_iso": "hr"
     },
     {
       "player_a_id": 5249,
@@ -16048,7 +16068,9 @@
       "player_b_name": "Sergio Rochet Álvarez",
       "joi90": 1.1999312115931395,
       "minutes": 181.71666666666667,
-      "matches": 2
+      "matches": 2,
+      "nation_code": "URU",
+      "flag_iso": "uy"
     },
     {
       "player_a_id": 2988,
@@ -16057,7 +16079,9 @@
       "player_b_name": "Cody Mathès Gakpo",
       "joi90": 1.1714493746787733,
       "minutes": 291.85,
-      "matches": 5
+      "matches": 5,
+      "nation_code": "NED",
+      "flag_iso": "nl"
     },
     {
       "player_a_id": 3280,
@@ -16066,7 +16090,9 @@
       "player_b_name": "Lucas Tolentino Coelho de Lima",
       "joi90": 1.163091922005571,
       "minutes": 323.1,
-      "matches": 4
+      "matches": 4,
+      "nation_code": "BRA",
+      "flag_iso": "br"
     },
     {
       "player_a_id": 5479,
@@ -16075,7 +16101,9 @@
       "player_b_name": "Kye Rowles",
       "joi90": 1.1595468750000002,
       "minutes": 480.0,
-      "matches": 4
+      "matches": 4,
+      "nation_code": "AUS",
+      "flag_iso": "au"
     },
     {
       "player_a_id": 10595,
@@ -16084,7 +16112,9 @@
       "player_b_name": "Éder Gabriel Militão",
       "joi90": 1.1299746569955431,
       "minutes": 190.71666666666667,
-      "matches": 3
+      "matches": 3,
+      "nation_code": "BRA",
+      "flag_iso": "br"
     },
     {
       "player_a_id": 10595,
@@ -16093,7 +16123,9 @@
       "player_b_name": "Lucas Tolentino Coelho de Lima",
       "joi90": 1.1148807842250974,
       "minutes": 294.98333333333335,
-      "matches": 4
+      "matches": 4,
+      "nation_code": "BRA",
+      "flag_iso": "br"
     },
     {
       "player_a_id": 12352,
@@ -16102,7 +16134,9 @@
       "player_b_name": "Walker Zimmerman",
       "joi90": 1.10684375,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "nation_code": "USA",
+      "flag_iso": "us"
     },
     {
       "player_a_id": 2995,
@@ -16111,7 +16145,9 @@
       "player_b_name": "Lionel Andrés Messi Cuccittini",
       "joi90": 1.1045934048760158,
       "minutes": 319.93333333333334,
-      "matches": 5
+      "matches": 5,
+      "nation_code": "ARG",
+      "flag_iso": "ar"
     },
     {
       "player_a_id": 22293,
@@ -16120,7 +16156,9 @@
       "player_b_name": "Kye Rowles",
       "joi90": 1.06228125,
       "minutes": 480.0,
-      "matches": 4
+      "matches": 4,
+      "nation_code": "AUS",
+      "flag_iso": "au"
     },
     {
       "player_a_id": 12524,
@@ -16129,7 +16167,9 @@
       "player_b_name": "Tim Ream",
       "joi90": 1.0523750000000003,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "nation_code": "USA",
+      "flag_iso": "us"
     },
     {
       "player_a_id": 5577,
@@ -16138,7 +16178,9 @@
       "player_b_name": "César Jasib Montes Castro",
       "joi90": 1.0506875,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "nation_code": "MEX",
+      "flag_iso": "mx"
     },
     {
       "player_a_id": 5690,
@@ -16147,7 +16189,9 @@
       "player_b_name": "Daichi Kamada",
       "joi90": 1.0260107227958697,
       "minutes": 209.83333333333331,
-      "matches": 4
+      "matches": 4,
+      "nation_code": "JPN",
+      "flag_iso": "jp"
     },
     {
       "player_a_id": 2995,
@@ -16156,7 +16200,9 @@
       "player_b_name": "Alexis Mac Allister",
       "joi90": 1.0238402708124374,
       "minutes": 199.4,
-      "matches": 4
+      "matches": 4,
+      "nation_code": "ARG",
+      "flag_iso": "ar"
     },
     {
       "player_a_id": 24085,
@@ -16165,7 +16211,9 @@
       "player_b_name": "Piero Martín Hincapié Reyna",
       "joi90": 1.0163125,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "nation_code": "ECU",
+      "flag_iso": "ec"
     },
     {
       "player_a_id": 5651,
@@ -16174,7 +16222,9 @@
       "player_b_name": "Montassar Omar Talbi",
       "joi90": 1.0070156250000004,
       "minutes": 240.0,
-      "matches": 2
+      "matches": 2,
+      "nation_code": "TUN",
+      "flag_iso": "tn"
     },
     {
       "player_a_id": 5214,
@@ -16183,7 +16233,9 @@
       "player_b_name": "João Félix Sequeira",
       "joi90": 0.9972592327640172,
       "minutes": 186.38333333333333,
-      "matches": 3
+      "matches": 3,
+      "nation_code": "POR",
+      "flag_iso": "pt"
     },
     {
       "player_a_id": 5604,
@@ -16192,7 +16244,9 @@
       "player_b_name": "Jin-Su Kim",
       "joi90": 0.9962336418767955,
       "minutes": 365.51666666666665,
-      "matches": 4
+      "matches": 4,
+      "nation_code": "KOR",
+      "flag_iso": "kr"
     },
     {
       "player_a_id": 9411,
@@ -16201,7 +16255,9 @@
       "player_b_name": "Hidemasa Morita",
       "joi90": 0.9942793250015857,
       "minutes": 262.7166666666667,
-      "matches": 3
+      "matches": 3,
+      "nation_code": "JPN",
+      "flag_iso": "jp"
     },
     {
       "player_a_id": 4320,
@@ -16210,7 +16266,9 @@
       "player_b_name": "Raphael Dias Belloli",
       "joi90": 0.9935505164246327,
       "minutes": 214.61666666666667,
-      "matches": 3
+      "matches": 3,
+      "nation_code": "BRA",
+      "flag_iso": "br"
     },
     {
       "player_a_id": 5550,
@@ -16219,7 +16277,9 @@
       "player_b_name": "Nico Elvedi",
       "joi90": 0.9870000000000002,
       "minutes": 240.0,
-      "matches": 2
+      "matches": 2,
+      "nation_code": "SUI",
+      "flag_iso": "ch"
     },
     {
       "player_a_id": 5573,
@@ -16228,7 +16288,9 @@
       "player_b_name": "Francisco Guillermo Ochoa Magaña",
       "joi90": 0.9763125,
       "minutes": 360.0,
-      "matches": 3
+      "matches": 3,
+      "nation_code": "MEX",
+      "flag_iso": "mx"
     },
     {
       "player_a_id": 2988,
@@ -16237,7 +16299,9 @@
       "player_b_name": "Denzel Dumfries",
       "joi90": 0.9743581477139507,
       "minutes": 284.33333333333337,
-      "matches": 4
+      "matches": 4,
+      "nation_code": "NED",
+      "flag_iso": "nl"
     },
     {
       "player_a_id": 3244,
@@ -16246,7 +16310,9 @@
       "player_b_name": "Harry Maguire",
       "joi90": 0.9685419681620839,
       "minutes": 483.7,
-      "matches": 5
+      "matches": 5,
+      "nation_code": "ENG",
+      "flag_iso": "gb-eng"
     },
     {
       "player_a_id": 5209,
@@ -16255,7 +16321,9 @@
       "player_b_name": "João Félix Sequeira",
       "joi90": 0.959344756728092,
       "minutes": 251.43333333333334,
-      "matches": 4
+      "matches": 4,
+      "nation_code": "POR",
+      "flag_iso": "pt"
     },
     {
       "player_a_id": 3468,
@@ -16264,7 +16332,9 @@
       "player_b_name": "Harry Kane",
       "joi90": 0.9575661827497866,
       "minutes": 195.16666666666669,
-      "matches": 2
+      "matches": 2,
+      "nation_code": "ENG",
+      "flag_iso": "gb-eng"
     },
     {
       "player_a_id": 4320,
@@ -16273,7 +16343,9 @@
       "player_b_name": "Carlos Henrique Casimiro",
       "joi90": 0.9507813431945606,
       "minutes": 279.43333333333334,
-      "matches": 3
+      "matches": 3,
+      "nation_code": "BRA",
+      "flag_iso": "br"
     },
     {
       "player_a_id": 2995,
@@ -16282,7 +16354,9 @@
       "player_b_name": "Enzo Fernandez",
       "joi90": 0.9503622008790495,
       "minutes": 204.76666666666665,
-      "matches": 5
+      "matches": 5,
+      "nation_code": "ARG",
+      "flag_iso": "ar"
     },
     {
       "player_a_id": 3382,
@@ -16291,7 +16365,9 @@
       "player_b_name": "Jude Bellingham",
       "joi90": 0.947034370128424,
       "minutes": 449.0333333333333,
-      "matches": 5
+      "matches": 5,
+      "nation_code": "ENG",
+      "flag_iso": "gb-eng"
     },
     {
       "player_a_id": 3193,
@@ -16300,7 +16376,9 @@
       "player_b_name": "Cristiano Ronaldo dos Santos Aveiro",
       "joi90": 0.9385883905013194,
       "minutes": 246.35000000000002,
-      "matches": 4
+      "matches": 4,
+      "nation_code": "POR",
+      "flag_iso": "pt"
     },
     {
       "player_a_id": 3009,
@@ -16309,7 +16387,9 @@
       "player_b_name": "Adrien Rabiot",
       "joi90": 0.9343307771365327,
       "minutes": 632.45,
-      "matches": 6
+      "matches": 6,
+      "nation_code": "FRA",
+      "flag_iso": "fr"
     },
     {
       "player_a_id": 2995,
@@ -16318,7 +16398,9 @@
       "player_b_name": "Cristian Gabriel Romero",
       "joi90": 0.9273376143398319,
       "minutes": 180.38333333333333,
-      "matches": 3
+      "matches": 3,
+      "nation_code": "ARG",
+      "flag_iso": "ar"
     },
     {
       "player_a_id": 3306,
@@ -16327,7 +16409,9 @@
       "player_b_name": "Virgil van Dijk",
       "joi90": 0.9267381818181819,
       "minutes": 572.9166666666666,
-      "matches": 5
+      "matches": 5,
+      "nation_code": "NED",
+      "flag_iso": "nl"
     },
     {
       "player_a_id": 18395,
@@ -16336,7 +16420,9 @@
       "player_b_name": "Lucas Tolentino Coelho de Lima",
       "joi90": 0.9123253460433535,
       "minutes": 255.26666666666665,
-      "matches": 4
+      "matches": 4,
+      "nation_code": "BRA",
+      "flag_iso": "br"
     },
     {
       "player_a_id": 23828,
@@ -16345,7 +16431,9 @@
       "player_b_name": "Atiba Hutchinson",
       "joi90": 0.8936153441933788,
       "minutes": 190.3,
-      "matches": 3
+      "matches": 3,
+      "nation_code": "CAN",
+      "flag_iso": "ca"
     },
     {
       "player_a_id": 3308,
@@ -16354,7 +16442,9 @@
       "player_b_name": "Jude Bellingham",
       "joi90": 0.8841497227356748,
       "minutes": 243.45,
-      "matches": 3
+      "matches": 3,
+      "nation_code": "ENG",
+      "flag_iso": "gb-eng"
     },
     {
       "player_a_id": 3669,
@@ -16363,7 +16453,9 @@
       "player_b_name": "Jurriën David Norman Timber",
       "joi90": 0.8805703125000001,
       "minutes": 480.0,
-      "matches": 4
+      "matches": 4,
+      "nation_code": "NED",
+      "flag_iso": "nl"
     },
     {
       "player_a_id": 3193,
@@ -16372,7 +16464,9 @@
       "player_b_name": "Bruno Miguel Borges Fernandes",
       "joi90": 0.8738066557778684,
       "minutes": 408.1666666666667,
-      "matches": 4
+      "matches": 4,
+      "nation_code": "POR",
+      "flag_iso": "pt"
     },
     {
       "player_a_id": 3176,
@@ -16381,7 +16475,9 @@
       "player_b_name": "Toby Alderweireld",
       "joi90": 0.872871242864021,
       "minutes": 242.31666666666666,
-      "matches": 3
+      "matches": 3,
+      "nation_code": "BEL",
+      "flag_iso": "be"
     },
     {
       "player_a_id": 13620,
@@ -16390,7 +16486,9 @@
       "player_b_name": "Vinícius José Paixão de Oliveira Júnior",
       "joi90": 0.8657360406091372,
       "minutes": 246.25,
-      "matches": 3
+      "matches": 3,
+      "nation_code": "BRA",
+      "flag_iso": "br"
     },
     {
       "player_a_id": 3244,
@@ -16399,7 +16497,9 @@
       "player_b_name": "Bukayo Saka",
       "joi90": 0.8588592024715374,
       "minutes": 291.31666666666666,
-      "matches": 4
+      "matches": 4,
+      "nation_code": "ENG",
+      "flag_iso": "gb-eng"
     }
   ],
   "meta": {

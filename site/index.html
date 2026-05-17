@@ -9,8 +9,31 @@
 <body>
 <main>
   <h1>World Cup 2026 — Chemistry</h1>
-  <p class="lead">Offensive chemistry (JOI90) between every player pair within each WC 2026 squad, computed from their actual international matches. Built on the methodology of <a href="https://www.janvanhaaren.be/assets/papers/mitssac-2020-chemistry.pdf">Bransen &amp; Van Haaren, MITSSAC 2020</a>.</p>
+  <p class="lead">Player chemistry between every pair on every WC 2026 squad, computed from their actual international matches.</p>
 
+  <section class="explainer">
+    <h2>How this works</h2>
+    <div class="explainer-grid">
+      <div>
+        <h3>The metric</h3>
+        <p><strong>JOI90</strong> — Joint Offensive Impact per 90 minutes. For each consecutive same-team action pair (e.g., a pass from A → control by B), we sum the <a href="https://github.com/ML-KULeuven/socceraction" target="_blank" rel="noopener">VAEP</a> value of both actions. We aggregate per pair across every match where the two played together, then normalize to a per-90-minutes-shared rate.</p>
+      </div>
+      <div>
+        <h3>The data</h3>
+        <p>Event data from <a href="https://github.com/statsbomb/open-data" target="_blank" rel="noopener">StatsBomb Open Data</a>: every on-ball action in WC 2022 (more international tournaments rolling in over time). Each nation's roster is auto-derived from the top-26 most-capped players in that window.</p>
+      </div>
+      <div>
+        <h3>The methodology</h3>
+        <p>Based on Bransen &amp; Van Haaren, <a href="https://www.janvanhaaren.be/assets/papers/mitssac-2020-chemistry.pdf" target="_blank" rel="noopener"><em>Player Chemistry: Striving for a Perfectly Balanced Soccer Team</em></a> (MIT Sloan Sports Analytics Conference 2020). Their original work used Wyscout club data; this project flips the methodology to international matches.</p>
+      </div>
+      <div>
+        <h3>Caveats</h3>
+        <p>Action values come from a heuristic VAEP estimator in v1 — defenders and goalkeepers may rank higher than they should because long progressive passes get over-rewarded. A trained VAEP model is queued for v2. Seven nations (AUT, CIV, COL, EGY, ITA, NGA, PAR) have no chemistry data yet — they did not appear in WC 2022 events.</p>
+      </div>
+    </div>
+  </section>
+
+  <h2 class="section-title">Nations</h2>
   <div class="grid" id="nation-grid"></div>
 
   <h2 class="section-title">Global top pairs heading into WC 2026</h2>

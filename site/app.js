@@ -32,8 +32,11 @@ function renderLeaderboard(doc) {
   for (let i = 0; i < doc.leaderboard.length; i++) {
     const p = doc.leaderboard[i];
     const tr = document.createElement("tr");
+    const flag = p.flag_iso
+      ? `<img class="flag-inline" src="assets/flags/${p.flag_iso}.svg" alt="${p.nation_code || ''}"/> `
+      : "";
     tr.innerHTML = `<td>${i + 1}</td>
-      <td>${p.player_a_name} + ${p.player_b_name}</td>
+      <td>${flag}${p.player_a_name} + ${p.player_b_name}</td>
       <td class="joi">${p.joi90.toFixed(3)}</td>
       <td>${Math.round(p.minutes)}</td><td>${p.matches}</td>`;
     tbody.appendChild(tr);

@@ -177,6 +177,12 @@ def build_chemistry_json(
             in_any_squad_ids.add(p["player_a_id"])
             in_any_squad_ids.add(p["player_b_id"])
 
+    # Build reverse index: player_id -> (nation_code, flag_iso)
+    id_to_nation: dict[int, tuple[str, str]] = {}
+    for code, entry in per_nation.items():
+        for pid_str in entry.get("players_by_id", {}).keys():
+            id_to_nation[int(pid_str)] = (code, entry["squad"]["flag_iso"])
+
     leaderboard_src = joi90[
         joi90["player_a"].isin(in_any_squad_ids)
         & joi90["player_b"].isin(in_any_squad_ids)
@@ -186,9 +192,17 @@ def build_chemistry_json(
         leaderboard_src.assign(nation_code="GLOBAL"), n=50,
     )
 
+    def _enrich_leaderboard_row(row: pd.Series, id_to_name: dict[int, str], id_to_nation: dict[int, tuple[str, str]]) -> dict:
+        rec = _pair_record(row, id_to_name)
+        a, b = rec["player_a_id"], rec["player_b_id"]
+        nation = id_to_nation.get(a) or id_to_nation.get(b)
+        if nation:
+            rec["nation_code"], rec["flag_iso"] = nation
+        return rec
+
     doc = {
         "nations": per_nation,
-        "leaderboard": [_pair_record(r, id_to_name) for _, r in leaderboard.iterrows()],
+        "leaderboard": [_enrich_leaderboard_row(r, id_to_name, id_to_nation) for _, r in leaderboard.iterrows()],
         "meta": {
             "min_minutes_global": min_minutes_global,
             "min_minutes_team": min_minutes_team,

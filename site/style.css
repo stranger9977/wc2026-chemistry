@@ -26,6 +26,52 @@ h1 { font-size: 44px; margin: 0 0 8px; letter-spacing: -0.02em; }
 .leaderboard th, .leaderboard td { padding: 10px 12px; border-bottom: 1px solid var(--border); text-align: left; }
 .leaderboard th { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
 .leaderboard td.joi { color: var(--accent); font-family: "JetBrains Mono", monospace; font-weight: 600; }
+.flag-inline {
+  display: inline-block;
+  width: 22px;
+  height: 15px;
+  object-fit: cover;
+  border-radius: 2px;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-top: -2px;
+}
+.explainer {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin: 32px 0 48px;
+}
+.explainer h2 {
+  margin: 0 0 18px;
+  font-size: 20px;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.explainer-grid {
+  display: grid;
+  gap: 22px 32px;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 720px) { .explainer-grid { grid-template-columns: 1fr; } }
+.explainer h3 {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent2);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.explainer p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.explainer p strong {
+  color: var(--ink);
+}
 .btn { display: inline-block; padding: 8px 14px; background: var(--panel); border: 1px solid var(--border);
   border-radius: 8px; color: var(--ink); font-size: 13px; text-decoration: none; margin: 4px 6px 0 0; }
 .btn:hover { border-color: var(--accent2); }
