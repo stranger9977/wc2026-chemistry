@@ -1,0 +1,15 @@
+statsbombpy>=1.13
+socceraction>=1.5
+pandas>=2.2
+pyarrow>=15
+pydantic>=2.6
+pyyaml>=6.0
+mplsoccer>=1.4
+matplotlib>=3.8
+Pillow>=10.2
+cairosvg>=2.7
+xgboost>=2.0
+scikit-learn>=1.4
+tqdm>=4.66
+pytest>=8.0
+pytest-cov>=4.1

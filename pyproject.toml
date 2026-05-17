@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wc2026-chemistry"
+version = "0.1.0"
+description = "Player chemistry pipeline for FIFA WC 2026"
+requires-python = ">=3.11"
+
+[tool.setuptools]
+packages = ["chemistry"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
