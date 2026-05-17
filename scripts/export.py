@@ -36,6 +36,15 @@ def export_nation(code: str, entry: dict) -> None:
 
     (nat_dir / "data.json").write_text(json.dumps(entry, indent=2, ensure_ascii=False))
 
+    from chemistry.pair_card import render_pair_card, CardOptions
+    cards_dir = nat_dir / "pair_cards"
+    cards_dir.mkdir(exist_ok=True)
+    opts = CardOptions(accent=entry["squad"]["team_color"])
+    for i, p in enumerate(entry["pairs"][:5], start=1):
+        out = cards_dir / f"{i:02d}_{p['player_a_name'].replace(' ', '_')}_{p['player_b_name'].replace(' ', '_')}.png"
+        render_pair_card(p, nation=entry["squad"]["nation"],
+                         flag_iso=entry["squad"]["flag_iso"], opts=opts, out_path=out)
+
     log.info("Exported %s", code)
 
 
@@ -53,6 +62,10 @@ def main() -> None:
             export_nation(code, entry)
         except Exception as exc:
             log.exception("Failed exporting %s: %s", code, exc)
+
+    from chemistry.render import render_leaderboard, render_landing_grid
+    render_leaderboard(doc, EXPORTS / "leaderboard.png")
+    render_landing_grid(doc, EXPORTS / "landing_grid.png")
 
     manifest = {
         "generated_from": str(OUT_JSON),
