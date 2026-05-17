@@ -1,0 +1,18 @@
+nation: United States
+nation_code: USA
+flag_iso: us
+manager: Mauricio Pochettino
+formation: "4-3-3"
+team_color: "#bf0d3e"
+players:
+  - { name: Matt Turner,             club: Crystal Palace,  position: GK }
+  - { name: Sergiño Dest,            club: PSV Eindhoven,   position: RB }
+  - { name: Chris Richards,          club: Crystal Palace,  position: CB }
+  - { name: Tim Ream,                club: Charlotte FC,    position: CB }
+  - { name: Antonee Robinson,        club: Fulham,          position: LB }
+  - { name: Tyler Adams,             club: Bournemouth,     position: DM }
+  - { name: Weston McKennie,         club: Juventus,        position: CM }
+  - { name: Yunus Musah,             club: AC Milan,        position: CM }
+  - { name: Christian Pulisic,       club: AC Milan,        position: RW }
+  - { name: Folarin Balogun,         club: AS Monaco,       position: ST }
+  - { name: Tim Weah,                club: Juventus,        position: LW }
