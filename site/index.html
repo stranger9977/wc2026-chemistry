@@ -9,26 +9,26 @@
 <body>
 <main>
   <h1>World Cup 2026 — Chemistry</h1>
-  <p class="lead">Player chemistry between every pair on every WC 2026 squad, scored by xT (Expected Threat) across five international tournaments.</p>
+  <p class="lead">Offensive chemistry between every pair on every WC 2026 squad — measured three different ways, scored across four men's international tournaments. Toggle metrics below; click any nation for its pitch chart.</p>
 
   <section class="explainer">
     <h2>How this works</h2>
     <div class="explainer-grid">
       <div>
-        <h3>The metric</h3>
-        <p>Three views per pair: <strong>xT</strong> rewards moving the ball to more dangerous zones; <strong>VAEP</strong> uses a trained classifier to value each action's effect on scoring probability; <strong>xG-Chain</strong> credits a pair with the xG of every possession where both touched the ball. Each is normalized per 90 shared minutes — pick whichever view tells the story you care about.</p>
+        <h3>The metric — three views</h3>
+        <p>Toggle between <strong>xT</strong> (Karun Singh's Expected Threat — rewards moving the ball into more dangerous pitch zones), <strong>VAEP</strong> (a trained classifier — rewards actions that raise the probability of scoring in the next few seconds), and <strong>xG-Chain</strong> (credits a pair with the xG of every possession both touched). All three are normalized per 90 shared minutes. <strong>G</strong> and <strong>A</strong> columns show the sum of the pair's goals and assists across the window.</p>
       </div>
       <div>
         <h3>The data</h3>
-        <p>Event data from <a href="https://github.com/statsbomb/open-data" target="_blank" rel="noopener">StatsBomb Open Data</a>: every on-ball action in WC 2022, Euro 2024, Copa América 2024, Euro 2020, and the FIFA Women's World Cup 2023. Each nation's roster is auto-derived from the top-26 most-capped players in that window.</p>
+        <p>Event data from <a href="https://github.com/statsbomb/open-data" target="_blank" rel="noopener">StatsBomb Open Data</a> — every on-ball action across <strong>FIFA WC 2022, UEFA Euro 2024, UEFA Euro 2020, and Copa América 2024</strong>: 262 matches, ~427K SPADL actions. Curated WC 2026 squads (May 2026 call-ups and announced final rosters) where available; auto-derived from each nation's top-capped players in the window otherwise.</p>
       </div>
       <div>
         <h3>The methodology</h3>
-        <p>Based on Bransen &amp; Van Haaren, <a href="https://www.janvanhaaren.be/assets/papers/mitssac-2020-chemistry.pdf" target="_blank" rel="noopener"><em>Player Chemistry: Striving for a Perfectly Balanced Soccer Team</em></a> (MIT Sloan Sports Analytics Conference 2020). Their original work used Wyscout club data; this project flips the methodology to international matches.</p>
+        <p>Based on Bransen &amp; Van Haaren, <a href="https://www.janvanhaaren.be/assets/papers/mitssac-2020-chemistry.pdf" target="_blank" rel="noopener"><em>Player Chemistry: Striving for a Perfectly Balanced Soccer Team</em></a> (MIT Sloan Sports Analytics Conference 2020). The paper computes JOI over Wyscout club matches; this project flips it to international matches and adds the xT and xG-Chain views alongside VAEP. Pipeline built on <a href="https://github.com/ML-KULeuven/socceraction" target="_blank" rel="noopener">socceraction</a>.</p>
       </div>
       <div>
         <h3>Caveats</h3>
-        <p>We currently use xT (Karun Singh, 2018) for action values. xT is a positional grid model — it doesn't reward dribbles, take-ons, or pressure actions as much as a fully-trained <a href="https://github.com/ML-KULeuven/socceraction" target="_blank" rel="noopener">VAEP</a> model would. A trained-VAEP view is queued for v2. Some nations (e.g., Italy, Egypt, Nigeria) didn't qualify for any of our covered tournaments so have no chemistry data.</p>
+        <p><strong>xT</strong> over-credits patient backline buildup — two CBs cycling possession still accumulate xT. <strong>VAEP</strong> is trained on only ~427K actions (~4.3K goal events) so the absolute scale is small; rankings are reliable, individual values less so. <strong>xG-Chain</strong>'s underlying xG model is a lightweight logistic regression on ~5K shots — directionally correct, conservative on absolutes. A few qualified nations (e.g., Curaçao, Haiti, New Zealand, Cape Verde) have little StatsBomb coverage and will show sparse chemistry data.</p>
       </div>
     </div>
   </section>
