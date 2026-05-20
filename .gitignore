@@ -3,11 +3,14 @@ data/raw/
 data/spadl/
 data/vaep/
 data/vaep_scored/
+data/vaep_scored_v2/
+data/sb_club_spadl/
 data/xg/
 data/xt/
 data/wyscout/
 data/wyscout_spadl/
 outputs/wyscout_joi_per_match.parquet
+outputs/sb_lineups_all.parquet
 
 # Python
 __pycache__/
