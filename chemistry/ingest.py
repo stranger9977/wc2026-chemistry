@@ -14,12 +14,14 @@ CACHE_DIR = Path(__file__).parent.parent / "data" / "raw"
 # Curated list — only international tournaments + qualifiers we care about
 # for chemistry leading up to WC 2026. Identified by StatsBomb competition_id
 # and season_id from sb.competitions().
-# IDs verified against sb.competitions() on 2026-05-17.
+# IDs verified against sb.competitions() on 2026-05-20.
 INTERNATIONAL_COMPETITIONS: list[dict] = [
     {"competition_id": 43,   "season_id": 106, "label": "FIFA World Cup 2022"},
     {"competition_id": 55,   "season_id": 282, "label": "UEFA Euro 2024"},
     {"competition_id": 55,   "season_id": 43,  "label": "UEFA Euro 2020"},
     {"competition_id": 223,  "season_id": 282, "label": "Copa America 2024"},
+    {"competition_id": 43,   "season_id": 3,   "label": "FIFA World Cup 2018"},
+    {"competition_id": 1267, "season_id": 107, "label": "African Cup of Nations 2023"},
 ]
 
 

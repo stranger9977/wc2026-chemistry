@@ -9,7 +9,7 @@
 <body>
 <main>
   <h1>World Cup 2026 — Chemistry</h1>
-  <p class="lead">Offensive chemistry between every pair on every WC 2026 squad — measured three different ways, scored across four men's international tournaments. Toggle metrics below; click any nation for its pitch chart.</p>
+  <p class="lead">Offensive chemistry between every pair on every WC 2026 squad — measured three different ways, scored across six men's international tournaments. Toggle metrics below; click any nation for its pitch chart.</p>
 
   <!-- Tab navigation -->
   <nav class="tab-nav" role="tablist" aria-label="Page sections">
@@ -30,7 +30,7 @@
         </div>
         <div>
           <h3>The data</h3>
-          <p>Event data from <a href="https://github.com/statsbomb/open-data" target="_blank" rel="noopener">StatsBomb Open Data</a> — every on-ball action across <strong>FIFA WC 2022, UEFA Euro 2024, UEFA Euro 2020, and Copa América 2024</strong>: 262 matches, ~427K SPADL actions. Curated WC 2026 squads (May 2026 call-ups and announced final rosters) where available; auto-derived from each nation's top-capped players in the window otherwise.</p>
+          <p>Event data from <a href="https://github.com/statsbomb/open-data" target="_blank" rel="noopener">StatsBomb Open Data</a> — every on-ball action across <strong>FIFA WC 2022, UEFA Euro 2024, UEFA Euro 2020, Copa América 2024, FIFA WC 2018, and AFCON 2023</strong>: 314 matches, ~653K SPADL actions. Curated WC 2026 squads (May 2026 call-ups and announced final rosters) where available; auto-derived from each nation's top-capped players in the window otherwise.</p>
         </div>
         <div>
           <h3>The methodology</h3>
@@ -38,7 +38,7 @@
         </div>
         <div>
           <h3>Caveats</h3>
-          <p><strong>xT</strong> over-credits patient backline buildup — two CBs cycling possession still accumulate xT. <strong>VAEP</strong> is trained on only ~427K actions (~4.3K goal events) so the absolute scale is small; rankings are reliable, individual values less so. <strong>xG-Chain</strong>'s underlying xG model is a lightweight logistic regression on ~5K shots — directionally correct, conservative on absolutes. A few qualified nations (e.g., Curaçao, Haiti, New Zealand, Cape Verde) have little StatsBomb coverage and will show sparse chemistry data.</p>
+          <p><strong>xT</strong> over-credits patient backline buildup — two CBs cycling possession still accumulate xT. <strong>VAEP</strong> is trained on only ~653K actions so the absolute scale is small; rankings are reliable, individual values less so. <strong>xG-Chain</strong>'s underlying xG model is a lightweight logistic regression on ~7K shots — directionally correct, conservative on absolutes. A few qualified nations (e.g., Curaçao, Haiti, New Zealand) have little StatsBomb coverage and will show sparse chemistry data.</p>
         </div>
       </div>
     </section>
@@ -163,7 +163,7 @@
             <h3>Pair interactions &rarr; JOI90</h3>
             <p>For every match, the SPADL sequence is scanned to find consecutive-action pairs. Each action's value is summed into the JOI for the pair it belongs to. After all matches in the rolling window, each pair's total JOI is scaled to 90 shared minutes.</p>
             <h3>Scope of this project</h3>
-            <p>Four men's international tournaments: <strong>FIFA World Cup 2022</strong>, <strong>UEFA Euro 2024</strong>, <strong>UEFA Euro 2020</strong>, <strong>Copa América 2024</strong>. 262 matches. ~427K SPADL actions. A 3-year rolling window ending with the most recent tournament data.</p>
+            <p>Six men's international tournaments. Original four-tournament window: <strong>FIFA World Cup 2022</strong>, <strong>UEFA Euro 2024</strong>, <strong>UEFA Euro 2020</strong>, <strong>Copa América 2024</strong>. Added to expand coverage for Africa and WC 2018 squads: <strong>FIFA World Cup 2018</strong>, <strong>AFCON 2023</strong>. 314 matches. ~653K SPADL actions.</p>
           </div>
         </div>
       </div>
@@ -179,7 +179,7 @@
             <h3>Scope: international not club</h3>
             <p>Club chemistry accumulates across a full season (700+ shared minutes). International chemistry is thinner — top pairs meet for 300–600 minutes across 4–7 matches per tournament. We compensate with a rolling multi-tournament window rather than a single season.</p>
             <h3>Rosters</h3>
-            <p>Where May 2026 call-ups or announced final squads are available, those are used. Otherwise, rosters are auto-derived from each nation's highest-capped players in the four-tournament window.</p>
+            <p>Where May 2026 call-ups or announced final squads are available, those are used. Otherwise, rosters are auto-derived from each nation's highest-capped players in the six-tournament corpus.</p>
           </div>
           <div>
             <h3>Three metric views</h3>
@@ -239,7 +239,7 @@
             <p class="mc-label">What it rewards highest</p>
             <p>Actions that directly raise the probability of an imminent goal: shots on target, key passes, and take-ons that beat the last defender.</p>
             <p class="mc-label">Stability / data demand</p>
-            <p>Requires training labels from the event sequence. More data-hungry than xT; the model trained here on ~427K actions is at the smaller end of what VAEP is designed for.</p>
+            <p>Requires training labels from the event sequence. More data-hungry than xT; the model trained here on ~653K actions is at the smaller end of what VAEP is designed for.</p>
             <p class="mc-label">Known failure mode</p>
             <p class="failure">Absolute scale is small: with only ~4,300 goal events in the training set the probability deltas are compressed. Rankings across pairs are reliable; the raw JOI90 values are not directly comparable to a club-data VAEP.</p>
             <p class="mc-label">Citation</p>
