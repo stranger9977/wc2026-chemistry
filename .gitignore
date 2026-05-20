@@ -4,6 +4,7 @@ data/spadl/
 data/vaep/
 data/vaep_scored/
 data/xg/
+data/xt/
 
 # Python
 __pycache__/
