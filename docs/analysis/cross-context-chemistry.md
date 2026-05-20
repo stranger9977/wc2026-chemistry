@@ -4,7 +4,9 @@
 
 Lukas Podolski is the canonical case: universally acclaimed for Germany, a peripheral figure at Arsenal, Internazionale, and Monaco. He scored 49 goals in 130 Germany caps and accumulated one Bundesliga title and a World Cup winners medal in 2014, yet finished his club career without a major domestic trophy. The pattern raises a genuine question: does playing for your national team unlock something — tactical role clarity, reduced positional competition, emotional investment, familiarity with teammates from years of camp — that clubs cannot replicate?
 
-The StatsBomb open data cannot answer this. It covers international tournaments only. The Wyscout open dataset (Pappalardo et al., 2019, Nature Scientific Data) solves this in one shot: it covers the Premier League, La Liga, Bundesliga, Serie A, and Ligue 1 (all 2017/18), plus WC 2018 and Euro 2016, all in a consistent schema with ~1.9 million events across ~1941 matches. Because the same players appear in both domestic and international fixtures, within-player comparisons are possible.
+**Following the paper, this analysis uses VAEP (Decroos et al. 2019, Bransen & Van Haaren 2020) as the action-value function. xT results are reported alongside for cross-reference.**
+
+The Wyscout open dataset (Pappalardo et al., 2019, Nature Scientific Data) covers the Premier League, La Liga, Bundesliga, Serie A, and Ligue 1 (all 2017/18), plus WC 2018 and Euro 2016, all in a consistent schema with ~1.9 million events. Because the same players appear in both domestic and international fixtures, within-player comparisons are possible.
 
 **Dataset stats:**
 
@@ -21,231 +23,78 @@ The StatsBomb open data cannot answer this. It covers international tournaments 
 
 ## 2. Methodology
 
-**xT-based JOI90.** Every event is converted to SPADL format via socceraction's Wyscout converter. A single Expected Threat (xT) model (16x12 grid) is fitted on all 7 competitions combined, ensuring values are comparable across club and international contexts. Each action is assigned a delta-xT value. A pair interaction is defined as two consecutive on-ball actions (passes, crosses, dribbles, take-ons, shots) by different players on the same team. The JOI contribution of each interaction is the delta-xT of the *second* action — the receiving player's contribution. Per-pair JOI is summed and normalized per 90 shared minutes (JOI90).
+**VAEP-based JOI90 (primary).** Every event is converted to SPADL format via socceraction's Wyscout converter. A VAEP model is trained on all 2,464,092 SPADL actions across all 7 Wyscout competitions combined (train-set AUC: scores=0.768, concedes=0.792). Following Decroos et al. 2019, two XGBClassifier models predict P(scores in next N actions) and P(concedes in next N actions); N=10. VAEP value per action = delta-P(scores) - delta-P(concedes). A pair interaction is two consecutive on-ball actions (passes, crosses, dribbles, take-ons, shots) by different players on the same team. JOI contribution = VAEP of the second action. Per-pair JOI is summed and normalized per 90 shared minutes (JOI90).
 
-**Shared minutes** are derived from Wyscout's teamsData formation structure (starters + substitution timestamps). Starters are credited from 0 to their substitution minute (or 90); substitutes from their entry minute to 90. This is a documented approximation — it ignores extra time and precise injury-time subs, but is accurate enough for 90-minute periods.
+**xT-based JOI90 (secondary reference).** Also computed for cross-reference using a 16x12 xT grid fitted on the same 7 competitions. Values reported in parentheses or secondary columns throughout. VAEP and xT scales differ — do not compare absolute values across metrics.
 
-**Floors:** Club pairs require ≥90 shared minutes; international pairs require ≥45. International samples are small — Germany played 3 WC 2018 group matches before elimination, Poland 3 matches, Egypt 3 matches. Argentina played 4 (R16 exit). France played 7 (winners). Croatia played 7 (runners-up). Belgium played 7 (3rd place).
+**Shared minutes** are derived from Wyscout's teamsData formation structure. Floors: club pairs require ≥90 shared minutes; international ≥45.
 
-**Caveats on cross-context comparisons.** Absolute JOI90 differences between club and international are not pure chemistry signal. International opponents in the group stage are often weaker; defensive structure differs between Bundesliga and WC group play; the sample is one season and one tournament. A player's *rank among their team's pairs* in each context is often a more stable lens than the raw delta.
+**Caveats on cross-context comparisons.** Absolute JOI90 differences between club and international are not pure chemistry signal. International opponents are often weaker; the sample is one season and one tournament. Rank among team peers is a more stable lens than raw delta.
 
-## 3. The Big Picture
+## 3. The Big Picture (VAEP-based)
 
-Country JOI90 / Club JOI90 ratio for featured players (pairs top-8 by shared minutes, floor: club ≥90 min, international ≥45 min):
+Country VAEP-JOI90 / Club VAEP-JOI90 ratio for featured players (pairs top-8 by shared minutes, floor: club ≥90 min, international ≥45 min):
 
-| Player | Club | Country | Avg Club JOI90 | Avg Country JOI90 | Ratio |
-|---|---|---|---|---|---|
-| Jerome Boateng | Bayern | Germany | 0.002 | 0.032 | 14.84 |
-| Joshua Kimmich | Bayern | Germany | 0.022 | 0.046 | 2.10 |
-| Toni Kroos | Real Madrid | Germany | 0.011 | 0.017 | 1.54 |
-| Antoine Griezmann | Atletico Madrid | France | 0.004 | 0.007 | 1.52 |
-| Paul Pogba | Manchester United | France | 0.009 | 0.012 | 1.34 |
-| Thomas Muller | Bayern | Germany | 0.011 | 0.012 | 1.08 |
-| Lionel Messi | Barcelona | Argentina | 0.017 | 0.017 | 1.01 |
-| Luka Modric | Real Madrid | Croatia | 0.013 | 0.013 | 0.97 |
-| Neymar | Paris Saint-Germain | Brazil | 0.020 | 0.017 | 0.82 |
-| N'Golo Kante | Chelsea | France | 0.009 | 0.007 | 0.76 |
-| Mohamed Salah | Liverpool | Egypt | 0.006 | 0.004 | 0.72 |
-| Kevin De Bruyne | Manchester City | Belgium | 0.019 | 0.012 | 0.65 |
-| Eden Hazard | Chelsea | Belgium | 0.018 | 0.006 | 0.33 |
-| Kylian Mbappe | Paris Saint-Germain | France | 0.011 | 0.003 | 0.31 |
-| Robert Lewandowski | Bayern | Poland | 0.004 | 0.001 | 0.18 |
-| Romelu Lukaku | Manchester United | Belgium | 0.002 | -0.001 | -0.47 |
+| Player | Club | Country | Avg Club VAEP-JOI90 | Avg Country VAEP-JOI90 | Ratio | xT Ratio |
+|---|---|---|---|---|---|---|
+| Jerome Boateng | Bayern | Germany | 0.0268 | 0.0566 | 2.11 | 14.84 |
+| Romelu Lukaku | Manchester United | Belgium | 0.0753 | 0.1276 | 1.69 | -0.47 |
+| Kylian Mbappe | Paris Saint-Germain | France | 0.0842 | 0.0898 | 1.07 | 0.31 |
+| Eden Hazard | Chelsea | Belgium | 0.0443 | 0.0449 | 1.01 | 0.33 |
+| Kevin De Bruyne | Manchester City | Belgium | 0.0900 | 0.0858 | 0.95 | 0.65 |
+| Antoine Griezmann | Atletico Madrid | France | 0.0719 | 0.0566 | 0.79 | 1.52 |
+| Joshua Kimmich | Bayern | Germany | 0.0705 | 0.0546 | 0.78 | 2.10 |
+| Mohamed Salah | Liverpool | Egypt | 0.1112 | 0.0808 | 0.73 | 0.72 |
+| Toni Kroos | Real Madrid | Germany | 0.0365 | 0.0265 | 0.73 | 1.54 |
+| Lionel Messi | Barcelona | Argentina | 0.1615 | 0.1083 | 0.67 | 1.01 |
+| Luka Modric | Real Madrid | Croatia | 0.0425 | 0.0198 | 0.47 | 0.97 |
+| Paul Pogba | Manchester United | France | 0.0556 | 0.0203 | 0.36 | 1.34 |
+| N'Golo Kante | Chelsea | France | 0.0301 | 0.0106 | 0.35 | 0.76 |
+| Neymar | Paris Saint-Germain | Brazil | 0.1838 | 0.0464 | 0.25 | 0.82 |
+| Robert Lewandowski | Bayern | Poland | 0.1052 | 0.0042 | 0.04 | 0.18 |
+| Thomas Muller | Bayern | Germany | 0.0699 | -0.0440 | -0.63 | 1.08 |
 
-**True Podolski types (country JOI90 > club, ratio > 1.2):**
+**True Podolski types (country VAEP-JOI90 > club, ratio > 1.2):**
 
-- **Jerome Boateng** (Bayern → Germany): ratio 14.84. Club avg 0.002, country avg 0.032.
-- **Joshua Kimmich** (Bayern → Germany): ratio 2.10. Club avg 0.022, country avg 0.046.
-- **Toni Kroos** (Real Madrid → Germany): ratio 1.54. Club avg 0.011, country avg 0.017.
-- **Antoine Griezmann** (Atletico Madrid → France): ratio 1.52. Club avg 0.004, country avg 0.007.
-- **Paul Pogba** (Manchester United → France): ratio 1.34. Club avg 0.009, country avg 0.012.
+- **Jerome Boateng** (Bayern → Germany): ratio 2.11. Club VAEP-avg 0.0268, country VAEP-avg 0.0566.
+- **Romelu Lukaku** (Manchester United → Belgium): ratio 1.69. Club VAEP-avg 0.0753, country VAEP-avg 0.1276.
 
-**Inverse Podolski types (club JOI90 > country, ratio < 0.8):**
+**Inverse Podolski types (club VAEP-JOI90 > country, ratio < 0.8):**
 
-- **N'Golo Kante** (Chelsea → France): ratio 0.76. Club avg 0.009, country avg 0.007.
-- **Mohamed Salah** (Liverpool → Egypt): ratio 0.72. Club avg 0.006, country avg 0.004.
-- **Kevin De Bruyne** (Manchester City → Belgium): ratio 0.65. Club avg 0.019, country avg 0.012.
-- **Eden Hazard** (Chelsea → Belgium): ratio 0.33. Club avg 0.018, country avg 0.006.
-- **Kylian Mbappe** (Paris Saint-Germain → France): ratio 0.31. Club avg 0.011, country avg 0.003.
-- **Robert Lewandowski** (Bayern → Poland): ratio 0.18. Club avg 0.004, country avg 0.001.
+- **Antoine Griezmann** (Atletico Madrid → France): ratio 0.79. Club VAEP-avg 0.0719, country VAEP-avg 0.0566.
+- **Joshua Kimmich** (Bayern → Germany): ratio 0.78. Club VAEP-avg 0.0705, country VAEP-avg 0.0546.
+- **Mohamed Salah** (Liverpool → Egypt): ratio 0.73. Club VAEP-avg 0.1112, country VAEP-avg 0.0808.
+- **Toni Kroos** (Real Madrid → Germany): ratio 0.73. Club VAEP-avg 0.0365, country VAEP-avg 0.0265.
+- **Lionel Messi** (Barcelona → Argentina): ratio 0.67. Club VAEP-avg 0.1615, country VAEP-avg 0.1083.
+- **Luka Modric** (Real Madrid → Croatia): ratio 0.47. Club VAEP-avg 0.0425, country VAEP-avg 0.0198.
 
-## 4. The Bayern 2018 Deep-Dive
+VAEP verdict: 16 players with sufficient data in both contexts. 2 showed higher average VAEP-JOI90 with national team partners (country > club); 11 showed higher club chemistry.
 
-Germany's 2018 World Cup campaign ended in the group stage — three matches, zero wins. Four of their core starters (Kimmich, Müller, Hummels, Boateng) played together weekly at Bayern Munich. If club chemistry transfers to international football, we should see above-average pair JOI90 at Germany for pairs that played extensively together at Bayern.
+## 4. The Bayern 2017/18 → Germany WC 2018 Deep-Dive
 
-| Pair | Club JOI90 | Club minutes | Country JOI90 | Country minutes | Transfer? |
-|---|---|---|---|---|---|
-| Kimmich — Müller | 0.038 | 1472.0 | 0.032 | 207.0 | yes |
-| Kimmich — Hummels | 0.009 | 1823.0 | 0.033 | 180.0 | yes |
-| Kimmich — Boateng | 0.068 | 1241.0 | 0.163 | 180.0 | yes |
-| Müller — Hummels | 0.004 | 1170.0 | -0.002 | 117.0 | no |
-| Müller — Boateng | 0.019 | 1273.0 | 0.018 | 180.0 | yes |
-| Hummels — Boateng | 0.016 | 992.0 | -0.038 | 90.0 | no |
+Germany's 2018 World Cup campaign ended in the group stage — three matches, zero wins. Four of their core starters (Kimmich, Müller, Hummels, Boateng) played together weekly at Bayern Munich.
 
-Germany had 3 WC 2018 matches — at most ~270 shared minutes for a starting pair. The small sample means all country JOI90 estimates carry high variance.
+| Pair | Club VAEP-JOI90 | Club xT-JOI90 | Club minutes | Country VAEP-JOI90 | Country xT-JOI90 | Country minutes | Transfer (VAEP)? |
+|---|---|---|---|---|---|---|---|
+| Kimmich — Müller | 0.1130 | 0.0383 | 1472.0 | 0.0064 | 0.0323 | 207.0 | no |
+| Kimmich — Hummels | 0.0027 | 0.0088 | 1823.0 | 0.0088 | 0.0331 | 180.0 | yes |
+| Kimmich — Boateng | 0.0390 | 0.0684 | 1241.0 | 0.1782 | 0.1627 | 180.0 | yes |
+| Müller — Hummels | -0.0137 | 0.0038 | 1170.0 | -0.0717 | -0.0015 | 117.0 | no |
+| Müller — Boateng | 0.0652 | 0.0193 | 1273.0 | 0.0273 | 0.0175 | 180.0 | no |
+| Hummels — Boateng | 0.0984 | 0.0163 | 992.0 | -0.0206 | -0.0379 | 90.0 | no |
 
-## 5. The Belgium Golden Generation
+Germany had 3 WC 2018 matches — at most ~270 shared minutes for a starting pair. High variance on all country estimates.
 
-### Eden Hazard
+## 5. Caveats
 
-**Club pairs (top 8 by shared minutes, Chelsea):**
+1. **VAEP scale differences.** VAEP trained on Wyscout SPADL has a different absolute scale from VAEP trained on StatsBomb SPADL (different action distributions, different feature encodings). Within-source comparisons are valid; cross-source comparisons are not.
 
-| Teammate | Minutes | JOI90 |
-|---|---|---|
-| Azpilicueta | 2261.0 | 0.0131 |
-| N. Kanté | 2077.0 | 0.0123 |
-| Marcos Alonso | 1966.0 | 0.0333 |
-| Fàbregas | 1769.0 | 0.0433 |
-| T. Bakayoko | 1648.0 | 0.0091 |
-| A. Rüdiger | 1448.0 | 0.0106 |
-| V. Moses | 1447.0 | 0.0174 |
-| A. Christensen | 1365.0 | 0.0016 |
+2. **Sample size.** Germany had 3 WC 2018 matches. Poland, Egypt: 3 each. Any JOI90 estimate on <4 matches has very high variance.
 
-**Country pairs (Belgium, WC 2018):**
+3. **Opponent strength.** Group-stage WC opponents are on average weaker than top-division club opposition.
 
-| Teammate | Minutes | JOI90 |
-|---|---|---|
-| J. Vertonghen | 518.0 | 0.0136 |
-| K. De Bruyne | 518.0 | 0.0159 |
-| A. Witsel | 518.0 | 0.0020 |
-| R. Lukaku | 476.0 | -0.0113 |
-| T. Alderweireld | 428.0 | 0.0154 |
-| T. Meunier | 428.0 | 0.0065 |
-| V. Kompany | 360.0 | -0.0030 |
-| D. Mertens | 276.0 | 0.0077 |
+4. **Tactical role.** Kimmich played right back at Bayern but midfield for Germany. This changes which pairs form at all, not just their quality.
 
-### Kevin De Bruyne
+5. **Single season.** This analysis covers 2017/18 + WC 2018 only.
 
-**Club pairs (top 8 by shared minutes, Manchester City):**
-
-| Teammate | Minutes | JOI90 |
-|---|---|---|
-| N. Otamendi | 2749.0 | 0.0174 |
-| Fernandinho | 2627.0 | 0.0188 |
-| K. Walker | 2607.0 | 0.0249 |
-| R. Sterling | 2389.0 | 0.0466 |
-| Ederson | 2359.0 | -0.0166 |
-| David Silva | 2216.0 | 0.0257 |
-| L. Sané | 2167.0 | 0.0174 |
-| S. Agüero | 1892.0 | 0.0181 |
-
-**Country pairs (Belgium, WC 2018):**
-
-| Teammate | Minutes | JOI90 |
-|---|---|---|
-| T. Alderweireld | 540.0 | 0.0080 |
-| J. Vertonghen | 540.0 | 0.0085 |
-| A. Witsel | 540.0 | 0.0221 |
-| E. Hazard | 518.0 | 0.0159 |
-| R. Lukaku | 476.0 | 0.0021 |
-| T. Courtois | 450.0 | -0.0034 |
-| T. Meunier | 450.0 | 0.0361 |
-| V. Kompany | 360.0 | 0.0102 |
-
-## 6. The Messi Case
-
-Argentina played 4 matches in WC 2018 before their R16 exit. Messi's national team chemistry is therefore measured on at most ~360 shared minutes per pair, vs. 38 La Liga matches at Barcelona.
-
-**Barcelona pairs (top 8):**
-
-| Teammate | Minutes | JOI90 |
-|---|---|---|
-| I. Rakitić | 2533.0 | 0.0239 |
-| L. Suárez | 2506.0 | 0.0189 |
-| Jordi Alba | 2452.0 | 0.0264 |
-| Sergio Busquets | 2263.0 | 0.0178 |
-| Sergi Roberto | 2146.0 | 0.0296 |
-| Piqué | 2123.0 | 0.0046 |
-| S. Umtiti | 1712.0 | 0.0041 |
-| Paulinho | 1662.0 | 0.0125 |
-
-**Argentina pairs (WC 2018):**
-
-| Teammate | Minutes | JOI90 |
-|---|---|---|
-| N. Otamendi | 360.0 | 0.0265 |
-| J. Mascherano | 360.0 | 0.0286 |
-| N. Tagliafico | 270.0 | -0.0044 |
-| G. Mercado | 270.0 | 0.0171 |
-| Á. di María | 237.0 | 0.0108 |
-| M. Rojo | 226.0 | 0.0053 |
-| É. Banega | 216.0 | 0.0410 |
-| M. Meza | 207.0 | 0.0144 |
-
-Ratio (country/club avg JOI90): **1.01**. Club avg: 0.017. Country avg: 0.017.
-
-## 7. The Mbappé Case
-
-France's 2018 World Cup run produced one of the most striking individual breakout performances in tournament history — Mbappé was 19, won the best young player award, and scored in the final. His PSG context in 2017/18 featured Neymar and Cavani, both high-profile attacking players competing for similar space.
-
-**PSG club pairs (top 8):**
-
-| Teammate | Minutes | JOI90 |
-|---|---|---|
-| A. Rabiot | 1455.0 | 0.0050 |
-| Dani Alves | 1329.0 | 0.0262 |
-| E. Cavani | 1215.0 | 0.0023 |
-| Yuri Berchiche | 1210.0 | 0.0106 |
-| J. Draxler | 1154.0 | 0.0071 |
-| M. Verratti | 1108.0 | 0.0118 |
-| P. Kimpembe | 1098.0 | 0.0011 |
-| Á. di María | 995.0 | 0.0229 |
-
-**France national team pairs (WC 2018):**
-
-| Teammate | Minutes | JOI90 |
-|---|---|---|
-| P. Pogba | 521.0 | 0.0132 |
-| B. Pavard | 521.0 | 0.0077 |
-| A. Griezmann | 495.0 | 0.0016 |
-| R. Varane | 431.0 | 0.0049 |
-| O. Giroud | 370.0 | -0.0051 |
-| S. Umtiti | 357.0 | 0.0001 |
-| N. Kanté | 357.0 | 0.0045 |
-| L. Hernández | 342.0 | 0.0002 |
-
-Ratio (country/club avg JOI90): **0.31**. Club avg: 0.011. Country avg: 0.003.
-
-## 8. Headline Conclusion
-
-The Wyscout data does not support a universal Podolski thesis: among 16 featured players, 7 showed higher average JOI90 at the club level vs. country (5 showed the reverse). Club chemistry generally dominates.
-
-The strongest specific findings:
-
-- **Jerome Boateng** (Bayern → Germany): country avg JOI90 0.032 vs. club 0.002 (ratio 14.84). 8 country pairs, 8 club pairs.
-- **Joshua Kimmich** (Bayern → Germany): country avg JOI90 0.046 vs. club 0.022 (ratio 2.10). 8 country pairs, 8 club pairs.
-- **Toni Kroos** (Real Madrid → Germany): country avg JOI90 0.017 vs. club 0.011 (ratio 1.54). 8 country pairs, 8 club pairs.
-
-The Podolski paradox persists as a **narrative** even where the data is ambiguous, because international tournaments are high-stakes, zero-sum, and memorable. A World Cup winner's medal compresses years of club mediocrity into irrelevance. Recency bias and tournament compression (one match can end a campaign) make country performance more salient in memory than 38 league games.
-
-## 9. Caveats
-
-1. **Sample size.** Germany had 3 WC 2018 matches (group stage exit). Poland, Egypt: 3 each. Any JOI90 estimate on <4 matches has very high variance. France (7 matches) and Belgium (7) are more reliable but still small vs. a 38-match league season.
-
-2. **Opponent strength.** Group-stage WC opponents are on average weaker than Champions League or top-6 Premier League opposition. Higher xT accrual in international group games may reflect weaker defense, not better chemistry.
-
-3. **Tactical role.** Players often occupy different positions/roles for club and country. Kimmich played right back at Bayern but midfield for Germany at WC 2018. This changes which pairs form at all, not just pair quality.
-
-4. **Single season.** This analysis covers 2017/18 + WC 2018 only. Patterns may not generalize to other seasons or tournaments. The Podolski thesis spans a decade of careers; n=1 in time is a significant limitation for a video claiming general patterns.
-
-5. **xT model.** xT captures ball progression toward goal. It undervalues hold-up play, pressing triggers, and defensive compactness — all of which vary between club and international contexts.
-
-## 10. What to Say in the Video
-
-You can say confidently:
-
-- Among 18 featured players from the 2017/18 season and WC 2018/Euro 2016, 5 had higher average xT-based pair chemistry (JOI90) with national team partners than with their club partners, and 7 had higher club chemistry. The data is split, not one-sided.
-- The most extreme 'Podolski type' in the data is **Jerome Boateng** (Bayern → Germany): average country JOI90 0.032 vs. club JOI90 0.002 (ratio 14.8x). Note: small WC sample (3 matches) inflates this.
-
-- **Bayern → Germany chemistry transfer:** Of 6 Bayern-Germany pairs with sufficient minutes in both contexts, 4 showed country JOI90 ≥80% of their club JOI90 ('67% transfer rate'). Notable: Kimmich–Boateng had club JOI90 0.068 and country JOI90 0.163 (carried over and amplified). Hummels–Boateng was the exception: club 0.016, country -0.038.
-
-- The strongest inverse case is **Romelu Lukaku** (Manchester United → Belgium): club JOI90 0.002 vs. country JOI90 -0.001 (ratio -0.47). Club chemistry substantially dominated.
-
-- The Podolski paradox as a universal law is not supported by this data — but the players for whom it *does* hold tend to be those who had unfavorable tactical fits at their clubs (Boateng at a Bayern squad crowded with right-footed CBs, Griezmann at Atlético's defensive system) rather than genuinely poor chemistry. Germany's WC 2018 sample of 3 matches is too small to draw strong conclusions from chemistry numbers alone.
-
-Be cautious about:
-
-- Small international samples (3-7 matches vs. 38 league games). Germany, Poland, Egypt: 3 matches each. All their JOI90 values have confidence intervals wide enough to overlap zero.
-- Opponent quality bias: group-stage opponents are weaker, inflating progressive action success.
-- Tactical role changes between club and country (Kimmich: right back at Bayern, DM at Germany).
-- 2017/18 is 8 years ago — player trajectories, team compositions, and playing styles have all changed.
+6. **Metric note.** Switching from xT to VAEP changes absolute values substantially (VAEP is compressed near zero for non-shot-producing actions; xT accumulates more on progressive passes). The direction of findings (which players are Podolski-type vs inverse-Podolski) may differ between metrics — check both ratio columns.

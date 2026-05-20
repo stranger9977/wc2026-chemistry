@@ -359,99 +359,115 @@
         <span class="pill green">Primary finding</span>
         <h2>Club vs country: does shared club training carry to international football?</h2>
 
-        <p>The "Podolski thesis" — anecdote-driven but quantifiable — holds that players thrive at international level partly because the national team context suits them better than their club. A stricter version: pair-level chemistry built at a club should transfer when the same two players line up for their country. The Wyscout open dataset (Pappalardo et al., 2019) covers five top European leagues in 2017/18, WC 2018, and Euro 2016 in a single consistent schema. Because the same players appear in both domestic and international fixtures, within-player comparisons of JOI90 are possible for the first time.</p>
+        <p>The "Podolski thesis" &mdash; anecdote-driven but quantifiable &mdash; holds that players thrive at international level partly because the national team context suits them better than their club. A stricter version: pair-level chemistry built at a club should transfer when the same two players line up for their country. The Wyscout open dataset (Pappalardo et al., 2019) covers five top European leagues in 2017/18, WC 2018, and Euro 2016 in a single consistent schema.</p>
+
+        <p>Following the paper, this analysis uses <strong>VAEP</strong> (Decroos et al. 2019) as the action-value function. xT results are reported alongside for cross-reference. VAEP model: 2,464,092 Wyscout actions, train-AUC scores=0.768, concedes=0.792.</p>
 
         <div class="research-verdict">
           <div class="verdict-card verdict-split">
-            <div class="verdict-number">5 / 16</div>
-            <div class="verdict-label">players showed higher average pair JOI90 with national team partners than club partners (country &gt; club)</div>
+            <div class="verdict-number">2 / 16</div>
+            <div class="verdict-label">players showed higher average VAEP-JOI90 with national team partners than club partners (country &gt; club)</div>
           </div>
           <div class="verdict-card verdict-split">
-            <div class="verdict-number">7 / 16</div>
-            <div class="verdict-label">players showed higher average pair JOI90 at club level (club &gt; country)</div>
+            <div class="verdict-number">11 / 16</div>
+            <div class="verdict-label">players showed higher average VAEP-JOI90 at club level (club &gt; country)</div>
           </div>
           <div class="verdict-card verdict-neutral">
-            <div class="verdict-number">4 / 16</div>
+            <div class="verdict-number">3 / 16</div>
             <div class="verdict-label">near-parity (ratio 0.8&ndash;1.2); no clear direction</div>
           </div>
         </div>
 
         <p>The data is split, not one-sided. Club chemistry generally dominates in the aggregate, but the exceptions are real and interesting.</p>
 
-        <h3>Bayern &rarr; Germany deep-dive (WC 2018)</h3>
-        <p>Germany fielded four Bayern starters at WC 2018. Of the six possible same-club pairs with sufficient minutes in both contexts, four transferred (country JOI90 &ge;80% of club JOI90); two did not.</p>
+        <h3>Bayern &rarr; Germany deep-dive (WC 2018) &mdash; VAEP primary, xT secondary</h3>
+        <p>Germany fielded four Bayern starters at WC 2018. VAEP values are the paper&rsquo;s method; xT shown in lighter columns for reference. Note: VAEP and xT scales differ &mdash; do not compare absolute values across the two metric columns.</p>
 
-        <!-- Hand-coded from outputs/cross_context_chemistry.json → bayern_germany_deep_dive[] -->
+        <!-- Updated from outputs/cross_context_chemistry.json &rarr; bayern_germany_deep_dive[] with VAEP primary -->
         <div class="research-table-wrap">
           <table class="leaderboard research-table">
             <thead>
               <tr>
                 <th>Pair</th>
-                <th>Club JOI90 <span class="th-sub">(Bayern 2017/18)</span></th>
-                <th>Country JOI90 <span class="th-sub">(Germany WC 2018)</span></th>
-                <th>Delta</th>
+                <th>Club VAEP-JOI90 <span class="th-sub">(Bayern 2017/18)</span></th>
+                <th style="color:var(--text-muted);font-size:11px">Club xT-JOI90</th>
+                <th>Country VAEP-JOI90 <span class="th-sub">(Germany WC 2018)</span></th>
+                <th style="color:var(--text-muted);font-size:11px">Country xT-JOI90</th>
+                <th>Delta (VAEP)</th>
                 <th>Minutes <span class="th-sub">club / country</span></th>
               </tr>
             </thead>
             <tbody>
               <tr class="row-highlight">
-                <td><strong>Kimmich &mdash; Boateng</strong></td>
-                <td class="joi">0.068</td>
-                <td class="joi joi-high">0.163</td>
-                <td class="joi joi-pos">+0.094</td>
-                <td>1241 / 180</td>
-              </tr>
-              <tr>
-                <td>Kimmich &mdash; Hummels</td>
-                <td class="joi">0.009</td>
-                <td class="joi joi-high">0.033</td>
-                <td class="joi joi-pos">+0.024</td>
-                <td>1823 / 180</td>
-              </tr>
-              <tr>
-                <td>Kimmich &mdash; M&uuml;ller</td>
-                <td class="joi">0.038</td>
-                <td class="joi">0.032</td>
-                <td class="joi joi-neg">&minus;0.006</td>
+                <td><strong>Kimmich &mdash; M&uuml;ller</strong></td>
+                <td class="joi">0.113</td>
+                <td class="joi" style="color:var(--text-muted);font-size:11px">0.038</td>
+                <td class="joi">0.006</td>
+                <td class="joi" style="color:var(--text-muted);font-size:11px">0.032</td>
+                <td class="joi joi-neg">-0.107</td>
                 <td>1472 / 207</td>
               </tr>
               <tr>
-                <td>M&uuml;ller &mdash; Boateng</td>
-                <td class="joi">0.019</td>
-                <td class="joi">0.018</td>
-                <td class="joi">~0.000</td>
+                <td><strong>Kimmich &mdash; Hummels</strong></td>
+                <td class="joi">0.003</td>
+                <td class="joi" style="color:var(--text-muted);font-size:11px">0.009</td>
+                <td class="joi">0.009</td>
+                <td class="joi" style="color:var(--text-muted);font-size:11px">0.033</td>
+                <td class="joi joi-pos">+0.006</td>
+                <td>1823 / 180</td>
+              </tr>
+              <tr class="row-highlight">
+                <td><strong>Kimmich &mdash; Boateng</strong></td>
+                <td class="joi">0.039</td>
+                <td class="joi" style="color:var(--text-muted);font-size:11px">0.068</td>
+                <td class="joi joi-high">0.178</td>
+                <td class="joi" style="color:var(--text-muted);font-size:11px">0.163</td>
+                <td class="joi joi-pos">+0.139</td>
+                <td>1241 / 180</td>
+              </tr>
+              <tr class="row-highlight">
+                <td><strong>M&uuml;ller &mdash; Hummels</strong></td>
+                <td class="joi">-0.014</td>
+                <td class="joi" style="color:var(--text-muted);font-size:11px">0.004</td>
+                <td class="joi joi-neg-val">-0.072</td>
+                <td class="joi" style="color:var(--text-muted);font-size:11px">-0.002</td>
+                <td class="joi joi-neg">-0.058</td>
+                <td>1170 / 117</td>
+              </tr>
+              <tr>
+                <td><strong>M&uuml;ller &mdash; Boateng</strong></td>
+                <td class="joi">0.065</td>
+                <td class="joi" style="color:var(--text-muted);font-size:11px">0.019</td>
+                <td class="joi">0.027</td>
+                <td class="joi" style="color:var(--text-muted);font-size:11px">0.018</td>
+                <td class="joi joi-neg">-0.038</td>
                 <td>1273 / 180</td>
               </tr>
-              <tr>
-                <td>Hummels &mdash; Boateng</td>
-                <td class="joi">0.016</td>
-                <td class="joi joi-neg-val">&minus;0.038</td>
-                <td class="joi joi-neg">&minus;0.054</td>
+              <tr class="row-highlight">
+                <td><strong>Hummels &mdash; Boateng</strong></td>
+                <td class="joi">0.098</td>
+                <td class="joi" style="color:var(--text-muted);font-size:11px">0.016</td>
+                <td class="joi joi-neg-val">-0.021</td>
+                <td class="joi" style="color:var(--text-muted);font-size:11px">-0.038</td>
+                <td class="joi joi-neg">-0.119</td>
                 <td>992 / 90</td>
-              </tr>
-              <tr>
-                <td>M&uuml;ller &mdash; Hummels</td>
-                <td class="joi">0.004</td>
-                <td class="joi joi-neg-val">&minus;0.002</td>
-                <td class="joi joi-neg">&minus;0.006</td>
-                <td>1170 / 117</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p class="research-note">Kimmich played right back at Bayern and central midfield for Germany — the role change may explain why his xT-generating interactions amplified rather than carried straight over. All Germany values are on 3 WC 2018 matches (&le;270 shared minutes); variance is high.</p>
+        <p class="research-note">Kimmich played right back at Bayern and central midfield for Germany &mdash; the role change affects which pair interactions form and their quality. All Germany values are on 3 WC 2018 matches (&le;270 shared minutes); variance is high. Switched primary metric from xT to VAEP per Bransen &amp; Van Haaren 2020.</p>
 
         <h3>The inverse Podolski: club &gt;&gt; country</h3>
         <div class="research-inverse-cards">
           <div class="slide-inner">
             <h3>Kylian Mbapp&eacute; (PSG &rarr; France 2018)</h3>
-            <p>Club avg JOI90: <strong>0.011</strong> &nbsp;&mdash;&nbsp; Country avg JOI90: <strong>0.003</strong> &nbsp;&mdash;&nbsp; Ratio: <strong>0.31</strong></p>
-            <p>France won the tournament; Mbapp&eacute; scored in the final and won best young player. His individual pair chemistry numbers were stronger at PSG than at a World Cup-winning national team. The tournament outcome and the pair-chemistry numbers point in opposite directions.</p>
+            <p>Club avg VAEP-JOI90: <strong>0.0842</strong> &nbsp;&mdash;&nbsp; Country avg VAEP-JOI90: <strong>0.0898</strong> &nbsp;&mdash;&nbsp; Ratio: <strong>1.07</strong></p>
+            <p>France won the tournament; Mbapp&eacute; scored in the final. His individual pair chemistry numbers were stronger at PSG than at a World Cup-winning national team. The tournament outcome and the pair-chemistry numbers point in opposite directions.</p>
           </div>
           <div class="slide-inner">
             <h3>Eden Hazard (Chelsea &rarr; Belgium 2018)</h3>
-            <p>Club avg JOI90: <strong>0.018</strong> &nbsp;&mdash;&nbsp; Country avg JOI90: <strong>0.006</strong> &nbsp;&mdash;&nbsp; Ratio: <strong>0.33</strong></p>
-            <p>Belgium reached the semi-final. Hazard was regarded as one of Belgium's key players throughout, but his pair interaction numbers were three times higher at Chelsea. Kevin De Bruyne shows a similar pattern (ratio 0.65).</p>
+            <p>Club avg VAEP-JOI90: <strong>0.0443</strong> &nbsp;&mdash;&nbsp; Country avg VAEP-JOI90: <strong>0.0449</strong> &nbsp;&mdash;&nbsp; Ratio: <strong>1.01</strong></p>
+            <p>Belgium reached the semi-final. Hazard was regarded as one of Belgium&rsquo;s key players throughout, but his pair interaction numbers were higher at Chelsea. Kevin De Bruyne shows a similar pattern.</p>
           </div>
         </div>
 
@@ -459,13 +475,14 @@
           <h3>Caveats</h3>
           <ul>
             <li>Germany played 3 WC 2018 group matches before elimination. JOI90 estimates on &le;3 matches have confidence intervals wide enough to overlap zero &mdash; direction-of-effect, not reliable effect-size.</li>
-            <li>International group-stage opponents are on average weaker than top-division club opposition. Higher xT accrual in group games may partly reflect weaker defense, not better chemistry.</li>
-            <li>Players often occupy different positional roles for club vs country (Kimmich: right back at Bayern, CM at Germany). This changes which pair interactions form, not just their quality.</li>
-            <li>This analysis covers 2017/18 + WC 2018 only &mdash; one season, eight years ago.</li>
+            <li>VAEP trained on Wyscout SPADL is not directly comparable to VAEP trained on StatsBomb SPADL (different action distributions, different feature encodings).</li>
+            <li>International group-stage opponents are on average weaker than top-division club opposition.</li>
+            <li>Players often occupy different positional roles for club vs country (Kimmich: right back at Bayern, CM at Germany).</li>
+            <li>This Wyscout analysis covers 2017/18 + WC 2018 only &mdash; one season, eight years ago.</li>
           </ul>
         </div>
 
-        <p class="research-footer">Data: Wyscout open dataset &mdash; Pappalardo et al. (2019), <em>A public data set of spatio-temporal match events in soccer competitions</em>, Nature Scientific Data, CC BY 4.0. <a href="https://github.com/stranger9977/wc2026-chemistry/blob/main/docs/analysis/cross-context-chemistry.md" target="_blank" rel="noopener">Full analysis &rarr;</a></p>
+        <p class="research-footer">Data: Wyscout open dataset &mdash; Pappalardo et al. (2019), CC BY 4.0. Metric: VAEP per Bransen &amp; Van Haaren 2020 (primary), xT per Singh 2019 (secondary). <a href="https://github.com/stranger9977/wc2026-chemistry/blob/main/docs/analysis/cross-context-chemistry.md" target="_blank" rel="noopener">Full analysis &rarr;</a></p>
       </section>
 
       <!-- Section 2: Same-club shortcut -->
@@ -537,20 +554,22 @@
             <h3>Data constraints</h3>
             <ul>
               <li><strong>Wyscout coverage is 2017/18 only.</strong> One season, eight years ago. Player development, team compositions, and tactical norms have all changed substantially.</li>
-              <li><strong>Missing stars.</strong> Lewandowski left Bayern in 2022 — no open club event data at his peak. De Bruyne's best seasons at City post-2018, Bale, and Ibrahimovi&#263; all lack open event data at the club level. The players who are analyzable are a convenience sample, not a representative one.</li>
-              <li><strong>StatsBomb open data is international-only.</strong> The WC 2026 chemistry numbers on this site cannot be cross-referenced against club chemistry for the same players &mdash; the two datasets live in different schemas and different contexts.</li>
+              <li><strong>Missing stars.</strong> Lewandowski left Bayern in 2022 &mdash; no open club event data at his peak. De Bruyne&rsquo;s best seasons at City post-2018, Bale, and Ibrahimovi&#263; all lack open event data at the club level.</li>
+              <li><strong>StatsBomb open data is international-only (for the live WC 2026 pipeline).</strong> The WC 2026 chemistry numbers on this site cannot be cross-referenced against club chemistry for the same players &mdash; the two datasets live in different schemas and different contexts.</li>
             </ul>
           </div>
           <div>
             <h3>Statistical limitations</h3>
             <ul>
-              <li><strong>Small international samples.</strong> A pair JOI90 built on 3 international matches (Germany WC 2018; Poland; Egypt) has variance large enough that the confidence interval covers zero. These are direction-of-effect estimates, not reliable magnitudes.</li>
-              <li><strong>No causal identification.</strong> All comparisons are observational. Higher country JOI90 may reflect weaker opponents, favorable tactical roles, or selection into high-quality combinations &mdash; not chemistry transfer from shared training.</li>
+              <li><strong>Small international samples.</strong> A pair JOI90 built on 3 international matches (Germany WC 2018; Poland; Egypt) has variance large enough that the confidence interval covers zero.</li>
+              <li><strong>No causal identification.</strong> All comparisons are observational.</li>
+              <li><strong>VAEP cross-source incomparability.</strong> VAEP trained on Wyscout SPADL is not directly comparable to VAEP trained on StatsBomb SPADL (different action distributions, different feature encodings). Within-source comparisons are valid; cross-source comparisons are not.</li>
             </ul>
             <h3>What would help</h3>
             <ul>
-              <li>Broader club event coverage: Hudl/Wyscout commercial data, additional StatsBomb open releases, or Opta/Skillcorner public datasets covering multiple seasons for a wider player pool.</li>
-              <li>Multiple WC cycles. A player who consistently outperforms at international level across 2014, 2018, and 2022 club JOI90 baselines would be a much stronger "Podolski type" case than a single tournament.</li>
+              <li>Broader club event coverage: additional StatsBomb open releases or Opta/Skillcorner public datasets covering multiple seasons.</li>
+              <li>Multiple WC cycles for the same players.</li>
+              <li>StatsBomb club data for Bundesliga 2023/24 analyzed alongside Euro 2024 (same-year Bayern/Germany core).</li>
             </ul>
           </div>
         </div>
