@@ -5,6 +5,9 @@ data/vaep/
 data/vaep_scored/
 data/xg/
 data/xt/
+data/wyscout/
+data/wyscout_spadl/
+outputs/wyscout_joi_per_match.parquet
 
 # Python
 __pycache__/
