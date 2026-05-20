@@ -11,48 +11,378 @@
   <h1>World Cup 2026 — Chemistry</h1>
   <p class="lead">Offensive chemistry between every pair on every WC 2026 squad — measured three different ways, scored across four men's international tournaments. Toggle metrics below; click any nation for its pitch chart.</p>
 
-  <section class="explainer">
-    <h2>How this works</h2>
-    <div class="explainer-grid">
-      <div>
-        <h3>The metric — three views</h3>
-        <p>Toggle between <strong>xT</strong> (Karun Singh's Expected Threat — rewards moving the ball into more dangerous pitch zones), <strong>VAEP</strong> (a trained classifier — rewards actions that raise the probability of scoring in the next few seconds), and <strong>xG-Chain</strong> (credits a pair with the xG of every possession both touched). All three are normalized per 90 shared minutes. <strong>G</strong> and <strong>A</strong> columns show the sum of the pair's goals and assists across the window.</p>
+  <!-- Tab navigation -->
+  <nav class="tab-nav" role="tablist" aria-label="Page sections">
+    <button class="tab-btn" role="tab" id="tab-charts" aria-controls="panel-charts" aria-selected="true" tabindex="0">Charts</button>
+    <button class="tab-btn" role="tab" id="tab-methodology" aria-controls="panel-methodology" aria-selected="false" tabindex="-1">Methodology</button>
+    <button class="tab-btn" role="tab" id="tab-metrics" aria-controls="panel-metrics" aria-selected="false" tabindex="-1">Metric comparison</button>
+  </nav>
+
+  <!-- ── Tab 1: Charts (existing content) ───────────────────────────── -->
+  <div class="tab-panel active" id="panel-charts" role="tabpanel" aria-labelledby="tab-charts">
+
+    <section class="explainer">
+      <h2>How this works</h2>
+      <div class="explainer-grid">
+        <div>
+          <h3>The metric — three views</h3>
+          <p>Toggle between <strong>xT</strong> (Karun Singh's Expected Threat — rewards moving the ball into more dangerous pitch zones), <strong>VAEP</strong> (a trained classifier — rewards actions that raise the probability of scoring in the next few seconds), and <strong>xG-Chain</strong> (credits a pair with the xG of every possession both touched). All three are normalized per 90 shared minutes. <strong>G</strong> and <strong>A</strong> columns show the sum of the pair's goals and assists across the window.</p>
+        </div>
+        <div>
+          <h3>The data</h3>
+          <p>Event data from <a href="https://github.com/statsbomb/open-data" target="_blank" rel="noopener">StatsBomb Open Data</a> — every on-ball action across <strong>FIFA WC 2022, UEFA Euro 2024, UEFA Euro 2020, and Copa América 2024</strong>: 262 matches, ~427K SPADL actions. Curated WC 2026 squads (May 2026 call-ups and announced final rosters) where available; auto-derived from each nation's top-capped players in the window otherwise.</p>
+        </div>
+        <div>
+          <h3>The methodology</h3>
+          <p>Based on Bransen &amp; Van Haaren, <a href="https://www.janvanhaaren.be/assets/papers/mitssac-2020-chemistry.pdf" target="_blank" rel="noopener"><em>Player Chemistry: Striving for a Perfectly Balanced Soccer Team</em></a> (MIT Sloan Sports Analytics Conference 2020). The paper computes JOI over Wyscout club matches; this project flips it to international matches and adds the xT and xG-Chain views alongside VAEP. Pipeline built on <a href="https://github.com/ML-KULeuven/socceraction" target="_blank" rel="noopener">socceraction</a>.</p>
+        </div>
+        <div>
+          <h3>Caveats</h3>
+          <p><strong>xT</strong> over-credits patient backline buildup — two CBs cycling possession still accumulate xT. <strong>VAEP</strong> is trained on only ~427K actions (~4.3K goal events) so the absolute scale is small; rankings are reliable, individual values less so. <strong>xG-Chain</strong>'s underlying xG model is a lightweight logistic regression on ~5K shots — directionally correct, conservative on absolutes. A few qualified nations (e.g., Curaçao, Haiti, New Zealand, Cape Verde) have little StatsBomb coverage and will show sparse chemistry data.</p>
+        </div>
       </div>
-      <div>
-        <h3>The data</h3>
-        <p>Event data from <a href="https://github.com/statsbomb/open-data" target="_blank" rel="noopener">StatsBomb Open Data</a> — every on-ball action across <strong>FIFA WC 2022, UEFA Euro 2024, UEFA Euro 2020, and Copa América 2024</strong>: 262 matches, ~427K SPADL actions. Curated WC 2026 squads (May 2026 call-ups and announced final rosters) where available; auto-derived from each nation's top-capped players in the window otherwise.</p>
-      </div>
-      <div>
-        <h3>The methodology</h3>
-        <p>Based on Bransen &amp; Van Haaren, <a href="https://www.janvanhaaren.be/assets/papers/mitssac-2020-chemistry.pdf" target="_blank" rel="noopener"><em>Player Chemistry: Striving for a Perfectly Balanced Soccer Team</em></a> (MIT Sloan Sports Analytics Conference 2020). The paper computes JOI over Wyscout club matches; this project flips it to international matches and adds the xT and xG-Chain views alongside VAEP. Pipeline built on <a href="https://github.com/ML-KULeuven/socceraction" target="_blank" rel="noopener">socceraction</a>.</p>
-      </div>
-      <div>
-        <h3>Caveats</h3>
-        <p><strong>xT</strong> over-credits patient backline buildup — two CBs cycling possession still accumulate xT. <strong>VAEP</strong> is trained on only ~427K actions (~4.3K goal events) so the absolute scale is small; rankings are reliable, individual values less so. <strong>xG-Chain</strong>'s underlying xG model is a lightweight logistic regression on ~5K shots — directionally correct, conservative on absolutes. A few qualified nations (e.g., Curaçao, Haiti, New Zealand, Cape Verde) have little StatsBomb coverage and will show sparse chemistry data.</p>
-      </div>
+    </section>
+
+    <div class="metric-toggle">
+      <span>Metric:</span>
+      <button class="metric-btn active" data-metric="xt">xT</button>
+      <button class="metric-btn" data-metric="vaep">VAEP</button>
+      <button class="metric-btn" data-metric="xg">xG-Chain</button>
     </div>
-  </section>
 
-  <div class="metric-toggle">
-    <span>Metric:</span>
-    <button class="metric-btn active" data-metric="xt">xT</button>
-    <button class="metric-btn" data-metric="vaep">VAEP</button>
-    <button class="metric-btn" data-metric="xg">xG-Chain</button>
-  </div>
+    <h2 class="section-title">Nations</h2>
+    <div class="grid" id="nation-grid"></div>
 
-  <h2 class="section-title">Nations</h2>
-  <div class="grid" id="nation-grid"></div>
+    <h2 class="section-title">Global top pairs heading into WC 2026</h2>
+    <table class="leaderboard" id="leaderboard">
+      <thead><tr>
+        <th>#</th><th>Pair</th>
+        <th>JOI90</th><th>G</th><th>A</th>
+        <th>Minutes</th><th>Matches</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
 
-  <h2 class="section-title">Global top pairs heading into WC 2026</h2>
-  <table class="leaderboard" id="leaderboard">
-    <thead><tr>
-      <th>#</th><th>Pair</th>
-      <th>JOI90</th><th>G</th><th>A</th>
-      <th>Minutes</th><th>Matches</th>
-    </tr></thead>
-    <tbody></tbody>
-  </table>
+  </div><!-- /panel-charts -->
+
+  <!-- ── Tab 2: Methodology ──────────────────────────────────────────── -->
+  <div class="tab-panel" id="panel-methodology" role="tabpanel" aria-labelledby="tab-methodology">
+    <div class="slide-deck">
+
+      <!-- Card 1: The problem -->
+      <div class="slide-card">
+        <span class="pill amber">The motivation</span>
+        <h2>Chemistry is intuitive but unmeasured</h2>
+        <div class="slide-2col">
+          <div>
+            <p>When a club signs a new player, scouts evaluate individual quality — goals, ratings, physical profile. They rarely measure how a signing will combine with the players already on the squad. Yet the same forward who excels at one club can struggle at another, not because of fitness or form, but because the system and teammates do not suit his movement patterns.</p>
+            <p>Bransen &amp; Van Haaren posed the question formally: <strong>can we quantify how well any two players combine, and predict it for pairs who have never yet played together?</strong></p>
+          </div>
+          <div class="slide-inner">
+            <h3>The paper</h3>
+            <p><strong>Player Chemistry: Striving for a Perfectly Balanced Soccer Team</strong><br>Lotte Bransen &amp; Jan Van Haaren<br>MIT Sloan Sports Analytics Conference, 2020</p>
+            <p><a href="https://www.janvanhaaren.be/assets/papers/mitssac-2020-chemistry.pdf" target="_blank" rel="noopener">janvanhaaren.be &rarr; mitssac-2020-chemistry.pdf</a></p>
+            <h3>What they built</h3>
+            <ul>
+              <li>Two metrics: <strong>JOI</strong> (offensive) and <strong>JDI</strong> (defensive)</li>
+              <li>Regression models to predict chemistry for unseen pairs</li>
+              <li>A mixed-integer Team Builder to assemble optimal squads</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: What an interaction is -->
+      <div class="slide-card">
+        <span class="pill green">Core concept</span>
+        <h2>What counts as an interaction?</h2>
+        <p>Chemistry is grounded in <strong>interactions</strong> — the smallest unit of collaboration between two players. An interaction between players <em>p</em> and <em>q</em> in a match is simply two <strong>consecutive on-ball actions</strong>, one by each player, within the same possession:</p>
+        <div class="formula-block">Interaction(p, q) = (action by p, followed immediately by action by q)</div>
+        <p>Concrete examples: <em>p</em> plays a through-ball and <em>q</em> receives it; <em>p</em> wins a header and <em>q</em> collects the second ball; <em>p</em> cuts inside and <em>q</em> finishes. Both orderings count — <em>p&rarr;q</em> and <em>q&rarr;p</em>.</p>
+        <p>The interaction score is the sum of the VAEP (or xT, or xG-chain) values of those two actions. A sharp pass into the box that creates a clear chance carries a high combined score. A misplaced ball that gifts possession carries a negative one.</p>
+      </div>
+
+      <!-- Card 3: JOI definition -->
+      <div class="slide-card">
+        <span class="pill green">Metric: JOI</span>
+        <h2>Joint Offensive Impact (JOI90)</h2>
+        <p>JOI sums the value of every interaction a pair produces across a match — in both directions — then normalises to 90 minutes of shared pitch time so that pairs with different amounts of shared time can be compared fairly:</p>
+        <div class="formula-block">JOI_match(p, q) = sum of VAEP over all p&rarr;q interactions
+                        + sum of VAEP over all q&rarr;p interactions</div>
+        <div class="formula-block">JOI90(p, q) = sum of JOI_match across all matches
+              &times; 90 / total shared minutes</div>
+        <p>A positive JOI90 means the pair's combined on-ball actions consistently improve their team's probability of scoring. Higher is better; the scale depends on the underlying action-value model.</p>
+        <div class="slide-inner">
+          <h3>Minimum minutes filter</h3>
+          <p>This site requires at least <strong>180 shared minutes</strong> before a pair appears in the leaderboard. The original paper uses 700 minutes for its season-level analysis; we relax this for international tournaments because squad rotation limits shared time.</p>
+        </div>
+      </div>
+
+      <!-- Card 4: JDI (deferred) -->
+      <div class="slide-card">
+        <span class="pill amber">Metric: JDI (not yet implemented)</span>
+        <h2>Joint Defensive Impact — deferred</h2>
+        <p>The paper's second metric, <strong>JDI</strong>, measures how much a defending pair suppresses their opponents' offensive output relative to expectation. The logic: if an attacker consistently underperforms his season-average impact while facing a specific pair, that pair deserves defensive credit.</p>
+        <div class="slide-2col">
+          <div>
+            <h3>Why it is harder</h3>
+            <p>Event data does not record what a defender prevented — only what attackers did. JDI therefore relies on an <strong>expected offensive impact</strong> baseline per opponent, built by tracking their per-90 VAEP across all prior matches in the window.</p>
+            <p>Responsibility is allocated by proximity: each pair's share of credit against an attacker is proportional to how close their default positions are to the attacker's position on a 5×5 grid.</p>
+          </div>
+          <div>
+            <h3>Why we deferred it</h3>
+            <p>International windows are short. With only 4 to 7 matches per tournament, the expected-impact baseline is noisy for players with limited caps. Incorporating multiple tournaments into a rolling baseline requires careful handling of tournament-level opponents, which is on the roadmap but not yet done.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5: Pipeline -->
+      <div class="slide-card">
+        <span class="pill">Pipeline</span>
+        <h2>From raw events to JOI90</h2>
+        <p>Every number on this site flows through a five-stage pipeline:</p>
+        <div class="pipeline-row">
+          <div class="pipeline-step">StatsBomb events</div>
+          <div class="pipeline-arrow">&rarr;</div>
+          <div class="pipeline-step">SPADL actions</div>
+          <div class="pipeline-arrow">&rarr;</div>
+          <div class="pipeline-step">Action value<br>(xT / VAEP / xG-chain)</div>
+          <div class="pipeline-arrow">&rarr;</div>
+          <div class="pipeline-step">Pair interactions</div>
+          <div class="pipeline-arrow">&rarr;</div>
+          <div class="pipeline-step">JOI90</div>
+        </div>
+        <div class="slide-2col" style="margin-top:16px">
+          <div>
+            <h3>StatsBomb events &rarr; SPADL</h3>
+            <p><strong>SPADL</strong> (Soccer Player Action Description Language) is a unified representation of on-ball actions. The <a href="https://github.com/ML-KULeuven/socceraction" target="_blank" rel="noopener">socceraction</a> library converts StatsBomb's raw event feed into a standardised sequence of passes, crosses, dribbles, take-ons, and shots — each tagged with player, team, location, and result.</p>
+            <h3>Action value</h3>
+            <p>Each SPADL action is scored by one of three models. The score expresses how much that action shifted the team's probability of scoring (or, for VAEP, the probability of a goal in the next few actions). See the Metric comparison tab for detail on each model.</p>
+          </div>
+          <div>
+            <h3>Pair interactions &rarr; JOI90</h3>
+            <p>For every match, the SPADL sequence is scanned to find consecutive-action pairs. Each action's value is summed into the JOI for the pair it belongs to. After all matches in the rolling window, each pair's total JOI is scaled to 90 shared minutes.</p>
+            <h3>Scope of this project</h3>
+            <p>Four men's international tournaments: <strong>FIFA World Cup 2022</strong>, <strong>UEFA Euro 2024</strong>, <strong>UEFA Euro 2020</strong>, <strong>Copa América 2024</strong>. 262 matches. ~427K SPADL actions. A 3-year rolling window ending with the most recent tournament data.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6: How this project diverges from the paper -->
+      <div class="slide-card">
+        <span class="pill">Adaptation</span>
+        <h2>How this project diverges from the original paper</h2>
+        <div class="slide-2col">
+          <div>
+            <h3>Data source</h3>
+            <p>Bransen &amp; Van Haaren used <strong>Wyscout</strong> club match data across 361 seasons in 106 competitions. This project uses <strong>StatsBomb Open Data</strong> — freely available event feeds for international tournaments only.</p>
+            <h3>Scope: international not club</h3>
+            <p>Club chemistry accumulates across a full season (700+ shared minutes). International chemistry is thinner — top pairs meet for 300–600 minutes across 4–7 matches per tournament. We compensate with a rolling multi-tournament window rather than a single season.</p>
+            <h3>Rosters</h3>
+            <p>Where May 2026 call-ups or announced final squads are available, those are used. Otherwise, rosters are auto-derived from each nation's highest-capped players in the four-tournament window.</p>
+          </div>
+          <div>
+            <h3>Three metric views</h3>
+            <p>The original paper uses VAEP exclusively. This site adds two alternatives: <strong>xT</strong> (a non-parametric zone-transition model) and <strong>xG-Chain</strong> (possession-credit). This lets you see whether a pair's chemistry is robust across approaches or appears only under a single model's assumptions.</p>
+            <h3>No prediction model</h3>
+            <p>The paper's predictive layer — CatBoost regression to estimate chemistry for unseen pairs — requires proprietary SciSports features (22 Player Roles, Physical Performance Indicators). Those are not available in the open data used here, so the prediction step is omitted. Rankings are observational only.</p>
+            <h3>No Team Builder</h3>
+            <p>Without predictions for unseen pairs, the mixed-integer Team Builder optimisation cannot be run in its original form. The nation-level pitch charts serve as a partial substitute, showing the observed chemistry network for each squad.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 7: References -->
+      <div class="slide-card">
+        <span class="pill">References</span>
+        <h2>Key citations</h2>
+        <ul>
+          <li>Bransen &amp; Van Haaren (2020). <em>Player Chemistry: Striving for a Perfectly Balanced Soccer Team.</em> MIT Sloan Sports Analytics Conference. <a href="https://www.janvanhaaren.be/assets/papers/mitssac-2020-chemistry.pdf" target="_blank" rel="noopener">PDF</a></li>
+          <li>Decroos, Bransen, Van Haaren &amp; Davis (2019). <em>Actions Speak Louder than Goals: Valuing Player Actions in Soccer.</em> KDD '19. — the VAEP framework. <a href="https://github.com/ML-KULeuven/socceraction" target="_blank" rel="noopener">socceraction</a></li>
+          <li>Singh (2019). <em>Introducing Expected Threat (xT).</em> — the xT framework. <a href="https://karun.in/blog/expected-threat.html" target="_blank" rel="noopener">karun.in/blog/expected-threat</a></li>
+          <li>StatsBomb Open Data: <a href="https://github.com/statsbomb/open-data" target="_blank" rel="noopener">github.com/statsbomb/open-data</a></li>
+        </ul>
+      </div>
+
+    </div><!-- /slide-deck -->
+  </div><!-- /panel-methodology -->
+
+  <!-- ── Tab 3: Metric comparison ────────────────────────────────────── -->
+  <div class="tab-panel" id="panel-metrics" role="tabpanel" aria-labelledby="tab-metrics">
+    <div class="slide-deck">
+
+      <!-- Card: Three metrics side by side -->
+      <div class="slide-card">
+        <span class="pill">Overview</span>
+        <h2>Three ways to value an action</h2>
+        <p>Each metric on this site is a different answer to the same question: how much did this pass, dribble, or shot improve the team's attacking position? They agree on direction — all three reward progressive, dangerous play — but they disagree on <em>scale</em>, which actions to credit most, and how to handle possession that does not end in a shot.</p>
+        <div class="slide-3col" style="margin-top:16px">
+
+          <div class="metric-compare-card">
+            <h3>xT &mdash; Expected Threat</h3>
+            <p class="mc-label">Definition</p>
+            <p>Divides the pitch into a grid of zones and estimates the probability that a possession starting in each zone will produce a goal within the next few actions. An action's xT value is the probability gain from moving the ball from one zone to a better one.</p>
+            <p class="mc-label">What it rewards highest</p>
+            <p>Ball progression into the final third, especially crosses and through-balls that shift the ball from low-threat to high-threat zones.</p>
+            <p class="mc-label">Stability / data demand</p>
+            <p>Most stable of the three. The zone-transition matrix requires only shot outcomes and carry endpoints — no training labels per action needed.</p>
+            <p class="mc-label">Known failure mode</p>
+            <p class="failure">Over-credits patient backline buildup. A central defender who recycles possession from his own 18-yard box gains positive xT on every successful pass, even if the team never threatened the opponent's goal. CB–CB and CB–GK pairs therefore rank disproportionately high.</p>
+            <p class="mc-label">Citation</p>
+            <p>Karun Singh (2019). <a href="https://karun.in/blog/expected-threat.html" target="_blank" rel="noopener">karun.in/blog/expected-threat</a></p>
+          </div>
+
+          <div class="metric-compare-card">
+            <h3>VAEP &mdash; Valuing Actions by Estimating Probabilities</h3>
+            <p class="mc-label">Definition</p>
+            <p>A trained binary classifier predicts, after each action, the probability that the team scores and concedes in the next few seconds. VAEP is the change in those probabilities caused by the action. Negative values are possible — a misplaced pass that gifts possession has a negative score.</p>
+            <p class="mc-label">What it rewards highest</p>
+            <p>Actions that directly raise the probability of an imminent goal: shots on target, key passes, and take-ons that beat the last defender.</p>
+            <p class="mc-label">Stability / data demand</p>
+            <p>Requires training labels from the event sequence. More data-hungry than xT; the model trained here on ~427K actions is at the smaller end of what VAEP is designed for.</p>
+            <p class="mc-label">Known failure mode</p>
+            <p class="failure">Absolute scale is small: with only ~4,300 goal events in the training set the probability deltas are compressed. Rankings across pairs are reliable; the raw JOI90 values are not directly comparable to a club-data VAEP.</p>
+            <p class="mc-label">Citation</p>
+            <p>Decroos, Bransen, Van Haaren &amp; Davis (2019). <em>Actions Speak Louder than Goals.</em> KDD '19.</p>
+          </div>
+
+          <div class="metric-compare-card">
+            <h3>xG-Chain</h3>
+            <p class="mc-label">Definition</p>
+            <p>Credits every player who touched the ball in a possession chain with the expected goals (xG) value of the shot that ended the chain. If a possession ends without a shot, no credit is distributed.</p>
+            <p class="mc-label">What it rewards highest</p>
+            <p>Active participation in possessions that produce shots. A player who completes three passes in a move ending with a goal-mouth opportunity earns the full xG of that opportunity.</p>
+            <p class="mc-label">Stability / data demand</p>
+            <p>Lightest model of the three — requires only shot xG values and possession chain membership. The xG model here is a logistic regression on shot location and body part (~5K shots), so it is directionally correct but conservative on absolute values.</p>
+            <p class="mc-label">Known failure mode</p>
+            <p class="failure">Attributes possession credit very broadly. A midfielder who makes a routine pass early in a long build-up earns the same credit as the player who delivered the final ball. Pairs benefit from being on the pitch during productive teams regardless of their own direct contribution.</p>
+            <p class="mc-label">Citation</p>
+            <p>Widely used in the public analytics community; no single canonical paper. Popularised via StatsBomb and FBref.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Card: Where they agree -->
+      <div class="slide-card">
+        <span class="pill green">Convergence</span>
+        <h2>Where the metrics agree</h2>
+        <p>At the very top of the leaderboard the three metrics converge. Pairs that are elite under all three models tend to be creative attackers who combine frequently in the final third, produce shots, and accumulate shared minutes through consistent tournament selection.</p>
+        <div class="agree-diverge">
+          <div class="slide-inner">
+            <h3>Agreement: Neymar + Vinícius Júnior (BRA)</h3>
+            <p>xT rank: <strong>#1</strong> &nbsp;|&nbsp; VAEP rank: <strong>#3</strong></p>
+            <p>Two attackers who combine on the left channel across multiple tournaments. High progressive carry value (xT), high probability-of-goal shifts on their interactions (VAEP), and frequent involvement in shot-producing possessions (xG-Chain). All three models agree this is a genuine elite partnership.</p>
+          </div>
+          <div class="slide-inner">
+            <h3>Agreement: Neymar + Raphinha (BRA)</h3>
+            <p>xT rank: <strong>#20</strong> &nbsp;|&nbsp; VAEP rank: <strong>#2</strong></p>
+            <p>Another Brazilian attacking pair that ranks in the top tier across all three views. The xT rank is somewhat lower because Raphinha's wide starting position means some of their interactions begin in mid-table threat zones; VAEP and xG-Chain are better at crediting the quality of the outcome rather than the zone entry point.</p>
+          </div>
+        </div>
+        <p style="margin-top:16px">When two or three metrics all place a pair in the top 20, that is a reliable signal. A pair appearing in the top 10 under only one model warrants closer inspection of what that model rewards.</p>
+      </div>
+
+      <!-- Card: Where they diverge -->
+      <div class="slide-card">
+        <span class="pill amber">Divergence</span>
+        <h2>Where the metrics disagree — a real example</h2>
+        <p>The clearest illustration of xT's backline-buildup problem comes from the Uruguay centre-back pairing.</p>
+        <div class="slide-inner" style="margin: 12px 0 16px;">
+          <h3>Diego Godín + Sergio Rochet (URU) &nbsp;&mdash;&nbsp; CB + GK</h3>
+          <p><strong>xT rank: #5</strong> &nbsp;|&nbsp; <strong>VAEP rank: #42</strong></p>
+          <p>Godín (CB) and Rochet (GK) share a large number of short-range exchanges in defensive buildup — goal kicks, short passes back to goalkeeper, sideways movement out of defensive pressure. Every successful pass between them increments their xT score because the ball moves to a zone with non-zero goal probability. xT does not distinguish between recycled possession at the back and a genuine threat-creating move.</p>
+          <p>VAEP evaluates the same exchanges and sees almost no change in the probability of scoring in the next few seconds. A goalkeeper returning the ball to a centre-back 35 yards from goal does not meaningfully raise the team's scoring probability, so VAEP leaves those interactions with near-zero credit — ranking this pair at #42 instead of #5.</p>
+        </div>
+        <div class="agree-diverge">
+          <div class="slide-inner">
+            <h3>Pattern: CB-CB and CB-GK pairs</h3>
+            <p>Several other defensive pairs show the same xT inflation: Australia's Harry Souttar + Kye Rowles (xT #10, VAEP #34) and the Netherlands' Virgil van Dijk + Jurriën Timber (xT #26, VAEP #39). If you are looking for genuine attacking chemistry rather than ball-retention proficiency, VAEP or xG-Chain is a more reliable guide for defensive pairs.</p>
+          </div>
+          <div class="slide-inner">
+            <h3>When to trust which</h3>
+            <ul>
+              <li><strong>Attacking pairs</strong> — all three metrics broadly agree. Use xT for quick scans; check VAEP for a secondary view.</li>
+              <li><strong>Defensive pairs</strong> — VAEP and xG-Chain are more reliable; ignore xT rankings above #20 for CB/GK combinations.</li>
+              <li><strong>Wide midfielder + fullback combos</strong> — xT and xG-Chain tend to agree; VAEP adds nuance on whether their combinations end in shots.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card: Summary table -->
+      <div class="slide-card">
+        <span class="pill">Summary</span>
+        <h2>Quick reference</h2>
+        <table class="leaderboard" style="margin-top:8px">
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>Best for</th>
+              <th>Watch out for</th>
+              <th>Data need</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>xT</strong></td>
+              <td>Fast scan, attacking pairs, ball-progression partnerships</td>
+              <td>CB / GK pairs ranked artificially high; backline buildup inflated</td>
+              <td>Shot outcomes + zone transitions only</td>
+            </tr>
+            <tr>
+              <td><strong>VAEP</strong></td>
+              <td>Outcome-focused ranking, defensive pairs, cross-checking xT outliers</td>
+              <td>Absolute scale compressed on small datasets; less stable at <180 min</td>
+              <td>Trained binary classifier; needs sequence context</td>
+            </tr>
+            <tr>
+              <td><strong>xG-Chain</strong></td>
+              <td>Shot-involvement credit, wide pairings, creative midfield combos</td>
+              <td>Credits all chain members equally; rewards being on the pitch during productive teams</td>
+              <td>Shot xG model + possession chain membership</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div><!-- /slide-deck -->
+  </div><!-- /panel-metrics -->
+
 </main>
 <script src="app.js"></script>
+<script>
+(function () {
+  const tabs = Array.from(document.querySelectorAll('.tab-btn'));
+  const panels = Array.from(document.querySelectorAll('.tab-panel'));
+
+  function activate(index) {
+    tabs.forEach((t, i) => {
+      const selected = i === index;
+      t.setAttribute('aria-selected', String(selected));
+      t.tabIndex = selected ? 0 : -1;
+    });
+    panels.forEach((p, i) => {
+      p.classList.toggle('active', i === index);
+    });
+    // Update hash without scrolling
+    const ids = ['charts', 'methodology', 'metrics'];
+    history.replaceState(null, '', '#' + ids[index]);
+  }
+
+  tabs.forEach((tab, i) => {
+    tab.addEventListener('click', () => activate(i));
+    tab.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') { e.preventDefault(); activate((i + 1) % tabs.length); tabs[(i + 1) % tabs.length].focus(); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); activate((i - 1 + tabs.length) % tabs.length); tabs[(i - 1 + tabs.length) % tabs.length].focus(); }
+    });
+  });
+
+  // Restore tab from hash on load
+  const hash = location.hash.replace('#', '');
+  const hashMap = { charts: 0, methodology: 1, metrics: 2 };
+  if (hash in hashMap) activate(hashMap[hash]);
+})();
+</script>
 </body>
 </html>
