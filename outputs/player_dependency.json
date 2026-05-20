@@ -1,0 +1,1539 @@
+{
+  "meta": {
+    "vaep_model": "vaep_v2",
+    "data_sources": [
+      "StatsBomb International",
+      "StatsBomb Open Club Seasons"
+    ],
+    "podolski_uncoverable": true,
+    "train_auc_scores": 0.8176,
+    "train_auc_concedes": 0.9328,
+    "train_size": 1211875
+  },
+  "players": [
+    {
+      "name": "Joshua Kimmich",
+      "requested_name": "Joshua Kimmich",
+      "player_id": 5579,
+      "club": "Bayern",
+      "country": "Germany",
+      "club_contexts": [
+        {
+          "label": "Bayern Munich Bundesliga 2023/24",
+          "competition_key": "9_281",
+          "minutes": 91.1,
+          "matches": 2,
+          "per90_vaep": 0.1314,
+          "per90_xt": 0.1493,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 0.1331
+        }
+      ],
+      "country_contexts": [
+        {
+          "label": "Germany Euro 2020",
+          "competition_key": "55_43",
+          "minutes": 364.2,
+          "matches": 4,
+          "per90_vaep": 0.1506,
+          "per90_xt": 0.0873,
+          "goals": 0,
+          "assists": 1,
+          "vaep_sum": 0.6095
+        },
+        {
+          "label": "Germany Euro 2024",
+          "competition_key": "55_282",
+          "minutes": 450.0,
+          "matches": 5,
+          "per90_vaep": 0.2403,
+          "per90_xt": 0.1319,
+          "goals": 0,
+          "assists": 2,
+          "vaep_sum": 1.2014
+        },
+        {
+          "label": "Germany WC 2018",
+          "competition_key": "43_3",
+          "minutes": 270.0,
+          "matches": 3,
+          "per90_vaep": 0.3157,
+          "per90_xt": 0.1554,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 0.947
+        },
+        {
+          "label": "Germany WC 2022",
+          "competition_key": "43_106",
+          "minutes": 270.0,
+          "matches": 3,
+          "per90_vaep": 0.1159,
+          "per90_xt": 0.13,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 0.3478
+        }
+      ],
+      "club_per90_vaep_avg_min_weighted": 0.1314,
+      "country_per90_vaep_avg_min_weighted": 0.2064,
+      "delta_vaep": 0.075,
+      "top_club_teammates": [
+        "Leroy Sané",
+        "Jamal Musiala",
+        "Noussair Mazraoui",
+        "Mathys Tel",
+        "Jean-Eric Maxim Choupo-Moting"
+      ],
+      "narrative": "Joshua Kimmich's per-90 VAEP at Bayern with Leroy Sané, Jamal Musiala, and Noussair Mazraoui averages 0.131; at Germany it averages 0.206 — a delta of +0.075 (rose)."
+    },
+    {
+      "name": "Thomas Müller",
+      "requested_name": "Thomas Müller",
+      "player_id": 5562,
+      "club": "Bayern",
+      "country": "Germany",
+      "club_contexts": [
+        {
+          "label": "Bayern Munich Bundesliga 2023/24",
+          "competition_key": "9_281",
+          "minutes": 90.8,
+          "matches": 2,
+          "per90_vaep": 0.148,
+          "per90_xt": 0.0437,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 0.1494
+        }
+      ],
+      "country_contexts": [
+        {
+          "label": "Germany Euro 2020",
+          "competition_key": "55_43",
+          "minutes": 298.4,
+          "matches": 4,
+          "per90_vaep": -0.0849,
+          "per90_xt": 0.0252,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": -0.2813
+        },
+        {
+          "label": "Germany WC 2018",
+          "competition_key": "43_3",
+          "minutes": 207.7,
+          "matches": 3,
+          "per90_vaep": -0.2007,
+          "per90_xt": 0.0424,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": -0.4633
+        },
+        {
+          "label": "Germany WC 2022",
+          "competition_key": "43_106",
+          "minutes": 201.7,
+          "matches": 3,
+          "per90_vaep": -0.0937,
+          "per90_xt": 0.0095,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": -0.21
+        }
+      ],
+      "club_per90_vaep_avg_min_weighted": 0.148,
+      "country_per90_vaep_avg_min_weighted": -0.1214,
+      "delta_vaep": -0.2694,
+      "top_club_teammates": [
+        "Leroy Sané",
+        "Jamal Musiala",
+        "Noussair Mazraoui",
+        "Mathys Tel",
+        "Jean-Eric Maxim Choupo-Moting"
+      ],
+      "narrative": "Thomas Müller's per-90 VAEP at Bayern with Leroy Sané, Jamal Musiala, and Noussair Mazraoui averages 0.148; at Germany it averages -0.121 — a delta of -0.269 (dropped)."
+    },
+    {
+      "name": "Leroy Sané",
+      "requested_name": "Leroy Sané",
+      "player_id": 3053,
+      "club": "Bayern",
+      "country": "Germany",
+      "club_contexts": [
+        {
+          "label": "Bayern Munich Bundesliga 2023/24",
+          "competition_key": "9_281",
+          "minutes": 180.0,
+          "matches": 2,
+          "per90_vaep": 0.0955,
+          "per90_xt": 0.0366,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 0.191
+        }
+      ],
+      "country_contexts": [
+        {
+          "label": "Germany Euro 2020",
+          "competition_key": "55_43",
+          "minutes": 116.9,
+          "matches": 4,
+          "per90_vaep": -0.1711,
+          "per90_xt": 0.0177,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": -0.2222
+        },
+        {
+          "label": "Germany Euro 2024",
+          "competition_key": "55_282",
+          "minutes": 207.4,
+          "matches": 5,
+          "per90_vaep": -0.0125,
+          "per90_xt": 0.0379,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": -0.0289
+        },
+        {
+          "label": "Germany WC 2022",
+          "competition_key": "43_106",
+          "minutes": 111.0,
+          "matches": 2,
+          "per90_vaep": 0.3097,
+          "per90_xt": 0.1837,
+          "goals": 0,
+          "assists": 1,
+          "vaep_sum": 0.3818
+        }
+      ],
+      "club_per90_vaep_avg_min_weighted": 0.0955,
+      "country_per90_vaep_avg_min_weighted": 0.0271,
+      "delta_vaep": -0.0684,
+      "top_club_teammates": [
+        "Jean-Eric Maxim Choupo-Moting",
+        "Matthijs de Ligt",
+        "Noussair Mazraoui",
+        "Mathys Tel",
+        "Harry Kane"
+      ],
+      "narrative": "Leroy Sané's per-90 VAEP at Bayern with Jean-Eric Maxim Choupo-Moting, Matthijs de Ligt, and Noussair Mazraoui averages 0.096; at Germany it averages 0.027 — a delta of -0.068 (dropped)."
+    },
+    {
+      "name": "Jamal Musiala",
+      "requested_name": "Jamal Musiala",
+      "player_id": 39565,
+      "club": "Bayern",
+      "country": "Germany",
+      "club_contexts": [
+        {
+          "label": "Bayern Munich Bundesliga 2023/24",
+          "competition_key": "9_281",
+          "minutes": 115.8,
+          "matches": 2,
+          "per90_vaep": 0.0415,
+          "per90_xt": 0.0884,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 0.0534
+        }
+      ],
+      "country_contexts": [
+        {
+          "label": "Germany Euro 2024",
+          "competition_key": "55_282",
+          "minutes": 390.0,
+          "matches": 5,
+          "per90_vaep": 0.7616,
+          "per90_xt": 0.0275,
+          "goals": 3,
+          "assists": 0,
+          "vaep_sum": 3.2999
+        },
+        {
+          "label": "Germany WC 2022",
+          "competition_key": "43_106",
+          "minutes": 258.2,
+          "matches": 3,
+          "per90_vaep": 0.1728,
+          "per90_xt": 0.0776,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 0.4959
+        }
+      ],
+      "club_per90_vaep_avg_min_weighted": 0.0415,
+      "country_per90_vaep_avg_min_weighted": 0.5271,
+      "delta_vaep": 0.4856,
+      "top_club_teammates": [
+        "Leroy Sané",
+        "Matthijs de Ligt",
+        "Mathys Tel",
+        "Min Jae Kim",
+        "Noussair Mazraoui"
+      ],
+      "narrative": "Jamal Musiala's per-90 VAEP at Bayern with Leroy Sané, Matthijs de Ligt, and Mathys Tel averages 0.042; at Germany it averages 0.527 — a delta of +0.486 (rose)."
+    },
+    {
+      "name": "Leon Goretzka",
+      "requested_name": "Leon Goretzka",
+      "player_id": 6324,
+      "club": "Bayern",
+      "country": "Germany",
+      "club_contexts": [
+        {
+          "label": "Bayern Munich Bundesliga 2023/24",
+          "competition_key": "9_281",
+          "minutes": 160.5,
+          "matches": 2,
+          "per90_vaep": 0.3963,
+          "per90_xt": 0.0225,
+          "goals": 1,
+          "assists": 0,
+          "vaep_sum": 0.7067
+        }
+      ],
+      "country_contexts": [
+        {
+          "label": "Germany Euro 2020",
+          "competition_key": "55_43",
+          "minutes": 140.6,
+          "matches": 3,
+          "per90_vaep": 0.7194,
+          "per90_xt": 0.0415,
+          "goals": 1,
+          "assists": 0,
+          "vaep_sum": 1.1241
+        },
+        {
+          "label": "Germany WC 2018",
+          "competition_key": "43_3",
+          "minutes": 62.3,
+          "matches": 1,
+          "per90_vaep": -0.2999,
+          "per90_xt": 0.02,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": -0.2076
+        },
+        {
+          "label": "Germany WC 2022",
+          "competition_key": "43_106",
+          "minutes": 157.9,
+          "matches": 3,
+          "per90_vaep": -0.0565,
+          "per90_xt": 0.0108,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": -0.0992
+        }
+      ],
+      "club_per90_vaep_avg_min_weighted": 0.3963,
+      "country_per90_vaep_avg_min_weighted": 0.2038,
+      "delta_vaep": -0.1925,
+      "top_club_teammates": [
+        "Leroy Sané",
+        "Jamal Musiala",
+        "Noussair Mazraoui",
+        "Mathys Tel",
+        "Jean-Eric Maxim Choupo-Moting"
+      ],
+      "narrative": "Leon Goretzka's per-90 VAEP at Bayern with Leroy Sané, Jamal Musiala, and Noussair Mazraoui averages 0.396; at Germany it averages 0.204 — a delta of -0.192 (dropped)."
+    },
+    {
+      "name": "Aleksandar Pavlović",
+      "requested_name": "Aleksandar Pavlović",
+      "player_id": 140589,
+      "club": "Bayern",
+      "country": "Germany",
+      "club_contexts": [
+        {
+          "label": "Bayern Munich Bundesliga 2023/24",
+          "competition_key": "9_281",
+          "minutes": 59.2,
+          "matches": 1,
+          "per90_vaep": 0.0569,
+          "per90_xt": 0.0076,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 0.0375
+        }
+      ],
+      "country_contexts": [],
+      "club_per90_vaep_avg_min_weighted": 0.0569,
+      "country_per90_vaep_avg_min_weighted": 0.0,
+      "delta_vaep": -0.0569,
+      "top_club_teammates": [
+        "Leroy Sané",
+        "Harry Kane",
+        "Lovro Zvonarek",
+        "Mathys Tel",
+        "Min Jae Kim"
+      ],
+      "narrative": "Aleksandar Pavlović's club per-90 VAEP at Bayern averages 0.057 across 1 season(s); no qualifying Germany appearances found in the open international dataset."
+    },
+    {
+      "name": "Robert Lewandowski",
+      "requested_name": "Robert Lewandowski",
+      "player_id": 5668,
+      "club": "Bayern",
+      "country": "Poland",
+      "club_contexts": [],
+      "country_contexts": [
+        {
+          "label": "Poland Euro 2020",
+          "competition_key": "55_43",
+          "minutes": 270.0,
+          "matches": 3,
+          "per90_vaep": 0.7994,
+          "per90_xt": 0.0077,
+          "goals": 3,
+          "assists": 0,
+          "vaep_sum": 2.3983
+        },
+        {
+          "label": "Poland Euro 2024",
+          "competition_key": "55_282",
+          "minutes": 120.7,
+          "matches": 2,
+          "per90_vaep": -0.0086,
+          "per90_xt": -0.0197,
+          "goals": 1,
+          "assists": 0,
+          "vaep_sum": -0.0116
+        },
+        {
+          "label": "Poland WC 2018",
+          "competition_key": "43_3",
+          "minutes": 270.0,
+          "matches": 3,
+          "per90_vaep": -0.095,
+          "per90_xt": -0.0041,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": -0.2849
+        },
+        {
+          "label": "Poland WC 2022",
+          "competition_key": "43_106",
+          "minutes": 360.0,
+          "matches": 4,
+          "per90_vaep": -0.0135,
+          "per90_xt": 0.0008,
+          "goals": 2,
+          "assists": 1,
+          "vaep_sum": -0.054
+        }
+      ],
+      "club_per90_vaep_avg_min_weighted": 0.0,
+      "country_per90_vaep_avg_min_weighted": 0.1806,
+      "delta_vaep": 0.1806,
+      "top_club_teammates": [],
+      "narrative": "Robert Lewandowski has no qualifying club appearances in the available open data for Bayern; country context only."
+    },
+    {
+      "name": "Luka Modrić",
+      "requested_name": "Luka Modrić",
+      "player_id": 5463,
+      "club": "Real Madrid",
+      "country": "Croatia",
+      "club_contexts": [
+        {
+          "label": "Real Madrid La Liga 2017/18",
+          "competition_key": "11_1",
+          "minutes": 180.0,
+          "matches": 2,
+          "per90_vaep": 0.2646,
+          "per90_xt": 0.0461,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 0.5291
+        },
+        {
+          "label": "Real Madrid La Liga 2018/19",
+          "competition_key": "11_4",
+          "minutes": 90.0,
+          "matches": 1,
+          "per90_vaep": 0.1672,
+          "per90_xt": 0.0728,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 0.1672
+        },
+        {
+          "label": "Real Madrid La Liga 2020/21",
+          "competition_key": "11_90",
+          "minutes": 111.5,
+          "matches": 2,
+          "per90_vaep": 0.9703,
+          "per90_xt": 0.0177,
+          "goals": 1,
+          "assists": 0,
+          "vaep_sum": 1.2025
+        }
+      ],
+      "country_contexts": [
+        {
+          "label": "Croatia Euro 2020",
+          "competition_key": "55_43",
+          "minutes": 383.0,
+          "matches": 4,
+          "per90_vaep": 0.3935,
+          "per90_xt": 0.0216,
+          "goals": 1,
+          "assists": 1,
+          "vaep_sum": 1.6748
+        },
+        {
+          "label": "Croatia Euro 2024",
+          "competition_key": "55_282",
+          "minutes": 234.6,
+          "matches": 3,
+          "per90_vaep": 0.1489,
+          "per90_xt": 0.032,
+          "goals": 1,
+          "assists": 0,
+          "vaep_sum": 0.3882
+        },
+        {
+          "label": "Croatia WC 2018",
+          "competition_key": "43_3",
+          "minutes": 656.0,
+          "matches": 7,
+          "per90_vaep": 0.0109,
+          "per90_xt": -0.0072,
+          "goals": 4,
+          "assists": 1,
+          "vaep_sum": 0.0794
+        },
+        {
+          "label": "Croatia WC 2022",
+          "competition_key": "43_106",
+          "minutes": 643.9,
+          "matches": 7,
+          "per90_vaep": 0.0114,
+          "per90_xt": 0.0135,
+          "goals": 1,
+          "assists": 0,
+          "vaep_sum": 0.0818
+        }
+      ],
+      "club_per90_vaep_avg_min_weighted": 0.4479,
+      "country_per90_vaep_avg_min_weighted": 0.1044,
+      "delta_vaep": -0.3435,
+      "top_club_teammates": [
+        "Carlos Henrique Casimiro",
+        "Karim Benzema",
+        "Toni Kroos",
+        "Raphaël Varane",
+        "Francisco Román Alarcón Suárez"
+      ],
+      "narrative": "Luka Modrić's per-90 VAEP at Real Madrid with Carlos Henrique Casimiro, Karim Benzema, and Toni Kroos averages 0.448; at Croatia it averages 0.104 — a delta of -0.344 (dropped)."
+    },
+    {
+      "name": "Toni Kroos",
+      "requested_name": "Toni Kroos",
+      "player_id": 5574,
+      "club": "Real Madrid",
+      "country": "Germany",
+      "club_contexts": [
+        {
+          "label": "Real Madrid La Liga 2017/18",
+          "competition_key": "11_1",
+          "minutes": 173.9,
+          "matches": 2,
+          "per90_vaep": 0.2212,
+          "per90_xt": 0.0586,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 0.4275
+        },
+        {
+          "label": "Real Madrid La Liga 2018/19",
+          "competition_key": "11_4",
+          "minutes": 55.0,
+          "matches": 1,
+          "per90_vaep": 0.2302,
+          "per90_xt": 0.0497,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 0.1406
+        },
+        {
+          "label": "Real Madrid La Liga 2019/20",
+          "competition_key": "11_42",
+          "minutes": 180.0,
+          "matches": 2,
+          "per90_vaep": -0.1128,
+          "per90_xt": 0.0578,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": -0.2255
+        },
+        {
+          "label": "Real Madrid La Liga 2020/21",
+          "competition_key": "11_90",
+          "minutes": 161.9,
+          "matches": 2,
+          "per90_vaep": 0.4368,
+          "per90_xt": -0.0135,
+          "goals": 1,
+          "assists": 0,
+          "vaep_sum": 0.786
+        }
+      ],
+      "country_contexts": [
+        {
+          "label": "Germany Euro 2020",
+          "competition_key": "55_43",
+          "minutes": 360.0,
+          "matches": 4,
+          "per90_vaep": 0.2448,
+          "per90_xt": 0.051,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 0.9794
+        },
+        {
+          "label": "Germany Euro 2024",
+          "competition_key": "55_282",
+          "minutes": 440.0,
+          "matches": 5,
+          "per90_vaep": 0.137,
+          "per90_xt": 0.0271,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 0.6698
+        },
+        {
+          "label": "Germany WC 2018",
+          "competition_key": "43_3",
+          "minutes": 270.0,
+          "matches": 3,
+          "per90_vaep": 0.7009,
+          "per90_xt": 0.0958,
+          "goals": 1,
+          "assists": 0,
+          "vaep_sum": 2.1028
+        }
+      ],
+      "club_per90_vaep_avg_min_weighted": 0.1779,
+      "country_per90_vaep_avg_min_weighted": 0.3156,
+      "delta_vaep": 0.1377,
+      "top_club_teammates": [
+        "Luka Modrić",
+        "Karim Benzema",
+        "Carlos Henrique Casimiro",
+        "Raphaël Varane",
+        "Francisco Román Alarcón Suárez"
+      ],
+      "narrative": "Toni Kroos's per-90 VAEP at Real Madrid with Luka Modrić, Karim Benzema, and Carlos Henrique Casimiro averages 0.178; at Germany it averages 0.316 — a delta of +0.138 (rose)."
+    },
+    {
+      "name": "Raphaël Varane",
+      "requested_name": "Raphaël Varane",
+      "player_id": 5485,
+      "club": "Real Madrid",
+      "country": "France",
+      "club_contexts": [
+        {
+          "label": "Real Madrid La Liga 2017/18",
+          "competition_key": "11_1",
+          "minutes": 180.0,
+          "matches": 2,
+          "per90_vaep": -0.0538,
+          "per90_xt": 0.0618,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": -0.1077
+        },
+        {
+          "label": "Real Madrid La Liga 2018/19",
+          "competition_key": "11_4",
+          "minutes": 90.0,
+          "matches": 1,
+          "per90_vaep": 0.0343,
+          "per90_xt": 0.0535,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 0.0343
+        },
+        {
+          "label": "Real Madrid La Liga 2019/20",
+          "competition_key": "11_42",
+          "minutes": 180.0,
+          "matches": 2,
+          "per90_vaep": -0.0325,
+          "per90_xt": 0.0338,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": -0.065
+        },
+        {
+          "label": "Real Madrid La Liga 2020/21",
+          "competition_key": "11_90",
+          "minutes": 90.0,
+          "matches": 1,
+          "per90_vaep": -0.3287,
+          "per90_xt": -0.1579,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": -0.3287
+        }
+      ],
+      "country_contexts": [
+        {
+          "label": "France Euro 2020",
+          "competition_key": "55_43",
+          "minutes": 360.0,
+          "matches": 4,
+          "per90_vaep": 0.064,
+          "per90_xt": 0.0506,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 0.2558
+        },
+        {
+          "label": "France WC 2018",
+          "competition_key": "43_3",
+          "minutes": 630.0,
+          "matches": 7,
+          "per90_vaep": 0.2307,
+          "per90_xt": 0.0222,
+          "goals": 1,
+          "assists": 0,
+          "vaep_sum": 1.6146
+        },
+        {
+          "label": "France WC 2022",
+          "competition_key": "43_106",
+          "minutes": 518.9,
+          "matches": 6,
+          "per90_vaep": 0.0383,
+          "per90_xt": 0.0248,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 0.2211
+        }
+      ],
+      "club_per90_vaep_avg_min_weighted": -0.0778,
+      "country_per90_vaep_avg_min_weighted": 0.1248,
+      "delta_vaep": 0.2026,
+      "top_club_teammates": [
+        "Toni Kroos",
+        "Sergio Ramos García",
+        "Karim Benzema",
+        "Luka Modrić",
+        "Carlos Henrique Casimiro"
+      ],
+      "narrative": "Raphaël Varane's per-90 VAEP at Real Madrid with Toni Kroos, Sergio Ramos García, and Karim Benzema averages -0.078; at France it averages 0.125 — a delta of +0.203 (rose)."
+    },
+    {
+      "name": "Karim Benzema",
+      "requested_name": "Karim Benzema",
+      "player_id": 19677,
+      "club": "Real Madrid",
+      "country": "France",
+      "club_contexts": [
+        {
+          "label": "Real Madrid La Liga 2017/18",
+          "competition_key": "11_1",
+          "minutes": 155.0,
+          "matches": 2,
+          "per90_vaep": -0.216,
+          "per90_xt": 0.0294,
+          "goals": 0,
+          "assists": 1,
+          "vaep_sum": -0.3721
+        },
+        {
+          "label": "Real Madrid La Liga 2018/19",
+          "competition_key": "11_4",
+          "minutes": 90.0,
+          "matches": 1,
+          "per90_vaep": -0.0202,
+          "per90_xt": 0.0023,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": -0.0202
+        },
+        {
+          "label": "Real Madrid La Liga 2019/20",
+          "competition_key": "11_42",
+          "minutes": 180.9,
+          "matches": 2,
+          "per90_vaep": -0.3139,
+          "per90_xt": -0.0023,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": -0.6309
+        },
+        {
+          "label": "Real Madrid La Liga 2020/21",
+          "competition_key": "11_90",
+          "minutes": 161.7,
+          "matches": 2,
+          "per90_vaep": 0.5193,
+          "per90_xt": 0.0393,
+          "goals": 1,
+          "assists": 0,
+          "vaep_sum": 0.9328
+        }
+      ],
+      "country_contexts": [
+        {
+          "label": "France Euro 2020",
+          "competition_key": "55_43",
+          "minutes": 347.8,
+          "matches": 4,
+          "per90_vaep": 0.7886,
+          "per90_xt": 0.0132,
+          "goals": 4,
+          "assists": 0,
+          "vaep_sum": 3.0471
+        }
+      ],
+      "club_per90_vaep_avg_min_weighted": -0.0138,
+      "country_per90_vaep_avg_min_weighted": 0.7886,
+      "delta_vaep": 0.8024,
+      "top_club_teammates": [
+        "Carlos Henrique Casimiro",
+        "Toni Kroos",
+        "Luka Modrić",
+        "Raphaël Varane",
+        "Francisco Román Alarcón Suárez"
+      ],
+      "narrative": "Karim Benzema's per-90 VAEP at Real Madrid with Carlos Henrique Casimiro, Toni Kroos, and Luka Modrić averages -0.014; at France it averages 0.789 — a delta of +0.802 (rose)."
+    },
+    {
+      "name": "Lionel Andrés Messi Cuccittini",
+      "requested_name": "Lionel Messi",
+      "player_id": 5503,
+      "club": "Barcelona",
+      "country": "Argentina",
+      "club_contexts": [
+        {
+          "label": "Barcelona La Liga 2017/18",
+          "competition_key": "11_1",
+          "minutes": 2998.0,
+          "matches": 36,
+          "per90_vaep": 1.0858,
+          "per90_xt": 0.1244,
+          "goals": 34,
+          "assists": 8,
+          "vaep_sum": 36.1702
+        },
+        {
+          "label": "Barcelona La Liga 2018/19",
+          "competition_key": "11_4",
+          "minutes": 2713.7,
+          "matches": 34,
+          "per90_vaep": 1.2029,
+          "per90_xt": 0.1338,
+          "goals": 36,
+          "assists": 7,
+          "vaep_sum": 36.2685
+        },
+        {
+          "label": "Barcelona La Liga 2019/20",
+          "competition_key": "11_42",
+          "minutes": 2880.8,
+          "matches": 33,
+          "per90_vaep": 0.7838,
+          "per90_xt": 0.1161,
+          "goals": 25,
+          "assists": 14,
+          "vaep_sum": 25.0873
+        },
+        {
+          "label": "Barcelona La Liga 2020/21",
+          "competition_key": "11_90",
+          "minutes": 3023.0,
+          "matches": 35,
+          "per90_vaep": 0.9713,
+          "per90_xt": 0.1218,
+          "goals": 30,
+          "assists": 6,
+          "vaep_sum": 32.6238
+        }
+      ],
+      "country_contexts": [
+        {
+          "label": "Argentina Copa 2024",
+          "competition_key": "223_282",
+          "minutes": 425.8,
+          "matches": 5,
+          "per90_vaep": 0.2006,
+          "per90_xt": 0.0845,
+          "goals": 1,
+          "assists": 1,
+          "vaep_sum": 0.9493
+        },
+        {
+          "label": "Argentina WC 2018",
+          "competition_key": "43_3",
+          "minutes": 360.0,
+          "matches": 4,
+          "per90_vaep": 0.2859,
+          "per90_xt": 0.0835,
+          "goals": 1,
+          "assists": 1,
+          "vaep_sum": 1.1435
+        },
+        {
+          "label": "Argentina WC 2022",
+          "competition_key": "43_106",
+          "minutes": 678.4,
+          "matches": 7,
+          "per90_vaep": 0.288,
+          "per90_xt": 0.07,
+          "goals": 9,
+          "assists": 1,
+          "vaep_sum": 2.1711
+        }
+      ],
+      "club_per90_vaep_avg_min_weighted": 1.0085,
+      "country_per90_vaep_avg_min_weighted": 0.2621,
+      "delta_vaep": -0.7464,
+      "top_club_teammates": [
+        "Marc-André ter Stegen",
+        "Sergio Busquets i Burgos",
+        "Jordi Alba Ramos",
+        "Gerard Piqué Bernabéu",
+        "Sergi Roberto Carnicer"
+      ],
+      "narrative": "Lionel Messi's per-90 VAEP at Barcelona with Marc-André ter Stegen, Sergio Busquets i Burgos, and Jordi Alba Ramos averages 1.008; at Argentina it averages 0.262 — a delta of -0.746 (dropped)."
+    },
+    {
+      "name": "Luis Alberto Suárez Díaz",
+      "requested_name": "Luis Suárez",
+      "player_id": 5246,
+      "club": "Barcelona",
+      "country": "Uruguay",
+      "club_contexts": [
+        {
+          "label": "Barcelona La Liga 2017/18",
+          "competition_key": "11_1",
+          "minutes": 2723.4,
+          "matches": 31,
+          "per90_vaep": 0.4632,
+          "per90_xt": 0.0229,
+          "goals": 23,
+          "assists": 3,
+          "vaep_sum": 14.0157
+        },
+        {
+          "label": "Barcelona La Liga 2018/19",
+          "competition_key": "11_4",
+          "minutes": 2649.6,
+          "matches": 31,
+          "per90_vaep": 0.3069,
+          "per90_xt": 0.0295,
+          "goals": 16,
+          "assists": 3,
+          "vaep_sum": 9.0353
+        },
+        {
+          "label": "Barcelona La Liga 2019/20",
+          "competition_key": "11_42",
+          "minutes": 1842.6,
+          "matches": 25,
+          "per90_vaep": 0.4337,
+          "per90_xt": 0.0132,
+          "goals": 13,
+          "assists": 5,
+          "vaep_sum": 8.8795
+        }
+      ],
+      "country_contexts": [
+        {
+          "label": "Uruguay Copa 2024",
+          "competition_key": "223_282",
+          "minutes": 78.3,
+          "matches": 4,
+          "per90_vaep": 0.3729,
+          "per90_xt": 0.0713,
+          "goals": 2,
+          "assists": 0,
+          "vaep_sum": 0.3246
+        },
+        {
+          "label": "Uruguay WC 2018",
+          "competition_key": "43_3",
+          "minutes": 450.0,
+          "matches": 5,
+          "per90_vaep": 0.239,
+          "per90_xt": 0.0148,
+          "goals": 2,
+          "assists": 1,
+          "vaep_sum": 1.1948
+        },
+        {
+          "label": "Uruguay WC 2022",
+          "competition_key": "43_106",
+          "minutes": 145.8,
+          "matches": 3,
+          "per90_vaep": -0.2266,
+          "per90_xt": 0.0139,
+          "goals": 0,
+          "assists": 1,
+          "vaep_sum": -0.3671
+        }
+      ],
+      "club_per90_vaep_avg_min_weighted": 0.3983,
+      "country_per90_vaep_avg_min_weighted": 0.1538,
+      "delta_vaep": -0.2444,
+      "top_club_teammates": [
+        "Lionel Andrés Messi Cuccittini",
+        "Marc-André ter Stegen",
+        "Gerard Piqué Bernabéu",
+        "Ivan Rakitić",
+        "Sergio Busquets i Burgos"
+      ],
+      "narrative": "Luis Suárez's per-90 VAEP at Barcelona with Lionel Andrés Messi Cuccittini, Marc-André ter Stegen, and Gerard Piqué Bernabéu averages 0.398; at Uruguay it averages 0.154 — a delta of -0.244 (dropped)."
+    },
+    {
+      "name": "Sergio Busquets i Burgos",
+      "requested_name": "Sergio Busquets",
+      "player_id": 5203,
+      "club": "Barcelona",
+      "country": "Spain",
+      "club_contexts": [
+        {
+          "label": "Barcelona La Liga 2017/18",
+          "competition_key": "11_1",
+          "minutes": 2418.5,
+          "matches": 29,
+          "per90_vaep": 0.1091,
+          "per90_xt": -0.0068,
+          "goals": 1,
+          "assists": 0,
+          "vaep_sum": 2.933
+        },
+        {
+          "label": "Barcelona La Liga 2018/19",
+          "competition_key": "11_4",
+          "minutes": 2541.3,
+          "matches": 33,
+          "per90_vaep": 0.0819,
+          "per90_xt": 0.03,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 2.3118
+        },
+        {
+          "label": "Barcelona La Liga 2019/20",
+          "competition_key": "11_42",
+          "minutes": 2155.4,
+          "matches": 29,
+          "per90_vaep": 0.1739,
+          "per90_xt": 0.0357,
+          "goals": 2,
+          "assists": 0,
+          "vaep_sum": 4.1655
+        },
+        {
+          "label": "Barcelona La Liga 2020/21",
+          "competition_key": "11_90",
+          "minutes": 2332.2,
+          "matches": 33,
+          "per90_vaep": 0.1331,
+          "per90_xt": 0.0428,
+          "goals": 0,
+          "assists": 2,
+          "vaep_sum": 3.4491
+        }
+      ],
+      "country_contexts": [
+        {
+          "label": "Spain Euro 2020",
+          "competition_key": "55_43",
+          "minutes": 366.6,
+          "matches": 4,
+          "per90_vaep": -0.0738,
+          "per90_xt": 0.0077,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": -0.3007
+        },
+        {
+          "label": "Spain WC 2018",
+          "competition_key": "43_3",
+          "minutes": 360.0,
+          "matches": 4,
+          "per90_vaep": 0.0555,
+          "per90_xt": 0.0144,
+          "goals": 0,
+          "assists": 1,
+          "vaep_sum": 0.222
+        },
+        {
+          "label": "Spain WC 2022",
+          "competition_key": "43_106",
+          "minutes": 333.4,
+          "matches": 4,
+          "per90_vaep": -0.1994,
+          "per90_xt": 0.0145,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": -0.7388
+        }
+      ],
+      "club_per90_vaep_avg_min_weighted": 0.1225,
+      "country_per90_vaep_avg_min_weighted": -0.0694,
+      "delta_vaep": -0.1919,
+      "top_club_teammates": [
+        "Lionel Andrés Messi Cuccittini",
+        "Marc-André ter Stegen",
+        "Jordi Alba Ramos",
+        "Gerard Piqué Bernabéu",
+        "Sergi Roberto Carnicer"
+      ],
+      "narrative": "Sergio Busquets's per-90 VAEP at Barcelona with Lionel Andrés Messi Cuccittini, Marc-André ter Stegen, and Jordi Alba Ramos averages 0.122; at Spain it averages -0.069 — a delta of -0.192 (dropped)."
+    },
+    {
+      "name": "Jordi Alba Ramos",
+      "requested_name": "Jordi Alba",
+      "player_id": 5211,
+      "club": "Barcelona",
+      "country": "Spain",
+      "club_contexts": [
+        {
+          "label": "Barcelona La Liga 2017/18",
+          "competition_key": "11_1",
+          "minutes": 2576.4,
+          "matches": 31,
+          "per90_vaep": 0.1802,
+          "per90_xt": 0.0596,
+          "goals": 2,
+          "assists": 6,
+          "vaep_sum": 5.1592
+        },
+        {
+          "label": "Barcelona La Liga 2018/19",
+          "competition_key": "11_4",
+          "minutes": 2785.5,
+          "matches": 33,
+          "per90_vaep": 0.1629,
+          "per90_xt": 0.0654,
+          "goals": 2,
+          "assists": 2,
+          "vaep_sum": 5.0405
+        },
+        {
+          "label": "Barcelona La Liga 2019/20",
+          "competition_key": "11_42",
+          "minutes": 1828.3,
+          "matches": 23,
+          "per90_vaep": 0.1751,
+          "per90_xt": 0.0747,
+          "goals": 1,
+          "assists": 4,
+          "vaep_sum": 3.5565
+        },
+        {
+          "label": "Barcelona La Liga 2020/21",
+          "competition_key": "11_90",
+          "minutes": 2892.4,
+          "matches": 33,
+          "per90_vaep": 0.2106,
+          "per90_xt": 0.1084,
+          "goals": 3,
+          "assists": 4,
+          "vaep_sum": 6.7676
+        }
+      ],
+      "country_contexts": [
+        {
+          "label": "Spain Euro 2020",
+          "competition_key": "55_43",
+          "minutes": 462.8,
+          "matches": 6,
+          "per90_vaep": 0.3692,
+          "per90_xt": 0.1465,
+          "goals": 0,
+          "assists": 1,
+          "vaep_sum": 1.8984
+        },
+        {
+          "label": "Spain WC 2018",
+          "competition_key": "43_3",
+          "minutes": 360.0,
+          "matches": 4,
+          "per90_vaep": 0.0941,
+          "per90_xt": 0.0881,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 0.3766
+        },
+        {
+          "label": "Spain WC 2022",
+          "competition_key": "43_106",
+          "minutes": 263.8,
+          "matches": 4,
+          "per90_vaep": 0.2452,
+          "per90_xt": 0.139,
+          "goals": 0,
+          "assists": 2,
+          "vaep_sum": 0.7185
+        }
+      ],
+      "club_per90_vaep_avg_min_weighted": 0.1832,
+      "country_per90_vaep_avg_min_weighted": 0.248,
+      "delta_vaep": 0.0647,
+      "top_club_teammates": [
+        "Lionel Andrés Messi Cuccittini",
+        "Marc-André ter Stegen",
+        "Sergio Busquets i Burgos",
+        "Gerard Piqué Bernabéu",
+        "Sergi Roberto Carnicer"
+      ],
+      "narrative": "Jordi Alba's per-90 VAEP at Barcelona with Lionel Andrés Messi Cuccittini, Marc-André ter Stegen, and Sergio Busquets i Burgos averages 0.183; at Spain it averages 0.248 — a delta of +0.065 (rose)."
+    },
+    {
+      "name": "Kylian Mbappé Lottin",
+      "requested_name": "Kylian Mbappé",
+      "player_id": 3009,
+      "club": "PSG",
+      "country": "France",
+      "club_contexts": [
+        {
+          "label": "Paris Saint-Germain Ligue 1 2021/22",
+          "competition_key": "7_108",
+          "minutes": 1976.9,
+          "matches": 23,
+          "per90_vaep": 0.8207,
+          "per90_xt": 0.0876,
+          "goals": 22,
+          "assists": 7,
+          "vaep_sum": 18.0277
+        },
+        {
+          "label": "Paris Saint-Germain Ligue 1 2022/23",
+          "competition_key": "7_235",
+          "minutes": 2374.4,
+          "matches": 29,
+          "per90_vaep": 0.8002,
+          "per90_xt": 0.0775,
+          "goals": 27,
+          "assists": 4,
+          "vaep_sum": 21.1126
+        }
+      ],
+      "country_contexts": [
+        {
+          "label": "France Euro 2020",
+          "competition_key": "55_43",
+          "minutes": 361.1,
+          "matches": 4,
+          "per90_vaep": -0.3573,
+          "per90_xt": 0.0537,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": -1.434
+        },
+        {
+          "label": "France Euro 2024",
+          "competition_key": "55_282",
+          "minutes": 464.9,
+          "matches": 5,
+          "per90_vaep": 0.0853,
+          "per90_xt": 0.0546,
+          "goals": 1,
+          "assists": 1,
+          "vaep_sum": 0.4405
+        },
+        {
+          "label": "France WC 2018",
+          "competition_key": "43_3",
+          "minutes": 531.5,
+          "matches": 7,
+          "per90_vaep": 0.7436,
+          "per90_xt": 0.0495,
+          "goals": 4,
+          "assists": 0,
+          "vaep_sum": 4.3911
+        },
+        {
+          "label": "France WC 2022",
+          "competition_key": "43_106",
+          "minutes": 567.4,
+          "matches": 7,
+          "per90_vaep": 0.9771,
+          "per90_xt": 0.0716,
+          "goals": 9,
+          "assists": 1,
+          "vaep_sum": 6.1605
+        }
+      ],
+      "club_per90_vaep_avg_min_weighted": 0.8095,
+      "country_per90_vaep_avg_min_weighted": 0.4469,
+      "delta_vaep": -0.3626,
+      "top_club_teammates": [
+        "Lionel Andrés Messi Cuccittini",
+        "Danilo Luís Hélio Pereira",
+        "Gianluigi Donnarumma",
+        "Marcos Aoás Corrêa",
+        "Juan Bernat Velasco"
+      ],
+      "narrative": "Kylian Mbappé's per-90 VAEP at PSG with Lionel Andrés Messi Cuccittini, Danilo Luís Hélio Pereira, and Gianluigi Donnarumma averages 0.810; at France it averages 0.447 — a delta of -0.363 (dropped)."
+    },
+    {
+      "name": "Neymar da Silva Santos Junior",
+      "requested_name": "Neymar",
+      "player_id": 4320,
+      "club": "PSG",
+      "country": "Brazil",
+      "club_contexts": [
+        {
+          "label": "Paris Saint-Germain Ligue 1 2021/22",
+          "competition_key": "7_108",
+          "minutes": 1511.8,
+          "matches": 18,
+          "per90_vaep": 0.3948,
+          "per90_xt": 0.0513,
+          "goals": 11,
+          "assists": 1,
+          "vaep_sum": 6.6313
+        },
+        {
+          "label": "Paris Saint-Germain Ligue 1 2022/23",
+          "competition_key": "7_235",
+          "minutes": 1274.7,
+          "matches": 16,
+          "per90_vaep": 0.7535,
+          "per90_xt": 0.0723,
+          "goals": 12,
+          "assists": 4,
+          "vaep_sum": 10.6717
+        }
+      ],
+      "country_contexts": [
+        {
+          "label": "Brazil WC 2018",
+          "competition_key": "43_3",
+          "minutes": 450.0,
+          "matches": 5,
+          "per90_vaep": 0.4325,
+          "per90_xt": 0.1197,
+          "goals": 2,
+          "assists": 1,
+          "vaep_sum": 2.1626
+        },
+        {
+          "label": "Brazil WC 2022",
+          "competition_key": "43_106",
+          "minutes": 249.4,
+          "matches": 3,
+          "per90_vaep": 0.4106,
+          "per90_xt": 0.0591,
+          "goals": 2,
+          "assists": 0,
+          "vaep_sum": 1.138
+        }
+      ],
+      "club_per90_vaep_avg_min_weighted": 0.5589,
+      "country_per90_vaep_avg_min_weighted": 0.4247,
+      "delta_vaep": -0.1342,
+      "top_club_teammates": [
+        "Lionel Andrés Messi Cuccittini",
+        "Danilo Luís Hélio Pereira",
+        "Gianluigi Donnarumma",
+        "Kylian Mbappé Lottin",
+        "Marcos Aoás Corrêa"
+      ],
+      "narrative": "Neymar's per-90 VAEP at PSG with Lionel Andrés Messi Cuccittini, Danilo Luís Hélio Pereira, and Gianluigi Donnarumma averages 0.559; at Brazil it averages 0.425 — a delta of -0.134 (dropped)."
+    },
+    {
+      "name": "Antoine Griezmann",
+      "requested_name": "Antoine Griezmann",
+      "player_id": 5487,
+      "club": "Atlético",
+      "country": "France",
+      "club_contexts": [
+        {
+          "label": "Atlético Madrid La Liga 2017/18",
+          "competition_key": "11_1",
+          "minutes": 180.0,
+          "matches": 2,
+          "per90_vaep": 0.003,
+          "per90_xt": -0.0004,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 0.006
+        },
+        {
+          "label": "Atlético Madrid La Liga 2018/19",
+          "competition_key": "11_4",
+          "minutes": 180.0,
+          "matches": 2,
+          "per90_vaep": 0.1269,
+          "per90_xt": 0.0131,
+          "goals": 0,
+          "assists": 1,
+          "vaep_sum": 0.2537
+        }
+      ],
+      "country_contexts": [
+        {
+          "label": "France Euro 2020",
+          "competition_key": "55_43",
+          "minutes": 353.3,
+          "matches": 4,
+          "per90_vaep": 0.2965,
+          "per90_xt": 0.0285,
+          "goals": 1,
+          "assists": 0,
+          "vaep_sum": 1.1638
+        },
+        {
+          "label": "France Euro 2024",
+          "competition_key": "55_282",
+          "minutes": 393.8,
+          "matches": 6,
+          "per90_vaep": 0.0044,
+          "per90_xt": 0.0256,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 0.0191
+        },
+        {
+          "label": "France WC 2018",
+          "competition_key": "43_3",
+          "minutes": 571.9,
+          "matches": 7,
+          "per90_vaep": 0.1662,
+          "per90_xt": -0.0129,
+          "goals": 4,
+          "assists": 2,
+          "vaep_sum": 1.0561
+        },
+        {
+          "label": "France WC 2022",
+          "competition_key": "43_106",
+          "minutes": 540.4,
+          "matches": 7,
+          "per90_vaep": 0.1123,
+          "per90_xt": 0.043,
+          "goals": 0,
+          "assists": 2,
+          "vaep_sum": 0.6745
+        }
+      ],
+      "club_per90_vaep_avg_min_weighted": 0.065,
+      "country_per90_vaep_avg_min_weighted": 0.141,
+      "delta_vaep": 0.0761,
+      "top_club_teammates": [
+        "Ángel Martín Correa",
+        "Jan Oblak",
+        "Thomas Teye Partey",
+        "Saúl Ñíguez Esclapez",
+        "Filipe Luís Kasmirski"
+      ],
+      "narrative": "Antoine Griezmann's per-90 VAEP at Atlético with Ángel Martín Correa, Jan Oblak, and Thomas Teye Partey averages 0.065; at France it averages 0.141 — a delta of +0.076 (rose)."
+    },
+    {
+      "name": "Achraf Hakimi Mouh",
+      "requested_name": "Achraf Hakimi",
+      "player_id": 5245,
+      "club": "PSG",
+      "country": "Morocco",
+      "club_contexts": [
+        {
+          "label": "Paris Saint-Germain Ligue 1 2021/22",
+          "competition_key": "7_108",
+          "minutes": 1709.7,
+          "matches": 22,
+          "per90_vaep": 0.2018,
+          "per90_xt": 0.0774,
+          "goals": 1,
+          "assists": 3,
+          "vaep_sum": 3.8336
+        },
+        {
+          "label": "Paris Saint-Germain Ligue 1 2022/23",
+          "competition_key": "7_235",
+          "minutes": 1919.9,
+          "matches": 23,
+          "per90_vaep": 0.3515,
+          "per90_xt": 0.0718,
+          "goals": 5,
+          "assists": 1,
+          "vaep_sum": 7.4981
+        }
+      ],
+      "country_contexts": [
+        {
+          "label": "Morocco AFCON 2023",
+          "competition_key": "1267_107",
+          "minutes": 360.0,
+          "matches": 4,
+          "per90_vaep": 0.1476,
+          "per90_xt": 0.0884,
+          "goals": 1,
+          "assists": 1,
+          "vaep_sum": 0.5906
+        },
+        {
+          "label": "Morocco WC 2018",
+          "competition_key": "43_3",
+          "minutes": 270.0,
+          "matches": 3,
+          "per90_vaep": 0.1156,
+          "per90_xt": 0.0133,
+          "goals": 0,
+          "assists": 0,
+          "vaep_sum": 0.3468
+        },
+        {
+          "label": "Morocco WC 2022",
+          "competition_key": "43_106",
+          "minutes": 631.6,
+          "matches": 7,
+          "per90_vaep": 0.0928,
+          "per90_xt": 0.0395,
+          "goals": 1,
+          "assists": 0,
+          "vaep_sum": 0.651
+        }
+      ],
+      "club_per90_vaep_avg_min_weighted": 0.281,
+      "country_per90_vaep_avg_min_weighted": 0.1133,
+      "delta_vaep": -0.1677,
+      "top_club_teammates": [
+        "Lionel Andrés Messi Cuccittini",
+        "Gianluigi Donnarumma",
+        "Marcos Aoás Corrêa",
+        "Danilo Luís Hélio Pereira",
+        "Kylian Mbappé Lottin"
+      ],
+      "narrative": "Achraf Hakimi's per-90 VAEP at PSG with Lionel Andrés Messi Cuccittini, Gianluigi Donnarumma, and Marcos Aoás Corrêa averages 0.281; at Morocco it averages 0.113 — a delta of -0.168 (dropped)."
+    }
+  ],
+  "skipped": [],
+  "verdict_summary": {
+    "players_with_significant_country_drop": [
+      "Thomas Müller",
+      "Leroy Sané",
+      "Leon Goretzka",
+      "Luka Modrić",
+      "Lionel Andrés Messi Cuccittini",
+      "Luis Alberto Suárez Díaz",
+      "Sergio Busquets i Burgos",
+      "Kylian Mbappé Lottin",
+      "Neymar da Silva Santos Junior",
+      "Achraf Hakimi Mouh"
+    ],
+    "players_with_significant_country_rise": [
+      "Joshua Kimmich",
+      "Jamal Musiala",
+      "Toni Kroos",
+      "Raphaël Varane",
+      "Karim Benzema",
+      "Jordi Alba Ramos",
+      "Antoine Griezmann"
+    ],
+    "players_holding_steady": []
+  }
+}

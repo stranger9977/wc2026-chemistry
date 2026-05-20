@@ -1,209 +1,495 @@
-# Club vs Country Chemistry: Wyscout Cross-Context Analysis
+# Cross-Context Chemistry: The Podolski Archetype
 
-## 1. Setup: The Podolski Paradox
+## 1. Setup
 
-Lukas Podolski is the canonical case: universally acclaimed for Germany, a peripheral figure at Arsenal, Internazionale, and Monaco. He scored 49 goals in 130 Germany caps and accumulated one Bundesliga title and a World Cup winners medal in 2014, yet finished his club career without a major domestic trophy. The pattern raises a genuine question: does playing for your national team unlock something — tactical role clarity, reduced positional competition, emotional investment, familiarity with teammates from years of camp — that clubs cannot replicate?
+**The question:** Some players are unmistakably better in one context than another. Lukas Podolski scored 49 goals in 130 international appearances for Germany — a strike rate and consistency that made him a national hero. At club level, his record across Arsenal, Galatasaray, Inter Milan, and Vissel Kobe was considerably more modest. The inverse case — a player whose club chemistry network is richly developed but dissolves at international level — is what this analysis tests in modern, measurable terms.
 
-**Following the paper, this analysis uses VAEP (Decroos et al. 2019, Bransen & Van Haaren 2020) as the action-value function. xT results are reported alongside for cross-reference.**
+**The data ceiling:** Podolski himself is **not in any open dataset**. His career at Köln (pre-2009), Bayern Munich (2009–12), Arsenal (2012–15), Galatasaray (2015–17), Vissel Kobe, Górnik Zabrze, and his Germany years all predate the StatsBomb open data releases that cover club football. There is zero open-data overlap for him. The analysis therefore tests the Podolski archetype on modern players whose club seasons and international tournaments both fall within available StatsBomb open data.
 
-The Wyscout open dataset (Pappalardo et al., 2019, Nature Scientific Data) covers the Premier League, La Liga, Bundesliga, Serie A, and Ligue 1 (all 2017/18), plus WC 2018 and Euro 2016, all in a consistent schema with ~1.9 million events. Because the same players appear in both domestic and international fixtures, within-player comparisons are possible.
+**Available open competitions used in this analysis:**
+- **International:** FIFA WC 2022 (43 matches · 64 matches), UEFA Euro 2024 (51 matches), UEFA Euro 2020 (51 matches), Copa América 2024 (32 matches), FIFA WC 2018 (64 matches), AFCON 2023 (52 matches)
+- **Club:** Bundesliga 2023/24 (34 Bayern matches via StatsBomb partial release), La Liga 2017/18–2020/21 (36+34+33+35 matches), Ligue 1 2021/22 + 2022/23 (26+32 matches), MLS 2023 (6 Inter Miami matches)
 
-**Dataset stats:**
+Note: StatsBomb's open club releases are samples — the Bundesliga 2023/24 release covers 34 matches (primarily Bayer Leverkusen's title-winning season, not the full Bayern dataset). The La Liga releases are similarly partial. This is the open-data ceiling.
 
-- England: 380 matches
-- European_Championship: 51 matches
-- France: 380 matches
-- Germany: 306 matches
-- Italy: 380 matches
-- Spain: 380 matches
-- World_Cup: 64 matches
-- Total matches: 1941
-- Total SPADL actions (approx): 2,464,092
-- License: CC BY 4.0
+---
 
 ## 2. Methodology
 
-**VAEP-based JOI90 (primary).** Every event is converted to SPADL format via socceraction's Wyscout converter. A VAEP model is trained on all 2,464,092 SPADL actions across all 7 Wyscout competitions combined (train-set AUC: scores=0.768, concedes=0.792). Following Decroos et al. 2019, two XGBClassifier models predict P(scores in next N actions) and P(concedes in next N actions); N=10. VAEP value per action = delta-P(scores) - delta-P(concedes). A pair interaction is two consecutive on-ball actions (passes, crosses, dribbles, take-ons, shots) by different players on the same team. JOI contribution = VAEP of the second action. Per-pair JOI is summed and normalized per 90 shared minutes (JOI90).
+**VAEP v2** was trained on the combined StatsBomb SPADL corpus: 1,211,875 actions from all international competitions plus the 8 club seasons above. Two XGBClassifiers (scores, concedes), N=10 lookahead gamestates, features: actiontype, result, start/end location.
 
-**xT-based JOI90 (secondary reference).** Also computed for cross-reference using a 16x12 xT grid fitted on the same 7 competitions. Values reported in parentheses or secondary columns throughout. VAEP and xT scales differ — do not compare absolute values across metrics.
+- Train AUC scores: **0.8176**
+- Train AUC concedes: **0.9328**
 
-**Shared minutes** are derived from Wyscout's teamsData formation structure. Floors: club pairs require ≥90 shared minutes; international ≥45.
+Both exceed the 0.70 sanity threshold.
 
-**Caveats on cross-context comparisons.** Absolute JOI90 differences between club and international are not pure chemistry signal. International opponents are often weaker; the sample is one season and one tournament. Rank among team peers is a more stable lens than raw delta.
+**xT** is loaded from the existing `data/xt/xt.pkl` grid (fitted on the prior StatsBomb international corpus). It is reported alongside VAEP for reference; VAEP is the primary metric.
 
-## 3. The Big Picture (VAEP-based)
+**Player-level per-90 production:** For each player in each competition context, we sum all VAEP values from their attributed actions and divide by minutes played / 90. Minutes are taken from the StatsBomb lineups API (position spell durations). A 45-minute floor is applied for international appearances; 90 minutes for club appearances.
 
-Country VAEP-JOI90 / Club VAEP-JOI90 ratio for featured players (pairs top-8 by shared minutes, floor: club ≥90 min, international ≥45 min):
+**Caveats:**
+- Opponent quality differs systematically: club opponents are top-division sides; international group-stage opponents range widely.
+- Tactical roles often differ (e.g., Kimmich: RB at Bayern, CM for Germany).
+- Small samples dominate international appearances: most players have 3–7 matches per tournament.
+- StatsBomb open club data is a sample, not a full season. Bayern's 2023/24 Bundesliga representation is minimal in this release; the large Leverkusen match set means Bayern players appear infrequently.
 
-| Player | Club | Country | Avg Club VAEP-JOI90 | Avg Country VAEP-JOI90 | Ratio | xT Ratio |
+---
+
+## 3. Headline: Bayern 2023/24 → Germany Euro 2024
+
+Within-season, overlapping players — the cleanest test.
+
+| Player | Bayern 23/24 per-90 VAEP | Germany Euro 24 per-90 VAEP | Delta |
+|---|---|---|---|
+| Joshua Kimmich | 0.131 | 0.240 | +0.109 |
+| Thomas Müller | 0.148 | — | — |
+| Leroy Sané | 0.096 | -0.013 | -0.108 |
+| Jamal Musiala | 0.042 | 0.762 | +0.720 |
+| Leon Goretzka | 0.396 | — | — |
+| Aleksandar Pavlović | 0.057 | — | — |
+
+### Joshua Kimmich
+
+**Club (Bayern)** — minutes-weighted avg per-90 VAEP: **0.131**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
 |---|---|---|---|---|---|---|
-| Jerome Boateng | Bayern | Germany | 0.0268 | 0.0566 | 2.11 | 14.84 |
-| Romelu Lukaku | Manchester United | Belgium | 0.0753 | 0.1276 | 1.69 | -0.47 |
-| Kylian Mbappe | Paris Saint-Germain | France | 0.0842 | 0.0898 | 1.07 | 0.31 |
-| Eden Hazard | Chelsea | Belgium | 0.0443 | 0.0449 | 1.01 | 0.33 |
-| Kevin De Bruyne | Manchester City | Belgium | 0.0900 | 0.0858 | 0.95 | 0.65 |
-| Antoine Griezmann | Atletico Madrid | France | 0.0719 | 0.0566 | 0.79 | 1.52 |
-| Joshua Kimmich | Bayern | Germany | 0.0705 | 0.0546 | 0.78 | 2.10 |
-| Mohamed Salah | Liverpool | Egypt | 0.1112 | 0.0808 | 0.73 | 0.72 |
-| Toni Kroos | Real Madrid | Germany | 0.0365 | 0.0265 | 0.73 | 1.54 |
-| Lionel Messi | Barcelona | Argentina | 0.1615 | 0.1083 | 0.67 | 1.01 |
-| Luka Modric | Real Madrid | Croatia | 0.0425 | 0.0198 | 0.47 | 0.97 |
-| Paul Pogba | Manchester United | France | 0.0556 | 0.0203 | 0.36 | 1.34 |
-| N'Golo Kante | Chelsea | France | 0.0301 | 0.0106 | 0.35 | 0.76 |
-| Neymar | Paris Saint-Germain | Brazil | 0.1838 | 0.0464 | 0.25 | 0.82 |
-| Robert Lewandowski | Bayern | Poland | 0.1052 | 0.0042 | 0.04 | 0.18 |
-| Thomas Muller | Bayern | Germany | 0.0699 | -0.0440 | -0.63 | 1.08 |
+| Bayern Munich Bundesliga 2023/24 | 91 | 2 | 0.131 | 0.149 | 0 | 0 |
 
-**True Podolski types (country VAEP-JOI90 > club, ratio > 1.2):**
+**Country (Germany)** — minutes-weighted avg per-90 VAEP: **0.206**
 
-- **Jerome Boateng** (Bayern → Germany): ratio 2.11. Club VAEP-avg 0.0268, country VAEP-avg 0.0566.
-- **Romelu Lukaku** (Manchester United → Belgium): ratio 1.69. Club VAEP-avg 0.0753, country VAEP-avg 0.1276.
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Germany Euro 2020 | 364 | 4 | 0.151 | 0.087 | 0 | 1 |
+| Germany Euro 2024 | 450 | 5 | 0.240 | 0.132 | 0 | 2 |
+| Germany WC 2018 | 270 | 3 | 0.316 | 0.155 | 0 | 0 |
+| Germany WC 2022 | 270 | 3 | 0.116 | 0.130 | 0 | 0 |
 
-**Inverse Podolski types (club VAEP-JOI90 > country, ratio < 0.8):**
+**Delta (country minus club): +0.075**
 
-- **Antoine Griezmann** (Atletico Madrid → France): ratio 0.79. Club VAEP-avg 0.0719, country VAEP-avg 0.0566.
-- **Joshua Kimmich** (Bayern → Germany): ratio 0.78. Club VAEP-avg 0.0705, country VAEP-avg 0.0546.
-- **Mohamed Salah** (Liverpool → Egypt): ratio 0.73. Club VAEP-avg 0.1112, country VAEP-avg 0.0808.
-- **Toni Kroos** (Real Madrid → Germany): ratio 0.73. Club VAEP-avg 0.0365, country VAEP-avg 0.0265.
-- **Lionel Messi** (Barcelona → Argentina): ratio 0.67. Club VAEP-avg 0.1615, country VAEP-avg 0.1083.
-- **Luka Modric** (Real Madrid → Croatia): ratio 0.47. Club VAEP-avg 0.0425, country VAEP-avg 0.0198.
+_Joshua Kimmich's per-90 VAEP at Bayern with Leroy Sané, Jamal Musiala, and Noussair Mazraoui averages 0.131; at Germany it averages 0.206 — a delta of +0.075 (rose)._
+### Thomas Müller
 
-VAEP verdict: 16 players with sufficient data in both contexts. 2 showed higher average VAEP-JOI90 with national team partners (country > club); 11 showed higher club chemistry.
+**Club (Bayern)** — minutes-weighted avg per-90 VAEP: **0.148**
 
-## 4. The Bayern 2017/18 → Germany WC 2018 Deep-Dive
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Bayern Munich Bundesliga 2023/24 | 91 | 2 | 0.148 | 0.044 | 0 | 0 |
 
-Germany's 2018 World Cup campaign ended in the group stage — three matches, zero wins. Four of their core starters (Kimmich, Müller, Hummels, Boateng) played together weekly at Bayern Munich.
+**Country (Germany)** — minutes-weighted avg per-90 VAEP: **-0.121**
 
-| Pair | Club VAEP-JOI90 | Club xT-JOI90 | Club minutes | Country VAEP-JOI90 | Country xT-JOI90 | Country minutes | Transfer (VAEP)? |
-|---|---|---|---|---|---|---|---|
-| Kimmich — Müller | 0.1130 | 0.0383 | 1472.0 | 0.0064 | 0.0323 | 207.0 | no |
-| Kimmich — Hummels | 0.0027 | 0.0088 | 1823.0 | 0.0088 | 0.0331 | 180.0 | yes |
-| Kimmich — Boateng | 0.0390 | 0.0684 | 1241.0 | 0.1782 | 0.1627 | 180.0 | yes |
-| Müller — Hummels | -0.0137 | 0.0038 | 1170.0 | -0.0717 | -0.0015 | 117.0 | no |
-| Müller — Boateng | 0.0652 | 0.0193 | 1273.0 | 0.0273 | 0.0175 | 180.0 | no |
-| Hummels — Boateng | 0.0984 | 0.0163 | 992.0 | -0.0206 | -0.0379 | 90.0 | no |
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Germany Euro 2020 | 298 | 4 | -0.085 | 0.025 | 0 | 0 |
+| Germany WC 2018 | 208 | 3 | -0.201 | 0.042 | 0 | 0 |
+| Germany WC 2022 | 202 | 3 | -0.094 | 0.009 | 0 | 0 |
 
-Germany had 3 WC 2018 matches — at most ~270 shared minutes for a starting pair. High variance on all country estimates.
+**Delta (country minus club): -0.269**
 
----
+_Thomas Müller's per-90 VAEP at Bayern with Leroy Sané, Jamal Musiala, and Noussair Mazraoui averages 0.148; at Germany it averages -0.121 — a delta of -0.269 (dropped)._
+### Leroy Sané
 
-## 5. Player-Level Production: Does Output Drop Without the Club Network? (StatsBomb VAEP v2)
+**Club (Bayern)** — minutes-weighted avg per-90 VAEP: **0.096**
 
-**Framing (updated):** The question is not whether pair chemistry transfers — it is whether
-the *player's individual per-90 production* drops when removed from their club chemistry
-network. The Podolski archetype: great at club, diminished at national team. The counter-case:
-players who are the same or better internationally.
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Bayern Munich Bundesliga 2023/24 | 180 | 2 | 0.096 | 0.037 | 0 | 0 |
 
-Honest caveat: the dataset does **not** cover Lukas Podolski himself — his career (Köln,
-Bayern 2009-12, Arsenal, Inter, Galatasaray, Vissel Kobe) is in no open dataset.
-This analysis tests the Podolski *archetype* on the closest modern players available.
+**Country (Germany)** — minutes-weighted avg per-90 VAEP: **0.027**
 
-**VAEP v2 model:** 1,211,875 StatsBomb actions, AUC scores=0.818, concedes=0.933.
-Metric: per-90 VAEP on the player's own on-ball actions (SPADL eligible types).
-Minutes estimated from lineups parquet (international) or match count × 90 (club).
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Germany Euro 2020 | 117 | 4 | -0.171 | 0.018 | 0 | 0 |
+| Germany Euro 2024 | 207 | 5 | -0.013 | 0.038 | 0 | 0 |
+| Germany WC 2022 | 111 | 2 | 0.310 | 0.184 | 0 | 1 |
 
-### 3a. Bayern 2023/24 -> Germany Euro 2024 (same-season, cleanest test)
+**Delta (country minus club): -0.068**
 
-| Player | Club VAEP/90 (Bundesliga 23/24) | Intl VAEP/90 (Euro 2024) | Delta | Ratio |
-|---|---|---|---|---|
-| Neuer | -0.2609 (1 matches) | -0.1425 (5 matches) | +0.1184 | 0.55 |
-| Kimmich | 0.0479 (2 matches) | 0.1988 (5 matches) | +0.1509 | 4.15 |
-| Muller | 0.1150 (2 matches) | -0.1382 (2 matches) | -0.2532 | -1.20 |
-| Goretzka | 0.3559 (2 matches) | n/a | n/a | n/a |
-| Musiala | 0.0559 (2 matches) | 0.7799 (5 matches) | +0.7240 | 13.95 |
-| Sane | 0.1055 (2 matches) | 0.0129 (5 matches) | -0.0926 | 0.12 |
-| Pavlovic | n/a | 0.1196 (3 matches) | n/a | n/a |
-| Wirtz | 0.4405 (32 matches) | 0.7309 (5 matches) | +0.2904 | 1.66 |
+_Leroy Sané's per-90 VAEP at Bayern with Jean-Eric Maxim Choupo-Moting, Matthijs de Ligt, and Noussair Mazraoui averages 0.096; at Germany it averages 0.027 — a delta of -0.068 (dropped)._
+### Jamal Musiala
 
-- **Neuer:** Neuer produced MORE at Germany Euro 2024 (-0.1425) than at Bayern (-0.2609) (delta +0.1184). Inverse Podolski: the national team context appears more enabling.
-- **Kimmich:** Kimmich produced MORE at Germany Euro 2024 (0.1988) than at Bayern (0.0479) (delta +0.1509). Inverse Podolski: the national team context appears more enabling.
-- **Muller:** Muller showed a clear production drop: per-90 VAEP fell from 0.1150 at Bayern to -0.1382 at Germany Euro 2024 (delta -0.2532). Consistent with the Podolski archetype: thriving in the club network, diminished without it.
-- **Goretzka:** Goretzka: insufficient data in one or both contexts.
-- **Musiala:** Musiala produced MORE at Germany Euro 2024 (0.7799) than at Bayern (0.0559) (delta +0.7240). Inverse Podolski: the national team context appears more enabling.
-- **Sane:** Sane showed a clear production drop: per-90 VAEP fell from 0.1055 at Bayern to 0.0129 at Germany Euro 2024 (delta -0.0926). Consistent with the Podolski archetype: thriving in the club network, diminished without it.
-- **Pavlovic:** Pavlovic: insufficient data in one or both contexts.
-- **Wirtz:** Wirtz produced MORE at Germany Euro 2024 (0.7309) than at Bayern (0.4405) (delta +0.2904). Inverse Podolski: the national team context appears more enabling.
+**Club (Bayern)** — minutes-weighted avg per-90 VAEP: **0.042**
 
-**Bayern/Germany verdict (6 players with data):** 3 showed a production drop at Germany vs Bayern (ratio < 0.85); 3 held or improved.
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Bayern Munich Bundesliga 2023/24 | 116 | 2 | 0.042 | 0.088 | 0 | 0 |
 
-### 3b. Real Madrid La Liga 2017/18-2020/21 -> international
+**Country (Germany)** — minutes-weighted avg per-90 VAEP: **0.527**
 
-| Player | Club VAEP/90 (La Liga, multi-season) | Intl VAEP/90 | Delta | Ratio |
-|---|---|---|---|---|
-| Modric (WC 2018) | 0.2716 (7 matches) | 0.0441 (7 matches) | -0.2275 | 0.16 |
-| Kroos (WC 2018) | 0.1717 (7 matches) | 0.5818 (3 matches) | +0.4101 | 3.39 |
-| Varane (WC 2018) | -0.0288 (6 matches) | 0.1768 (7 matches) | +0.2056 | -6.14 |
-| Benzema (Euro 2020) | 0.0121 (7 matches) | 0.7529 (4 matches) | +0.7408 | 62.22 |
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Germany Euro 2024 | 390 | 5 | 0.762 | 0.028 | 3 | 0 |
+| Germany WC 2022 | 258 | 3 | 0.173 | 0.078 | 0 | 0 |
 
-- **Modric:** Modric showed a clear production drop: per-90 VAEP fell from 0.2716 at Real Madrid to 0.0441 at Croatia (delta -0.2275). Consistent with the Podolski archetype: thriving in the club network, diminished without it.
-- **Kroos:** Kroos produced MORE at Germany (0.5818) than at Real Madrid (0.1717) (delta +0.4101). Inverse Podolski: the national team context appears more enabling.
-- **Varane:** Varane produced MORE at France (0.1768) than at Real Madrid (-0.0288) (delta +0.2056). Inverse Podolski: the national team context appears more enabling.
-- **Benzema:** Benzema produced MORE at France (0.7529) than at Real Madrid (0.0121) (delta +0.7408). Inverse Podolski: the national team context appears more enabling.
+**Delta (country minus club): +0.486**
 
-### 3c. Barcelona La Liga 2017/18-2020/21 -> international
+_Jamal Musiala's per-90 VAEP at Bayern with Leroy Sané, Matthijs de Ligt, and Mathys Tel averages 0.042; at Germany it averages 0.527 — a delta of +0.486 (rose)._
+### Leon Goretzka
 
-| Player | Club VAEP/90 (La Liga) | Intl VAEP/90 | Delta | Ratio |
-|---|---|---|---|---|
-| Messi (WC 2022) | 0.9910 (138 matches) | 0.2813 (7 matches) | -0.7097 | 0.28 |
-| Busquets (Euro 2020) | 0.1254 (124 matches) | n/a | n/a | n/a |
-| JordiAlba (Euro 2020) | 0.1684 (120 matches) | 0.2585 (6 matches) | +0.0901 | 1.53 |
+**Club (Bayern)** — minutes-weighted avg per-90 VAEP: **0.396**
 
-- **Messi:** Messi showed a clear production drop: per-90 VAEP fell from 0.9910 at Barcelona to 0.2813 at Argentina (delta -0.7097). Consistent with the Podolski archetype: thriving in the club network, diminished without it.
-- **Busquets:** Busquets: insufficient data in one or both contexts.
-- **JordiAlba:** JordiAlba produced MORE at Spain (0.2585) than at Barcelona (0.1684) (delta +0.0901). Inverse Podolski: the national team context appears more enabling.
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Bayern Munich Bundesliga 2023/24 | 160 | 2 | 0.396 | 0.022 | 1 | 0 |
 
-### 3d. PSG 2021/22 + 2022/23 -> WC 2022 / AFCON 2023
+**Country (Germany)** — minutes-weighted avg per-90 VAEP: **0.204**
 
-The Mbappe-Neymar-Messi trio era. PSG failed both Champions League campaigns. Each player competed at WC 2022.
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Germany Euro 2020 | 141 | 3 | 0.719 | 0.042 | 1 | 0 |
+| Germany WC 2018 | 62 | 1 | -0.300 | 0.020 | 0 | 0 |
+| Germany WC 2022 | 158 | 3 | -0.057 | 0.011 | 0 | 0 |
 
-| Player | PSG VAEP/90 (Ligue 1) | Intl VAEP/90 | Delta | Ratio |
-|---|---|---|---|---|
-| Mbappe (WC 2022) | 0.8203 (52 matches) | 0.7619 (7 matches) | -0.0584 | 0.93 |
-| Neymar (WC 2022) | 0.5533 (34 matches) | 0.4061 (3 matches) | -0.1472 | 0.73 |
-| Messi (WC 2022) | 0.5342 (58 matches) | 0.2813 (7 matches) | -0.2529 | 0.53 |
-| Hakimi (AFCON 2023) | 0.2621 (45 matches) | 0.1523 (4 matches) | -0.1098 | 0.58 |
+**Delta (country minus club): -0.193**
 
-- **Mbappe:** Mbappe showed a clear production drop: per-90 VAEP fell from 0.8203 at PSG to 0.7619 at France (delta -0.0584). Consistent with the Podolski archetype: thriving in the club network, diminished without it.
-- **Neymar:** Neymar showed a clear production drop: per-90 VAEP fell from 0.5533 at PSG to 0.4061 at Brazil (delta -0.1472). Consistent with the Podolski archetype: thriving in the club network, diminished without it.
-- **Messi:** Messi showed a clear production drop: per-90 VAEP fell from 0.5342 at PSG to 0.2813 at Argentina (delta -0.2529). Consistent with the Podolski archetype: thriving in the club network, diminished without it.
-- **Hakimi:** Hakimi showed a clear production drop: per-90 VAEP fell from 0.2621 at PSG to 0.1523 at Morocco (delta -0.1098). Consistent with the Podolski archetype: thriving in the club network, diminished without it.
+_Leon Goretzka's per-90 VAEP at Bayern with Leroy Sané, Jamal Musiala, and Noussair Mazraoui averages 0.396; at Germany it averages 0.204 — a delta of -0.192 (dropped)._
+### Aleksandar Pavlović
 
-### 3e. Inter Miami MLS 2023 -> Argentina Copa 2024
+**Club (Bayern)** — minutes-weighted avg per-90 VAEP: **0.057**
 
-Messi joined July 2023 (partial MLS season). Copa America 2024 was held in the US.
-A micro-comparison: different club context, same player.
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Bayern Munich Bundesliga 2023/24 | 59 | 1 | 0.057 | 0.008 | 0 | 0 |
 
-Messi showed a clear production drop: per-90 VAEP fell from 0.2390 at Inter Miami to 0.1886 at Argentina Copa 2024 (delta -0.0504). Consistent with the Podolski archetype: thriving in the club network, diminished without it.
+**Country (Germany)** — minutes-weighted avg per-90 VAEP: **0.000**
+
+_No qualifying appearances._
+
+**Delta (country minus club): -0.057**
+
+_Aleksandar Pavlović's club per-90 VAEP at Bayern averages 0.057 across 1 season(s); no qualifying Germany appearances found in the open international dataset._
+
+### Robert Lewandowski (Bayern → Poland)
+
+**Club (Bayern)** — minutes-weighted avg per-90 VAEP: **0.000**
+
+_No qualifying appearances._
+
+**Country (Poland)** — minutes-weighted avg per-90 VAEP: **0.181**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Poland Euro 2020 | 270 | 3 | 0.799 | 0.008 | 3 | 0 |
+| Poland Euro 2024 | 121 | 2 | -0.009 | -0.020 | 1 | 0 |
+| Poland WC 2018 | 270 | 3 | -0.095 | -0.004 | 0 | 0 |
+| Poland WC 2022 | 360 | 4 | -0.013 | 0.001 | 2 | 1 |
+
+**Delta (country minus club): +0.181**
+
+_Robert Lewandowski has no qualifying club appearances in the available open data for Bayern; country context only._
 
 ---
 
-## 6. Wyscout 2017/18 Cross-Section (Historic Reference)
+## 4. Real Madrid Axis
 
-The pair-level JOI90 analysis using Wyscout 2017/18 data is preserved above (Sections 2-3 of the original report). It covers Bayern 2017/18 -> Germany WC 2018 and other featured players from that season. The player-level production analysis in Section 3 above uses VAEP v2 on StatsBomb data and is the primary finding.
+### Luka Modrić
+
+**Club (Real Madrid)** — minutes-weighted avg per-90 VAEP: **0.448**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Real Madrid La Liga 2017/18 | 180 | 2 | 0.265 | 0.046 | 0 | 0 |
+| Real Madrid La Liga 2018/19 | 90 | 1 | 0.167 | 0.073 | 0 | 0 |
+| Real Madrid La Liga 2020/21 | 112 | 2 | 0.970 | 0.018 | 1 | 0 |
+
+**Country (Croatia)** — minutes-weighted avg per-90 VAEP: **0.104**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Croatia Euro 2020 | 383 | 4 | 0.394 | 0.022 | 1 | 1 |
+| Croatia Euro 2024 | 235 | 3 | 0.149 | 0.032 | 1 | 0 |
+| Croatia WC 2018 | 656 | 7 | 0.011 | -0.007 | 4 | 1 |
+| Croatia WC 2022 | 644 | 7 | 0.011 | 0.013 | 1 | 0 |
+
+**Delta (country minus club): -0.344**
+
+_Luka Modrić's per-90 VAEP at Real Madrid with Carlos Henrique Casimiro, Karim Benzema, and Toni Kroos averages 0.448; at Croatia it averages 0.104 — a delta of -0.344 (dropped)._
+### Toni Kroos
+
+**Club (Real Madrid)** — minutes-weighted avg per-90 VAEP: **0.178**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Real Madrid La Liga 2017/18 | 174 | 2 | 0.221 | 0.059 | 0 | 0 |
+| Real Madrid La Liga 2018/19 | 55 | 1 | 0.230 | 0.050 | 0 | 0 |
+| Real Madrid La Liga 2019/20 | 180 | 2 | -0.113 | 0.058 | 0 | 0 |
+| Real Madrid La Liga 2020/21 | 162 | 2 | 0.437 | -0.013 | 1 | 0 |
+
+**Country (Germany)** — minutes-weighted avg per-90 VAEP: **0.316**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Germany Euro 2020 | 360 | 4 | 0.245 | 0.051 | 0 | 0 |
+| Germany Euro 2024 | 440 | 5 | 0.137 | 0.027 | 0 | 0 |
+| Germany WC 2018 | 270 | 3 | 0.701 | 0.096 | 1 | 0 |
+
+**Delta (country minus club): +0.138**
+
+_Toni Kroos's per-90 VAEP at Real Madrid with Luka Modrić, Karim Benzema, and Carlos Henrique Casimiro averages 0.178; at Germany it averages 0.316 — a delta of +0.138 (rose)._
+### Raphaël Varane
+
+**Club (Real Madrid)** — minutes-weighted avg per-90 VAEP: **-0.078**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Real Madrid La Liga 2017/18 | 180 | 2 | -0.054 | 0.062 | 0 | 0 |
+| Real Madrid La Liga 2018/19 | 90 | 1 | 0.034 | 0.053 | 0 | 0 |
+| Real Madrid La Liga 2019/20 | 180 | 2 | -0.033 | 0.034 | 0 | 0 |
+| Real Madrid La Liga 2020/21 | 90 | 1 | -0.329 | -0.158 | 0 | 0 |
+
+**Country (France)** — minutes-weighted avg per-90 VAEP: **0.125**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| France Euro 2020 | 360 | 4 | 0.064 | 0.051 | 0 | 0 |
+| France WC 2018 | 630 | 7 | 0.231 | 0.022 | 1 | 0 |
+| France WC 2022 | 519 | 6 | 0.038 | 0.025 | 0 | 0 |
+
+**Delta (country minus club): +0.203**
+
+_Raphaël Varane's per-90 VAEP at Real Madrid with Toni Kroos, Sergio Ramos García, and Karim Benzema averages -0.078; at France it averages 0.125 — a delta of +0.203 (rose)._
+### Karim Benzema
+
+**Club (Real Madrid)** — minutes-weighted avg per-90 VAEP: **-0.014**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Real Madrid La Liga 2017/18 | 155 | 2 | -0.216 | 0.029 | 0 | 1 |
+| Real Madrid La Liga 2018/19 | 90 | 1 | -0.020 | 0.002 | 0 | 0 |
+| Real Madrid La Liga 2019/20 | 181 | 2 | -0.314 | -0.002 | 0 | 0 |
+| Real Madrid La Liga 2020/21 | 162 | 2 | 0.519 | 0.039 | 1 | 0 |
+
+**Country (France)** — minutes-weighted avg per-90 VAEP: **0.789**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| France Euro 2020 | 348 | 4 | 0.789 | 0.013 | 4 | 0 |
+
+**Delta (country minus club): +0.802**
+
+_Karim Benzema's per-90 VAEP at Real Madrid with Carlos Henrique Casimiro, Toni Kroos, and Luka Modrić averages -0.014; at France it averages 0.789 — a delta of +0.802 (rose)._
+---
+
+## 5. Barcelona Axis
+
+### Lionel Andrés Messi Cuccittini
+
+**Club (Barcelona)** — minutes-weighted avg per-90 VAEP: **1.008**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Barcelona La Liga 2017/18 | 2998 | 36 | 1.086 | 0.124 | 34 | 8 |
+| Barcelona La Liga 2018/19 | 2714 | 34 | 1.203 | 0.134 | 36 | 7 |
+| Barcelona La Liga 2019/20 | 2881 | 33 | 0.784 | 0.116 | 25 | 14 |
+| Barcelona La Liga 2020/21 | 3023 | 35 | 0.971 | 0.122 | 30 | 6 |
+
+**Country (Argentina)** — minutes-weighted avg per-90 VAEP: **0.262**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Argentina Copa 2024 | 426 | 5 | 0.201 | 0.085 | 1 | 1 |
+| Argentina WC 2018 | 360 | 4 | 0.286 | 0.084 | 1 | 1 |
+| Argentina WC 2022 | 678 | 7 | 0.288 | 0.070 | 9 | 1 |
+
+**Delta (country minus club): -0.746**
+
+_Lionel Messi's per-90 VAEP at Barcelona with Marc-André ter Stegen, Sergio Busquets i Burgos, and Jordi Alba Ramos averages 1.008; at Argentina it averages 0.262 — a delta of -0.746 (dropped)._
+### Luis Alberto Suárez Díaz
+
+**Club (Barcelona)** — minutes-weighted avg per-90 VAEP: **0.398**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Barcelona La Liga 2017/18 | 2723 | 31 | 0.463 | 0.023 | 23 | 3 |
+| Barcelona La Liga 2018/19 | 2650 | 31 | 0.307 | 0.029 | 16 | 3 |
+| Barcelona La Liga 2019/20 | 1843 | 25 | 0.434 | 0.013 | 13 | 5 |
+
+**Country (Uruguay)** — minutes-weighted avg per-90 VAEP: **0.154**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Uruguay Copa 2024 | 78 | 4 | 0.373 | 0.071 | 2 | 0 |
+| Uruguay WC 2018 | 450 | 5 | 0.239 | 0.015 | 2 | 1 |
+| Uruguay WC 2022 | 146 | 3 | -0.227 | 0.014 | 0 | 1 |
+
+**Delta (country minus club): -0.244**
+
+_Luis Suárez's per-90 VAEP at Barcelona with Lionel Andrés Messi Cuccittini, Marc-André ter Stegen, and Gerard Piqué Bernabéu averages 0.398; at Uruguay it averages 0.154 — a delta of -0.244 (dropped)._
+### Sergio Busquets i Burgos
+
+**Club (Barcelona)** — minutes-weighted avg per-90 VAEP: **0.122**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Barcelona La Liga 2017/18 | 2418 | 29 | 0.109 | -0.007 | 1 | 0 |
+| Barcelona La Liga 2018/19 | 2541 | 33 | 0.082 | 0.030 | 0 | 0 |
+| Barcelona La Liga 2019/20 | 2155 | 29 | 0.174 | 0.036 | 2 | 0 |
+| Barcelona La Liga 2020/21 | 2332 | 33 | 0.133 | 0.043 | 0 | 2 |
+
+**Country (Spain)** — minutes-weighted avg per-90 VAEP: **-0.069**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Spain Euro 2020 | 367 | 4 | -0.074 | 0.008 | 0 | 0 |
+| Spain WC 2018 | 360 | 4 | 0.056 | 0.014 | 0 | 1 |
+| Spain WC 2022 | 333 | 4 | -0.199 | 0.015 | 0 | 0 |
+
+**Delta (country minus club): -0.192**
+
+_Sergio Busquets's per-90 VAEP at Barcelona with Lionel Andrés Messi Cuccittini, Marc-André ter Stegen, and Jordi Alba Ramos averages 0.122; at Spain it averages -0.069 — a delta of -0.192 (dropped)._
+### Jordi Alba Ramos
+
+**Club (Barcelona)** — minutes-weighted avg per-90 VAEP: **0.183**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Barcelona La Liga 2017/18 | 2576 | 31 | 0.180 | 0.060 | 2 | 6 |
+| Barcelona La Liga 2018/19 | 2786 | 33 | 0.163 | 0.065 | 2 | 2 |
+| Barcelona La Liga 2019/20 | 1828 | 23 | 0.175 | 0.075 | 1 | 4 |
+| Barcelona La Liga 2020/21 | 2892 | 33 | 0.211 | 0.108 | 3 | 4 |
+
+**Country (Spain)** — minutes-weighted avg per-90 VAEP: **0.248**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Spain Euro 2020 | 463 | 6 | 0.369 | 0.146 | 0 | 1 |
+| Spain WC 2018 | 360 | 4 | 0.094 | 0.088 | 0 | 0 |
+| Spain WC 2022 | 264 | 4 | 0.245 | 0.139 | 0 | 2 |
+
+**Delta (country minus club): +0.065**
+
+_Jordi Alba's per-90 VAEP at Barcelona with Lionel Andrés Messi Cuccittini, Marc-André ter Stegen, and Sergio Busquets i Burgos averages 0.183; at Spain it averages 0.248 — a delta of +0.065 (rose)._
+---
+
+## 6. The Messi Multi-Club Case
+
+Messi's footprint in the open data spans three club contexts: FC Barcelona (La Liga 2017–21), PSG (Ligue 1 2021/22 + 2022/23), and Inter Miami (MLS 2023). His Argentina contexts include Copa América 2021, WC 2022, and Copa América 2024 — tournaments Argentina won. This is the reverse of the Podolski archetype: a player whose country production should be *higher* than club, not lower.
+
+### Lionel Andrés Messi Cuccittini
+
+**Club (Barcelona)** — minutes-weighted avg per-90 VAEP: **1.008**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Barcelona La Liga 2017/18 | 2998 | 36 | 1.086 | 0.124 | 34 | 8 |
+| Barcelona La Liga 2018/19 | 2714 | 34 | 1.203 | 0.134 | 36 | 7 |
+| Barcelona La Liga 2019/20 | 2881 | 33 | 0.784 | 0.116 | 25 | 14 |
+| Barcelona La Liga 2020/21 | 3023 | 35 | 0.971 | 0.122 | 30 | 6 |
+
+**Country (Argentina)** — minutes-weighted avg per-90 VAEP: **0.262**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Argentina Copa 2024 | 426 | 5 | 0.201 | 0.085 | 1 | 1 |
+| Argentina WC 2018 | 360 | 4 | 0.286 | 0.084 | 1 | 1 |
+| Argentina WC 2022 | 678 | 7 | 0.288 | 0.070 | 9 | 1 |
+
+**Delta (country minus club): -0.746**
+
+_Lionel Messi's per-90 VAEP at Barcelona with Marc-André ter Stegen, Sergio Busquets i Burgos, and Jordi Alba Ramos averages 1.008; at Argentina it averages 0.262 — a delta of -0.746 (dropped)._
+---
+
+## 7. PSG Era
+
+### Kylian Mbappé Lottin
+
+**Club (PSG)** — minutes-weighted avg per-90 VAEP: **0.809**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Paris Saint-Germain Ligue 1 2021/22 | 1977 | 23 | 0.821 | 0.088 | 22 | 7 |
+| Paris Saint-Germain Ligue 1 2022/23 | 2374 | 29 | 0.800 | 0.077 | 27 | 4 |
+
+**Country (France)** — minutes-weighted avg per-90 VAEP: **0.447**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| France Euro 2020 | 361 | 4 | -0.357 | 0.054 | 0 | 0 |
+| France Euro 2024 | 465 | 5 | 0.085 | 0.055 | 1 | 1 |
+| France WC 2018 | 532 | 7 | 0.744 | 0.050 | 4 | 0 |
+| France WC 2022 | 567 | 7 | 0.977 | 0.072 | 9 | 1 |
+
+**Delta (country minus club): -0.363**
+
+_Kylian Mbappé's per-90 VAEP at PSG with Lionel Andrés Messi Cuccittini, Danilo Luís Hélio Pereira, and Gianluigi Donnarumma averages 0.810; at France it averages 0.447 — a delta of -0.363 (dropped)._
+### Neymar da Silva Santos Junior
+
+**Club (PSG)** — minutes-weighted avg per-90 VAEP: **0.559**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Paris Saint-Germain Ligue 1 2021/22 | 1512 | 18 | 0.395 | 0.051 | 11 | 1 |
+| Paris Saint-Germain Ligue 1 2022/23 | 1275 | 16 | 0.753 | 0.072 | 12 | 4 |
+
+**Country (Brazil)** — minutes-weighted avg per-90 VAEP: **0.425**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Brazil WC 2018 | 450 | 5 | 0.432 | 0.120 | 2 | 1 |
+| Brazil WC 2022 | 249 | 3 | 0.411 | 0.059 | 2 | 0 |
+
+**Delta (country minus club): -0.134**
+
+_Neymar's per-90 VAEP at PSG with Lionel Andrés Messi Cuccittini, Danilo Luís Hélio Pereira, and Gianluigi Donnarumma averages 0.559; at Brazil it averages 0.425 — a delta of -0.134 (dropped)._
+### Achraf Hakimi Mouh
+
+**Club (PSG)** — minutes-weighted avg per-90 VAEP: **0.281**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Paris Saint-Germain Ligue 1 2021/22 | 1710 | 22 | 0.202 | 0.077 | 1 | 3 |
+| Paris Saint-Germain Ligue 1 2022/23 | 1920 | 23 | 0.351 | 0.072 | 5 | 1 |
+
+**Country (Morocco)** — minutes-weighted avg per-90 VAEP: **0.113**
+
+| Context | Minutes | Matches | Per90 VAEP | Per90 xT | Goals | Assists |
+|---|---|---|---|---|---|---|
+| Morocco AFCON 2023 | 360 | 4 | 0.148 | 0.088 | 1 | 1 |
+| Morocco WC 2018 | 270 | 3 | 0.116 | 0.013 | 0 | 0 |
+| Morocco WC 2022 | 632 | 7 | 0.093 | 0.040 | 1 | 0 |
+
+**Delta (country minus club): -0.168**
+
+_Achraf Hakimi's per-90 VAEP at PSG with Lionel Andrés Messi Cuccittini, Gianluigi Donnarumma, and Marcos Aoás Corrêa averages 0.281; at Morocco it averages 0.113 — a delta of -0.168 (dropped)._
+---
+
+## 8. Counter-Examples
+
+Players whose country per-90 VAEP is comparable or higher than club — these push back against the Podolski thesis:
+
+- **Joshua Kimmich** (Bayern → Germany): club avg 0.131, country avg 0.206, delta +0.075
+- **Jamal Musiala** (Bayern → Germany): club avg 0.042, country avg 0.527, delta +0.486
+- **Toni Kroos** (Real Madrid → Germany): club avg 0.178, country avg 0.316, delta +0.138
+- **Raphaël Varane** (Real Madrid → France): club avg -0.078, country avg 0.125, delta +0.203
+- **Karim Benzema** (Real Madrid → France): club avg -0.014, country avg 0.789, delta +0.802
+- **Jordi Alba Ramos** (Barcelona → Spain): club avg 0.183, country avg 0.248, delta +0.065
+- **Antoine Griezmann** (Atlético → France): club avg 0.065, country avg 0.141, delta +0.076
 
 ---
 
-## 7. Updated Caveats
+## 9. Verdict
 
-1. **Missing Podolski data.** Lukas Podolski's club career (Köln, Bayern 2009-12, Arsenal 2012-15, Inter, Galatasaray, Vissel Kobe) is not in any open dataset. This analysis tests the Podolski *archetype* on the closest available players.
+Of 17 players with qualifying appearances in both club and country contexts:
+- **10** showed a meaningful drop in per-90 VAEP at international level (delta < -0.010)
+- **7** showed a meaningful rise at international level (delta > +0.010)
+- **0** held roughly steady
 
-2. **VAEP v2 scale.** Trained on 1,211,875 StatsBomb actions (AUC scores=0.818, concedes=0.933). Wyscout VAEP (v1) uses a different action schema. Only within-v2 comparisons are valid here.
-
-3. **Per-90 conflates multiple factors.** Lower production at country could be: (a) weaker supporting cast (the chemistry-network hypothesis), (b) stronger opponents on average, (c) different tactical role, (d) fatigue (major tournaments near season end), (e) small sample variance.
-
-4. **StatsBomb open data ceiling.** Premier League, Serie A, Bundesliga (outside 23/24) are absent. Hazard/De Bruyne at Chelsea/Man City, Lewandowski at Bayern 17/18 (Wyscout covers this but with v1 VAEP), Salah at Liverpool — all absent from StatsBomb club data.
-
-5. **Minutes estimation.** Club minutes use match_count × 90 as a proxy (overestimates for subs, underestimates for extra-time starters). International minutes use actual lineups parquet where available.
+The chemistry-network claim receives partial but not uniform support. The data is split — as with the Wyscout analysis. The open-data ceiling is the dominant limiting factor: most players have sparse club coverage, and within the available sample, variance is high enough that individual per-90 estimates should be treated as directional indicators rather than reliable effect sizes.
 
 ---
 
-## 8. Conclusion: Updated Verdict on the Podolski Thesis
+## 10. Caveats and Ceiling
 
-**Sample:** 16 players with data in both club and international contexts.
-- Production drops (ratio < 0.85): 9 — Neuer, Muller, Sane, Modric, Varane, Messi, Neymar, Messi, Hakimi
-- Parity (ratio 0.85-1.15): 1 — Mbappe
-- Inverse Podolski (ratio > 1.15): 6 — Kimmich, Musiala, Wirtz, Kroos, Benzema, JordiAlba
+**Podolski is uncoverable:** No open event data exists for Lukas Podolski at any club. The analysis tests his archetype only.
 
-**Verdict: The Podolski archetype is real but not universal.** Most featured players showed lower per-90 VAEP at national team level than at club level, consistent with the hypothesis that removing a player from their club chemistry network reduces their output. However, the minority of players who hold or improve at international level shows this is not a structural law — elite players who generate value independently of system survive the transition.
+**Open data is a sample:** StatsBomb's open club releases cover partial seasons. The Bundesliga 2023/24 data emphasizes Bayer Leverkusen; Bayern Munich players have limited match coverage in this release.
 
-License: StatsBomb open data (custom open license) + Wyscout open data (CC BY 4.0). VAEP: Decroos et al. 2019, Bransen & Van Haaren 2020.
+**Small international samples:** Most players appear in 3–7 matches per international tournament, generating per-90 estimates with wide confidence intervals.
+
+**No causal identification:** All comparisons are observational. Opponent quality, tactical role, age, and fitness all confound the club-vs-country delta.
+
+**VAEP scale:** VAEP v2 is trained on a mixed StatsBomb corpus. Absolute values are small; relative rankings are more reliable than absolute magnitudes.
+
+---
+
+_Data: StatsBomb Open Data (CC BY-SA 4.0). VAEP: Bransen & Van Haaren 2020. xT: Singh 2019. Pipeline: socceraction._

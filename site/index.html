@@ -5,6 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>WC 2026 Chemistry</title>
 <link rel="stylesheet" href="style.css" />
+<style>
+      /* ── Player dependency cards ────────────────────────────── */
+      .dep-cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px;margin:16px 0}
+      .dep-card{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:14px 16px}
+      .dep-card-header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}
+      .dep-name{font-weight:700;font-size:15px;color:var(--ink)}
+      .dep-delta{font-size:13px;font-weight:700;padding:2px 6px;border-radius:4px}
+      .dep-delta-neg{color:#d63031;background:#ffeaea}
+      .dep-delta-pos{color:#00b894;background:#e8faf5}
+      .dep-delta-neutral{color:var(--muted);background:var(--bg)}
+      .dep-section{margin-bottom:8px}
+      .dep-section-label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-bottom:4px}
+      .dep-ctx-row{display:flex;align-items:center;gap:6px;margin-bottom:3px;flex-wrap:wrap}
+      .dep-ctx-label{font-size:11px;color:var(--muted);min-width:140px;flex-shrink:0}
+      .dep-bar-wrap{flex:1;height:8px;background:var(--bg);border-radius:4px;min-width:60px;overflow:hidden}
+      .dep-bar{height:100%;border-radius:4px;transition:width .3s}
+      .dep-bar-club{background:var(--accent)}
+      .dep-bar-country{background:var(--accent2)}
+      .dep-val{font-size:12px;font-weight:600;color:var(--ink);min-width:38px;text-align:right}
+      .dep-meta{font-size:10px;color:var(--muted)}
+      .dep-narrative{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.5;font-style:italic}
+      .dep-legend{display:flex;gap:12px;flex-wrap:wrap;margin:8px 0;font-size:12px}
+      .dep-legend-item{display:flex;align-items:center;gap:4px;color:var(--muted)}
+      .dep-swatch{display:inline-block;width:12px;height:12px;border-radius:2px}
+      .dep-swatch-club{background:var(--accent)}
+      .dep-swatch-country{background:var(--accent2)}
+</style>
 </head>
 <body>
 <main>
@@ -472,135 +499,404 @@
         <p class="research-note">PSG = Ligue 1 2021/22 + 2022/23 combined. Intl = WC 2022 (France/Brazil/Argentina) or AFCON 2023 (Morocco). StatsBomb open data, VAEP v2.</p>
       </section>
 
-      <!-- Section 1: Cross-context (Wyscout) analysis -->
-      <section class="slide-card" aria-label="Club vs country chemistry">
+                  <!-- Section 1: Cross-context (StatsBomb) player per-90 analysis -->
+      <section class="slide-card" aria-label="Player per-90 club vs country">
         <span class="pill green">Primary finding</span>
-        <h2>Club vs country: does shared club training carry to international football?</h2>
+        <h2>The Podolski archetype: player per-90 production at club vs country</h2>
 
-        <p>The "Podolski thesis" &mdash; anecdote-driven but quantifiable &mdash; holds that players thrive at international level partly because the national team context suits them better than their club. A stricter version: pair-level chemistry built at a club should transfer when the same two players line up for their country. The Wyscout open dataset (Pappalardo et al., 2019) covers five top European leagues in 2017/18, WC 2018, and Euro 2016 in a single consistent schema.</p>
+        <p>The Podolski thesis tests whether a player&rsquo;s per-90 output &mdash; individually, not as a pair &mdash; drops when they leave their club chemistry network for the national team context. Lukas Podolski himself is <strong>not in any open dataset</strong> (his career predates StatsBomb&rsquo;s open club releases). This analysis tests the archetype on modern players whose club and country footprints both fall within available open data.</p>
 
-        <p>Following the paper, this analysis uses <strong>VAEP</strong> (Decroos et al. 2019) as the action-value function. xT results are reported alongside for cross-reference. VAEP model: 2,464,092 Wyscout actions, train-AUC scores=0.768, concedes=0.792.</p>
+        <p>VAEP v2 trained on combined StatsBomb SPADL: 1,211,875 actions (international + 8 club seasons). Train AUC: scores&thinsp;=&thinsp;0.8176, concedes&thinsp;=&thinsp;0.9328. Bars show per-90 VAEP; <span style="color:var(--accent)">&#9632;</span>&thinsp;club, <span style="color:var(--accent2)">&#9632;</span>&thinsp;country. Delta = country &minus; club (minutes-weighted averages).</p>
 
         <div class="research-verdict">
           <div class="verdict-card verdict-split">
-            <div class="verdict-number">2 / 16</div>
-            <div class="verdict-label">players showed higher average VAEP-JOI90 with national team partners than club partners (country &gt; club)</div>
+            <div class="verdict-number">10&thinsp;/&thinsp;17</div>
+            <div class="verdict-label">players with meaningful per-90 VAEP drop at country level (&Delta;&thinsp;&lt;&thinsp;&minus;0.010)</div>
           </div>
           <div class="verdict-card verdict-split">
-            <div class="verdict-number">11 / 16</div>
-            <div class="verdict-label">players showed higher average VAEP-JOI90 at club level (club &gt; country)</div>
+            <div class="verdict-number">7&thinsp;/&thinsp;17</div>
+            <div class="verdict-label">players with higher per-90 VAEP at country level (&Delta;&thinsp;&gt;&thinsp;+0.010)</div>
           </div>
           <div class="verdict-card verdict-neutral">
-            <div class="verdict-number">3 / 16</div>
-            <div class="verdict-label">near-parity (ratio 0.8&ndash;1.2); no clear direction</div>
+            <div class="verdict-number">0&thinsp;/&thinsp;17</div>
+            <div class="verdict-label">near-parity across contexts</div>
           </div>
         </div>
 
-        <p>The data is split, not one-sided. Club chemistry generally dominates in the aggregate, but the exceptions are real and interesting.</p>
-
-        <h3>Bayern &rarr; Germany deep-dive (WC 2018) &mdash; VAEP primary, xT secondary</h3>
-        <p>Germany fielded four Bayern starters at WC 2018. VAEP values are the paper&rsquo;s method; xT shown in lighter columns for reference. Note: VAEP and xT scales differ &mdash; do not compare absolute values across the two metric columns.</p>
-
-        <!-- Updated from outputs/cross_context_chemistry.json &rarr; bayern_germany_deep_dive[] with VAEP primary -->
-        <div class="research-table-wrap">
-          <table class="leaderboard research-table">
-            <thead>
-              <tr>
-                <th>Pair</th>
-                <th>Club VAEP-JOI90 <span class="th-sub">(Bayern 2017/18)</span></th>
-                <th style="color:var(--text-muted);font-size:11px">Club xT-JOI90</th>
-                <th>Country VAEP-JOI90 <span class="th-sub">(Germany WC 2018)</span></th>
-                <th style="color:var(--text-muted);font-size:11px">Country xT-JOI90</th>
-                <th>Delta (VAEP)</th>
-                <th>Minutes <span class="th-sub">club / country</span></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="row-highlight">
-                <td><strong>Kimmich &mdash; M&uuml;ller</strong></td>
-                <td class="joi">0.113</td>
-                <td class="joi" style="color:var(--text-muted);font-size:11px">0.038</td>
-                <td class="joi">0.006</td>
-                <td class="joi" style="color:var(--text-muted);font-size:11px">0.032</td>
-                <td class="joi joi-neg">-0.107</td>
-                <td>1472 / 207</td>
-              </tr>
-              <tr>
-                <td><strong>Kimmich &mdash; Hummels</strong></td>
-                <td class="joi">0.003</td>
-                <td class="joi" style="color:var(--text-muted);font-size:11px">0.009</td>
-                <td class="joi">0.009</td>
-                <td class="joi" style="color:var(--text-muted);font-size:11px">0.033</td>
-                <td class="joi joi-pos">+0.006</td>
-                <td>1823 / 180</td>
-              </tr>
-              <tr class="row-highlight">
-                <td><strong>Kimmich &mdash; Boateng</strong></td>
-                <td class="joi">0.039</td>
-                <td class="joi" style="color:var(--text-muted);font-size:11px">0.068</td>
-                <td class="joi joi-high">0.178</td>
-                <td class="joi" style="color:var(--text-muted);font-size:11px">0.163</td>
-                <td class="joi joi-pos">+0.139</td>
-                <td>1241 / 180</td>
-              </tr>
-              <tr class="row-highlight">
-                <td><strong>M&uuml;ller &mdash; Hummels</strong></td>
-                <td class="joi">-0.014</td>
-                <td class="joi" style="color:var(--text-muted);font-size:11px">0.004</td>
-                <td class="joi joi-neg-val">-0.072</td>
-                <td class="joi" style="color:var(--text-muted);font-size:11px">-0.002</td>
-                <td class="joi joi-neg">-0.058</td>
-                <td>1170 / 117</td>
-              </tr>
-              <tr>
-                <td><strong>M&uuml;ller &mdash; Boateng</strong></td>
-                <td class="joi">0.065</td>
-                <td class="joi" style="color:var(--text-muted);font-size:11px">0.019</td>
-                <td class="joi">0.027</td>
-                <td class="joi" style="color:var(--text-muted);font-size:11px">0.018</td>
-                <td class="joi joi-neg">-0.038</td>
-                <td>1273 / 180</td>
-              </tr>
-              <tr class="row-highlight">
-                <td><strong>Hummels &mdash; Boateng</strong></td>
-                <td class="joi">0.098</td>
-                <td class="joi" style="color:var(--text-muted);font-size:11px">0.016</td>
-                <td class="joi joi-neg-val">-0.021</td>
-                <td class="joi" style="color:var(--text-muted);font-size:11px">-0.038</td>
-                <td class="joi joi-neg">-0.119</td>
-                <td>992 / 90</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="dep-legend">
+          <span class="dep-legend-item"><span class="dep-swatch dep-swatch-club"></span> Club per-90 VAEP</span>
+          <span class="dep-legend-item"><span class="dep-swatch dep-swatch-country"></span> Country per-90 VAEP</span>
+          <span class="dep-legend-item"><span class="dep-delta dep-delta-neg">&minus;</span> country &lt; club</span>
+          <span class="dep-legend-item"><span class="dep-delta dep-delta-pos">+</span> country &gt; club</span>
         </div>
-        <p class="research-note">Kimmich played right back at Bayern and central midfield for Germany &mdash; the role change affects which pair interactions form and their quality. All Germany values are on 3 WC 2018 matches (&le;270 shared minutes); variance is high. Switched primary metric from xT to VAEP per Bransen &amp; Van Haaren 2020.</p>
 
-        <h3>The inverse Podolski: club &gt;&gt; country</h3>
-        <div class="research-inverse-cards">
-          <div class="slide-inner">
-            <h3>Kylian Mbapp&eacute; (PSG &rarr; France 2018)</h3>
-            <p>Club avg VAEP-JOI90: <strong>0.0842</strong> &nbsp;&mdash;&nbsp; Country avg VAEP-JOI90: <strong>0.0898</strong> &nbsp;&mdash;&nbsp; Ratio: <strong>1.07</strong></p>
-            <p>France won the tournament; Mbapp&eacute; scored in the final. His individual pair chemistry numbers were stronger at PSG than at a World Cup-winning national team. The tournament outcome and the pair-chemistry numbers point in opposite directions.</p>
+        <div class="dep-cards-grid">
+          
+          <div class="dep-card">
+            <div class="dep-card-header">
+              <span class="dep-name">Joshua Kimmich</span>
+              <span class="dep-delta dep-delta-pos">+0.075</span>
+            </div>
+            <div class="dep-card-body">
+              <div class="dep-section">
+                <span class="dep-section-label">Club (Bayern)</span>
+                
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Bayern Munich Bundesliga 2023/24</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-club" style="width:13%"></div>
+                </div>
+                <span class="dep-val">0.131</span>
+                <span class="dep-meta">91&thinsp;min &middot; 0G 0A</span>
+              </div>
+              </div>
+              <div class="dep-section">
+                <span class="dep-section-label">Country (Germany)</span>
+                
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Germany Euro 2020</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-country" style="width:15%"></div>
+                </div>
+                <span class="dep-val">0.151</span>
+                <span class="dep-meta">364&thinsp;min &middot; 0G 1A</span>
+              </div>
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Germany Euro 2024</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-country" style="width:24%"></div>
+                </div>
+                <span class="dep-val">0.240</span>
+                <span class="dep-meta">450&thinsp;min &middot; 0G 2A</span>
+              </div>
+              </div>
+            </div>
+            <p class="dep-narrative">Joshua Kimmich's per-90 VAEP at Bayern with Leroy Sané, Jamal Musiala, and Noussair Mazraoui averages 0.131; at Germany it averages 0.206 — a delta of +0.075 (rose).</p>
           </div>
-          <div class="slide-inner">
-            <h3>Eden Hazard (Chelsea &rarr; Belgium 2018)</h3>
-            <p>Club avg VAEP-JOI90: <strong>0.0443</strong> &nbsp;&mdash;&nbsp; Country avg VAEP-JOI90: <strong>0.0449</strong> &nbsp;&mdash;&nbsp; Ratio: <strong>1.01</strong></p>
-            <p>Belgium reached the semi-final. Hazard was regarded as one of Belgium&rsquo;s key players throughout, but his pair interaction numbers were higher at Chelsea. Kevin De Bruyne shows a similar pattern.</p>
+          <div class="dep-card">
+            <div class="dep-card-header">
+              <span class="dep-name">Thomas Müller</span>
+              <span class="dep-delta dep-delta-neg">-0.269</span>
+            </div>
+            <div class="dep-card-body">
+              <div class="dep-section">
+                <span class="dep-section-label">Club (Bayern)</span>
+                
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Bayern Munich Bundesliga 2023/24</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-club" style="width:15%"></div>
+                </div>
+                <span class="dep-val">0.148</span>
+                <span class="dep-meta">91&thinsp;min &middot; 0G 0A</span>
+              </div>
+              </div>
+              <div class="dep-section">
+                <span class="dep-section-label">Country (Germany)</span>
+                
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Germany Euro 2020</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-country" style="width:8%"></div>
+                </div>
+                <span class="dep-val">-0.085</span>
+                <span class="dep-meta">298&thinsp;min &middot; 0G 0A</span>
+              </div>
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Germany WC 2018</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-country" style="width:20%"></div>
+                </div>
+                <span class="dep-val">-0.201</span>
+                <span class="dep-meta">208&thinsp;min &middot; 0G 0A</span>
+              </div>
+              </div>
+            </div>
+            <p class="dep-narrative">Thomas Müller's per-90 VAEP at Bayern with Leroy Sané, Jamal Musiala, and Noussair Mazraoui averages 0.148; at Germany it averages -0.121 — a delta of -0.269 (dropped).</p>
+          </div>
+          <div class="dep-card">
+            <div class="dep-card-header">
+              <span class="dep-name">Leroy Sané</span>
+              <span class="dep-delta dep-delta-neg">-0.068</span>
+            </div>
+            <div class="dep-card-body">
+              <div class="dep-section">
+                <span class="dep-section-label">Club (Bayern)</span>
+                
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Bayern Munich Bundesliga 2023/24</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-club" style="width:9%"></div>
+                </div>
+                <span class="dep-val">0.096</span>
+                <span class="dep-meta">180&thinsp;min &middot; 0G 0A</span>
+              </div>
+              </div>
+              <div class="dep-section">
+                <span class="dep-section-label">Country (Germany)</span>
+                
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Germany Euro 2020</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-country" style="width:17%"></div>
+                </div>
+                <span class="dep-val">-0.171</span>
+                <span class="dep-meta">117&thinsp;min &middot; 0G 0A</span>
+              </div>
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Germany Euro 2024</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-country" style="width:1%"></div>
+                </div>
+                <span class="dep-val">-0.013</span>
+                <span class="dep-meta">207&thinsp;min &middot; 0G 0A</span>
+              </div>
+              </div>
+            </div>
+            <p class="dep-narrative">Leroy Sané's per-90 VAEP at Bayern with Jean-Eric Maxim Choupo-Moting, Matthijs de Ligt, and Noussair Mazraoui averages 0.096; at Germany it averages 0.027 — a delta of -0.068 (dropped).</p>
+          </div>
+          <div class="dep-card">
+            <div class="dep-card-header">
+              <span class="dep-name">Jamal Musiala</span>
+              <span class="dep-delta dep-delta-pos">+0.486</span>
+            </div>
+            <div class="dep-card-body">
+              <div class="dep-section">
+                <span class="dep-section-label">Club (Bayern)</span>
+                
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Bayern Munich Bundesliga 2023/24</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-club" style="width:4%"></div>
+                </div>
+                <span class="dep-val">0.042</span>
+                <span class="dep-meta">116&thinsp;min &middot; 0G 0A</span>
+              </div>
+              </div>
+              <div class="dep-section">
+                <span class="dep-section-label">Country (Germany)</span>
+                
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Germany Euro 2024</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-country" style="width:78%"></div>
+                </div>
+                <span class="dep-val">0.762</span>
+                <span class="dep-meta">390&thinsp;min &middot; 3G 0A</span>
+              </div>
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Germany WC 2022</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-country" style="width:17%"></div>
+                </div>
+                <span class="dep-val">0.173</span>
+                <span class="dep-meta">258&thinsp;min &middot; 0G 0A</span>
+              </div>
+              </div>
+            </div>
+            <p class="dep-narrative">Jamal Musiala's per-90 VAEP at Bayern with Leroy Sané, Matthijs de Ligt, and Mathys Tel averages 0.042; at Germany it averages 0.527 — a delta of +0.486 (rose).</p>
+          </div>
+          <div class="dep-card">
+            <div class="dep-card-header">
+              <span class="dep-name">Leon Goretzka</span>
+              <span class="dep-delta dep-delta-neg">-0.193</span>
+            </div>
+            <div class="dep-card-body">
+              <div class="dep-section">
+                <span class="dep-section-label">Club (Bayern)</span>
+                
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Bayern Munich Bundesliga 2023/24</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-club" style="width:40%"></div>
+                </div>
+                <span class="dep-val">0.396</span>
+                <span class="dep-meta">160&thinsp;min &middot; 1G 0A</span>
+              </div>
+              </div>
+              <div class="dep-section">
+                <span class="dep-section-label">Country (Germany)</span>
+                
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Germany Euro 2020</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-country" style="width:74%"></div>
+                </div>
+                <span class="dep-val">0.719</span>
+                <span class="dep-meta">141&thinsp;min &middot; 1G 0A</span>
+              </div>
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Germany WC 2018</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-country" style="width:30%"></div>
+                </div>
+                <span class="dep-val">-0.300</span>
+                <span class="dep-meta">62&thinsp;min &middot; 0G 0A</span>
+              </div>
+              </div>
+            </div>
+            <p class="dep-narrative">Leon Goretzka's per-90 VAEP at Bayern with Leroy Sané, Jamal Musiala, and Noussair Mazraoui averages 0.396; at Germany it averages 0.204 — a delta of -0.192 (dropped).</p>
+          </div>
+          <div class="dep-card">
+            <div class="dep-card-header">
+              <span class="dep-name">Luka Modrić</span>
+              <span class="dep-delta dep-delta-neg">-0.344</span>
+            </div>
+            <div class="dep-card-body">
+              <div class="dep-section">
+                <span class="dep-section-label">Club (Real Madrid)</span>
+                
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Real Madrid La Liga 2017/18</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-club" style="width:27%"></div>
+                </div>
+                <span class="dep-val">0.265</span>
+                <span class="dep-meta">180&thinsp;min &middot; 0G 0A</span>
+              </div>
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Real Madrid La Liga 2018/19</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-club" style="width:17%"></div>
+                </div>
+                <span class="dep-val">0.167</span>
+                <span class="dep-meta">90&thinsp;min &middot; 0G 0A</span>
+              </div>
+              </div>
+              <div class="dep-section">
+                <span class="dep-section-label">Country (Croatia)</span>
+                
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Croatia Euro 2020</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-country" style="width:40%"></div>
+                </div>
+                <span class="dep-val">0.394</span>
+                <span class="dep-meta">383&thinsp;min &middot; 1G 1A</span>
+              </div>
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Croatia Euro 2024</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-country" style="width:15%"></div>
+                </div>
+                <span class="dep-val">0.149</span>
+                <span class="dep-meta">235&thinsp;min &middot; 1G 0A</span>
+              </div>
+              </div>
+            </div>
+            <p class="dep-narrative">Luka Modrić's per-90 VAEP at Real Madrid with Carlos Henrique Casimiro, Karim Benzema, and Toni Kroos averages 0.448; at Croatia it averages 0.104 — a delta of -0.344 (dropped).</p>
+          </div>
+          <div class="dep-card">
+            <div class="dep-card-header">
+              <span class="dep-name">Toni Kroos</span>
+              <span class="dep-delta dep-delta-pos">+0.138</span>
+            </div>
+            <div class="dep-card-body">
+              <div class="dep-section">
+                <span class="dep-section-label">Club (Real Madrid)</span>
+                
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Real Madrid La Liga 2017/18</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-club" style="width:22%"></div>
+                </div>
+                <span class="dep-val">0.221</span>
+                <span class="dep-meta">174&thinsp;min &middot; 0G 0A</span>
+              </div>
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Real Madrid La Liga 2018/19</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-club" style="width:23%"></div>
+                </div>
+                <span class="dep-val">0.230</span>
+                <span class="dep-meta">55&thinsp;min &middot; 0G 0A</span>
+              </div>
+              </div>
+              <div class="dep-section">
+                <span class="dep-section-label">Country (Germany)</span>
+                
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Germany Euro 2020</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-country" style="width:25%"></div>
+                </div>
+                <span class="dep-val">0.245</span>
+                <span class="dep-meta">360&thinsp;min &middot; 0G 0A</span>
+              </div>
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Germany Euro 2024</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-country" style="width:14%"></div>
+                </div>
+                <span class="dep-val">0.137</span>
+                <span class="dep-meta">440&thinsp;min &middot; 0G 0A</span>
+              </div>
+              </div>
+            </div>
+            <p class="dep-narrative">Toni Kroos's per-90 VAEP at Real Madrid with Luka Modrić, Karim Benzema, and Carlos Henrique Casimiro averages 0.178; at Germany it averages 0.316 — a delta of +0.138 (rose).</p>
+          </div>
+          <div class="dep-card">
+            <div class="dep-card-header">
+              <span class="dep-name">Raphaël Varane</span>
+              <span class="dep-delta dep-delta-pos">+0.203</span>
+            </div>
+            <div class="dep-card-body">
+              <div class="dep-section">
+                <span class="dep-section-label">Club (Real Madrid)</span>
+                
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Real Madrid La Liga 2017/18</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-club" style="width:5%"></div>
+                </div>
+                <span class="dep-val">-0.054</span>
+                <span class="dep-meta">180&thinsp;min &middot; 0G 0A</span>
+              </div>
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">Real Madrid La Liga 2018/19</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-club" style="width:3%"></div>
+                </div>
+                <span class="dep-val">0.034</span>
+                <span class="dep-meta">90&thinsp;min &middot; 0G 0A</span>
+              </div>
+              </div>
+              <div class="dep-section">
+                <span class="dep-section-label">Country (France)</span>
+                
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">France Euro 2020</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-country" style="width:6%"></div>
+                </div>
+                <span class="dep-val">0.064</span>
+                <span class="dep-meta">360&thinsp;min &middot; 0G 0A</span>
+              </div>
+              <div class="dep-ctx-row">
+                <span class="dep-ctx-label">France WC 2018</span>
+                <div class="dep-bar-wrap">
+                  <div class="dep-bar dep-bar-country" style="width:23%"></div>
+                </div>
+                <span class="dep-val">0.231</span>
+                <span class="dep-meta">630&thinsp;min &middot; 1G 0A</span>
+              </div>
+              </div>
+            </div>
+            <p class="dep-narrative">Raphaël Varane's per-90 VAEP at Real Madrid with Toni Kroos, Sergio Ramos García, and Karim Benzema averages -0.078; at France it averages 0.125 — a delta of +0.203 (rose).</p>
           </div>
         </div>
 
         <div class="slide-inner" style="margin-top:16px">
           <h3>Caveats</h3>
           <ul>
-            <li>Germany played 3 WC 2018 group matches before elimination. JOI90 estimates on &le;3 matches have confidence intervals wide enough to overlap zero &mdash; direction-of-effect, not reliable effect-size.</li>
-            <li>VAEP trained on Wyscout SPADL is not directly comparable to VAEP trained on StatsBomb SPADL (different action distributions, different feature encodings).</li>
-            <li>International group-stage opponents are on average weaker than top-division club opposition.</li>
-            <li>Players often occupy different positional roles for club vs country (Kimmich: right back at Bayern, CM at Germany).</li>
-            <li>This Wyscout analysis covers 2017/18 + WC 2018 only &mdash; one season, eight years ago.</li>
+            <li>StatsBomb open club releases are samples, not full seasons. The Bundesliga 2023/24 release emphasizes Bayer Leverkusen; Bayern players have limited match coverage.</li>
+            <li>International appearances: 3&ndash;7 matches per tournament means high variance per-90 estimates.</li>
+            <li>Opponent quality and tactical role differ systematically between club and country contexts.</li>
+            <li>VAEP scale is small in absolute terms; relative rankings are more reliable than magnitudes.</li>
           </ul>
         </div>
 
-        <p class="research-footer">Data: Wyscout open dataset &mdash; Pappalardo et al. (2019), CC BY 4.0. Metric: VAEP per Bransen &amp; Van Haaren 2020 (primary), xT per Singh 2019 (secondary). <a href="https://github.com/stranger9977/wc2026-chemistry/blob/main/docs/analysis/cross-context-chemistry.md" target="_blank" rel="noopener">Full analysis &rarr;</a></p>
+        <p class="research-footer">Data: StatsBomb Open Data &mdash; CC BY-SA 4.0. VAEP v2 per Bransen &amp; Van Haaren 2020. xT per Singh 2019. <a href="https://github.com/stranger9977/wc2026-chemistry/blob/main/docs/analysis/cross-context-chemistry.md" target="_blank" rel="noopener">Full analysis &rarr;</a></p>
       </section>
 
       <!-- Section 2: Same-club shortcut -->
