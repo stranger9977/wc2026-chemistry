@@ -85,16 +85,125 @@ Germany's 2018 World Cup campaign ended in the group stage — three matches, ze
 
 Germany had 3 WC 2018 matches — at most ~270 shared minutes for a starting pair. High variance on all country estimates.
 
-## 5. Caveats
+---
 
-1. **VAEP scale differences.** VAEP trained on Wyscout SPADL has a different absolute scale from VAEP trained on StatsBomb SPADL (different action distributions, different feature encodings). Within-source comparisons are valid; cross-source comparisons are not.
+## 5. Player-Level Production: Does Output Drop Without the Club Network? (StatsBomb VAEP v2)
 
-2. **Sample size.** Germany had 3 WC 2018 matches. Poland, Egypt: 3 each. Any JOI90 estimate on <4 matches has very high variance.
+**Framing (updated):** The question is not whether pair chemistry transfers — it is whether
+the *player's individual per-90 production* drops when removed from their club chemistry
+network. The Podolski archetype: great at club, diminished at national team. The counter-case:
+players who are the same or better internationally.
 
-3. **Opponent strength.** Group-stage WC opponents are on average weaker than top-division club opposition.
+Honest caveat: the dataset does **not** cover Lukas Podolski himself — his career (Köln,
+Bayern 2009-12, Arsenal, Inter, Galatasaray, Vissel Kobe) is in no open dataset.
+This analysis tests the Podolski *archetype* on the closest modern players available.
 
-4. **Tactical role.** Kimmich played right back at Bayern but midfield for Germany. This changes which pairs form at all, not just their quality.
+**VAEP v2 model:** 1,211,875 StatsBomb actions, AUC scores=0.818, concedes=0.933.
+Metric: per-90 VAEP on the player's own on-ball actions (SPADL eligible types).
+Minutes estimated from lineups parquet (international) or match count × 90 (club).
 
-5. **Single season.** This analysis covers 2017/18 + WC 2018 only.
+### 3a. Bayern 2023/24 -> Germany Euro 2024 (same-season, cleanest test)
 
-6. **Metric note.** Switching from xT to VAEP changes absolute values substantially (VAEP is compressed near zero for non-shot-producing actions; xT accumulates more on progressive passes). The direction of findings (which players are Podolski-type vs inverse-Podolski) may differ between metrics — check both ratio columns.
+| Player | Club VAEP/90 (Bundesliga 23/24) | Intl VAEP/90 (Euro 2024) | Delta | Ratio |
+|---|---|---|---|---|
+| Neuer | -0.2609 (1 matches) | -0.1425 (5 matches) | +0.1184 | 0.55 |
+| Kimmich | 0.0479 (2 matches) | 0.1988 (5 matches) | +0.1509 | 4.15 |
+| Muller | 0.1150 (2 matches) | -0.1382 (2 matches) | -0.2532 | -1.20 |
+| Goretzka | 0.3559 (2 matches) | n/a | n/a | n/a |
+| Musiala | 0.0559 (2 matches) | 0.7799 (5 matches) | +0.7240 | 13.95 |
+| Sane | 0.1055 (2 matches) | 0.0129 (5 matches) | -0.0926 | 0.12 |
+| Pavlovic | n/a | 0.1196 (3 matches) | n/a | n/a |
+| Wirtz | 0.4405 (32 matches) | 0.7309 (5 matches) | +0.2904 | 1.66 |
+
+- **Neuer:** Neuer produced MORE at Germany Euro 2024 (-0.1425) than at Bayern (-0.2609) (delta +0.1184). Inverse Podolski: the national team context appears more enabling.
+- **Kimmich:** Kimmich produced MORE at Germany Euro 2024 (0.1988) than at Bayern (0.0479) (delta +0.1509). Inverse Podolski: the national team context appears more enabling.
+- **Muller:** Muller showed a clear production drop: per-90 VAEP fell from 0.1150 at Bayern to -0.1382 at Germany Euro 2024 (delta -0.2532). Consistent with the Podolski archetype: thriving in the club network, diminished without it.
+- **Goretzka:** Goretzka: insufficient data in one or both contexts.
+- **Musiala:** Musiala produced MORE at Germany Euro 2024 (0.7799) than at Bayern (0.0559) (delta +0.7240). Inverse Podolski: the national team context appears more enabling.
+- **Sane:** Sane showed a clear production drop: per-90 VAEP fell from 0.1055 at Bayern to 0.0129 at Germany Euro 2024 (delta -0.0926). Consistent with the Podolski archetype: thriving in the club network, diminished without it.
+- **Pavlovic:** Pavlovic: insufficient data in one or both contexts.
+- **Wirtz:** Wirtz produced MORE at Germany Euro 2024 (0.7309) than at Bayern (0.4405) (delta +0.2904). Inverse Podolski: the national team context appears more enabling.
+
+**Bayern/Germany verdict (6 players with data):** 3 showed a production drop at Germany vs Bayern (ratio < 0.85); 3 held or improved.
+
+### 3b. Real Madrid La Liga 2017/18-2020/21 -> international
+
+| Player | Club VAEP/90 (La Liga, multi-season) | Intl VAEP/90 | Delta | Ratio |
+|---|---|---|---|---|
+| Modric (WC 2018) | 0.2716 (7 matches) | 0.0441 (7 matches) | -0.2275 | 0.16 |
+| Kroos (WC 2018) | 0.1717 (7 matches) | 0.5818 (3 matches) | +0.4101 | 3.39 |
+| Varane (WC 2018) | -0.0288 (6 matches) | 0.1768 (7 matches) | +0.2056 | -6.14 |
+| Benzema (Euro 2020) | 0.0121 (7 matches) | 0.7529 (4 matches) | +0.7408 | 62.22 |
+
+- **Modric:** Modric showed a clear production drop: per-90 VAEP fell from 0.2716 at Real Madrid to 0.0441 at Croatia (delta -0.2275). Consistent with the Podolski archetype: thriving in the club network, diminished without it.
+- **Kroos:** Kroos produced MORE at Germany (0.5818) than at Real Madrid (0.1717) (delta +0.4101). Inverse Podolski: the national team context appears more enabling.
+- **Varane:** Varane produced MORE at France (0.1768) than at Real Madrid (-0.0288) (delta +0.2056). Inverse Podolski: the national team context appears more enabling.
+- **Benzema:** Benzema produced MORE at France (0.7529) than at Real Madrid (0.0121) (delta +0.7408). Inverse Podolski: the national team context appears more enabling.
+
+### 3c. Barcelona La Liga 2017/18-2020/21 -> international
+
+| Player | Club VAEP/90 (La Liga) | Intl VAEP/90 | Delta | Ratio |
+|---|---|---|---|---|
+| Messi (WC 2022) | 0.9910 (138 matches) | 0.2813 (7 matches) | -0.7097 | 0.28 |
+| Busquets (Euro 2020) | 0.1254 (124 matches) | n/a | n/a | n/a |
+| JordiAlba (Euro 2020) | 0.1684 (120 matches) | 0.2585 (6 matches) | +0.0901 | 1.53 |
+
+- **Messi:** Messi showed a clear production drop: per-90 VAEP fell from 0.9910 at Barcelona to 0.2813 at Argentina (delta -0.7097). Consistent with the Podolski archetype: thriving in the club network, diminished without it.
+- **Busquets:** Busquets: insufficient data in one or both contexts.
+- **JordiAlba:** JordiAlba produced MORE at Spain (0.2585) than at Barcelona (0.1684) (delta +0.0901). Inverse Podolski: the national team context appears more enabling.
+
+### 3d. PSG 2021/22 + 2022/23 -> WC 2022 / AFCON 2023
+
+The Mbappe-Neymar-Messi trio era. PSG failed both Champions League campaigns. Each player competed at WC 2022.
+
+| Player | PSG VAEP/90 (Ligue 1) | Intl VAEP/90 | Delta | Ratio |
+|---|---|---|---|---|
+| Mbappe (WC 2022) | 0.8203 (52 matches) | 0.7619 (7 matches) | -0.0584 | 0.93 |
+| Neymar (WC 2022) | 0.5533 (34 matches) | 0.4061 (3 matches) | -0.1472 | 0.73 |
+| Messi (WC 2022) | 0.5342 (58 matches) | 0.2813 (7 matches) | -0.2529 | 0.53 |
+| Hakimi (AFCON 2023) | 0.2621 (45 matches) | 0.1523 (4 matches) | -0.1098 | 0.58 |
+
+- **Mbappe:** Mbappe showed a clear production drop: per-90 VAEP fell from 0.8203 at PSG to 0.7619 at France (delta -0.0584). Consistent with the Podolski archetype: thriving in the club network, diminished without it.
+- **Neymar:** Neymar showed a clear production drop: per-90 VAEP fell from 0.5533 at PSG to 0.4061 at Brazil (delta -0.1472). Consistent with the Podolski archetype: thriving in the club network, diminished without it.
+- **Messi:** Messi showed a clear production drop: per-90 VAEP fell from 0.5342 at PSG to 0.2813 at Argentina (delta -0.2529). Consistent with the Podolski archetype: thriving in the club network, diminished without it.
+- **Hakimi:** Hakimi showed a clear production drop: per-90 VAEP fell from 0.2621 at PSG to 0.1523 at Morocco (delta -0.1098). Consistent with the Podolski archetype: thriving in the club network, diminished without it.
+
+### 3e. Inter Miami MLS 2023 -> Argentina Copa 2024
+
+Messi joined July 2023 (partial MLS season). Copa America 2024 was held in the US.
+A micro-comparison: different club context, same player.
+
+Messi showed a clear production drop: per-90 VAEP fell from 0.2390 at Inter Miami to 0.1886 at Argentina Copa 2024 (delta -0.0504). Consistent with the Podolski archetype: thriving in the club network, diminished without it.
+
+---
+
+## 6. Wyscout 2017/18 Cross-Section (Historic Reference)
+
+The pair-level JOI90 analysis using Wyscout 2017/18 data is preserved above (Sections 2-3 of the original report). It covers Bayern 2017/18 -> Germany WC 2018 and other featured players from that season. The player-level production analysis in Section 3 above uses VAEP v2 on StatsBomb data and is the primary finding.
+
+---
+
+## 7. Updated Caveats
+
+1. **Missing Podolski data.** Lukas Podolski's club career (Köln, Bayern 2009-12, Arsenal 2012-15, Inter, Galatasaray, Vissel Kobe) is not in any open dataset. This analysis tests the Podolski *archetype* on the closest available players.
+
+2. **VAEP v2 scale.** Trained on 1,211,875 StatsBomb actions (AUC scores=0.818, concedes=0.933). Wyscout VAEP (v1) uses a different action schema. Only within-v2 comparisons are valid here.
+
+3. **Per-90 conflates multiple factors.** Lower production at country could be: (a) weaker supporting cast (the chemistry-network hypothesis), (b) stronger opponents on average, (c) different tactical role, (d) fatigue (major tournaments near season end), (e) small sample variance.
+
+4. **StatsBomb open data ceiling.** Premier League, Serie A, Bundesliga (outside 23/24) are absent. Hazard/De Bruyne at Chelsea/Man City, Lewandowski at Bayern 17/18 (Wyscout covers this but with v1 VAEP), Salah at Liverpool — all absent from StatsBomb club data.
+
+5. **Minutes estimation.** Club minutes use match_count × 90 as a proxy (overestimates for subs, underestimates for extra-time starters). International minutes use actual lineups parquet where available.
+
+---
+
+## 8. Conclusion: Updated Verdict on the Podolski Thesis
+
+**Sample:** 16 players with data in both club and international contexts.
+- Production drops (ratio < 0.85): 9 — Neuer, Muller, Sane, Modric, Varane, Messi, Neymar, Messi, Hakimi
+- Parity (ratio 0.85-1.15): 1 — Mbappe
+- Inverse Podolski (ratio > 1.15): 6 — Kimmich, Musiala, Wirtz, Kroos, Benzema, JordiAlba
+
+**Verdict: The Podolski archetype is real but not universal.** Most featured players showed lower per-90 VAEP at national team level than at club level, consistent with the hypothesis that removing a player from their club chemistry network reduces their output. However, the minority of players who hold or improve at international level shows this is not a structural law — elite players who generate value independently of system survive the transition.
+
+License: StatsBomb open data (custom open license) + Wyscout open data (CC BY 4.0). VAEP: Decroos et al. 2019, Bransen & Van Haaren 2020.

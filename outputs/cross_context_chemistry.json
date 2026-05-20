@@ -3066,5 +3066,580 @@
       "country_joi90_xt": -0.0379,
       "country_minutes": 90.0
     }
-  ]
+  ],
+  "sb_expanded": {
+    "vaep_v2_model": {
+      "train_size": 1211875,
+      "auc_scores": 0.8176,
+      "auc_concedes": 0.9328,
+      "note": "Trained on StatsBomb international + 8 club seasons (no Wyscout)"
+    },
+    "player_production": {
+      "bayern_germany_euro24": {
+        "headline": "Bayern 2023/24 -> Germany Euro 2024 (same-season, cleanest test)",
+        "club_competition": "Bundesliga 2023/24",
+        "intl_competition": "UEFA Euro 2024",
+        "players": [
+          {
+            "player": "Neuer",
+            "player_id": 5570,
+            "player_name": "Manuel Neuer",
+            "club": "Bayern Munich",
+            "club_team_id": 169,
+            "country": "Germany",
+            "country_team_id": 770,
+            "club_context": {
+              "context": "Bundesliga 2023/24",
+              "vaep90": -0.2609,
+              "total_vaep": -0.2609,
+              "total_actions": 58,
+              "total_minutes_est": 90.0,
+              "matches": 1
+            },
+            "intl_context": {
+              "context": "Euro 2024",
+              "vaep90": -0.1425,
+              "total_vaep": -0.95,
+              "total_actions": 227,
+              "total_minutes": 600.0,
+              "matches": 5
+            },
+            "delta_vaep90": 0.1184,
+            "ratio_intl_club": 0.546,
+            "narrative": "Neuer produced MORE at Germany Euro 2024 (-0.1425) than at Bayern (-0.2609) (delta +0.1184). Inverse Podolski: the national team context appears more enabling."
+          },
+          {
+            "player": "Kimmich",
+            "player_id": 5579,
+            "player_name": "Joshua Kimmich",
+            "club": "Bayern Munich",
+            "club_team_id": 169,
+            "country": "Germany",
+            "country_team_id": 770,
+            "club_context": {
+              "context": "Bundesliga 2023/24",
+              "vaep90": 0.0479,
+              "total_vaep": 0.0958,
+              "total_actions": 194,
+              "total_minutes_est": 180.0,
+              "matches": 2
+            },
+            "intl_context": {
+              "context": "Euro 2024",
+              "vaep90": 0.1988,
+              "total_vaep": 1.3256,
+              "total_actions": 745,
+              "total_minutes": 600.0,
+              "matches": 5
+            },
+            "delta_vaep90": 0.1509,
+            "ratio_intl_club": 4.15,
+            "narrative": "Kimmich produced MORE at Germany Euro 2024 (0.1988) than at Bayern (0.0479) (delta +0.1509). Inverse Podolski: the national team context appears more enabling."
+          },
+          {
+            "player": "Muller",
+            "player_id": 5562,
+            "player_name": "Thomas Müller",
+            "club": "Bayern Munich",
+            "club_team_id": 169,
+            "country": "Germany",
+            "country_team_id": 770,
+            "club_context": {
+              "context": "Bundesliga 2023/24",
+              "vaep90": 0.115,
+              "total_vaep": 0.23,
+              "total_actions": 90,
+              "total_minutes_est": 180.0,
+              "matches": 2
+            },
+            "intl_context": {
+              "context": "Euro 2024",
+              "vaep90": -0.1382,
+              "total_vaep": -0.1336,
+              "total_actions": 52,
+              "total_minutes": 87.0,
+              "matches": 2
+            },
+            "delta_vaep90": -0.2532,
+            "ratio_intl_club": -1.202,
+            "narrative": "Muller showed a clear production drop: per-90 VAEP fell from 0.1150 at Bayern to -0.1382 at Germany Euro 2024 (delta -0.2532). Consistent with the Podolski archetype: thriving in the club network, diminished without it."
+          },
+          {
+            "player": "Goretzka",
+            "player_id": 6324,
+            "player_name": "Leon Goretzka",
+            "club": "Bayern Munich",
+            "club_team_id": 169,
+            "country": "Germany",
+            "country_team_id": null,
+            "club_context": {
+              "context": "Bundesliga 2023/24",
+              "vaep90": 0.3559,
+              "total_vaep": 0.7117,
+              "total_actions": 207,
+              "total_minutes_est": 180.0,
+              "matches": 2
+            },
+            "intl_context": null,
+            "delta_vaep90": null,
+            "ratio_intl_club": null,
+            "narrative": "Goretzka: insufficient data in one or both contexts."
+          },
+          {
+            "player": "Musiala",
+            "player_id": 39565,
+            "player_name": "Jamal Musiala",
+            "club": "Bayern Munich",
+            "club_team_id": 169,
+            "country": "Germany",
+            "country_team_id": 770,
+            "club_context": {
+              "context": "Bundesliga 2023/24",
+              "vaep90": 0.0559,
+              "total_vaep": 0.1119,
+              "total_actions": 128,
+              "total_minutes_est": 180.0,
+              "matches": 2
+            },
+            "intl_context": {
+              "context": "Euro 2024",
+              "vaep90": 0.7799,
+              "total_vaep": 3.6394,
+              "total_actions": 455,
+              "total_minutes": 420.0,
+              "matches": 5
+            },
+            "delta_vaep90": 0.724,
+            "ratio_intl_club": 13.952,
+            "narrative": "Musiala produced MORE at Germany Euro 2024 (0.7799) than at Bayern (0.0559) (delta +0.7240). Inverse Podolski: the national team context appears more enabling."
+          },
+          {
+            "player": "Sane",
+            "player_id": 3053,
+            "player_name": "Leroy Sané",
+            "club": "Bayern Munich",
+            "club_team_id": 169,
+            "country": "Germany",
+            "country_team_id": 770,
+            "club_context": {
+              "context": "Bundesliga 2023/24",
+              "vaep90": 0.1055,
+              "total_vaep": 0.211,
+              "total_actions": 238,
+              "total_minutes_est": 180.0,
+              "matches": 2
+            },
+            "intl_context": {
+              "context": "Euro 2024",
+              "vaep90": 0.0129,
+              "total_vaep": 0.0426,
+              "total_actions": 187,
+              "total_minutes": 297.0,
+              "matches": 5
+            },
+            "delta_vaep90": -0.0926,
+            "ratio_intl_club": 0.122,
+            "narrative": "Sane showed a clear production drop: per-90 VAEP fell from 0.1055 at Bayern to 0.0129 at Germany Euro 2024 (delta -0.0926). Consistent with the Podolski archetype: thriving in the club network, diminished without it."
+          },
+          {
+            "player": "Pavlovic",
+            "player_id": 27719,
+            "player_name": "Strahinja Pavlović",
+            "club": "Bayern Munich",
+            "club_team_id": null,
+            "country": "Germany",
+            "country_team_id": 786,
+            "club_context": null,
+            "intl_context": {
+              "context": "Euro 2024",
+              "vaep90": 0.1196,
+              "total_vaep": 0.4783,
+              "total_actions": 343,
+              "total_minutes": 360.0,
+              "matches": 3
+            },
+            "delta_vaep90": null,
+            "ratio_intl_club": null,
+            "narrative": "Pavlovic: insufficient data in one or both contexts."
+          },
+          {
+            "player": "Wirtz",
+            "player_id": 40724,
+            "player_name": "Florian Wirtz",
+            "club": "Bayern Munich",
+            "club_team_id": 904,
+            "country": "Germany",
+            "country_team_id": 770,
+            "club_context": {
+              "context": "Bundesliga 2023/24",
+              "vaep90": 0.4405,
+              "total_vaep": 14.0958,
+              "total_actions": 3983,
+              "total_minutes_est": 2880.0,
+              "matches": 32
+            },
+            "intl_context": {
+              "context": "Euro 2024",
+              "vaep90": 0.7309,
+              "total_vaep": 2.5138,
+              "total_actions": 398,
+              "total_minutes": 310.0,
+              "matches": 5
+            },
+            "delta_vaep90": 0.2904,
+            "ratio_intl_club": 1.659,
+            "narrative": "Wirtz produced MORE at Germany Euro 2024 (0.7309) than at Bayern (0.4405) (delta +0.2904). Inverse Podolski: the national team context appears more enabling."
+          }
+        ]
+      },
+      "real_madrid_multi_season": {
+        "headline": "Real Madrid La Liga 2017/18-2020/21 -> international",
+        "players": [
+          {
+            "player": "Modric",
+            "player_id": 5463,
+            "player_name": "Luka Modrić",
+            "club": "Real Madrid",
+            "club_team_id": 220,
+            "country": "Croatia",
+            "intl_competition": "WC 2018",
+            "club_context": {
+              "context": "La Liga (multi-season avg)",
+              "vaep90": 0.2716,
+              "total_vaep": 1.9014,
+              "total_actions": 556,
+              "total_minutes": 630.0,
+              "matches": 7
+            },
+            "intl_context": {
+              "context": "WC 2018",
+              "vaep90": 0.0441,
+              "total_vaep": 0.3831,
+              "total_actions": 1029,
+              "total_minutes": 782.0,
+              "matches": 7
+            },
+            "delta_vaep90": -0.2275,
+            "ratio_intl_club": 0.162,
+            "narrative": "Modric showed a clear production drop: per-90 VAEP fell from 0.2716 at Real Madrid to 0.0441 at Croatia (delta -0.2275). Consistent with the Podolski archetype: thriving in the club network, diminished without it."
+          },
+          {
+            "player": "Kroos",
+            "player_id": 5574,
+            "player_name": "Toni Kroos",
+            "club": "Real Madrid",
+            "club_team_id": 220,
+            "country": "Germany",
+            "intl_competition": "WC 2018",
+            "club_context": {
+              "context": "La Liga (multi-season avg)",
+              "vaep90": 0.1717,
+              "total_vaep": 1.2019,
+              "total_actions": 825,
+              "total_minutes": 630.0,
+              "matches": 7
+            },
+            "intl_context": {
+              "context": "WC 2018",
+              "vaep90": 0.5818,
+              "total_vaep": 2.3274,
+              "total_actions": 639,
+              "total_minutes": 360.0,
+              "matches": 3
+            },
+            "delta_vaep90": 0.4101,
+            "ratio_intl_club": 3.388,
+            "narrative": "Kroos produced MORE at Germany (0.5818) than at Real Madrid (0.1717) (delta +0.4101). Inverse Podolski: the national team context appears more enabling."
+          },
+          {
+            "player": "Varane",
+            "player_id": 5485,
+            "player_name": "Raphaël Varane",
+            "club": "Real Madrid",
+            "club_team_id": 220,
+            "country": "France",
+            "intl_competition": "WC 2018",
+            "club_context": {
+              "context": "La Liga (multi-season avg)",
+              "vaep90": -0.0288,
+              "total_vaep": -0.1728,
+              "total_actions": 422,
+              "total_minutes": 540.0,
+              "matches": 6
+            },
+            "intl_context": {
+              "context": "WC 2018",
+              "vaep90": 0.1768,
+              "total_vaep": 1.6502,
+              "total_actions": 591,
+              "total_minutes": 840.0,
+              "matches": 7
+            },
+            "delta_vaep90": 0.2056,
+            "ratio_intl_club": -6.139,
+            "narrative": "Varane produced MORE at France (0.1768) than at Real Madrid (-0.0288) (delta +0.2056). Inverse Podolski: the national team context appears more enabling."
+          },
+          {
+            "player": "Benzema",
+            "player_id": 19677,
+            "player_name": "Karim Benzema",
+            "club": "Real Madrid",
+            "club_team_id": 220,
+            "country": "France",
+            "intl_competition": "Euro 2020",
+            "club_context": {
+              "context": "La Liga (multi-season avg)",
+              "vaep90": 0.0121,
+              "total_vaep": 0.0846,
+              "total_actions": 504,
+              "total_minutes": 630.0,
+              "matches": 7
+            },
+            "intl_context": {
+              "context": "Euro 2020",
+              "vaep90": 0.7529,
+              "total_vaep": 3.1505,
+              "total_actions": 307,
+              "total_minutes": 377.0,
+              "matches": 4
+            },
+            "delta_vaep90": 0.7408,
+            "ratio_intl_club": 62.223,
+            "narrative": "Benzema produced MORE at France (0.7529) than at Real Madrid (0.0121) (delta +0.7408). Inverse Podolski: the national team context appears more enabling."
+          }
+        ]
+      },
+      "barcelona_multi_season": {
+        "headline": "Barcelona La Liga 2017/18-2020/21 -> international",
+        "players": [
+          {
+            "player": "Messi",
+            "player_id": 5503,
+            "player_name": "Lionel Andrés Messi Cuccittini",
+            "club": "Barcelona",
+            "club_team_id": 217,
+            "country": "Argentina",
+            "intl_competition": "WC 2022",
+            "club_context": {
+              "context": "La Liga (multi-season avg)",
+              "vaep90": 0.991,
+              "total_vaep": 136.753,
+              "total_actions": 20061,
+              "total_minutes": 12420.0,
+              "matches": 138
+            },
+            "intl_context": {
+              "context": "WC 2022",
+              "vaep90": 0.2813,
+              "total_vaep": 2.6255,
+              "total_actions": 875,
+              "total_minutes": 840.0,
+              "matches": 7
+            },
+            "delta_vaep90": -0.7097,
+            "ratio_intl_club": 0.284,
+            "narrative": "Messi showed a clear production drop: per-90 VAEP fell from 0.9910 at Barcelona to 0.2813 at Argentina (delta -0.7097). Consistent with the Podolski archetype: thriving in the club network, diminished without it."
+          },
+          {
+            "player": "Busquets",
+            "player_id": 5203,
+            "player_name": "Sergio Busquets i Burgos",
+            "club": "Barcelona",
+            "club_team_id": 217,
+            "country": "Spain",
+            "intl_competition": "Euro 2020",
+            "club_context": {
+              "context": "La Liga (multi-season avg)",
+              "vaep90": 0.1254,
+              "total_vaep": 15.544,
+              "total_actions": 16569,
+              "total_minutes": 11160.0,
+              "matches": 124
+            },
+            "intl_context": null,
+            "delta_vaep90": null,
+            "ratio_intl_club": null,
+            "narrative": "Busquets: insufficient data in one or both contexts."
+          },
+          {
+            "player": "JordiAlba",
+            "player_id": 5211,
+            "player_name": "Jordi Alba Ramos",
+            "club": "Barcelona",
+            "club_team_id": 217,
+            "country": "Spain",
+            "intl_competition": "Euro 2020",
+            "club_context": {
+              "context": "La Liga (multi-season avg)",
+              "vaep90": 0.1684,
+              "total_vaep": 20.2106,
+              "total_actions": 16021,
+              "total_minutes": 10800.0,
+              "matches": 120
+            },
+            "intl_context": {
+              "context": "Euro 2020",
+              "vaep90": 0.2585,
+              "total_vaep": 1.8467,
+              "total_actions": 987,
+              "total_minutes": 643.0,
+              "matches": 6
+            },
+            "delta_vaep90": 0.0901,
+            "ratio_intl_club": 1.535,
+            "narrative": "JordiAlba produced MORE at Spain (0.2585) than at Barcelona (0.1684) (delta +0.0901). Inverse Podolski: the national team context appears more enabling."
+          }
+        ]
+      },
+      "psg_era": {
+        "headline": "PSG Ligue 1 2021/22 + 2022/23 -> WC 2022 / AFCON 2023",
+        "players": [
+          {
+            "player": "Mbappe",
+            "player_id": 3009,
+            "player_name": "Kylian Mbappé Lottin",
+            "club": "PSG",
+            "club_team_id": 131,
+            "country": "France",
+            "intl_competition": "WC 2022",
+            "club_context": {
+              "context": "Ligue 1 (2021/22 + 2022/23)",
+              "vaep90": 0.8203,
+              "total_vaep": 42.6532,
+              "total_actions": 5071,
+              "total_minutes": 4680.0,
+              "matches": 52
+            },
+            "intl_context": {
+              "context": "WC 2022",
+              "vaep90": 0.7619,
+              "total_vaep": 6.581,
+              "total_actions": 669,
+              "total_minutes": 777.0,
+              "matches": 7
+            },
+            "delta_vaep90": -0.0584,
+            "ratio_intl_club": 0.929,
+            "narrative": "Mbappe showed a clear production drop: per-90 VAEP fell from 0.8203 at PSG to 0.7619 at France (delta -0.0584). Consistent with the Podolski archetype: thriving in the club network, diminished without it."
+          },
+          {
+            "player": "Neymar",
+            "player_id": 4320,
+            "player_name": "Neymar da Silva Santos Junior",
+            "club": "PSG",
+            "club_team_id": 131,
+            "country": "Brazil",
+            "intl_competition": "WC 2022",
+            "club_context": {
+              "context": "Ligue 1 (2021/22 + 2022/23)",
+              "vaep90": 0.5533,
+              "total_vaep": 18.8118,
+              "total_actions": 4636,
+              "total_minutes": 3060.0,
+              "matches": 34
+            },
+            "intl_context": {
+              "context": "WC 2022",
+              "vaep90": 0.4061,
+              "total_vaep": 1.261,
+              "total_actions": 372,
+              "total_minutes": 279.0,
+              "matches": 3
+            },
+            "delta_vaep90": -0.1472,
+            "ratio_intl_club": 0.734,
+            "narrative": "Neymar showed a clear production drop: per-90 VAEP fell from 0.5533 at PSG to 0.4061 at Brazil (delta -0.1472). Consistent with the Podolski archetype: thriving in the club network, diminished without it."
+          },
+          {
+            "player": "Messi",
+            "player_id": 5503,
+            "player_name": "Lionel Andrés Messi Cuccittini",
+            "club": "PSG",
+            "club_team_id": 131,
+            "country": "Argentina",
+            "intl_competition": "WC 2022",
+            "club_context": {
+              "context": "Ligue 1 (2021/22 + 2022/23)",
+              "vaep90": 0.5342,
+              "total_vaep": 30.9859,
+              "total_actions": 8081,
+              "total_minutes": 5220.0,
+              "matches": 58
+            },
+            "intl_context": {
+              "context": "WC 2022",
+              "vaep90": 0.2813,
+              "total_vaep": 2.6255,
+              "total_actions": 875,
+              "total_minutes": 840.0,
+              "matches": 7
+            },
+            "delta_vaep90": -0.2529,
+            "ratio_intl_club": 0.527,
+            "narrative": "Messi showed a clear production drop: per-90 VAEP fell from 0.5342 at PSG to 0.2813 at Argentina (delta -0.2529). Consistent with the Podolski archetype: thriving in the club network, diminished without it."
+          },
+          {
+            "player": "Hakimi",
+            "player_id": 5245,
+            "player_name": "Achraf Hakimi Mouh",
+            "club": "PSG",
+            "club_team_id": 131,
+            "country": "Morocco",
+            "intl_competition": "AFCON 2023",
+            "club_context": {
+              "context": "Ligue 1 (2021/22 + 2022/23)",
+              "vaep90": 0.2621,
+              "total_vaep": 11.7936,
+              "total_actions": 4909,
+              "total_minutes": 4050.0,
+              "matches": 45
+            },
+            "intl_context": {
+              "context": "AFCON 2023",
+              "vaep90": 0.1523,
+              "total_vaep": 0.8122,
+              "total_actions": 456,
+              "total_minutes": 480.0,
+              "matches": 4
+            },
+            "delta_vaep90": -0.1098,
+            "ratio_intl_club": 0.581,
+            "narrative": "Hakimi showed a clear production drop: per-90 VAEP fell from 0.2621 at PSG to 0.1523 at Morocco (delta -0.1098). Consistent with the Podolski archetype: thriving in the club network, diminished without it."
+          }
+        ]
+      },
+      "inter_miami_argentina": {
+        "headline": "Inter Miami MLS 2023 -> Argentina Copa 2024",
+        "note": "Messi joined July 2023; partial MLS season. Copa 2024 held in USA.",
+        "players": [
+          {
+            "player": "Messi",
+            "player_id": 5503,
+            "player_name": "Lionel Andrés Messi Cuccittini",
+            "club": "Inter Miami",
+            "country": "Argentina",
+            "club_context": {
+              "context": "MLS 2023",
+              "vaep90": 0.239,
+              "total_vaep": 1.434,
+              "total_actions": 517,
+              "total_minutes_est": 540.0,
+              "matches": 6
+            },
+            "intl_context": {
+              "context": "Copa America 2024",
+              "vaep90": 0.1886,
+              "total_vaep": 1.1439,
+              "total_actions": 394,
+              "total_minutes": 546.0,
+              "matches": 5
+            },
+            "delta_vaep90": -0.0504,
+            "ratio_intl_club": 0.789,
+            "narrative": "Messi showed a clear production drop: per-90 VAEP fell from 0.2390 at Inter Miami to 0.1886 at Argentina Copa 2024 (delta -0.0504). Consistent with the Podolski archetype: thriving in the club network, diminished without it."
+          }
+        ]
+      }
+    }
+  }
 }

@@ -354,6 +354,124 @@
   <div class="tab-panel" id="panel-research" role="tabpanel" aria-labelledby="tab-research">
     <div class="slide-deck">
 
+      <!-- Section: Bayern 2023/24 -> Germany Euro 2024 (player-level production) -->
+      <section class="slide-card" aria-label="Bayern 2023/24 Germany Euro 2024 production">
+        <span class="pill green">Headline finding (within-season)</span>
+        <h2>Bayern 2023/24 &rarr; Germany Euro 2024: player production without the club network</h2>
+
+        <p>The Podolski thesis reframed: does a player's per-90 VAEP <em>drop</em> when removed from their club chemistry network? Same season, same players, two contexts. VAEP v2 model: 1,211,875 StatsBomb actions, AUC scores=0.818, concedes=0.933.</p>
+        <p>Metric: sum of VAEP on the player's own on-ball actions (passes, carries, shots), normalised per 90 minutes. Not pair-level &mdash; this is individual production in each context.</p>
+
+        <div class="research-table-wrap">
+          <table class="leaderboard research-table">
+            <thead>
+              <tr>
+                <th>Player</th>
+                <th>Bayern VAEP/90 <span class="th-sub">Bundesliga 2023/24</span></th>
+                <th>Germany VAEP/90 <span class="th-sub">Euro 2024</span></th>
+                <th>Delta</th>
+                <th>Ratio <span class="th-sub">intl/club</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Neuer</strong></td>
+                <td class="joi">-0.2609</td>
+                <td class="joi">-0.1425</td>
+                <td class="joi joi-neg">+0.1184</td>
+                <td class="joi joi-neg">0.55</td>
+              </tr>
+              <tr>
+                <td><strong>Kimmich</strong></td>
+                <td class="joi">0.0479</td>
+                <td class="joi">0.1988</td>
+                <td class="joi joi-high">+0.1509</td>
+                <td class="joi joi-high">4.15</td>
+              </tr>
+              <tr>
+                <td><strong>Muller</strong></td>
+                <td class="joi">0.1150</td>
+                <td class="joi">-0.1382</td>
+                <td class="joi joi-neg">-0.2532</td>
+                <td class="joi joi-neg">-1.20</td>
+              </tr>
+              <tr>
+                <td><strong>Musiala</strong></td>
+                <td class="joi">0.0559</td>
+                <td class="joi">0.7799</td>
+                <td class="joi joi-high">+0.7240</td>
+                <td class="joi joi-high">13.95</td>
+              </tr>
+              <tr>
+                <td><strong>Sane</strong></td>
+                <td class="joi">0.1055</td>
+                <td class="joi">0.0129</td>
+                <td class="joi joi-neg">-0.0926</td>
+                <td class="joi joi-neg">0.12</td>
+              </tr>
+              <tr>
+                <td><strong>Wirtz</strong></td>
+                <td class="joi">0.4405</td>
+                <td class="joi">0.7309</td>
+                <td class="joi joi-high">+0.2904</td>
+                <td class="joi joi-high">1.66</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="research-note">Ratio &lt; 1.0 = production dropped away from the Bayern chemistry network. Ratio &gt; 1.0 = production held or rose internationally. Minutes at club estimated as match appearances &times; 90; international minutes from StatsBomb lineups data. Honest caveat: Lukas Podolski himself is not in any open dataset &mdash; this tests the archetype.</p>
+
+        <div style="margin-top:16px">
+          <div class="slide-inner">
+            <h3>Neuer</h3>
+            <p>Neuer produced MORE at Germany Euro 2024 (-0.1425) than at Bayern (-0.2609) (delta +0.1184). Inverse Podolski: the national team context appears more enabling.</p>
+          </div>
+          <div class="slide-inner">
+            <h3>Kimmich</h3>
+            <p>Kimmich produced MORE at Germany Euro 2024 (0.1988) than at Bayern (0.0479) (delta +0.1509). Inverse Podolski: the national team context appears more enabling.</p>
+          </div>
+          <div class="slide-inner">
+            <h3>Muller</h3>
+            <p>Muller showed a clear production drop: per-90 VAEP fell from 0.1150 at Bayern to -0.1382 at Germany Euro 2024 (delta -0.2532). Consistent with the Podolski archetype: thriving in the club network, diminished without it.</p>
+          </div>
+          <div class="slide-inner">
+            <h3>Musiala</h3>
+            <p>Musiala produced MORE at Germany Euro 2024 (0.7799) than at Bayern (0.0559) (delta +0.7240). Inverse Podolski: the national team context appears more enabling.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: PSG era dependency cards -->
+      <section class="slide-card" aria-label="PSG era cross-context">
+        <span class="pill amber">PSG era 2021/22&ndash;2022/23</span>
+        <h2>PSG &rarr; WC 2022 / AFCON 2023: Mbapp&eacute;, Neymar, Messi, Hakimi</h2>
+        <p>The Mbapp&eacute;-Neymar-Messi trio: most expensive front line in history. PSG failed both Champions League campaigns. WC 2022: France lost the final to Argentina, with Mbapp&eacute; scoring a hat-trick. Does each player's individual production hold without PSG's supporting cast?</p>
+
+        <div class="slide-2col" style="margin-top:8px">
+          <div class="slide-inner">
+            <h3>Mbappe (PSG &rarr; France)</h3>
+            <p>PSG VAEP/90: <strong>0.8203</strong> &nbsp;&mdash;&nbsp; Intl VAEP/90: <strong>0.7619</strong> &nbsp;&mdash;&nbsp; Ratio: <strong>0.93</strong></p>
+            <p>Mbappe showed a clear production drop: per-90 VAEP fell from 0.8203 at PSG to 0.7619 at France (delta -0.0584). Consistent with the Podolski archetype: thriving in the club network, diminished without it.</p>
+          </div>
+          <div class="slide-inner">
+            <h3>Neymar (PSG &rarr; Brazil)</h3>
+            <p>PSG VAEP/90: <strong>0.5533</strong> &nbsp;&mdash;&nbsp; Intl VAEP/90: <strong>0.4061</strong> &nbsp;&mdash;&nbsp; Ratio: <strong>0.73</strong></p>
+            <p>Neymar showed a clear production drop: per-90 VAEP fell from 0.5533 at PSG to 0.4061 at Brazil (delta -0.1472). Consistent with the Podolski archetype: thriving in the club network, diminished without it.</p>
+          </div>
+          <div class="slide-inner">
+            <h3>Messi (PSG &rarr; Argentina)</h3>
+            <p>PSG VAEP/90: <strong>0.5342</strong> &nbsp;&mdash;&nbsp; Intl VAEP/90: <strong>0.2813</strong> &nbsp;&mdash;&nbsp; Ratio: <strong>0.53</strong></p>
+            <p>Messi showed a clear production drop: per-90 VAEP fell from 0.5342 at PSG to 0.2813 at Argentina (delta -0.2529). Consistent with the Podolski archetype: thriving in the club network, diminished without it.</p>
+          </div>
+          <div class="slide-inner">
+            <h3>Hakimi (PSG &rarr; Morocco)</h3>
+            <p>PSG VAEP/90: <strong>0.2621</strong> &nbsp;&mdash;&nbsp; Intl VAEP/90: <strong>0.1523</strong> &nbsp;&mdash;&nbsp; Ratio: <strong>0.58</strong></p>
+            <p>Hakimi showed a clear production drop: per-90 VAEP fell from 0.2621 at PSG to 0.1523 at Morocco (delta -0.1098). Consistent with the Podolski archetype: thriving in the club network, diminished without it.</p>
+          </div>
+        </div>
+        <p class="research-note">PSG = Ligue 1 2021/22 + 2022/23 combined. Intl = WC 2022 (France/Brazil/Argentina) or AFCON 2023 (Morocco). StatsBomb open data, VAEP v2.</p>
+      </section>
+
       <!-- Section 1: Cross-context (Wyscout) analysis -->
       <section class="slide-card" aria-label="Club vs country chemistry">
         <span class="pill green">Primary finding</span>
