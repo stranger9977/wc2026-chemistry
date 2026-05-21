@@ -1,0 +1,350 @@
+{
+  "meta": {
+    "purpose": "Test whether the club-vs-country per-90 VAEP gap shrinks under opposition control.",
+    "club_seasons": {
+      "11_1": "Barcelona La Liga 17/18",
+      "11_4": "Barcelona La Liga 18/19",
+      "11_42": "Barcelona La Liga 19/20",
+      "11_90": "Barcelona La Liga 20/21",
+      "7_108": "PSG Ligue 1 21/22",
+      "7_235": "PSG Ligue 1 22/23"
+    },
+    "elite_opponents": {
+      "11_1": [
+        "Atl\u00e9tico Madrid",
+        "Real Madrid"
+      ],
+      "11_4": [
+        "Atl\u00e9tico Madrid",
+        "Real Madrid"
+      ],
+      "11_42": [
+        "Atl\u00e9tico Madrid",
+        "Real Madrid"
+      ],
+      "11_90": [
+        "Atl\u00e9tico Madrid",
+        "Real Madrid"
+      ],
+      "7_108": [
+        "AS Monaco",
+        "Lyon",
+        "Marseille"
+      ],
+      "7_235": [
+        "AS Monaco",
+        "Lyon",
+        "Marseille"
+      ]
+    },
+    "minutes_source": "outputs/sb_lineups_all.parquet (StatsBomb lineups, positional spell durations)",
+    "low_sample_threshold_minutes": 90
+  },
+  "elite_matches_per_season": {
+    "11_1": {
+      "label": "Barcelona La Liga 17/18",
+      "n_matches": 4,
+      "matches": [
+        {
+          "match_id": 9642,
+          "opponent": "Atl\u00e9tico Madrid"
+        },
+        {
+          "match_id": 9736,
+          "opponent": "Real Madrid"
+        },
+        {
+          "match_id": 9837,
+          "opponent": "Atl\u00e9tico Madrid"
+        },
+        {
+          "match_id": 9924,
+          "opponent": "Real Madrid"
+        }
+      ]
+    },
+    "11_4": {
+      "label": "Barcelona La Liga 18/19",
+      "n_matches": 3,
+      "matches": [
+        {
+          "match_id": 16073,
+          "opponent": "Atl\u00e9tico Madrid"
+        },
+        {
+          "match_id": 16196,
+          "opponent": "Real Madrid"
+        },
+        {
+          "match_id": 16248,
+          "opponent": "Atl\u00e9tico Madrid"
+        }
+      ]
+    },
+    "11_42": {
+      "label": "Barcelona La Liga 19/20",
+      "n_matches": 4,
+      "matches": [
+        {
+          "match_id": 303470,
+          "opponent": "Real Madrid"
+        },
+        {
+          "match_id": 303524,
+          "opponent": "Atl\u00e9tico Madrid"
+        },
+        {
+          "match_id": 303596,
+          "opponent": "Real Madrid"
+        },
+        {
+          "match_id": 303696,
+          "opponent": "Atl\u00e9tico Madrid"
+        }
+      ]
+    },
+    "11_90": {
+      "label": "Barcelona La Liga 20/21",
+      "n_matches": 4,
+      "matches": [
+        {
+          "match_id": 3773372,
+          "opponent": "Atl\u00e9tico Madrid"
+        },
+        {
+          "match_id": 3773497,
+          "opponent": "Real Madrid"
+        },
+        {
+          "match_id": 3773585,
+          "opponent": "Real Madrid"
+        },
+        {
+          "match_id": 3773656,
+          "opponent": "Atl\u00e9tico Madrid"
+        }
+      ]
+    },
+    "7_108": {
+      "label": "PSG Ligue 1 21/22",
+      "n_matches": 4,
+      "matches": [
+        {
+          "match_id": 3802683,
+          "opponent": "AS Monaco"
+        },
+        {
+          "match_id": 3802752,
+          "opponent": "Lyon"
+        },
+        {
+          "match_id": 3802902,
+          "opponent": "Marseille"
+        },
+        {
+          "match_id": 3802983,
+          "opponent": "Marseille"
+        }
+      ]
+    },
+    "7_235": {
+      "label": "PSG Ligue 1 22/23",
+      "n_matches": 5,
+      "matches": [
+        {
+          "match_id": 3837680,
+          "opponent": "AS Monaco"
+        },
+        {
+          "match_id": 3837717,
+          "opponent": "Lyon"
+        },
+        {
+          "match_id": 3837747,
+          "opponent": "Marseille"
+        },
+        {
+          "match_id": 3837885,
+          "opponent": "Marseille"
+        },
+        {
+          "match_id": 3837928,
+          "opponent": "Lyon"
+        }
+      ]
+    }
+  },
+  "players": [
+    {
+      "player_id": 5503,
+      "player_name": "Lionel Andr\u00e9s Messi Cuccittini",
+      "club_team_name": "Barcelona",
+      "club_full_per90": 0.8608,
+      "club_full_minutes": 16607.0,
+      "elite_opp_per90": 0.4602,
+      "elite_opp_minutes": 2132.0,
+      "elite_opp_matches": 24,
+      "intl_per90": 0.2621,
+      "intl_minutes": 1464.2,
+      "delta_full_vs_intl": 0.5987,
+      "delta_elite_vs_intl": 0.1981,
+      "low_sample": false
+    },
+    {
+      "player_id": 5246,
+      "player_name": "Luis Alberto Su\u00e1rez D\u00edaz",
+      "club_team_name": "Barcelona",
+      "club_full_per90": 0.3983,
+      "club_full_minutes": 7215.6,
+      "elite_opp_per90": 0.1339,
+      "elite_opp_minutes": 991.0,
+      "elite_opp_matches": 11,
+      "intl_per90": 0.239,
+      "intl_minutes": 450.0,
+      "delta_full_vs_intl": 0.1593,
+      "delta_elite_vs_intl": -0.105,
+      "low_sample": false
+    },
+    {
+      "player_id": 5203,
+      "player_name": "Sergio Busquets i Burgos",
+      "club_team_name": "Barcelona",
+      "club_full_per90": 0.1225,
+      "club_full_minutes": 9447.5,
+      "elite_opp_per90": 0.0972,
+      "elite_opp_minutes": 981.9,
+      "elite_opp_matches": 12,
+      "intl_per90": -0.0694,
+      "intl_minutes": 1060.0,
+      "delta_full_vs_intl": 0.1919,
+      "delta_elite_vs_intl": 0.1666,
+      "low_sample": false
+    },
+    {
+      "player_id": 5211,
+      "player_name": "Jordi Alba Ramos",
+      "club_team_name": "Barcelona",
+      "club_full_per90": 0.1832,
+      "club_full_minutes": 10082.7,
+      "elite_opp_per90": 0.0832,
+      "elite_opp_minutes": 1256.4,
+      "elite_opp_matches": 14,
+      "intl_per90": 0.2479,
+      "intl_minutes": 1086.6,
+      "delta_full_vs_intl": -0.0647,
+      "delta_elite_vs_intl": -0.1647,
+      "low_sample": false
+    },
+    {
+      "player_id": 5213,
+      "player_name": "Gerard Piqu\u00e9 Bernab\u00e9u",
+      "club_team_name": "Barcelona",
+      "club_full_per90": 0.1192,
+      "club_full_minutes": 9577.9,
+      "elite_opp_per90": 0.0635,
+      "elite_opp_minutes": 1223.3,
+      "elite_opp_matches": 14,
+      "intl_per90": -0.3091,
+      "intl_minutes": 360.0,
+      "delta_full_vs_intl": 0.4283,
+      "delta_elite_vs_intl": 0.3725,
+      "low_sample": false
+    },
+    {
+      "player_id": 20055,
+      "player_name": "Marc-Andr\u00e9 ter Stegen",
+      "club_team_name": "Barcelona",
+      "club_full_per90": -0.2298,
+      "club_full_minutes": 11430.0,
+      "elite_opp_per90": -0.1112,
+      "elite_opp_minutes": 1260.0,
+      "elite_opp_matches": 14,
+      "intl_per90": null,
+      "intl_minutes": 0.0,
+      "delta_full_vs_intl": null,
+      "delta_elite_vs_intl": null,
+      "low_sample": false
+    },
+    {
+      "player_id": 3009,
+      "player_name": "Kylian Mbapp\u00e9 Lottin",
+      "club_team_name": "Paris Saint-Germain",
+      "club_full_per90": 0.8095,
+      "club_full_minutes": 4351.4,
+      "elite_opp_per90": 0.3262,
+      "elite_opp_minutes": 808.1,
+      "elite_opp_matches": 9,
+      "intl_per90": 0.4469,
+      "intl_minutes": 1924.9,
+      "delta_full_vs_intl": 0.3627,
+      "delta_elite_vs_intl": -0.1207,
+      "low_sample": false
+    },
+    {
+      "player_id": 4320,
+      "player_name": "Neymar da Silva Santos Junior",
+      "club_team_name": "Paris Saint-Germain",
+      "club_full_per90": 0.5589,
+      "club_full_minutes": 2786.4,
+      "elite_opp_per90": 0.4226,
+      "elite_opp_minutes": 525.2,
+      "elite_opp_matches": 6,
+      "intl_per90": 0.4247,
+      "intl_minutes": 699.4,
+      "delta_full_vs_intl": 0.1342,
+      "delta_elite_vs_intl": -0.0021,
+      "low_sample": false
+    },
+    {
+      "player_id": 5245,
+      "player_name": "Achraf Hakimi Mouh",
+      "club_team_name": "Paris Saint-Germain",
+      "club_full_per90": 0.281,
+      "club_full_minutes": 3629.6,
+      "elite_opp_per90": 0.0513,
+      "elite_opp_minutes": 644.5,
+      "elite_opp_matches": 8,
+      "intl_per90": 0.1133,
+      "intl_minutes": 1261.6,
+      "delta_full_vs_intl": 0.1677,
+      "delta_elite_vs_intl": -0.062,
+      "low_sample": false
+    },
+    {
+      "player_id": 4372,
+      "player_name": "Marcos Ao\u00e1s Corr\u00eaa",
+      "club_team_name": "Paris Saint-Germain",
+      "club_full_per90": 0.0748,
+      "club_full_minutes": 4318.6,
+      "elite_opp_per90": -0.0408,
+      "elite_opp_minutes": 806.4,
+      "elite_opp_matches": 9,
+      "intl_per90": 0.0259,
+      "intl_minutes": 771.6,
+      "delta_full_vs_intl": 0.0489,
+      "delta_elite_vs_intl": -0.0666,
+      "low_sample": false
+    },
+    {
+      "player_id": 3166,
+      "player_name": "Marco Verratti",
+      "club_team_name": "Paris Saint-Germain",
+      "club_full_per90": 0.1516,
+      "club_full_minutes": 3352.7,
+      "elite_opp_per90": 0.0624,
+      "elite_opp_minutes": 618.6,
+      "elite_opp_matches": 8,
+      "intl_per90": 0.1392,
+      "intl_minutes": 399.4,
+      "delta_full_vs_intl": 0.0124,
+      "delta_elite_vs_intl": -0.0768,
+      "low_sample": false
+    }
+  ],
+  "summary": {
+    "avg_delta_full_vs_intl": 0.2039,
+    "avg_delta_elite_vs_intl_excluding_low_sample": 0.0139,
+    "n_players_full": 10,
+    "n_players_elite_ok_sample": 10
+  }
+}

@@ -413,46 +413,134 @@
         <p>Fans have a gut feeling that some players are &ldquo;club players&rdquo; &mdash; sharper for their employer than their country &mdash; while others are the reverse. The cleanest version of the question is: when a player produces less (or more) VAEP per 90 in the national-team shirt than at his club, can on-pitch chemistry signals &mdash; who he passes with, how central he is to the pass network, how interconnected his closest partners are &mdash; predict the direction and size of that gap? We tested this on every player in StatsBomb open data with both a club and an international footprint: 109 dual-context players, 2,164 player-context rows, 24,213 career-familiarity pairs.</p>
       </section>
 
+      <!-- Section A1: The opposition-strength control -->
+      <section class="slide-card" aria-label="The opposition-strength control">
+        <span class="pill amber">The major correction</span>
+        <h2>Most of the &ldquo;club hero&rdquo; gap was an opposition artifact</h2>
+        <p>Domestic-league fixtures include many weak opponents (Eibar, Las Palmas, Clermont, Troyes) that inflate the club VAEP numerator; international tournament fixtures are uniformly elite. If the cross-context gap is largely an opposition-strength artifact, restricting the club side to <strong>elite-opponent matches only</strong> should shrink it. We don&rsquo;t have Champions League event data in the open StatsBomb corpus, so we built a CL-proxy by subsetting:</p>
+        <ul>
+          <li><strong>Barcelona La Liga 17/18&ndash;20/21</strong>: matches vs Real Madrid and Atl&eacute;tico Madrid only (15 matches across four seasons).</li>
+          <li><strong>PSG Ligue 1 21/22&ndash;22/23</strong>: matches vs Marseille, Monaco, and Lyon (9 matches across two seasons).</li>
+        </ul>
+        <p>Per-90 VAEP is then recomputed on the elite-opp subset only and compared to each player&rsquo;s international tournament rate.</p>
+        <div class="slide-2col">
+          <div class="slide-inner">
+            <h3>The result</h3>
+            <p>Across the 10 dual-context Barça/PSG players, the mean club&minus;country gap drops from <strong>+0.204</strong> VAEP/90 on the full domestic sample to <strong>+0.014</strong> on the elite-opp subset &mdash; a <strong>~93% reduction</strong>. Six of the ten players flip from positive to zero-or-negative gaps. The &ldquo;club hero, national let-down&rdquo; framing largely doesn&rsquo;t survive once you compare like opposition to like opposition.</p>
+          </div>
+          <div class="slide-inner">
+            <h3>Two takeaways</h3>
+            <ul>
+              <li><strong>Messi is the genuine exception.</strong> His gap shrinks from +0.599 to +0.198 but stays positive &mdash; he is sharper at Barcelona than for Argentina even against Real Madrid + Atl&eacute;tico.</li>
+              <li><strong>Mbapp&eacute;&rsquo;s story reverses.</strong> Against OM / Monaco / Lyon at PSG he produces 0.326 VAEP/90 &mdash; <em>below</em> his France tournament rate of 0.447. The &ldquo;PSG hero, France passenger&rdquo; reading was wrong; he is at least as good at France as against elite Ligue 1 sides.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="research-table-wrap" style="margin-top:14px">
+          <table class="leaderboard research-table">
+            <thead>
+              <tr>
+                <th>Player</th>
+                <th>Club</th>
+                <th>Domestic full (per-90)</th>
+                <th>Elite-opp (per-90)</th>
+                <th>Intl (per-90)</th>
+                <th>&Delta; full</th>
+                <th>&Delta; elite</th>
+                <th>Survives?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Lionel Messi</strong></td><td>Barcelona</td>
+                <td>+0.861</td><td>+0.460</td><td>+0.262</td>
+                <td class="joi joi-high">+0.599</td><td class="joi joi-high">+0.198</td>
+                <td><strong>Yes</strong> &mdash; the exception</td>
+              </tr>
+              <tr>
+                <td>Kylian Mbapp&eacute;</td><td>Paris Saint-Germain</td>
+                <td>+0.809</td><td>+0.326</td><td>+0.447</td>
+                <td class="joi joi-high">+0.363</td><td class="joi joi-neg">&minus;0.121</td>
+                <td>No &mdash; <strong>flips</strong></td>
+              </tr>
+              <tr>
+                <td>Luis Su&aacute;rez</td><td>Barcelona</td>
+                <td>+0.398</td><td>+0.134</td><td>+0.239</td>
+                <td class="joi joi-high">+0.159</td><td class="joi joi-neg">&minus;0.105</td>
+                <td>No &mdash; flips</td>
+              </tr>
+              <tr>
+                <td>Achraf Hakimi</td><td>Paris Saint-Germain</td>
+                <td>+0.281</td><td>+0.051</td><td>+0.113</td>
+                <td class="joi joi-high">+0.168</td><td class="joi joi-neg">&minus;0.062</td>
+                <td>No &mdash; flips</td>
+              </tr>
+              <tr>
+                <td>Neymar Jr.</td><td>Paris Saint-Germain</td>
+                <td>+0.559</td><td>+0.423</td><td>+0.425</td>
+                <td class="joi joi-high">+0.134</td><td class="joi">&minus;0.002</td>
+                <td>No &mdash; flat</td>
+              </tr>
+              <tr>
+                <td>Marquinhos</td><td>Paris Saint-Germain</td>
+                <td>+0.075</td><td>&minus;0.041</td><td>+0.026</td>
+                <td class="joi joi-high">+0.049</td><td class="joi joi-neg">&minus;0.067</td>
+                <td>No &mdash; flips</td>
+              </tr>
+              <tr>
+                <td>Marco Verratti</td><td>Paris Saint-Germain</td>
+                <td>+0.152</td><td>+0.062</td><td>+0.139</td>
+                <td class="joi joi-high">+0.012</td><td class="joi joi-neg">&minus;0.077</td>
+                <td>No &mdash; flips</td>
+              </tr>
+              <tr>
+                <td>Gerard Piqu&eacute;</td><td>Barcelona</td>
+                <td>+0.119</td><td>+0.064</td><td>&minus;0.309</td>
+                <td class="joi joi-high">+0.428</td><td class="joi joi-high">+0.372</td>
+                <td>Yes <span class="rank-meta">(but Spain WC18 sample is only 360 min)</span></td>
+              </tr>
+              <tr>
+                <td>Sergio Busquets</td><td>Barcelona</td>
+                <td>+0.122</td><td>+0.097</td><td>&minus;0.069</td>
+                <td class="joi joi-high">+0.192</td><td class="joi joi-high">+0.167</td>
+                <td>Yes <span class="rank-meta">(same caveat)</span></td>
+              </tr>
+              <tr>
+                <td>Jordi Alba</td><td>Barcelona</td>
+                <td>+0.183</td><td>+0.083</td><td>+0.248</td>
+                <td class="joi joi-neg">&minus;0.065</td><td class="joi joi-neg">&minus;0.165</td>
+                <td>n/a &mdash; already country-better</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="research-note">Elite-opp minutes range from ~500 to ~2,100 per player &mdash; not anecdotal. The opposition-strength critique of the original cross-context finding is strongly supported for most of the cohort. Full writeup: <a href="https://github.com/stranger9977/wc2026-chemistry/blob/main/docs/analysis/elite-opponent-analysis.md" target="_blank" rel="noopener">elite-opponent-analysis.md &rarr;</a></p>
+      </section>
+
       <!-- Section B: Archetype storylines (the headline cases) -->
       <section class="slide-card" aria-label="Archetype storylines">
         <span class="pill green">The headline storylines</span>
         <h2>Who fits the popular archetypes?</h2>
-        <p>The two narratives fans actually argue about: a player who hammers it for his club and disappears in the national kit, and the inverse &mdash; the journeyman who lights up only when his country needs him. Both archetypes exist in the data. Ordered by raw &Delta;VAEP/90; each player has &ge;540 club and &ge;360 international minutes in our corpus.</p>
+        <p>The two narratives fans actually argue about: a player who hammers it for his club and disappears in the national kit, and the inverse &mdash; the journeyman who lights up only when his country needs him. <strong>The opposition-strength control above shows that most candidates for the first archetype don&rsquo;t survive once you control for who they were playing against.</strong> What follows below is the original cross-context view (un-controlled); read it knowing that Mbapp&eacute;, Su&aacute;rez, Hakimi, Neymar and several others move out of this column once compared to elite club opposition only. The second archetype isn&rsquo;t affected by the same control because Schick / Wijnaldum / Coutinho all play at clubs that don&rsquo;t have a meaningful &ldquo;elite-opponent subset&rdquo; in our corpus.</p>
         <div class="arch-grid">
           <div class="arch-col slide-inner arch-col-neg">
             <div class="arch-head">
-              <span class="arch-tag arch-tag-neg">Club hero &middot; national let-down</span>
-              <p class="arch-desc">VAEP/90 falls when the club service line and the surrounding network of elite passers isn&rsquo;t there. The chemistry signals mostly agree with the drop.</p>
-            </div>
-            <div class="arch-card">
-              <div class="arch-card-head"><strong>Kylian Mbapp&eacute;</strong> <span class="arch-delta arch-delta-neg">&minus;0.36</span></div>
-              <div class="arch-card-meta">Paris Saint-Germain <span class="arch-sep">&rarr;</span> France &middot; <span class="rank-meta">4,351 club min &middot; 1,924 intl min</span></div>
-              <div class="arch-card-numbers">
-                <span><span class="arch-lbl">CLUB</span> +0.81</span>
-                <span><span class="arch-lbl">INTL</span> +0.45</span>
-                <span><span class="arch-lbl">&Delta;JOI</span> &minus;0.66</span>
-              </div>
-              <p class="arch-card-narrative">The cleanest &ldquo;chemistry tracks production&rdquo; story in the data. His JOI top-5 collapses by 0.66 the moment Neymar / Hakimi / Verratti aren&rsquo;t around him &mdash; and his per-90 falls in lockstep.</p>
+              <span class="arch-tag arch-tag-neg">Club hero &middot; national let-down <span class="rank-meta" style="text-transform:none;letter-spacing:0;font-weight:500">(largely an artifact &mdash; see above)</span></span>
+              <p class="arch-desc">VAEP/90 falls when the club service line isn&rsquo;t there. But once we restrict the club side to elite opponents, most of these gaps shrink to zero or reverse. The only remaining candidate is Demb&eacute;l&eacute; &mdash; he isn&rsquo;t in the elite-opp sample so his gap is still untested.</p>
             </div>
             <div class="arch-card">
               <div class="arch-card-head"><strong>Ousmane Demb&eacute;l&eacute;</strong> <span class="arch-delta arch-delta-neg">&minus;0.36</span></div>
-              <div class="arch-card-meta">Barcelona <span class="arch-sep">&rarr;</span> France &middot; <span class="rank-meta">4,162 club min &middot; 767 intl min</span></div>
+              <div class="arch-card-meta">Barcelona <span class="arch-sep">&rarr;</span> France &middot; <span class="rank-meta">4,162 club min &middot; 767 intl min &middot; not yet opposition-controlled</span></div>
               <div class="arch-card-numbers">
                 <span><span class="arch-lbl">CLUB</span> +0.34</span>
                 <span><span class="arch-lbl">INTL</span> &minus;0.02</span>
                 <span><span class="arch-lbl">&Delta;JOI</span> &minus;0.33</span>
               </div>
-              <p class="arch-card-narrative">The most dramatic per-90: a positive VAEP contributor at Barcelona literally goes <em>negative</em> for France. A player whose decisions only work when surrounded by elite first-touch passers.</p>
+              <p class="arch-card-narrative">The most dramatic per-90: a positive VAEP contributor at Barcelona literally goes <em>negative</em> for France. The chemistry signals agree with the drop. Whether this survives opposition control isn&rsquo;t known yet &mdash; he didn&rsquo;t have enough elite-opponent minutes at Barça to be in the subset analysis.</p>
             </div>
-            <div class="arch-card">
-              <div class="arch-card-head"><strong>Luis Su&aacute;rez</strong> <span class="arch-delta arch-delta-neg">&minus;0.16</span></div>
-              <div class="arch-card-meta">Barcelona <span class="arch-sep">&rarr;</span> Uruguay &middot; <span class="rank-meta">7,215 club min &middot; 450 intl min</span></div>
-              <div class="arch-card-numbers">
-                <span><span class="arch-lbl">CLUB</span> +0.40</span>
-                <span><span class="arch-lbl">INTL</span> +0.24</span>
-                <span><span class="arch-lbl">&Delta;JOI</span> &minus;0.48</span>
-              </div>
-              <p class="arch-card-narrative">Peak LMS-trio Barcelona vs. an Uruguay built around him &mdash; per-90 drops by 0.16 and his JOI top-5 sum falls by nearly half a goal-equivalent. The Messi/Neymar service line doesn&rsquo;t exist for the C&eacute;lestes.</p>
+            <div class="arch-card" style="opacity:.7">
+              <div class="arch-card-head"><strong>Removed from this column</strong></div>
+              <p class="arch-card-narrative" style="margin-top:6px"><strong>Mbapp&eacute;</strong> (&Delta; elite-opp &minus;0.12 &mdash; actually better at France), <strong>Su&aacute;rez</strong> (&minus;0.10), <strong>Hakimi</strong> (&minus;0.06), <strong>Neymar</strong> (flat), <strong>Verratti</strong> (&minus;0.08), <strong>Marquinhos</strong> (&minus;0.07). Their full-sample gaps were positive; against elite club opposition only, they evaporate or reverse. The narrative they appeared to fit was an opposition artifact.</p>
             </div>
           </div>
           <div class="arch-col slide-inner arch-col-pos">
@@ -492,7 +580,7 @@
             </div>
           </div>
         </div>
-        <p class="research-note arch-footer">Mbapp&eacute; and Wijnaldum are the cases where the chemistry signal does the work you&rsquo;d expect. Schick and Coutinho are the cases that don&rsquo;t cooperate. The honest video has both.</p>
+        <p class="research-note arch-footer">After the opposition-strength control, the &ldquo;club hero&rdquo; column is mostly empty &mdash; Demb&eacute;l&eacute; is the lone untested candidate. The &ldquo;club role-player, national hero&rdquo; column is unchanged: Wijnaldum&rsquo;s 11&times; per-90 jump and Schick&rsquo;s 5&times; jump are both too large to be opposition artifacts. Schick and Coutinho remain the cases that don&rsquo;t cooperate with the chemistry-as-explanation story.</p>
       </section>
 
       <!-- Section B2: The Messi callout — when the metric misreads -->
@@ -505,6 +593,7 @@
             <p>He is not. Messi at the 2022 World Cup scored <strong>7 goals</strong>, registered 3 assists, won the Golden Ball, and lifted the trophy. Across his three tournaments in the data (WC 18, WC 22, Copa 24) he produced more decisive moments than any other player in the corpus. The framing &ldquo;under-performs at country&rdquo; is wrong for him on every meaningful definition of the word.</p>
             <p>What the metric is actually catching is a <strong>denominator effect</strong>: at Barcelona he touched the ball 90+ times per match in a possession-dominant system, so his per-90 numerator (total VAEP) is spread over a huge action stream and the rate is high. At Argentina the team plays more directly, possession sequences are shorter, and his per-match action count is a fraction of his club rate. The decisive actions he <em>does</em> take &mdash; the goals, the through-balls, the shootout strikes &mdash; are world-class. The per-90 rate just can&rsquo;t see them.</p>
             <p>This is the honest limit of every per-90 action-value framework, including the paper&rsquo;s. VAEP averages across all on-ball actions. Tournament football is about the rare actions that decide matches. Messi is the cleanest case where those two definitions of &ldquo;productive&rdquo; come apart.</p>
+            <p style="margin-top:10px"><strong>One genuine finding survives the opposition-strength control above:</strong> even when we restrict the club side to matches vs. Real Madrid + Atl&eacute;tico Madrid (24 matches, ~2,100 minutes), Messi&rsquo;s per-90 VAEP is <strong>0.460</strong> &mdash; still meaningfully above his Argentina tournament rate of 0.262. Whatever the per-90 misses about his decisive moments, the raw on-ball production rate <em>is</em> higher at Barcelona than at Argentina &mdash; even against the best opposition La Liga offered. He is the one player in the corpus where the club-vs-country gap is real, not an artifact.</p>
           </div>
           <div class="slide-inner">
             <h3>What the metric sees</h3>
