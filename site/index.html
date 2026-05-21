@@ -220,14 +220,88 @@
         </div>
       </div>
 
-      <!-- Card 7: References -->
+      <!-- Card 7: What chemistry actually measures (limitations) -->
+      <div class="slide-card">
+        <span class="pill amber">Reading the paper carefully</span>
+        <h2>What JOI/JDI actually measures — and what they don't</h2>
+        <p>The paper is precise about its operating assumption: <em>"two players who have high mutual chemistry perform better than two players who have low mutual chemistry, all other things being equal."</em> That phrase — <strong>all other things being equal</strong> — is the entire crux of the chemistry problem, and the metrics never operationalise it.</p>
+        <div class="slide-2col">
+          <div>
+            <h3>JOI is joint productivity, not synergy</h3>
+            <p>JOI90 sums VAEP across a pair's consecutive actions, normalised per 90 shared minutes. There is <strong>no baseline subtraction for individual quality</strong>. Two elite forwards who share attacking minutes will post a high JOI whether or not they have any chemistry above what their individual abilities predict. Salah–Firmino top the 2017/18 Champions League rankings — but how much of that 0.7077 is unique synergy vs. two great forwards in a great attacking system?</p>
+            <h3>JDI's prediction model barely beats the baseline</h3>
+            <p>The paper trains a CatBoost regressor to predict JDI90 for unseen pairs. Test-set RMSE: 0.88906 for the model vs. 0.89075 for a naïve mean baseline — a <strong>0.2% improvement</strong>. Defensive chemistry is, by their own numbers, essentially unpredictable from features. JOI prediction is meaningfully better (18%) but still leaves most variance unexplained.</p>
+          </div>
+          <div>
+            <h3>Cultural features hardly matter</h3>
+            <p>The paper notes: same nationality, same mother tongue, same region "exhibit only limited predictive power in both models." So much for the "shared language gels the dressing room" intuition — at least at the on-ball action level.</p>
+            <h3>Implication for this site</h3>
+            <p>The Charts tab ranks pairs by their joint VAEP. Read that as: <em>"which pairs combined to produce on-ball value most efficiently per shared minute."</em> It is informative — it surfaces the players who actually create together. It is <strong>not</strong> a measurement of synergy net of individual quality. That distinction matters when comparing a player's pairs at club vs. country.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 8: Related research that addresses the gap -->
+      <div class="slide-card">
+        <span class="pill">Related research</span>
+        <h2>Frameworks that try to isolate synergy</h2>
+        <p>Other researchers — mostly in basketball, where lineup data is richer — have built frameworks that explicitly separate individual quality from teammate effects. These point at what a more honest "chemistry" measurement would look like.</p>
+        <div class="slide-2col">
+          <div>
+            <h3>Maymin, Maymin &amp; Shen (2013) — NBA SPM</h3>
+            <p><em>"NBA Chemistry: Positive and Negative Synergies in Basketball."</em> Fits nested probit regressions over 4,718 games and 987,343 plays. Every player gets coefficients across three skill categories (scoring, rebounding, ball-handling) jointly with a replacement-level baseline. Synergy of a lineup = simulated 5-player effectiveness <strong>minus</strong> the sum of individual point-differentials. The first explicit "above sum-of-parts" decomposition in pro sports. <a href="https://philipmaymin.com/papers/Maymin%20Maymin%20and%20Shen%20-%20NBA%20Chemistry%20-%20IJCSS.pdf" target="_blank" rel="noopener">PDF</a></p>
+            <h3>Kuehn (2016) — complementary skill sets</h3>
+            <p>MIT Sloan. A probabilistic possession model where event probabilities depend separately on individual skills <em>and</em> teammate complementarities. Conclusion: NBA teams pay players for individual output and systematically under-value complementarity. <a href="https://www.sloansportsconference.com/research-papers/accounting-for-complementary-skill-sets-when-evaluating-nba-players-values-to-a-speci-ic-team" target="_blank" rel="noopener">MIT Sloan abstract</a></p>
+          </div>
+          <div>
+            <h3>Beal, Changder, Norman &amp; Ramchurn (2020) — teamwork value</h3>
+            <p>AAAI-20. Constructs a directed weighted graph of inter-player passes, then values agents and <em>pairs</em> via three network metrics — centrality, distance-from-event, and walk frequency — learned against match-outcome labels. Their <strong>"interactional alignment"</strong> concept rewards pairs whose own value is high <em>and</em> whose connections to the rest of the team are strong. Validated on 64 games from the 2018 World Cup; pair-value model is up to 46% more accurate at predicting team-level passes than singleton-only baselines. <a href="https://ojs.aaai.org/index.php/AAAI/article/view/6192" target="_blank" rel="noopener">AAAI proceedings</a></p>
+            <h3>American Soccer Analysis (Jan 2026) — career familiarity</h3>
+            <p>Brian Boer at ASA proposes a much simpler cohesion proxy: the running total of passes between players over their careers. Regressed against xG / xGA at team level alongside player-quality and minutes-played controls. Acknowledges possession-heavy bias and survivorship bias; modest explanatory power but cheap to compute. <a href="https://www.americansocceranalysis.com/home/2025/1/12/chemistry-101" target="_blank" rel="noopener">Chemistry 101</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 9: Back to the drawing board -->
+      <div class="slide-card">
+        <span class="pill amber">Where this leaves us</span>
+        <h2>Back to the drawing board</h2>
+        <p>The original anchor for this project was the Podolski paradox — a player who was a "monster for Germany, shit show for his clubs" — and the question of whether the 2014 Germany side over-performed because so many of them already played together at Bayern. JOI was an obvious tool to reach for. The careful reading above is the reason it's the wrong one.</p>
+        <div class="slide-2col">
+          <div>
+            <h3>What we can't claim from JOI alone</h3>
+            <ul>
+              <li>That a player's chemistry "exists at one team but not the other." Their JOI changes between contexts because <em>teammates' quality changes, opposition strength changes, tactical role changes, score state changes</em> — and JOI has no controls for any of those.</li>
+              <li>That a per-90 VAEP drop from club to country reflects lost chemistry. It could equally reflect lost service, harder opposition, or a deeper role.</li>
+              <li>That the paper's own metric supports "chemistry transfers from club to international" — the cultural-feature null result in the original work actively undercuts that hypothesis.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>What might actually work</h3>
+            <ul>
+              <li><strong>Network position, not network value.</strong> Compare each player's <em>centrality</em> in their club passing graph vs. their country graph. A player who sits at the hub at one level and on the periphery at the other tells the chemistry story visually, without pretending to isolate synergy.</li>
+              <li><strong>Interactional alignment (Beal).</strong> Score pairs by how their connections embed in the rest of the team. This penalises pairs that "play in isolation" — closer to what fans mean by "the team gels around them."</li>
+              <li><strong>Familiarity as a control, not the answer.</strong> Career pass counts between teammates (per ASA) are cheap and intuitive. Useful as a covariate when asking "does extra minutes-together actually predict joint output above what individual quality predicts?"</li>
+              <li><strong>Accept that synergy may not be cleanly isolable</strong> from event data alone. Tracking data and lineup-rotation density are what make the basketball frameworks work. Football has neither in equal measure.</li>
+            </ul>
+          </div>
+        </div>
+        <p style="margin-top:14px"><em>The Charts and Research tabs on this site still show what they show — observed joint VAEP, observed per-context production. Read them honestly: as <strong>descriptions of who combined to produce value</strong>, not as evidence that chemistry caused the difference. The next iteration of this project will pivot toward network-position framing, which is more defensible with the data we actually have.</em></p>
+      </div>
+
+      <!-- Card 10: References -->
       <div class="slide-card">
         <span class="pill">References</span>
         <h2>Key citations</h2>
         <ul>
-          <li>Bransen &amp; Van Haaren (2020). <em>Player Chemistry: Striving for a Perfectly Balanced Soccer Team.</em> MIT Sloan Sports Analytics Conference. <a href="https://www.janvanhaaren.be/assets/papers/mitssac-2020-chemistry.pdf" target="_blank" rel="noopener">PDF</a></li>
+          <li>Bransen &amp; Van Haaren (2020). <em>Player Chemistry: Striving for a Perfectly Balanced Soccer Team.</em> MIT Sloan Sports Analytics Conference. <a href="https://www.janvanhaaren.be/assets/papers/mitssac-2020-chemistry.pdf" target="_blank" rel="noopener">PDF</a> · <a href="https://arxiv.org/abs/2003.01712" target="_blank" rel="noopener">arXiv</a></li>
           <li>Decroos, Bransen, Van Haaren &amp; Davis (2019). <em>Actions Speak Louder than Goals: Valuing Player Actions in Soccer.</em> KDD '19. — the VAEP framework. <a href="https://github.com/ML-KULeuven/socceraction" target="_blank" rel="noopener">socceraction</a></li>
           <li>Singh (2019). <em>Introducing Expected Threat (xT).</em> — the xT framework. <a href="https://karun.in/blog/expected-threat.html" target="_blank" rel="noopener">karun.in/blog/expected-threat</a></li>
+          <li>Maymin, Maymin &amp; Shen (2013). <em>NBA Chemistry: Positive and Negative Synergies in Basketball.</em> Int. J. Computer Science in Sport. <a href="https://philipmaymin.com/papers/Maymin%20Maymin%20and%20Shen%20-%20NBA%20Chemistry%20-%20IJCSS.pdf" target="_blank" rel="noopener">PDF</a></li>
+          <li>Kuehn (2016 / 2017). <em>Accounting for Complementary Skill Sets When Evaluating NBA Players' Values to a Specific Team.</em> MIT Sloan; <em>Economic Inquiry</em>. <a href="https://www.sloansportsconference.com/research-papers/accounting-for-complementary-skill-sets-when-evaluating-nba-players-values-to-a-speci-ic-team" target="_blank" rel="noopener">MIT Sloan</a></li>
+          <li>Beal, Changder, Norman &amp; Ramchurn (2020). <em>Learning the Value of Teamwork to Form Efficient Teams.</em> AAAI-20. <a href="https://ojs.aaai.org/index.php/AAAI/article/view/6192" target="_blank" rel="noopener">AAAI</a></li>
+          <li>Cintia, Giannotti, Pappalardo, Pedreschi &amp; Malvaldi (2015). <em>The harsh rule of the goals: Data-driven performance indicators for football teams.</em> — network-based H-indicator and Pezzali score.</li>
+          <li>Boer (2026). <em>Chemistry 101.</em> American Soccer Analysis. <a href="https://www.americansocceranalysis.com/home/2025/1/12/chemistry-101" target="_blank" rel="noopener">americansocceranalysis.com</a></li>
           <li>StatsBomb Open Data: <a href="https://github.com/statsbomb/open-data" target="_blank" rel="noopener">github.com/statsbomb/open-data</a></li>
         </ul>
       </div>
