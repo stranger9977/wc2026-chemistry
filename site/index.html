@@ -6,31 +6,29 @@
 <title>WC 2026 Chemistry</title>
 <link rel="stylesheet" href="style.css" />
 <style>
-      /* ── Player dependency cards ────────────────────────────── */
-      .dep-cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px;margin:16px 0}
-      .dep-card{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:14px 16px}
-      .dep-card-header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}
-      .dep-name{font-weight:700;font-size:15px;color:var(--ink)}
-      .dep-delta{font-size:13px;font-weight:700;padding:2px 6px;border-radius:4px}
-      .dep-delta-neg{color:#d63031;background:#ffeaea}
-      .dep-delta-pos{color:#00b894;background:#e8faf5}
-      .dep-delta-neutral{color:var(--muted);background:var(--bg)}
-      .dep-section{margin-bottom:8px}
-      .dep-section-label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-bottom:4px}
-      .dep-ctx-row{display:flex;align-items:center;gap:6px;margin-bottom:3px;flex-wrap:wrap}
-      .dep-ctx-label{font-size:11px;color:var(--muted);min-width:140px;flex-shrink:0}
-      .dep-bar-wrap{flex:1;height:8px;background:var(--bg);border-radius:4px;min-width:60px;overflow:hidden}
-      .dep-bar{height:100%;border-radius:4px;transition:width .3s}
-      .dep-bar-club{background:var(--accent)}
-      .dep-bar-country{background:var(--accent2)}
-      .dep-val{font-size:12px;font-weight:600;color:var(--ink);min-width:38px;text-align:right}
-      .dep-meta{font-size:10px;color:var(--muted)}
-      .dep-narrative{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.5;font-style:italic}
-      .dep-legend{display:flex;gap:12px;flex-wrap:wrap;margin:8px 0;font-size:12px}
-      .dep-legend-item{display:flex;align-items:center;gap:4px;color:var(--muted)}
-      .dep-swatch{display:inline-block;width:12px;height:12px;border-radius:2px}
-      .dep-swatch-club{background:var(--accent)}
-      .dep-swatch-country{background:var(--accent2)}
+      /* ── Archetype storyline cards (Research tab) ─────────────── */
+      .arch-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:14px 0 4px}
+      @media (max-width: 760px){.arch-grid{grid-template-columns:1fr}}
+      .arch-col{padding:16px 18px}
+      .arch-col-neg{border-left:3px solid #d63031}
+      .arch-col-pos{border-left:3px solid var(--accent)}
+      .arch-head{margin-bottom:14px}
+      .arch-tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:999px;margin-bottom:8px}
+      .arch-tag-neg{background:#ffeaea;color:#d63031}
+      .arch-tag-pos{background:#e8faf5;color:#00855e}
+      .arch-desc{font-size:13px;color:var(--muted);margin:0;line-height:1.5}
+      .arch-card{background:var(--bg);border:1px solid var(--border);border-radius:7px;padding:12px 14px;margin-top:12px}
+      .arch-card-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+      .arch-card-head strong{font-size:15px}
+      .arch-delta{font-size:13px;font-weight:700;padding:2px 7px;border-radius:4px;white-space:nowrap}
+      .arch-delta-neg{color:#d63031;background:#ffeaea}
+      .arch-delta-pos{color:#00855e;background:#e8faf5}
+      .arch-card-meta{font-size:12px;color:var(--muted);margin:4px 0 8px}
+      .arch-sep{color:var(--muted);margin:0 4px}
+      .arch-card-numbers{display:flex;gap:14px;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:8px;flex-wrap:wrap}
+      .arch-lbl{font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-right:4px}
+      .arch-card-narrative{font-size:13px;color:var(--ink);margin:0;line-height:1.55}
+      .arch-footer{margin-top:14px}
 </style>
 </head>
 <body>
@@ -463,7 +461,89 @@
         <p>Fans have a gut feeling that some players are &ldquo;club players&rdquo; &mdash; sharper for their employer than their country &mdash; while others are the reverse. The cleanest version of the question is: when a player produces less (or more) VAEP per 90 in the national-team shirt than at his club, can on-pitch chemistry signals &mdash; who he passes with, how central he is to the pass network, how interconnected his closest partners are &mdash; predict the direction and size of that gap? We tested this on every player in StatsBomb open data with both a club and an international footprint: 109 dual-context players, 2,164 player-context rows, 24,213 career-familiarity pairs.</p>
       </section>
 
-      <!-- Section B: Storytelling candidates -->
+      <!-- Section B: Archetype storylines (the headline cases) -->
+      <section class="slide-card" aria-label="Archetype storylines">
+        <span class="pill green">The headline storylines</span>
+        <h2>Who fits the popular archetypes?</h2>
+        <p>The two narratives fans actually argue about: a player who hammers it for his club and disappears in the national kit, and the inverse &mdash; the journeyman who lights up only when his country needs him. Both archetypes exist in the data. Ordered by raw &Delta;VAEP/90; each player has &ge;540 club and &ge;360 international minutes in our corpus.</p>
+        <div class="arch-grid">
+          <div class="arch-col slide-inner arch-col-neg">
+            <div class="arch-head">
+              <span class="arch-tag arch-tag-neg">Club hero &middot; national let-down</span>
+              <p class="arch-desc">VAEP/90 falls when the club service line and the surrounding network of elite passers isn&rsquo;t there. The chemistry signals mostly agree with the drop.</p>
+            </div>
+            <div class="arch-card">
+              <div class="arch-card-head"><strong>Lionel Messi</strong> <span class="arch-delta arch-delta-neg">&minus;0.59</span></div>
+              <div class="arch-card-meta">Barcelona / Inter Miami <span class="arch-sep">&rarr;</span> Argentina &middot; <span class="rank-meta">16,979 club min &middot; 1,464 intl min</span></div>
+              <div class="arch-card-numbers">
+                <span><span class="arch-lbl">CLUB</span> +0.85</span>
+                <span><span class="arch-lbl">INTL</span> +0.26</span>
+                <span><span class="arch-lbl">&Delta;JOI</span> &minus;0.47</span>
+              </div>
+              <p class="arch-card-narrative">Biggest absolute drop in the corpus, and every chemistry signal sags with him. The twist: Argentina won the World Cup anyway. Individual production cratered; the team still found a way.</p>
+            </div>
+            <div class="arch-card">
+              <div class="arch-card-head"><strong>Kylian Mbapp&eacute;</strong> <span class="arch-delta arch-delta-neg">&minus;0.36</span></div>
+              <div class="arch-card-meta">Paris Saint-Germain <span class="arch-sep">&rarr;</span> France &middot; <span class="rank-meta">4,351 club min &middot; 1,924 intl min</span></div>
+              <div class="arch-card-numbers">
+                <span><span class="arch-lbl">CLUB</span> +0.81</span>
+                <span><span class="arch-lbl">INTL</span> +0.45</span>
+                <span><span class="arch-lbl">&Delta;JOI</span> &minus;0.66</span>
+              </div>
+              <p class="arch-card-narrative">The cleanest &ldquo;chemistry tracks production&rdquo; story in the data. His JOI top-5 collapses by 0.66 the moment Neymar / Hakimi / Verratti aren&rsquo;t around him &mdash; and his per-90 falls in lockstep.</p>
+            </div>
+            <div class="arch-card">
+              <div class="arch-card-head"><strong>Ousmane Demb&eacute;l&eacute;</strong> <span class="arch-delta arch-delta-neg">&minus;0.36</span></div>
+              <div class="arch-card-meta">Barcelona <span class="arch-sep">&rarr;</span> France &middot; <span class="rank-meta">4,162 club min &middot; 767 intl min</span></div>
+              <div class="arch-card-numbers">
+                <span><span class="arch-lbl">CLUB</span> +0.34</span>
+                <span><span class="arch-lbl">INTL</span> &minus;0.02</span>
+                <span><span class="arch-lbl">&Delta;JOI</span> &minus;0.33</span>
+              </div>
+              <p class="arch-card-narrative">The most dramatic per-90: a positive VAEP contributor at Barcelona literally goes <em>negative</em> for France. A player whose decisions only work when surrounded by elite first-touch passers.</p>
+            </div>
+          </div>
+          <div class="arch-col slide-inner arch-col-pos">
+            <div class="arch-head">
+              <span class="arch-tag arch-tag-pos">Club role-player &middot; national hero</span>
+              <p class="arch-desc">VAEP/90 surges when role, opposition strength, or the team&rsquo;s shape gives a player more on-ball authority than his club ever did. The chemistry signals don&rsquo;t always cooperate &mdash; and that&rsquo;s the point.</p>
+            </div>
+            <div class="arch-card">
+              <div class="arch-card-head"><strong>Georginio Wijnaldum</strong> <span class="arch-delta arch-delta-pos">+0.61</span></div>
+              <div class="arch-card-meta">Paris Saint-Germain <span class="arch-sep">&rarr;</span> Netherlands &middot; <span class="rank-meta">919 club min &middot; 360 intl min</span></div>
+              <div class="arch-card-numbers">
+                <span><span class="arch-lbl">CLUB</span> +0.06</span>
+                <span><span class="arch-lbl">INTL</span> +0.67</span>
+                <span><span class="arch-lbl">&Delta;JOI</span> +0.32</span>
+              </div>
+              <p class="arch-card-narrative">11&times; per-90 jump. Bought by PSG as a squad rotation piece behind Verratti and Vitinha &mdash; barely played &mdash; then walks into a Holland midfield and runs it. Both production <em>and</em> chemistry signals point the same way.</p>
+            </div>
+            <div class="arch-card">
+              <div class="arch-card-head"><strong>Patrik Schick</strong> <span class="arch-delta arch-delta-pos">+0.60</span></div>
+              <div class="arch-card-meta">Bayer Leverkusen 23/24 <span class="arch-sep">&rarr;</span> Czech Republic &middot; <span class="rank-meta">1,064 club min &middot; 405 intl min</span></div>
+              <div class="arch-card-numbers">
+                <span><span class="arch-lbl">CLUB</span> +0.16</span>
+                <span><span class="arch-lbl">INTL</span> +0.77</span>
+                <span><span class="arch-lbl">&Delta;JOI</span> &minus;0.70</span>
+              </div>
+              <p class="arch-card-narrative">The case that breaks the chemistry story. He almost quintuples his per-90 for the Czechs <em>despite</em> his JOI signal collapsing and his embeddedness falling by 3.69. Role and opportunity (poaching striker for a thin attack) override the network.</p>
+            </div>
+            <div class="arch-card">
+              <div class="arch-card-head"><strong>Philippe Coutinho</strong> <span class="arch-delta arch-delta-pos">+0.28</span></div>
+              <div class="arch-card-meta">Barcelona <span class="arch-sep">&rarr;</span> Brazil &middot; <span class="rank-meta">3,604 club min &middot; 438 intl min</span></div>
+              <div class="arch-card-numbers">
+                <span><span class="arch-lbl">CLUB</span> +0.24</span>
+                <span><span class="arch-lbl">INTL</span> +0.53</span>
+                <span><span class="arch-lbl">&Delta;JOI</span> &minus;0.24</span>
+              </div>
+              <p class="arch-card-narrative">The recognisable-name version of the Schick story. Couldn&rsquo;t reproduce his Liverpool form at Barcelona, always delivered for Brazil &mdash; again with chemistry signals pointing the <em>wrong</em> way. Another case that argues role &gt; chemistry.</p>
+            </div>
+          </div>
+        </div>
+        <p class="research-note arch-footer">Mbapp&eacute; and Wijnaldum are the cases where the chemistry signal does the work you&rsquo;d expect. Schick and Coutinho are the cases that don&rsquo;t cooperate. The honest video has both.</p>
+      </section>
+
+      <!-- Section C: Consistency-filter table -->
       <section class="slide-card" aria-label="Storytelling candidates">
         <span class="pill green">Where the gap is real and chemistry tracks it</span>
         <h2>Players whose chemistry signals point the same way as their VAEP gap</h2>
