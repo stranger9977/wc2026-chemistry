@@ -34,65 +34,17 @@
 <body>
 <main>
   <h1>World Cup 2026 — Chemistry</h1>
-  <p class="lead">Offensive chemistry between every pair on every WC 2026 squad — measured three different ways, scored across six men's international tournaments. Toggle metrics below; click any nation for its pitch chart.</p>
+  <p class="lead">Can on-pitch chemistry signals predict whether a player is sharper for his club than his country? An honest investigation grounded in Bransen &amp; Van Haaren&rsquo;s 2020 JOI/JDI framework, extended with network-position and familiarity signals across six international tournaments and eight club seasons.</p>
 
   <!-- Tab navigation -->
   <nav class="tab-nav" role="tablist" aria-label="Page sections">
-    <button class="tab-btn" role="tab" id="tab-charts" aria-controls="panel-charts" aria-selected="true" tabindex="0">Charts</button>
+    <button class="tab-btn" role="tab" id="tab-research" aria-controls="panel-research" aria-selected="true" tabindex="0">Research</button>
+    <button class="tab-btn" role="tab" id="tab-wc2026" aria-controls="panel-wc2026" aria-selected="false" tabindex="-1">2026 Preview</button>
     <button class="tab-btn" role="tab" id="tab-methodology" aria-controls="panel-methodology" aria-selected="false" tabindex="-1">Methodology</button>
     <button class="tab-btn" role="tab" id="tab-metrics" aria-controls="panel-metrics" aria-selected="false" tabindex="-1">Metric comparison</button>
-    <button class="tab-btn" role="tab" id="tab-research" aria-controls="panel-research" aria-selected="false" tabindex="-1">Research</button>
-    <button class="tab-btn" role="tab" id="tab-wc2026" aria-controls="panel-wc2026" aria-selected="false" tabindex="-1">2026 Preview</button>
   </nav>
 
-  <!-- ── Tab 1: Charts (existing content) ───────────────────────────── -->
-  <div class="tab-panel active" id="panel-charts" role="tabpanel" aria-labelledby="tab-charts">
-
-    <section class="explainer">
-      <h2>How this works</h2>
-      <div class="explainer-grid">
-        <div>
-          <h3>The metric — three views</h3>
-          <p>Toggle between <strong>xT</strong> (Karun Singh's Expected Threat — rewards moving the ball into more dangerous pitch zones), <strong>VAEP</strong> (a trained classifier — rewards actions that raise the probability of scoring in the next few seconds), and <strong>xG-Chain</strong> (credits a pair with the xG of every possession both touched). All three are normalized per 90 shared minutes. <strong>G</strong> and <strong>A</strong> columns show the sum of the pair's goals and assists across the window.</p>
-        </div>
-        <div>
-          <h3>The data</h3>
-          <p>Event data from <a href="https://github.com/statsbomb/open-data" target="_blank" rel="noopener">StatsBomb Open Data</a> — every on-ball action across <strong>FIFA WC 2022, UEFA Euro 2024, UEFA Euro 2020, Copa América 2024, FIFA WC 2018, and AFCON 2023</strong>: 314 matches, ~653K SPADL actions. Curated WC 2026 squads (May 2026 call-ups and announced final rosters) where available; auto-derived from each nation's top-capped players in the window otherwise.</p>
-        </div>
-        <div>
-          <h3>The methodology</h3>
-          <p>Based on Bransen &amp; Van Haaren, <a href="https://www.janvanhaaren.be/assets/papers/mitssac-2020-chemistry.pdf" target="_blank" rel="noopener"><em>Player Chemistry: Striving for a Perfectly Balanced Soccer Team</em></a> (MIT Sloan Sports Analytics Conference 2020). The paper computes JOI over Wyscout club matches; this project flips it to international matches and adds the xT and xG-Chain views alongside VAEP. Pipeline built on <a href="https://github.com/ML-KULeuven/socceraction" target="_blank" rel="noopener">socceraction</a>.</p>
-        </div>
-        <div>
-          <h3>Caveats</h3>
-          <p><strong>xT</strong> over-credits patient backline buildup — two CBs cycling possession still accumulate xT. <strong>VAEP</strong> is trained on only ~653K actions so the absolute scale is small; rankings are reliable, individual values less so. <strong>xG-Chain</strong>'s underlying xG model is a lightweight logistic regression on ~7K shots — directionally correct, conservative on absolutes. A few qualified nations (e.g., Curaçao, Haiti, New Zealand) have little StatsBomb coverage and will show sparse chemistry data.</p>
-        </div>
-      </div>
-    </section>
-
-    <div class="metric-toggle">
-      <span>Metric:</span>
-      <button class="metric-btn active" data-metric="xt">xT</button>
-      <button class="metric-btn" data-metric="vaep">VAEP</button>
-      <button class="metric-btn" data-metric="xg">xG-Chain</button>
-    </div>
-
-    <h2 class="section-title">Nations</h2>
-    <div class="grid" id="nation-grid"></div>
-
-    <h2 class="section-title">Global top pairs heading into WC 2026</h2>
-    <table class="leaderboard" id="leaderboard">
-      <thead><tr>
-        <th>#</th><th>Pair</th>
-        <th>JOI90</th><th>G</th><th>A</th>
-        <th>Minutes</th><th>Matches</th>
-      </tr></thead>
-      <tbody></tbody>
-    </table>
-
-  </div><!-- /panel-charts -->
-
-  <!-- ── Tab 2: Methodology ──────────────────────────────────────────── -->
+  <!-- ── Tab: Methodology ────────────────────────────────────────────── -->
   <div class="tab-panel" id="panel-methodology" role="tabpanel" aria-labelledby="tab-methodology">
     <div class="slide-deck">
 
@@ -451,7 +403,7 @@
   </div><!-- /panel-metrics -->
 
   <!-- ── Tab 4: Research ────────────────────────────────────────────── -->
-  <div class="tab-panel" id="panel-research" role="tabpanel" aria-labelledby="tab-research">
+  <div class="tab-panel active" id="panel-research" role="tabpanel" aria-labelledby="tab-research">
     <div class="slide-deck">
 
       <!-- Section A: Framing -->
@@ -473,16 +425,6 @@
               <p class="arch-desc">VAEP/90 falls when the club service line and the surrounding network of elite passers isn&rsquo;t there. The chemistry signals mostly agree with the drop.</p>
             </div>
             <div class="arch-card">
-              <div class="arch-card-head"><strong>Lionel Messi</strong> <span class="arch-delta arch-delta-neg">&minus;0.59</span></div>
-              <div class="arch-card-meta">Barcelona / Inter Miami <span class="arch-sep">&rarr;</span> Argentina &middot; <span class="rank-meta">16,979 club min &middot; 1,464 intl min</span></div>
-              <div class="arch-card-numbers">
-                <span><span class="arch-lbl">CLUB</span> +0.85</span>
-                <span><span class="arch-lbl">INTL</span> +0.26</span>
-                <span><span class="arch-lbl">&Delta;JOI</span> &minus;0.47</span>
-              </div>
-              <p class="arch-card-narrative">Biggest absolute drop in the corpus, and every chemistry signal sags with him. The twist: Argentina won the World Cup anyway. Individual production cratered; the team still found a way.</p>
-            </div>
-            <div class="arch-card">
               <div class="arch-card-head"><strong>Kylian Mbapp&eacute;</strong> <span class="arch-delta arch-delta-neg">&minus;0.36</span></div>
               <div class="arch-card-meta">Paris Saint-Germain <span class="arch-sep">&rarr;</span> France &middot; <span class="rank-meta">4,351 club min &middot; 1,924 intl min</span></div>
               <div class="arch-card-numbers">
@@ -501,6 +443,16 @@
                 <span><span class="arch-lbl">&Delta;JOI</span> &minus;0.33</span>
               </div>
               <p class="arch-card-narrative">The most dramatic per-90: a positive VAEP contributor at Barcelona literally goes <em>negative</em> for France. A player whose decisions only work when surrounded by elite first-touch passers.</p>
+            </div>
+            <div class="arch-card">
+              <div class="arch-card-head"><strong>Luis Su&aacute;rez</strong> <span class="arch-delta arch-delta-neg">&minus;0.16</span></div>
+              <div class="arch-card-meta">Barcelona <span class="arch-sep">&rarr;</span> Uruguay &middot; <span class="rank-meta">7,215 club min &middot; 450 intl min</span></div>
+              <div class="arch-card-numbers">
+                <span><span class="arch-lbl">CLUB</span> +0.40</span>
+                <span><span class="arch-lbl">INTL</span> +0.24</span>
+                <span><span class="arch-lbl">&Delta;JOI</span> &minus;0.48</span>
+              </div>
+              <p class="arch-card-narrative">Peak LMS-trio Barcelona vs. an Uruguay built around him &mdash; per-90 drops by 0.16 and his JOI top-5 sum falls by nearly half a goal-equivalent. The Messi/Neymar service line doesn&rsquo;t exist for the C&eacute;lestes.</p>
             </div>
           </div>
           <div class="arch-col slide-inner arch-col-pos">
@@ -541,6 +493,42 @@
           </div>
         </div>
         <p class="research-note arch-footer">Mbapp&eacute; and Wijnaldum are the cases where the chemistry signal does the work you&rsquo;d expect. Schick and Coutinho are the cases that don&rsquo;t cooperate. The honest video has both.</p>
+      </section>
+
+      <!-- Section B2: The Messi callout — when the metric misreads -->
+      <section class="slide-card" aria-label="The Messi exception">
+        <span class="pill amber">When the metric misreads the player</span>
+        <h2>Lionel Messi &mdash; the case per-90 VAEP gets wrong</h2>
+        <div class="slide-2col">
+          <div>
+            <p>Messi has the largest cross-context per-90 VAEP gap in the corpus: <strong>+0.85 at Barcelona / Inter Miami vs. +0.26 at Argentina</strong> across 17,000 club minutes and 1,464 international minutes. Every chemistry signal sags with him &mdash; &Delta;JOI top-5 &minus;0.47, &Delta;centrality &minus;0.07, &Delta;embeddedness &minus;1.86. If you read the metric at face value, he is the biggest &ldquo;club hero, national let-down&rdquo; in the dataset.</p>
+            <p>He is not. Messi at the 2022 World Cup scored <strong>7 goals</strong>, registered 3 assists, won the Golden Ball, and lifted the trophy. Across his three tournaments in the data (WC 18, WC 22, Copa 24) he produced more decisive moments than any other player in the corpus. The framing &ldquo;under-performs at country&rdquo; is wrong for him on every meaningful definition of the word.</p>
+            <p>What the metric is actually catching is a <strong>denominator effect</strong>: at Barcelona he touched the ball 90+ times per match in a possession-dominant system, so his per-90 numerator (total VAEP) is spread over a huge action stream and the rate is high. At Argentina the team plays more directly, possession sequences are shorter, and his per-match action count is a fraction of his club rate. The decisive actions he <em>does</em> take &mdash; the goals, the through-balls, the shootout strikes &mdash; are world-class. The per-90 rate just can&rsquo;t see them.</p>
+            <p>This is the honest limit of every per-90 action-value framework, including the paper&rsquo;s. VAEP averages across all on-ball actions. Tournament football is about the rare actions that decide matches. Messi is the cleanest case where those two definitions of &ldquo;productive&rdquo; come apart.</p>
+          </div>
+          <div class="slide-inner">
+            <h3>What the metric sees</h3>
+            <table class="leaderboard" style="margin-top:8px;font-size:13px">
+              <thead><tr><th>Signal</th><th>Club</th><th>Argentina</th><th>&Delta;</th></tr></thead>
+              <tbody>
+                <tr><td>per-90 VAEP</td><td class="joi">+0.852</td><td class="joi">+0.262</td><td class="joi joi-neg">&minus;0.590</td></tr>
+                <tr><td>JOI top-5 sum</td><td colspan="2" class="muted">&mdash;</td><td class="joi joi-neg">&minus;0.474</td></tr>
+                <tr><td>centrality (eigen)</td><td colspan="2" class="muted">&mdash;</td><td class="joi joi-neg">&minus;0.072</td></tr>
+                <tr><td>embeddedness</td><td colspan="2" class="muted">&mdash;</td><td class="joi joi-neg">&minus;1.86</td></tr>
+              </tbody>
+            </table>
+            <h3 style="margin-top:16px">What the metric misses</h3>
+            <table class="leaderboard" style="margin-top:8px;font-size:13px">
+              <thead><tr><th>Tournament</th><th>Goals</th><th>Result</th></tr></thead>
+              <tbody>
+                <tr><td>WC 2018</td><td class="joi">1</td><td>Round of 16</td></tr>
+                <tr><td>WC 2022</td><td class="joi">7</td><td><strong>Winner &middot; Golden Ball</strong></td></tr>
+                <tr><td>Copa 2024</td><td class="joi">1</td><td><strong>Winner</strong></td></tr>
+              </tbody>
+            </table>
+            <p class="research-note">Across three tournaments: Argentina won two of them and Messi was the player of one. Per-90 VAEP says the opposite story; the metric is wrong, not the player.</p>
+          </div>
+        </div>
       </section>
 
       <!-- Section C: Consistency-filter table -->
@@ -979,7 +967,6 @@
 
 
 </main>
-<script src="app.js"></script>
 <script>
 (function () {
   const tabs = Array.from(document.querySelectorAll('.tab-btn'));
@@ -995,7 +982,7 @@
       p.classList.toggle('active', i === index);
     });
     // Update hash without scrolling
-    const ids = ['charts', 'methodology', 'metrics', 'research', 'wc2026'];
+    const ids = ['research', 'wc2026', 'methodology', 'metrics'];
     history.replaceState(null, '', '#' + ids[index]);
   }
 
@@ -1009,7 +996,7 @@
 
   // Restore tab from hash on load
   const hash = location.hash.replace('#', '');
-  const hashMap = { charts: 0, methodology: 1, metrics: 2, research: 3, wc2026: 4 };
+  const hashMap = { research: 0, wc2026: 1, methodology: 2, metrics: 3, charts: 0 };
   if (hash in hashMap) activate(hashMap[hash]);
 })();
 </script>

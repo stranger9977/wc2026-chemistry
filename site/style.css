@@ -21,7 +21,6 @@ h1 { font-size: 44px; margin: 0 0 8px; letter-spacing: -0.02em; }
 .card .sub { font-size: 12px; color: var(--muted); margin-bottom: 12px; font-family: "JetBrains Mono", monospace; }
 .card .pair { font-size: 14px; color: var(--ink); }
 .card .joi { font-family: "JetBrains Mono", monospace; color: var(--accent); font-weight: 600; }
-.section-title { margin: 48px 0 16px; font-size: 22px; }
 .leaderboard { width: 100%; border-collapse: collapse; }
 .leaderboard th, .leaderboard td { padding: 10px 12px; border-bottom: 1px solid var(--border); text-align: left; }
 .leaderboard th { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
@@ -35,42 +34,6 @@ h1 { font-size: 44px; margin: 0 0 8px; letter-spacing: -0.02em; }
   vertical-align: middle;
   margin-right: 10px;
   margin-top: -2px;
-}
-.explainer {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 24px 28px;
-  margin: 32px 0 48px;
-}
-.explainer h2 {
-  margin: 0 0 18px;
-  font-size: 20px;
-  color: var(--ink);
-  letter-spacing: -0.01em;
-}
-.explainer-grid {
-  display: grid;
-  gap: 22px 32px;
-  grid-template-columns: repeat(2, 1fr);
-}
-@media (max-width: 720px) { .explainer-grid { grid-template-columns: 1fr; } }
-.explainer h3 {
-  margin: 0 0 6px;
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--accent2);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-.explainer p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.6;
-  color: var(--muted);
-}
-.explainer p strong {
-  color: var(--ink);
 }
 .btn { display: inline-block; padding: 8px 14px; background: var(--panel); border: 1px solid var(--border);
   border-radius: 8px; color: var(--ink); font-size: 13px; text-decoration: none; margin: 4px 6px 0 0; }
@@ -89,35 +52,6 @@ h1 { font-size: 44px; margin: 0 0 8px; letter-spacing: -0.02em; }
   background: rgba(255, 255, 255, 0.06);
   border-radius: 4px;
   vertical-align: middle;
-}
-
-/* Metric toggle */
-.metric-toggle {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 0 0 24px;
-  font-size: 13px;
-  color: var(--muted);
-}
-.metric-btn {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  color: var(--muted);
-  padding: 4px 12px;
-  border-radius: 6px;
-  font-size: 13px;
-  cursor: pointer;
-  font-family: inherit;
-}
-.metric-btn.active {
-  background: var(--accent);
-  color: #000;
-  border-color: var(--accent);
-}
-.metric-btn.disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
 }
 
 /* ── Tab navigation ──────────────────────────────────────────────────── */
