@@ -385,3 +385,42 @@ h1 { font-size: 44px; margin: 0 0 8px; letter-spacing: -0.02em; }
 .rpair-bar-pos { background: var(--accent); }
 .rpair-bar-neg { background: var(--warn); }
 .rpair-note { font-size: 12px; color: var(--muted); line-height: 1.5; }
+
+/* ── 2026 Preview tab + ranking + cards ─────────────────────────── */
+.wc-rank-table { min-width: 760px; }
+.wc-rank-table th { font-size: 11px; }
+.wc-rank-row.wc-low { opacity: 0.55; }
+.wc-rank-row .wc-rank-num { font-family: "JetBrains Mono", monospace; color: var(--muted); width: 36px; }
+.rank-meta { font-size: 11px; color: var(--muted); font-family: "JetBrains Mono", monospace; margin-top: 2px; display: block; }
+.rank-spine { font-size: 13px; color: var(--ink); }
+.lowcov-badge {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--warn);
+  background: rgba(251,191,36,0.10);
+  border: 1px solid rgba(251,191,36,0.30);
+  border-radius: 3px;
+  padding: 1px 6px;
+  vertical-align: middle;
+}
+.wc-cards-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  margin-top: 12px;
+}
+.wc-card { padding: 16px 18px; }
+.wc-card-head { margin-bottom: 10px; }
+.wc-card-head h3 { margin: 0 0 4px; font-size: 16px; color: var(--ink); display: flex; align-items: center; gap: 8px; }
+.wc-card-head h3 .flag-inline { margin-right: 0; }
+.wc-cz { margin-left: auto; font-size: 12px; font-family: "JetBrains Mono", monospace; color: var(--accent); font-weight: 600; }
+.wc-card-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin: 10px 0 6px; }
+.wc-spine-list { list-style: none; padding: 0; margin: 0; }
+.wc-spine-list li { font-size: 13px; color: var(--ink); padding: 4px 0; border-bottom: 1px dashed var(--border); }
+.wc-spine-list li:last-child { border-bottom: none; }
+.wc-card-narrative { font-size: 12.5px; color: var(--muted); line-height: 1.55; font-style: italic; margin-top: 10px; }
+.muted { color: var(--muted); }

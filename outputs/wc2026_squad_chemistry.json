@@ -1,0 +1,2344 @@
+{
+  "meta": {
+    "n_squads": 48,
+    "generated": "2026-05-21",
+    "matching_summary": {
+      "total_players": 544,
+      "matched_to_dataset": 343,
+      "unmatched_by_nation": {
+        "ARG": [
+          "Marcos Senesi",
+          "Giovani Lo Celso",
+          "Alejandro Garnacho",
+          "Franco Mastantuono",
+          "Claudio Echeverri",
+          "Facundo Medina",
+          "Santiago Castro"
+        ],
+        "AUS": [
+          "Danny Vukovic",
+          "Bailey Wright",
+          "Nathaniel Atkinson",
+          "Nestory Irankunda",
+          "Keanu Baccus",
+          "Jamie Maclaren",
+          "Jason Cummings",
+          "Garang Kuol",
+          "Marco Tilio"
+        ],
+        "BEL": [
+          "Mats Sels",
+          "Senne Lammens",
+          "Zeno Debast",
+          "Brandon Mechele",
+          "Koni De Winter",
+          "Nathan Ngoy",
+          "Maxim De Cuyper",
+          "Joaquin Seys",
+          "Nicolas Raskin",
+          "Hans Vanaken",
+          "Leandro Trossard",
+          "Charles De Ketelaere",
+          "Alexis Saelemaekers",
+          "Dodi Lukebakio",
+          "Matías Fernández-Pardo",
+          "Lucas Stassin"
+        ],
+        "BRA": [
+          "Ederson",
+          "Bento",
+          "Gabriel Magalhães",
+          "Vitor Reis",
+          "Alex Sandro",
+          "Lucas Paquetá",
+          "Endrick",
+          "Matheus Cunha",
+          "Igor Thiago",
+          "Wendell",
+          "Andreas Pereira",
+          "Gerson"
+        ],
+        "CAN": [
+          "Atiba Hutchinson",
+          "Theo Bair",
+          "Lucas Cavallini"
+        ],
+        "COL": [
+          "Frank Fabra",
+          "Duván Zapata",
+          "Rafael Santos Borré",
+          "Jhon Jáder Durán",
+          "Óscar Cortés"
+        ],
+        "CRO": [
+          "Ivica Ivušić",
+          "Dario Špikić",
+          "Lovro Majer",
+          "Ante Budimir",
+          "Ivan Zucko",
+          "Petar Musa",
+          "Borna Barisic",
+          "Bartol Franjic"
+        ],
+        "ECU": [
+          "Byron Castillo",
+          "Carlos Gruezo",
+          "John Yeboah",
+          "Jordy Caicedo",
+          "Djorkaeff Reasco"
+        ],
+        "ENG": [
+          "Aaron Ramsdale",
+          "Dean Henderson",
+          "Trent Alexander-Arnold",
+          "Reece James",
+          "Ezri Konsa",
+          "Conor Gallagher",
+          "Cole Palmer",
+          "Marcus Rashford",
+          "Jarrod Bowen",
+          "Ollie Watkins",
+          "Ivan Toney",
+          "Morgan Gibbs-White",
+          "Curtis Jones",
+          "Levi Colwill"
+        ],
+        "ESP": [
+          "Pau Cubarsí",
+          "Ayoze Pérez",
+          "Bryan Zaragoza",
+          "Álex Baena"
+        ],
+        "FRA": [
+          "Brice Samba",
+          "Robin Risser",
+          "Malo Gusto",
+          "Manu Koné",
+          "Bradley Barcola",
+          "Michael Olise",
+          "Maghnes Akliouche",
+          "Désiré Doué",
+          "Rayan Cherki",
+          "Jean-Philippe Mateta"
+        ],
+        "GER": [
+          "Nico Schlotterbeck",
+          "Pascal Groß",
+          "Tim Kleindienst",
+          "Chris Führich",
+          "Deniz Undav",
+          "Robin Koch",
+          "Aleksandar Pavlović"
+        ],
+        "JPN": [
+          "Zion Suzuki",
+          "Keisuke Osako",
+          "Tomoki Hayakawa",
+          "Hiroki Ito",
+          "Takehiro Tomiyasu",
+          "Tsuyoshi Watanabe",
+          "Yukinari Sugawara",
+          "Ayumu Seko",
+          "Junnosuke Suzuki",
+          "Kaishu Sano",
+          "Ao Tanaka",
+          "Keito Nakamura",
+          "Yuito Suzuki",
+          "Ayase Ueda",
+          "Koki Ogawa",
+          "Keisuke Goto",
+          "Kento Shiogai"
+        ],
+        "KOR": [
+          "Song Bum-keun",
+          "Park Jin-seob",
+          "Seol Young-woo",
+          "Jens Castrop",
+          "Bae Jun-ho",
+          "Yang Hyun-jun",
+          "Eom Ji-sung",
+          "Paik Seung-ho",
+          "Oh Hyeon-gyu"
+        ],
+        "KSA": [
+          "Fawaz Al-Qarni",
+          "Sultan Al-Ghannam",
+          "Ali Al-Boleahi",
+          "Sami Al-Najei",
+          "Firas Al-Buraikan",
+          "Nawaf Boushal",
+          "Ali Lajami"
+        ],
+        "MAR": [
+          "Adam Masina",
+          "Bilal El Khannouss",
+          "Ayoub El Kaabi",
+          "Soufiane Rahimi",
+          "Zakaria Aboukhlal",
+          "Ilias Chair",
+          "Brahim Díaz",
+          "Anass Zaroury"
+        ],
+        "MEX": [
+          "Luis Malagón",
+          "Julián Araujo",
+          "Carlos Rodríguez",
+          "Orbelín Pineda",
+          "Álvaro Fidalgo",
+          "César Huerta",
+          "Roberto de la Rosa",
+          "Germán Berterame",
+          "Diego Lainez",
+          "Érick Gutiérrez"
+        ],
+        "NED": [
+          "Mark Flekken",
+          "Remko Pasveer",
+          "Tyrell Malacia",
+          "Vincent Janssen",
+          "Brian Brobbey",
+          "Noa Lang",
+          "Justin Kluivert",
+          "Devyne Rensch",
+          "Micky van de Ven"
+        ],
+        "POR": [
+          "José Sá",
+          "Gonçalo Inácio",
+          "João Neves",
+          "Pedro Neto",
+          "Francisco Conceição",
+          "Gonçalo Ramos",
+          "Matheus Nunes"
+        ],
+        "SEN": [
+          "Alfred Gomis",
+          "Seny Dieng",
+          "Bouna Sarr",
+          "Moussa Niakhaté",
+          "Cheikhou Kouyaté",
+          "Iliman Ndiaye",
+          "Nicolas Jackson",
+          "Fode Ballo-Touré",
+          "Pathé Ciss"
+        ],
+        "SUI": [
+          "Philipp Köhn",
+          "Denis Zakaria",
+          "Renato Steffen",
+          "Zeki Amdouni",
+          "Noah Okafor",
+          "Kwadwo Duah",
+          "Andi Zeqiri"
+        ],
+        "URU": [
+          "Sebastián Sosa",
+          "Agustín Canobbio",
+          "Giorgian De Arrascaeta",
+          "Luciano Rodríguez"
+        ],
+        "USA": [
+          "Ethan Horvath",
+          "Patrick Schulte",
+          "Auston Trusty",
+          "Mark McKenzie",
+          "Max Arfsten",
+          "Tanner Tessmann",
+          "Brendan Aaronson",
+          "Malik Tillman",
+          "Folarin Balogun",
+          "Ricardo Pepi",
+          "Cade Cowell",
+          "Josh Sargent",
+          "Alex Freeman",
+          "Sebastian Berhalter"
+        ]
+      }
+    },
+    "scoring_notes": "composite_z is the unweighted mean of four standardised signals: (1) club-centrality (avg of eigen+weighted-degree z), (2) intra-squad familiarity (shared minutes per pair / 1000), (3) shared-club density (inverted -- lower fraction is better), (4) mean observed pair JOI90 across pairs that co-played in our corpus. Nations with <50% of players matched carry low_match_warning=true."
+  },
+  "ranking": [
+    {
+      "rank": 1,
+      "nation_code": "ENG",
+      "nation": "England",
+      "composite_z": 1.9846,
+      "n_players": 26,
+      "n_matched": 12,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.818727,
+        "shared_club_density": 0.653846,
+        "mean_observed_pair_joi90": 0.040886,
+        "n_qualifying_pairs": 38
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": 3.249,
+        "shared_club_density_z_inverted": 1.5676,
+        "mean_observed_pair_joi90_z": 1.1371
+      },
+      "spine_pairs": [
+        {
+          "player_a": "John Stones",
+          "player_b": "Jordan Pickford",
+          "shared_minutes": 2607,
+          "shared_clubs": [
+            "England"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "WC 2018",
+            "Euro 2024",
+            "Euro 2020"
+          ]
+        },
+        {
+          "player_a": "John Stones",
+          "player_b": "Harry Kane",
+          "shared_minutes": 2514,
+          "shared_clubs": [
+            "England"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "WC 2018",
+            "Euro 2024",
+            "Euro 2020"
+          ]
+        },
+        {
+          "player_a": "Jordan Pickford",
+          "player_b": "Harry Kane",
+          "shared_minutes": 2514,
+          "shared_clubs": [
+            "England"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "WC 2018",
+            "Euro 2024",
+            "Euro 2020"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "nation_code": "BEL",
+      "nation": "Belgium",
+      "composite_z": 1.1906,
+      "n_players": 26,
+      "n_matched": 10,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": 0.303886,
+        "mean_club_centrality_weighted_degree": 0.087063,
+        "intra_squad_familiarity_score": 0.466,
+        "shared_club_density": 0.730769,
+        "mean_observed_pair_joi90": 0.049764,
+        "n_qualifying_pairs": 30
+      },
+      "component_z": {
+        "club_centrality_eigen_z": 0.3908,
+        "club_centrality_weighted_degree_z": 0.4523,
+        "intra_squad_familiarity_z": 1.5025,
+        "shared_club_density_z_inverted": 1.0576,
+        "mean_observed_pair_joi90_z": 1.781
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Kevin De Bruyne",
+          "player_b": "Romelu Lukaku",
+          "shared_minutes": 1230,
+          "shared_clubs": [
+            "Belgium"
+          ],
+          "shared_contexts": [
+            "WC 2018",
+            "Euro 2024",
+            "Euro 2020"
+          ]
+        },
+        {
+          "player_a": "Kevin De Bruyne",
+          "player_b": "Thibaut Courtois",
+          "shared_minutes": 1134,
+          "shared_clubs": [
+            "Belgium"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "WC 2018",
+            "Euro 2020"
+          ]
+        },
+        {
+          "player_a": "Kevin De Bruyne",
+          "player_b": "Axel Witsel",
+          "shared_minutes": 1134,
+          "shared_clubs": [
+            "Belgium"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "WC 2018",
+            "Euro 2020"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "nation_code": "NED",
+      "nation": "Netherlands",
+      "composite_z": 1.0703,
+      "n_players": 26,
+      "n_matched": 17,
+      "low_match_warning": false,
+      "signals": {
+        "mean_club_centrality_eigen": 0.381181,
+        "mean_club_centrality_weighted_degree": 0.101013,
+        "intra_squad_familiarity_score": 0.322603,
+        "shared_club_density": 0.807692,
+        "mean_observed_pair_joi90": 0.050977,
+        "n_qualifying_pairs": 51
+      },
+      "component_z": {
+        "club_centrality_eigen_z": 1.2052,
+        "club_centrality_weighted_degree_z": 0.9396,
+        "intra_squad_familiarity_z": 0.7925,
+        "shared_club_density_z_inverted": 0.5475,
+        "mean_observed_pair_joi90_z": 1.8689
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Memphis Depay",
+          "player_b": "Denzel Dumfries",
+          "shared_minutes": 1166,
+          "shared_clubs": [
+            "Netherlands"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "Euro 2024",
+            "Euro 2020"
+          ]
+        },
+        {
+          "player_a": "Nathan Aké",
+          "player_b": "Virgil van Dijk",
+          "shared_minutes": 1080,
+          "shared_clubs": [
+            "Netherlands"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "Euro 2024"
+          ]
+        },
+        {
+          "player_a": "Nathan Aké",
+          "player_b": "Cody Gakpo",
+          "shared_minutes": 1080,
+          "shared_clubs": [
+            "Netherlands"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "Euro 2024"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "nation_code": "GER",
+      "nation": "Germany",
+      "composite_z": 0.9818,
+      "n_players": 26,
+      "n_matched": 19,
+      "low_match_warning": false,
+      "signals": {
+        "mean_club_centrality_eigen": 0.278557,
+        "mean_club_centrality_weighted_degree": 0.07986,
+        "intra_squad_familiarity_score": 0.293222,
+        "shared_club_density": 0.5,
+        "mean_observed_pair_joi90": 0.032519,
+        "n_qualifying_pairs": 55
+      },
+      "component_z": {
+        "club_centrality_eigen_z": 0.1239,
+        "club_centrality_weighted_degree_z": 0.2006,
+        "intra_squad_familiarity_z": 0.647,
+        "shared_club_density_z_inverted": 2.5876,
+        "mean_observed_pair_joi90_z": 0.5303
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Granit Xhaka",
+          "player_b": "Jonathan Tah",
+          "shared_minutes": 2639,
+          "shared_clubs": [
+            "Bayer Leverkusen"
+          ],
+          "shared_contexts": [
+            "Leverkusen Bundesliga 23/24"
+          ]
+        },
+        {
+          "player_a": "Jonathan Tah",
+          "player_b": "Florian Wirtz",
+          "shared_minutes": 2543,
+          "shared_clubs": [
+            "Germany",
+            "Bayer Leverkusen"
+          ],
+          "shared_contexts": [
+            "Euro 2024",
+            "Leverkusen Bundesliga 23/24"
+          ]
+        },
+        {
+          "player_a": "Granit Xhaka",
+          "player_b": "Florian Wirtz",
+          "shared_minutes": 2450,
+          "shared_clubs": [
+            "Bayer Leverkusen"
+          ],
+          "shared_contexts": [
+            "Leverkusen Bundesliga 23/24"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "nation_code": "SUI",
+      "nation": "Switzerland",
+      "composite_z": 0.9597,
+      "n_players": 22,
+      "n_matched": 15,
+      "low_match_warning": false,
+      "signals": {
+        "mean_club_centrality_eigen": 0.338091,
+        "mean_club_centrality_weighted_degree": 0.096065,
+        "intra_squad_familiarity_score": 0.632952,
+        "shared_club_density": 0.863636,
+        "mean_observed_pair_joi90": 0.033124,
+        "n_qualifying_pairs": 62
+      },
+      "component_z": {
+        "club_centrality_eigen_z": 0.7512,
+        "club_centrality_weighted_degree_z": 0.7667,
+        "intra_squad_familiarity_z": 2.3292,
+        "shared_club_density_z_inverted": 0.1766,
+        "mean_observed_pair_joi90_z": 0.5742
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Ricardo Rodríguez",
+          "player_b": "Manuel Akanji",
+          "shared_minutes": 1785,
+          "shared_clubs": [
+            "Switzerland"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "WC 2018",
+            "Euro 2024",
+            "Euro 2020"
+          ]
+        },
+        {
+          "player_a": "Ricardo Rodríguez",
+          "player_b": "Yann Sommer",
+          "shared_minutes": 1685,
+          "shared_clubs": [
+            "Switzerland"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "WC 2018",
+            "Euro 2024",
+            "Euro 2020"
+          ]
+        },
+        {
+          "player_a": "Manuel Akanji",
+          "player_b": "Yann Sommer",
+          "shared_minutes": 1685,
+          "shared_clubs": [
+            "Switzerland"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "WC 2018",
+            "Euro 2024",
+            "Euro 2020"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "nation_code": "CRO",
+      "nation": "Croatia",
+      "composite_z": 0.9468,
+      "n_players": 22,
+      "n_matched": 14,
+      "low_match_warning": false,
+      "signals": {
+        "mean_club_centrality_eigen": 0.404451,
+        "mean_club_centrality_weighted_degree": 0.132768,
+        "intra_squad_familiarity_score": 0.548901,
+        "shared_club_density": 0.772727,
+        "mean_observed_pair_joi90": 0.01618,
+        "n_qualifying_pairs": 51
+      },
+      "component_z": {
+        "club_centrality_eigen_z": 1.4504,
+        "club_centrality_weighted_degree_z": 2.0489,
+        "intra_squad_familiarity_z": 1.913,
+        "shared_club_density_z_inverted": 0.7794,
+        "mean_observed_pair_joi90_z": -0.6547
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Luka Modrić",
+          "player_b": "Ivan Perišić",
+          "shared_minutes": 1831,
+          "shared_clubs": [
+            "Croatia"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "WC 2018",
+            "Euro 2024",
+            "Euro 2020"
+          ]
+        },
+        {
+          "player_a": "Luka Modrić",
+          "player_b": "Marcelo Brozović",
+          "shared_minutes": 1649,
+          "shared_clubs": [
+            "Croatia"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "WC 2018",
+            "Euro 2024",
+            "Euro 2020"
+          ]
+        },
+        {
+          "player_a": "Mateo Kovačić",
+          "player_b": "Luka Modrić",
+          "shared_minutes": 1595,
+          "shared_clubs": [
+            "Croatia"
+          ],
+          "shared_contexts": [
+            "Barcelona La Liga 17/18",
+            "WC 2022",
+            "WC 2018",
+            "Euro 2024",
+            "Euro 2020"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "nation_code": "KOR",
+      "nation": "South Korea",
+      "composite_z": 0.727,
+      "n_players": 26,
+      "n_matched": 17,
+      "low_match_warning": false,
+      "signals": {
+        "mean_club_centrality_eigen": 0.462145,
+        "mean_club_centrality_weighted_degree": 0.138193,
+        "intra_squad_familiarity_score": 0.242933,
+        "shared_club_density": 0.730769,
+        "mean_observed_pair_joi90": 0.015609,
+        "n_qualifying_pairs": 22
+      },
+      "component_z": {
+        "club_centrality_eigen_z": 2.0583,
+        "club_centrality_weighted_degree_z": 2.2384,
+        "intra_squad_familiarity_z": 0.398,
+        "shared_club_density_z_inverted": 1.0576,
+        "mean_observed_pair_joi90_z": -0.6961
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Son Heung-min",
+          "player_b": "Lee Dong-gyeong",
+          "shared_minutes": 574,
+          "shared_clubs": [
+            "South Korea"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "WC 2018"
+          ]
+        },
+        {
+          "player_a": "Son Heung-min",
+          "player_b": "Hwang In-beom",
+          "shared_minutes": 386,
+          "shared_clubs": [
+            "South Korea"
+          ],
+          "shared_contexts": [
+            "WC 2022"
+          ]
+        },
+        {
+          "player_a": "Son Heung-min",
+          "player_b": "Kim Seung-gyu",
+          "shared_minutes": 386,
+          "shared_clubs": [
+            "South Korea"
+          ],
+          "shared_contexts": [
+            "WC 2022"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "nation_code": "ESP",
+      "nation": "Spain",
+      "composite_z": 0.5022,
+      "n_players": 26,
+      "n_matched": 22,
+      "low_match_warning": false,
+      "signals": {
+        "mean_club_centrality_eigen": 0.272368,
+        "mean_club_centrality_weighted_degree": 0.071723,
+        "intra_squad_familiarity_score": 0.178568,
+        "shared_club_density": 0.615385,
+        "mean_observed_pair_joi90": 0.026855,
+        "n_qualifying_pairs": 34
+      },
+      "component_z": {
+        "club_centrality_eigen_z": 0.0587,
+        "club_centrality_weighted_degree_z": -0.0836,
+        "intra_squad_familiarity_z": 0.0793,
+        "shared_club_density_z_inverted": 1.8226,
+        "mean_observed_pair_joi90_z": 0.1196
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Unai Simón",
+          "player_b": "Pedri",
+          "shared_minutes": 1458,
+          "shared_clubs": [
+            "Spain"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "Euro 2024",
+            "Euro 2020"
+          ]
+        },
+        {
+          "player_a": "Aymeric Laporte",
+          "player_b": "Unai Simón",
+          "shared_minutes": 1455,
+          "shared_clubs": [
+            "Spain"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "Euro 2024",
+            "Euro 2020"
+          ]
+        },
+        {
+          "player_a": "Aymeric Laporte",
+          "player_b": "Pedri",
+          "shared_minutes": 1266,
+          "shared_clubs": [
+            "Spain"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "Euro 2024",
+            "Euro 2020"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "nation_code": "KSA",
+      "nation": "Saudi Arabia",
+      "composite_z": 0.4379,
+      "n_players": 17,
+      "n_matched": 10,
+      "low_match_warning": false,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.089444,
+        "shared_club_density": 0.411765,
+        "mean_observed_pair_joi90": 0.004568,
+        "n_qualifying_pairs": 5
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.362,
+        "shared_club_density_z_inverted": 3.1726,
+        "mean_observed_pair_joi90_z": -1.4969
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Salem Al-Dawsari",
+          "player_b": "Mohammed Al-Owais",
+          "shared_minutes": 391,
+          "shared_clubs": [
+            "Saudi Arabia"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "WC 2018"
+          ]
+        },
+        {
+          "player_a": "Salem Al-Dawsari",
+          "player_b": "Mohammed Al-Burayk",
+          "shared_minutes": 380,
+          "shared_clubs": [
+            "Saudi Arabia"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "WC 2018"
+          ]
+        },
+        {
+          "player_a": "Salem Al-Dawsari",
+          "player_b": "Saleh Al-Shehri",
+          "shared_minutes": 297,
+          "shared_clubs": [
+            "Saudi Arabia"
+          ],
+          "shared_contexts": [
+            "WC 2022"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "nation_code": "AUS",
+      "nation": "Australia",
+      "composite_z": 0.4082,
+      "n_players": 20,
+      "n_matched": 11,
+      "low_match_warning": false,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.299127,
+        "shared_club_density": 0.8,
+        "mean_observed_pair_joi90": 0.024514,
+        "n_qualifying_pairs": 29
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": 0.6762,
+        "shared_club_density_z_inverted": 0.5985,
+        "mean_observed_pair_joi90_z": -0.0502
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Mat Ryan",
+          "player_b": "Aaron Mooy",
+          "shared_minutes": 668,
+          "shared_clubs": [
+            "Australia"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "WC 2018"
+          ]
+        },
+        {
+          "player_a": "Mat Ryan",
+          "player_b": "Aziz Behich",
+          "shared_minutes": 668,
+          "shared_clubs": [
+            "Australia"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "WC 2018"
+          ]
+        },
+        {
+          "player_a": "Mat Ryan",
+          "player_b": "Mathew Leckie",
+          "shared_minutes": 668,
+          "shared_clubs": [
+            "Australia"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "WC 2018"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 11,
+      "nation_code": "POR",
+      "nation": "Portugal",
+      "composite_z": 0.3968,
+      "n_players": 26,
+      "n_matched": 19,
+      "low_match_warning": false,
+      "signals": {
+        "mean_club_centrality_eigen": 0.219333,
+        "mean_club_centrality_weighted_degree": 0.055323,
+        "intra_squad_familiarity_score": 0.275889,
+        "shared_club_density": 0.615385,
+        "mean_observed_pair_joi90": 0.022196,
+        "n_qualifying_pairs": 57
+      },
+      "component_z": {
+        "club_centrality_eigen_z": -0.5002,
+        "club_centrality_weighted_degree_z": -0.6565,
+        "intra_squad_familiarity_z": 0.5612,
+        "shared_club_density_z_inverted": 1.8226,
+        "mean_observed_pair_joi90_z": -0.2183
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Vitinha",
+          "player_b": "Nuno Mendes",
+          "shared_minutes": 1641,
+          "shared_clubs": [
+            "Portugal",
+            "Paris Saint-Germain"
+          ],
+          "shared_contexts": [
+            "Euro 2024",
+            "PSG Ligue 1 22/23"
+          ]
+        },
+        {
+          "player_a": "Bernardo Silva",
+          "player_b": "Cristiano Ronaldo",
+          "shared_minutes": 1293,
+          "shared_clubs": [
+            "Portugal"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "WC 2018",
+            "Euro 2024",
+            "Euro 2020"
+          ]
+        },
+        {
+          "player_a": "Bernardo Silva",
+          "player_b": "Rúben Dias",
+          "shared_minutes": 1201,
+          "shared_clubs": [
+            "Portugal"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "Euro 2024",
+            "Euro 2020"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 12,
+      "nation_code": "MAR",
+      "nation": "Morocco",
+      "composite_z": 0.386,
+      "n_players": 22,
+      "n_matched": 14,
+      "low_match_warning": false,
+      "signals": {
+        "mean_club_centrality_eigen": 0.28293,
+        "mean_club_centrality_weighted_degree": 0.076824,
+        "intra_squad_familiarity_score": 0.473571,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": 0.033467,
+        "n_qualifying_pairs": 47
+      },
+      "component_z": {
+        "club_centrality_eigen_z": 0.1699,
+        "club_centrality_weighted_degree_z": 0.0945,
+        "intra_squad_familiarity_z": 1.54,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": 0.5991
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Hakim Ziyech",
+          "player_b": "Achraf Hakimi",
+          "shared_minutes": 1270,
+          "shared_clubs": [
+            "Morocco"
+          ],
+          "shared_contexts": [
+            "AFCON 2023",
+            "WC 2022",
+            "WC 2018"
+          ]
+        },
+        {
+          "player_a": "Romain Saïss",
+          "player_b": "Achraf Hakimi",
+          "shared_minutes": 1086,
+          "shared_clubs": [
+            "Morocco"
+          ],
+          "shared_contexts": [
+            "AFCON 2023",
+            "WC 2022",
+            "WC 2018"
+          ]
+        },
+        {
+          "player_a": "Sofyan Amrabat",
+          "player_b": "Achraf Hakimi",
+          "shared_minutes": 1085,
+          "shared_clubs": [
+            "Morocco"
+          ],
+          "shared_contexts": [
+            "AFCON 2023",
+            "WC 2022"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 13,
+      "nation_code": "BRA",
+      "nation": "Brazil",
+      "composite_z": 0.3759,
+      "n_players": 26,
+      "n_matched": 14,
+      "low_match_warning": false,
+      "signals": {
+        "mean_club_centrality_eigen": 0.291344,
+        "mean_club_centrality_weighted_degree": 0.076088,
+        "intra_squad_familiarity_score": 0.324407,
+        "shared_club_density": 0.730769,
+        "mean_observed_pair_joi90": 0.01805,
+        "n_qualifying_pairs": 34
+      },
+      "component_z": {
+        "club_centrality_eigen_z": 0.2586,
+        "club_centrality_weighted_degree_z": 0.0688,
+        "intra_squad_familiarity_z": 0.8014,
+        "shared_club_density_z_inverted": 1.0576,
+        "mean_observed_pair_joi90_z": -0.519
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Marquinhos",
+          "player_b": "Danilo",
+          "shared_minutes": 2903,
+          "shared_clubs": [
+            "Paris Saint-Germain"
+          ],
+          "shared_contexts": [
+            "PSG Ligue 1 21/22",
+            "PSG Ligue 1 22/23"
+          ]
+        },
+        {
+          "player_a": "Neymar",
+          "player_b": "Marquinhos",
+          "shared_minutes": 2850,
+          "shared_clubs": [
+            "Brazil",
+            "Paris Saint-Germain"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "PSG Ligue 1 21/22",
+            "PSG Ligue 1 22/23"
+          ]
+        },
+        {
+          "player_a": "Neymar",
+          "player_b": "Danilo",
+          "shared_minutes": 1785,
+          "shared_clubs": [
+            "Paris Saint-Germain"
+          ],
+          "shared_contexts": [
+            "PSG Ligue 1 21/22",
+            "PSG Ligue 1 22/23"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "nation_code": "FRA",
+      "nation": "France",
+      "composite_z": 0.3696,
+      "n_players": 26,
+      "n_matched": 16,
+      "low_match_warning": false,
+      "signals": {
+        "mean_club_centrality_eigen": 0.268617,
+        "mean_club_centrality_weighted_degree": 0.073682,
+        "intra_squad_familiarity_score": 0.351108,
+        "shared_club_density": 0.692308,
+        "mean_observed_pair_joi90": 0.014592,
+        "n_qualifying_pairs": 43
+      },
+      "component_z": {
+        "club_centrality_eigen_z": 0.0191,
+        "club_centrality_weighted_degree_z": -0.0152,
+        "intra_squad_familiarity_z": 0.9336,
+        "shared_club_density_z_inverted": 1.3126,
+        "mean_observed_pair_joi90_z": -0.7699
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Kylian Mbappé",
+          "player_b": "N'Golo Kanté",
+          "shared_minutes": 1478,
+          "shared_clubs": [
+            "France"
+          ],
+          "shared_contexts": [
+            "WC 2018",
+            "Euro 2024",
+            "Euro 2020"
+          ]
+        },
+        {
+          "player_a": "Kylian Mbappé",
+          "player_b": "Adrien Rabiot",
+          "shared_minutes": 1207,
+          "shared_clubs": [
+            "France"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "Euro 2024",
+            "Euro 2020"
+          ]
+        },
+        {
+          "player_a": "Kylian Mbappé",
+          "player_b": "Jules Koundé",
+          "shared_minutes": 1108,
+          "shared_clubs": [
+            "France"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "Euro 2024",
+            "Euro 2020"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 15,
+      "nation_code": "ARG",
+      "nation": "Argentina",
+      "composite_z": 0.3238,
+      "n_players": 26,
+      "n_matched": 19,
+      "low_match_warning": false,
+      "signals": {
+        "mean_club_centrality_eigen": 0.271173,
+        "mean_club_centrality_weighted_degree": 0.069295,
+        "intra_squad_familiarity_score": 0.338421,
+        "shared_club_density": 0.769231,
+        "mean_observed_pair_joi90": 0.020837,
+        "n_qualifying_pairs": 58
+      },
+      "component_z": {
+        "club_centrality_eigen_z": 0.0461,
+        "club_centrality_weighted_degree_z": -0.1685,
+        "intra_squad_familiarity_z": 0.8708,
+        "shared_club_density_z_inverted": 0.8026,
+        "mean_observed_pair_joi90_z": -0.3169
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Lionel Messi",
+          "player_b": "Emiliano Martínez",
+          "shared_minutes": 1250,
+          "shared_clubs": [
+            "Argentina"
+          ],
+          "shared_contexts": [
+            "Copa 2024",
+            "WC 2022"
+          ]
+        },
+        {
+          "player_a": "Lionel Messi",
+          "player_b": "Rodrigo De Paul",
+          "shared_minutes": 1250,
+          "shared_clubs": [
+            "Argentina"
+          ],
+          "shared_contexts": [
+            "Copa 2024",
+            "WC 2022"
+          ]
+        },
+        {
+          "player_a": "Emiliano Martínez",
+          "player_b": "Rodrigo De Paul",
+          "shared_minutes": 1250,
+          "shared_clubs": [
+            "Argentina"
+          ],
+          "shared_contexts": [
+            "Copa 2024",
+            "WC 2022"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 16,
+      "nation_code": "USA",
+      "nation": "United States",
+      "composite_z": 0.1899,
+      "n_players": 26,
+      "n_matched": 12,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": 0.228634,
+        "mean_club_centrality_weighted_degree": 0.059205,
+        "intra_squad_familiarity_score": 0.405818,
+        "shared_club_density": 0.807692,
+        "mean_observed_pair_joi90": 0.017888,
+        "n_qualifying_pairs": 41
+      },
+      "component_z": {
+        "club_centrality_eigen_z": -0.4022,
+        "club_centrality_weighted_degree_z": -0.5209,
+        "intra_squad_familiarity_z": 1.2045,
+        "shared_club_density_z_inverted": 0.5475,
+        "mean_observed_pair_joi90_z": -0.5308
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Antonee Robinson",
+          "player_b": "Christian Pulisic",
+          "shared_minutes": 673,
+          "shared_clubs": [
+            "United States"
+          ],
+          "shared_contexts": [
+            "Copa 2024",
+            "WC 2022"
+          ]
+        },
+        {
+          "player_a": "Antonee Robinson",
+          "player_b": "Weston McKennie",
+          "shared_minutes": 673,
+          "shared_clubs": [
+            "United States"
+          ],
+          "shared_contexts": [
+            "Copa 2024",
+            "WC 2022"
+          ]
+        },
+        {
+          "player_a": "Antonee Robinson",
+          "player_b": "Matt Turner",
+          "shared_minutes": 673,
+          "shared_clubs": [
+            "United States"
+          ],
+          "shared_contexts": [
+            "Copa 2024",
+            "WC 2022"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 17,
+      "nation_code": "CAN",
+      "nation": "Canada",
+      "composite_z": 0.0809,
+      "n_players": 20,
+      "n_matched": 17,
+      "low_match_warning": false,
+      "signals": {
+        "mean_club_centrality_eigen": 0.296705,
+        "mean_club_centrality_weighted_degree": 0.076307,
+        "intra_squad_familiarity_score": 0.2572,
+        "shared_club_density": 0.85,
+        "mean_observed_pair_joi90": 0.016826,
+        "n_qualifying_pairs": 43
+      },
+      "component_z": {
+        "club_centrality_eigen_z": 0.3151,
+        "club_centrality_weighted_degree_z": 0.0765,
+        "intra_squad_familiarity_z": 0.4686,
+        "shared_club_density_z_inverted": 0.267,
+        "mean_observed_pair_joi90_z": -0.6078
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Alphonso Davies",
+          "player_b": "Alistair Johnston",
+          "shared_minutes": 786,
+          "shared_clubs": [
+            "Canada"
+          ],
+          "shared_contexts": [
+            "Copa 2024",
+            "WC 2022"
+          ]
+        },
+        {
+          "player_a": "Richie Laryea",
+          "player_b": "Alistair Johnston",
+          "shared_minutes": 718,
+          "shared_clubs": [
+            "Canada"
+          ],
+          "shared_contexts": [
+            "Copa 2024",
+            "WC 2022"
+          ]
+        },
+        {
+          "player_a": "Stephen Eustáquio",
+          "player_b": "Alphonso Davies",
+          "shared_minutes": 693,
+          "shared_clubs": [
+            "Canada"
+          ],
+          "shared_contexts": [
+            "Copa 2024",
+            "WC 2022"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 18,
+      "nation_code": "ECU",
+      "nation": "Ecuador",
+      "composite_z": 0.0691,
+      "n_players": 19,
+      "n_matched": 14,
+      "low_match_warning": false,
+      "signals": {
+        "mean_club_centrality_eigen": 0.239898,
+        "mean_club_centrality_weighted_degree": 0.065277,
+        "intra_squad_familiarity_score": 0.260297,
+        "shared_club_density": 0.947368,
+        "mean_observed_pair_joi90": 0.031649,
+        "n_qualifying_pairs": 40
+      },
+      "component_z": {
+        "club_centrality_eigen_z": -0.2835,
+        "club_centrality_weighted_degree_z": -0.3088,
+        "intra_squad_familiarity_z": 0.484,
+        "shared_club_density_z_inverted": -0.3785,
+        "mean_observed_pair_joi90_z": 0.4672
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Félix Torres",
+          "player_b": "Moisés Caicedo",
+          "shared_minutes": 697,
+          "shared_clubs": [
+            "Ecuador"
+          ],
+          "shared_contexts": [
+            "Copa 2024",
+            "WC 2022"
+          ]
+        },
+        {
+          "player_a": "Félix Torres",
+          "player_b": "Angelo Preciado",
+          "shared_minutes": 697,
+          "shared_clubs": [
+            "Ecuador"
+          ],
+          "shared_contexts": [
+            "Copa 2024",
+            "WC 2022"
+          ]
+        },
+        {
+          "player_a": "Félix Torres",
+          "player_b": "Piero Hincapié",
+          "shared_minutes": 697,
+          "shared_clubs": [
+            "Ecuador"
+          ],
+          "shared_contexts": [
+            "Copa 2024",
+            "WC 2022"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 19,
+      "nation_code": "URU",
+      "nation": "Uruguay",
+      "composite_z": 0.0565,
+      "n_players": 22,
+      "n_matched": 18,
+      "low_match_warning": false,
+      "signals": {
+        "mean_club_centrality_eigen": 0.188329,
+        "mean_club_centrality_weighted_degree": 0.049914,
+        "intra_squad_familiarity_score": 0.266484,
+        "shared_club_density": 0.818182,
+        "mean_observed_pair_joi90": 0.026164,
+        "n_qualifying_pairs": 54
+      },
+      "component_z": {
+        "club_centrality_eigen_z": -0.8269,
+        "club_centrality_weighted_degree_z": -0.8455,
+        "intra_squad_familiarity_z": 0.5146,
+        "shared_club_density_z_inverted": 0.478,
+        "mean_observed_pair_joi90_z": 0.0694
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Federico Valverde",
+          "player_b": "Darwin Núñez",
+          "shared_minutes": 917,
+          "shared_clubs": [
+            "Uruguay"
+          ],
+          "shared_contexts": [
+            "Copa 2024",
+            "WC 2022"
+          ]
+        },
+        {
+          "player_a": "Federico Valverde",
+          "player_b": "Sergio Rochet",
+          "shared_minutes": 917,
+          "shared_clubs": [
+            "Uruguay"
+          ],
+          "shared_contexts": [
+            "Copa 2024",
+            "WC 2022"
+          ]
+        },
+        {
+          "player_a": "Darwin Núñez",
+          "player_b": "Sergio Rochet",
+          "shared_minutes": 917,
+          "shared_clubs": [
+            "Uruguay"
+          ],
+          "shared_contexts": [
+            "Copa 2024",
+            "WC 2022"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 20,
+      "nation_code": "SEN",
+      "nation": "Senegal",
+      "composite_z": 0.0148,
+      "n_players": 22,
+      "n_matched": 13,
+      "low_match_warning": false,
+      "signals": {
+        "mean_club_centrality_eigen": 0.189773,
+        "mean_club_centrality_weighted_degree": 0.049167,
+        "intra_squad_familiarity_score": 0.338782,
+        "shared_club_density": 0.818182,
+        "mean_observed_pair_joi90": 0.019003,
+        "n_qualifying_pairs": 35
+      },
+      "component_z": {
+        "club_centrality_eigen_z": -0.8116,
+        "club_centrality_weighted_degree_z": -0.8716,
+        "intra_squad_familiarity_z": 0.8726,
+        "shared_club_density_z_inverted": 0.478,
+        "mean_observed_pair_joi90_z": -0.4499
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Ismaïla Sarr",
+          "player_b": "Kalidou Koulibaly",
+          "shared_minutes": 1077,
+          "shared_clubs": [
+            "Senegal"
+          ],
+          "shared_contexts": [
+            "AFCON 2023",
+            "WC 2022",
+            "WC 2018"
+          ]
+        },
+        {
+          "player_a": "Ismaïla Sarr",
+          "player_b": "Édouard Mendy",
+          "shared_minutes": 796,
+          "shared_clubs": [
+            "Senegal"
+          ],
+          "shared_contexts": [
+            "AFCON 2023",
+            "WC 2022"
+          ]
+        },
+        {
+          "player_a": "Kalidou Koulibaly",
+          "player_b": "Édouard Mendy",
+          "shared_minutes": 796,
+          "shared_clubs": [
+            "Senegal"
+          ],
+          "shared_contexts": [
+            "AFCON 2023",
+            "WC 2022"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 21,
+      "nation_code": "COL",
+      "nation": "Colombia",
+      "composite_z": -0.0741,
+      "n_players": 22,
+      "n_matched": 17,
+      "low_match_warning": false,
+      "signals": {
+        "mean_club_centrality_eigen": 0.031091,
+        "mean_club_centrality_weighted_degree": 0.008631,
+        "intra_squad_familiarity_score": 0.243783,
+        "shared_club_density": 0.954545,
+        "mean_observed_pair_joi90": 0.054342,
+        "n_qualifying_pairs": 37
+      },
+      "component_z": {
+        "club_centrality_eigen_z": -2.4837,
+        "club_centrality_weighted_degree_z": -2.2877,
+        "intra_squad_familiarity_z": 0.4022,
+        "shared_club_density_z_inverted": -0.4261,
+        "mean_observed_pair_joi90_z": 2.113
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Davinson Sánchez",
+          "player_b": "Johan Mojica",
+          "shared_minutes": 903,
+          "shared_clubs": [
+            "Colombia"
+          ],
+          "shared_contexts": [
+            "Copa 2024",
+            "WC 2018"
+          ]
+        },
+        {
+          "player_a": "Davinson Sánchez",
+          "player_b": "James Rodríguez",
+          "shared_minutes": 783,
+          "shared_clubs": [
+            "Colombia"
+          ],
+          "shared_contexts": [
+            "Copa 2024",
+            "WC 2018"
+          ]
+        },
+        {
+          "player_a": "Davinson Sánchez",
+          "player_b": "Lerma Jr.",
+          "shared_minutes": 716,
+          "shared_clubs": [
+            "Colombia"
+          ],
+          "shared_contexts": [
+            "Copa 2024",
+            "WC 2018"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 22,
+      "nation_code": "JPN",
+      "nation": "Japan",
+      "composite_z": -0.2614,
+      "n_players": 26,
+      "n_matched": 9,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": 0.290672,
+        "mean_club_centrality_weighted_degree": 0.076954,
+        "intra_squad_familiarity_score": 0.210417,
+        "shared_club_density": 0.884615,
+        "mean_observed_pair_joi90": 0.004585,
+        "n_qualifying_pairs": 17
+      },
+      "component_z": {
+        "club_centrality_eigen_z": 0.2515,
+        "club_centrality_weighted_degree_z": 0.0991,
+        "intra_squad_familiarity_z": 0.237,
+        "shared_club_density_z_inverted": 0.0375,
+        "mean_observed_pair_joi90_z": -1.4956
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Yuto Nagatomo",
+          "player_b": "Daichi Kamada",
+          "shared_minutes": 411,
+          "shared_clubs": [
+            "Japan"
+          ],
+          "shared_contexts": [
+            "WC 2022"
+          ]
+        },
+        {
+          "player_a": "Yuto Nagatomo",
+          "player_b": "Junya Ito",
+          "shared_minutes": 315,
+          "shared_clubs": [
+            "Japan"
+          ],
+          "shared_contexts": [
+            "WC 2022"
+          ]
+        },
+        {
+          "player_a": "Yuto Nagatomo",
+          "player_b": "Daizen Maeda",
+          "shared_minutes": 315,
+          "shared_clubs": [
+            "Japan"
+          ],
+          "shared_contexts": [
+            "WC 2022"
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 23,
+      "nation_code": "ALG",
+      "nation": "Algeria",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 24,
+      "nation_code": "AUT",
+      "nation": "Austria",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 25,
+      "nation_code": "BIH",
+      "nation": "Bosnia and Herzegovina",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 26,
+      "nation_code": "CIV",
+      "nation": "Côte d'Ivoire",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 27,
+      "nation_code": "COD",
+      "nation": "DR Congo",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 28,
+      "nation_code": "CPV",
+      "nation": "Cape Verde",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 29,
+      "nation_code": "CUR",
+      "nation": "Curaçao",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 30,
+      "nation_code": "CZE",
+      "nation": "Czech Republic",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 31,
+      "nation_code": "EGY",
+      "nation": "Egypt",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 32,
+      "nation_code": "GHA",
+      "nation": "Ghana",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 33,
+      "nation_code": "HAI",
+      "nation": "Haiti",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 34,
+      "nation_code": "IRN",
+      "nation": "Iran",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 35,
+      "nation_code": "IRQ",
+      "nation": "Iraq",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 36,
+      "nation_code": "JOR",
+      "nation": "Jordan",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 37,
+      "nation_code": "NOR",
+      "nation": "Norway",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 38,
+      "nation_code": "NZL",
+      "nation": "New Zealand",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 39,
+      "nation_code": "PAN",
+      "nation": "Panama",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 40,
+      "nation_code": "PAR",
+      "nation": "Paraguay",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 41,
+      "nation_code": "QAT",
+      "nation": "Qatar",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 42,
+      "nation_code": "RSA",
+      "nation": "South Africa",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 43,
+      "nation_code": "SCO",
+      "nation": "Scotland",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 44,
+      "nation_code": "SWE",
+      "nation": "Sweden",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 45,
+      "nation_code": "TUN",
+      "nation": "Tunisia",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 46,
+      "nation_code": "TUR",
+      "nation": "Turkey",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 47,
+      "nation_code": "UZB",
+      "nation": "Uzbekistan",
+      "composite_z": -0.7662,
+      "n_players": 0,
+      "n_matched": 0,
+      "low_match_warning": true,
+      "signals": {
+        "mean_club_centrality_eigen": null,
+        "mean_club_centrality_weighted_degree": null,
+        "intra_squad_familiarity_score": 0.0,
+        "shared_club_density": 1.0,
+        "mean_observed_pair_joi90": null,
+        "n_qualifying_pairs": 0
+      },
+      "component_z": {
+        "club_centrality_eigen_z": null,
+        "club_centrality_weighted_degree_z": null,
+        "intra_squad_familiarity_z": -0.8049,
+        "shared_club_density_z_inverted": -0.7275,
+        "mean_observed_pair_joi90_z": null
+      },
+      "spine_pairs": []
+    },
+    {
+      "rank": 48,
+      "nation_code": "MEX",
+      "nation": "Mexico",
+      "composite_z": -0.852,
+      "n_players": 24,
+      "n_matched": 14,
+      "low_match_warning": false,
+      "signals": {
+        "mean_club_centrality_eigen": 0.096847,
+        "mean_club_centrality_weighted_degree": 0.038991,
+        "intra_squad_familiarity_score": 0.163758,
+        "shared_club_density": 0.958333,
+        "mean_observed_pair_joi90": 0.005164,
+        "n_qualifying_pairs": 28
+      },
+      "component_z": {
+        "club_centrality_eigen_z": -1.7908,
+        "club_centrality_weighted_degree_z": -1.2271,
+        "intra_squad_familiarity_z": 0.006,
+        "shared_club_density_z_inverted": -0.4512,
+        "mean_observed_pair_joi90_z": -1.4536
+      },
+      "spine_pairs": [
+        {
+          "player_a": "Jesús Gallardo",
+          "player_b": "Guillermo Ochoa",
+          "shared_minutes": 668,
+          "shared_clubs": [
+            "Mexico"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "WC 2018"
+          ]
+        },
+        {
+          "player_a": "César Montes",
+          "player_b": "Luis Chávez",
+          "shared_minutes": 579,
+          "shared_clubs": [
+            "Mexico"
+          ],
+          "shared_contexts": [
+            "Copa 2024",
+            "WC 2022"
+          ]
+        },
+        {
+          "player_a": "Héctor Herrera",
+          "player_b": "Jesús Gallardo",
+          "shared_minutes": 571,
+          "shared_clubs": [
+            "Mexico"
+          ],
+          "shared_contexts": [
+            "WC 2022",
+            "WC 2018"
+          ]
+        }
+      ]
+    }
+  ]
+}
